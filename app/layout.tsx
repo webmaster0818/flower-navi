@@ -10,6 +10,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://flower-navi-deploy.pages.dev"),
   title:
     "お花の定期便おすすめ5選を徹底比較【2026年最新】失敗しない選び方ガイド",
   description:
@@ -21,8 +22,24 @@ export const metadata: Metadata = {
       "お花の定期便おすすめ5選を徹底比較【2026年最新】失敗しない選び方ガイド",
     description:
       "お花の定期便（花のサブスク）人気5社を料金・送料・届き方で徹底比較。あなたにぴったりのサービスが見つかる診断付き。",
+    url: "https://flower-navi-deploy.pages.dev",
+    siteName: "お花の定期便ナビ",
     type: "website",
     locale: "ja_JP",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "お花の定期便おすすめ5選を徹底比較【2026年最新】失敗しない選び方ガイド",
+    description:
+      "お花の定期便（花のサブスク）人気5社を料金・送料・届き方で徹底比較。あなたにぴったりのサービスが見つかる診断付き。",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "/",
   },
   other: {
     "Cache-Control": "no-cache, no-store, must-revalidate",
