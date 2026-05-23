@@ -50,6 +50,8 @@ export default function HitoHanaPage() {
 
   return (
     <>
+                {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"HitoHana（ヒトハナ）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"HitoHana（ヒトハナ）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/hitohana/\"}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"HitoHana（ヒトハナ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hitohana/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
