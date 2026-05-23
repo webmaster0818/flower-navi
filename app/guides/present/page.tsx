@@ -128,6 +128,13 @@ export default function PresentGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクをプレゼントに贈る方法\",\"item\":\"https://ohana-delivery.com/guides/present/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクをプレゼントに贈る方法\",\"description\":\"花のサブスクをプレゼントに贈る方法 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/present/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクをプレゼントとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ギフト対応しているサービスであれば、相手の住所に花を届けることができます。bloomeeはギフトチケット（デジタル）を贈る形式、AND PLANTSは注文時に届け先を相手の住所に指定する形式です。日本総合園芸は法人向けの手渡し配達にも対応しています。サービスによってギフトの仕組みが異なるため、事前に確認しましょう。\"}},{\"@type\":\"Question\",\"name\":\"母の日に花の定期便を贈りたいのですが、いつまでに申し込めばいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"母の日当日に届けたい場合は、少なくとも1週間前までに申し込むのが安心です。bloomeeのギフトチケットはデジタル発行のため即日贈れますが、実際の花の配送開始日は受け取り側が自分で設定します。AND PLANTSや日本総合園芸は配送日を指定できる場合があるため、早めに公式サイトで母の日向けの対応を確認してください。\"}},{\"@type\":\"Question\",\"name\":\"ギフトチケットとは何ですか？どう使いますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ギフトチケットとは、花のサブスクの利用権をデジタルチケットとして贈れる仕組みです。bloomeeが提供しており、購入するとURLやQRコードが発行されます。受け取った相手がそのURLから届け先住所やプランを設定すると、花が届き始めます。相手の住所を知らなくても贈れる点が大きなメリットです。\"}},{\"@type\":\"Question\",\"name\":\"花の定期便をプレゼントする場合、相手の住所を知らなくても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeのギフトチケットなら相手の住所を知らなくても贈れます。チケットを受け取った相手が自分で届け先を入力するため、住所を聞く必要がありません。一方、AND PLANTSや日本総合園芸は注文時に届け先住所の入力が必要です。サプライズで贈りたい場合はbloomeeのギフトチケットが便利です。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントする期間（回数）は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。bloomeeのギフトチケットは期間を指定して購入できます（例：3か月、6か月、12か月など）。AND PLANTSは通常のサブスクリプションとして申し込み、贈り主が任意のタイミングで解約する形式です。予算に合わせて回数・期間を調整できますので、公式サイトで最新のギフトプランを確認してください。\"}},{\"@type\":\"Question\",\"name\":\"プレゼント用にメッセージカードを付けられますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeのギフトチケットにはデジタルメッセージを添えることができます。AND PLANTSは初回配送時にメッセージカードを同梱できるオプションがある場合があります。日本総合園芸は法人向けの手配を含め、メッセージカードの対応が可能です。いずれも時期やプランによって対応状況が変わるため、注文前に公式サイトで確認してください。\"}},{\"@type\":\"Question\",\"name\":\"花の定期便のギフトにかかる費用はどれくらいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ギフトの費用はサービスとプラン、贈る期間によって異なります。bloomeeのギフトチケットは体験プラン3か月分で約4,000円前後から、レギュラープランならやや高めになります。AND PLANTSは1回1,980円（送料無料）からで、3か月（隔週6回）なら約11,880円です。予算に応じてプランと回数を選べるため、3,000円台から数万円台まで幅広く対応できます。\"}},{\"@type\":\"Question\",\"name\":\"贈られた側が届く花のテイストや頻度を変更できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeのギフトチケットの場合、受け取り側がプラン選択や配送頻度の設定を行えるため、自分好みにカスタマイズ可能です。AND PLANTSは贈り主のアカウントで管理する形式のため、変更は贈り主側で行う必要があります。サービスによって柔軟性が異なるため、相手の好みを尊重したい場合はbloomeeのギフトチケットが適しています。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -759,5 +766,6 @@ export default function PresentGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

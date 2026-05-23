@@ -87,6 +87,13 @@ const userReviews = [
 /* ─── Star Rating Component ─── */
 function StarRating({ rating }: { rating: number }) {
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/medelu/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"description\":\"medelu（メデル）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/medelu/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"medelu（メデル）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには3つのコース（ANYROOM・MODERN・NATURAL）があり、それぞれMini・Lite・Basic・Luxeの4サイズから選べます。最安はMiniサイズの698円（税込）で、全プラン送料無料です。Liteは1,240円〜、Basicは1,540円〜となっています。\"}},{\"@type\":\"Question\",\"name\":\"medeluの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluの解約はマイページから手続きできます。回数縛りがないため、いつでも解約が可能です。次回配送日の前日までにマイページで解約手続きを行えば、追加料金なしで解約できます。違約金や最低利用期間はありません。\"}},{\"@type\":\"Question\",\"name\":\"medeluのお花が傷んで届いた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには品質保証制度があります。届いたお花が傷んでいた場合、到着から2日以内にマイページの問い合わせフォームから写真を添付して申請すると、次回配送時に代替のお花を届けてもらえます。市場直送のため鮮度には自信がありますが、万が一の際も安心です。\"}},{\"@type\":\"Question\",\"name\":\"medeluの3つのコースの違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ANYROOMコースはどんなお部屋にも合う万能なアレンジ、MODERNコースはモノトーンやスタイリッシュなお部屋に合うアレンジ、NATURALコースはナチュラルテイストや北欧風のお部屋に合うアレンジが届きます。お部屋の雰囲気に合わせて選ぶのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"medeluはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluの配送頻度は「毎週」または「隔週」から選択できます。マイページからいつでも変更可能です。また、受け取れない週はスキップ機能を使って配送を1回飛ばすこともできます。スキップは無料で、マイページから簡単に設定できます。\"}},{\"@type\":\"Question\",\"name\":\"medeluの送料はかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"いいえ、medeluは全プラン送料無料です。他社のお花のサブスクでは300〜500円程度の送料がかかるサービスが多い中、medeluは表示価格のみで利用できるため、トータルコストを抑えたい方に人気です。\"}},{\"@type\":\"Question\",\"name\":\"medeluのお花は手渡しで届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluのお花はすべてポスト投函（ゆうパケット）での配送となります。手渡しでの受け取りには対応していません。ポストの投函口が幅4cm以上、奥行き15cm以上あれば問題なく届きます。不在時でも受け取れるのがメリットです。\"}},{\"@type\":\"Question\",\"name\":\"medeluの対応エリアはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluは離島やごく一部の地域を除き、日本全国に配送対応しています。ただし、お届け先の地域によって届くお花の種類が異なる場合があります。これは各地域の市場から直送しているためで、鮮度を最優先にした仕組みです。\"}}]}" }} />
     <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
       {[1, 2, 3, 4, 5].map((star) => (
         <svg
@@ -99,6 +106,7 @@ function StarRating({ rating }: { rating: number }) {
         </svg>
       ))}
     </div>
+  </>
   );
 }
 

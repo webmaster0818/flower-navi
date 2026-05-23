@@ -116,6 +116,13 @@ export default function FiveHundredYenPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"500円から始められる花のサブスク比較\",\"item\":\"https://ohana-delivery.com/compare/500yen/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"500円から始められる花のサブスク比較\",\"description\":\"500円から始められる花のサブスク比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/500yen/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"本当に500円台でお花の定期便を始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花代だけで見ると、タスハナが528円/回と500円台で始められます。ただし送料330円が別途かかるため、総額は858円/回になります。medeluのLiteコースは698円/回ですが送料無料のため、総額ではmedeluが最安です。純粋な「ワンコイン（500円）」で始められるサービスは現時点ではありませんが、1,000円以下で始められるサービスは複数あります。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでも品質は大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、安いサービスでも品質面で問題があるわけではありません。medeluは市場直送の仕組みで中間コストを削減しているため安価でも新鮮なお花が届きます。タスハナも規格外の花（品質に問題はないが形やサイズが規格外のもの）を活用することでロスを減らし、低価格を実現しています。各サービスとも品質保証制度があるため、万が一傷んだ花が届いた場合は無料で再送してもらえます。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluは全プラン送料無料です。Liteコースは698円のみで利用でき、送料を含めた総額で業界最安水準です。AND PLANTSも送料込みの価格設定ですが、最安プランが1,980円/回と価格帯が異なります。bloomeeやhanamekuは別途送料がかかります。\"}},{\"@type\":\"Question\",\"name\":\"ワンコインで何本の花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安クラスのプランでは3本程度が一般的です。medeluのLiteコースは3本、タスハナは3〜4本、bloomeeの体験プランは3本以上です。本数は少なめですが、小さな花瓶に飾ったり、一輪挿しにするには十分なボリュームです。テーブルやデスクにちょっとした彩りを添えるのにぴったりです。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクに回数縛りはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは回数縛りなしで698円から始められるため、1回試してすぐ解約も可能です。タスハナも回数縛りはありません。一方、bloomeeは4回の最低受け取り回数があり、4回受け取り前に解約すると残り回数分の料金が発生します。初めてで不安な方は、回数縛りなしのサービスから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"月額で一番安いのはどのサービスですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"隔週（月2回）配送の場合、medeluのLiteコースが月額約1,396円（698円 x 2回、送料無料）で最安です。月1回配送が可能なサービスでは、hanamekuのライトプランが月858円＋送料で利用できます。月の花代を最小限に抑えたい方は、月1回配送を選べるサービスを検討するとよいでしょう。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでポスト投函に対応しているのはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medelu、bloomee、hanameku（ライトプランのポスト投函を選択した場合）がポスト投函に対応しています。ポスト投函なら不在時でも受け取れるため、日中家を空けることが多い方に便利です。ポスト投函対応のサービスの中で最安なのはmedeluのLiteコース（698円/回・送料無料）です。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -631,5 +638,6 @@ export default function FiveHundredYenPage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

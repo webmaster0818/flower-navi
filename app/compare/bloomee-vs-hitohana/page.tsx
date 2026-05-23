@@ -40,6 +40,13 @@ export default function BloomeeVsHitohanaPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"bloomee vs HitoHana 徹底比較\",\"item\":\"https://ohana-delivery.com/compare/bloomee-vs-hitohana/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs HitoHana 徹底比較\",\"description\":\"bloomee vs HitoHana 徹底比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-hitohana/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHana、初心者にはどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"手軽さ重視ならbloomeeがおすすめです。ポスト投函で受け取れ、980円から始められます。一方、花の色やボリュームにこだわりたい方はHitoHanaが向いています。HitoHanaは色を選べるため、インテリアに合わせた花を受け取れます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの4回縛りとHitoHanaの回数縛りについて教えてください\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは最低4回の受け取りが必要で、4回未満での解約は残り回数分の料金が発生します。HitoHanaは回数縛りがなく、いつでも解約可能です。お試しで始めたい方はHitoHanaの方がリスクが少ないです。\"}},{\"@type\":\"Question\",\"name\":\"両方同時に利用することはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、併用は可能です。bloomeeのお手頃プランで日常の花を確保しつつ、HitoHanaの上位プランを月1回利用して特別感のある花を楽しむという使い方をしている方もいます。ただし、費用がかさむため、まずは片方を試してから検討するのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度はどちらにもありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、どちらのサービスにも品質保証制度があります。bloomeeは届いた花が傷んでいた場合、写真を送ることで再送対応が受けられます。HitoHanaも同様に、品質に問題があった場合は再送してもらえます。申請期限はどちらも届いてから数日以内です。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -266,5 +273,6 @@ export default function BloomeeVsHitohanaPage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

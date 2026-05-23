@@ -36,6 +36,13 @@ export default function ButsudanGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"仏壇花の定期便・サブスクおすすめ\",\"item\":\"https://ohana-delivery.com/guides/butsudan/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"仏壇花の定期便・サブスクおすすめ\",\"description\":\"仏壇花の定期便・サブスクおすすめ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/butsudan/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"仏花に向かない花はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"バラなどトゲのある花は仏花には不向きとされています。また、毒のある花（彼岸花、スズラン等）や香りが強すぎる花も避けるのが一般的です。ただし、故人が好きだった花であればトゲを取り除いて供えることもあります。宗派や地域の慣習によっても異なるため、気になる場合はお寺に確認するとよいでしょう。\"}},{\"@type\":\"Question\",\"name\":\"月命日に合わせて届けてもらえますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期便サービスの多くは「毎週」「隔週」「月1回」といった配送頻度の選択が可能ですが、特定の日付指定ができるサービスは限られます。月命日に合わせたい場合は、月1回配送を選び、届いた花を月命日まで涼しい場所で保管する方法が現実的です。medeluやbloomeeではスキップ機能があるため、配送タイミングの調整がしやすいです。\"}},{\"@type\":\"Question\",\"name\":\"仏花は1対（2束）必要ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"正式には仏壇の左右に1束ずつ、計2束（1対）を供えるのが基本です。ただし、小さな仏壇や現代的な仏壇では1束だけ飾る方も増えています。定期便で届く花を1束として、もう1束は近くの花屋やスーパーで購入して補うという使い方もあります。無理のない範囲で供えることが大切です。\"}},{\"@type\":\"Question\",\"name\":\"定期便の花はそのまま仏壇に供えられますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期便で届く花は基本的にそのまま花瓶に飾る用途のアレンジです。仏花として供える場合は、届いた花の中から仏花に適したもの（菊、カーネーション、スターチスなど）を選び、仏壇用の花立に合わせて茎の長さを切りそろえてお供えください。medeluのNATURALコースやANYROOMコースは落ち着いた色合いの花が多く、仏花にもアレンジしやすいです。\"}},{\"@type\":\"Question\",\"name\":\"夏場でも仏花は長持ちしますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場は気温が高く花が傷みやすいため、通常より花持ちが短くなります。対策としては、こまめな水替え（毎日が理想）、切り花延命剤の使用、エアコンの風が直接当たらない涼しい場所に仏壇を置くことが有効です。また、菊やスターチスなど暑さに比較的強い花を選ぶのもポイントです。定期便なら定期的に新しい花が届くため、夏場でも常に新鮮な花をお供えできます。\"}},{\"@type\":\"Question\",\"name\":\"お盆やお彼岸用の特別な仏花は届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的な花の定期便はお盆・お彼岸専用の仏花アレンジには対応していません。ただし、通常の定期便で届く花を仏花としてアレンジすることは可能です。お盆やお彼岸に特別な仏花が必要な場合は、通常の定期便に加えて花屋やオンラインショップで仏花セットを別途購入することをおすすめします。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -614,5 +621,6 @@ export default function ButsudanGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

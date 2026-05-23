@@ -120,6 +120,13 @@ export default function BeginnerGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"初心者向け 花のサブスクの選び方\",\"item\":\"https://ohana-delivery.com/guides/beginner/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"初心者向け 花のサブスクの選び方\",\"description\":\"初心者向け 花のサブスクの選び方 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/beginner/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月額いくらから始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安のサービスはmedelu（メデル）のMiniプランで、1回698円（送料無料）から始められます。隔週配送なら月額約1,396円です。bloomeeの体験プランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初心者には隔週がおすすめです。届いたお花が枯れる頃に次が届くサイクルになるため、常にお花がある生活を無理なく続けられます。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"季節やお花の種類によりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていないのですが大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶がなくても問題ありません。コップやグラス、空き瓶、マグカップなど、水を入れられる容器であれば代用できます。100円ショップでもシンプルな花瓶が購入できます。サブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函は不在でも受け取れる手軽さが魅力です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、状態が良いまま届きやすいメリットがあります。初心者にはポスト投函が手軽でおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"品質保証制度があるサービスを選べば安心です。bloomeeでは傷んだお花が届いた場合に再送対応を受けられます。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせ時にスムーズです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。初めてで不安な方は回数縛りなしのサービスから始めるのが安心です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクでお花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的にお花の種類はおまかせです。プロの花屋やフローリストが季節のお花をセレクトして届けてくれるため、自分では選ばないようなお花との出会いを楽しめます。これが花のサブスクの大きな魅力の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -867,5 +874,6 @@ export default function BeginnerGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

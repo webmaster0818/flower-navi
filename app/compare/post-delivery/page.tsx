@@ -166,6 +166,13 @@ export default function PostDeliveryComparisonPage() {
   const postNgCount = serviceData.filter((s) => s.postDelivery === "NG").length;
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"ポスト投函型の花のサブスク比較\",\"item\":\"https://ohana-delivery.com/compare/post-delivery/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"ポスト投函型の花のサブスク比較\",\"description\":\"ポスト投函型の花のサブスク比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/post-delivery/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ポスト投函の花のサブスクとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函（ポストに届く）タイプの花のサブスクは、自宅の郵便ポストに直接お花が届くサービスです。専用の細長い箱に入った状態で届くため、不在時でも受け取りが可能です。再配達の手間がなく、忙しい方や一人暮らしの方に特に人気があります。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函でお花が傷まないか心配です。大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"各サービスとも、ポスト投函用に設計された専用ボックスを使用しており、お花が傷みにくい工夫がされています。保水ゼリーや保水キャップで水分を保ち、通気口付きの箱で蒸れを防ぎます。万が一届いた花が傷んでいた場合は、bloomee・medelu・hanamekuいずれも品質保証制度（再送・返金対応）があるため安心です。\"}},{\"@type\":\"Question\",\"name\":\"ポストに入らない場合はどうなりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的な郵便ポスト（投函口の幅が約3.5cm以上）であれば問題なく届きます。ただし、ポストの投函口が極端に小さい場合や、集合住宅で投函口のサイズが合わない場合は、玄関前に置き配されるか、不在票が入ることがあります。心配な方は事前にポストの投函口のサイズを確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便、どちらが花の品質が良いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的に宅配便のほうが花の状態は良い傾向にあります。宅配便は手渡しで配送時間が短く、箱のサイズにも余裕があるためです。ただし、ポスト投函でも各社の品質管理が向上しており、適切に保水処理された状態で届くため、大きな差はありません。ボリュームのある花束を希望する場合は宅配便が適しています。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函対応のサービスで一番安いのはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函対応サービスの中で最も安いのはmedelu（メデル）のMiniプランで、1回698円（送料無料）です。次いでhanameku（ハナメク）のライトプランが858円（別途送料）、bloomee（ブルーミー）の体験プランが980円（送料385円、総額1,365円）と続きます。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函の花のサブスクは何本届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによりますが、ポスト投函タイプは一般的に3〜5本程度です。medeluのMiniプランは3本、bloomeeの体験プランは3本以上、hanamekuのライトプランは花とグリーン数本が届きます。ポストに入るサイズの制約があるため、宅配便タイプと比べるとやや少なめですが、テーブルや玄関に飾るには十分なボリュームです。\"}},{\"@type\":\"Question\",\"name\":\"宅配便のみのサービスを不在時に受け取る方法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSや日本総合園芸など宅配便のみのサービスでは、配送日時の指定が可能です。AND PLANTSは配送日の指定ができ、日本総合園芸は手渡し配達で日時調整が可能です。また、宅配ボックスがある場合はそこに届けてもらえる場合もあります。再配達を依頼することもできますが、生花は鮮度が落ちるため早めの受け取りがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしにはポスト投函と宅配便どちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの方には、不在でも受け取れるポスト投函タイプが断然おすすめです。日中は仕事で不在がちな場合でも、帰宅時にポストからお花を取り出すだけで済みます。再配達の手間もなく、配達時間を気にする必要もありません。medelu・bloomee・hanamekuの3サービスがポスト投函に対応しています。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -861,5 +868,6 @@ export default function PostDeliveryComparisonPage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

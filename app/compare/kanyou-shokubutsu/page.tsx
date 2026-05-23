@@ -28,6 +28,13 @@ export default function KanyouShokubutsuPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"観葉植物の定期便・サブスク比較\",\"item\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物の定期便・サブスク比較\",\"description\":\"観葉植物の定期便・サブスク比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"観葉植物のサブスクと花のサブスクはどう違いますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花のサブスクは切り花が定期的に届き、1〜2週間で枯れるため常に新しい花を楽しめます。観葉植物のサブスクは鉢植えのグリーンが届き、適切に育てれば何年も楽しめます。お手入れの手間は観葉植物の方が少なく、水やりは週1〜2回程度です。コストは観葉植物の方が初期費用が高めですが、長期的にはコスパが良くなります。\"}},{\"@type\":\"Question\",\"name\":\"観葉植物を枯らしてしまいそうで不安です\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSでは、初心者でも育てやすい種類を選んでくれるオプションがあります。また、育て方の説明書が同封されるため、水やりの頻度や日当たりの条件がわかりやすいです。万が一枯れてしまった場合の交換保証があるサービスもあるため、初心者でも安心して始められます。\"}},{\"@type\":\"Question\",\"name\":\"賃貸マンションでも観葉植物は置けますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、問題なく置けます。小型の観葉植物（ポトス、サンスベリアなど）なら棚やテーブルの上に置けるため、床を汚す心配もありません。受け皿を使えば水漏れも防げます。壁掛けタイプや吊り下げタイプを選べば、スペースを取らずにグリーンを楽しめます。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクと観葉植物のサブスクは併用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"もちろん併用できます。観葉植物で部屋のベースとなるグリーンを確保し、花のサブスクで季節の彩りをプラスするのは人気の組み合わせです。AND PLANTSでは切り花と観葉植物の両方を扱っているため、一つのサービスでまとめることも可能です。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -279,5 +286,6 @@ export default function KanyouShokubutsuPage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

@@ -175,6 +175,15 @@ export default function FlowerCarePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"切り花を長持ちさせるお手入れ方法\",\"item\":\"https://ohana-delivery.com/guides/flower-care/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"切り花を長持ちさせるお手入れ方法\",\"description\":\"切り花を長持ちさせるお手入れ方法 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/flower-care/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"切り花は最長でどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の種類や季節によりますが、適切なお手入れをすれば1〜2週間ほど楽しめます。カーネーションやアルストロメリアは比較的長持ちし、2週間以上持つこともあります。一方、チューリップやスイートピーは5〜7日程度が目安です。水切り・水替え・延命剤の使用を組み合わせることで、花の寿命を最大限に延ばせます。\"}},{\"@type\":\"Question\",\"name\":\"延命剤がないときの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"家庭にあるもので代用できます。漂白剤を水1リットルに対して1〜2滴入れると、バクテリアの繁殖を抑えられます。また、砂糖を小さじ1杯ほど加えると花に栄養を補給できます。10円玉を花瓶に入れる方法も知られていますが、銅イオンの殺菌効果は限定的なため、漂白剤のほうが効果的です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届いた花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サブスクで届く花は産地直送や市場から仕入れたての新鮮な状態が多いため、適切にお手入れすれば1週間〜10日ほど楽しめます。届いたらすぐに水切りをして花瓶に生けること、毎日の水替えを欠かさないことが長持ちの秘訣です。延命剤が同封されている場合は必ず使いましょう。\"}},{\"@type\":\"Question\",\"name\":\"花瓶の大きさはどう選べばいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の丈の約1/3〜1/2が花瓶に収まる高さが目安です。サブスクで届く花束は3〜6本程度が多いため、高さ15〜20cm・口径5〜8cmの花瓶が使いやすいサイズです。口が広すぎると花が開いて散らばり、狭すぎると茎が窮屈になるため、花の本数に合った口径を選びましょう。\"}},{\"@type\":\"Question\",\"name\":\"夏場に花を長持ちさせるコツはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場は水温が上がりバクテリアが繁殖しやすいため、水替えを1日2回に増やすのが効果的です。氷を数個入れて水温を下げる方法もあります。エアコンの風が直接当たらない涼しい場所に置き、直射日光を避けてください。水の量はやや少なめにし、茎が傷みやすい部分を減らすのもポイントです。\"}},{\"@type\":\"Question\",\"name\":\"100均の花瓶でも大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"問題ありません。100均にはガラス製・陶器風など、花を生けるのに十分な品質の花瓶が揃っています。サブスクで届く3〜5本程度の花であれば、100均の花瓶で十分に楽しめます。複数の小さな花瓶を用意しておくと、花を1〜2本ずつ分けて飾るアレンジも楽しめるのでおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"届いた花をドライフラワーにできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くの花はドライフラワーにできます。バラ、かすみ草、スターチス、千日紅、ユーカリなどは特にドライフラワー向きです。花がまだ元気なうちに逆さに吊るすハンギング法が最も手軽です。完全に乾燥するまで1〜2週間かかります。ただし、ガーベラやチューリップなど水分の多い花はドライフラワーに不向きです。\"}},{\"@type\":\"Question\",\"name\":\"水切りは毎日したほうがいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"毎日行う必要はありませんが、2〜3日に1回は水切りすると効果的です。水替えのタイミングで一緒に行うのが効率的です。茎の切り口がぬめったり変色したりしている場合は、すぐに水切りをしましょう。切れ味の良いハサミや花ばさみを使い、斜めにカットすることで水の吸い上げがよくなります。\"}}]}" }} />
+        {/* JSONLD_INJECTED_v1 #3 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"切り花を長持ちさせるお手入れ方法\",\"description\":\"切り花を長持ちさせるお手入れ方法 のステップを解説\"}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -823,5 +832,6 @@ export default function FlowerCarePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

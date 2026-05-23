@@ -87,6 +87,13 @@ const userReviews = [
 /* ─── Star Rating Component ─── */
 function StarRating({ rating }: { rating: number }) {
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hanameku/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"description\":\"hanameku（ハナメク）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hanameku/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ハナメク（hanameku）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクには3つのプランがあります。ライトプランは1回858円（税込・送料別）、スタンダードプランは1回1,958円（税込・送料別）、セルフプランは1回2,680円（税込・送料別）です。いずれも回数縛りなしで、いつでも解約できます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクの解約はマイページから手続きできます。回数縛りがないため、いつでも自由に解約が可能です。次回配送日の数日前までにマイページで解約手続きを行えば、追加料金なしで解約できます。解約後も届いた花の情報はアプリで引き続き確認できます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのお花はどのように届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクのお花はポスト投函で届きます。市場から直送されるため、鮮度の高い切り花が届くのが特徴です。専用のパッケージに丁寧に梱包された状態で届くため、不在時でも安心して受け取れます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのアプリではどんな情報が見られますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクの専用アプリでは、届いたお花の品種名、産地情報、お手入れ方法などを確認できます。花の名前がわからなくても、アプリを開けばすぐに確認できるため、お花の知識を深めながら楽しむことができます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクの配送エリアはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクは日本国内の多くの地域に対応していますが、一部の離島や配送が難しい地域では対応エリア外となる場合があります。詳しい配送対応エリアは公式サイトで郵便番号を入力して確認できます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのセルフプランとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"セルフプランは、届いたお花を自分でアレンジして楽しむためのプランです。通常のプランではアレンジ済みのお花が届きますが、セルフプランでは茎が長めの状態でお花が届くため、自分好みのアレンジや生け方を楽しめます。お花に慣れてきた方やフラワーアレンジメントに挑戦したい方におすすめです。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いたお花に傷みや問題があった場合は、カスタマーサポートに連絡することで対応してもらえます。市場直送で鮮度管理には力を入れていますが、配送中のトラブルに対しても丁寧に対応してくれると口コミで評判です。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクはプレゼントとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ハナメクではギフト用の花の定期便も利用可能です。公式サイトからギフト設定を行うことで、大切な方へお花の定期便をプレゼントできます。母の日や誕生日など、特別なギフトとして人気があります。\"}}]}" }} />
     <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
       {[1, 2, 3, 4, 5].map((star) => (
         <svg
@@ -99,6 +106,7 @@ function StarRating({ rating }: { rating: number }) {
         </svg>
       ))}
     </div>
+  </>
   );
 }
 

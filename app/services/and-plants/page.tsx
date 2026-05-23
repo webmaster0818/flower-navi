@@ -87,6 +87,13 @@ const userReviews = [
 /* ─── Star Rating Component ─── */
 function StarRating({ rating }: { rating: number }) {
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/and-plants/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"description\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/and-plants/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"AND PLANTS（アンドプランツ）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSには3つのプランがあります。Standardプランは1回1,980円（税込・送料無料）、Mediumプランは1回2,980円（税込・送料無料）、Largeプランは1回4,980円（税込・送料無料）です。いずれも毎週・隔週・月1回の配送頻度から選べます。\"}},{\"@type\":\"Question\",\"name\":\"AND PLANTSの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSは都度払い方式のため、回数縛りはありません。解約はマイページからいつでも手続き可能です。次回配送日の5日前までにマイページで解約手続きを行えば、追加料金なしで解約できます。解約後の違約金や手数料も一切発生しません。\"}},{\"@type\":\"Question\",\"name\":\"AND PLANTSのお花が傷んで届いた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSには品質保証制度があります。届いたお花が傷んでいた場合、マイページまたはお問い合わせフォームから写真を添付して申請すると、無料で新しいお花を再送してもらえます。独自開発の梱包システムにより傷みは非常に少ないですが、万が一の場合も安心です。\"}},{\"@type\":\"Question\",\"name\":\"AND PLANTSはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSの配送頻度は「毎週」「隔週」「月1回」の3つから選択できます。マイページからいつでも変更可能です。また、旅行や出張などで受け取れない場合は「スキップ機能」を使って配送を1回飛ばすこともできます。スキップは無料で、マイページから簡単に設定できます。\"}},{\"@type\":\"Question\",\"name\":\"AND PLANTSの初回クーポンはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、AND PLANTSでは初回限定で500円OFFクーポンを利用できます。公式サイトから申し込む際にクーポンコードを入力するか、公式サイト上のキャンペーンバナーから申し込むと自動的に適用されます。Standardプランなら初回1,480円で始められるため、お試しにもおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"AND PLANTSは観葉植物も届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSはお花の定期便だけでなく、観葉植物の販売も行っています。定期便はお花（ブーケ）が届くサービスですが、公式サイトでは観葉植物やドライフラワーなどの単品購入も可能です。お花のサブスクと合わせて、お部屋のグリーンインテリアをトータルで揃えられる点が他社にはない魅力です。\"}},{\"@type\":\"Question\",\"name\":\"AND PLANTSの対応エリアはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSは宅配便（ヤマト運輸）での配送のため、一部離島や遠隔地を除き日本全国に対応しています。ただし、北海道・沖縄・離島への配送は追加送料が発生する場合や、配送対象外となる場合があります。詳しくはお申し込み時にお届け先の郵便番号で確認できます。\"}},{\"@type\":\"Question\",\"name\":\"AND PLANTSのお花はどんな状態で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSでは3万件以上の配送実績をもとに独自開発した専用梱包システムを採用しています。お花が配送中に傷まないよう、衝撃吸収素材と保水処理を施した状態で届きます。茎の切り口にはエコゼリーが付けられており、届いたらすぐに花瓶に飾れる状態になっています。\"}}]}" }} />
     <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
       {[1, 2, 3, 4, 5].map((star) => (
         <svg
@@ -99,6 +106,7 @@ function StarRating({ rating }: { rating: number }) {
         </svg>
       ))}
     </div>
+  </>
   );
 }
 

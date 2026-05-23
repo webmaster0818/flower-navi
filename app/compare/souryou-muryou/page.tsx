@@ -64,6 +64,13 @@ export default function SouryouMuryouPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"送料無料の花のサブスク比較\",\"item\":\"https://ohana-delivery.com/compare/souryou-muryou/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"送料無料の花のサブスク比較\",\"description\":\"送料無料の花のサブスク比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/souryou-muryou/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"送料無料のサービスは本当に追加費用がかかりませんか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとAND PLANTSは表示価格に送料が含まれており、追加の送料は一切かかりません。hanamekuはプランや配送方法によって送料が異なり、一部プランのみ送料無料です。各サービスの公式サイトで最新の料金体系をご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスは品質が劣りますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"いいえ、品質が劣ることはありません。medeluは市場直送の仕組みで中間コストを削減し、AND PLANTSはプロのフローリストがアレンジを担当しています。送料を無料にできる理由は、配送ルートの効率化やビジネスモデルの工夫であり、花の品質を落としているわけではありません。\"}},{\"@type\":\"Question\",\"name\":\"送料無料と送料別、年間でどれくらい差がつきますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"例えばbloomeeの送料385円を隔週（月2回）で利用すると、送料だけで年間9,240円になります。送料無料のmedeluなら、この分がまるまるお得です。毎週配送にすると年間約2万円の差になることもあり、長期利用するほど送料無料サービスのメリットが大きくなります。\"}},{\"@type\":\"Question\",\"name\":\"離島や北海道・沖縄でも送料無料ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは全国送料無料ですが、一部離島は配送対象外の場合があります。AND PLANTSは沖縄・離島への配送に追加料金がかかる場合があります。お住まいの地域が配送対象かどうか、事前に公式サイトでご確認ください。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -324,5 +331,6 @@ export default function SouryouMuryouPage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

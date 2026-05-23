@@ -28,6 +28,13 @@ export default function DanseiGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"男性におすすめの花のサブスク\",\"item\":\"https://ohana-delivery.com/guides/dansei/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"男性におすすめの花のサブスク\",\"description\":\"男性におすすめの花のサブスク を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/dansei/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"男性が花のサブスクを使うのは変ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"まったく変ではありません。近年は男性の利用者が急増しており、特に20〜30代の一人暮らし男性に人気です。インテリアにこだわる男性が増えている背景もあり、花のある部屋はSNSでも好評です。bloomeeの利用者の約3割が男性というデータもあります。\"}},{\"@type\":\"Question\",\"name\":\"男性向けのシンプルな花が届くサービスはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"HitoHanaでは花の色をホワイトやグリーン、ブラウンなどシックな色味で指定できるため、男性的なインテリアにも合わせやすいです。AND PLANTSも落ち着いたトーンのアレンジが多く、モダンな部屋によく馴染みます。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていませんが、代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"空き瓶やグラス、マグカップなど、家にあるもので十分代用できます。特にジャムの空き瓶やワインボトルはおしゃれな一輪挿しになります。100均でもシンプルなガラス花瓶が手に入るため、最初は安価なものから始めるのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花の手入れが面倒そうですが、最低限何をすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最低限やるべきことは3つです。(1)届いたら茎を水中で斜めに切る（水切り）、(2)花瓶の水は2〜3日に1回替える、(3)直射日光とエアコンの風を避けて飾る。これだけで1週間以上楽しめます。切り花延命剤を入れるとさらに長持ちします。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -226,5 +233,6 @@ export default function DanseiGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

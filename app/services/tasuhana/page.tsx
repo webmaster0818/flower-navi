@@ -58,6 +58,13 @@ const userReviews = [
 /* ─── Star Rating Component ─── */
 function StarRating({ rating }: { rating: number }) {
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"+hana（タスハナ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/tasuhana/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"+hana（タスハナ）の評判・口コミ・料金プラン\",\"description\":\"+hana（タスハナ）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/tasuhana/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"タスハナ（+hana）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナには2つのプランがあります。「+act for flowers」は1回528円（税込）で花が3本届きます。「+live for flowers」は1回770円（税込）で花が5本届きます。いずれも送料330円が別途かかります。配送頻度は隔週（2週間に1回）です。\"}},{\"@type\":\"Question\",\"name\":\"タスハナの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナの解約はマイページから手続きできます。回数縛りがないため、いつでも解約可能です。次回配送日の5日前までに手続きを完了すれば、次回以降の配送が停止されます。一時的にお届けを止めたい場合はスキップ機能も利用できます。\"}},{\"@type\":\"Question\",\"name\":\"タスハナのお花はポスト投函ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、タスハナはポスト投函に対応しています。専用のコンパクトなパッケージに入った状態で届くため、不在時でも受け取れます。ポストのサイズが投函口の幅4cm以上、奥行き15cm以上あれば問題なく届きます。\"}},{\"@type\":\"Question\",\"name\":\"タスハナの「サステナブル」とはどういう意味ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナは、花市場で流通基準に満たない「規格外の花」を積極的に活用しています。茎の長さや花の大きさが規格と少し異なるだけで廃棄されてしまう花を、品質には問題のない状態で届けることで、フラワーロス（花の廃棄）の削減に貢献しています。花を飾ることが環境配慮にもつながる、サステナブルな仕組みです。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナでは届く花の種類を自分で選ぶことはできません。プロが旬の花を季節に合わせてセレクトしてお届けします。そのため、毎回異なる花との出会いを楽しめます。苦手な花やアレルギーがある場合は、カスタマーサポートに事前に相談することをおすすめします。\"}}]}" }} />
     <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
       {[1, 2, 3, 4, 5].map((star) => (
         <svg
@@ -70,6 +77,7 @@ function StarRating({ rating }: { rating: number }) {
         </svg>
       ))}
     </div>
+  </>
   );
 }
 

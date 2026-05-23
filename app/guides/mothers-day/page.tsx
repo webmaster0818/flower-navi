@@ -32,6 +32,13 @@ export default function MothersDayGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"母の日に贈る花のサブスクおすすめ\",\"item\":\"https://ohana-delivery.com/guides/mothers-day/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"母の日に贈る花のサブスクおすすめ\",\"description\":\"母の日に贈る花のサブスクおすすめ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/mothers-day/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクを母の日ギフトとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスでギフト対応が可能です。bloomeeではギフトチケットを購入して贈ることができ、受け取った方が好きなタイミングで花の定期便を始められます。HitoHanaではメッセージカード付きで届け先を指定でき、AND PLANTSもギフト対応に力を入れています。\"}},{\"@type\":\"Question\",\"name\":\"母の日ギフトにおすすめの予算はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花のサブスクのギフトとしては、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットなら金額を選べますし、HitoHanaなら1回あたり2,000〜5,000円のプランが選べます。1回分だけでなく、3ヶ月分をまとめてギフトにするとより喜ばれます。\"}},{\"@type\":\"Question\",\"name\":\"母の日に届くように日付指定できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって対応が異なります。HitoHanaでは配送日の日付指定が可能で、母の日当日に届けることができます。bloomeeのギフトチケットは受け取った方が自分で開始日を設定するため、日付指定ではなくチケット自体を母の日に渡す形になります。AND PLANTSも配送日の相談が可能です。\"}},{\"@type\":\"Question\",\"name\":\"遠方の母に贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、花のサブスクは配送先を指定できるため、離れて暮らすお母さんにも届けられます。日本全国対応（一部離島を除く）のサービスがほとんどですので、遠方でも問題ありません。事前にお届け先の住所を確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"母がお花のサブスクを気に入らなかった場合、解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"回数縛りのないサービス（medelu、AND PLANTS、HitoHanaなど）なら、いつでも解約可能です。bloomeeは4回の最低受け取り回数がありますが、ギフトチケットの場合はチケット分の回数のみで自動更新はされません。ギフトとして贈る場合は、回数が限定されているプランやチケットを選ぶと、お母さんが気軽に試せます。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -436,5 +443,6 @@ export default function MothersDayGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

@@ -36,6 +36,13 @@ export default function ShoboboiGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクは本当にしょぼい？\",\"item\":\"https://ohana-delivery.com/guides/shoboi/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクは本当にしょぼい？\",\"description\":\"花のサブスクは本当にしょぼい？ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/shoboi/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは本当にしょぼいのですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"「しょぼい」と感じるかどうかはプラン選びに大きく左右されます。最安プラン（500〜1,000円前後）では花が3本程度と少なめですが、2,000円以上のプランでは5〜8本のボリュームあるアレンジが届きます。また、サービスによって品質に差があるため、口コミや品質保証制度の有無を事前に確認することが重要です。\"}},{\"@type\":\"Question\",\"name\":\"届いた花がすぐ枯れてしまいます。対処法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いたらすぐに水切り（水中で茎を斜めにカット）を行い、切り花延命剤を入れた新鮮な水に飾りましょう。夏場はこまめな水替え（毎日が理想）が必須です。また、直射日光やエアコンの風が直接当たる場所を避けることで花持ちが大幅に改善します。クール便対応のサービスを選ぶのも効果的です。\"}},{\"@type\":\"Question\",\"name\":\"しょぼくないおすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ボリューム重視ならAND PLANTS（4〜6本、送料無料）、コスパ重視ならmedelu（698円〜、送料無料）、鮮度重視ならLIFFT（市場直送、3,300円）がおすすめです。いずれも品質保証制度があり、万が一の際も安心です。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いた花が傷んでいた場合に、無料で再送または返金してもらえる制度です。bloomee、medelu、AND PLANTSなど主要サービスの多くが導入しています。申請は写真を撮ってマイページやLINEから行うのが一般的で、期限はお届け日から2〜3日以内が多いです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた人が多いのはなぜですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"主な理由は「期待とのギャップ」「花のお手入れが面倒」「コスパへの不満」の3つです。特に最安プランで始めた方が本数の少なさに物足りなさを感じるケースが多いです。事前にプラン内容を確認し、お手入れ方法も理解した上で始めると継続率が高まります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -466,5 +473,6 @@ export default function ShoboboiGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

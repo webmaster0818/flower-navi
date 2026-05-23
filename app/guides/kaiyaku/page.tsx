@@ -178,6 +178,15 @@ export default function KaiyakuGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスク 解約方法と注意点\",\"item\":\"https://ohana-delivery.com/guides/kaiyaku/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスク 解約方法と注意点\",\"description\":\"花のサブスク 解約方法と注意点 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/kaiyaku/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスは途中解約が可能です。ただしbloomeeのように最低受取回数（4回）が設定されているサービスでは、4回受け取る前に解約すると残り回数分の料金が発生します。medelu、hanameku、日本総合園芸は回数縛りがないため、いつでも解約できます。AND PLANTSは都度払い方式のため、次回配送前にスキップまたは停止すれば追加料金はかかりません。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeはマイページから解約手続きが可能です。ログイン後、マイページの「プラン・登録情報の確認/変更」から「解約する」を選択します。ただし、4回の最低受取回数を満たしていない場合は解約できず、残り回数分の料金が発生します。解約ではなく「お届けをストップ」（休止）を選ぶことも可能で、休止中は料金が発生しません。解約と休止の違いを理解したうえで手続きしましょう。\"}},{\"@type\":\"Question\",\"name\":\"解約と休止の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"解約はサービスの利用を完全にやめることで、アカウント情報やクーポンなどが失われる場合があります。休止は一時的にお届けを止めることで、アカウントや設定はそのまま保持されます。再開したくなったときに休止のほうがスムーズに戻れます。迷っている段階であれば、まず休止を選ぶのがおすすめです。bloomeeやmedeluには休止機能があります。\"}},{\"@type\":\"Question\",\"name\":\"解約後に届いた花はどうなりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"解約手続きのタイミングによっては、既に手配済みの花が届くことがあります。多くのサービスでは「次回お届け日の○日前まで」に解約する必要があり、この期限を過ぎると次回分が届き、料金が発生します。解約を検討している場合は、次回お届け日を確認し、余裕を持って手続きしましょう。\"}},{\"@type\":\"Question\",\"name\":\"解約したら違約金はかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"今回紹介した5サービスにおいて、違約金が発生するのはbloomeeのみです。bloomeeは4回の最低受取回数があり、4回未満で解約すると残り回数分の花代＋送料が請求されます。それ以外のmedelu、AND PLANTS、hanameku、日本総合園芸には違約金はありません。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクを解約する人の主な理由は何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"よくある解約理由としては「花が好みに合わなかった」「コストが気になるようになった」「花のお手入れが負担になった」「引っ越しや生活環境の変化」「届く頻度が多すぎた」などがあります。配送頻度の変更やプラン変更で解決できる場合もあるため、解約前にサービスの設定を見直すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"一度解約しても再開できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ほとんどのサービスで再開が可能です。ただし、解約した場合は新規登録と同じ手続きが必要になることがあります。休止であれば、マイページから簡単にお届けを再開できるサービスが多いです。bloomee、medelu、hanamekuはいずれも再開に対応しています。以前のアカウント情報を使えるかどうかはサービスによって異なるため、公式サイトで確認してください。\"}},{\"@type\":\"Question\",\"name\":\"解約前にやっておくべきことはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"まず次回お届け日と解約期限を確認しましょう。次に、ポイントやクーポンが残っている場合は使い切ることをおすすめします。また、解約ではなく休止やスキップで対応できないかも検討してください。配送頻度の変更やプランのダウングレードで不満が解消される場合もあります。解約理由を明確にしたうえで、本当に解約が必要かどうかを判断しましょう。\"}}]}" }} />
+        {/* JSONLD_INJECTED_v1 #3 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"花のサブスク 解約方法と注意点\",\"description\":\"花のサブスク 解約方法と注意点 のステップを解説\"}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -803,5 +812,6 @@ export default function KaiyakuGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

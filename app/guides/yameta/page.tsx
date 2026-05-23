@@ -28,6 +28,13 @@ export default function YametaGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクをやめた人の理由と対処法\",\"item\":\"https://ohana-delivery.com/guides/yameta/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクをやめた人の理由と対処法\",\"description\":\"花のサブスクをやめた人の理由と対処法 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/yameta/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた後、また再開できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ほとんどのサービスで再開可能です。bloomee、medelu、AND PLANTSなどは解約後も再登録が可能で、以前のアカウント情報が残っている場合もあります。再開時にクーポンが配布されることもあるため、公式サイトやメルマガをチェックしておくとお得に再開できます。\"}},{\"@type\":\"Question\",\"name\":\"やめる前にスキップ機能で様子を見ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスがスキップ（配送停止）機能を提供しています。medeluは次回配送のスキップが可能、bloomeeもマイページからスキップできます。「しばらく休みたいけど完全にやめるのは迷う」という場合は、スキップ機能を活用して様子を見るのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"生花以外の選択肢として、ドライフラワーの定期便、観葉植物のサブスク（AND PLANTSなど）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を買う方法も、自分のペースで花を楽しめるためおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクを続けるメリットは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花との出会いがあること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。継続割引があるサービスもあり、長く続けるほどお得になる場合もあります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -309,5 +316,6 @@ export default function YametaGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

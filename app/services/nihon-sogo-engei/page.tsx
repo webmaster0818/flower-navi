@@ -87,6 +87,13 @@ const userReviews = [
 /* ─── Star Rating Component ─── */
 function StarRating({ rating }: { rating: number }) {
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"日本総合園芸の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/nihon-sogo-engei/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"日本総合園芸の評判・口コミ・料金プラン\",\"description\":\"日本総合園芸の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/nihon-sogo-engei/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花の定期便 by 日本総合園芸の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"月1回プランは2,200円（税込）から利用できます。送料は別途かかり、お届け先の地域によって異なります。より豪華な花束が届く上位プランも用意されており、月2回プランや季節の特別プランなども選択可能です。\"}},{\"@type\":\"Question\",\"name\":\"日本総合園芸の花の定期便はどのように届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"宅配便による手渡し配達です。ポスト投函ではないため、花が傷む心配が少なく、大きなボリュームの花束をそのままの状態で受け取ることができます。配達日時の指定も可能なので、確実に受け取れる日時を選びましょう。\"}},{\"@type\":\"Question\",\"name\":\"不在時に受け取れなかった場合はどうなりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"手渡し配達のため、不在の場合は宅配業者の不在票が届きます。不在票に記載の連絡先に電話するか、Webから再配達の日時を指定して受け取ることができます。お花の鮮度を保つため、できるだけ早めの再配達をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"どんなお花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"農家から直送される季節の新鮮なお花を、プロのフローリストがアレンジした本格的な花束が届きます。バラ、ガーベラ、カーネーション、ユリなどの定番の花から、季節限定の珍しい花まで幅広いラインナップが特徴です。届くお花の種類は毎回異なり、季節の移り変わりを楽しめます。\"}},{\"@type\":\"Question\",\"name\":\"解約・休止はいつでもできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"解約・休止はマイページからいつでも手続き可能です。次回配送日の5日前までに手続きすれば、次回分からの配送を停止できます。最低利用期間の縛りはないため、お試しで1回だけの利用も可能です。再開もマイページから簡単に行えます。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"関東・関西・中部エリアを中心に配送に対応しています。農家直送の鮮度を保つため、配送エリアが限定されている点にご注意ください。具体的な対応エリアは公式サイトの配送エリア確認ページで郵便番号を入力して確認できます。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ギフト用の定期便プランも用意されています。お届け先をプレゼント相手の住所に指定することで、毎月お花のギフトを届けることができます。メッセージカードの同封も可能で、母の日や誕生日のプレゼントとして人気があります。\"}},{\"@type\":\"Question\",\"name\":\"日本総合園芸とはどんな会社ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"日本総合園芸は、長年にわたり園芸・花卉事業を展開してきた老舗企業です。全国の契約農家と直接取引を行い、高品質な花の流通に実績があります。花の定期便サービスでは、その長年のネットワークを活かして農家直送の新鮮なお花を届けています。プロのフローリストが在籍しており、アレンジの品質にも定評があります。\"}}]}" }} />
     <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
       {[1, 2, 3, 4, 5].map((star) => (
         <svg
@@ -99,6 +106,7 @@ function StarRating({ rating }: { rating: number }) {
         </svg>
       ))}
     </div>
+  </>
   );
 }
 

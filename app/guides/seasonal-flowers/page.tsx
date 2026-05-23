@@ -151,6 +151,13 @@ export default function SeasonalFlowersPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"季節の花を楽しめる定期便\",\"item\":\"https://ohana-delivery.com/guides/seasonal-flowers/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"季節の花を楽しめる定期便\",\"description\":\"季節の花を楽しめる定期便 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/seasonal-flowers/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクでは季節に合ったお花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ほとんどの花のサブスクサービスでは、その時期に旬を迎える季節の花を中心にアレンジして届けてくれます。プロのフローリストが市場で仕入れた新鮮な旬の花を選ぶため、自分では選ばないような季節の花との出会いも楽しめます。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類を事前に知ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスでは届くまで花の種類がわからない「お任せスタイル」が基本です。ただし、bloomeeやmedeluなど一部サービスでは、発送時に届く花の名前やケア方法をメールやアプリで通知してくれます。届いた花の名前を知ることで、季節の花への理解も深まります。\"}},{\"@type\":\"Question\",\"name\":\"夏場に花のサブスクを利用しても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場でも利用可能ですが、鮮度管理には注意が必要です。多くのサービスではクール便対応や保水ゼリーの使用など、夏場の配送対策を行っています。届いたらすぐに水揚げし、直射日光を避けた涼しい場所に飾ることで、夏でも数日間楽しめます。エアコンの風が直接当たる場所は避けましょう。\"}},{\"@type\":\"Question\",\"name\":\"季節の花を長持ちさせるコツはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本は毎日の水替えと茎の切り戻し（水切り）です。春の花は涼しい場所に、夏の花は水に氷を入れると長持ちします。秋冬の花は比較的日持ちしますが、暖房の風が直接当たる場所は避けてください。付属の延命剤を使用し、傷んだ花びらや葉はこまめに取り除くことも大切です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは季節によって届く本数が変わりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的にプランごとの本数は季節によって変わりません。ただし、花の種類によってボリューム感は異なります。たとえば夏のひまわりは1本でも存在感がありますが、冬の小花は数本でコンパクトな印象になります。サービスによっては、季節に応じてグリーンや枝物を加えてボリュームを調整する場合もあります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届く花は自分で選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的にはフローリストのお任せですが、AND PLANTSでは花の色味の好みを伝えられるなど、一部カスタマイズに対応しているサービスもあります。季節の花を楽しむという観点では、プロにお任せすることで自分では選ばない花に出会える点がサブスクの魅力です。\"}},{\"@type\":\"Question\",\"name\":\"季節ごとにサブスクのプランを変更できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスではプラン変更や配送頻度の変更が可能です。たとえば、花が長持ちしにくい夏場は隔週配送にし、花が長持ちする冬場は月1回にするなど、季節に合わせた調整ができます。スキップ機能を使えば、旅行や帰省で不在の週は配送を止めることも可能です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは何月に始めるのがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どの月から始めても季節の花を楽しめますが、特におすすめなのは3月と10月です。3月は春の花が豊富で種類も多く、華やかなアレンジが届きやすい時期です。10月は秋の花が充実し、気温が下がって花が長持ちしやすくなります。もちろん、思い立ったときにすぐ始められるのがサブスクの良さです。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -816,5 +823,6 @@ export default function SeasonalFlowersPage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

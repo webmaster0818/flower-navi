@@ -87,6 +87,13 @@ const userReviews = [
 /* ─── Star Rating Component ─── */
 function StarRating({ rating }: { rating: number }) {
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/bloomee/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomee（ブルーミー）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeには3つのプランがあります。体験プランは1回980円（税込・送料385円別）、レギュラープランは1回2,180円（税込・送料385円別）、リッチプランは1回3,680円（税込・送料550円別）です。いずれも隔週または毎週の配送頻度を選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeの解約はマイページから手続きできます。ただし、初回契約時に4回分の最低受け取り回数が設定されており、4回受け取り前に解約すると残り回数分の料金が発生します。4回受け取り後は、次回配送日の前週金曜日までにマイページで解約手続きを行えば、追加料金なしで解約可能です。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeのお花が傷んで届いた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeには品質保証制度（再送保証）があります。届いたお花が傷んでいた場合、マイページの「品質保証フォーム」から写真を添付して申請すると、無料で新しいお花を再送してもらえます。申請期限はお届け日を含めて2日以内です。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeの配送頻度は「毎週」または「隔週」から選択できます。マイページからいつでも変更可能です。また、旅行や出張などで受け取れない週は「スキップ機能」を使って配送を1回飛ばすこともできます。スキップは無料で、マイページから簡単に設定できます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeのお花はポストに届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"体験プランとレギュラープランはポスト投函で届きます。専用のパッケージに入った状態で届くため、不在時でも受け取れます。リッチプランは花のボリュームが大きいため、宅配便（手渡し）での配送となります。ポスト投函の場合、ポストのサイズが投函口の幅が4.5cm以上、奥行きが15cm以上あれば問題なく届きます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeはどの花屋さんからお花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは全国200店舗以上の提携花屋と契約しており、お届け先の地域に近い花屋さんからお花が届きます。届く花屋さんは毎回異なる場合があり、さまざまなフローリストのアレンジを楽しめます。どの花屋さんから届いたかはお届け時のカードに記載されています。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeをプレゼントとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、bloomeeではギフト用の「花の定期便ギフトチケット」を販売しています。チケットを購入して相手に贈ると、相手が好きなタイミングでお花の定期便を始められます。母の日や誕生日のプレゼントとして人気があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの対応エリアはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島やごく一部の地域を除き、日本全国に配送対応しています。ポスト投函プランは日本郵便のゆうパケット、リッチプランは宅配便で届くため、通常の郵便・宅配が届く地域であれば利用可能です。\"}}]}" }} />
     <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
       {[1, 2, 3, 4, 5].map((star) => (
         <svg
@@ -99,6 +106,7 @@ function StarRating({ rating }: { rating: number }) {
         </svg>
       ))}
     </div>
+  </>
   );
 }
 

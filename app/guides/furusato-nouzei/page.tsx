@@ -32,6 +32,13 @@ export default function FurusatoNouzeiGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"ふるさと納税で選ぶ花の定期便\",\"item\":\"https://ohana-delivery.com/guides/furusato-nouzei/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"ふるさと納税で選ぶ花の定期便\",\"description\":\"ふるさと納税で選ぶ花の定期便 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/furusato-nouzei/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便は確定申告が必要ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ワンストップ特例制度を利用すれば確定申告は不要です。寄付先が5自治体以内であれば、各自治体に申請書を送るだけで手続きが完了します。6自治体以上に寄付する場合や、もともと確定申告が必要な方（自営業など）は確定申告で寄付金控除を申請してください。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類や色は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くの自治体の花の定期便では、届く花の種類や色を指定することはできません。地元で栽培された旬の花がセレクトされて届くのが一般的です。ただし、一部の自治体では「バラ中心」「季節の花束」など大まかなテーマを選べる場合があります。\"}},{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便はいつ届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"自治体やプランによって異なりますが、多くは申し込みから1〜2ヶ月後に初回が届き、その後は月1回ペースで届くのが一般的です。配送スケジュールは各自治体の返礼品ページに記載されているため、事前に確認しましょう。\"}},{\"@type\":\"Question\",\"name\":\"普通の花のサブスクとふるさと納税の花の定期便、どちらがお得ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"税控除が受けられる分、ふるさと納税の方が実質負担が少なくなります。ただし、ふるさと納税は年間の控除上限額があり、花の種類やアレンジの自由度は通常のサブスクの方が高いです。両方を併用し、ふるさと納税で季節の花を楽しみつつ、通常のサブスクで好みの花を補うのも一つの方法です。\"}},{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便で人気の自治体はどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"千葉県南房総市（温暖な気候で花の栽培が盛ん）、高知県（ユリやトルコキキョウの産地）、愛知県田原市（花き生産量日本一）などが人気です。各ふるさと納税ポータルサイトで「花 定期便」と検索すると、最新の返礼品が見つかります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -236,5 +243,6 @@ export default function FurusatoNouzeiGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

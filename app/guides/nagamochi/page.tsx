@@ -32,6 +32,15 @@ export default function NagamochiGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"切り花を長持ちさせる方法・コツ\",\"item\":\"https://ohana-delivery.com/guides/nagamochi/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"切り花を長持ちさせる方法・コツ\",\"description\":\"切り花を長持ちさせる方法・コツ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/nagamochi/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"切り花は平均で何日くらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"適切なお手入れをした場合、一般的な切り花は5〜10日程度持ちます。花の種類によって差があり、カーネーションやアルストロメリアは2週間近く持つこともあります。逆にガーベラやチューリップは5日程度と短めです。水切りと延命剤の使用で、平均1.5〜2倍長持ちさせることができます。\"}},{\"@type\":\"Question\",\"name\":\"切り花延命剤は必ず使った方がいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"使用を強くおすすめします。延命剤には花に必要な糖分（栄養）と殺菌剤が含まれており、水だけの場合と比べて花持ちが大幅に向上します。100均やホームセンターで手軽に購入でき、1回あたり数十円のコストで花の寿命が1.5〜2倍になるため、コスパも抜群です。\"}},{\"@type\":\"Question\",\"name\":\"花瓶の水はどのくらいの頻度で替えるべきですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"延命剤を使っている場合は2〜3日に1回、使っていない場合は毎日替えるのが理想です。夏場は水が腐りやすいため、延命剤使用時でも毎日〜2日に1回は替えましょう。水替えの際に花瓶の内側もスポンジで洗い、茎のぬめりも洗い流すと効果的です。\"}},{\"@type\":\"Question\",\"name\":\"花がしおれてきたら復活させる方法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"「湯あげ」という方法が効果的です。新聞紙で花全体を包み、茎の先端2〜3cmを沸騰したお湯に10〜20秒間つけます。その後すぐに冷たい水に移し、2時間ほど深水につけておくと、しおれた花が復活することがあります。ただし、すべての花に効くわけではなく、完全に枯れた花は復活しません。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届いた花を長持ちさせるコツは？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いたらすぐに開封し、(1)茎を水中で斜めにカット（水切り）、(2)延命剤を入れた新鮮な水に飾る、(3)直射日光・エアコンの風を避ける場所に置く、の3ステップが基本です。特に夏場は届いた直後の処理が花持ちを大きく左右するため、できるだけ早く水に入れましょう。\"}}]}" }} />
+        {/* JSONLD_INJECTED_v1 #3 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"切り花を長持ちさせる方法・コツ\",\"description\":\"切り花を長持ちさせる方法・コツ のステップを解説\"}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -224,5 +233,6 @@ export default function NagamochiGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

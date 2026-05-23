@@ -71,6 +71,15 @@ export default function KabinGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクに合う花瓶おすすめ\",\"item\":\"https://ohana-delivery.com/guides/kabin/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクに合う花瓶おすすめ\",\"description\":\"花のサブスクに合う花瓶おすすめ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/kabin/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクに合う花瓶のサイズはどれくらいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花のサブスクの最安プラン（3〜4本）なら高さ10〜15cmの小さめの花瓶や一輪挿しが最適です。中間プラン（5〜8本）なら高さ15〜20cmの花瓶、上位プラン（8本以上）なら高さ20〜25cmの花瓶が目安です。口が小さめの花瓶を選ぶと、少ない本数でもバランスよく飾れます。\"}},{\"@type\":\"Question\",\"name\":\"100均の花瓶でも大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、100均の花瓶でも十分に使えます。特にダイソーやセリアのガラス製一輪挿しはシンプルなデザインで、どんな花にも合わせやすいです。まずは100均で数種類のサイズを揃えて、花を分けて飾るのがおすすめです。慣れてきたら、お気に入りの花瓶にアップグレードすると楽しみが広がります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶のお手入れ方法を教えてください\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花を替えるタイミングで、花瓶の内側を食器用洗剤とスポンジで洗いましょう。口の狭い花瓶は、水と少量の漂白剤を入れてしばらく浸け置きすると、ぬめりや細菌を除去できます。週に1回は漂白剤で消毒するのが理想的です。清潔な花瓶は花を長持ちさせる基本です。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていない場合、何で代用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ジャムの空き瓶、ワインボトル、グラス、マグカップなど、水が入る容器なら何でも代用可能です。特に口の小さい空き瓶は一輪挿しにぴったりです。ペットボトルの上部をカットしたものに布やペーパーを巻くだけでも、おしゃれな花瓶になります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を複数持つメリットはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"大きなメリットがあります。花を分けて飾ることで、(1)部屋の複数箇所に花を配置でき華やかさが増す、(2)少ない本数でもバランスよく見える、(3)花の種類ごとに分けると長持ちする（エチレンガス対策）。サイズ違いで3つ程度持っておくと、届いた花に合わせて柔軟に飾れます。\"}}]}" }} />
+        {/* JSONLD_INJECTED_v1 #3 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"花のサブスクに合う花瓶おすすめ\",\"description\":\"花のサブスクに合う花瓶おすすめ のステップを解説\"}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -262,5 +271,6 @@ export default function KabinGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }

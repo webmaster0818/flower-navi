@@ -129,6 +129,13 @@ export default function OshareGuidePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+        {/* JSONLD_INJECTED_v1 #0 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"おしゃれな花のサブスクおすすめ\",\"item\":\"https://ohana-delivery.com/guides/oshare/\"}]}" }} />
+        {/* JSONLD_INJECTED_v1 #1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"おしゃれな花のサブスクおすすめ\",\"description\":\"おしゃれな花のサブスクおすすめ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/oshare/\"}}" }} />
+        {/* JSONLD_INJECTED_v1 #2 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"おしゃれな花のサブスクの選び方は？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"おしゃれさで選ぶなら、(1)花の組み合わせ・色合いのセンス、(2)パッケージや梱包のデザイン性、(3)SNSでの投稿写真の雰囲気、(4)花瓶やインテリアとの相性の4点をチェックしましょう。公式サイトやInstagramで実際に届いた花の写真を確認するのが最も確実です。\"}},{\"@type\":\"Question\",\"name\":\"インスタ映えする花のサブスクはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Instagramでの投稿数・いいね数で見ると、bloomeeがSNS人気No.1です。提携花屋200店以上のアレンジが届くため、毎回異なるテイストの写真が撮れます。AND PLANTSはプロのフローリストによるハイセンスなアレンジで、洗練された写真が撮りやすいのが特徴です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届く花は自分で選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスではプロが旬の花をセレクトして届けるため、基本的に花の種類は選べません。ただし、AND PLANTSでは好みの色味やテイストの傾向を登録でき、それに基づいたアレンジが届きます。サプライズ感を楽しむのも花のサブスクの魅力の一つです。\"}},{\"@type\":\"Question\",\"name\":\"おしゃれに飾るためのおすすめの花瓶はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"透明なガラス製の花瓶が最も万能で、どんな花にも合います。茎の断面や水の清涼感が見えることで、写真映えも抜群です。陶器やマットな質感の花瓶はナチュラルな雰囲気に、金属製のフラワーベースはモダンなインテリアに合います。複数の花瓶を使い分けると、飾り方の幅が広がります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはプレゼントとして贈れますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスがギフト対応しています。AND PLANTSはギフト用のラッピングや観葉植物のギフトにも対応しています。bloomeeもギフトプランがあり、相手の住所に直接届けることが可能です。おしゃれなパッケージで届くため、贈り物として喜ばれるでしょう。\"}},{\"@type\":\"Question\",\"name\":\"賃貸のワンルームでもおしゃれに飾れますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"もちろん飾れます。小さなテーブルや窓辺、キッチンカウンターなど、わずかなスペースがあれば十分です。bloomeeの体験プランは3本程度の少量で届くため、小さな花瓶でコンパクトに飾れます。壁掛けのフラワーベースやドライフラワーとして吊るす方法も、狭い空間を有効活用するテクニックです。\"}},{\"@type\":\"Question\",\"name\":\"届いた花をおしゃれに長持ちさせるコツはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"到着後すぐに茎を斜めにカットし、清潔な水に入れることが基本です。水は毎日交換し、水に浸かる部分の葉は取り除きましょう。直射日光やエアコンの風が直接当たる場所は避け、涼しい場所に置くと長持ちします。栄養剤を使うと花の持ちが1.5倍ほど延びることもあります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクとドライフラワーを組み合わせるのはアリですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"非常におすすめの組み合わせです。サブスクで届いた生花を楽しんだ後、ドライフラワーにして飾り続けることで、部屋に常に花がある暮らしを実現できます。特にバラ、アジサイ、スターチスなどはドライフラワーにしやすい花です。生花とドライフラワーを並べて飾ると、空間に奥行きが生まれます。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -768,5 +775,6 @@ export default function OshareGuidePage() {
         </div>
       </footer>
     </div>
+  </>
   );
 }
