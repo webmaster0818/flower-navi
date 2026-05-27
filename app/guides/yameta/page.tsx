@@ -261,6 +261,45 @@ export default function YametaGuidePage() {
           </div>
         </section>
 
+        {/* サービス別 解約難易度比較表 */}
+        <section className="py-12 md:py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              サービス別 解約のしやすさ早見表
+            </h2>
+            <p className="text-sm text-[#666] mb-6">
+              「やめたい」と思った時にすぐ解約できるかは事前に知っておきたいポイント。回数縛り・違約金・解約方法をサービス別にまとめました。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
+                <thead className="bg-[#4A7C59] text-white">
+                  <tr>
+                    <th className="px-3 py-2 text-left">サービス</th>
+                    <th className="px-3 py-2 text-left">回数縛り</th>
+                    <th className="px-3 py-2 text-left">違約金</th>
+                    <th className="px-3 py-2 text-left">解約手続き</th>
+                    <th className="px-3 py-2 text-left">難易度</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">bloomee</td><td className="px-3 py-2">4回</td><td className="px-3 py-2 text-[#C56565]">あり (残回数分)</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#C56565]">やや厳しい</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">medelu</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから即解約</td><td className="px-3 py-2 text-[#4A7C59]">非常に簡単</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">HitoHana</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">AND PLANTS</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">LIFFT</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
+                  <tr><td className="px-3 py-2 font-bold">タスハナ</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#888] mt-4">
+              ※ 2026年5月時点の各社公式情報より。最新条件は各サービスの公式サイトでご確認ください。
+            </p>
+            <p className="text-sm text-[#666] mt-6 leading-relaxed">
+              <strong>結論:</strong> いつでもやめたいなら<a href="/services/medelu" className="text-[#4A7C59] underline">medelu</a>がベスト。bloomeeは初回4回縛りがあるため、お試し感覚で始めるならまずmedeluから入って、本格的に始めたくなったらbloomeeに乗り換えるのが安全な選択です。
+            </p>
+          </div>
+        </section>
+
         {/* ─── Summary + CTA ─── */}
         <section className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">

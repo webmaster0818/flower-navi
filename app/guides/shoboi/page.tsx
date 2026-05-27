@@ -394,6 +394,50 @@ export default function ShoboboiGuidePage() {
           </div>
         </section>
 
+        {/* 口コミの見方・写真確認のポイント */}
+        <section className="py-12 md:py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              「しょぼい」を回避する口コミ・写真の確認方法
+            </h2>
+            <p className="text-sm text-[#666] mb-6">
+              SNSやレビューには「しょぼい」「思ったより少ない」という声が散見されますが、これは多くの場合<strong>プラン選びのミスマッチ</strong>です。契約前に以下5つのポイントで実態を確認しましょう。
+            </p>
+            <div className="space-y-4">
+              <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
+                <h3 className="font-bold text-[#333] mb-2">① Instagramの実体験投稿を時系列で確認</h3>
+                <p className="text-sm text-[#666] leading-relaxed">
+                  「#bloomee」「#medelu」「#anddplants」などのハッシュタグで検索し、<strong>最新3ヶ月以内の投稿を10件以上</strong>確認。プロモ投稿ではなく一般ユーザーの実体験投稿に絞ると、リアルな花のボリュームがわかります。
+                </p>
+              </div>
+              <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
+                <h3 className="font-bold text-[#333] mb-2">② 同じプラン名で複数枚の写真を比較</h3>
+                <p className="text-sm text-[#666] leading-relaxed">
+                  季節や提携花屋によって届く花は変わります。<strong>同じプラン名で最低5パターンの実物写真</strong>を見て、平均的なボリュームを把握。最良ケースだけを期待すると「しょぼい」と感じやすくなります。
+                </p>
+              </div>
+              <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
+                <h3 className="font-bold text-[#333] mb-2">③ 「やめた」「解約」レビューを必ずチェック</h3>
+                <p className="text-sm text-[#666] leading-relaxed">
+                  ポジティブなレビューだけでなく、<strong>解約した人の理由</strong>も確認。「花の本数が思ったより少ない」「届くまで何が来るかわからない」等の不満は事前に把握しておけば期待値調整できます。
+                </p>
+              </div>
+              <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
+                <h3 className="font-bold text-[#333] mb-2">④ 写真サイズと実物サイズの比較</h3>
+                <p className="text-sm text-[#666] leading-relaxed">
+                  公式サイトの花写真はスタジオ撮影で<strong>実物より大きく華やかに見える傾向</strong>。一般ユーザーが自宅の食卓やキッチンで撮影した写真の方が実物に近いボリューム感です。
+                </p>
+              </div>
+              <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
+                <h3 className="font-bold text-[#333] mb-2">⑤ 価格帯と花本数の相場を理解</h3>
+                <p className="text-sm text-[#666] leading-relaxed">
+                  花のサブスクは<strong>1,000円台で3〜4本、2,000円台で5〜8本、3,000円以上で8本以上</strong>が相場。これ以下の本数なら「しょぼい」と感じる可能性大。期待値は価格帯に合わせて。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ─── Summary + CTA ─── */}
         <section id="summary" className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
