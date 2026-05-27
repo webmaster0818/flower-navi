@@ -92,6 +92,8 @@ function StarRating({ rating }: { rating: number }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"AND PLANTS（アンドプランツ）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"AND PLANTS（アンドプランツ）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/and-plants/\"}" }} />
         {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"AND PLANTS（アンドプランツ）\",\"description\":\"AND PLANTS（アンドプランツ）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"reviewCount\":5,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"S.Y.\"},\"datePublished\":\"2026-2-01\",\"reviewBody\":\"インテリアにこだわりがあるので、お花もセンスの良いものが欲しくてAND PLANTSを選びました。毎回届くブーケがまるで花屋さんのディスプレイのようなクオリティで、部屋の雰囲気が一気に良くなります。独自梱包のおかげか、届いたお花がいつも新鮮なのも嬉しいポイントです。\",\"name\":\"とにかくおしゃれなブーケに大満足\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"K.H.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"花のサブスクは気になっていたけど価格がネックでした。AND PLANTSの初回500円OFFクーポンを使って1,480円でStandardプランを試したところ、想像以上にボリュームのあるおしゃれなブーケが届いて感動。隔週コースにしてコストを抑えつつ楽しんでいます。\",\"name\":\"初回500円OFFで気軽に試せた\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"M.T.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"月1回コースで利用しています。毎週だとお手入れが大変ですが、月1回なら無理なく続けられるのがありがたいです。Mediumプランにしていますが、花の種類も豊富でボリュームも十分。お花だけでなく観葉植物も一緒にサイトで購入できるので、リビングがすっかり緑と花でいっぱいになりました。\",\"name\":\"配送頻度が選べるのが便利\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.N.\"},\"datePublished\":\"2025-11-01\",\"reviewBody\":\"デザイン性は間違いなくトップクラスです。ただ、Standardプランでも1,980円なので他社と比べるとやや割高感があります。同価格帯で比較するとbloomeeのレギュラープランの方が安いですが、AND PLANTSの方が見た目のクオリティは上。おしゃれさを取るか、コスパを取るかの選択ですね。\",\"name\":\"おしゃれだけど価格はやや高め\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"R.I.\"},\"datePublished\":\"2026-3-01\",\"reviewBody\":\"以前別のサービスを使っていたときはお花がしおれて届くこともありましたが、AND PLANTSに変えてからは一度もそういったことがありません。独自の梱包システムのおかげだと思います。宅配便なので受け取りは必要ですが、鮮度を考えると納得です。都度払いで回数縛りがないのも安心。\",\"name\":\"梱包が丁寧で鮮度が良い\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}}]}" }} />
+                {/* CANCEL_FLOW_SCHEMA_v1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"AND PLANTS（アンドプランツ）の解約手順\",\"description\":\"AND PLANTS（アンドプランツ）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"AND PLANTS公式サイトのマイページからログイン。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便管理」を選択\",\"text\":\"マイページから定期便管理画面へ。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期便を解約する」をクリック\",\"text\":\"画面の指示に従って解約フローへ。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由選択(任意)とフィードバック\",\"text\":\"アンケートに任意で回答。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約を確定する」をクリック\",\"text\":\"次回配送予定日の5日前までに完了させてください。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"確認メール受信\",\"text\":\"AND PLANTSから解約完了通知メールが届きます。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/and-plants/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
@@ -702,6 +704,61 @@ export default function AndPlantsPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+                {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
+        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              AND PLANTS（アンドプランツ）の解約手順【完全ガイド】
+            </h2>
+            <p className="text-sm text-[#666] mb-6">回数縛りなし。次回配送予定日の5日前までに手続きを。</p>
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">AND PLANTS公式サイトのマイページからログイン。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「定期便管理」を選択</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">マイページから定期便管理画面へ。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「定期便を解約する」をクリック</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">画面の指示に従って解約フローへ。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">理由選択(任意)とフィードバック</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">アンケートに任意で回答。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「解約を確定する」をクリック</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">次回配送予定日の5日前までに完了させてください。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">確認メール受信</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">AND PLANTSから解約完了通知メールが届きます。</p>
+                  </div>
+                </div>
+            </div>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法はAND PLANTS（アンドプランツ）公式サイトでご確認ください。</p>
           </div>
         </section>
 

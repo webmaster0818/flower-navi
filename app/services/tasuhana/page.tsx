@@ -63,6 +63,8 @@ function StarRating({ rating }: { rating: number }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"+hana（タスハナ）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"+hana（タスハナ）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/tasuhana/\"}" }} />
         {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"+hana（タスハナ）\",\"description\":\"+hana（タスハナ）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.0\",\"reviewCount\":3,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.K.\"},\"datePublished\":\"2026-3-01\",\"reviewBody\":\"月1,000円以下でお花のある暮らしが始められるのが嬉しいです。3本でも小さな花瓶に飾るとかわいくて、一人暮らしの部屋にちょうど良いサイズ感。花の廃棄を減らすサステナブルな取り組みも共感できます。\",\"name\":\"528円でこの満足度はすごい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"T.M.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"規格外の花を活用しているということですが、届く花は全く問題ない品質です。むしろ「この花が捨てられるなんて」と思うくらい綺麗な花もあります。環境に配慮しながら花を楽しめるのは気分が良いです。送料が別途かかるのが少し残念ですが、総額858円なら十分お手頃です。\",\"name\":\"エコな花のサブスクとして応援したい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"N.S.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"+actプランの3本は、正直なところ少し物足りなさを感じます。もう少しボリュームが欲しい方は+liveプラン（5本）の方がおすすめかもしれません。ただ、この価格帯で定期的にお花が届くのは他にあまりないので、入門としては良いと思います。\",\"name\":\"コスパは良いけど本数は物足りない\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}}]}" }} />
+                {/* CANCEL_FLOW_SCHEMA_v1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"+hana（タスハナ）の解約手順\",\"description\":\"+hana（タスハナ）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"タスハナ公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便管理」を開く\",\"text\":\"メニューから定期便管理画面に進む。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約する」を選択\",\"text\":\"解約リンクをクリック。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由を選択(任意)\",\"text\":\"フィードバックは任意で。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を確定\",\"text\":\"次回配送日の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知の確認\",\"text\":\"完了メールで確認。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"+hana（タスハナ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/tasuhana/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
@@ -507,6 +509,61 @@ export default function TasuhanaServicePage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+                {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
+        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              +hana（タスハナ）の解約手順【完全ガイド】
+            </h2>
+            <p className="text-sm text-[#666] mb-6">回数縛りなし。マイページから即解約可能。</p>
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">タスハナ公式サイトのマイページへ。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「定期便管理」を開く</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">メニューから定期便管理画面に進む。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「解約する」を選択</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">解約リンクをクリック。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">理由を選択(任意)</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">フィードバックは任意で。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">解約を確定</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">次回配送日の数日前までに完了。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">解約完了通知の確認</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">完了メールで確認。</p>
+                  </div>
+                </div>
+            </div>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法は+hana（タスハナ）公式サイトでご確認ください。</p>
           </div>
         </section>
 

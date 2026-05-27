@@ -52,6 +52,8 @@ export default function HitoHanaPage() {
     <>
                 {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"HitoHana（ヒトハナ）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"HitoHana（ヒトハナ）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/hitohana/\"}" }} />
+                {/* CANCEL_FLOW_SCHEMA_v1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"HitoHana（ヒトハナ）の解約手順\",\"description\":\"HitoHana（ヒトハナ）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"HitoHana公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便」セクションを開く\",\"text\":\"契約中の定期便プランを表示。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約手続き」をクリック\",\"text\":\"解約フォームへ進みます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由・改善点を入力(任意)\",\"text\":\"フィードバックは任意。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を最終確定\",\"text\":\"次回配送日の3日前までに手続き完了を。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"完了メール受信\",\"text\":\"解約完了の通知メールが届きます。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"HitoHana（ヒトハナ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hitohana/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
@@ -498,6 +500,61 @@ export default function HitoHanaPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+                {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
+        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              HitoHana（ヒトハナ）の解約手順【完全ガイド】
+            </h2>
+            <p className="text-sm text-[#666] mb-6">回数縛りなし。次回配送日の3日前までに手続きを。</p>
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">HitoHana公式サイトのマイページへ。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「定期便」セクションを開く</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">契約中の定期便プランを表示。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「解約手続き」をクリック</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">解約フォームへ進みます。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">理由・改善点を入力(任意)</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">フィードバックは任意。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">解約を最終確定</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">次回配送日の3日前までに手続き完了を。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">完了メール受信</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">解約完了の通知メールが届きます。</p>
+                  </div>
+                </div>
+            </div>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法はHitoHana（ヒトハナ）公式サイトでご確認ください。</p>
           </div>
         </section>
 

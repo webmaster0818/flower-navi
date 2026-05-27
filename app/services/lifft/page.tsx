@@ -63,6 +63,8 @@ function StarRating({ rating }: { rating: number }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"LIFFT（リフト）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"LIFFT（リフト）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/lifft/\"}" }} />
         {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"LIFFT（リフト）\",\"description\":\"LIFFT（リフト）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.3\",\"reviewCount\":3,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"S.Y.\"},\"datePublished\":\"2026-2-01\",\"reviewBody\":\"以前他のサブスクを使っていましたが、LIFFTに変えてから花の持ちが格段に良くなりました。市場直送のクール便なので、届いた時点の花がとにかく元気。2週間以上楽しめることもあります。月1回なので負担も少なく、届くのが毎月の楽しみです。\",\"name\":\"鮮度が全然違います\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"K.H.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"花と一緒に届くLIFFT Journalがとても素敵です。花の名前や産地を知ると愛着が湧きますし、お手入れ方法も参考になります。花だけでなく「知る楽しみ」がセットになっているのは他にはないサービスだと思います。ただ、3,300円は安くはないので、予算に余裕がある方向けかもしれません。\",\"name\":\"Journalが嬉しいサプライズ\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"M.A.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"届いた箱のデザインがシンプルでおしゃれなので、開封する瞬間がワクワクします。花自体もセンスが良い組み合わせで、そのまま花瓶に入れるだけでインテリアになります。月1回なのでもう少し頻度を選べるとさらに嬉しいのですが、品質には大満足です。\",\"name\":\"パッケージがおしゃれ\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}}]}" }} />
+                {/* CANCEL_FLOW_SCHEMA_v1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"LIFFT（リフト）の解約手順\",\"description\":\"LIFFT（リフト）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"LIFFT公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期購入の管理」を開く\",\"text\":\"メニューから定期購入管理画面へ。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期購入を解約」をクリック\",\"text\":\"スキップにするか解約にするか選択できます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由選択(任意)\",\"text\":\"アンケートに任意で回答。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を最終確定\",\"text\":\"次回配送日の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"完了確認メール\",\"text\":\"LIFFTから解約完了通知が届きます。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"LIFFT（リフト）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/lifft/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
@@ -489,6 +491,61 @@ export default function LifftServicePage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+                {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
+        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              LIFFT（リフト）の解約手順【完全ガイド】
+            </h2>
+            <p className="text-sm text-[#666] mb-6">回数縛りなし。スキップ機能で一時停止も可能。</p>
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">LIFFT公式サイトのマイページへ。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「定期購入の管理」を開く</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">メニューから定期購入管理画面へ。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「定期購入を解約」をクリック</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">スキップにするか解約にするか選択できます。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">理由選択(任意)</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">アンケートに任意で回答。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">解約を最終確定</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">次回配送日の数日前までに完了。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">完了確認メール</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">LIFFTから解約完了通知が届きます。</p>
+                  </div>
+                </div>
+            </div>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法はLIFFT（リフト）公式サイトでご確認ください。</p>
           </div>
         </section>
 

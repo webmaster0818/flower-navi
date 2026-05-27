@@ -92,6 +92,8 @@ function StarRating({ rating }: { rating: number }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"日本総合園芸\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"日本総合園芸\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/nihon-sogo-engei/\"}" }} />
         {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"日本総合園芸\",\"description\":\"日本総合園芸は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"reviewCount\":5,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"S.Y.\"},\"datePublished\":\"2026-2-01\",\"reviewBody\":\"農家直送というだけあって、届くお花の鮮度が段違いです。近所の花屋で買うと2〜3日で元気がなくなることもありましたが、日本総合園芸のお花は1週間以上きれいに咲いてくれます。プロのアレンジもセンスが良くて、毎月届くのが本当に楽しみです。手渡しで届くので花が傷む心配もありません。\",\"name\":\"花屋さんで買うより断然新鮮です\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"T.M.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"他社のポスト投函型を使っていましたが、物足りなくてこちらに切り替えました。届く花束のボリュームが全然違います。リビングに飾ると部屋の雰囲気がパッと華やかになります。ただ、手渡しなので在宅していないと受け取れないのが少し不便です。配達日時を指定できるので、休日に届くようにしています。\",\"name\":\"ボリューム満点で飾り映えする\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.K.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"園芸の老舗が運営しているという安心感で選びました。期待通り、届くお花の品質が安定しています。季節ごとに旬のお花が届くので、四季を感じられるのも嬉しいポイント。フローリストさんのアレンジも毎回テーマがあるようで、そのまま飾るだけで様になります。お花好きの友人にもすすめました。\",\"name\":\"老舗ならではの安心感があります\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"M.H.\"},\"datePublished\":\"2025-11-01\",\"reviewBody\":\"実家の母にプレゼントしようと思ったのですが、配送エリア外で届けられませんでした。自宅用には大満足しているだけに残念です。あと送料を含めると月3,000円を超えるので、コスパだけで見ると他社より高めかなと思います。ただ、届くお花の鮮度と品質を考えれば納得の価格です。\",\"name\":\"品質は最高だけど配送エリアが惜しい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"R.I.\"},\"datePublished\":\"2026-3-01\",\"reviewBody\":\"初回に届いた花束を見て、そのボリュームと美しさに感動しました。正直、2,200円でこのクオリティは驚きです。花屋さんで同じレベルの花束を買うと3,000円以上はすると思います。月1回なので負担も少なく、ちょうど前の花が枯れる頃に新しい花が届くサイクルが心地良いです。\",\"name\":\"本格的な花束が届いて感動しました\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}}]}" }} />
+                {/* CANCEL_FLOW_SCHEMA_v1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"日本総合園芸 花の定期便の解約手順\",\"description\":\"日本総合園芸 花の定期便の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"公式サイトにアクセス\",\"text\":\"日本総合園芸の公式サイトを開く。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"お問い合わせフォームまたは電話\",\"text\":\"解約申請はお問い合わせ経由。電話番号も公式サイトに記載。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"お客様情報を伝達\",\"text\":\"氏名・登録メールアドレス・解約理由を伝えます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約手続きの確認\",\"text\":\"担当者からの折返し連絡で詳細確認。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約完了の通知\",\"text\":\"次回配送停止の確認メールを受信。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"日本総合園芸の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/nihon-sogo-engei/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
@@ -703,6 +705,54 @@ export default function NihonSogoEngeiPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+                {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
+        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              日本総合園芸 花の定期便の解約手順【完全ガイド】
+            </h2>
+            <p className="text-sm text-[#666] mb-6">お問い合わせフォームまたは電話での解約申請が必要。</p>
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">公式サイトにアクセス</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">日本総合園芸の公式サイトを開く。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">お問い合わせフォームまたは電話</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">解約申請はお問い合わせ経由。電話番号も公式サイトに記載。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">お客様情報を伝達</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">氏名・登録メールアドレス・解約理由を伝えます。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">解約手続きの確認</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">担当者からの折返し連絡で詳細確認。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">解約完了の通知</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">次回配送停止の確認メールを受信。</p>
+                  </div>
+                </div>
+            </div>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法は日本総合園芸 花の定期便公式サイトでご確認ください。</p>
           </div>
         </section>
 

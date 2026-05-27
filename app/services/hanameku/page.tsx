@@ -92,6 +92,8 @@ function StarRating({ rating }: { rating: number }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"hanameku（ハナメク）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"hanameku（ハナメク）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/hanameku/\"}" }} />
         {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"hanameku（ハナメク）\",\"description\":\"hanameku（ハナメク）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"reviewCount\":5,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"S.Y.\"},\"datePublished\":\"2026-2-01\",\"reviewBody\":\"以前は別の花のサブスクを使っていましたが、ハナメクに切り替えてからお花の持ちが格段に良くなりました。市場から直接届くので、花屋さんを経由するサービスより明らかに鮮度が違います。1週間以上きれいに咲いてくれるので、コスパも良いと感じています。\",\"name\":\"市場直送だから鮮度が全然違います\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"T.M.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"届いたお花の名前や産地がアプリで確認できるのが気に入っています。今まで花の名前を知らずに飾っていましたが、ハナメクを始めてからは花の品種に詳しくなりました。お花の知識が増えるのも楽しさのひとつです。スタンダードプランで十分満足しています。\",\"name\":\"アプリで花の情報がわかるのが嬉しい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.K.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"初めての花のサブスクだったので、いつでも解約できるハナメクを選びました。結局気に入ってずっと続けていますが、縛りがないという安心感は大きいです。ライトプランは858円で始められるのでお試しにぴったり。ただ、ライトプランだと花の本数が少なめなので、スタンダードに変更しようか検討中です。\",\"name\":\"回数縛りなしが決め手でした\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"M.H.\"},\"datePublished\":\"2026-3-01\",\"reviewBody\":\"フラワーアレンジメントに興味があったので、セルフプランを利用しています。茎が長めの状態で届くので、自分で好きな長さに切って生けられるのが最高です。市場直送なのでお花も新鮮で、生花店で買うのと変わらないクオリティ。毎回届くのが楽しみです。\",\"name\":\"セルフプランで自分好みにアレンジ\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"R.I.\"},\"datePublished\":\"2025-11-01\",\"reviewBody\":\"お花の鮮度やクオリティは文句なしです。ただ、以前引っ越した際に新しい住所が配送エリア外だったことがあり、一時的に利用できなくなりました。現在の住所では問題なく届いていますが、引っ越しの予定がある方は事前にエリア確認をおすすめします。\",\"name\":\"お花は良いけど配送エリアに注意\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}}]}" }} />
+                {/* CANCEL_FLOW_SCHEMA_v1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"hanameku（ハナメク）の解約手順\",\"description\":\"hanameku（ハナメク）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"hanameku公式サイトの「マイページ」へ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便の管理」を開く\",\"text\":\"メニューから定期便管理画面へ移動。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約する」を選択\",\"text\":\"解約リンクをクリック。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由入力(任意)\",\"text\":\"フィードバックは任意で。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約する」を最終確定\",\"text\":\"次回配送の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知の確認\",\"text\":\"メールで完了通知が届きます。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hanameku/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
@@ -701,6 +703,61 @@ export default function HanamekuPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+                {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
+        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              hanameku（ハナメク）の解約手順【完全ガイド】
+            </h2>
+            <p className="text-sm text-[#666] mb-6">回数縛りなし。マイページから即解約可能。</p>
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">hanameku公式サイトの「マイページ」へ。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「定期便の管理」を開く</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">メニューから定期便管理画面へ移動。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「解約する」を選択</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">解約リンクをクリック。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">理由入力(任意)</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">フィードバックは任意で。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「解約する」を最終確定</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">次回配送の数日前までに完了。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">解約完了通知の確認</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">メールで完了通知が届きます。</p>
+                  </div>
+                </div>
+            </div>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法はhanameku（ハナメク）公式サイトでご確認ください。</p>
           </div>
         </section>
 

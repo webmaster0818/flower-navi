@@ -92,6 +92,8 @@ function StarRating({ rating }: { rating: number }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"medelu（メデル）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"medelu（メデル）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/medelu/\"}" }} />
         {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"medelu（メデル）\",\"description\":\"medelu（メデル）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"reviewCount\":5,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"S.H.\"},\"datePublished\":\"2026-2-01\",\"reviewBody\":\"他のサービスと比較してmedeluが圧倒的にコスパが良かったので始めました。Miniサイズでも可愛いお花が3本届くし、送料無料なので本当に698円だけで済むのが嬉しいです。一人暮らしの小さな部屋にはちょうど良いボリュームで、毎回届くのが楽しみになりました。\",\"name\":\"698円で送料無料は本当にお得！\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"T.M.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"MODERNコースを利用しています。モノトーンの部屋にも合うようなシックなお花が届くので、インテリアの邪魔にならず気に入っています。30年以上の経験があるプロが選んでいるだけあって、色合わせのセンスが良いです。ただ、届く前にどんなお花かわからないのが少し残念。\",\"name\":\"部屋に合わせてコースを選べるのが良い\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.K.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"medeluは市場から直送してくれるので、届いたお花がとても元気でびっくりしました。以前別のサービスを使っていたときは3日くらいで元気がなくなることもありましたが、medeluのお花は1週間以上きれいに咲いてくれます。回数縛りもないので気楽に続けられます。\",\"name\":\"市場直送だからか花持ちが良い\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"Y.O.\"},\"datePublished\":\"2025-11-01\",\"reviewBody\":\"コスパは文句なしですが、すべてポスト投函のみで手渡し対応がないのが少し残念です。ボリュームのあるお花を頼みたくても、ポストに入るサイズに限られるのがネック。Luxeサイズにしても宅配便では届きません。ただ698円から始められる手軽さは魅力的なので、入門としてはおすすめです。\",\"name\":\"安いけど手渡しができないのが惜しい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"M.I.\"},\"datePublished\":\"2026-3-01\",\"reviewBody\":\"木製家具が多いナチュラルテイストの自宅に合うお花を探していて、NATURALコースを見つけました。期待通り、優しい色合いの季節のお花が届くので部屋の雰囲気にマッチしています。地域によって届くお花が違うようですが、それも季節感があって良いと思います。Basicサイズで満足しています。\",\"name\":\"NATURALコースが我が家にぴったり\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}}]}" }} />
+                {/* CANCEL_FLOW_SCHEMA_v1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"medelu（メデル）の解約手順\",\"description\":\"medelu（メデル）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"medelu公式サイトの「マイページ」からログイン。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期購入の管理」を開く\",\"text\":\"マイページから「定期購入の管理」を選択。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期購入を停止する」をクリック\",\"text\":\"解約用のリンクをクリック。簡単フローで進みます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を選択(任意)\",\"text\":\"アンケート画面はスキップ可能。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「停止する」を最終確定\",\"text\":\"次回配送日の数日前までに手続きを完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"完了メール受信\",\"text\":\"medeluから解約完了メールが届きます。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/medelu/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
@@ -734,6 +736,61 @@ export default function MedeluPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+                {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
+        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              medelu（メデル）の解約手順【完全ガイド】
+            </h2>
+            <p className="text-sm text-[#666] mb-6">回数縛りなしでいつでも解約可能。1回受取後すぐの解約もOK。</p>
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">medelu公式サイトの「マイページ」からログイン。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「定期購入の管理」を開く</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">マイページから「定期購入の管理」を選択。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「定期購入を停止する」をクリック</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">解約用のリンクをクリック。簡単フローで進みます。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">解約理由を選択(任意)</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">アンケート画面はスキップ可能。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「停止する」を最終確定</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">次回配送日の数日前までに手続きを完了。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">完了メール受信</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">medeluから解約完了メールが届きます。</p>
+                  </div>
+                </div>
+            </div>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法はmedelu（メデル）公式サイトでご確認ください。</p>
           </div>
         </section>
 

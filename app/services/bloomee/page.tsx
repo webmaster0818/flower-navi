@@ -92,6 +92,8 @@ function StarRating({ rating }: { rating: number }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"bloomee（ブルーミー）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"bloomee（ブルーミー）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/bloomee/\"}" }} />
         {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"bloomee（ブルーミー）\",\"description\":\"bloomee（ブルーミー）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"3.6\",\"reviewCount\":5,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"M.K.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"一人暮らしで花を買う習慣がなかったのですが、bloomeeを始めてから部屋に花があるのが当たり前になりました。ポスト投函なので仕事で遅くなっても受け取れるのが助かります。体験プランでも十分かわいいお花が届くので満足しています。\",\"name\":\"毎週届くのが楽しみになりました\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.S.\"},\"datePublished\":\"2025-11-01\",\"reviewBody\":\"夏場に一度だけ元気のないお花が届いたことがありますが、品質保証フォームから申請したらすぐに再送してもらえました。対応が早くて好印象です。レギュラープランにしてからは花の種類も増えて、毎回どんなお花が届くかワクワクしています。\",\"name\":\"品質保証があるので安心\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"Y.T.\"},\"datePublished\":\"2025-10-01\",\"reviewBody\":\"体験プランを利用しています。手軽に始められるのは良いのですが、正直なところ3本だと少し物足りなさを感じます。もう少し花の本数が多ければ嬉しいです。ただ、980円という価格を考えると妥当かもしれません。花屋に行く時間がない人には便利だと思います。\",\"name\":\"手軽だけどボリュームはやや少なめ\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"R.N.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"届くお花がいつもセンス良くまとめられていて、インスタに投稿するのが楽しいです。花屋さんによってアレンジの雰囲気が違うのも面白いポイント。リッチプランはボリュームがあって見栄えも抜群です。ただ解約のときに4回縛りがあるのは事前に知っておくべきでした。\",\"name\":\"インスタ映えするアレンジが嬉しい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"K.M.\"},\"datePublished\":\"2025-9-01\",\"reviewBody\":\"お花自体は綺麗で良かったのですが、解約しようとしたときに手続きがわかりにくく、少し困りました。マイページの奥の方に解約ページがあり、引き止めのページも何度か表示されます。4回の最低利用期間があることも、もっとわかりやすく表示してほしかったです。\",\"name\":\"解約手続きがわかりにくかった\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":2,\"bestRating\":5,\"worstRating\":1}}]}" }} />
+                {/* CANCEL_FLOW_SCHEMA_v1 */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"bloomee（ブルーミー）の解約手順\",\"description\":\"bloomee（ブルーミー）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"bloomee公式サイトの右上「マイページ」からログイン。登録メールアドレスとパスワードを入力します。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「お届け情報」→「定期コース管理」を選択\",\"text\":\"マイページのメニューから「お届け情報」→「定期コース管理」へ進みます。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期コースを解約する」をクリック\",\"text\":\"ページ下部に「定期コースを解約する」リンクがあります。クリックして解約フローへ。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を選択(任意)\",\"text\":\"アンケートが表示されますが、回答は任意。スキップしてもOKです。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約する」を最終確定\",\"text\":\"最終確認画面で「解約する」ボタンをクリック。次回配送日の前週金曜日23:59までに完了させましょう。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了メール受信\",\"text\":\"登録メールアドレスに解約完了通知が届きます。メールを保管しておくと安心。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"サービス一覧\",\"item\":\"https://ohana-delivery.com/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/bloomee/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
@@ -701,6 +703,61 @@ export default function BloomeePage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+                {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
+        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#F0D0D0]">
+              bloomee（ブルーミー）の解約手順【完全ガイド】
+            </h2>
+            <p className="text-sm text-[#666] mb-6">初回契約時の最低受取回数(4回)に注意。4回未満で解約すると残回数分の料金が発生します。</p>
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">bloomee公式サイトの右上「マイページ」からログイン。登録メールアドレスとパスワードを入力します。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「お届け情報」→「定期コース管理」を選択</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">マイページのメニューから「お届け情報」→「定期コース管理」へ進みます。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「定期コースを解約する」をクリック</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">ページ下部に「定期コースを解約する」リンクがあります。クリックして解約フローへ。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">解約理由を選択(任意)</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">アンケートが表示されますが、回答は任意。スキップしてもOKです。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">「解約する」を最終確定</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">最終確認画面で「解約する」ボタンをクリック。次回配送日の前週金曜日23:59までに完了させましょう。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
+                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
+                    <h3 className="font-bold text-[#333] mb-1">解約完了メール受信</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">登録メールアドレスに解約完了通知が届きます。メールを保管しておくと安心。</p>
+                  </div>
+                </div>
+            </div>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法はbloomee（ブルーミー）公式サイトでご確認ください。</p>
           </div>
         </section>
 
