@@ -364,6 +364,49 @@ export default function MothersDayGuidePage() {
           </div>
         </section>
 
+        {/* 年間の花のギフトイベントカレンダー (Phase D) */}
+        <section className="py-12 md:py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#F0D0D0]">
+              年間の花のギフトイベントカレンダー
+            </h2>
+            <p className="text-sm text-[#666] mb-6">
+              母の日以外にも花のサブスクのギフトが活躍するイベントは年間を通じて多数あります。来年・再来年も活用できる年間カレンダーをチェックしましょう。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
+                <thead className="bg-[#F0D0D0] text-[#333]">
+                  <tr>
+                    <th className="px-3 py-2 text-left">月</th>
+                    <th className="px-3 py-2 text-left">イベント</th>
+                    <th className="px-3 py-2 text-left">推奨ギフト</th>
+                    <th className="px-3 py-2 text-left">予算目安</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">1月</td><td className="px-3 py-2">お正月・新年祝い</td><td className="px-3 py-2">和風アレンジ・松竹梅</td><td className="px-3 py-2">2,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">2月</td><td className="px-3 py-2">バレンタイン・結婚記念日</td><td className="px-3 py-2">赤バラ系・チューリップ</td><td className="px-3 py-2">3,000〜8,000円</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">3月</td><td className="px-3 py-2">卒業・退職祝い・ホワイトデー</td><td className="px-3 py-2">スプリングフラワー</td><td className="px-3 py-2">3,000〜10,000円</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">4月</td><td className="px-3 py-2">入学・入社祝い・新生活応援</td><td className="px-3 py-2">桜・パステル系</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#E0D5C8] bg-[#FFF5F5]"><td className="px-3 py-2 font-bold">5月</td><td className="px-3 py-2"><strong>母の日</strong> (第2日曜)</td><td className="px-3 py-2">カーネーション・あじさい</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">6月</td><td className="px-3 py-2"><strong>父の日</strong> (第3日曜)・ジューンブライド</td><td className="px-3 py-2">向日葵・グリーン系</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">7-8月</td><td className="px-3 py-2">お中元・夏休み</td><td className="px-3 py-2">向日葵・トロピカル</td><td className="px-3 py-2">3,000〜8,000円</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">9月</td><td className="px-3 py-2"><strong>敬老の日</strong> (第3月曜)</td><td className="px-3 py-2">和風・落ち着いた色合い</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">10月</td><td className="px-3 py-2">ハロウィン・誕生日</td><td className="px-3 py-2">秋色・オレンジ系</td><td className="px-3 py-2">2,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">11月</td><td className="px-3 py-2">七五三・お歳暮準備</td><td className="px-3 py-2">紅葉系アレンジ</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
+                  <tr><td className="px-3 py-2 font-bold">12月</td><td className="px-3 py-2">クリスマス・年末感謝</td><td className="px-3 py-2">クリスマスリース・赤系</td><td className="px-3 py-2">3,000〜10,000円</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#888] mt-4">
+              ※ 母の日 (2026年は5月10日)・父の日 (2026年は6月21日)・敬老の日 (2026年は9月21日)。毎年日程は変動するため最新情報をチェック。
+            </p>
+            <p className="text-sm text-[#666] mt-6 leading-relaxed">
+              <strong>サイクル化のコツ:</strong> 花のサブスクをギフトとして年間複数回送る「<strong>季節ギフトプラン</strong>」も人気。HitoHana・bloomee・LIFFTで連続贈呈の相談ができます。
+            </p>
+          </div>
+        </section>
+
         {/* ─── Summary + CTA ─── */}
         <section id="summary" className="py-12 md:py-16 bg-[#F9E8E8]">
           <div className="max-w-3xl mx-auto px-4 text-center">
