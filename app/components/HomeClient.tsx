@@ -438,11 +438,14 @@ export default function HomeClient() {
               <p className="text-sm md:text-base text-[#C4877A] font-medium mb-4 tracking-widest uppercase">
                 Flower Subscription Guide
               </p>
-              <h2 className="heading-serif text-4xl md:text-6xl font-bold text-[#3D3632] mb-6 leading-[1.2]">
+              <h1 className="heading-serif text-4xl md:text-6xl font-bold text-[#3D3632] mb-6 leading-[1.2]">
                 暮らしに、
                 <br />
                 お花を。
-              </h2>
+                <span className="block text-xl md:text-2xl font-bold text-[#C4877A] mt-4 leading-snug">
+                  お花の定期便おすすめ5社を徹底比較
+                </span>
+              </h1>
               <p className="text-base md:text-lg text-[#6B5F57] leading-relaxed mb-10 max-w-md">
                 人気のお花の定期便5社を徹底比較。
                 あなたのライフスタイルにぴったりの

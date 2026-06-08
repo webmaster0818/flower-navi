@@ -1,0 +1,18 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'medelu（メデル）の口コミ・評判を徹底調査【2026年最新】｜flowerデリ',
+  description: '業界最安値698円〜・送料無料のコスパ最強お花のサブスク「medelu」。 実際の利用者の口コミ・評判をもとに、料金プラン・メリット・デメリットを詳しく解説します。',
+  alternates: { canonical: "/services/medelu/" },
+  openGraph: {
+    title: 'medelu（メデル）の口コミ・評判を徹底調査【2026年最新】｜flowerデリ',
+    description: '業界最安値698円〜・送料無料のコスパ最強お花のサブスク「medelu」。 実際の利用者の口コミ・評判をもとに、料金プラン・メリット・デメリットを詳しく解説します。',
+    url: "/services/medelu/",
+    type: "article",
+  },
+  twitter: { card: "summary_large_image", title: 'medelu（メデル）の口コミ・評判を徹底調査【2026年最新】｜flowerデリ', description: '業界最安値698円〜・送料無料のコスパ最強お花のサブスク「medelu」。 実際の利用者の口コミ・評判をもとに、料金プラン・メリット・デメリットを詳しく解説します。' },
+};
+
+export default function SegmentLayout({ children }: { children: React.ReactNode }) {
+  return children;
+}
