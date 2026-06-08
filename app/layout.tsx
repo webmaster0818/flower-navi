@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import SiteFooter from "@/app/components/SiteFooter";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -72,9 +73,10 @@ export default function RootLayout({
         <meta httpEquiv="Expires" content="0" />
       </head>
       <body className="min-h-full flex flex-col">{children}
+        <SiteFooter />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://flower-subscription-deploy.pages.dev/\",\"logo\":\"https://flower-subscription-deploy.pages.dev/favicon.ico\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"株式会社MediaX\",\"url\":\"https://mediax.biz\"},\"sameAs\":[\"https://flower-subscription-deploy.pages.dev/about/\"]}" }}
+          dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/\",\"logo\":\"https://ohana-delivery.com/favicon.ico\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"株式会社MediaX\",\"url\":\"https://mediax.biz\"},\"sameAs\":[\"https://ohana-delivery.com/about/\"]}" }}
         />
         </body>
     </html>
