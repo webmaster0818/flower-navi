@@ -56,7 +56,7 @@ const rankingData = [
     minOrders: "なし",
     quality: "あり",
     url: "/services/medelu",
-    officialUrl: "https://www.medelu.flowers",
+    officialUrl: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L",
     highlight: "698円〜送料無料。ポスト投函で不在でも受け取れる。回数縛りなしで気軽に始められる。",
     bestFor: "コスパ重視の一人暮らし、初めて花のサブスクを試す方",
     detail:
@@ -77,7 +77,7 @@ const rankingData = [
     minOrders: "4回",
     quality: "あり（再送保証）",
     url: "/services/bloomee",
-    officialUrl: "https://bloomee.jp",
+    officialUrl: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L",
     highlight: "知名度No.1、累計3,000万本以上の実績。全国200店舗以上の提携花屋からアレンジが届く。",
     bestFor: "安心感・知名度を重視する方、SNSで花の投稿を楽しみたい方",
     detail:
@@ -98,7 +98,7 @@ const rankingData = [
     minOrders: "なし",
     quality: "あり",
     url: "/services/hanameku",
-    officialUrl: "https://hanameku.jp",
+    officialUrl: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L",
     highlight: "858円から。市場直送で鮮度抜群。ポスト投函と宅配便を選べる柔軟な配送。",
     bestFor: "鮮度にこだわりたい方、月1回からゆっくり始めたい方",
     detail:

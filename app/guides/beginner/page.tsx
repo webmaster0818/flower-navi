@@ -449,7 +449,7 @@ export default function BeginnerGuidePage() {
                     bloomeeの詳細レビューを見る
                   </a>
                   <a
-                    href="https://bloomee.jp"
+                    href="https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"
@@ -532,7 +532,7 @@ export default function BeginnerGuidePage() {
                     medeluの詳細レビューを見る
                   </a>
                   <a
-                    href="https://www.medelu.flowers"
+                    href="https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"

@@ -56,7 +56,7 @@ const rankingData = [
     minOrders: "なし",
     quality: "あり",
     url: "/services/medelu",
-    officialUrl: "https://www.medelu.flowers",
+    officialUrl: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L",
     highlight: "送料無料で業界最安水準。市場直送で新鮮なお花が届く。回数縛りなしで気軽にお試し可能。",
     bestFor: "とにかく安く始めたい方、送料込みのコスパを重視する方",
     detail: "medeluは市場直送の仕組みにより中間マージンを削減し、送料無料を実現しています。Miniプランは1回748円（税込）で3〜4本のお花が届き、送料込みの総額で業界最安水準です。回数縛りもないため、花のサブスクを初めて試す方にも安心です。配送は隔週・毎週から選べ、スキップも自由にできます。",
@@ -76,7 +76,7 @@ const rankingData = [
     minOrders: "なし",
     quality: "あり",
     url: "/services/hanameku",
-    officialUrl: "https://hanameku.jp",
+    officialUrl: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L",
     highlight: "1,210円（税込・送料込）から始められる。ポスト投函で受け取りやすい。",
     bestFor: "配送頻度を柔軟に選びたい方、月1回からゆっくり始めたい方",
     detail: "hanamekuは1,210円（税込・送料込）のライトプランから始められる花のサブスクです。ライトプランはポスト投函で受け取りやすく、上位のセルフアレンジプランは宅配で届きます。回数縛りの明記はないため、契約条件は申込前に公式（hanameku.jp）でご確認ください。運営はnarrative.inc。",
@@ -96,7 +96,7 @@ const rankingData = [
     minOrders: "4回",
     quality: "あり（再送保証）",
     url: "/services/bloomee",
-    officialUrl: "https://bloomeelife.com",
+    officialUrl: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L",
     highlight: "累計3,000万本以上の実績。全国200店舗以上の提携花屋からアレンジが届く。SNS人気No.1。",
     bestFor: "知名度・安心感を重視する方、SNSで花の投稿を楽しみたい方",
     detail: "bloomeeは日本最大級の花のサブスクサービスです。体験プランは980円で、送料385円を合わせると1回あたり1,365円になります。全国200店舗以上の提携花屋がアレンジを担当しており、毎回異なるテイストのお花を楽しめます。品質保証制度（再送保証）があるため、届いた花が傷んでいた場合も安心です。ただし4回の最低受け取り回数がある点には注意が必要です。",
@@ -116,7 +116,7 @@ const rankingData = [
     minOrders: "なし",
     quality: "あり",
     url: "/services/and-plants",
-    officialUrl: "https://andplants.jp",
+    officialUrl: "https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L",
     highlight: "プロのフローリストによるハイセンスなアレンジ。送料無料。ボリュームのある4〜6本。",
     bestFor: "おしゃれなアレンジを求める方、インテリアにこだわる方",
     detail: "AND PLANTSはプロのフローリストが一つひとつアレンジした花束が届くサービスです。Standardプランは1,980円で送料無料、4〜6本のお花が届きます。価格帯はやや高めですが、送料無料でボリュームもあるため、1本あたりの単価で見るとコスパは悪くありません。宅配便での配送のため、花の状態が良い形で届きやすい点もメリットです。回数縛りもありません。",
@@ -261,7 +261,7 @@ export default function CheapRankingPage() {
                 <li>・ 花代＋送料の「1回あたり総額」で安い順にランキング</li>
                 <li>・ 送料が地域により異なる場合は、その旨を明記</li>
                 <li>・ 表示価格はすべて税込</li>
-                <li>・ 2026年4月時点の情報に基づく</li>
+                <li>・ 2026年6月14日に各公式サイトで確認した情報に基づく</li>
               </ul>
             </div>
           </div>
@@ -340,7 +340,7 @@ export default function CheapRankingPage() {
                 <li>・ 表示価格はすべて税込です</li>
                 <li>・ hanamekuの送料は配送方法（ポスト投函 / 宅配便）や地域によって異なります</li>
                 <li>・ 日本総合園芸の送料は地域によって異なります</li>
-                <li>・ 2026年4月時点の情報です。最新の料金は各公式サイトでご確認ください</li>
+                <li>・ 2026年6月14日に各公式サイトで確認した実額です。最新の料金は各公式サイトでご確認ください</li>
               </ul>
             </div>
           </div>
@@ -820,7 +820,7 @@ export default function CheapRankingPage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              掲載情報は2026年6月14日に各公式サイトで確認したものです。最新の料金・サービス内容は各公式サイトでご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

@@ -153,7 +153,7 @@ const bloomeeKaiyaku: ServiceGuide = {
     { q: "bloomee の解約は『電話』でもできる？", a: "Web のみの対応。bloomee はWebサポート完結のため、電話解約窓口はありません。" },
     { q: "解約手数料を支払いたくない場合の方法は？", a: "4回まで受け取ってから解約するのが王道。スキップ機能を使って実質的な配送ペースを下げることも可。" },
   ],
-  cta: { label: "bloomee 公式マイページへ", href: "https://bloomeelife.com/" },
+  cta: { label: "bloomee 公式マイページへ", href: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L" },
   relatedPaths: [
     { label: "bloomee のサービス詳細", href: "/services/bloomee/" },
     { label: "bloomee の口コミ・評判", href: "/service-guides/bloomee-kuchikomi/" },
@@ -200,7 +200,7 @@ const bloomeeKuchikomi: ServiceGuide = {
     { q: "bloomee と medelu はどちらが良い？", a: "bloomee は低価格とポスト投函の手軽さ、medelu は回数縛りなしの辞めやすさが強みです。お試し重視なら medelu、続ける前提の手軽さなら bloomee が向きます。" },
     { q: "配送日時は指定できる？", a: "お試しプランはポスト投函で日時指定不可(水〜金曜のお届け)。ベーシックプランは手渡し配送で日時指定が可能です(水〜日曜、一部エリアは宅配便)。2026年6月12日に公式サイトで確認した情報です。" },
   ],
-  cta: { label: "bloomee 公式サイトを見る", href: "https://bloomeelife.com/" },
+  cta: { label: "bloomee 公式サイトを見る", href: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L" },
   relatedPaths: [
     { label: "bloomee のサービス詳細", href: "/services/bloomee/" },
     { label: "bloomee の解約方法", href: "/service-guides/bloomee-kaiyaku/" },
@@ -247,7 +247,7 @@ const medeluKaiyaku: ServiceGuide = {
     { q: "解約後の最終配送はいつ届く？", a: "解約締切までに手続き完了している場合、最終配送は『すでに発送済みの直近1回』までで終了。" },
     { q: "medelu は安心して解約できるサービス？", a: "業界で最もシンプルな解約手順の1つ。手数料・引き止めなしで安心して試せます。" },
   ],
-  cta: { label: "medelu 公式マイページへ", href: "https://www.medelu.flowers/" },
+  cta: { label: "medelu 公式マイページへ", href: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L" },
   relatedPaths: [
     { label: "medelu のサービス詳細", href: "/services/medelu/" },
     { label: "medelu の口コミ・評判", href: "/service-guides/medelu-kuchikomi/" },
@@ -298,7 +298,7 @@ const medeluKuchikomi: ServiceGuide = {
     { q: "medelu と bloomee の口コミ比較は？", a: "medelu は『手軽さ』『価格』で勝ち、bloomee は『提携花屋の個性』『長期継続者の満足度』で勝つ傾向。" },
     { q: "Lite Plan の悪い口コミは何が多い？", a: "『本数が少ない』『1人暮らし向きすぎる』が2大不満。価格対比ではむしろ満足度高め。" },
   ],
-  cta: { label: "medelu 公式サイトを見る", href: "https://www.medelu.flowers/" },
+  cta: { label: "medelu 公式サイトを見る", href: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L" },
   relatedPaths: [
     { label: "medelu のサービス詳細", href: "/services/medelu/" },
     { label: "medelu の解約方法", href: "/service-guides/medelu-kaiyaku/" },
@@ -345,7 +345,7 @@ const andPlantsKaiyaku: ServiceGuide = {
     { q: "解約後に再開したい場合は？", a: "公式サイトから再申込み可能。マイページが残るため、過去履歴を引き継げます。" },
     { q: "解約理由のアンケートは必須？", a: "任意です。記入なしでも解約処理されます。" },
   ],
-  cta: { label: "AND PLANTS 公式マイページへ", href: "https://andplants.jp/" },
+  cta: { label: "AND PLANTS 公式マイページへ", href: "https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L" },
   relatedPaths: [
     { label: "AND PLANTS のサービス詳細", href: "/services/and-plants/" },
     { label: "AND PLANTS の口コミ・評判", href: "/service-guides/and-plants-kuchikomi/" },
@@ -392,7 +392,7 @@ const andPlantsKuchikomi: ServiceGuide = {
     { q: "Twitter/Instagram での評判は？", a: "Instagram でのエンゲージメント率は業界トップクラス。" },
     { q: "AND PLANTS と LIFFT のどちらがおすすめ？", a: "デザイン重視・気軽な価格帯なら AND PLANTS。本物の旬の花・本格派なら LIFFT。" },
   ],
-  cta: { label: "AND PLANTS 公式サイトを見る", href: "https://andplants.jp/" },
+  cta: { label: "AND PLANTS 公式サイトを見る", href: "https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L" },
   relatedPaths: [
     { label: "AND PLANTS のサービス詳細", href: "/services/and-plants/" },
     { label: "AND PLANTS の解約方法", href: "/service-guides/and-plants-kaiyaku/" },
@@ -631,7 +631,7 @@ const hanamekuKaiyaku: ServiceGuide = {
     { q: "解約理由のアンケートは必須？", a: "任意です。" },
     { q: "解約後の最終配送は届く？", a: "解約締切までに完了している場合、最終配送は発送済み分のみ。" },
   ],
-  cta: { label: "ハナメク公式マイページへ", href: "https://hanameku.jp/" },
+  cta: { label: "ハナメク公式マイページへ", href: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L" },
   relatedPaths: [
     { label: "ハナメクのサービス詳細", href: "/services/hanameku/" },
     { label: "ハナメクの口コミ・評判", href: "/service-guides/hanameku-kuchikomi/" },
@@ -682,7 +682,7 @@ const hanamekuKuchikomi: ServiceGuide = {
     { q: "ハナメクと bloomee のどちらがおすすめ？", a: "知名度・安定感重視なら bloomee。気軽さ・解約しやすさ重視ならハナメク。" },
     { q: "ハナメクは長期継続向き？", a: "回数縛りなしのため気軽な短期利用にも向く。長期でも問題なし。" },
   ],
-  cta: { label: "ハナメク公式サイトを見る", href: "https://hanameku.jp/" },
+  cta: { label: "ハナメク公式サイトを見る", href: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L" },
   relatedPaths: [
     { label: "ハナメクのサービス詳細", href: "/services/hanameku/" },
     { label: "ハナメクの解約方法", href: "/service-guides/hanameku-kaiyaku/" },

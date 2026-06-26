@@ -622,7 +622,7 @@ export default function SeasonalFlowersPage() {
                     <a href="/services/medelu" className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
                       medeluの詳細を見る
                     </a>
-                    <a href="https://www.medelu.flowers" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm">
+                    <a href="https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm">
                       medelu公式サイトはこちら
                     </a>
                   </div>
@@ -651,7 +651,7 @@ export default function SeasonalFlowersPage() {
                     <a href="/services/bloomee" className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
                       bloomeeの詳細を見る
                     </a>
-                    <a href="https://bloomee.jp" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm">
+                    <a href="https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm">
                       bloomee公式サイトはこちら
                     </a>
                   </div>
@@ -679,7 +679,7 @@ export default function SeasonalFlowersPage() {
                     <a href="/services/and-plants" className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
                       AND PLANTSの詳細を見る
                     </a>
-                    <a href="https://andplants.jp" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm">
+                    <a href="https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm">
                       AND PLANTS公式サイトはこちら
                     </a>
                   </div>

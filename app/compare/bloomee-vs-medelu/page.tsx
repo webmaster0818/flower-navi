@@ -759,7 +759,7 @@ export default function BloomeeVsMedeluPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="https://medelu.flowers"
+                href="https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="inline-block text-sm text-[#4A7C59] underline hover:text-[#3A6247] transition-colors"
@@ -768,7 +768,7 @@ export default function BloomeeVsMedeluPage() {
               </a>
               <span className="hidden sm:inline text-[#999]">|</span>
               <a
-                href="https://bloomee.jp"
+                href="https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="inline-block text-sm text-[#4A7C59] underline hover:text-[#3A6247] transition-colors"

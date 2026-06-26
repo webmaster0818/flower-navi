@@ -51,7 +51,7 @@ const cancellationData = [
     deadline: "次回お届け日の前週金曜日まで",
     difficulty: "やや注意が必要",
     url: "/services/bloomee",
-    officialUrl: "https://bloomee.jp",
+    officialUrl: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L",
     steps: [
       "bloomee公式サイトにログイン",
       "マイページを開く",
@@ -78,7 +78,7 @@ const cancellationData = [
     deadline: "次回お届け日の数日前まで",
     difficulty: "簡単",
     url: "/services/medelu",
-    officialUrl: "https://www.medelu.flowers",
+    officialUrl: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L",
     steps: [
       "medelu公式サイトにログイン",
       "マイページを開く",
@@ -104,7 +104,7 @@ const cancellationData = [
     deadline: "次回お届け日の5日前まで",
     difficulty: "簡単",
     url: "/services/and-plants",
-    officialUrl: "https://andplants.jp",
+    officialUrl: "https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L",
     steps: [
       "AND PLANTS公式サイトにログイン",
       "マイページを開く",
@@ -130,7 +130,7 @@ const cancellationData = [
     deadline: "次回お届け日の数日前まで",
     difficulty: "簡単",
     url: "/services/hanameku",
-    officialUrl: "https://hanameku.jp",
+    officialUrl: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L",
     steps: [
       "hanameku公式サイトにログイン",
       "マイページを開く",

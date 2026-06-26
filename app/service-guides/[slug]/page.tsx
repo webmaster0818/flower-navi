@@ -130,7 +130,7 @@ export default async function ServiceGuidePage({ params }: Props) {
             <a
               href={g.cta.href}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="inline-block bg-[#4A7C59] text-white font-bold px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors"
             >
               {g.cta.label}
