@@ -395,7 +395,7 @@ export default function AndPlantsPage() {
               {[
                 {
                   title: "他社と比べて価格がやや高め",
-                  text: "Standardプランでも1,980円/回と、bloomeeの体験プラン（980円）やmedeluのLiteプラン（698円）と比較すると価格は高めです。送料無料とはいえ、トータルコストではmedeluのほうがお得。ただし、ブーケのデザイン性やボリュームを考慮すると、価格に見合った品質だという声も多く見られます。",
+                  text: "Standardプランでも1,980円/回と、bloomeeの体験プラン（980円）やmedeluのLiteプラン（748円）と比較すると価格は高めです。送料無料とはいえ、トータルコストではmedeluのほうがお得。ただし、ブーケのデザイン性やボリュームを考慮すると、価格に見合った品質だという声も多く見られます。",
                 },
                 {
                   title: "対応エリアが限定される場合がある",
@@ -548,7 +548,7 @@ export default function AndPlantsPage() {
                     <td className="font-medium text-[#333]">最安プラン</td>
                     <td>1,980円/回</td>
                     <td>980円/回</td>
-                    <td>698円/回</td>
+                    <td>748円/回</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">送料</td>
@@ -607,7 +607,7 @@ export default function AndPlantsPage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">AND PLANTS vs medelu</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  medeluは698円/回・送料無料というコスパの高さが最大の魅力で、花のサブスクをとにかく安く始めたい方に最適です。AND PLANTSはmedeluの約3倍の価格ですが、ブーケのデザイン性・ボリューム・梱包の品質ではAND PLANTSが上回ります。
+                  medeluは748円/回・送料無料というコスパの高さが最大の魅力で、花のサブスクをとにかく安く始めたい方に最適です。AND PLANTSはmedeluの約3倍の価格ですが、ブーケのデザイン性・ボリューム・梱包の品質ではAND PLANTSが上回ります。
                   コスパ重視ならmedelu、見た目の美しさや特別感を求めるならAND PLANTSという棲み分けです。月1回の配送が選べるのもAND PLANTSならではの強みです。
                 </p>
               </div>

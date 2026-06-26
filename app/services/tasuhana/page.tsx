@@ -42,7 +42,7 @@ const userReviews = [
     age: "30代女性",
     rating: 4,
     title: "エコな花のサブスクとして応援したい",
-    text: "規格外の花を活用しているということですが、届く花は全く問題ない品質です。むしろ「この花が捨てられるなんて」と思うくらい綺麗な花もあります。環境に配慮しながら花を楽しめるのは気分が良いです。送料が別途かかるのが少し残念ですが、総額858円なら十分お手頃です。",
+    text: "規格外の花を活用しているということですが、届く花は全く問題ない品質です。むしろ「この花が捨てられるなんて」と思うくらい綺麗な花もあります。環境に配慮しながら花を楽しめるのは気分が良いです。送料が別途かかるのが少し残念ですが、総額1,210円なら十分お手頃です。",
     date: "2026年1月",
   },
   {
@@ -62,7 +62,7 @@ function StarRating({ rating }: { rating: number }) {
                 {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"+hana（タスハナ）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"+hana（タスハナ）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/tasuhana/\"}" }} />
         {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"+hana（タスハナ）\",\"description\":\"+hana（タスハナ）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.0\",\"reviewCount\":3,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.K.\"},\"datePublished\":\"2026-3-01\",\"reviewBody\":\"月1,000円以下でお花のある暮らしが始められるのが嬉しいです。3本でも小さな花瓶に飾るとかわいくて、一人暮らしの部屋にちょうど良いサイズ感。花の廃棄を減らすサステナブルな取り組みも共感できます。\",\"name\":\"528円でこの満足度はすごい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"T.M.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"規格外の花を活用しているということですが、届く花は全く問題ない品質です。むしろ「この花が捨てられるなんて」と思うくらい綺麗な花もあります。環境に配慮しながら花を楽しめるのは気分が良いです。送料が別途かかるのが少し残念ですが、総額858円なら十分お手頃です。\",\"name\":\"エコな花のサブスクとして応援したい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"N.S.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"+actプランの3本は、正直なところ少し物足りなさを感じます。もう少しボリュームが欲しい方は+liveプラン（5本）の方がおすすめかもしれません。ただ、この価格帯で定期的にお花が届くのは他にあまりないので、入門としては良いと思います。\",\"name\":\"コスパは良いけど本数は物足りない\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"+hana（タスハナ）\",\"description\":\"+hana（タスハナ）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.0\",\"reviewCount\":3,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.K.\"},\"datePublished\":\"2026-3-01\",\"reviewBody\":\"月1,000円以下でお花のある暮らしが始められるのが嬉しいです。3本でも小さな花瓶に飾るとかわいくて、一人暮らしの部屋にちょうど良いサイズ感。花の廃棄を減らすサステナブルな取り組みも共感できます。\",\"name\":\"528円でこの満足度はすごい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"T.M.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"規格外の花を活用しているということですが、届く花は全く問題ない品質です。むしろ「この花が捨てられるなんて」と思うくらい綺麗な花もあります。環境に配慮しながら花を楽しめるのは気分が良いです。送料が別途かかるのが少し残念ですが、総額1,210円なら十分お手頃です。\",\"name\":\"エコな花のサブスクとして応援したい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"N.S.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"+actプランの3本は、正直なところ少し物足りなさを感じます。もう少しボリュームが欲しい方は+liveプラン（5本）の方がおすすめかもしれません。ただ、この価格帯で定期的にお花が届くのは他にあまりないので、入門としては良いと思います。\",\"name\":\"コスパは良いけど本数は物足りない\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}}]}" }} />
                 {/* CANCEL_FLOW_SCHEMA_v1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"+hana（タスハナ）の解約手順\",\"description\":\"+hana（タスハナ）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"タスハナ公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便管理」を開く\",\"text\":\"メニューから定期便管理画面に進む。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約する」を選択\",\"text\":\"解約リンクをクリック。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由を選択(任意)\",\"text\":\"フィードバックは任意で。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を確定\",\"text\":\"次回配送日の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知の確認\",\"text\":\"完了メールで確認。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
@@ -187,7 +187,7 @@ export default function TasuhanaServicePage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">業界最安クラスの価格設定</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  最安プランは1回528円（税込）と、花のサブスク業界でもトップクラスの低価格です。送料330円を含めても1回あたり858円。月に2回届いても1,716円と、2,000円以下で花のある暮らしが楽しめます。初めての方でも気軽に始められる価格帯です。
+                  最安プランは1回528円（税込）と、花のサブスク業界でもトップクラスの低価格です。送料330円を含めても1回あたり1,210円。月に2回届いても1,716円と、2,000円以下で花のある暮らしが楽しめます。初めての方でも気軽に始められる価格帯です。
                 </p>
               </div>
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
@@ -234,7 +234,7 @@ export default function TasuhanaServicePage() {
                   </div>
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
                     <p className="text-xs text-[#999]">1回合計</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">858円</p>
+                    <p className="text-lg font-bold text-[#4A7C59]">1,210円</p>
                   </div>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed">
@@ -577,7 +577,7 @@ export default function TasuhanaServicePage() {
               タスハナ（+hana）は、<strong>528円/回</strong>という業界最安クラスの価格で花のある暮らしを始められるサービスです。規格外の花を活用するサステナブルな仕組みで、花を楽しみながら環境にも貢献できます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              送料330円を含めても1回858円からと非常にリーズナブル。回数縛りもなく、ポスト投函で手軽に受け取れるため、花のサブスクを初めて試す方にぴったりです。ボリュームを求める方は+liveプラン（5本・1,100円）も検討してみてください。
+              送料330円を含めても1回1,210円からと非常にリーズナブル。回数縛りもなく、ポスト投函で手軽に受け取れるため、花のサブスクを初めて試す方にぴったりです。ボリュームを求める方は+liveプラン（5本・1,100円）も検討してみてください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a

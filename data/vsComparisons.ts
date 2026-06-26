@@ -73,11 +73,11 @@ export const vsComparisons: VsComparison[] = [
     serviceB: "AND PLANTS",
     title: "medelu vs AND PLANTS 比較｜低価格 vs デザイン性、どちらを選ぶ？",
     h1: "medelu と AND PLANTS を徹底比較｜気軽な価格 vs 洗練デザイン",
-    description: "medeluとAND PLANTSを徹底比較。698円Lite Plan vs 1,980円ミドルクラスの価格差、デザイン性、おすすめユーザー像を解説。",
+    description: "medeluとAND PLANTSを徹底比較。748円Miniプラン（送料込み）vs 1,980円ミドルクラスの価格差、デザイン性、おすすめユーザー像を解説。",
     intro:
       "medelu と AND PLANTS は人気花のサブスクですが、価格帯とコンセプトが対照的です。medelu は『低価格×回数縛りなし』、AND PLANTS は『デザイン重視×ミドルクラス』。本ページでは両者の特徴と選び方を解説します。",
     spec: [
-      { item: "月額最安価格", a: "698円〜(Lite)", b: "1,980円〜", winner: "A" },
+      { item: "月額最安価格", a: "748円〜(Mini)", b: "1,980円〜", winner: "A" },
       { item: "回数縛り", a: "なし", b: "なし", winner: "draw" },
       { item: "デザイン性", a: "シック(MODERN)", b: "業界トップクラス", winner: "B" },
       { item: "ボリューム", a: "小(3-5本/Lite)", b: "中(8-12本)", winner: "B" },
@@ -87,10 +87,10 @@ export const vsComparisons: VsComparison[] = [
       { item: "テーマ別選択", a: "MODERN/ROMANTIC等", b: "限定的", winner: "A" },
     ],
     forA: [
-      { type: "一人暮らしの 20-30 代", reason: "Lite Plan 698円〜で気軽に始められる。スペースも取らない。" },
+      { type: "一人暮らしの 20-30 代", reason: "Miniプラン 748円〜で気軽に始められる。スペースも取らない。" },
       { type: "学生・若年層", reason: "予算月 1,000 円以内で続けたい層に最適。" },
       { type: "シック・MODERN 志向の男性", reason: "MODERN コースのグリーン中心アレンジが男性の部屋に合う。" },
-      { type: "コスパ重視の層", reason: "業界最安級の Lite Plan。" },
+      { type: "コスパ重視の層", reason: "業界最安級の Miniプラン。" },
     ],
     forB: [
       { type: "デザイン・SNS 映え重視", reason: "Instagram フォロワー獲得・Zoom 背景演出に圧倒的優位。" },
@@ -99,12 +99,12 @@ export const vsComparisons: VsComparison[] = [
       { type: "ボリュームのあるアレンジ希望", reason: "8-12 本の中ボリュームアレンジが標準。" },
     ],
     realCases: [
-      { author: "大学生・京都", situation: "勉強の合間の癒し", chose: "medelu Lite", outcome: "月 1,400 円で続けられている、集中力 UP" },
+      { author: "大学生・京都", situation: "勉強の合間の癒し", chose: "medelu Mini", outcome: "月 約1,500 円で続けられている、集中力 UP" },
       { author: "30代女性・東京・Web デザイナー", situation: "Zoom 会議の印象 UP", chose: "AND PLANTS", outcome: "クライアント評価向上" },
       { author: "30代男性・大阪・経営コンサル", situation: "在宅ワーク時のデスク彩り", chose: "medelu MODERN", outcome: "シックな印象でビジネス背景に違和感なし" },
     ],
     faq: [
-      { q: "予算重視なら medelu？", a: "はい。698円〜の Lite Plan は業界最安級。気軽に始められます。" },
+      { q: "予算重視なら medelu？", a: "はい。748円〜の Miniプラン（送料込み）は業界最安級。気軽に始められます。" },
       { q: "デザイン重視なら AND PLANTS？", a: "圧倒的優位。Instagram での投稿数・エンゲージメントで業界トップクラス。" },
       { q: "両者の併用は可能？", a: "可能。medelu を平日・AND PLANTS を週末などのライフスタイルに合わせて分けるユーザーもいます。" },
       { q: "解約のしやすさは？", a: "両者とも回数縛りなし、解約手数料なし。同等。" },
@@ -170,11 +170,11 @@ export const vsComparisons: VsComparison[] = [
     serviceB: "medelu",
     title: "HitoHana vs medelu 比較｜ボリューム vs 低価格のおすすめ",
     h1: "HitoHana と medelu を徹底比較｜ボリューム選択可 vs 業界最安級",
-    description: "HitoHanaとmeduluを徹底比較。1,320円〜ボリューム調整可能と698円〜低価格、それぞれの強みと適性ユーザーを解説。",
+    description: "HitoHanaとmeduluを徹底比較。1,320円〜ボリューム調整可能と748円〜低価格、それぞれの強みと適性ユーザーを解説。",
     intro:
       "HitoHana と medelu はミドル価格帯の花のサブスクですが、コンセプトが対照的です。HitoHana は『ボリューム調整+ギフト対応』、medelu は『低価格×回数縛りなし』。本ページでは両者を徹底比較します。",
     spec: [
-      { item: "月額最安価格", a: "1,320円〜", b: "698円〜(Lite)", winner: "B" },
+      { item: "月額最安価格", a: "1,320円〜", b: "748円〜(Mini)", winner: "B" },
       { item: "ボリューム", a: "S/M/L 選択可", b: "Lite=小・Premium=中", winner: "A" },
       { item: "ギフト対応", a: "業界トップ", b: "あり", winner: "A" },
       { item: "電話対応", a: "あり", b: "なし", winner: "A" },
@@ -189,18 +189,18 @@ export const vsComparisons: VsComparison[] = [
       { type: "ギフト用途多数", reason: "業界トップクラスのギフト自由度。" },
     ],
     forB: [
-      { type: "一人暮らし・予算重視", reason: "698円〜で気軽に始められる。" },
+      { type: "一人暮らし・予算重視", reason: "748円〜で気軽に始められる。" },
       { type: "学生・若年層", reason: "月 1,000 円以下で続けたい層に。" },
       { type: "テーマ別の自由度希望", reason: "MODERN/ROMANTIC 等の色合いテーマで選べる。" },
     ],
     realCases: [
       { author: "40代女性・東京・主婦", situation: "家族で楽しむ", chose: "HitoHana M サイズ", outcome: "食卓に華やかさ加わる" },
-      { author: "大学生・京都・一人暮らし", situation: "予算月 1,400 円", chose: "medelu Lite", outcome: "気軽に続けられる" },
+      { author: "大学生・京都・一人暮らし", situation: "予算月 1,500 円", chose: "medelu Mini", outcome: "気軽に続けられる" },
       { author: "30代男性・横浜・在宅", situation: "デスクに置きたい", chose: "medelu MODERN", outcome: "シックなアレンジ" },
     ],
     faq: [
       { q: "ボリューム重視なら HitoHana？", a: "L サイズが業界最大級。家族で楽しむ用途にベスト。" },
-      { q: "予算 1,000 円以下なら medelu？", a: "Lite Plan 698円〜が業界最安級。学生・若年層に。" },
+      { q: "予算 1,000 円以下なら medelu？", a: "Miniプラン 748円〜が業界最安級。学生・若年層に。" },
       { q: "両者の電話対応の違いは？", a: "HitoHana は電話対応、medelu は Web のみ。シニア向きは HitoHana。" },
       { q: "ギフト用途ならどちら？", a: "HitoHana がギフト対応の自由度トップ。" },
     ],
@@ -216,11 +216,11 @@ export const vsComparisons: VsComparison[] = [
     serviceB: "medelu",
     title: "タスハナ vs medelu 比較｜社会派 vs 低価格、どちらを選ぶ？",
     h1: "タスハナと medelu を徹底比較｜社会貢献型 vs 業界最安低価格",
-    description: "タスハナとmeduluを徹底比較。規格外花活用の社会派 vs 698円Lite Plan、両者の強みと選び方を解説。",
+    description: "タスハナとmeduluを徹底比較。規格外花活用の社会派 vs 748円Miniプラン、両者の強みと選び方を解説。",
     intro:
       "タスハナ と medelu はどちらも低価格帯の花のサブスクですが、コンセプトが対照的です。タスハナは『規格外花活用の社会派』、medelu は『純粋に低価格×回数縛りなし』。本ページでは両者を徹底比較します。",
     spec: [
-      { item: "月額最安価格", a: "880円〜", b: "698円〜(Lite)", winner: "B" },
+      { item: "月額最安価格", a: "880円〜", b: "748円〜(Mini)", winner: "B" },
       { item: "社会貢献意識", a: "規格外花の有効活用", b: "なし", winner: "A" },
       { item: "回数縛り", a: "なし", b: "なし", winner: "draw" },
       { item: "ポスト投函", a: "対応", b: "対応(Lite)", winner: "draw" },
@@ -235,18 +235,18 @@ export const vsComparisons: VsComparison[] = [
       { type: "SNS で社会的意義を発信したい", reason: "ストーリー性のある花のサブスクとして注目。" },
     ],
     forB: [
-      { type: "純粋に低価格希望", reason: "業界最安級の Lite Plan 698円〜。" },
+      { type: "純粋に低価格希望", reason: "業界最安級の Miniプラン 748円〜。" },
       { type: "テーマ・色合い指定希望", reason: "MODERN/ROMANTIC 等の選択肢あり。" },
       { type: "学生・若年層", reason: "予算月 1,000 円以下で。" },
     ],
     realCases: [
       { author: "30代女性・東京・環境系職", situation: "社会貢献を生活に取り入れたい", chose: "タスハナ", outcome: "意味のある暮らしを実感" },
-      { author: "大学生・京都・一人暮らし", situation: "予算最重視", chose: "medelu Lite", outcome: "月 1,400 円で続けられる" },
+      { author: "大学生・京都・一人暮らし", situation: "予算最重視", chose: "medelu Mini", outcome: "月 1,400 円で続けられる" },
       { author: "20代女性・大阪・SNS インフルエンサー", situation: "ストーリー性のある投稿", chose: "タスハナ", outcome: "投稿でフォロワー反応高" },
     ],
     faq: [
       { q: "規格外花とは何？", a: "見た目に少し傷があるが品質には問題ない花。通常は廃棄されるが、タスハナはこれを活用してフードロス削減。" },
-      { q: "社会貢献意識がなければ medelu の方が良い？", a: "純粋に低価格を求めるなら medelu Lite が業界最安級。意義を重視するならタスハナ。" },
+      { q: "社会貢献意識がなければ medelu の方が良い？", a: "純粋に低価格を求めるなら medelu Mini が業界最安級。意義を重視するならタスハナ。" },
       { q: "両者の花の品質の違いは？", a: "タスハナは『規格外』のため見た目に多少差があるが、品質は通常品と同等。medelu は通常品。" },
       { q: "サスティナブル志向の若年層への支持は？", a: "タスハナは Z 世代・ミレニアル世代から特に支持。Instagram での投稿率高。" },
     ],
@@ -312,7 +312,7 @@ export const vsComparisons: VsComparison[] = [
     intro:
       "ハナメクは新興のシンプル花のサブスク、medelu は業界最安級の老舗の 1 つ。両者ともライト層向けで、回数縛りなしのシンプル設計が共通点です。本ページでは両者を徹底比較します。",
     spec: [
-      { item: "月額最安価格", a: "1,000円〜程度", b: "698円〜(Lite)", winner: "B" },
+      { item: "月額最安価格", a: "1,000円〜程度", b: "748円〜(Mini)", winner: "B" },
       { item: "回数縛り", a: "なし", b: "なし", winner: "draw" },
       { item: "テーマ選択", a: "限定的", b: "MODERN/ROMANTIC", winner: "B" },
       { item: "SNS 投稿数", a: "月 50-100 件", b: "月 400-600 件", winner: "B" },
@@ -326,16 +326,16 @@ export const vsComparisons: VsComparison[] = [
       { type: "丁寧なサポート希望", reason: "新興のため個別対応丁寧。" },
     ],
     forB: [
-      { type: "業界最安級を希望", reason: "Lite Plan 698円〜は medelu のみ。" },
+      { type: "業界最安級を希望", reason: "Miniプラン 748円〜は medelu のみ。" },
       { type: "認知度と継続率を重視", reason: "老舗の安心感。多くのユーザーから蓄積された改善。" },
       { type: "テーマ別の自由度希望", reason: "MODERN/ROMANTIC で気分に合わせて。" },
     ],
     realCases: [
       { author: "20代女性・東京・先進ユーザー", situation: "新しいサービスを試したい", chose: "ハナメク", outcome: "対応丁寧で満足" },
-      { author: "大学生・京都・一人暮らし", situation: "業界最安級希望", chose: "medelu Lite", outcome: "月 1,400 円で続けられる" },
+      { author: "大学生・京都・一人暮らし", situation: "業界最安級希望", chose: "medelu Mini", outcome: "月 1,400 円で続けられる" },
     ],
     faq: [
-      { q: "ハナメクと medelu のどちらがおすすめ？", a: "予算重視なら medelu Lite、新興好きならハナメク。両者とも回数縛りなしで気軽。" },
+      { q: "ハナメクと medelu のどちらがおすすめ？", a: "予算重視なら medelu Mini、新興好きならハナメク。両者とも回数縛りなしで気軽。" },
       { q: "ハナメクの認知度の低さはデメリット？", a: "口コミ情報が少ないため判断材料不足のリスクあり。ただし新興だからこそ丁寧な対応が期待できる。" },
       { q: "両者の継続率の差は？", a: "medelu の方がデータ豊富。ハナメクは新興のため継続率データ不十分。" },
     ],

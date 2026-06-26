@@ -106,7 +106,7 @@ export default function DanseiGuidePage() {
             </h2>
             <div className="space-y-4">
               {[
-                { name: "medelu", nameJa: "メデル", price: "698円〜", reason: "送料無料・ポスト投函で手間なし。698円から始められる手軽さが魅力。「MODERN」コースはモダンなインテリアに合うシックなアレンジが届く。", url: "/services/medelu" },
+                { name: "medelu", nameJa: "メデル", price: "748円〜", reason: "送料無料・ポスト投函で手間なし。748円から始められる手軽さが魅力。「MODERN」コースはモダンなインテリアに合うシックなアレンジが届く。", url: "/services/medelu" },
                 { name: "HitoHana", nameJa: "ひとはな", price: "1,320円〜", reason: "花の色をホワイト・グリーン・ブラウン等から選べるため、男性的なインテリアに合わせやすい。送料無料・回数縛りなし。", url: "/services/hitohana" },
                 { name: "AND PLANTS", nameJa: "アンドプランツ", price: "1,980円〜", reason: "デザイン性の高いアレンジが届く。観葉植物も扱っており、グリーンと花を組み合わせたおしゃれな暮らしが実現。", url: "/services/and-plants" },
               ].map((item, i) => (
@@ -188,11 +188,11 @@ export default function DanseiGuidePage() {
               花のサブスクは男性にこそおすすめしたいサービスです。部屋の雰囲気が良くなるだけでなく、リラックス効果や季節感を感じられるメリットがあります。「花屋に入りにくい」「何を選べばいいかわからない」という悩みも、サブスクなら解決します。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              まずは<strong>medelu</strong>の698円プランで気軽に始めるか、色を選べる<strong>HitoHana</strong>で自分好みの花を試してみましょう。花1本で部屋の印象は驚くほど変わります。
+              まずは<strong>medelu</strong>の748円プランで気軽に始めるか、色を選べる<strong>HitoHana</strong>で自分好みの花を試してみましょう。花1本で部屋の印象は驚くほど変わります。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
-                698円から始める medeluを見る
+                748円から始める medeluを見る
               </a>
               <a href="/services/hitohana" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
                 色が選べる HitoHanaを見る

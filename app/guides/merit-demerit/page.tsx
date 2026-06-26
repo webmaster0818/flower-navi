@@ -294,7 +294,7 @@ export default function MeritDemeritGuidePage() {
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">medelu</td>
-                    <td>送料無料、698円〜、縛りなし</td>
+                    <td>送料無料、748円〜、縛りなし</td>
                     <td>花の本数が少なめ、知名度が低い</td>
                     <td>コスパ重視の方</td>
                   </tr>

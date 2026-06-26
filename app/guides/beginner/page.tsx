@@ -7,7 +7,7 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "花のサブスクは月額いくらから始められますか？",
-    a: "最安のサービスはmedelu（メデル）のMiniプランで、1回698円（送料無料）から始められます。隔週配送なら月額約1,396円です。bloomeeの体験プランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。",
+    a: "最安のサービスはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送なら月額約1,496円です。bloomeeの体験プランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。",
   },
   {
     q: "花のサブスクはどのくらいの頻度で届きますか？",
@@ -126,7 +126,7 @@ export default function BeginnerGuidePage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"初心者向け 花のサブスクの選び方\",\"description\":\"初心者向け 花のサブスクの選び方 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/beginner/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月額いくらから始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安のサービスはmedelu（メデル）のMiniプランで、1回698円（送料無料）から始められます。隔週配送なら月額約1,396円です。bloomeeの体験プランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初心者には隔週がおすすめです。届いたお花が枯れる頃に次が届くサイクルになるため、常にお花がある生活を無理なく続けられます。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"季節やお花の種類によりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていないのですが大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶がなくても問題ありません。コップやグラス、空き瓶、マグカップなど、水を入れられる容器であれば代用できます。100円ショップでもシンプルな花瓶が購入できます。サブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函は不在でも受け取れる手軽さが魅力です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、状態が良いまま届きやすいメリットがあります。初心者にはポスト投函が手軽でおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"品質保証制度があるサービスを選べば安心です。bloomeeでは傷んだお花が届いた場合に再送対応を受けられます。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせ時にスムーズです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。初めてで不安な方は回数縛りなしのサービスから始めるのが安心です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクでお花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的にお花の種類はおまかせです。プロの花屋やフローリストが季節のお花をセレクトして届けてくれるため、自分では選ばないようなお花との出会いを楽しめます。これが花のサブスクの大きな魅力の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月額いくらから始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安のサービスはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送なら月額約1,496円です。bloomeeの体験プランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初心者には隔週がおすすめです。届いたお花が枯れる頃に次が届くサイクルになるため、常にお花がある生活を無理なく続けられます。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"季節やお花の種類によりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていないのですが大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶がなくても問題ありません。コップやグラス、空き瓶、マグカップなど、水を入れられる容器であれば代用できます。100円ショップでもシンプルな花瓶が購入できます。サブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函は不在でも受け取れる手軽さが魅力です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、状態が良いまま届きやすいメリットがあります。初心者にはポスト投函が手軽でおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"品質保証制度があるサービスを選べば安心です。bloomeeでは傷んだお花が届いた場合に再送対応を受けられます。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせ時にスムーズです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。初めてで不安な方は回数縛りなしのサービスから始めるのが安心です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクでお花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的にお花の種類はおまかせです。プロの花屋やフローリストが季節のお花をセレクトして届けてくれるため、自分では選ばないようなお花との出会いを楽しめます。これが花のサブスクの大きな魅力の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -169,7 +169,7 @@ export default function BeginnerGuidePage() {
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">最安プラン</p>
-                <p className="text-xl font-bold text-[#4A7C59]">698円/回〜</p>
+                <p className="text-xl font-bold text-[#4A7C59]">748円/回〜</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">申し込み時間</p>
@@ -239,7 +239,7 @@ export default function BeginnerGuidePage() {
               <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
                 <p className="text-sm font-bold text-[#4A7C59] mb-2">リーズナブル</p>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  1回698円から。花屋で買うよりも手頃な価格で始められる。
+                  1回748円から。花屋で買うよりも手頃な価格で始められる。
                 </p>
               </div>
             </div>
@@ -471,14 +471,14 @@ export default function BeginnerGuidePage() {
               <div className="p-5">
                 <p className="text-sm text-[#666] leading-relaxed mb-5">
                   medeluは送料無料・回数縛りなしで、最も気軽に始められる花のサブスクです。
-                  Miniプランは1回698円で業界最安水準。市場直送の仕組みにより中間コストを削減し、低価格と新鮮さを両立しています。
+                  Miniプランは1回748円で業界最安水準。市場直送の仕組みにより中間コストを削減し、低価格と新鮮さを両立しています。
                   「まずは安く試してみたい」「合わなければすぐに解約したい」という方に最適です。
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
                   <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
                     <p className="text-xs text-[#999] mb-1">Miniプラン</p>
-                    <p className="text-lg font-bold text-[#333]">698<span className="text-xs font-normal">円</span></p>
+                    <p className="text-lg font-bold text-[#333]">748<span className="text-xs font-normal">円</span></p>
                   </div>
                   <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
                     <p className="text-xs text-[#999] mb-1">送料</p>
@@ -486,7 +486,7 @@ export default function BeginnerGuidePage() {
                   </div>
                   <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
                     <p className="text-xs text-[#999] mb-1">1回あたり総額</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">698<span className="text-xs font-normal">円</span></p>
+                    <p className="text-lg font-bold text-[#4A7C59]">748<span className="text-xs font-normal">円</span></p>
                   </div>
                   <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
                     <p className="text-xs text-[#999] mb-1">花の本数</p>
@@ -516,7 +516,7 @@ export default function BeginnerGuidePage() {
                 <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
                   <p className="text-sm font-bold text-[#4A7C59] mb-2">初心者におすすめの理由</p>
                   <ul className="text-sm text-[#666] space-y-1.5">
-                    <li>・ 業界最安水準の698円/回（送料無料）で始められる</li>
+                    <li>・ 業界最安水準の748円/回（送料無料）で始められる</li>
                     <li>・ 回数縛りなしで、合わなければいつでも解約可能</li>
                     <li>・ 送料無料だから、表示価格＝支払い総額で分かりやすい</li>
                     <li>・ 市場直送で新鮮なお花が届く</li>
@@ -559,7 +559,7 @@ export default function BeginnerGuidePage() {
                     <tr className="border-t border-[#E5E5E5]">
                       <td className="px-3 py-2 text-[#666]">1回あたり総額</td>
                       <td className="px-3 py-2 text-center text-[#333]">1,365円</td>
-                      <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">698円</td>
+                      <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">748円</td>
                     </tr>
                     <tr className="border-t border-[#E5E5E5]">
                       <td className="px-3 py-2 text-[#666]">送料</td>

@@ -25,30 +25,30 @@ export const personas: Persona[] = [
       "一人暮らしの女性にとって花のサブスクは「忙しい日々に小さな贅沢を取り入れる」最高の選択肢です。お花屋さんに足を運ぶ時間がなくても、自宅に新鮮な花が届く。ポスト投函型なら受取の手間もありません。本ページでは一人暮らし女性ならではの『コスパ』『受け取りやすさ』『一人分のボリューム感』に焦点を当て、最適なサービスを徹底解説します。",
     painPoints: [
       { title: "受け取り時間がない", text: "残業で22時帰宅、土日も予定があり宅配を受け取れない…そんな方は『ポスト投函型』のbloomee・medelu・タスハナがベスト。" },
-      { title: "予算が限られる", text: "月3,000円までに抑えたい場合、medelu Lite(698円/隔週)・タスハナ(880円)が現実的。" },
+      { title: "予算が限られる", text: "月3,000円までに抑えたい場合、medelu Mini(748円/隔週)・タスハナ(880円)が現実的。" },
       { title: "一人分のボリュームでいい", text: "大ぶりブーケは1Kワンルームには過剰。3〜5本の小ぶりアレンジが扱いやすい。" },
       { title: "飾り場所に困る", text: "ガラスの小ぶり花瓶があれば充分。料理にも食卓にも合う高さ20cm前後の花瓶が一人暮らしに最適。" },
     ],
     recommended: [
-      { service: "medelu (メデル)", reason: "1回698円〜・送料無料・回数縛りなし。Lite Plan は一人暮らしの予算に最適", priceFrom: 698 },
+      { service: "medelu (メデル)", reason: "1回748円〜・送料無料・回数縛りなし。Miniプラン は一人暮らしの予算に最適", priceFrom: 748 },
       { service: "タスハナ (+hana)", reason: "規格外の花を活用する社会貢献型。880円〜とコスパも良好。ポスト投函", priceFrom: 880 },
       { service: "bloomee (ブルーミー)", reason: "提携花屋から地域密着の花が届く。体験プラン980円から開始可", priceFrom: 980 },
       { service: "AND PLANTS", reason: "おしゃれデザイン重視ならココ。1人暮らしの女性のSNS映え◎", priceFrom: 1980 },
     ],
     howToChoose: [
-      { step: 1, title: "予算を月額3,000円以内に決める", text: "コストパフォーマンス重視ならmedelu Lite または タスハナの小ぶりプランから。" },
+      { step: 1, title: "予算を月額3,000円以内に決める", text: "コストパフォーマンス重視ならmedelu Mini または タスハナの小ぶりプランから。" },
       { step: 2, title: "ポスト投函の可否を必ず確認", text: "在宅率の低い方は宅配便型ではなくポスト投函型を選ぶ。" },
       { step: 3, title: "1回あたりの本数を3〜6本に絞る", text: "一人暮らしには小ぶりが扱いやすい。10本以上は調整が大変。" },
       { step: 4, title: "解約方法の簡単さを確認", text: "ライフスタイルの変化で気軽に止められるサービスを選ぶ。bloomeeは4回縛り注意。" },
       { step: 5, title: "花瓶を1つ用意する", text: "20cm前後の透明な小花瓶があれば、どんなアレンジにも対応できる。" },
     ],
     realCases: [
-      { author: "30代・東京・SE職", situation: "リモートワーク中心、ペット可賃貸の1LDK", outcome: "medelu Liteを6ヶ月継続。デスク横に花を置くようになり気分転換になっている" },
+      { author: "30代・東京・SE職", situation: "リモートワーク中心、ペット可賃貸の1LDK", outcome: "medelu Miniを6ヶ月継続。デスク横に花を置くようになり気分転換になっている" },
       { author: "20代・大阪・営業職", situation: "ワンルーム7畳、平日は夜遅め", outcome: "タスハナのポスト投函プランで継続。月1,500円程度で『花のある暮らし』が定着" },
       { author: "40代・名古屋・看護師", situation: "シフト勤務で受け取り時間が読めない", outcome: "bloomeeのポスト投函体験プランから開始、現在は2年継続中" },
     ],
     faq: [
-      { q: "一人暮らしで月1,000円以内で楽しめる花のサブスクは？", a: "medelu Lite Plan(698円/隔週)とタスハナ ポスト便(880円/隔週)が候補です。どちらも送料込みで1,000円以下、一人暮らしの予算感に合います。" },
+      { q: "一人暮らしで月1,000円以内で楽しめる花のサブスクは？", a: "medelu Mini Plan(748円/隔週)とタスハナ ポスト便(880円/隔週)が候補です。どちらも送料込みで1,000円以下、一人暮らしの予算感に合います。" },
       { q: "花瓶は必要？高い花瓶を買わないとダメ？", a: "100均の小ぶり花瓶でも充分です。20cm前後の透明な花瓶があれば全プランに対応可能。むしろ高い花瓶を買うと配置変更しにくくなるため、まずは安いものから試すのがおすすめ。" },
       { q: "ペット(猫・犬)がいる一人暮らしでも安心？", a: "ユリ・チューリップなど猫に毒のある花が含まれる可能性があります。bloomee・medeluは花の種類を選べないため、ペットがいる場合はAND PLANTSのカスタマイズプランや、毒性のない花指定可能なサービスを推奨。" },
       { q: "急な出張・旅行で受け取れない時はどうする？", a: "全サービスとも『スキップ機能』を備えています。マイページから次回配送を1〜数回スキップ可能。長期外出時に活用してください。" },
@@ -160,7 +160,7 @@ export const personas: Persona[] = [
       { service: "LIFFT", reason: "市場直送で本物の旬を届ける。シニアに支持される本格派", priceFrom: 3300 },
       { service: "HitoHana", reason: "オペレーター対応あり、申込時に相談可能", priceFrom: 1320 },
       { service: "bloomee", reason: "ポスト投函で受け取り簡単。仏壇花にも対応", priceFrom: 980 },
-      { service: "medelu", reason: "低価格で続けやすい。回数縛りなし", priceFrom: 698 },
+      { service: "medelu", reason: "低価格で続けやすい。回数縛りなし", priceFrom: 748 },
     ],
     howToChoose: [
       { step: 1, title: "受取方法を確認", text: "ポスト投函型なら玄関対応不要。bloomee・medelu・タスハナが該当。" },
@@ -200,7 +200,7 @@ personas.push(
       { title: "記念日にも活用したい", text: "ギフトオプション付きのHitoHana・LIFFTが対応可能。" },
     ],
     recommended: [
-      { service: "medelu", reason: "MODERN/ROMANTIC等のテーマ別プラン。二人の好みに合わせ選べる", priceFrom: 698 },
+      { service: "medelu", reason: "MODERN/ROMANTIC等のテーマ別プラン。二人の好みに合わせ選べる", priceFrom: 748 },
       { service: "AND PLANTS", reason: "おしゃれな夫婦のリビングにマッチ。共有しやすい大きさ", priceFrom: 1980 },
       { service: "LIFFT", reason: "本格的な旬の花を共有。一週間が楽しみになる", priceFrom: 3300 },
       { service: "HitoHana", reason: "ボリューム調整可能、二人暮らしに合うMサイズあり", priceFrom: 1320 },
@@ -217,7 +217,7 @@ personas.push(
     ],
     faq: [
       { q: "夫婦どちらの名義で申し込めばいい？", a: "どちらでもOK。料金支払いの口座・カードの本人名義に合わせるとシンプルです。発送先・連絡先は夫婦両方を登録できる場合もあります。" },
-      { q: "二人とも忙しい場合、どのサービスが最適？", a: "ポスト投函+スキップ機能の両方がある medelu Lite または bloomee 体験プランから始めるのが推奨。" },
+      { q: "二人とも忙しい場合、どのサービスが最適？", a: "ポスト投函+スキップ機能の両方がある medelu Mini または bloomee 体験プランから始めるのが推奨。" },
       { q: "花のある暮らしで夫婦関係は変わる？", a: "Florida大学の研究では『花のある家庭で過ごす夫婦は会話が15%増える』との結果。話題のきっかけになる効果があります。" },
     ],
     relatedPaths: [
@@ -234,24 +234,24 @@ personas.push(
     intro:
       "学生の方にとって花のサブスクは『デスクに花を置くと勉強の集中力が上がる』『勉強の合間の癒し』『SNS映え』『おしゃれな部屋作り』など多くのメリットがあります。一方で予算は限られるため、本ページでは『月額1,000円以内』『回数縛りなし』『解約自由』の観点から学生に最適なサービスを解説します。",
     painPoints: [
-      { title: "お金がない", text: "月1,000円以下のmedelu Lite(698円)・タスハナ(880円)が候補。" },
+      { title: "お金がない", text: "月1,000円以下のmedelu Mini(748円)・タスハナ(880円)が候補。" },
       { title: "授業・バイトで受け取れない", text: "ポスト投函型を選べば下宿先で受取不要。" },
       { title: "テスト期間や帰省で家を空ける", text: "スキップ機能のあるサービスを選ぶ。" },
       { title: "卒業・引越し時の解約", text: "回数縛りなしのサービスを選び、いつでも止められるように。" },
     ],
     recommended: [
-      { service: "medelu Lite", reason: "1回698円、隔週、ポスト投函、回数縛りなし。学生にベスト", priceFrom: 698 },
+      { service: "medelu Mini", reason: "1回748円、隔週、ポスト投函、回数縛りなし。学生にベスト", priceFrom: 748 },
       { service: "タスハナ(+hana)", reason: "規格外花活用の社会派サブスク。880円〜", priceFrom: 880 },
       { service: "bloomee 体験プラン", reason: "980円、提携花屋ならではの花。お試し感覚で開始可", priceFrom: 980 },
     ],
     howToChoose: [
-      { step: 1, title: "予算月1,000円以内のプランを選ぶ", text: "medelu Liteかタスハナがほぼ唯一の選択肢。" },
+      { step: 1, title: "予算月1,000円以内のプランを選ぶ", text: "medelu Miniかタスハナがほぼ唯一の選択肢。" },
       { step: 2, title: "ポスト投函のみ", text: "学生は留守が多いため宅配便は不向き。" },
       { step: 3, title: "回数縛りなしを必須に", text: "卒業・引越し時に解約しやすい。bloomeeの4回縛りに注意。" },
       { step: 4, title: "花瓶は100均で充分", text: "ガラス小瓶を1つ用意するだけ。卒業時の処分も楽。" },
     ],
     realCases: [
-      { author: "大学3年生・京都・一人暮らし", situation: "ワンルーム、月7万円仕送り", outcome: "medelu Lite継続中。机に小さく飾って勉強の集中力UP" },
+      { author: "大学3年生・京都・一人暮らし", situation: "ワンルーム、月7万円仕送り", outcome: "medelu Mini継続中。机に小さく飾って勉強の集中力UP" },
       { author: "院生・東京・実家通い→上京", situation: "上京して半年", outcome: "タスハナで月1,800円。SNSでも好評" },
     ],
     faq: [
@@ -280,7 +280,7 @@ personas.push(
       { title: "プロフェッショナルな印象", text: "派手すぎず上品な medelu MODERNやAND PLANTSが向く。" },
     ],
     recommended: [
-      { service: "medelu Lite", reason: "小ぶりサイズでデスクに最適。698円〜と低コスト", priceFrom: 698 },
+      { service: "medelu Mini", reason: "小ぶりサイズでデスクに最適。748円〜と低コスト", priceFrom: 748 },
       { service: "タスハナ", reason: "ポスト投函で受け取り楽。デスク用小さめ", priceFrom: 880 },
       { service: "AND PLANTS", reason: "プロフェッショナルな印象のアレンジ", priceFrom: 1980 },
     ],

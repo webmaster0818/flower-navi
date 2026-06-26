@@ -7,7 +7,7 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "bloomeeとmedeluはどちらが安いですか？",
-    a: "送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのLiteコースは698円（送料無料）、bloomeeの体験プランは980円＋送料385円＝1,365円です。同じポスト投函・花3本でも、1回あたり約667円の差があります。",
+    a: "送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのLiteコースは748円（送料無料）、bloomeeの体験プランは980円＋送料385円＝1,365円です。同じポスト投函・花3本でも、1回あたり約667円の差があります。",
   },
   {
     q: "bloomeeとmedeluの花の品質に違いはありますか？",
@@ -52,7 +52,7 @@ export default function BloomeeVsMedeluPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs medelu 徹底比較\",\"description\":\"bloomee vs medelu 徹底比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-medelu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluはどちらが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのLiteコースは698円（送料無料）、bloomeeの体験プランは980円＋送料385円＝1,365円です。同じポスト投函・花3本でも、1回あたり約667円の差があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluの花の品質に違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは全国200店舗以上の提携花屋がアレンジするため、届く花屋によって品質やテイストにばらつきがあります。medeluは自社で仕入れ・品質管理を一元化しており、安定した鮮度の花が届く傾向にあります。どちらも品質保証制度があり、傷んだ花が届いた場合は再送対応を受けられます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの4回縛りとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、残り回数分の料金が違約金として発生します。体験プランの場合、最低でも1,365円 x 4回 = 5,460円の利用が必要です。medeluにはこのような回数縛りはなく、いつでも解約可能です。\"}},{\"@type\":\"Question\",\"name\":\"medeluに回数縛りはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには回数縛りはありません。初回から解約自由で、マイページからいつでも解約手続きが可能です。最低利用回数や違約金の設定がないため、気軽にお試しできる点がmedeluの大きなメリットです。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアに違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島を除く日本全国に配送対応しています。medeluも日本全国に対応していますが、一部離島や配送困難な地域は対象外となる場合があります。どちらもポスト投函プランは日本郵便を利用しており、対応エリアに大きな差はありません。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈るならどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"プレゼント用途ではbloomeeが有利です。bloomeeには「花の定期便ギフトチケット」があり、相手に好きなタイミングでお花の定期便を始めてもらえます。medeluにはギフト専用の仕組みがないため、贈り物として利用する場合はbloomeeを選ぶのが無難です。\"}},{\"@type\":\"Question\",\"name\":\"途中でプラン変更はできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どちらもマイページからプラン変更が可能です。bloomeeは体験・レギュラー・リッチの3プラン間で変更でき、配送頻度（毎週・隔週）も変更可能です。medeluもLite・Lite+・Basicの各コース間で変更でき、配送頻度は隔週・毎週から選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedelu、両方試してから決めることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可能ですが、bloomeeには4回の最低受け取り回数があるため、お試しのつもりでも最低4回分の料金が発生します。まず回数縛りのないmedeluから試し、その後bloomeeを検討するのがリスクの少ない順番です。medeluは1回受け取っただけでも解約できるため、お試し利用に向いています。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluはどちらが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのLiteコースは748円（送料無料）、bloomeeの体験プランは980円＋送料385円＝1,365円です。同じポスト投函・花3本でも、1回あたり約667円の差があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluの花の品質に違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは全国200店舗以上の提携花屋がアレンジするため、届く花屋によって品質やテイストにばらつきがあります。medeluは自社で仕入れ・品質管理を一元化しており、安定した鮮度の花が届く傾向にあります。どちらも品質保証制度があり、傷んだ花が届いた場合は再送対応を受けられます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの4回縛りとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、残り回数分の料金が違約金として発生します。体験プランの場合、最低でも1,365円 x 4回 = 5,460円の利用が必要です。medeluにはこのような回数縛りはなく、いつでも解約可能です。\"}},{\"@type\":\"Question\",\"name\":\"medeluに回数縛りはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには回数縛りはありません。初回から解約自由で、マイページからいつでも解約手続きが可能です。最低利用回数や違約金の設定がないため、気軽にお試しできる点がmedeluの大きなメリットです。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアに違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島を除く日本全国に配送対応しています。medeluも日本全国に対応していますが、一部離島や配送困難な地域は対象外となる場合があります。どちらもポスト投函プランは日本郵便を利用しており、対応エリアに大きな差はありません。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈るならどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"プレゼント用途ではbloomeeが有利です。bloomeeには「花の定期便ギフトチケット」があり、相手に好きなタイミングでお花の定期便を始めてもらえます。medeluにはギフト専用の仕組みがないため、贈り物として利用する場合はbloomeeを選ぶのが無難です。\"}},{\"@type\":\"Question\",\"name\":\"途中でプラン変更はできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どちらもマイページからプラン変更が可能です。bloomeeは体験・レギュラー・リッチの3プラン間で変更でき、配送頻度（毎週・隔週）も変更可能です。medeluもLite・Lite+・Basicの各コース間で変更でき、配送頻度は隔週・毎週から選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedelu、両方試してから決めることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可能ですが、bloomeeには4回の最低受け取り回数があるため、お試しのつもりでも最低4回分の料金が発生します。まず回数縛りのないmedeluから試し、その後bloomeeを検討するのがリスクの少ない順番です。medeluは1回受け取っただけでも解約できるため、お試し利用に向いています。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -103,7 +103,7 @@ export default function BloomeeVsMedeluPage() {
               </div>
               <div className="bg-white rounded-xl px-6 py-4 shadow-sm border border-[#E5E5E5] flex-1 max-w-xs mx-auto md:mx-0">
                 <p className="text-xs text-[#999] mb-1">medelu</p>
-                <p className="text-lg font-bold text-[#4A7C59] mb-1">698円/回 送料無料</p>
+                <p className="text-lg font-bold text-[#4A7C59] mb-1">748円/回 送料無料</p>
                 <p className="text-xs text-[#666]">花3本〜 / 縛りなし</p>
               </div>
             </div>
@@ -249,7 +249,7 @@ export default function BloomeeVsMedeluPage() {
                 <div className="px-5 py-5 space-y-4">
                   <div className="border-b border-[#E5E5E5] pb-3">
                     <p className="text-xs text-[#999] mb-1">Liteコース</p>
-                    <p className="text-sm text-[#666]">698円 送料無料 = <span className="font-bold text-[#333]">698円/回</span></p>
+                    <p className="text-sm text-[#666]">748円 送料無料 = <span className="font-bold text-[#333]">748円/回</span></p>
                   </div>
                   <div className="border-b border-[#E5E5E5] pb-3">
                     <p className="text-xs text-[#999] mb-1">Lite+コース</p>
@@ -266,10 +266,10 @@ export default function BloomeeVsMedeluPage() {
             <div className="bg-[#E8F0EB] rounded-xl p-5">
               <h3 className="text-sm font-bold text-[#4A7C59] mb-2">料金比較のポイント</h3>
               <p className="text-sm text-[#666] leading-relaxed">
-                最安プラン同士で比較すると、medeluのLiteコース（698円）はbloomeeの体験プラン（1,365円/送料込み）の約半額です。
+                最安プラン同士で比較すると、medeluのLiteコース（748円）はbloomeeの体験プラン（1,365円/送料込み）の約半額です。
                 medeluは全コース送料無料のため、表示価格がそのまま実質負担額になるシンプルな料金体系です。
                 bloomeeは花代とは別に送料385〜550円がかかるため、総額で考える必要があります。
-                隔週配送の場合、月額の差はbloomee体験プラン（月2,730円）とmedelu Liteコース（月1,396円）で約1,334円になります。
+                隔週配送の場合、月額の差はbloomee体験プラン（月2,730円）とmedelu Miniコース（月1,396円）で約1,334円になります。
               </p>
             </div>
           </div>
@@ -545,9 +545,9 @@ export default function BloomeeVsMedeluPage() {
                 </thead>
                 <tbody>
                   {[
-                    { label: "最安プラン（税込）", bloomee: "980円/回", medelu: "698円/回" },
+                    { label: "最安プラン（税込）", bloomee: "980円/回", medelu: "748円/回" },
                     { label: "送料", bloomee: "385〜550円", medelu: "無料" },
-                    { label: "実質最安（送料込み）", bloomee: "1,365円/回", medelu: "698円/回" },
+                    { label: "実質最安（送料込み）", bloomee: "1,365円/回", medelu: "748円/回" },
                     { label: "花の本数（最安）", bloomee: "3本以上", medelu: "3本程度" },
                     { label: "プラン数", bloomee: "3プラン", medelu: "3コース" },
                     { label: "配送方法", bloomee: "ポスト投函 / 宅配便", medelu: "ポスト投函 / 宅配便" },
@@ -588,7 +588,7 @@ export default function BloomeeVsMedeluPage() {
                 {
                   scenario: "一人暮らしなら",
                   recommend: "medelu",
-                  reason: "一人暮らしで花のサブスクを始めるなら、medeluがおすすめです。送料無料で698円から始められるため月々の負担が少なく、回数縛りがないためライフスタイルに合わなければすぐに解約できます。ポスト投函で受け取れるため、不在が多い一人暮らしでも安心です。",
+                  reason: "一人暮らしで花のサブスクを始めるなら、medeluがおすすめです。送料無料で748円から始められるため月々の負担が少なく、回数縛りがないためライフスタイルに合わなければすぐに解約できます。ポスト投函で受け取れるため、不在が多い一人暮らしでも安心です。",
                 },
                 {
                   scenario: "プレゼントとして贈るなら",
@@ -736,7 +736,7 @@ export default function BloomeeVsMedeluPage() {
               bloomeeとmedeluはどちらも優れた花のサブスクサービスですが、重視するポイントによっておすすめが異なります。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              コスパ・気軽さを重視するならmedeluが最適です。送料無料で698円から始められ、回数縛りもないため金銭的なリスクなくお試しできます。
+              コスパ・気軽さを重視するならmedeluが最適です。送料無料で748円から始められ、回数縛りもないため金銭的なリスクなくお試しできます。
               安定した品質の花が届くため、シンプルにお花のある生活を楽しみたい方に向いています。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">

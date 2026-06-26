@@ -29,11 +29,11 @@ const comparisonData = [
     name: "medelu",
     nameJa: "メデル",
     plans: [
-      { plan: "Liteコース", price: 698, shipping: 0, total: 698, flowers: "3本", delivery: "ポスト投函" },
+      { plan: "Liteコース", price: 748, shipping: 0, total: 748, flowers: "3本", delivery: "ポスト投函" },
       { plan: "Liteコース+", price: 1508, shipping: 0, total: 1508, flowers: "5〜6本", delivery: "ポスト投函" },
       { plan: "Basicコース", price: 2508, shipping: 0, total: 2508, flowers: "6〜8本", delivery: "宅配便" },
     ],
-    highlight: "全プラン送料無料。市場直送で鮮度が良く、698円/回から始められる最安水準。",
+    highlight: "全プラン送料無料。市場直送で鮮度が良く、748円/回から始められる最安水準。",
     url: "/services/medelu",
     color: "#4A7C59",
   },
@@ -215,17 +215,17 @@ export default function SouryouMuryouPage() {
                 </thead>
                 <tbody>
                   <tr className="bg-[#E8F0EB]">
-                    <td className="px-3 py-2 font-bold text-[#4A7C59]">medelu Lite</td>
-                    <td className="px-3 py-2 text-center">698円</td>
+                    <td className="px-3 py-2 font-bold text-[#4A7C59]">medelu Mini</td>
+                    <td className="px-3 py-2 text-center">748円</td>
                     <td className="px-3 py-2 text-center font-bold text-[#4A7C59]">無料</td>
-                    <td className="px-3 py-2 text-center font-bold text-[#4A7C59]">698円</td>
+                    <td className="px-3 py-2 text-center font-bold text-[#4A7C59]">748円</td>
                     <td className="px-3 py-2 text-center font-bold text-[#4A7C59]">0円</td>
                   </tr>
                   <tr className="border-b border-[#E5E5E5]">
                     <td className="px-3 py-2 text-[#333]">タスハナ</td>
                     <td className="px-3 py-2 text-center">528円</td>
                     <td className="px-3 py-2 text-center text-[#C4877A]">330円</td>
-                    <td className="px-3 py-2 text-center">858円</td>
+                    <td className="px-3 py-2 text-center">1,210円</td>
                     <td className="px-3 py-2 text-center text-[#C4877A]">7,920円</td>
                   </tr>
                   <tr className="border-b border-[#E5E5E5]">
@@ -285,7 +285,7 @@ export default function SouryouMuryouPage() {
               まとめ：送料無料で選ぶならmedeluが最安
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              送料無料のお花の定期便3サービスを比較した結果、<strong>総額で最も安いのはmedelu Liteコース（698円/回）</strong>です。回数縛りもなく、ポスト投函で手軽に受け取れるため、初めての方にもおすすめです。
+              送料無料のお花の定期便3サービスを比較した結果、<strong>総額で最も安いのはmedelu Miniコース（748円/回）</strong>です。回数縛りもなく、ポスト投函で手軽に受け取れるため、初めての方にもおすすめです。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               ボリュームとデザイン性を重視するなら<strong>AND PLANTS（1,980円/回）</strong>、本数重視なら<strong>hanamekuのセルフアレンジプランS（2,178円/回）</strong>がおすすめです。いずれも送料を気にせず利用できるため、長期利用に向いています。

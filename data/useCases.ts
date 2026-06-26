@@ -247,12 +247,12 @@ export const useCases: UseCase[] = [
       "出産祝いに花のサブスクを贈ることは、産後の慌ただしい時期に『毎週小さな喜び』を届けることになります。ベビーグッズが集まりがちな出産祝いの中で、ママ自身を労う花のギフトは差別化されたサプライズになります。ただし新生児・産後ママへの配慮として、花の種類選び・量・配送タイミングに注意が必要です。",
     scenes: [
       { situation: "産後1ヶ月の里帰り中", how: "里帰り先の実家にbloomee 体験プランを送る。ママと祖母両方が楽しめる。" },
-      { situation: "産後2-3ヶ月の自宅育児期", how: "ポスト投函型のmedelu Lite 3ヶ月コース。受け取りの負担なし。" },
+      { situation: "産後2-3ヶ月の自宅育児期", how: "ポスト投函型のmedelu Mini 3ヶ月コース。受け取りの負担なし。" },
       { situation: "第2子・第3子の出産祝い", how: "上の子と一緒に楽しめるAND PLANTS。家族の話題に。" },
       { situation: "里帰りなしの自宅出産", how: "1日1配達のbloomee + 花瓶セット。新生児の世話で外出困難なママに。" },
     ],
     recommended: [
-      { service: "medelu Lite", reason: "ポスト投函・少量・低価格、産後ママの負担最小", priceFrom: 698 },
+      { service: "medelu Mini", reason: "ポスト投函・少量・低価格、産後ママの負担最小", priceFrom: 748 },
       { service: "bloomee 体験プラン", reason: "気軽に始められる、新生児期にも安心", priceFrom: 2940 },
       { service: "AND PLANTS 1ヶ月", reason: "おしゃれな空間でママの気分転換に", priceFrom: 5940 },
     ],

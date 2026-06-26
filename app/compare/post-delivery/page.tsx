@@ -23,7 +23,7 @@ const faqItems = [
   },
   {
     q: "ポスト投函対応のサービスで一番安いのはどこですか？",
-    a: "ポスト投函対応サービスの中で最も安いのはmedelu（メデル）のMiniプランで、1回698円（送料無料）です。次いでhanameku（ハナメク）のライトプランが858円（別途送料）、bloomee（ブルーミー）の体験プランが980円（送料385円、総額1,365円）と続きます。",
+    a: "ポスト投函対応サービスの中で最も安いのはmedelu（メデル）のMiniプランで、1回748円（送料無料）です。次いでhanameku（ハナメク）のライトプランが1,210円（別途送料）、bloomee（ブルーミー）の体験プランが980円（送料385円、総額1,365円）と続きます。",
   },
   {
     q: "ポスト投函の花のサブスクは何本届きますか？",
@@ -72,9 +72,9 @@ const serviceData = [
     postDeliveryDetail: "全プラン対応",
     postPlans: "Mini / Lite / Basicプラン（全プラン）",
     boxType: "専用ボックス（保水処理済み）",
-    price: 698,
+    price: 748,
     shipping: 0,
-    total: 698,
+    total: 748,
     shippingLabel: "無料",
     flowers: "3本",
     delivery: "ポスト投函",
@@ -83,9 +83,9 @@ const serviceData = [
     quality: "あり",
     url: "/services/medelu",
     officialUrl: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L",
-    highlight: "全プランポスト投函対応・送料無料。698円から始められるコスパ最強のポスト投函サービス。",
+    highlight: "全プランポスト投函対応・送料無料。748円から始められるコスパ最強のポスト投函サービス。",
     bestFor: "送料無料でポスト投函を利用したい方、コスパ重視の方",
-    detail: "medeluは全プランがポスト投函に対応しており、さらに送料無料という点がポスト投函サービスの中で際立った強みです。Miniプラン（698円）は業界最安水準で、送料を含めた総額でもダントツに安く利用できます。市場直送の仕組みで中間マージンを削減し、新鮮なお花をリーズナブルに届けています。回数縛りもないため、初めてポスト投函型の花のサブスクを試す方にも気軽に始められます。",
+    detail: "medeluは全プランがポスト投函に対応しており、さらに送料無料という点がポスト投函サービスの中で際立った強みです。Miniプラン（748円）は業界最安水準で、送料を含めた総額でもダントツに安く利用できます。市場直送の仕組みで中間マージンを削減し、新鮮なお花をリーズナブルに届けています。回数縛りもないため、初めてポスト投函型の花のサブスクを試す方にも気軽に始められます。",
   },
   {
     rank: 3,
@@ -95,7 +95,7 @@ const serviceData = [
     postDeliveryDetail: "ライト・スタンダードプラン対応",
     postPlans: "ライトプラン / スタンダードプラン",
     boxType: "専用ボックス（保水キャップ付き）",
-    price: 858,
+    price: 1210,
     shipping: null,
     total: null,
     shippingLabel: "別途（配送方法による）",
@@ -108,7 +108,7 @@ const serviceData = [
     officialUrl: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L",
     highlight: "ポスト投函と宅配便を選べる柔軟性。ライト・スタンダードプランがポスト投函対応。月1回配送もOK。",
     bestFor: "ポスト投函と宅配便を使い分けたい方、配送頻度を柔軟に選びたい方",
-    detail: "hanamekuはライトプラン（858円）とスタンダードプランがポスト投函に対応しています。ポスト投函と宅配便の両方に対応しているため、小さめの花束はポスト投函、ボリュームのある花束は宅配便と使い分けることも可能です。配送頻度も毎週・隔週・月1回と選択肢が多く、ライフスタイルに合わせた利用ができます。回数縛りがないため、合わなければいつでも解約可能です。",
+    detail: "hanamekuはライトプラン（1,210円）とスタンダードプランがポスト投函に対応しています。ポスト投函と宅配便の両方に対応しているため、小さめの花束はポスト投函、ボリュームのある花束は宅配便と使い分けることも可能です。配送頻度も毎週・隔週・月1回と選択肢が多く、ライフスタイルに合わせた利用ができます。回数縛りがないため、合わなければいつでも解約可能です。",
   },
   {
     rank: 4,
@@ -174,7 +174,7 @@ export default function PostDeliveryComparisonPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"ポスト投函型の花のサブスク比較\",\"description\":\"ポスト投函型の花のサブスク比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/post-delivery/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ポスト投函の花のサブスクとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函（ポストに届く）タイプの花のサブスクは、自宅の郵便ポストに直接お花が届くサービスです。専用の細長い箱に入った状態で届くため、不在時でも受け取りが可能です。再配達の手間がなく、忙しい方や一人暮らしの方に特に人気があります。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函でお花が傷まないか心配です。大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"各サービスとも、ポスト投函用に設計された専用ボックスを使用しており、お花が傷みにくい工夫がされています。保水ゼリーや保水キャップで水分を保ち、通気口付きの箱で蒸れを防ぎます。万が一届いた花が傷んでいた場合は、bloomee・medelu・hanamekuいずれも品質保証制度（再送・返金対応）があるため安心です。\"}},{\"@type\":\"Question\",\"name\":\"ポストに入らない場合はどうなりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的な郵便ポスト（投函口の幅が約3.5cm以上）であれば問題なく届きます。ただし、ポストの投函口が極端に小さい場合や、集合住宅で投函口のサイズが合わない場合は、玄関前に置き配されるか、不在票が入ることがあります。心配な方は事前にポストの投函口のサイズを確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便、どちらが花の品質が良いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的に宅配便のほうが花の状態は良い傾向にあります。宅配便は手渡しで配送時間が短く、箱のサイズにも余裕があるためです。ただし、ポスト投函でも各社の品質管理が向上しており、適切に保水処理された状態で届くため、大きな差はありません。ボリュームのある花束を希望する場合は宅配便が適しています。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函対応のサービスで一番安いのはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函対応サービスの中で最も安いのはmedelu（メデル）のMiniプランで、1回698円（送料無料）です。次いでhanameku（ハナメク）のライトプランが858円（別途送料）、bloomee（ブルーミー）の体験プランが980円（送料385円、総額1,365円）と続きます。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函の花のサブスクは何本届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによりますが、ポスト投函タイプは一般的に3〜5本程度です。medeluのMiniプランは3本、bloomeeの体験プランは3本以上、hanamekuのライトプランは花とグリーン数本が届きます。ポストに入るサイズの制約があるため、宅配便タイプと比べるとやや少なめですが、テーブルや玄関に飾るには十分なボリュームです。\"}},{\"@type\":\"Question\",\"name\":\"宅配便のみのサービスを不在時に受け取る方法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSや日本総合園芸など宅配便のみのサービスでは、配送日時の指定が可能です。AND PLANTSは配送日の指定ができ、日本総合園芸は手渡し配達で日時調整が可能です。また、宅配ボックスがある場合はそこに届けてもらえる場合もあります。再配達を依頼することもできますが、生花は鮮度が落ちるため早めの受け取りがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしにはポスト投函と宅配便どちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの方には、不在でも受け取れるポスト投函タイプが断然おすすめです。日中は仕事で不在がちな場合でも、帰宅時にポストからお花を取り出すだけで済みます。再配達の手間もなく、配達時間を気にする必要もありません。medelu・bloomee・hanamekuの3サービスがポスト投函に対応しています。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ポスト投函の花のサブスクとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函（ポストに届く）タイプの花のサブスクは、自宅の郵便ポストに直接お花が届くサービスです。専用の細長い箱に入った状態で届くため、不在時でも受け取りが可能です。再配達の手間がなく、忙しい方や一人暮らしの方に特に人気があります。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函でお花が傷まないか心配です。大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"各サービスとも、ポスト投函用に設計された専用ボックスを使用しており、お花が傷みにくい工夫がされています。保水ゼリーや保水キャップで水分を保ち、通気口付きの箱で蒸れを防ぎます。万が一届いた花が傷んでいた場合は、bloomee・medelu・hanamekuいずれも品質保証制度（再送・返金対応）があるため安心です。\"}},{\"@type\":\"Question\",\"name\":\"ポストに入らない場合はどうなりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的な郵便ポスト（投函口の幅が約3.5cm以上）であれば問題なく届きます。ただし、ポストの投函口が極端に小さい場合や、集合住宅で投函口のサイズが合わない場合は、玄関前に置き配されるか、不在票が入ることがあります。心配な方は事前にポストの投函口のサイズを確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便、どちらが花の品質が良いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的に宅配便のほうが花の状態は良い傾向にあります。宅配便は手渡しで配送時間が短く、箱のサイズにも余裕があるためです。ただし、ポスト投函でも各社の品質管理が向上しており、適切に保水処理された状態で届くため、大きな差はありません。ボリュームのある花束を希望する場合は宅配便が適しています。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函対応のサービスで一番安いのはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函対応サービスの中で最も安いのはmedelu（メデル）のMiniプランで、1回748円（送料無料）です。次いでhanameku（ハナメク）のライトプランが1,210円（別途送料）、bloomee（ブルーミー）の体験プランが980円（送料385円、総額1,365円）と続きます。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函の花のサブスクは何本届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによりますが、ポスト投函タイプは一般的に3〜5本程度です。medeluのMiniプランは3本、bloomeeの体験プランは3本以上、hanamekuのライトプランは花とグリーン数本が届きます。ポストに入るサイズの制約があるため、宅配便タイプと比べるとやや少なめですが、テーブルや玄関に飾るには十分なボリュームです。\"}},{\"@type\":\"Question\",\"name\":\"宅配便のみのサービスを不在時に受け取る方法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSや日本総合園芸など宅配便のみのサービスでは、配送日時の指定が可能です。AND PLANTSは配送日の指定ができ、日本総合園芸は手渡し配達で日時調整が可能です。また、宅配ボックスがある場合はそこに届けてもらえる場合もあります。再配達を依頼することもできますが、生花は鮮度が落ちるため早めの受け取りがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしにはポスト投函と宅配便どちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの方には、不在でも受け取れるポスト投函タイプが断然おすすめです。日中は仕事で不在がちな場合でも、帰宅時にポストからお花を取り出すだけで済みます。再配達の手間もなく、配達時間を気にする必要もありません。medelu・bloomee・hanamekuの3サービスがポスト投函に対応しています。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -226,7 +226,7 @@ export default function PostDeliveryComparisonPage() {
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">最安ポスト投函</p>
-                <p className="text-xl font-bold text-[#4A7C59]">698円/回〜</p>
+                <p className="text-xl font-bold text-[#4A7C59]">748円/回〜</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">宅配便のみ</p>
@@ -621,7 +621,7 @@ export default function PostDeliveryComparisonPage() {
                   </div>
                   <div className="bg-white rounded-lg p-4">
                     <p className="text-sm font-medium text-[#333] mb-1">コスパを重視する方</p>
-                    <p className="text-xs text-[#666]">ポスト投函は送料が安い傾向にあり、medeluなら送料無料で698円から利用可能です。</p>
+                    <p className="text-xs text-[#666]">ポスト投函は送料が安い傾向にあり、medeluなら送料無料で748円から利用可能です。</p>
                   </div>
                   <div className="bg-white rounded-lg p-4">
                     <p className="text-sm font-medium text-[#333] mb-1">気軽に始めたい花のサブスク初心者</p>
@@ -786,7 +786,7 @@ export default function PostDeliveryComparisonPage() {
               不在がちな方や再配達の手間を省きたい方は、この3サービスから選ぶのがおすすめです。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              ポスト投函対応サービスの中でも、コスパで選ぶならmedelu（698円/回・送料無料・全プラン対応）、
+              ポスト投函対応サービスの中でも、コスパで選ぶならmedelu（748円/回・送料無料・全プラン対応）、
               実績と安心感で選ぶならbloomee（累計3,000万本・品質保証あり）、
               配送の柔軟さで選ぶならhanameku（ポスト投函と宅配便を選択可能・月1回配送もOK）がそれぞれおすすめです。
             </p>

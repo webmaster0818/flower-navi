@@ -7,7 +7,7 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "一人暮らしで花のサブスクを始めるのにおすすめのサービスは？",
-    a: "一人暮らしにはmedelu（メデル）のMiniプランが最もおすすめです。698円（送料無料）で始められ、ポスト投函で受け取れるため不在でも安心。回数縛りもないので気軽にお試しできます。",
+    a: "一人暮らしにはmedelu（メデル）のMiniプランが最もおすすめです。748円（送料込み）で始められ、ポスト投函で受け取れるため不在でも安心。回数縛りもないので気軽にお試しできます。",
   },
   {
     q: "一人暮らしで不在が多くても大丈夫ですか？",
@@ -31,7 +31,7 @@ const faqItems = [
   },
   {
     q: "月額いくらくらいが目安ですか？",
-    a: "一人暮らしなら月1,000〜2,000円程度が目安です。medeluのMiniプランを隔週で利用すれば月約1,396円（698円x2回）、bloomeeの体験プランなら隔週で月約2,730円（1,365円x2回）です。まずは隔週配送から始めて、ペースをつかむのがおすすめです。",
+    a: "一人暮らしなら月1,000〜2,000円程度が目安です。medeluのMiniプランを隔週で利用すれば月約1,496円（748円x2回）、bloomeeの体験プランなら隔週で月約2,730円（1,365円x2回）です。まずは隔週配送から始めて、ペースをつかむのがおすすめです。",
   },
   {
     q: "花のサブスクはいつでも解約できますか？",
@@ -46,9 +46,9 @@ const rankingData = [
     name: "medelu",
     nameJa: "メデル",
     plan: "Miniプラン",
-    price: 698,
+    price: 748,
     shipping: 0,
-    total: 698,
+    total: 748,
     shippingLabel: "無料",
     flowers: "3本",
     delivery: "ポスト投函",
@@ -57,10 +57,10 @@ const rankingData = [
     quality: "あり",
     url: "/services/medelu",
     officialUrl: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L",
-    highlight: "698円〜送料無料。ポスト投函で不在でも受け取れる。回数縛りなしで気軽に始められる。",
+    highlight: "748円〜送料無料。ポスト投函で不在でも受け取れる。回数縛りなしで気軽に始められる。",
     bestFor: "コスパ重視の一人暮らし、初めて花のサブスクを試す方",
     detail:
-      "medeluは一人暮らしに最もおすすめの花のサブスクです。Miniプランは1回698円で送料無料、3本のお花がポストに届きます。市場直送で中間マージンを削減しているため、低価格でも新鮮なお花が届くのが強みです。回数縛りがないため「まずは試してみたい」という方にも安心。配送頻度は毎週・隔週から選べ、スキップも自由。一人暮らしの小さなテーブルに飾るにはちょうど良い3本というボリューム感も魅力です。",
+      "medeluは一人暮らしに最もおすすめの花のサブスクです。Miniプランは1回748円で送料無料、3本のお花がポストに届きます。市場直送で中間マージンを削減しているため、低価格でも新鮮なお花が届くのが強みです。回数縛りがないため「まずは試してみたい」という方にも安心。配送頻度は毎週・隔週から選べ、スキップも自由。一人暮らしの小さなテーブルに飾るにはちょうど良い3本というボリューム感も魅力です。",
   },
   {
     rank: 2,
@@ -88,7 +88,7 @@ const rankingData = [
     name: "hanameku",
     nameJa: "ハナメク",
     plan: "ライトプラン",
-    price: 858,
+    price: 1210,
     shipping: null,
     total: null,
     shippingLabel: "別途（配送方法による）",
@@ -99,10 +99,10 @@ const rankingData = [
     quality: "あり",
     url: "/services/hanameku",
     officialUrl: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L",
-    highlight: "858円から。市場直送で鮮度抜群。ポスト投函と宅配便を選べる柔軟な配送。",
+    highlight: "1,210円から。市場直送で鮮度抜群。ポスト投函と宅配便を選べる柔軟な配送。",
     bestFor: "鮮度にこだわりたい方、月1回からゆっくり始めたい方",
     detail:
-      "hanamekuは市場直送にこだわった花のサブスクです。ライトプランは858円で、別途送料がかかりますが、市場から直接届くため鮮度が抜群。ポスト投函と宅配便の両方に対応しており、一人暮らしで不在がちな方はポスト投函を選べます。配送頻度も毎週・隔週・月1回と幅広く、月1回から気軽に始められるのが特徴です。回数縛りもないため、合わなければいつでも解約可能。花のサブスクに慣れてきたらプランをアップグレードする、という使い方もおすすめです。",
+      "hanamekuは市場直送にこだわった花のサブスクです。ライトプランは1,210円（税込・配送料込）で、ポスト投函で受け取れて市場から直接届くため鮮度が抜群。ポスト投函と宅配便の両方に対応しており、一人暮らしで不在がちな方はポスト投函を選べます。配送頻度も毎週・隔週・月1回と幅広く、月1回から気軽に始められるのが特徴です。回数縛りもないため、合わなければいつでも解約可能。花のサブスクに慣れてきたらプランをアップグレードする、という使い方もおすすめです。",
   },
 ];
 
@@ -117,7 +117,7 @@ export default function HitorigurashiGuidePage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"一人暮らしにおすすめの花のサブスク\",\"description\":\"一人暮らしにおすすめの花のサブスク を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/hitorigurashi/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"一人暮らしで花のサブスクを始めるのにおすすめのサービスは？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしにはmedelu（メデル）のMiniプランが最もおすすめです。698円（送料無料）で始められ、ポスト投函で受け取れるため不在でも安心。回数縛りもないので気軽にお試しできます。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしで不在が多くても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函に対応しているサービスなら、不在でも問題ありません。medelu・bloomee・hanameku（ポスト投函プラン）はいずれもポストに届くため、帰宅後に受け取れます。ポストのサイズが小さい場合は事前に確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"花瓶がなくても始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、始められます。100均のガラスコップやジャムの空き瓶でも十分代用できます。まずは手持ちのグラスや空き瓶で試してみて、気に入ったら小さな花瓶を購入するのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"お花の手入れは大変ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的なお手入れは水替えと茎のカットだけです。2〜3日に1回、水を替えて茎を1cmほど斜めにカットするだけで長持ちします。1回5分もかかりません。花のサブスクにはお手入れガイドが同封されていることが多いので、初心者でも安心です。\"}},{\"@type\":\"Question\",\"name\":\"ワンルームでも花を飾るスペースはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"3本程度のミニブーケなら、テーブルの隅・キッチンカウンター・洗面台・窓際など、小さなスペースで十分飾れます。むしろコンパクトな空間のほうが花の存在感が際立ち、部屋全体の雰囲気が変わります。\"}},{\"@type\":\"Question\",\"name\":\"旅行や出張で受け取れない週はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスでスキップ（配送停止）機能があります。medeluは配送日の変更やスキップが自由にでき、hanamekuも同様です。bloomeeもマイページからスキップ可能です。旅行の予定がわかったら早めに手続きしておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"月額いくらくらいが目安ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしなら月1,000〜2,000円程度が目安です。medeluのMiniプランを隔週で利用すれば月約1,396円（698円x2回）、bloomeeの体験プランなら隔週で月約2,730円（1,365円x2回）です。まずは隔週配送から始めて、ペースをつかむのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはいつでも解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは4回の最低受け取り回数があるため、4回受け取り前に解約すると残り回数分の料金が発生します。気軽に試したい方は回数縛りなしのサービスから始めるのがおすすめです。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"一人暮らしで花のサブスクを始めるのにおすすめのサービスは？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしにはmedelu（メデル）のMiniプランが最もおすすめです。748円（送料込み）で始められ、ポスト投函で受け取れるため不在でも安心。回数縛りもないので気軽にお試しできます。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしで不在が多くても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函に対応しているサービスなら、不在でも問題ありません。medelu・bloomee・hanameku（ポスト投函プラン）はいずれもポストに届くため、帰宅後に受け取れます。ポストのサイズが小さい場合は事前に確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"花瓶がなくても始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、始められます。100均のガラスコップやジャムの空き瓶でも十分代用できます。まずは手持ちのグラスや空き瓶で試してみて、気に入ったら小さな花瓶を購入するのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"お花の手入れは大変ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的なお手入れは水替えと茎のカットだけです。2〜3日に1回、水を替えて茎を1cmほど斜めにカットするだけで長持ちします。1回5分もかかりません。花のサブスクにはお手入れガイドが同封されていることが多いので、初心者でも安心です。\"}},{\"@type\":\"Question\",\"name\":\"ワンルームでも花を飾るスペースはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"3本程度のミニブーケなら、テーブルの隅・キッチンカウンター・洗面台・窓際など、小さなスペースで十分飾れます。むしろコンパクトな空間のほうが花の存在感が際立ち、部屋全体の雰囲気が変わります。\"}},{\"@type\":\"Question\",\"name\":\"旅行や出張で受け取れない週はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスでスキップ（配送停止）機能があります。medeluは配送日の変更やスキップが自由にでき、hanamekuも同様です。bloomeeもマイページからスキップ可能です。旅行の予定がわかったら早めに手続きしておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"月額いくらくらいが目安ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしなら月1,000〜2,000円程度が目安です。medeluのMiniプランを隔週で利用すれば月約1,496円（748円x2回）、bloomeeの体験プランなら隔週で月約2,730円（1,365円x2回）です。まずは隔週配送から始めて、ペースをつかむのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはいつでも解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは4回の最低受け取り回数があるため、4回受け取り前に解約すると残り回数分の料金が発生します。気軽に試したい方は回数縛りなしのサービスから始めるのがおすすめです。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -160,7 +160,7 @@ export default function HitorigurashiGuidePage() {
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">最安プラン</p>
-                <p className="text-xl font-bold text-[#4A7C59]">698円/回〜</p>
+                <p className="text-xl font-bold text-[#4A7C59]">748円/回〜</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">比較対象</p>
@@ -628,7 +628,7 @@ export default function HitorigurashiGuidePage() {
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               一人暮らしに合う花のサブスクを3つ比較した結果、総合的に最もおすすめなのはmedelu（メデル）です。
-              698円から始められる手頃な価格、送料無料、ポスト投函で不在でも受け取れる、回数縛りなしでいつでも解約可能と、一人暮らしが求める条件をすべて満たしています。
+              748円から始められる手頃な価格、送料無料、ポスト投函で不在でも受け取れる、回数縛りなしでいつでも解約可能と、一人暮らしが求める条件をすべて満たしています。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               知名度と安心感を重視するならbloomee（ブルーミー）、鮮度にこだわるならhanameku（ハナメク）もよい選択肢です。

@@ -38,7 +38,7 @@ export const regions: Region[] = [
       { service: "AND PLANTS", reason: "東京の都会的暮らしにマッチ。デザイン性◎", priceFrom: 1980 },
       { service: "LIFFT", reason: "都心の在宅ワーカーに本格的な旬の花", priceFrom: 3300 },
       { service: "bloomee", reason: "東京での提携花屋多数。地域密着型", priceFrom: 980 },
-      { service: "medelu Lite", reason: "都心の一人暮らしに最適な小ぶり×低価格", priceFrom: 698 },
+      { service: "medelu Mini", reason: "都心の一人暮らしに最適な小ぶり×低価格", priceFrom: 748 },
     ],
     localPreference: [
       { topic: "東京は『シンプル×洗練』が好まれる", detail: "派手すぎないナチュラル系・モノトーン系のアレンジが受けやすい。北欧テイスト・和モダンが定番。" },
@@ -48,7 +48,7 @@ export const regions: Region[] = [
     ],
     faq: [
       { q: "東京23区外(立川・八王子・町田等)も配送OK？", a: "全主要サービスが23区外も含む東京全域(島しょ部除く)に配送対応。送料無料地域も多く実質的に23区と差なし。" },
-      { q: "東京でおすすめの花のサブスクは結局どれ？", a: "ライフスタイル次第ですが、迷ったら『おしゃれ重視ならAND PLANTS』『コスパ重視ならmedelu Lite』『本格派ならLIFFT』が定番3択。当サイト診断ツールも活用ください。" },
+      { q: "東京でおすすめの花のサブスクは結局どれ？", a: "ライフスタイル次第ですが、迷ったら『おしゃれ重視ならAND PLANTS』『コスパ重視ならmedelu Mini』『本格派ならLIFFT』が定番3択。当サイト診断ツールも活用ください。" },
       { q: "東京の梅雨時期は配送に影響ある？", a: "稀に遅延がありますが、各社とも代替日対応・返金保証あり。梅雨時期はポスト投函型より宅配便型(時間指定可)が安心。" },
       { q: "東京でオフィス向け花のサブスクを使いたい", a: "AND PLANTS・LIFFT・HitoHana が法人プランあり。請求書払い対応も法人プランで提供。" },
       { q: "東京で配送先を変更(引越し)した場合の手続きは？", a: "全サービスがマイページから配送先変更可能。引越し前日までに変更を済ませれば次回から新住所へ。" },
@@ -83,13 +83,13 @@ export const regions: Region[] = [
       { service: "bloomee", reason: "関西の提携花屋多数。地域密着型", priceFrom: 980 },
       { service: "AND PLANTS", reason: "大阪のおしゃれ層に支持される", priceFrom: 1980 },
       { service: "HitoHana", reason: "関西の自社配送網あり安定", priceFrom: 1320 },
-      { service: "medelu", reason: "関西の若い世代に人気", priceFrom: 698 },
+      { service: "medelu", reason: "関西の若い世代に人気", priceFrom: 748 },
     ],
     localPreference: [
       { topic: "大阪は『華やか×コスパ』が好まれる", detail: "ピンク・赤・オレンジなど明るめのカラフルアレンジが人気。地味すぎる花は『さみしい』と評価されやすい。" },
       { topic: "和の花文化が強い", detail: "茶道・華道の文化的背景もあり、和の花(菊・ススキ・椿)を取り入れたアレンジへの理解が高い。" },
       { topic: "賑やかな食卓文化", detail: "家族・友人を招いて食卓を囲む文化が根強く、テーブル中央に華やかな花を飾る習慣あり。" },
-      { topic: "節約志向と質の両立", detail: "コスパの良いプラン(medelu Lite等)が好調。長く続けるための価格感度が高い。" },
+      { topic: "節約志向と質の両立", detail: "コスパの良いプラン(medelu Mini等)が好調。長く続けるための価格感度が高い。" },
     ],
     faq: [
       { q: "大阪府の郊外(高槻・茨木・東大阪等)も配送OK？", a: "全主要サービスが大阪府全域に対応。一部離島除く。" },
@@ -213,7 +213,7 @@ export const regions: Region[] = [
       { service: "bloomee", reason: "福岡の地元花屋との提携多数", priceFrom: 980 },
       { service: "HitoHana", reason: "九州配送実績豊富、安定した品質", priceFrom: 1320 },
       { service: "AND PLANTS", reason: "福岡のおしゃれ層に支持される", priceFrom: 1980 },
-      { service: "medelu", reason: "福岡の若い世代に人気", priceFrom: 698 },
+      { service: "medelu", reason: "福岡の若い世代に人気", priceFrom: 748 },
     ],
     localPreference: [
       { topic: "福岡は『華やか×個性派』が好まれる", detail: "ピンク・オレンジなど明るめのカラフルアレンジが人気。地味すぎる花は『元気がない』と評価されやすい。" },
@@ -347,7 +347,7 @@ export const regions: Region[] = [
     localPreference: [
       { topic: "京都は『和×シック』が好まれる", detail: "派手すぎない、わびさびを感じる花が好まれる。グリーン中心・モノトーン・くすみカラーが定番。" },
       { topic: "茶道・華道の本場", detail: "池坊(発祥地: 六角堂)・小原流・草月流の本部が京都。家庭でも華道の影響でアレンジへの理解深い。" },
-      { topic: "床の間文化", detail: "伝統的な日本家屋の床の間に一輪挿しを置く習慣。サブスクの少量プラン(タスハナ・medelu Lite)と相性◎。" },
+      { topic: "床の間文化", detail: "伝統的な日本家屋の床の間に一輪挿しを置く習慣。サブスクの少量プラン(タスハナ・medelu Mini)と相性◎。" },
       { topic: "季節を尊ぶ感性", detail: "暦に応じた花選び(春=桜・夏=朝顔・秋=ススキ・冬=椿)への感性が鋭い。季節感のあるサブスクが評価される。" },
     ],
     faq: [

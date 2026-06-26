@@ -28,7 +28,7 @@ const recommendationMap: Record<string, { name: string; reason: string }> = {
   medelu: {
     name: "medelu（メデル）",
     reason:
-      "月額698円からと業界最安クラス。送料無料でコスパを重視する方に最適です。",
+      "月額748円からと業界最安クラス。送料無料でコスパを重視する方に最適です。",
   },
   andplants: {
     name: "AND PLANTS（アンドプランツ）",
@@ -87,24 +87,24 @@ const services = [
     tagline: "コスパ最強、送料無料の実力派",
     image: "/images/service-medelu.jpg",
     overview:
-      "medeluは、月額698円からという業界最安クラスの価格設定が魅力のお花の定期便です。送料無料なのも大きなポイント。お部屋の雰囲気に合わせて「ANYROOM」「MODERN」「NATURAL」の3コースから選べるのが特徴で、インテリアとの調和を意識したアレンジが届きます。コストを抑えながらも質の良いお花を楽しみたい方に最適なサービスです。",
+      "medeluは、月額748円からという業界最安クラスの価格設定が魅力のお花の定期便です。送料無料なのも大きなポイント。お部屋の雰囲気に合わせて「ANYROOM」「MODERN」「NATURAL」の3コースから選べるのが特徴で、インテリアとの調和を意識したアレンジが届きます。コストを抑えながらも質の良いお花を楽しみたい方に最適なサービスです。",
     plans: [
-      { name: "Liteコース", price: "698円/回", flowers: "3本", delivery: "隔週" },
-      { name: "Lite+コース", price: "1,198円/回", flowers: "5〜6本", delivery: "隔週" },
-      { name: "Basicコース", price: "1,958円/回", flowers: "6〜9本", delivery: "隔週" },
+      { name: "Miniコース", price: "748円/回", flowers: "3〜4本", delivery: "隔週" },
+      { name: "Liteコース", price: "1,330円/回", flowers: "5〜6本", delivery: "隔週" },
+      { name: "Basicコース", price: "2,330円/回", flowers: "6〜9本", delivery: "隔週" },
     ],
-    shipping: "無料",
-    deliveryMethod: "ポスト投函（Basicは宅配便）",
+    shipping: "込み（Mini・Liteはポスト投函）",
+    deliveryMethod: "ポスト投函（Lite+・Basicは宅配便）",
     cancellation: "回数縛りなし、いつでも解約可能",
     pros: [
-      "月額698円からと業界最安クラス",
+      "月額748円からと業界最安クラス",
       "送料無料で追加費用なし",
       "部屋の雰囲気に合わせた3コース",
       "回数縛りなし、いつでも解約可能",
     ],
     cons: [
       "対応エリアが限られる場合がある",
-      "Liteコースは花の本数が少なめ",
+      "Miniコースは花の本数が少なめ",
       "知名度がbloomeeほど高くない",
     ],
     recommended: [
@@ -121,9 +121,9 @@ const services = [
     overview:
       "AND PLANTSは、おしゃれなインテリアグリーンや観葉植物で知られるブランドが手掛けるお花の定期便です。プロのフローリストが厳選したセンスの良いアレンジが特徴で、インテリアにこだわる方から高い支持を得ています。初回500円OFFのキャンペーンを実施しており、気軽にお試しできるのも魅力。3つのプランから選べ、ボリューム感のあるお花が届きます。",
     plans: [
-      { name: "Sプラン", price: "1,980円/回", flowers: "4〜6本", delivery: "隔週/月1回" },
-      { name: "Mプラン", price: "2,980円/回", flowers: "6〜9本", delivery: "隔週/月1回" },
-      { name: "Lプラン", price: "4,980円/回", flowers: "10〜14本", delivery: "隔週/月1回" },
+      { name: "Standard", price: "1,980円/回", flowers: "6〜8本", delivery: "隔週/月1回" },
+      { name: "Medium", price: "2,980円/回", flowers: "8〜10本", delivery: "隔週/月1回" },
+      { name: "Large", price: "4,980円/回", flowers: "14〜18本", delivery: "隔週/月1回" },
     ],
     shipping: "無料",
     deliveryMethod: "宅配便（手渡し）",
@@ -184,7 +184,7 @@ const services = [
     overview:
       "hanamekuは、市場直送にこだわった新鮮なお花が届くサービスです。回数の縛りがないため、いつでも自由にスキップや解約ができる気軽さが特徴。お花のプロが市場で直接仕入れた旬の花をそのまま届けるため、鮮度と品質のバランスが優れています。試しに1回だけ注文してみたいという方にもおすすめです。",
     plans: [
-      { name: "ライトプラン", price: "858円/回", flowers: "3本", delivery: "隔週" },
+      { name: "ライトプラン", price: "1,210円/回", flowers: "3本", delivery: "隔週" },
       { name: "セルフアレンジプラン", price: "1,958円/回", flowers: "7〜10本", delivery: "隔週/月1回" },
       { name: "スタンダードプラン", price: "2,680円/回", flowers: "花瓶付き", delivery: "隔週/月1回" },
     ],
@@ -218,7 +218,7 @@ const faqItems = [
   },
   {
     q: "お花の定期便の相場はどれくらいですか？",
-    a: "お花の定期便の相場は、1回あたり700円〜5,000円程度です。最安値はmedeluの698円/回、手軽に始められるbloomeeは980円/回からとなっています。送料込みの総額で比較することが大切です。",
+    a: "お花の定期便の相場は、1回あたり700円〜5,000円程度です。最安値はmedeluの748円/回、手軽に始められるbloomeeは980円/回からとなっています。送料込みの総額で比較することが大切です。",
   },
   {
     q: "ポスト投函と手渡し、どちらがいいですか？",
@@ -260,7 +260,7 @@ const purposes = [
     title: "一人暮らしの方に",
     icon: "🏠",
     description: "不在でも受け取れるポスト投函対応で、少量から始められるサービスがおすすめ。",
-    services: ["bloomee 体験プラン（980円+送料385円）", "medelu Liteコース（698円・送料無料）"],
+    services: ["bloomee 体験プラン（980円+送料385円）", "medelu Miniコース（748円・送料込み）"],
     best: "medelu",
   },
   {
@@ -281,7 +281,7 @@ const purposes = [
     title: "コスパ重視の方に",
     icon: "💰",
     description: "送料込みの総額で比較して、最もお得に続けられるサービスを選びましょう。",
-    services: ["medelu Liteコース（698円・送料無料）", "hanameku ライトプラン（858円）"],
+    services: ["medelu Miniコース（748円・送料込み）", "hanameku ライトプラン（1,210円・送料込み）"],
     best: "medelu",
   },
   {
@@ -298,7 +298,7 @@ const howToChoose = [
   {
     title: "料金と送料の総額で比較する",
     description:
-      "月額料金だけでなく、送料を含めた総額で比較しましょう。例えばbloomeeは月額980円ですが送料385円が別途かかります。一方medeluは698円で送料無料。月2回届く場合の月額総額で計算すると実質的なコスパがわかります。",
+      "月額料金だけでなく、送料を含めた総額で比較しましょう。例えばbloomeeは月額980円ですが送料385円が別途かかります。一方medeluは748円で送料無料。月2回届く場合の月額総額で計算すると実質的なコスパがわかります。",
   },
   {
     title: "届き方（ポスト投函 vs 手渡し）を確認する",
@@ -667,7 +667,7 @@ export default function HomeClient() {
                   </tr>
                   <tr>
                     <td className="font-medium text-[#3D3632]">medelu</td>
-                    <td className="text-[#C4877A] font-medium">698円/回</td>
+                    <td className="text-[#C4877A] font-medium">748円/回</td>
                     <td className="text-[#7A9E7E] font-medium">無料</td>
                     <td>ポスト投函</td>
                     <td>3本〜</td>
@@ -694,7 +694,7 @@ export default function HomeClient() {
                   </tr>
                   <tr>
                     <td className="font-medium text-[#3D3632]">hanameku</td>
-                    <td>858円/回</td>
+                    <td>1,210円/回</td>
                     <td>一部無料</td>
                     <td>ポスト/手渡し</td>
                     <td>3本〜</td>
@@ -997,7 +997,7 @@ export default function HomeClient() {
               <ul className="space-y-3 my-4">
                 {[
                   { label: "初心者で手軽に始めたいなら", value: "bloomee" },
-                  { label: "コスパ最優先なら", value: "medelu（送料無料で698円〜）" },
+                  { label: "コスパ最優先なら", value: "medelu（送料無料で748円〜）" },
                   { label: "おしゃれなお花が欲しいなら", value: "AND PLANTS" },
                   { label: "鮮度重視なら", value: "花の定期便（農家直送）" },
                   { label: "縛りなしで気軽に試したいなら", value: "hanameku" },

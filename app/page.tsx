@@ -44,7 +44,7 @@ const services = [
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "お花の定期便おすすめサービス8選",
+  name: "お花の定期便おすすめサービス5選",
   itemListElement: services.map((s, i) => ({
     "@type": "ListItem",
     position: i + 1,
@@ -70,7 +70,7 @@ const topFaqSchema = {
       name: "一番安い花のサブスクはどこですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "2026年5月時点で最安はmedelu(メデル)の月698円(送料込み)です。次にbloomee(ブルーミー)の体験プラン980円(送料385円別)、タスハナの880円が続きます。詳しくは「安い花のサブスク比較」ページをご覧ください。",
+        text: "2026年5月時点で最安はmedelu(メデル)の月748円(送料込み)です。次にbloomee(ブルーミー)の体験プラン980円(送料385円別)、タスハナの880円が続きます。詳しくは「安い花のサブスク比較」ページをご覧ください。",
       },
     },
     {

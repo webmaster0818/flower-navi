@@ -394,7 +394,7 @@ export default function NihonSogoEngeiPage() {
               {[
                 {
                   title: "価格がやや高め",
-                  text: "最安プランでも月2,200円（税込・送料別）のため、送料を含めると1回あたり約2,750〜3,080円になります。bloomeeの体験プラン（1,365円/回）やmedeluのLiteプラン（698円/回・送料無料）と比べると割高です。ただし、届くお花のボリュームと鮮度を考慮すると、花屋で同等の花束を買うよりはお得という声もあります。",
+                  text: "最安プランでも月2,200円（税込・送料別）のため、送料を含めると1回あたり約2,750〜3,080円になります。bloomeeの体験プラン（1,365円/回）やmedeluのLiteプラン（748円/回・送料無料）と比べると割高です。ただし、届くお花のボリュームと鮮度を考慮すると、花屋で同等の花束を買うよりはお得という声もあります。",
                 },
                 {
                   title: "手渡しのため不在時に受け取れない",
@@ -547,7 +547,7 @@ export default function NihonSogoEngeiPage() {
                     <td className="font-medium text-[#333]">最安プラン</td>
                     <td>2,200円/月</td>
                     <td>980円/回</td>
-                    <td>698円/回</td>
+                    <td>748円/回</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">送料</td>
@@ -607,7 +607,7 @@ export default function NihonSogoEngeiPage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">日本総合園芸 vs medelu</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  コスパではmedeluが圧倒的です。medeluは月額698円で送料無料のため、日本総合園芸の約4分の1の費用で花のある生活を始められます。
+                  コスパではmedeluが圧倒的です。medeluは月額748円で送料無料のため、日本総合園芸の約4分の1の費用で花のある生活を始められます。
                   ただしmedeluはポスト投函で花のボリュームも控えめ。日本総合園芸は手渡し配達でボリューム満点の本格花束が届くため、お花の品質と見栄えを重視する方には日本総合園芸が適しています。
                   費用を抑えつつ手軽に楽しみたいならmedelu、品質重視なら日本総合園芸という選び方がおすすめです。
                 </p>

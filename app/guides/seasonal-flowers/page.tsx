@@ -71,7 +71,7 @@ const monthlyData = [
     season: "spring",
     flowers: ["バラ", "ガーベラ", "カーネーション", "スターチス"],
     tip: "気温が上がり始めるため、水替えは毎日行いましょう。茎のぬめりを感じたら水切りを。花瓶の水は少なめ（茎が3cm浸かる程度）にすると腐りにくくなります。",
-    recommend: "新生活のスタートに合わせて始める方が多い月。medeluなら698円から気軽にお試しできます。",
+    recommend: "新生活のスタートに合わせて始める方が多い月。medeluなら748円から気軽にお試しできます。",
   },
   {
     month: 5,
@@ -610,11 +610,11 @@ export default function SeasonalFlowersPage() {
                   <p className="text-sm text-[#666] leading-relaxed mb-4">
                     medeluは市場から直接仕入れた新鮮な花を届けるサービスです。
                     季節ごとに旬の花を厳選しており、春はチューリップやラナンキュラス、夏はひまわり、秋はダリアなど、
-                    その時期ならではの花に出会えます。Miniプラン698円（送料無料）から始められるため、
+                    その時期ならではの花に出会えます。Miniプラン748円（送料無料）から始められるため、
                     気軽に季節の花を楽しみたい方に最適です。
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm mb-4">
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">698円/回〜</span>
+                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">748円/回〜</span>
                     <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">送料無料</span>
                     <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">回数縛りなし</span>
                   </div>

@@ -8,7 +8,7 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "ハナメク（hanameku）の料金はいくらですか？",
-    a: "ハナメクには3つのプランがあります。ライトプランは1回858円（税込・送料別）、スタンダードプランは1回1,958円（税込・送料別）、セルフプランは1回2,680円（税込・送料別）です。いずれも回数縛りなしで、いつでも解約できます。",
+    a: "ハナメクには3つのプランがあります。ライトプランは1回1,210円（税込・送料別）、スタンダードプランは1回1,958円（税込・送料別）、セルフプランは1回2,680円（税込・送料別）です。いずれも回数縛りなしで、いつでも解約できます。",
   },
   {
     q: "ハナメクの解約方法を教えてください。",
@@ -63,7 +63,7 @@ const userReviews = [
     age: "20代女性",
     rating: 4,
     title: "回数縛りなしが決め手でした",
-    text: "初めての花のサブスクだったので、いつでも解約できるハナメクを選びました。結局気に入ってずっと続けていますが、縛りがないという安心感は大きいです。ライトプランは858円で始められるのでお試しにぴったり。ただ、ライトプランだと花の本数が少なめなので、スタンダードに変更しようか検討中です。",
+    text: "初めての花のサブスクだったので、いつでも解約できるハナメクを選びました。結局気に入ってずっと続けていますが、縛りがないという安心感は大きいです。ライトプランは1,210円で始められるのでお試しにぴったり。ただ、ライトプランだと花の本数が少なめなので、スタンダードに変更しようか検討中です。",
     date: "2025年12月",
   },
   {
@@ -91,7 +91,7 @@ function StarRating({ rating }: { rating: number }) {
                 {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"hanameku（ハナメク）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"hanameku（ハナメク）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/hanameku/\"}" }} />
         {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"hanameku（ハナメク）\",\"description\":\"hanameku（ハナメク）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"reviewCount\":5,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"S.Y.\"},\"datePublished\":\"2026-2-01\",\"reviewBody\":\"以前は別の花のサブスクを使っていましたが、ハナメクに切り替えてからお花の持ちが格段に良くなりました。市場から直接届くので、花屋さんを経由するサービスより明らかに鮮度が違います。1週間以上きれいに咲いてくれるので、コスパも良いと感じています。\",\"name\":\"市場直送だから鮮度が全然違います\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"T.M.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"届いたお花の名前や産地がアプリで確認できるのが気に入っています。今まで花の名前を知らずに飾っていましたが、ハナメクを始めてからは花の品種に詳しくなりました。お花の知識が増えるのも楽しさのひとつです。スタンダードプランで十分満足しています。\",\"name\":\"アプリで花の情報がわかるのが嬉しい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.K.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"初めての花のサブスクだったので、いつでも解約できるハナメクを選びました。結局気に入ってずっと続けていますが、縛りがないという安心感は大きいです。ライトプランは858円で始められるのでお試しにぴったり。ただ、ライトプランだと花の本数が少なめなので、スタンダードに変更しようか検討中です。\",\"name\":\"回数縛りなしが決め手でした\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"M.H.\"},\"datePublished\":\"2026-3-01\",\"reviewBody\":\"フラワーアレンジメントに興味があったので、セルフプランを利用しています。茎が長めの状態で届くので、自分で好きな長さに切って生けられるのが最高です。市場直送なのでお花も新鮮で、生花店で買うのと変わらないクオリティ。毎回届くのが楽しみです。\",\"name\":\"セルフプランで自分好みにアレンジ\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"R.I.\"},\"datePublished\":\"2025-11-01\",\"reviewBody\":\"お花の鮮度やクオリティは文句なしです。ただ、以前引っ越した際に新しい住所が配送エリア外だったことがあり、一時的に利用できなくなりました。現在の住所では問題なく届いていますが、引っ越しの予定がある方は事前にエリア確認をおすすめします。\",\"name\":\"お花は良いけど配送エリアに注意\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"hanameku（ハナメク）\",\"description\":\"hanameku（ハナメク）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"reviewCount\":5,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"S.Y.\"},\"datePublished\":\"2026-2-01\",\"reviewBody\":\"以前は別の花のサブスクを使っていましたが、ハナメクに切り替えてからお花の持ちが格段に良くなりました。市場から直接届くので、花屋さんを経由するサービスより明らかに鮮度が違います。1週間以上きれいに咲いてくれるので、コスパも良いと感じています。\",\"name\":\"市場直送だから鮮度が全然違います\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"T.M.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"届いたお花の名前や産地がアプリで確認できるのが気に入っています。今まで花の名前を知らずに飾っていましたが、ハナメクを始めてからは花の品種に詳しくなりました。お花の知識が増えるのも楽しさのひとつです。スタンダードプランで十分満足しています。\",\"name\":\"アプリで花の情報がわかるのが嬉しい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.K.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"初めての花のサブスクだったので、いつでも解約できるハナメクを選びました。結局気に入ってずっと続けていますが、縛りがないという安心感は大きいです。ライトプランは1,210円で始められるのでお試しにぴったり。ただ、ライトプランだと花の本数が少なめなので、スタンダードに変更しようか検討中です。\",\"name\":\"回数縛りなしが決め手でした\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"M.H.\"},\"datePublished\":\"2026-3-01\",\"reviewBody\":\"フラワーアレンジメントに興味があったので、セルフプランを利用しています。茎が長めの状態で届くので、自分で好きな長さに切って生けられるのが最高です。市場直送なのでお花も新鮮で、生花店で買うのと変わらないクオリティ。毎回届くのが楽しみです。\",\"name\":\"セルフプランで自分好みにアレンジ\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"R.I.\"},\"datePublished\":\"2025-11-01\",\"reviewBody\":\"お花の鮮度やクオリティは文句なしです。ただ、以前引っ越した際に新しい住所が配送エリア外だったことがあり、一時的に利用できなくなりました。現在の住所では問題なく届いていますが、引っ越しの予定がある方は事前にエリア確認をおすすめします。\",\"name\":\"お花は良いけど配送エリアに注意\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}}]}" }} />
                 {/* CANCEL_FLOW_SCHEMA_v1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"hanameku（ハナメク）の解約手順\",\"description\":\"hanameku（ハナメク）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"hanameku公式サイトの「マイページ」へ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便の管理」を開く\",\"text\":\"メニューから定期便管理画面へ移動。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約する」を選択\",\"text\":\"解約リンクをクリック。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由入力(任意)\",\"text\":\"フィードバックは任意で。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約する」を最終確定\",\"text\":\"次回配送の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知の確認\",\"text\":\"メールで完了通知が届きます。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
@@ -99,7 +99,7 @@ function StarRating({ rating }: { rating: number }) {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"description\":\"hanameku（ハナメク）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hanameku/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ハナメク（hanameku）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクには3つのプランがあります。ライトプランは1回858円（税込・送料別）、スタンダードプランは1回1,958円（税込・送料別）、セルフプランは1回2,680円（税込・送料別）です。いずれも回数縛りなしで、いつでも解約できます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクの解約はマイページから手続きできます。回数縛りがないため、いつでも自由に解約が可能です。次回配送日の数日前までにマイページで解約手続きを行えば、追加料金なしで解約できます。解約後も届いた花の情報はアプリで引き続き確認できます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのお花はどのように届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクのお花はポスト投函で届きます。市場から直送されるため、鮮度の高い切り花が届くのが特徴です。専用のパッケージに丁寧に梱包された状態で届くため、不在時でも安心して受け取れます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのアプリではどんな情報が見られますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクの専用アプリでは、届いたお花の品種名、産地情報、お手入れ方法などを確認できます。花の名前がわからなくても、アプリを開けばすぐに確認できるため、お花の知識を深めながら楽しむことができます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクの配送エリアはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクは日本国内の多くの地域に対応していますが、一部の離島や配送が難しい地域では対応エリア外となる場合があります。詳しい配送対応エリアは公式サイトで郵便番号を入力して確認できます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのセルフプランとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"セルフプランは、届いたお花を自分でアレンジして楽しむためのプランです。通常のプランではアレンジ済みのお花が届きますが、セルフプランでは茎が長めの状態でお花が届くため、自分好みのアレンジや生け方を楽しめます。お花に慣れてきた方やフラワーアレンジメントに挑戦したい方におすすめです。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いたお花に傷みや問題があった場合は、カスタマーサポートに連絡することで対応してもらえます。市場直送で鮮度管理には力を入れていますが、配送中のトラブルに対しても丁寧に対応してくれると口コミで評判です。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクはプレゼントとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ハナメクではギフト用の花の定期便も利用可能です。公式サイトからギフト設定を行うことで、大切な方へお花の定期便をプレゼントできます。母の日や誕生日など、特別なギフトとして人気があります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ハナメク（hanameku）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクには3つのプランがあります。ライトプランは1回1,210円（税込・送料別）、スタンダードプランは1回1,958円（税込・送料別）、セルフプランは1回2,680円（税込・送料別）です。いずれも回数縛りなしで、いつでも解約できます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクの解約はマイページから手続きできます。回数縛りがないため、いつでも自由に解約が可能です。次回配送日の数日前までにマイページで解約手続きを行えば、追加料金なしで解約できます。解約後も届いた花の情報はアプリで引き続き確認できます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのお花はどのように届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクのお花はポスト投函で届きます。市場から直送されるため、鮮度の高い切り花が届くのが特徴です。専用のパッケージに丁寧に梱包された状態で届くため、不在時でも安心して受け取れます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのアプリではどんな情報が見られますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクの専用アプリでは、届いたお花の品種名、産地情報、お手入れ方法などを確認できます。花の名前がわからなくても、アプリを開けばすぐに確認できるため、お花の知識を深めながら楽しむことができます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクの配送エリアはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ハナメクは日本国内の多くの地域に対応していますが、一部の離島や配送が難しい地域では対応エリア外となる場合があります。詳しい配送対応エリアは公式サイトで郵便番号を入力して確認できます。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのセルフプランとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"セルフプランは、届いたお花を自分でアレンジして楽しむためのプランです。通常のプランではアレンジ済みのお花が届きますが、セルフプランでは茎が長めの状態でお花が届くため、自分好みのアレンジや生け方を楽しめます。お花に慣れてきた方やフラワーアレンジメントに挑戦したい方におすすめです。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクのお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いたお花に傷みや問題があった場合は、カスタマーサポートに連絡することで対応してもらえます。市場直送で鮮度管理には力を入れていますが、配送中のトラブルに対しても丁寧に対応してくれると口コミで評判です。\"}},{\"@type\":\"Question\",\"name\":\"ハナメクはプレゼントとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ハナメクではギフト用の花の定期便も利用可能です。公式サイトからギフト設定を行うことで、大切な方へお花の定期便をプレゼントできます。母の日や誕生日など、特別なギフトとして人気があります。\"}}]}" }} />
     <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
       {[1, 2, 3, 4, 5].map((star) => (
         <svg
@@ -171,7 +171,7 @@ export default function HanamekuPage() {
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">最安プラン</p>
-                <p className="text-xl font-bold text-[#4A7C59]">858円/回〜</p>
+                <p className="text-xl font-bold text-[#4A7C59]">1,210円/回〜</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">届き方</p>
@@ -216,7 +216,7 @@ export default function HanamekuPage() {
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
               回数縛りがなくいつでも解約できる手軽さと、届いたお花の品種や産地情報をアプリで確認できるユニークな機能が特徴です。
-              ライトプランは858円/回からとリーズナブルで、セルフアレンジを楽しめるプランも用意されているなど、初心者から上級者まで幅広く対応したサービスです。
+              ライトプランは1,210円/回からとリーズナブルで、セルフアレンジを楽しめるプランも用意されているなど、初心者から上級者まで幅広く対応したサービスです。
             </p>
             <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6">
               <h3 className="text-sm font-bold text-[#4A7C59] mb-3">ハナメク 基本情報</h3>
@@ -231,7 +231,7 @@ export default function HanamekuPage() {
                 </div>
                 <div className="flex">
                   <span className="text-[#999] w-28 shrink-0">最安プラン</span>
-                  <span className="text-[#333]">858円/回（税込・送料別）</span>
+                  <span className="text-[#333]">1,210円/回（税込・送料別）</span>
                 </div>
                 <div className="flex">
                   <span className="text-[#999] w-28 shrink-0">回数縛り</span>
@@ -277,7 +277,7 @@ export default function HanamekuPage() {
                   <h3 className="text-lg font-bold text-[#333]">ライトプラン</h3>
                 </div>
                 <div className="px-5 py-5 text-center">
-                  <p className="text-3xl font-bold text-[#4A7C59] mb-1">858<span className="text-base font-medium">円/回</span></p>
+                  <p className="text-3xl font-bold text-[#4A7C59] mb-1">1,210<span className="text-base font-medium">円/回</span></p>
                   <p className="text-xs text-[#999] mb-4">+ 送料別</p>
                   <div className="text-sm text-[#666] space-y-2 text-left">
                     <p>お花の本数：少なめ</p>
@@ -360,7 +360,7 @@ export default function HanamekuPage() {
                 },
                 {
                   title: "リーズナブルな価格設定",
-                  text: "ライトプランは858円/回と、花のサブスクの中でもトップクラスの低価格です。市場直送で中間コストを抑えているため、品質に対して価格が非常にリーズナブル。お花のある生活を無理なく続けられる価格設定が評価されています。",
+                  text: "ライトプランは1,210円/回と、花のサブスクの中でもトップクラスの低価格です。市場直送で中間コストを抑えているため、品質に対して価格が非常にリーズナブル。お花のある生活を無理なく続けられる価格設定が評価されています。",
                 },
                 {
                   title: "セルフアレンジプランあり",
@@ -397,7 +397,7 @@ export default function HanamekuPage() {
                 },
                 {
                   title: "ライトプランは花の本数が少なめ",
-                  text: "858円というリーズナブルな価格が魅力のライトプランですが、花の本数は少なめです。テーブルに飾るには物足りないと感じる方もいます。しっかりとしたボリュームを求める場合は、スタンダードプラン（1,958円）やセルフプラン（2,680円）を検討するのがおすすめです。",
+                  text: "1,210円というリーズナブルな価格が魅力のライトプランですが、花の本数は少なめです。テーブルに飾るには物足りないと感じる方もいます。しっかりとしたボリュームを求める場合は、スタンダードプラン（1,958円）やセルフプラン（2,680円）を検討するのがおすすめです。",
                 },
                 {
                   title: "ポスト投函のみの配送方法",
@@ -544,9 +544,9 @@ export default function HanamekuPage() {
                 <tbody>
                   <tr>
                     <td className="font-medium text-[#333]">最安プラン</td>
-                    <td className="font-bold text-[#4A7C59]">858円/回</td>
+                    <td className="font-bold text-[#4A7C59]">1,210円/回</td>
                     <td>980円/回</td>
-                    <td>698円/回</td>
+                    <td>748円/回</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">送料</td>
@@ -606,7 +606,7 @@ export default function HanamekuPage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">ハナメク vs medelu</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  medeluは月額698円・送料無料と、総額でのコスパが最も優れたサービスです。一方、ハナメクは市場直送による鮮度の高さと、アプリでの花情報確認機能、セルフアレンジプランといった独自の付加価値があります。
+                  medeluは月額748円・送料無料と、総額でのコスパが最も優れたサービスです。一方、ハナメクは市場直送による鮮度の高さと、アプリでの花情報確認機能、セルフアレンジプランといった独自の付加価値があります。
                   価格だけで選ぶならmedelu、お花の鮮度や知識を深める体験を重視するならハナメクがおすすめです。
                 </p>
               </div>
@@ -630,7 +630,7 @@ export default function HanamekuPage() {
                 {
                   step: "STEP 2",
                   title: "プランを選択",
-                  text: "ライトプラン（858円）、スタンダードプラン（1,958円）、セルフプラン（2,680円）の中から希望のプランを選びます。",
+                  text: "ライトプラン（1,210円）、スタンダードプラン（1,958円）、セルフプラン（2,680円）の中から希望のプランを選びます。",
                 },
                 {
                   step: "STEP 3",
@@ -769,7 +769,7 @@ export default function HanamekuPage() {
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               ハナメク（hanameku）は、市場直送で鮮度抜群のお花が届く花のサブスクサービスです。
-              回数縛りなしでいつでも解約でき、858円/回のライトプランから気軽に始められます。
+              回数縛りなしでいつでも解約でき、1,210円/回のライトプランから気軽に始められます。
               届いたお花の品種や産地をアプリで確認できる独自機能や、自分でアレンジを楽しめるセルフプランなど、他社にはない魅力が詰まっています。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">

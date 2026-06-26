@@ -546,7 +546,7 @@ export default function BloomeePage() {
                   <tr>
                     <td className="font-medium text-[#333]">最安プラン</td>
                     <td>980円/回</td>
-                    <td>698円/回</td>
+                    <td>748円/回</td>
                     <td>1,980円/回</td>
                   </tr>
                   <tr>
@@ -599,7 +599,7 @@ export default function BloomeePage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">bloomee vs medelu</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  コスパを重視するならmedeluが有利です。medeluは月額698円で送料無料のため、1回あたりの総額はbloomeeの体験プラン（980円+送料385円=1,365円）の約半額になります。
+                  コスパを重視するならmedeluが有利です。medeluは月額748円で送料無料のため、1回あたりの総額はbloomeeの体験プラン（980円+送料385円=1,365円）の約半額になります。
                   一方、bloomeeは全国200店舗以上の提携花屋からのアレンジが届くため、毎回異なるテイストのお花を楽しめる点が強みです。SNSでの情報量もbloomeeのほうが圧倒的に多く、事前に他のユーザーの投稿を参考にできます。
                 </p>
               </div>

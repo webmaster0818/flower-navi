@@ -152,9 +152,10 @@ export default async function PersonaPage({ params }: Props) {
           {/* Real Cases */}
           {p.realCases.length > 0 && (
             <section className="mb-12">
-              <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-                実際の利用者事例
+              <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">
+                編集部まとめ：想定される利用ケースの傾向
               </h2>
+              <p className="text-xs text-[#999] mb-6">※公式情報やSNS上の口コミをもとに編集部が傾向を整理した代表的なケース像です。特定の個人の体験談ではありません。</p>
               <div className="grid md:grid-cols-2 gap-4">
                 {p.realCases.map((c, i) => (
                   <article key={i} className="bg-white border border-[#E8E0D8] rounded-xl p-5">

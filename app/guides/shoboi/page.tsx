@@ -19,7 +19,7 @@ const faqItems = [
   },
   {
     q: "しょぼくないおすすめのサービスはどれですか？",
-    a: "ボリューム重視ならAND PLANTS（4〜6本、送料無料）、コスパ重視ならmedelu（698円〜、送料無料）、鮮度重視ならLIFFT（市場直送、3,300円）がおすすめです。いずれも品質保証制度があり、万が一の際も安心です。",
+    a: "ボリューム重視ならAND PLANTS（4〜6本、送料無料）、コスパ重視ならmedelu（748円〜、送料無料）、鮮度重視ならLIFFT（市場直送、3,300円）がおすすめです。いずれも品質保証制度があり、万が一の際も安心です。",
   },
   {
     q: "品質保証制度とは何ですか？",
@@ -42,7 +42,7 @@ export default function ShoboboiGuidePage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクは本当にしょぼい？\",\"description\":\"花のサブスクは本当にしょぼい？ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/shoboi/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは本当にしょぼいのですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"「しょぼい」と感じるかどうかはプラン選びに大きく左右されます。最安プラン（500〜1,000円前後）では花が3本程度と少なめですが、2,000円以上のプランでは5〜8本のボリュームあるアレンジが届きます。また、サービスによって品質に差があるため、口コミや品質保証制度の有無を事前に確認することが重要です。\"}},{\"@type\":\"Question\",\"name\":\"届いた花がすぐ枯れてしまいます。対処法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いたらすぐに水切り（水中で茎を斜めにカット）を行い、切り花延命剤を入れた新鮮な水に飾りましょう。夏場はこまめな水替え（毎日が理想）が必須です。また、直射日光やエアコンの風が直接当たる場所を避けることで花持ちが大幅に改善します。クール便対応のサービスを選ぶのも効果的です。\"}},{\"@type\":\"Question\",\"name\":\"しょぼくないおすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ボリューム重視ならAND PLANTS（4〜6本、送料無料）、コスパ重視ならmedelu（698円〜、送料無料）、鮮度重視ならLIFFT（市場直送、3,300円）がおすすめです。いずれも品質保証制度があり、万が一の際も安心です。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いた花が傷んでいた場合に、無料で再送または返金してもらえる制度です。bloomee、medelu、AND PLANTSなど主要サービスの多くが導入しています。申請は写真を撮ってマイページやLINEから行うのが一般的で、期限はお届け日から2〜3日以内が多いです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた人が多いのはなぜですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"主な理由は「期待とのギャップ」「花のお手入れが面倒」「コスパへの不満」の3つです。特に最安プランで始めた方が本数の少なさに物足りなさを感じるケースが多いです。事前にプラン内容を確認し、お手入れ方法も理解した上で始めると継続率が高まります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは本当にしょぼいのですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"「しょぼい」と感じるかどうかはプラン選びに大きく左右されます。最安プラン（500〜1,000円前後）では花が3本程度と少なめですが、2,000円以上のプランでは5〜8本のボリュームあるアレンジが届きます。また、サービスによって品質に差があるため、口コミや品質保証制度の有無を事前に確認することが重要です。\"}},{\"@type\":\"Question\",\"name\":\"届いた花がすぐ枯れてしまいます。対処法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いたらすぐに水切り（水中で茎を斜めにカット）を行い、切り花延命剤を入れた新鮮な水に飾りましょう。夏場はこまめな水替え（毎日が理想）が必須です。また、直射日光やエアコンの風が直接当たる場所を避けることで花持ちが大幅に改善します。クール便対応のサービスを選ぶのも効果的です。\"}},{\"@type\":\"Question\",\"name\":\"しょぼくないおすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ボリューム重視ならAND PLANTS（4〜6本、送料無料）、コスパ重視ならmedelu（748円〜、送料無料）、鮮度重視ならLIFFT（市場直送、3,300円）がおすすめです。いずれも品質保証制度があり、万が一の際も安心です。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いた花が傷んでいた場合に、無料で再送または返金してもらえる制度です。bloomee、medelu、AND PLANTSなど主要サービスの多くが導入しています。申請は写真を撮ってマイページやLINEから行うのが一般的で、期限はお届け日から2〜3日以内が多いです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた人が多いのはなぜですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"主な理由は「期待とのギャップ」「花のお手入れが面倒」「コスパへの不満」の3つです。特に最安プランで始めた方が本数の少なさに物足りなさを感じるケースが多いです。事前にプラン内容を確認し、お手入れ方法も理解した上で始めると継続率が高まります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -220,7 +220,7 @@ export default function ShoboboiGuidePage() {
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">medelu</td>
-                    <td>ANYROOM 698円/回</td>
+                    <td>ANYROOM 748円/回</td>
                     <td>3本</td>
                     <td>無料</td>
                     <td className="font-bold text-[#4A7C59]">約233円</td>
@@ -274,7 +274,7 @@ export default function ShoboboiGuidePage() {
                 {
                   step: "ポイント 1",
                   title: "予算は「送料込み」で考える",
-                  text: "月額料金だけでなく送料も含めた「1回あたりの総額」で比較しましょう。bloomeeの体験プランは980円ですが送料385円を加えると1,365円。一方、medeluは698円で送料無料なので総額698円です。送料込みで比較すると実質的なコスパがわかります。",
+                  text: "月額料金だけでなく送料も含めた「1回あたりの総額」で比較しましょう。bloomeeの体験プランは980円ですが送料385円を加えると1,365円。一方、medeluは748円で送料無料なので総額748円です。送料込みで比較すると実質的なコスパがわかります。",
                 },
                 {
                   step: "ポイント 2",
@@ -448,7 +448,7 @@ export default function ShoboboiGuidePage() {
               花のサブスクが「しょぼい」と感じる主な原因は、<strong>プラン選びのミスマッチ</strong>です。最安プランはあくまでお試し用であり、満足度を求めるなら1,500円以上のプランを選ぶことで花のボリュームと品質が大幅にアップします。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              コスパ重視なら<strong>medelu</strong>（698円〜・送料無料）、ボリュームとデザイン重視なら<strong>AND PLANTS</strong>（1,980円〜・送料無料）、鮮度と質を追求するなら<strong>LIFFT</strong>（3,300円・市場直送）がおすすめです。品質保証制度を活用し、季節の花を楽しむ心構えがあれば、花のサブスクはきっと日々の暮らしを豊かにしてくれるでしょう。
+              コスパ重視なら<strong>medelu</strong>（748円〜・送料無料）、ボリュームとデザイン重視なら<strong>AND PLANTS</strong>（1,980円〜・送料無料）、鮮度と質を追求するなら<strong>LIFFT</strong>（3,300円・市場直送）がおすすめです。品質保証制度を活用し、季節の花を楽しむ心構えがあれば、花のサブスクはきっと日々の暮らしを豊かにしてくれるでしょう。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
