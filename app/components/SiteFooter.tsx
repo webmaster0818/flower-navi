@@ -13,6 +13,7 @@ const services = [
 ];
 
 const compares = [
+  ["ryokin", "料金比較表（総額・1本単価）"],
   ["cheap", "安い花のサブスク比較"],
   ["500yen", "500円台の花の定期便"],
   ["souryou-muryou", "送料無料で比較"],
