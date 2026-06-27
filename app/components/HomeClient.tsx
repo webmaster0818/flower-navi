@@ -1,6 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { SERVICES } from "@/data/services";
+
+/** 比較表用：services.ts（単一データソース）から安い順 */
+const COMPARE_ROWS = [...SERVICES].sort((a, b) => a.cheapest.price - b.cheapest.price);
+const shortName = (n: string) => n.replace(/（.*）/, "");
 
 /* ─── Diagnosis Logic ─── */
 type DiagnosisAnswer = {
@@ -635,7 +640,7 @@ export default function HomeClient() {
             <div className="text-center mb-12">
               <p className="text-sm text-[#C4877A] tracking-widest mb-3">COMPARISON</p>
               <h2 className="heading-serif text-3xl md:text-4xl font-bold text-[#3D3632] mb-4">
-                お花の定期便 5社比較表
+                お花の定期便 主要4社の料金比較表
               </h2>
               <p className="text-[#6B5F57]">
                 料金・送料・届き方を一目で比較できます
@@ -655,52 +660,25 @@ export default function HomeClient() {
                     <th className="rounded-tr-2xl">解約条件</th>
                   </tr>
                 </thead>
+                {/* 単一データソース(services.ts)から生成。価格はすべて公式確認(2026-06-27) */}
                 <tbody>
-                  <tr>
-                    <td className="font-medium text-[#3D3632]">bloomee</td>
-                    <td>980円/回</td>
-                    <td>385円</td>
-                    <td>ポスト投函</td>
-                    <td>3本〜</td>
-                    <td>隔週</td>
-                    <td>4回縛り</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#3D3632]">medelu</td>
-                    <td className="text-[#C4877A] font-medium">748円/回</td>
-                    <td className="text-[#7A9E7E] font-medium">無料</td>
-                    <td>ポスト投函</td>
-                    <td>3本〜</td>
-                    <td>隔週</td>
-                    <td className="text-[#7A9E7E]">縛りなし</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#3D3632]">AND PLANTS</td>
-                    <td>1,980円/回</td>
-                    <td className="text-[#7A9E7E] font-medium">無料</td>
-                    <td>手渡し</td>
-                    <td>4〜6本</td>
-                    <td>隔週/月1</td>
-                    <td className="text-[#7A9E7E]">縛りなし</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#3D3632]">花の定期便</td>
-                    <td>1,500円〜/回</td>
-                    <td>地域別</td>
-                    <td>手渡し</td>
-                    <td>5〜7本</td>
-                    <td>隔週/月1</td>
-                    <td>コース別</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#3D3632]">hanameku</td>
-                    <td>1,210円/回</td>
-                    <td>一部無料</td>
-                    <td>ポスト/手渡し</td>
-                    <td>3本〜</td>
-                    <td>隔週</td>
-                    <td className="text-[#7A9E7E]">縛りなし</td>
-                  </tr>
+                  {COMPARE_ROWS.map((s) => (
+                    <tr key={s.id}>
+                      <td className="font-medium text-[#3D3632]">{shortName(s.name)}</td>
+                      <td className={s.cheapest.price === COMPARE_ROWS[0].cheapest.price ? "text-[#C4877A] font-medium" : ""}>
+                        {s.cheapest.price.toLocaleString("ja-JP")}円/回
+                      </td>
+                      <td className={s.shippingIncluded ? "text-[#7A9E7E] font-medium" : ""}>
+                        {s.shippingIncluded ? "込み" : "要確認"}
+                      </td>
+                      <td>{s.cheapest.postDelivery ? "ポスト投函" : "宅配/手渡し"}</td>
+                      <td>{s.cheapest.flowers}</td>
+                      <td>隔週〜</td>
+                      <td className={s.minDeliveries ? "" : "text-[#7A9E7E]"}>
+                        {s.minDeliveries ? `${s.minDeliveries}回縛り` : "縛りなし"}
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>

@@ -87,13 +87,13 @@ export const SERVICES: Service[] = [
     plans: [
       { name: "お試しプラン", price: 980, flowers: "3本以上", postDelivery: true },
     ],
-    shippingIncluded: true,
-    shippingNote: "お試しプランは郵便受け投函（税込980円）",
+    shippingIncluded: false,
+    shippingNote: "お試し980円（郵便受け投函）。配送料の有無は公式で要確認（一部エリアは宅配便）",
     minDeliveries: 4,
     cancellation: "最初の4回受け取り後にいつでもストップ/解約可",
     verifiedAt: V,
     source: "bloomee公式（bloomeelife.com）",
-    note: "レギュラー/リッチプランの価格・送料は公式で未確認のため本表では最安のお試しプランのみ掲載。",
+    note: "お試しプラン980円(税込)は公式確認。配送料の扱い・レギュラー/リッチプランの価格は公式で未確認のため本表では最安のお試しプランのみ掲載し、送料は『要確認』としています。",
   },
   {
     id: "andplants",
