@@ -3,6 +3,10 @@
 import { useState } from "react";
 import type { Metadata } from "next";
 import Header from "@/app/components/Header";
+import { SERVICES } from "@/data/services";
+
+/* 料金は単一データソース(services.ts)を参照（公式確認済み・ページ間のズレ防止） */
+const S = SERVICES.find((s) => s.id === "hanameku")!;
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -171,7 +175,7 @@ export default function HanamekuPage() {
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">最安プラン</p>
-                <p className="text-xl font-bold text-[#4A7C59]">1,210円/回〜</p>
+                <p className="text-xl font-bold text-[#4A7C59]">{S.cheapest.price.toLocaleString()}円/回〜</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">届き方</p>
@@ -231,7 +235,7 @@ export default function HanamekuPage() {
                 </div>
                 <div className="flex">
                   <span className="text-[#999] w-28 shrink-0">最安プラン</span>
-                  <span className="text-[#333]">1,210円/回（税込・送料別）</span>
+                  <span className="text-[#333]">{S.cheapest.price.toLocaleString()}円/回（{S.cheapest.name}・税込・配送料込）</span>
                 </div>
                 <div className="flex">
                   <span className="text-[#999] w-28 shrink-0">回数縛り</span>

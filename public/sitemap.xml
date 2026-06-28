@@ -32,49 +32,49 @@
   </url>
   <url>
     <loc>https://ohana-delivery.com/services/and-plants/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ohana-delivery.com/services/bloomee/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ohana-delivery.com/services/hanameku/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ohana-delivery.com/services/hitohana/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ohana-delivery.com/services/lifft/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ohana-delivery.com/services/medelu/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ohana-delivery.com/services/nihon-sogo-engei/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ohana-delivery.com/services/tasuhana/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -95,6 +95,12 @@
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ohana-delivery.com/compare/ryokin/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ohana-delivery.com/compare/cheap/</loc>
@@ -576,4 +582,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://ohana-delivery.com/guides/keirou-no-hi/</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ohana-delivery.com/guides/obon/</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

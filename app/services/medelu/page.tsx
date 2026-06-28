@@ -3,12 +3,16 @@
 import { useState } from "react";
 import type { Metadata } from "next";
 import Header from "@/app/components/Header";
+import { SERVICES } from "@/data/services";
+
+/* 料金は単一データソース(services.ts)を参照（公式確認済み・ページ間のズレ防止） */
+const S = SERVICES.find((s) => s.id === "medelu")!;
 
 /* ─── FAQ Data ─── */
 const faqItems = [
   {
     q: "medelu（メデル）の料金はいくらですか？",
-    a: "medeluには3つのコース（ANYROOM・MODERN・NATURAL）があり、それぞれMini・Lite・Basic・Luxeの4サイズから選べます。最安はMiniサイズの748円（税込）で、全プラン送料無料です。Liteは1,240円〜、Basicは1,540円〜となっています。",
+    a: "medeluには3つのコース（ANYROOM・MODERN・NATURAL）があり、それぞれMini・Lite・Lite+・Basicの4サイズから選べます。最安はMiniサイズの748円（税込）です。Liteは1,330円〜、Lite+は1,650円〜、Basicは2,330円〜となっています（2026年6月27日時点・medelu公式確認）。",
   },
   {
     q: "medeluの解約方法を教えてください。",
@@ -99,7 +103,7 @@ function StarRating({ rating }: { rating: number }) {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"description\":\"medelu（メデル）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/medelu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"medelu（メデル）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには3つのコース（ANYROOM・MODERN・NATURAL）があり、それぞれMini・Lite・Basic・Luxeの4サイズから選べます。最安はMiniサイズの748円（税込）で、全プラン送料無料です。Liteは1,240円〜、Basicは1,540円〜となっています。\"}},{\"@type\":\"Question\",\"name\":\"medeluの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluの解約はマイページから手続きできます。回数縛りがないため、いつでも解約が可能です。次回配送日の前日までにマイページで解約手続きを行えば、追加料金なしで解約できます。違約金や最低利用期間はありません。\"}},{\"@type\":\"Question\",\"name\":\"medeluのお花が傷んで届いた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには品質保証制度があります。届いたお花が傷んでいた場合、到着から2日以内にマイページの問い合わせフォームから写真を添付して申請すると、次回配送時に代替のお花を届けてもらえます。市場直送のため鮮度には自信がありますが、万が一の際も安心です。\"}},{\"@type\":\"Question\",\"name\":\"medeluの3つのコースの違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ANYROOMコースはどんなお部屋にも合う万能なアレンジ、MODERNコースはモノトーンやスタイリッシュなお部屋に合うアレンジ、NATURALコースはナチュラルテイストや北欧風のお部屋に合うアレンジが届きます。お部屋の雰囲気に合わせて選ぶのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"medeluはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluの配送頻度は「毎週」または「隔週」から選択できます。マイページからいつでも変更可能です。また、受け取れない週はスキップ機能を使って配送を1回飛ばすこともできます。スキップは無料で、マイページから簡単に設定できます。\"}},{\"@type\":\"Question\",\"name\":\"medeluの送料はかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"いいえ、medeluは全プラン送料無料です。他社のお花のサブスクでは300〜500円程度の送料がかかるサービスが多い中、medeluは表示価格のみで利用できるため、トータルコストを抑えたい方に人気です。\"}},{\"@type\":\"Question\",\"name\":\"medeluのお花は手渡しで届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluのお花はすべてポスト投函（ゆうパケット）での配送となります。手渡しでの受け取りには対応していません。ポストの投函口が幅4cm以上、奥行き15cm以上あれば問題なく届きます。不在時でも受け取れるのがメリットです。\"}},{\"@type\":\"Question\",\"name\":\"medeluの対応エリアはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluは離島やごく一部の地域を除き、日本全国に配送対応しています。ただし、お届け先の地域によって届くお花の種類が異なる場合があります。これは各地域の市場から直送しているためで、鮮度を最優先にした仕組みです。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"medelu（メデル）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには3つのコース（ANYROOM・MODERN・NATURAL）があり、それぞれMini・Lite・Lite+・Basicの4サイズから選べます。最安はMiniサイズの748円（税込）です。Liteは1,330円〜、Lite+は1,650円〜、Basicは2,330円〜となっています（2026年6月27日時点・medelu公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"medeluの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluの解約はマイページから手続きできます。回数縛りがないため、いつでも解約が可能です。次回配送日の前日までにマイページで解約手続きを行えば、追加料金なしで解約できます。違約金や最低利用期間はありません。\"}},{\"@type\":\"Question\",\"name\":\"medeluのお花が傷んで届いた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには品質保証制度があります。届いたお花が傷んでいた場合、到着から2日以内にマイページの問い合わせフォームから写真を添付して申請すると、次回配送時に代替のお花を届けてもらえます。市場直送のため鮮度には自信がありますが、万が一の際も安心です。\"}},{\"@type\":\"Question\",\"name\":\"medeluの3つのコースの違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ANYROOMコースはどんなお部屋にも合う万能なアレンジ、MODERNコースはモノトーンやスタイリッシュなお部屋に合うアレンジ、NATURALコースはナチュラルテイストや北欧風のお部屋に合うアレンジが届きます。お部屋の雰囲気に合わせて選ぶのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"medeluはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluの配送頻度は「毎週」または「隔週」から選択できます。マイページからいつでも変更可能です。また、受け取れない週はスキップ機能を使って配送を1回飛ばすこともできます。スキップは無料で、マイページから簡単に設定できます。\"}},{\"@type\":\"Question\",\"name\":\"medeluの送料はかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"いいえ、medeluは全プラン送料無料です。他社のお花のサブスクでは300〜500円程度の送料がかかるサービスが多い中、medeluは表示価格のみで利用できるため、トータルコストを抑えたい方に人気です。\"}},{\"@type\":\"Question\",\"name\":\"medeluのお花は手渡しで届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluのお花はすべてポスト投函（ゆうパケット）での配送となります。手渡しでの受け取りには対応していません。ポストの投函口が幅4cm以上、奥行き15cm以上あれば問題なく届きます。不在時でも受け取れるのがメリットです。\"}},{\"@type\":\"Question\",\"name\":\"medeluの対応エリアはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluは離島やごく一部の地域を除き、日本全国に配送対応しています。ただし、お届け先の地域によって届くお花の種類が異なる場合があります。これは各地域の市場から直送しているためで、鮮度を最優先にした仕組みです。\"}}]}" }} />
     <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
       {[1, 2, 3, 4, 5].map((star) => (
         <svg
@@ -163,7 +167,7 @@ export default function MedeluPage() {
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">最安プラン</p>
-                <p className="text-xl font-bold text-[#4A7C59]">748円/回〜</p>
+                <p className="text-xl font-bold text-[#4A7C59]">{S.cheapest.price.toLocaleString()}円/回〜</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">送料</p>
@@ -232,7 +236,7 @@ export default function MedeluPage() {
                 </div>
                 <div className="flex">
                   <span className="text-[#999] w-28 shrink-0">最安プラン</span>
-                  <span className="text-[#333]">748円/回（送料無料）</span>
+                  <span className="text-[#333]">{S.cheapest.price.toLocaleString()}円/回（{S.cheapest.name}・送料込み）</span>
                 </div>
                 <div className="flex">
                   <span className="text-[#999] w-28 shrink-0">コース数</span>
@@ -314,58 +318,32 @@ export default function MedeluPage() {
               </div>
             </div>
 
-            {/* サイズ別料金 */}
-            <h3 className="text-base font-bold text-[#333] mb-4">サイズ別料金（全コース共通・税込・送料無料）</h3>
+            {/* サイズ別料金（services.ts＝公式確認値から自動生成） */}
+            <h3 className="text-base font-bold text-[#333] mb-4">サイズ別料金（ANYROOMコース・税込）</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              {/* Mini */}
-              <div className="bg-white rounded-xl border border-[#E5E5E5] p-5 text-center">
-                <p className="text-xs text-[#999] mb-1">お試しに最適</p>
-                <h4 className="text-base font-bold text-[#333] mb-2">Mini</h4>
-                <p className="text-3xl font-bold text-[#4A7C59] mb-1">748<span className="text-base font-medium">円〜</span></p>
-                <p className="text-xs text-[#4A7C59] font-medium mb-3">送料無料</p>
-                <p className="text-sm text-[#666]">お花 3本程度</p>
-              </div>
-
-              {/* Lite */}
-              <div className="bg-white rounded-xl border border-[#E5E5E5] p-5 text-center">
-                <p className="text-xs text-[#999] mb-1">ちょうど良いサイズ</p>
-                <h4 className="text-base font-bold text-[#333] mb-2">Lite</h4>
-                <p className="text-3xl font-bold text-[#4A7C59] mb-1">1,240<span className="text-base font-medium">円〜</span></p>
-                <p className="text-xs text-[#4A7C59] font-medium mb-3">送料無料</p>
-                <p className="text-sm text-[#666]">お花 5本程度</p>
-              </div>
-
-              {/* Basic */}
-              <div className="bg-white rounded-xl border-2 border-[#4A7C59] p-5 text-center relative">
-                <div className="absolute top-0 right-0 bg-[#4A7C59] text-white text-xs px-2 py-0.5 rounded-bl-lg">
-                  人気
+              {S.plans.map((p, i) => (
+                <div key={p.name} className={`bg-white rounded-xl p-5 text-center relative ${i === 0 ? "border-2 border-[#4A7C59]" : "border border-[#E5E5E5]"}`}>
+                  {i === 0 && (
+                    <div className="absolute top-0 right-0 bg-[#4A7C59] text-white text-xs px-2 py-0.5 rounded-bl-lg">最安</div>
+                  )}
+                  <p className="text-xs text-[#999] mb-1">{p.postDelivery ? "ポスト投函対応" : "宅配でお届け"}</p>
+                  <h4 className="text-base font-bold text-[#333] mb-2">{p.name}</h4>
+                  <p className="text-3xl font-bold text-[#4A7C59] mb-1">{p.price.toLocaleString()}<span className="text-base font-medium">円〜</span></p>
+                  <p className="text-xs text-[#4A7C59] font-medium mb-3">{p.postDelivery ? "ポスト投函" : "宅配"}</p>
+                  <p className="text-sm text-[#666]">お花 {p.flowers}</p>
                 </div>
-                <p className="text-xs text-[#4A7C59] mb-1">一番人気</p>
-                <h4 className="text-base font-bold text-[#333] mb-2">Basic</h4>
-                <p className="text-3xl font-bold text-[#4A7C59] mb-1">1,540<span className="text-base font-medium">円〜</span></p>
-                <p className="text-xs text-[#4A7C59] font-medium mb-3">送料無料</p>
-                <p className="text-sm text-[#666]">お花 6〜7本程度</p>
-              </div>
-
-              {/* Luxe */}
-              <div className="bg-white rounded-xl border border-[#E5E5E5] p-5 text-center">
-                <p className="text-xs text-[#999] mb-1">豪華に楽しむ</p>
-                <h4 className="text-base font-bold text-[#333] mb-2">Luxe</h4>
-                <p className="text-3xl font-bold text-[#4A7C59] mb-1">2,178<span className="text-base font-medium">円〜</span></p>
-                <p className="text-xs text-[#4A7C59] font-medium mb-3">送料無料</p>
-                <p className="text-sm text-[#666]">お花 8〜9本程度</p>
-              </div>
+              ))}
             </div>
 
             <div className="bg-white rounded-xl border border-[#E5E5E5] p-5">
               <h3 className="text-sm font-bold text-[#333] mb-3">料金に関する補足</h3>
               <ul className="text-sm text-[#666] space-y-2">
-                <li>・ 表示価格はすべて税込です</li>
-                <li>・ 全プラン送料無料（表示価格のみでOK）</li>
+                <li>・ 表示価格はすべて税込です（{S.verifiedAt}時点・出典: {S.source}）</li>
+                <li>・ {S.shippingNote}</li>
                 <li>・ 配送頻度は「毎週」「隔週」から選択可能（マイページで変更可）</li>
-                <li>・ 回数縛りなし、いつでも解約OK（違約金なし）</li>
+                <li>・ {S.cancellation}</li>
                 <li>・ スキップ機能あり（配送を1回飛ばすことが無料で可能）</li>
-                <li>・ 3コース x 4サイズ = 計12パターンから選択可能</li>
+                <li>・ 最新の料金・プラン構成は<a href={S.officialUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">medelu公式サイト</a>でご確認ください</li>
               </ul>
             </div>
           </div>
@@ -668,7 +646,7 @@ export default function MedeluPage() {
                 {
                   step: "STEP 3",
                   title: "サイズを選択",
-                  text: "Mini（748円〜）・Lite（1,240円〜）・Basic（1,540円〜）・Luxe（2,178円〜）の4サイズから希望のサイズを選びます。お試しならMiniサイズがおすすめです。",
+                  text: "Mini（748円〜）・Lite（1,330円〜）・Lite+（1,650円〜）・Basic（2,330円〜）の4サイズから希望のサイズを選びます。お試しならMiniサイズがおすすめです。",
                 },
                 {
                   step: "STEP 4",
