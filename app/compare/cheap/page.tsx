@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import { SERVICES } from "@/data/services";
+
+/* 料金は単一データソース(services.ts)を参照（公式確認値・ページ間ズレ防止） */
+const sv = (id: string) => SERVICES.find((s) => s.id === id)!.cheapest.price;
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -46,9 +50,9 @@ const rankingData = [
     name: "medelu",
     nameJa: "メデル",
     plan: "Miniプラン",
-    price: 748,
+    price: sv("medelu"),
     shipping: 0,
-    total: 748,
+    total: sv("medelu"),
     shippingLabel: "無料",
     flowers: "3本",
     delivery: "ポスト投函",
@@ -66,9 +70,9 @@ const rankingData = [
     name: "hanameku",
     nameJa: "ハナメク",
     plan: "ライトプラン",
-    price: 1210,
+    price: sv("hanameku"),
     shipping: 0,
-    total: 1210,
+    total: sv("hanameku"),
     shippingLabel: "無料（込み）",
     flowers: "花とグリーン数本",
     delivery: "ポスト投函",
@@ -86,9 +90,9 @@ const rankingData = [
     name: "bloomee",
     nameJa: "ブルーミー",
     plan: "体験プラン",
-    price: 980,
+    price: sv("bloomee"),
     shipping: 385,
-    total: 1365,
+    total: sv("bloomee") + 385,
     shippingLabel: "385円",
     flowers: "3本以上",
     delivery: "ポスト投函",
@@ -106,9 +110,9 @@ const rankingData = [
     name: "AND PLANTS",
     nameJa: "アンドプランツ",
     plan: "Standardプラン",
-    price: 1980,
+    price: sv("andplants"),
     shipping: 0,
-    total: 1980,
+    total: sv("andplants"),
     shippingLabel: "無料",
     flowers: "4〜6本",
     delivery: "宅配便",

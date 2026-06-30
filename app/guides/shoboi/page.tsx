@@ -156,7 +156,7 @@ export default function ShoboboiGuidePage() {
                   <strong>原因：</strong>最安プランを選んでいるケースがほとんどです。体験プラン（980円前後）は3本程度で、あくまで「お試し」の位置づけ。満足度を上げるには1,500円以上のプランを選ぶことで花の本数とバリエーションが格段に向上します。
                 </p>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">解決策：medelu BASIC（1,240円/回・5本）やAND PLANTS（1,980円/回・4〜6本）など中価格帯のプランがおすすめ。送料無料なので総額でもお得です。</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">解決策：medelu Lite（1,330円/回・5〜6本）やAND PLANTS（1,980円/回・4〜6本）など中価格帯のプランがおすすめ。送料無料なので総額でもお得です。</p>
                 </div>
               </div>
 
@@ -227,10 +227,10 @@ export default function ShoboboiGuidePage() {
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">medelu</td>
-                    <td>BASIC 1,240円/回</td>
-                    <td>5本</td>
+                    <td>Lite 1,330円/回</td>
+                    <td>5〜6本</td>
                     <td>無料</td>
-                    <td className="font-bold text-[#4A7C59]">約248円</td>
+                    <td className="font-bold text-[#4A7C59]">約266円</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">AND PLANTS</td>
