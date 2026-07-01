@@ -2,12 +2,16 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import { SERVICES } from "@/data/services";
+
+/* 料金は単一データソース(services.ts・公式確認値)を参照 */
+const sv = (id: string) => SERVICES.find((s) => s.id === id)!.cheapest.price;
 
 /* ─── FAQ Data ─── */
 const faqItems = [
   {
     q: "本当に500円台でお花の定期便を始められますか？",
-    a: "花代だけで見ると、タスハナが528円/回と500円台で始められます。ただし送料330円が別途かかるため、総額は1,210円/回になります。medeluのLiteコースは748円/回ですが送料無料のため、総額ではmedeluが最安です。純粋な「ワンコイン（500円）」で始められるサービスは現時点ではありませんが、1,000円以下で始められるサービスは複数あります。",
+    a: "花代だけで見ると、タスハナが528円/回と500円台で始められます。ただし送料330円が別途かかるため、総額は858円/回になります（タスハナは公式サイトが現在確認できないため要確認）。medeluのLiteコースは748円/回ですが送料無料のため、総額ではmedeluが最安です。純粋な「ワンコイン（500円）」で始められるサービスは現時点ではありませんが、1,000円以下で始められるサービスは複数あります。",
   },
   {
     q: "安い花のサブスクでも品質は大丈夫ですか？",
@@ -41,12 +45,12 @@ const rankingData = [
     rank: 1,
     name: "medelu",
     nameJa: "メデル",
-    plan: "Liteコース",
-    price: 748,
+    plan: "Miniコース",
+    price: sv("medelu"),
     shipping: 0,
-    total: 748,
+    total: sv("medelu"),
     shippingLabel: "無料",
-    flowers: "3本",
+    flowers: "3〜4本",
     delivery: "ポスト投函",
     frequency: "毎週 / 隔週",
     minOrders: "なし",
@@ -62,7 +66,7 @@ const rankingData = [
     plan: "基本プラン",
     price: 528,
     shipping: 330,
-    total: 1210,
+    total: 858,
     shippingLabel: "330円",
     flowers: "3〜4本",
     delivery: "ポスト投函",
@@ -70,7 +74,7 @@ const rankingData = [
     minOrders: "なし",
     quality: "あり",
     url: "#",
-    highlight: "花代528円は最安。規格外の花を活用し低価格とフードロス削減を両立。送料330円を加えても1,210円/回。",
+    highlight: "花代528円は最安クラス。規格外の花を活用し低価格とフードロス削減を両立。送料330円を加えると858円/回（※公式サイトが現在確認できないため要確認）。",
     color: "#9CA3AF",
   },
   {
@@ -78,7 +82,7 @@ const rankingData = [
     name: "hanameku",
     nameJa: "ハナメク",
     plan: "ライトプラン",
-    price: 1210,
+    price: sv("hanameku"),
     shipping: null,
     total: null,
     shippingLabel: "別途（配送方法による）",
@@ -96,9 +100,9 @@ const rankingData = [
     name: "bloomee",
     nameJa: "ブルーミー",
     plan: "体験プラン",
-    price: 980,
+    price: sv("bloomee"),
     shipping: 385,
-    total: 1365,
+    total: sv("bloomee") + 385,
     shippingLabel: "385円",
     flowers: "3本以上",
     delivery: "ポスト投函",
@@ -124,7 +128,7 @@ export default function FiveHundredYenPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"500円から始められる花のサブスク比較\",\"description\":\"500円から始められる花のサブスク比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/500yen/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"本当に500円台でお花の定期便を始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花代だけで見ると、タスハナが528円/回と500円台で始められます。ただし送料330円が別途かかるため、総額は1,210円/回になります。medeluのLiteコースは748円/回ですが送料無料のため、総額ではmedeluが最安です。純粋な「ワンコイン（500円）」で始められるサービスは現時点ではありませんが、1,000円以下で始められるサービスは複数あります。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでも品質は大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、安いサービスでも品質面で問題があるわけではありません。medeluは市場直送の仕組みで中間コストを削減しているため安価でも新鮮なお花が届きます。タスハナも規格外の花（品質に問題はないが形やサイズが規格外のもの）を活用することでロスを減らし、低価格を実現しています。各サービスとも品質保証制度があるため、万が一傷んだ花が届いた場合は無料で再送してもらえます。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluは全プラン送料無料です。Liteコースは748円のみで利用でき、送料を含めた総額で業界最安水準です。AND PLANTSも送料込みの価格設定ですが、最安プランが1,980円/回と価格帯が異なります。bloomeeやhanamekuは別途送料がかかります。\"}},{\"@type\":\"Question\",\"name\":\"ワンコインで何本の花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安クラスのプランでは3本程度が一般的です。medeluのLiteコースは3本、タスハナは3〜4本、bloomeeの体験プランは3本以上です。本数は少なめですが、小さな花瓶に飾ったり、一輪挿しにするには十分なボリュームです。テーブルやデスクにちょっとした彩りを添えるのにぴったりです。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクに回数縛りはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは回数縛りなしで748円から始められるため、1回試してすぐ解約も可能です。タスハナも回数縛りはありません。一方、bloomeeは4回の最低受け取り回数があり、4回受け取り前に解約すると残り回数分の料金が発生します。初めてで不安な方は、回数縛りなしのサービスから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"月額で一番安いのはどのサービスですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"隔週（月2回）配送の場合、medeluのLiteコースが月額約1,396円（748円 x 2回、送料無料）で最安です。月1回配送が可能なサービスでは、hanamekuのライトプランが月1,210円＋送料で利用できます。月の花代を最小限に抑えたい方は、月1回配送を選べるサービスを検討するとよいでしょう。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでポスト投函に対応しているのはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medelu、bloomee、hanameku（ライトプランのポスト投函を選択した場合）がポスト投函に対応しています。ポスト投函なら不在時でも受け取れるため、日中家を空けることが多い方に便利です。ポスト投函対応のサービスの中で最安なのはmedeluのLiteコース（748円/回・送料無料）です。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"本当に500円台でお花の定期便を始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花代だけで見ると、タスハナが528円/回と500円台で始められます。ただし送料330円が別途かかるため、総額は858円/回になります（タスハナは公式サイトが現在確認できないため要確認）。medeluのLiteコースは748円/回ですが送料無料のため、総額ではmedeluが最安です。純粋な「ワンコイン（500円）」で始められるサービスは現時点ではありませんが、1,000円以下で始められるサービスは複数あります。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでも品質は大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、安いサービスでも品質面で問題があるわけではありません。medeluは市場直送の仕組みで中間コストを削減しているため安価でも新鮮なお花が届きます。タスハナも規格外の花（品質に問題はないが形やサイズが規格外のもの）を活用することでロスを減らし、低価格を実現しています。各サービスとも品質保証制度があるため、万が一傷んだ花が届いた場合は無料で再送してもらえます。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluは全プラン送料無料です。Liteコースは748円のみで利用でき、送料を含めた総額で業界最安水準です。AND PLANTSも送料込みの価格設定ですが、最安プランが1,980円/回と価格帯が異なります。bloomeeやhanamekuは別途送料がかかります。\"}},{\"@type\":\"Question\",\"name\":\"ワンコインで何本の花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安クラスのプランでは3本程度が一般的です。medeluのLiteコースは3本、タスハナは3〜4本、bloomeeの体験プランは3本以上です。本数は少なめですが、小さな花瓶に飾ったり、一輪挿しにするには十分なボリュームです。テーブルやデスクにちょっとした彩りを添えるのにぴったりです。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクに回数縛りはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは回数縛りなしで748円から始められるため、1回試してすぐ解約も可能です。タスハナも回数縛りはありません。一方、bloomeeは4回の最低受け取り回数があり、4回受け取り前に解約すると残り回数分の料金が発生します。初めてで不安な方は、回数縛りなしのサービスから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"月額で一番安いのはどのサービスですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"隔週（月2回）配送の場合、medeluのLiteコースが月額約1,396円（748円 x 2回、送料無料）で最安です。月1回配送が可能なサービスでは、hanamekuのライトプランが月1,210円＋送料で利用できます。月の花代を最小限に抑えたい方は、月1回配送を選べるサービスを検討するとよいでしょう。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでポスト投函に対応しているのはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medelu、bloomee、hanameku（ライトプランのポスト投函を選択した場合）がポスト投函に対応しています。ポスト投函なら不在時でも受け取れるため、日中家を空けることが多い方に便利です。ポスト投函対応のサービスの中で最安なのはmedeluのLiteコース（748円/回・送料無料）です。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -212,7 +216,7 @@ export default function FiveHundredYenPage() {
               結論から言うと、花代だけで500円台のサービスは存在します。タスハナは1回528円（税込）から利用でき、花代だけならワンコインに近い価格帯です。ただし、ほとんどのサービスでは花代とは別に送料がかかるため、送料を含めた「総額」で比較することが非常に重要です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
-              例えば、花代が528円でも送料が330円かかれば、1回あたりの総額は1,210円になります。一方、花代は748円でも送料無料のmedeluなら、総額はそのまま748円。花代だけを見て「安い！」と飛びつくと、実際の支出が予想以上になることもあるのです。
+              例えば、花代が528円でも送料が330円かかれば、1回あたりの総額は858円になります。一方、花代は748円でも送料無料のmedeluなら、総額はそのまま748円。花代だけを見て「安い！」と飛びつくと、実際の支出が予想以上になることもあるのです。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
               この記事では、各サービスの最安プランを「送料込みの総額」で比較し、本当にお得なサービスをご紹介します。500円台・1,000円以下で花のある暮らしを始めたい方は、ぜひ参考にしてください。
@@ -277,10 +281,10 @@ export default function FiveHundredYenPage() {
                   </tr>
                   <tr className="border-b border-[#E5E5E5]">
                     <td className="px-3 py-3 font-bold text-[#9CA3AF]">2位</td>
-                    <td className="px-3 py-3 font-bold text-[#333]">タスハナ 基本プラン</td>
+                    <td className="px-3 py-3 font-bold text-[#333]">タスハナ 基本プラン<span className="text-[10px] text-[#B45309] font-normal">（要確認）</span></td>
                     <td className="px-3 py-3 text-center">528円</td>
                     <td className="px-3 py-3 text-center">330円</td>
-                    <td className="px-3 py-3 text-center font-bold">1,210円</td>
+                    <td className="px-3 py-3 text-center font-bold">858円</td>
                     <td className="px-3 py-3 text-center">3〜4本</td>
                     <td className="px-3 py-3 text-center">なし</td>
                   </tr>
@@ -404,7 +408,7 @@ export default function FiveHundredYenPage() {
               <div className="space-y-3 text-sm">
                 <div className="flex items-center justify-between py-2 border-b border-[#E5E5E5]">
                   <span className="text-[#666]">タスハナ: 花代528円 + 送料330円</span>
-                  <span className="font-bold text-[#333]">= 1,210円/回</span>
+                  <span className="font-bold text-[#333]">= 858円/回</span>
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-[#E5E5E5]">
                   <span className="text-[#666]">medelu: 花代748円 + 送料0円</span>
@@ -560,7 +564,7 @@ export default function FiveHundredYenPage() {
               お花の定期便を500円台・ワンコインで始めたい方に向けて、各サービスの最安プランを送料込みの総額で比較しました。結論として、送料込みの総額で最も安いのは<strong>medelu Miniコース（748円/回・送料無料）</strong>です。回数縛りもなく、ポスト投函で受け取れるため、初めての方にも安心です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花代だけで見ると<strong>タスハナ（528円/回）</strong>が最安ですが、送料330円を加えると1,210円/回となります。配送頻度の柔軟性を重視するなら<strong>hanameku（1,210円/回、月1回配送あり）</strong>も候補です。
+              花代だけで見ると<strong>タスハナ（528円/回・要確認）</strong>が最安ですが、送料330円を加えると858円/回となります。配送頻度の柔軟性を重視するなら<strong>hanameku（1,210円/回、月1回配送あり）</strong>も候補です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               安さだけでなく、花の本数・品質・回数縛りの有無・配送方法など、総合的に判断することが大切です。まずは回数縛りなしのサービスで気軽に試してみて、花のある暮らしを始めてみましょう。
