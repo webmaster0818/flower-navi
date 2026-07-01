@@ -2,6 +2,18 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import { SERVICES } from "@/data/services";
+
+/* 料金は単一データソース(services.ts・公式確認値)から生成 */
+const planRows = (id: string) =>
+  SERVICES.find((s) => s.id === id)!.plans.map((p) => ({
+    plan: p.name,
+    price: p.price,
+    shipping: 0,
+    total: p.price,
+    flowers: p.flowers,
+    delivery: p.postDelivery ? "ポスト投函" : "宅配便",
+  }));
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -28,32 +40,24 @@ const comparisonData = [
   {
     name: "medelu",
     nameJa: "メデル",
-    plans: [
-      { plan: "Liteコース", price: 748, shipping: 0, total: 748, flowers: "3本", delivery: "ポスト投函" },
-      { plan: "Liteコース+", price: 1508, shipping: 0, total: 1508, flowers: "5〜6本", delivery: "ポスト投函" },
-      { plan: "Basicコース", price: 2508, shipping: 0, total: 2508, flowers: "6〜8本", delivery: "宅配便" },
-    ],
-    highlight: "全プラン送料無料。市場直送で鮮度が良く、748円/回から始められる最安水準。",
+    plans: planRows("medelu"),
+    highlight: "全プラン送料込み。市場直送で鮮度が良く、748円/回から始められる最安水準。",
     url: "/services/medelu",
     color: "#4A7C59",
   },
   {
     name: "AND PLANTS",
     nameJa: "アンドプランツ",
-    plans: [
-      { plan: "基本プラン", price: 1980, shipping: 0, total: 1980, flowers: "4〜6本", delivery: "宅配便" },
-    ],
-    highlight: "送料込み1,980円/回。プロのフローリストによるデザイン性の高いアレンジが届く。",
+    plans: planRows("andplants"),
+    highlight: "送料込み1,980円/回から。プロのフローリストによるデザイン性の高いアレンジが届く。",
     url: "/services/and-plants",
     color: "#6B8E5B",
   },
   {
     name: "hanameku",
     nameJa: "ハナメク",
-    plans: [
-      { plan: "セルフアレンジプランS", price: 2178, shipping: 0, total: 2178, flowers: "8〜10本", delivery: "宅配便" },
-    ],
-    highlight: "一部プランで送料無料。セルフアレンジプランSは送料込み2,178円で本数が多くコスパ良好。",
+    plans: planRows("hanameku"),
+    highlight: "税込・配送料込。ライトプランは1,210円/回・ポスト投函で受け取りやすい。",
     url: "/services/hanameku",
     color: "#8B6F5C",
   },
@@ -288,7 +292,7 @@ export default function SouryouMuryouPage() {
               送料無料のお花の定期便3サービスを比較した結果、<strong>総額で最も安いのはmedelu Miniコース（748円/回）</strong>です。回数縛りもなく、ポスト投函で手軽に受け取れるため、初めての方にもおすすめです。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              ボリュームとデザイン性を重視するなら<strong>AND PLANTS（1,980円/回）</strong>、本数重視なら<strong>hanamekuのセルフアレンジプランS（2,178円/回）</strong>がおすすめです。いずれも送料を気にせず利用できるため、長期利用に向いています。
+              ボリュームとデザイン性を重視するなら<strong>AND PLANTS（1,980円/回）</strong>、本数重視なら<strong>hanamekuのセルフアレンジプラン（1,958円/回）</strong>がおすすめです。いずれも送料を気にせず利用できるため、長期利用に向いています。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">

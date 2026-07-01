@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import { SERVICES } from "@/data/services";
+
+/* 料金は単一データソース(services.ts・公式確認値)を参照 */
+const sv = (id: string) => SERVICES.find((s) => s.id === id)!.cheapest.price;
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -49,9 +53,9 @@ const serviceData = [
     postDeliveryDetail: "体験プラン・レギュラープラン対応",
     postPlans: "体験プラン / レギュラープラン",
     boxType: "専用ボックス（保水ゼリー付き）",
-    price: 980,
+    price: sv("bloomee"),
     shipping: 385,
-    total: 1365,
+    total: sv("bloomee") + 385,
     shippingLabel: "385円",
     flowers: "3本以上",
     delivery: "ポスト投函 / 宅配便",
@@ -72,9 +76,9 @@ const serviceData = [
     postDeliveryDetail: "全プラン対応",
     postPlans: "Mini / Lite / Basicプラン（全プラン）",
     boxType: "専用ボックス（保水処理済み）",
-    price: 748,
+    price: sv("medelu"),
     shipping: 0,
-    total: 748,
+    total: sv("medelu"),
     shippingLabel: "無料",
     flowers: "3本",
     delivery: "ポスト投函",
@@ -95,7 +99,7 @@ const serviceData = [
     postDeliveryDetail: "ライト・スタンダードプラン対応",
     postPlans: "ライトプラン / スタンダードプラン",
     boxType: "専用ボックス（保水キャップ付き）",
-    price: 1210,
+    price: sv("hanameku"),
     shipping: null,
     total: null,
     shippingLabel: "別途（配送方法による）",
@@ -118,9 +122,9 @@ const serviceData = [
     postDeliveryDetail: "宅配便のみ",
     postPlans: "なし（全プラン宅配便）",
     boxType: "宅配便用ボックス（手渡し配送）",
-    price: 1980,
+    price: sv("andplants"),
     shipping: 0,
-    total: 1980,
+    total: sv("andplants"),
     shippingLabel: "無料",
     flowers: "4〜6本",
     delivery: "宅配便のみ",
