@@ -4,12 +4,12 @@ import HomeClient from "@/app/components/HomeClient";
 const SITE_URL = "https://ohana-delivery.com";
 
 export const metadata: Metadata = {
-  title: "flowerデリ｜お花の定期便おすすめ5選を徹底比較【2026年最新】",
+  title: "花のサブスク比較【2026年最新】お花の定期便おすすめ5選を送料込み料金で徹底比較｜flowerデリ",
   description:
     "flowerデリは、お花の定期便（花のサブスク）人気5社を料金・送料・届き方・花の本数で徹底比較。bloomee・medelu・AND PLANTS・hanamekuなど、あなたにぴったりのサービスが見つかる診断付き。",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "flowerデリ｜お花の定期便おすすめ5選を徹底比較【2026年最新】",
+    title: "花のサブスク比較【2026年最新】お花の定期便おすすめ5選を送料込み料金で徹底比較｜flowerデリ",
     description: "お花の定期便5社を料金・送料・花の本数で徹底比較。あなたにぴったりが見つかる診断付き。",
     type: "website",
     locale: "ja_JP",
