@@ -20,6 +20,7 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 text-sm text-[#6B5F57]">
           <a href="/#diagnosis" className="hover:text-[#C4877A] transition-colors">診断</a>
           <a href="/#comparison" className="hover:text-[#C4877A] transition-colors">比較表</a>
+          <a href="/compare/ryokin/" className="hover:text-[#C4877A] transition-colors">料金一覧</a>
           <a href="/#reviews" className="hover:text-[#C4877A] transition-colors">サービス詳細</a>
           <a href="/#how-to-choose" className="hover:text-[#C4877A] transition-colors">選び方</a>
           <a href="/#faq" className="hover:text-[#C4877A] transition-colors">FAQ</a>
@@ -43,6 +44,7 @@ export default function Header() {
             <a href="/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">トップページ</a>
             <a href="/#diagnosis" onClick={() => setMenuOpen(false)} className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">診断</a>
             <a href="/#comparison" onClick={() => setMenuOpen(false)} className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">比較表</a>
+            <a href="/compare/ryokin/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">料金一覧（マスター表）</a>
 
             <div className="border-t border-[#E8E0D8] my-3" />
             <p className="text-xs text-[#9B8F87] font-medium tracking-wider mb-2">サービス詳細</p>

@@ -136,6 +136,43 @@ export default function RyokinPage() {
           <Link href="/compare/cheap/" className="text-sm text-[#4A7C59] underline">安い花のサブスク ランキングを見る ＞</Link>
           <Link href="/compare/post-delivery/" className="text-sm text-[#4A7C59] underline">ポスト投函できる定期便を見る ＞</Link>
         </div>
+      
+        {/* ハブ&スポーク: 関連ページ網 */}
+        <section className="py-12 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">目的別の比較・サービス別ガイド</h2>
+            <div className="grid md:grid-cols-3 gap-6 text-sm">
+              <div>
+                <h3 className="font-bold text-[#4A7C59] mb-3">比較で選ぶ</h3>
+                <ul className="space-y-2 text-[#666]">
+                  <li><a href="/compare/cheap/" className="hover:text-[#4A7C59] underline">安い順ランキング</a></li>
+                  <li><a href="/compare/500yen/" className="hover:text-[#4A7C59] underline">ワンコイン帯で始める</a></li>
+                  <li><a href="/compare/ichirinzashi/" className="hover:text-[#4A7C59] underline">一輪挿しに合う少量プラン</a></li>
+                  <li><a href="/compare/souryou-muryou/" className="hover:text-[#4A7C59] underline">送料無料で比較</a></li>
+                  <li><a href="/compare/post-delivery/" className="hover:text-[#4A7C59] underline">ポスト投函で受け取る</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-[#4A7C59] mb-3">2社で迷ったら</h3>
+                <ul className="space-y-2 text-[#666]">
+                  <li><a href="/compare/bloomee-vs-medelu/" className="hover:text-[#4A7C59] underline">ブルーミー vs メデル</a></li>
+                  <li><a href="/vs/hanameku-vs-medelu/" className="hover:text-[#4A7C59] underline">ハナメク vs メデル</a></li>
+                  <li><a href="/vs/bloomee-vs-and-plants/" className="hover:text-[#4A7C59] underline">ブルーミー vs AND PLANTS</a></li>
+                  <li><a href="/vs/medelu-vs-and-plants/" className="hover:text-[#4A7C59] underline">メデル vs AND PLANTS</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-[#4A7C59] mb-3">口コミ・解約を確認</h3>
+                <ul className="space-y-2 text-[#666]">
+                  <li><a href="/service-guides/bloomee-kuchikomi/" className="hover:text-[#4A7C59] underline">ブルーミーの口コミ・評判</a></li>
+                  <li><a href="/service-guides/medelu-kuchikomi/" className="hover:text-[#4A7C59] underline">メデルの口コミ・評判</a></li>
+                  <li><a href="/service-guides/bloomee-kaiyaku/" className="hover:text-[#4A7C59] underline">ブルーミーの解約方法</a></li>
+                  <li><a href="/service-guides/hanameku-kaiyaku/" className="hover:text-[#4A7C59] underline">ハナメクの解約方法</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <SiteFooter />
     </>
