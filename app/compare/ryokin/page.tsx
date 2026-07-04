@@ -150,6 +150,8 @@ export default function RyokinPage() {
                   <li><a href="/compare/ichirinzashi/" className="hover:text-[#4A7C59] underline">一輪挿しに合う少量プラン</a></li>
                   <li><a href="/compare/souryou-muryou/" className="hover:text-[#4A7C59] underline">送料無料で比較</a></li>
                   <li><a href="/compare/post-delivery/" className="hover:text-[#4A7C59] underline">ポスト投函で受け取る</a></li>
+                  <li><a href="/guides/keirou-no-hi/" className="hover:text-[#4A7C59] underline">敬老の日ギフトに贈る（2026年は9月21日）</a></li>
+                  <li><a href="/know-guides/summer-care/" className="hover:text-[#4A7C59] underline">夏の花を長持ちさせる方法</a></li>
                 </ul>
               </div>
               <div>
