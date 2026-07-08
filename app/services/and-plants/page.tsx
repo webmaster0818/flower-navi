@@ -429,6 +429,17 @@ export default function AndPlantsPage() {
         {/* ─── User Reviews ─── */}
         <section id="reviews" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
+            {/* 公開口コミの傾向（出典・調査年月つき） */}
+            <div className="mb-10 rounded-2xl border border-[#E8DFD5] bg-[#FBF7F2] p-5 md:p-7">
+              <h3 className="font-bold text-[#333] mb-1">公開口コミの傾向</h3>
+              <p className="text-xs text-[#999] mb-4">出典：App Store「アンドフラワー」アプリ（4.4★/23件・花の単発購入アプリ）・公式・レビュー記事（2026年7月時点／運営：株式会社Domuz）。口コミは傾向の要約で、個別の体験には差があります。</p>
+              <div className="grid md:grid-cols-2 gap-5">
+                <div><p className="font-bold text-[#4A7C59] text-sm mb-2">好意的な傾向</p><ul className="space-y-2"><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>梱包が丁寧で美しい</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>植物の品質・状態が良く、鉢もおしゃれでインテリア性が高い</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>植え替え済み・ケアカード付きで初心者に優しい</span></li></ul></div>
+                <div><p className="font-bold text-[#C08552] text-sm mb-2">気になる/否定的な傾向</p><ul className="space-y-2"><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>価格が高いという声が最も多い</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>樹形を指定できず「思っていた形と違う」という不満</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>稀に配送トラブル（倒れ・鉢割れ）</span></li></ul></div>
+              </div>
+              <p className="text-xs text-[#999] mt-4">※ App Storeの4.4★は花の単発購入アプリの評価で、定期便「AND FLOWER」総合の平均★ではありません。他プラットフォームの平均★は一次確認できず未掲載です。</p>
+            </div>
+
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
               AND PLANTS利用者の口コミ・評判
             </h2>

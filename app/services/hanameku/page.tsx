@@ -427,6 +427,17 @@ export default function HanamekuPage() {
         {/* ─── User Reviews ─── */}
         <section id="reviews" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
+            {/* 公開口コミの傾向（出典・調査年月つき） */}
+            <div className="mb-10 rounded-2xl border border-[#E8DFD5] bg-[#FBF7F2] p-5 md:p-7">
+              <h3 className="font-bold text-[#333] mb-1">公開口コミの傾向</h3>
+              <p className="text-xs text-[#999] mb-4">出典：公式・比較サイト・レビュー記事（2026年7月時点／運営：and factory株式会社。旧LIFULL FLOWER→divi）。口コミは傾向の要約で、個別の体験には差があります。</p>
+              <div className="grid md:grid-cols-2 gap-5">
+                <div><p className="font-bold text-[#4A7C59] text-sm mb-2">好意的な傾向</p><ul className="space-y-2"><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>市場直送＋品質保証で花のボリューム・鮮度に満足</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>そのまま飾れるおしゃれな梱包</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>配送頻度・スキップで自分のペースに調整しやすい</span></li></ul></div>
+                <div><p className="font-bold text-[#C08552] text-sm mb-2">気になる/否定的な傾向</p><ul className="space-y-2"><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>価格がやや高く、ライトプランはボリューム不足感</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>配送曜日が水〜金など限定的で受け取りを合わせにくい</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>似た花・同系統が繰り返し届くことがある。初回（定期1回目）は解約不可、スキップ・解約はお届け予定日の約10日前が締切</span></li></ul></div>
+              </div>
+              <p className="text-xs text-[#999] mt-4">※ 母数付きの信頼できる平均★は確認できず未掲載（第三者比較サイトに★3.7が1件あるのみ）。</p>
+            </div>
+
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
               ハナメク利用者の口コミ・評判
             </h2>

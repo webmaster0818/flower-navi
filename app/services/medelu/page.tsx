@@ -434,6 +434,17 @@ export default function MedeluPage() {
         {/* ─── User Reviews ─── */}
         <section id="reviews" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
+            {/* 公開口コミの傾向（出典・調査年月つき） */}
+            <div className="mb-10 rounded-2xl border border-[#E8DFD5] bg-[#FBF7F2] p-5 md:p-7">
+              <h3 className="font-bold text-[#333] mb-1">公開口コミの傾向</h3>
+              <p className="text-xs text-[#999] mb-4">出典：複数のレビュー記事・公式（特商法）（2026年7月時点／運営：株式会社medelu・medelu.flowers）。口コミは傾向の要約で、個別の体験には差があります。</p>
+              <div className="grid md:grid-cols-2 gap-5">
+                <div><p className="font-bold text-[#4A7C59] text-sm mb-2">好意的な傾向</p><ul className="space-y-2"><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>デザインのセンス・おしゃれさへの評価が最多</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>1本ずつ給水ピック付きで花の鮮度・日持ちが良い</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>業界最安クラスのコスパで初心者にも手軽</span></li></ul></div>
+                <div><p className="font-bold text-[#C08552] text-sm mb-2">気になる/否定的な傾向</p><ul className="space-y-2"><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>本数が少なめ（特に最安Miniプラン）</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>配送日の指定ができず自由度が低い</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>沖縄・離島は対象外、不良品は返金のみで再送なしなど保証に制約</span></li></ul></div>
+              </div>
+              <p className="text-xs text-[#999] mt-4">※ 数値化された平均★の一次ソースは確認できず未掲載です。回数縛りはなく「解約しづらい」という声は目立ちません。</p>
+            </div>
+
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
               medelu利用者の口コミ・評判
             </h2>

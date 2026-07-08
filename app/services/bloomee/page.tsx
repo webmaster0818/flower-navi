@@ -428,6 +428,17 @@ export default function BloomeePage() {
         {/* ─── User Reviews ─── */}
         <section id="reviews" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
+            {/* 公開口コミの傾向（出典・調査年月つき） */}
+            <div className="mb-10 rounded-2xl border border-[#E8DFD5] bg-[#FBF7F2] p-5 md:p-7">
+              <h3 className="font-bold text-[#333] mb-1">公開口コミの傾向</h3>
+              <p className="text-xs text-[#999] mb-4">出典：みん評（口コミ約560件掲載）・複数のレビュー記事（2026年7月時点）。口コミは傾向の要約で、個別の体験には差があります。</p>
+              <div className="grid md:grid-cols-2 gap-5">
+                <div><p className="font-bold text-[#4A7C59] text-sm mb-2">好意的な傾向</p><ul className="space-y-2"><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>ポスト投函で不在でも受け取れて手軽</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>季節感のある小ぶりの花束がおしゃれで癒しになる</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>手頃な価格＋初回無料クーポンで試しやすい</span></li></ul></div>
+                <div><p className="font-bold text-[#C08552] text-sm mb-2">気になる/否定的な傾向</p><ul className="space-y-2"><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>ボリュームが少なく、自分で花を選べない</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>花の状態・鮮度にばらつき（夏場の高温・ポスト内放置・提携花屋による差）</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>解約が分かりづらく、初回は4回の回数縛りがある（4回未満の途中解約は解約料が発生）</span></li></ul></div>
+              </div>
+              <p className="text-xs text-[#999] mt-4">※ 平均★はみん評本体が取得不可のため未掲載。公式アプリは2021年12月で提供終了しWeb運用のため、アプリストアの現行評価は対象外です。</p>
+            </div>
+
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
               bloomee利用者の口コミ・評判
             </h2>
