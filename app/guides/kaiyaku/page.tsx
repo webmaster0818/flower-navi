@@ -75,7 +75,7 @@ const cancellationData = [
     method: "マイページ",
     penalty: "なし",
     pauseOption: "あり（スキップ / 休止）",
-    deadline: "次回お届け日の数日前まで",
+    deadline: "次回決済日の木曜23:59まで",
     difficulty: "簡単",
     url: "/services/medelu",
     officialUrl: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L",
@@ -127,7 +127,7 @@ const cancellationData = [
     method: "マイページ",
     penalty: "なし",
     pauseOption: "あり（スキップ）",
-    deadline: "次回お届け日の数日前まで",
+    deadline: "次回決済日の木曜23:59まで",
     difficulty: "簡単",
     url: "/services/hanameku",
     officialUrl: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L",
@@ -391,7 +391,7 @@ export default function KaiyakuGuidePage() {
                 <li>・ bloomeeのみ4回の最低受取回数があり、未達で解約すると残額が請求されます</li>
                 <li>・ 日本総合園芸はオンライン解約に対応しておらず、電話またはメールでの連絡が必要です</li>
                 <li>・ AND PLANTSは都度払い方式のため、「解約」ではなく「停止」という扱いになります</li>
-                <li>・ 2026年4月時点の情報です。最新の解約条件は各公式サイトでご確認ください</li>
+                <li>・ 2026年7月8日に各公式サイト等で再確認した情報です。最新の解約条件は各公式サイトでご確認ください</li>
               </ul>
             </div>
           </div>
