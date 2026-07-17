@@ -107,12 +107,17 @@ export default function KabinGuidePage() {
           <div className="max-w-5xl mx-auto px-4 text-center">
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">花瓶ガイド</p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              花瓶・一輪挿しのおすすめ15選<br className="hidden md:block" />
-              花のサブスクに合う花瓶の選び方【2026年】
+              花のサブスクに合う花瓶の選び方<br className="hidden md:block" />
+              おすすめ15選【2026年・素材／サイズ／予算別】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#666] mb-4 max-w-2xl mx-auto leading-relaxed">
               花のサブスクで届いた花をおしゃれに飾るには、花瓶選びが重要です。
               素材別・サイズ別・予算別におすすめの花瓶15選と、選び方のポイントを解説します。
+            </p>
+            <p className="text-sm text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+              少量の花を一輪挿しで楽しみたい方は、
+              <a href="/compare/ichirinzashi/" className="text-[#4A7C59] font-medium underline">一輪挿しに合う花のサブスク比較（748円〜）</a>
+              もあわせてご覧ください。
             </p>
           </div>
         </section>
