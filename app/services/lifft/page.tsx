@@ -95,7 +95,7 @@ export default function LifftServicePage() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <title>LIFFT（リフト）の口コミ・評判【2026年最新】花の定期便の実力を検証</title>
+      <title>LIFFT（リフト）の口コミ・評判は？料金3,300円〜と花の質を実際に検証【2026年最新】</title>
       <meta name="description" content="LIFFT（リフト）の口コミ・評判を徹底検証。市場直送・クール便で届く鮮度抜群の花の定期便。3,300円/回の花束プランの実力や、メリット・デメリットを解説します。" />
 
       <main className="flex-1">
