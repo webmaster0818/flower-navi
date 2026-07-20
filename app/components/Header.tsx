@@ -20,6 +20,7 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 text-sm text-[#6B5F57]">
           <a href="/#diagnosis" className="hover:text-[#C4877A] transition-colors">診断</a>
           <a href="/#comparison" className="hover:text-[#C4877A] transition-colors">比較表</a>
+          <a href="/compare/" className="hover:text-[#C4877A] transition-colors">比較ガイド</a>
           <a href="/compare/ryokin/" className="hover:text-[#C4877A] transition-colors">料金一覧</a>
           <a href="/#reviews" className="hover:text-[#C4877A] transition-colors">サービス詳細</a>
           <a href="/#how-to-choose" className="hover:text-[#C4877A] transition-colors">選び方</a>
@@ -66,6 +67,7 @@ export default function Header() {
 
             <div className="border-t border-[#E8E0D8] my-3" />
             <p className="text-xs text-[#9B8F87] font-medium tracking-wider mb-2">比較記事</p>
+            <a href="/compare/" className="block py-2.5 px-3 text-[#3D3632] font-medium hover:bg-[#FBF8F4] rounded-lg transition">比較ガイド一覧</a>
             <a href="/compare/bloomee-vs-medelu" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">bloomee vs medelu</a>
             <a href="/compare/cheap" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">安いお花の定期便</a>
             <a href="/compare/post-delivery" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">ポスト投函対応</a>
