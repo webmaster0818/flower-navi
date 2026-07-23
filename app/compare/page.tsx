@@ -19,6 +19,7 @@ const groups: { heading: string; note: string; items: { href: string; label: str
     note: "花のサブスクは「月額の安さ」だけでなく、送料を含めた“総額”と1本あたり単価で比べるのが失敗しないコツです。",
     items: [
       { href: "/compare/ryokin/", label: "料金比較表（総額・最低支払額・1本単価）", desc: "送料込みの総額・最低支払額・1本単価で正しく比較。まず全体像を掴むならここ。" },
+      { href: "/compare/campaign/", label: "初回特典・お試しプラン比較（安く始める）", desc: "各社の初回・お試し／最安プランを比較。時限クーポンの探し方も正直に解説。" },
       { href: "/compare/cheap/", label: "安い順ランキング（送料込み実価格）", desc: "送料込みの実価格748円〜で安い順に比較（公式確認済）。" },
       { href: "/compare/500yen/", label: "ワンコイン（500円台）で始める", desc: "500円台から始められるお試し・体験プランを比較。" },
       { href: "/compare/souryou-muryou/", label: "送料無料の定期便3選", desc: "送料無料のサービスを総額で比較。" },
