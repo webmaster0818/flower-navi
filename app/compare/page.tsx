@@ -32,6 +32,7 @@ const groups: { heading: string; note: string; items: { href: string; label: str
       { href: "/compare/post-delivery/", label: "ポスト投函できる定期便", desc: "不在でも受け取れるポスト投函対応を比較。" },
       { href: "/compare/ichirinzashi/", label: "一輪挿しに合う少量プラン", desc: "少量プランと一輪挿しの飾り方のコツ。" },
       { href: "/compare/kanyou-shokubutsu/", label: "観葉植物のサブスク", desc: "切り花ではなく観葉植物の定期便・レンタルを比較（選び方は<ガイド>も）。" },
+      { href: "/compare/osonae/", label: "仏花・お供えの花（定期便／通販）", desc: "お供え専用商品の有無・白系・立て札・価格を8社一次確認で比較。お盆・お彼岸の用意にも。" },
     ],
   },
   {
