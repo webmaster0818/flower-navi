@@ -40,7 +40,6 @@ export default function KanyouShokubutsuPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <title>観葉植物のサブスクおすすめ3選｜グリーンのある暮らし【2026年】</title>
       <meta name="description" content="観葉植物のサブスク・グリーンの定期便おすすめ3選を比較。AND PLANTSを中心に、花のサブスクとの違いや選び方を解説。初心者でも育てやすい観葉植物サブスクをご紹介します。" />
 
       <main className="flex-1">
@@ -64,8 +63,8 @@ export default function KanyouShokubutsuPage() {
           <div className="max-w-5xl mx-auto px-4 text-center">
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">比較ガイド</p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              観葉植物のサブスクおすすめ3選<br className="hidden md:block" />
-              グリーンのある暮らし【2026年】
+              観葉植物のサブスク・レンタル比較<br className="hidden md:block" />
+              個人向けとオフィス向けの違いとおすすめ3選【2026年】
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
               切り花だけでなく、観葉植物のサブスクも人気が高まっています。

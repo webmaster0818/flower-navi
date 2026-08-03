@@ -38,7 +38,6 @@ export default function DanseiGuidePage() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <title>花のサブスクは男性にもおすすめ｜一人暮らしの部屋に花を【2026年】</title>
       <meta name="description" content="花のサブスクは男性にもおすすめ。一人暮らしの部屋に花を飾るメリット、男性に人気のサービス、おしゃれに飾るコツを解説。メンズも楽しめる花のある暮らしをご提案します。" />
 
       <main className="flex-1">
@@ -62,8 +61,8 @@ export default function DanseiGuidePage() {
           <div className="max-w-5xl mx-auto px-4 text-center">
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">メンズガイド</p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              花のサブスクは男性にもおすすめ<br className="hidden md:block" />
-              一人暮らしの部屋に花を【2026年】
+              一人暮らしの男が花を飾るのはアリ？<br className="hidden md:block" />
+              男性向け花のサブスクと飾り方【2026年】
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
               「花は女性のもの」は過去の話。男性の花サブスク利用者が急増中です。

@@ -3,7 +3,7 @@ import Header from "@/app/components/Header";
 import { SERVICES } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "一輪挿しに合う花のサブスク比較【2026年最新】少量プラン748円〜と飾り方のコツ｜flowerデリ",
+  title: "一輪挿し向けサブスク比較｜1本〜少量プラン748円〜のおすすめと花瓶・飾り方【2026年最新】｜flowerデリ",
   description:
     "一輪挿しで花を楽しみたい方向けに、少量プラン（3〜4本）のある花のサブスクを送料込み実価格で比較。1束を数本ずつ分けて複数の一輪挿しに飾る楽しみ方、花瓶の選び方、長持ちのコツまで解説します。料金は公式確認値のみ掲載。",
   alternates: { canonical: "/compare/ichirinzashi/" },
