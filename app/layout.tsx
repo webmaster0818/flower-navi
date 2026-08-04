@@ -72,7 +72,7 @@ export default function RootLayout({
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
       </head>
-      <body className="min-h-full flex flex-col">{children}
+      <body className="min-h-full flex flex-col"><div style={{background:'#f4f4f4',borderBottom:'1px solid #e2e2e2',fontSize:'11px',lineHeight:1.6,color:'#666',textAlign:'center',padding:'3px 8px'}}>本サイトはプロモーション(PR)を含みます。</div>{children}
         <SiteFooter />
         <script
           type="application/ld+json"
