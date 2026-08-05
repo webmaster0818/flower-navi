@@ -588,6 +588,7 @@ export default function FiveHundredYenPage() {
               >
                 4位 bloomeeの詳細を見る
               </a>
+              <p className="mt-2 text-xs"><a href="/service-guides/bloomee-kuchikomi/" className="text-[#4A7C59] underline">ブルーミーの値段・料金プランと口コミの詳細 →</a></p>
             </div>
             <a
               href="/compare/cheap"

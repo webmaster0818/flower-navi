@@ -756,6 +756,7 @@ export default function BloomeeVsMedeluPage() {
               >
                 bloomeeの詳細を見る
               </a>
+              <p className="mt-2 text-xs"><a href="/service-guides/bloomee-kuchikomi/" className="text-[#4A7C59] underline">ブルーミーの値段・料金プランと口コミの詳細 →</a></p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a

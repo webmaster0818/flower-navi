@@ -478,6 +478,13 @@ export default function ShoboboiGuidePage() {
             </a>
           </div>
         </section>
+              <section className="py-8">
+          <div className="max-w-3xl mx-auto px-4">
+            <div className="bg-[#F8F8F8] border border-[#E5E5E5] rounded-xl p-4 text-sm">
+              <a href="/service-guides/bloomee-kuchikomi/" className="text-[#4A7C59] font-bold underline">ブルーミーの値段・料金プランと口コミ・評判の詳細はこちら →</a>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* ─── Footer ─── */}
