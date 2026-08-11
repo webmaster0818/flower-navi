@@ -73,6 +73,34 @@ export default function KanyouShokubutsuPage() {
           </div>
         </section>
 
+        {/* ─── Quick Answer: Rental vs Subscription / Personal vs Corporate ─── */}
+        <section className="py-12 md:py-16 bg-white">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              観葉植物のサブスクとレンタルの違い｜個人・法人での選び方
+            </h2>
+            <p className="text-sm text-[#666] leading-relaxed mb-6">
+              「サブスク」は植物を購入して定期的に届けてもらい、自分で育てるスタイル。「レンタル」は植物を借りるスタイルで、交換・返却ができ、メンテナンス込みのプランもあります。どちらが合うかは「個人か法人か」でほぼ決まります。
+            </p>
+            <div className="grid md:grid-cols-2 gap-5">
+              <div className="rounded-xl border-2 border-[#4A7C59] p-6 bg-[#F8F8F8]">
+                <p className="text-xs font-bold text-[#4A7C59] mb-2">個人で自宅に飾りたい方</p>
+                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                  <strong>サブスク（買い切りの定期便）が基本</strong>です。AND PLANTSなら1,980円〜/月で育てやすい植物が届き、14日間の交換保証付き。枯らす不安がある初心者でも始めやすい仕組みです。
+                </p>
+                <a href="#osusume-3sen" className="text-sm text-[#4A7C59] font-medium underline">→ 個人向けおすすめ3選を見る</a>
+              </div>
+              <div className="rounded-xl border border-[#E5E5E5] p-6 bg-[#F8F8F8]">
+                <p className="text-xs font-bold text-[#4A7C59] mb-2">法人・オフィスに飾りたい方</p>
+                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                  大型グリーンを手間なく維持したいなら<strong>レンタルが有力</strong>です。CLASのように大型観葉植物をレンタルでき、交換・返却が自由でメンテナンス不要プランや法人利用に対応するサービスがあります。
+                </p>
+                <a href="/guides/houjin-office/" className="text-sm text-[#4A7C59] font-medium underline">→ 法人・オフィス向け 花の定期便ガイドを見る</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ─── Difference ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
@@ -109,7 +137,7 @@ export default function KanyouShokubutsuPage() {
         </section>
 
         {/* ─── Recommendations ─── */}
-        <section className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="osusume-3sen" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
               観葉植物サブスクおすすめ3選

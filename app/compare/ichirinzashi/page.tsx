@@ -200,6 +200,36 @@ export default function IchirinzashiPage() {
             </div>
           </section>
 
+          {/* 選び方 */}
+          <section className="py-12 md:py-16 bg-white">
+            <div className="max-w-3xl mx-auto px-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+                一輪挿しにおすすめの花サブスクの選び方
+              </h2>
+              <div className="space-y-4">
+                {[
+                  { num: "1", title: "本数は「3〜4本」の最少プランで選ぶ", text: "1本だけ届く専用プランは主要サービスにありません（2026年7月時点・公式サイト確認）。1本ずつ分けて飾る前提なら、3〜4本の最少プランで十分です。medelu Mini（3〜4本）・hanamekuライトプラン（3〜4本）・bloomeeお試しプラン（3本以上）がこのボリュームに該当します。" },
+                  { num: "2", title: "「送料込みの実価格」で比べる", text: "表示価格に送料が含まれるかで実質負担が変わります。公式確認値では、medelu Mini 748円/回とhanamekuライトプラン1,210円/回は送料込、bloomeeお試しプラン980円/回は送料別です。一輪挿し用の少量プランは価格帯が近いぶん、送料の扱いが差になります。" },
+                  { num: "3", title: "ポスト投函型は受け取りやすく、一輪挿しに移しやすい", text: "ポスト投函ならスリムな箱で茎がコンパクトにまとまって届くため、そのまま一輪挿しに移しやすいのが利点です。在宅の必要もありません。medelu Mini・hanamekuライトプラン・bloomeeお試しプランはポスト投函に対応しています（公式確認値）。" },
+                  { num: "4", title: "回数縛り・解約条件を確認する", text: "medeluとhanamekuは回数縛りなし、AND PLANTSは都度払いでいつでもスキップ・解約可能、bloomeeは最初の4回の受け取りが必要です（公式サイト確認値）。「一輪挿し生活が続くかまず試したい」という方は、縛りなしのサービスから始めるのが安心です。" },
+                ].map((item, i) => (
+                  <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
+                    <div className="flex items-start gap-3">
+                      <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">{item.num}</span>
+                      <div>
+                        <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
+                        <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm text-[#666] leading-relaxed mt-6">
+                届いた花を活かすには花瓶選びも大切です。<a href="/guides/kabin/" className="text-[#4A7C59] underline hover:no-underline">一輪挿しに合う花瓶の選び方はこちら</a>。
+              </p>
+            </div>
+          </section>
+
           {/* 飾り方 */}
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-3xl mx-auto px-4">

@@ -98,6 +98,36 @@ export default function OsonaePage() {
           </div>
         </section>
 
+        {/* 安いプランの整理 */}
+        <section className="py-10 md:py-14 bg-white">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-4 pb-3 border-b-2 border-[#4A7C59]">仏花の定期便で安いプランはどれ？</h2>
+            <p className="text-sm text-[#666] leading-relaxed mb-5">
+              一次確認（{OSONAE_VERIFIED}）の範囲では、8社に「仏花専用の定期便」という商品は確認できませんでした（お供え専用商品はいずれも単発ギフト）。そのため<strong>定期的に・安く</strong>仏壇の花を用意するなら、日常の切り花定期便で落ち着いた色を選んで仏花に整える方法が最も安くなります。確認値ベースの安い順は次のとおりです。
+            </p>
+            <div className="grid gap-4">
+              <div className="bg-[#FAF7F2] rounded-xl border border-[#E8E0D5] p-5">
+                <p className="font-bold text-[#333] text-sm">1. medelu（メデル）｜定期便 月748円〜（税込・送料込）</p>
+                <p className="mt-2 text-sm text-[#666] leading-relaxed">日常の定期便として今回の確認内で最安。お供え専用商品ではありませんが、NATURAL系など落ち着いた色のコースを仏花に流用できます。<Link href="/services/medelu" className="text-[#4A7C59] underline">medeluの詳細を見る</Link></p>
+              </div>
+              <div className="bg-[#FAF7F2] rounded-xl border border-[#E8E0D5] p-5">
+                <p className="font-bold text-[#333] text-sm">2. hanameku（ハナメク）｜定期便 月1,210円〜（税込・送料込）</p>
+                <p className="mt-2 text-sm text-[#666] leading-relaxed">価格は安いものの、色指定不可・メッセージカード不可のため、お供え・弔事用途には実質不向きと評価しています（公式FAQ確認）。</p>
+              </div>
+              <div className="bg-[#FAF7F2] rounded-xl border border-[#E8E0D5] p-5">
+                <p className="font-bold text-[#333] text-sm">3. お供え専用商品を単発で頼む場合｜3,960円〜</p>
+                <p className="mt-2 text-sm text-[#666] leading-relaxed">確認内の最安は日本総合園芸の白ユリ花束3,960円〜（税込・当サイト未提携）。申し込みやすさ重視なら、当サイト提携の<Link href="/services/bloomee" className="text-[#4A7C59] underline">bloomee</Link>の仏花・お供え専用アレンジ4,060円〜（税込・多くが送料無料・白を選択可）です。</p>
+              </div>
+            </div>
+            <p className="mt-4 text-xs text-[#999] leading-relaxed">
+              ※タスハナ（＋actプラン660円〜＋送料330円）はさらに安いものの、ロスフラワーのお任せ定期便で色指定・日時指定・ラッピング不可のため、お供え用途には不向きです。価格はいずれも{OSONAE_VERIFIED}時点の公式確認値です。
+            </p>
+            <p className="mt-3 text-sm text-[#666] leading-relaxed">
+              仏花に向く花・避ける花やお手入れの基本は、<Link href="/guides/butsudan/" className="text-[#4A7C59] underline">仏壇に供える仏花の選び方・お手入れガイド</Link>で詳しく解説しています。
+            </p>
+          </div>
+        </section>
+
         {/* 一次確認・比較表 */}
         <section className="py-12 md:py-16 bg-[#FAF7F2]">
           <div className="max-w-5xl mx-auto px-4">

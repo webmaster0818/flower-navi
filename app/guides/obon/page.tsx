@@ -75,6 +75,7 @@ export default function ObonPage() {
           <section className="mb-4 bg-white rounded-2xl border border-[#EADFD3] p-5">
             <h2 className="text-lg font-bold mb-3">関連ガイド</h2>
             <ul className="space-y-2 text-sm">
+              <li><a href="/compare/osonae/" className="text-[#7a5] underline">仏花・お供えの花の定期便・通販 比較（8社を一次確認）</a></li>
               <li><a href="/guides/butsudan/" className="text-[#7a5] underline">仏壇・仏花に向く花のサブスクと選び方</a></li>
               <li><a href="/guides/flower-care/" className="text-[#7a5] underline">花を長持ちさせるお手入れ方法</a></li>
               <li><a href="/compare/cheap/" className="text-[#7a5] underline">安い花のサブスク比較ランキング</a></li>

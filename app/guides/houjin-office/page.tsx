@@ -121,6 +121,11 @@ export default function HoujinOfficePage() {
                   <strong>bloomeeの法人向け「bloomee biz」</strong>は配送曜日（月・水・金）を選べるなど、法人ニーズに対応しています（料金は公式見積もり）。
                 </p>
                 <a href="https://business.bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-sm text-[#4A7C59] font-medium underline">bloomee biz（法人向け）公式を見る</a>
+                <p className="text-sm text-[#666] leading-relaxed mt-3">
+                  受付・応接に飾るグリーンも検討するなら、法人利用に対応したレンタルも含めて
+                  <Link href="/compare/kanyou-shokubutsu/" className="text-[#4A7C59] underline">観葉植物のサブスク・レンタル比較</Link>
+                  で整理しています。
+                </p>
               </div>
             </div>
             <p className="text-xs text-[#999] mt-4">※法人専用サービスの料金は本数・頻度・拠点数で変わるため、公式サイトでの見積もり・問い合わせが前提です。個人向けの料金は各サービス公式の公表値です。</p>

@@ -147,6 +147,34 @@ export default function KabinGuidePage() {
           </div>
         </section>
 
+        {/* ─── Ichirinzashi Vase Guide ─── */}
+        <section className="py-12 md:py-16 bg-white">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              一輪挿し向きの花瓶のおすすめの選び方
+            </h2>
+            <p className="text-sm text-[#666] leading-relaxed mb-4">
+              花を1〜2本だけ飾る一輪挿しは、通常の花瓶と選び方の基準が少し異なります。次の4点を押さえると失敗しにくくなります。
+            </p>
+            <div className="space-y-3">
+              {[
+                { title: "口径2〜3cm程度の狭い口を選ぶ", text: "口が狭いほど、花1本でも自立して様になります。口が広いと花が倒れて縁にもたれてしまい、バランスが取りにくくなります。" },
+                { title: "高さは10〜20cmが扱いやすい", text: "花のサブスクで届く花は茎が短めにカットされていることが多いため、背の低い花瓶のほうが合わせやすい傾向があります。花の高さは花瓶の1.5倍程度が目安です。" },
+                { title: "ガラス製なら水の状態が見える", text: "一輪挿しは水量が少なく雑菌が繁殖しやすいので、水の残量と濁りがひと目でわかるガラス製が初心者向きです。替えどきを逃しにくくなります。" },
+                { title: "複数個そろえて「分けて飾る」", text: "サブスクで届く3〜4本を1本ずつ分けて飾るのが一輪挿しの定番の楽しみ方。100均の一輪挿しでも十分なので、サイズ違いで複数そろえておくと柔軟に飾れます。" },
+              ].map((item, i) => (
+                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
+                  <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
+                  <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-[#666] leading-relaxed mt-6">
+              一輪挿しに向く3〜4本の少量プランは、<a href="/compare/ichirinzashi/" className="text-[#4A7C59] underline">一輪挿しに合う花のサブスク比較（748円〜）</a>で送料込みの実価格を比較しています。
+            </p>
+          </div>
+        </section>
+
         {/* ─── Vase Recommendations ─── */}
         {vaseCategories.map((category, ci) => (
           <section key={ci} className={`py-12 md:py-16 ${ci % 2 === 0 ? "bg-[#F8F8F8]" : "bg-white"}`}>
