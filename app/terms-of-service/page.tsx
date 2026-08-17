@@ -3,6 +3,7 @@ import Header from "@/app/components/Header";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms-of-service/" },
   title: "利用規約 | flowerデリ - お花の定期便比較サイト",
   description:
     "flowerデリの利用規約です。当サイトのご利用条件、禁止事項、免責事項等をご確認ください。",

@@ -95,7 +95,12 @@ export default function KanyouShokubutsuPage() {
                 <p className="text-sm text-[#666] leading-relaxed mb-3">
                   大型グリーンを手間なく維持したいなら<strong>レンタルが有力</strong>です。CLASのように大型観葉植物をレンタルでき、交換・返却が自由でメンテナンス不要プランや法人利用に対応するサービスがあります。
                 </p>
-                <a href="/guides/houjin-office/" className="text-sm text-[#4A7C59] font-medium underline">→ 法人・オフィス向け 花の定期便ガイドを見る</a>
+                <a href="/guides/houjin-office/#office-green-faq" className="text-sm text-[#4A7C59] font-medium underline">→ 月額の目安・メンテナンス付き・小規模オフィスの疑問に即答（法人・オフィス導入のQ&amp;A）</a>
+                <p className="text-xs text-[#999] leading-relaxed mt-3">
+                  「月額5,000円で始められる？」「管理担当を置けない」「東京23区は対応している？」「購入とレンタルどちらが得？」は
+                  <a href="/guides/houjin-office/#office-green-faq" className="text-[#4A7C59] underline">法人・オフィス向けガイド</a>
+                  で公式確認値のみを使って回答しています。
+                </p>
               </div>
             </div>
           </div>

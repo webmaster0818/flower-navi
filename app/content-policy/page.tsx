@@ -3,6 +3,7 @@ import Header from "@/app/components/Header";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/content-policy/" },
   title: "記事の制作ポリシー | flowerデリ - お花の定期便比較サイト",
   description:
     "flowerデリの記事制作ポリシーです。ユーザーファーストの姿勢、正確な情報発信、中立な口コミ紹介、制作フローをご説明します。",

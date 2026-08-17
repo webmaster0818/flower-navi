@@ -113,7 +113,7 @@ export default function KanyouShokubutsuPage() {
                 <p className="text-sm text-[#666] leading-relaxed mb-3">
                   枯らす不安を避けたい・オフィスで常に良い状態を保ちたい人向け。プロが定期的に交換・メンテナンスするため手間が最小限です。複数拠点・大型サイズはこちらが向きます。
                 </p>
-                <Link href="/guides/houjin-office/" className="text-sm text-[#4A7C59] font-medium underline">法人・オフィス向けの選び方</Link>
+                <Link href="/guides/houjin-office/#office-green-faq" className="text-sm text-[#4A7C59] font-medium underline">法人・オフィス導入のQ&amp;A（月額の目安・メンテナンス付き・小規模オフィス）</Link>
               </div>
             </div>
             <p className="text-xs text-[#999] mt-4">※各サービスの料金・送料・支払い方式（都度払い/月額）は公式サイトでの確認が前提です。当サイトでは架空の金額は掲載していません。</p>

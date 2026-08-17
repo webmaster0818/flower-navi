@@ -3,6 +3,7 @@ import Header from "@/app/components/Header";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy-policy/" },
   title: "プライバシーポリシー | flowerデリ - お花の定期便比較サイト",
   description:
     "flowerデリのプライバシーポリシーです。個人情報の取扱い、Cookie使用、Google Analytics等について記載しています。",
