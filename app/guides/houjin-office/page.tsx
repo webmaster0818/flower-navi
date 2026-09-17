@@ -52,7 +52,7 @@ const officeGreenFaqItems = [
     a: "来客の視線が最初に届く一点に絞り、床置きの中〜大型グリーンか、受付カウンター上の小さな花のどちらかから始めると計画が立てやすくなります。大型グリーンは搬入と入れ替えの負担が大きいためレンタル型、カウンター上の彩りは定期便が向きます。bloomee bizのブーケ1束プランはお花/グリーン10本以上・全長30〜35cm、ミニブーケ3束プランは4〜5本・全長25〜30cmで、いずれも1回3,000円（税込・送料無料）です（2026年8月17日確認）。全長30cm前後は受付カウンターに置いても書類や来客の視線を遮りにくいサイズです。",
   },
   {
-    q: "東京で観葉植物のサブスク・レンタルを使う場合、相場はいくらくらいですか？",
+    q: "東京のオフィスに導入する場合、費用はどう見積もればよいですか？",
     a: "当サイトが公式で確認できている価格は、切り花・グリーンの定期便で1回748円〜4,980円（いずれも送料込み）、法人向けのbloomee bizで1回3,000円（税込・送料無料）です。鉢植えの観葉植物レンタルについては、掲載サービスの範囲で月額の公表値を確認できていません。また、東京だけの相場を示す公表データも確認できていないため、当サイトではエリア別の金額を断定していません。実際の金額はサイズ・鉢数・訪問メンテナンスの頻度で変わるため、見積もりで確認してください。",
   },
   {
@@ -64,18 +64,18 @@ const officeGreenFaqItems = [
     a: "毎回内容が変わるのは切り花・ブーケの定期便で、観葉植物そのものを季節ごとに入れ替えたい場合は交換に対応するレンタル型が該当します。観葉植物は常緑の種類が中心のため、鉢そのものの見た目が季節で大きく変わるわけではありません。季節感を出したい場合は、ベースのグリーンは据え置きにして、受付やテーブルの花だけを定期便で入れ替える組み合わせが運用しやすい形です。bloomee bizは申込時に毎週と隔週を選べます（2026年8月17日確認）。",
   },
   {
-    q: "月額制のサブスク・レンタルと購入では、どちらがお得ですか？",
-    a: "同じ鉢を数年そのまま置き続けるなら購入、入れ替えや枯れたときの手当・日々の管理まで任せたいならレンタルが向きます。購入は初期費用がかかる代わりに以降の固定費が下がり、レンタルは初期費用を抑えられる代わりに支払いが続きます。損益が入れ替わる時期は、鉢のサイズ・レンタル料金・入れ替え頻度で変わるため一律には示せません。当サイトでは掲載サービスの観葉植物レンタルの月額を公式で確認できていないため、見積もりを取ったうえで「購入価格÷月額」で何か月分に相当するかを比べる方法をおすすめします。",
+    q: "オフィスでは購入型とレンタル型のどちらを選ぶべきですか？",
+    a: "オフィスでは金額より先に「社内に手入れをする担当を置けるか」で決めてください。担当を置ける・置き場所が固定・少量なら購入型、担当を置けない・大型グリーン・複数拠点ならメンテナンス込みのレンタル型が向きます。そのうえで費用を比べる場合は、当サイトでは掲載サービスの観葉植物レンタルの月額を公式で確認できていないため、見積もりを取ったうえで「購入価格÷月額」で何か月分に相当するかを比べる方法をおすすめします。買い切りと月額制でどちらが得になるかという一般的な判断は、当サイトの「観葉植物は購入とサブスク・レンタルどちらがお得か」で詳しく整理しています。",
   },
 ];
 
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "法人・オフィス向け観葉植物・花の定期便【2026年】月額の目安とメンテナンス付きの選び方",
-  description: "オフィス・店舗向けの観葉植物と花の定期便（サブスク・レンタル）の選び方・月額の目安・メンテナンス付きの可否を、公式確認できる料金だけで整理。",
+  headline: "オフィス向け観葉植物・花の定期便【2026年】小規模オフィス・メンテナンス込み・管理不要で選ぶ法人ガイド",
+  description: "オフィス・店舗への観葉植物と花の定期便（サブスク・レンタル）の導入を、小規模オフィスでの始め方・メンテナンス込みの可否・管理不要で続ける方法・エントランスの選び方・東京23区の確認手順で整理。",
   datePublished: "2026-07-18T00:00:00+09:00",
-  dateModified: "2026-08-17T00:00:00+09:00",
+  dateModified: "2026-09-16T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/guides/houjin-office/" },
@@ -104,17 +104,19 @@ export default function HoujinOfficePage() {
           <div className="max-w-5xl mx-auto px-4 text-center">
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">法人・オフィス向けガイド</p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              法人・オフィス向け 観葉植物・花の定期便<br className="hidden md:block" />
-              メリットと選び方・月額の目安【2026年】
+              オフィス向け 観葉植物・花の定期便【2026年】<br className="hidden md:block" />
+              小規模オフィス・メンテナンス込み・管理不要で選ぶ
             </h1>
             <p className="text-sm md:text-base text-[#666] max-w-2xl mx-auto leading-relaxed">
-              受付・応接・店舗に花を飾りたい法人の方へ。法人専用サービスと個人向けサブスクのオフィス利用の違い、
-              メリット、費用の目安を、公式で確認できる料金だけで整理します。
+              受付・エントランス・執務スペースにグリーンや花を置きたい法人の方へ。
+              数人〜十数人の小規模オフィスでも使えるか、メンテナンス込みにできるか、管理担当を置かずに続けられるか、エントランスには何を置くか。
+              オフィス導入で実際に迷う論点を、公式で確認できる料金だけで順に整理します。
             </p>
             <p className="text-sm text-[#666] max-w-2xl mx-auto leading-relaxed mt-4">
-              観葉植物（グリーン）をオフィスに置く場合の
-              <Link href="#office-green-faq" className="text-[#4A7C59] font-medium underline">月額の目安・メンテナンス付きの可否・小規模オフィスでの始め方</Link>
-              は、下の「法人・オフィス導入のよくある質問」で即答形式にまとめています。
+              <Link href="#office-quick" className="text-[#4A7C59] font-medium underline">4つの論点への結論</Link>
+              を先に読みたい方は次のセクションへ、さらに細かい条件は
+              <Link href="#office-green-faq" className="text-[#4A7C59] font-medium underline">法人・オフィス導入のよくある質問</Link>
+              にまとめています。
             </p>
           </div>
         </section>
@@ -129,6 +131,75 @@ export default function HoujinOfficePage() {
                 <li>・複数拠点・大きめのアレンジ・請求書払い・活け替え回収まで必要なら<strong>法人専用サービス（bloomee biz など）</strong>。</li>
                 <li>・法人プランは本数・頻度・拠点数で変わり<strong>公式見積もりが前提</strong>（一律の公開価格ではありません）。</li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* オフィス導入でよく迷う4つの論点 */}
+        <section id="office-quick" className="py-12 md:py-16 bg-white">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-4 pb-3 border-b-2 border-[#4A7C59]">
+              オフィス導入でよく迷う4つの論点に先に答えます
+            </h2>
+            <p className="text-sm text-[#555] leading-relaxed mb-8">
+              オフィスへの観葉植物・花の導入では、聞かれる内容がほぼ次の4つに集約されます。
+              金額は当サイトが各公式サイトで確認できた値のみを使い、確認できていない範囲は「見積もりで確認」と明記します。
+            </p>
+
+            <div className="space-y-6">
+              <div className="rounded-xl border border-[#E8E0D5] bg-[#FAF7F2] p-6">
+                <h3 className="font-bold text-[#333] mb-3">1. 数人〜十数人の小規模オフィスでも使えますか</h3>
+                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                  使えます。小規模オフィスでつまずくのは金額よりも<strong>「日中に受け取れる人がいるか」</strong>である場合が多いため、受け取り方式から選ぶのが確実です。
+                  medeluのMiniプランは1回748円（送料込み）でポスト投函のため、受け取り担当を常に置けない体制でも運用しやすい形式です（2026年7月3日確認）。
+                  法人契約で始めるなら、bloomee bizはミニブーケ3束プラン（お花／グリーン4〜5本・全長25〜30cm）でも1回3,000円（税込・送料無料）で、毎週と隔週を選べます（2026年8月17日確認）。
+                </p>
+                <p className="text-sm text-[#666] leading-relaxed">
+                  拠点が1つで置き場所も1〜2か所なら、いきなり全フロアに広げず、まず小さいプランで受け取りと手入れの負担を確かめてください。
+                  1か所で回ることを確認してから増やすほうが、契約をやり直すより無駄が出ません。
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-[#E8E0D5] bg-[#FAF7F2] p-6">
+                <h3 className="font-bold text-[#333] mb-3">2. 月2回など「メンテナンス込み」のプランはありますか</h3>
+                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                  メンテナンスが定額に含まれるのはレンタル型の契約です。当サイト掲載ではCLASが大型観葉植物のレンタルに対応し、メンテナンス不要のプランと法人利用があります。
+                  ただし<strong>訪問頻度・作業範囲の公表値は確認できていないため、当サイトでは「月2回」などの回数を断定していません</strong>。
+                </p>
+                <p className="text-sm text-[#666] leading-relaxed">
+                  回数を条件にしたい場合は、見積もりの依頼文に「月◯回・1回あたりの作業範囲（水やり／剪定／葉の清掃／株の入れ替え）」を明記し、
+                  返ってきた見積もりにも回数と作業範囲が書かれているかを必ず確認してください。ここが書かれていない見積もりは、契約後に追加費用が発生しやすい形です。
+                  金額が回数でどう変わるかの考え方は
+                  <Link href="/guides/kanyou-shokubutsu-ryokin/#maintenance" className="text-[#4A7C59] underline mx-1">観葉植物の料金の考え方</Link>
+                  で解説しています。
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-[#E8E0D5] bg-[#FAF7F2] p-6">
+                <h3 className="font-bold text-[#333] mb-3">3. 管理担当を置けません。管理不要で続けられますか</h3>
+                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                  水やり・剪定・株の入れ替えまでを事業者が行うメンテナンス込みのレンタル契約なら、社内での作業はほとんど発生しません。
+                  当サイト掲載ではCLASが大型観葉植物のレンタルに対応し、メンテナンス不要のプランと交換・返却があります（料金の公表値は確認できていないため見積もりが前提）。
+                </p>
+                <p className="text-sm text-[#666] leading-relaxed">
+                  切り花・グリーンの定期便を選ぶ場合は、<strong>「花瓶に入れる・水を替える・次の便が届いたら入れ替える」という作業は社内に残ります</strong>。
+                  完全に手を離したいのか、週に数分の作業なら許容できるのかで、選ぶ仕組みが変わります。
+                  作業を減らす方向で調整するなら、bloomee bizは配送曜日を月・水・金から選べるため、担当者が出社している曜日に合わせられます（2026年8月17日確認）。
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-[#E8E0D5] bg-[#FAF7F2] p-6">
+                <h3 className="font-bold text-[#333] mb-3">4. エントランス・受付には何を置けばよいですか</h3>
+                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                  来客の視線が最初に届く一点に絞り、<strong>床置きの中〜大型グリーン</strong>か<strong>受付カウンター上の小さな花</strong>のどちらかから始めると計画が立てやすくなります。
+                  大型グリーンは搬入と入れ替えの負担が大きいためレンタル型、カウンター上の彩りは定期便が向きます。
+                </p>
+                <p className="text-sm text-[#666] leading-relaxed">
+                  サイズの目安として、bloomee bizのブーケ1束プランはお花／グリーン10本以上・全長30〜35cm、ミニブーケ3束プランは4〜5本・全長25〜30cmで、いずれも1回3,000円（税込・送料無料）です（2026年8月17日確認）。
+                  全長30cm前後は受付カウンターに置いても書類や来客の視線を遮りにくいサイズです。
+                  床置きの大型を検討する場合は、搬入経路・エレベーターのサイズ・避難動線を塞がないかを先に確認してください。
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -178,9 +249,9 @@ export default function HoujinOfficePage() {
                 <a href="https://business.bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-sm text-[#4A7C59] font-medium underline">bloomee biz（法人向け）公式を見る</a>
                 <p className="text-sm text-[#666] leading-relaxed mt-3">
                   受付・応接に飾るグリーンも検討するなら、法人利用に対応したレンタルも含めて
-                  <Link href="/compare/kanyou-shokubutsu/" className="text-[#4A7C59] underline">観葉植物のサブスク・レンタル比較</Link>
-                  で整理しています。購入型とレンタル型の基本的な違いは
-                  <Link href="/guides/kanyou-shokubutsu/" className="text-[#4A7C59] underline">観葉植物のサブスクの選び方</Link>
+                  <Link href="/compare/kanyou-shokubutsu/" className="text-[#4A7C59] underline">観葉植物は購入とサブスク・レンタルどちらがお得か</Link>
+                  で整理しています。金額の決まり方は
+                  <Link href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] underline">観葉植物のサブスク・レンタル料金の考え方</Link>
                   もあわせてご覧ください。
                 </p>
               </div>
@@ -193,8 +264,16 @@ export default function HoujinOfficePage() {
         <section id="kaitori-rental" className="py-12 md:py-16 bg-[#FAF7F2]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-4 pb-3 border-b-2 border-[#4A7C59]">
-              オフィスの観葉植物は購入とレンタル、どちらが得か
+              オフィスでは購入型とレンタル型のどちらを選ぶか｜管理体制で決める
             </h2>
+            <p className="text-sm text-[#555] leading-relaxed mb-6">
+              オフィスでは、金額より先に「社内で水やり・手入れをする担当を置けるか」で決めると迷いません。
+              買い切りと月額制でどちらが得になるかという一般的な判断は
+              <Link href="/compare/kanyou-shokubutsu/" className="text-[#4A7C59] underline mx-1">観葉植物は購入とサブスク・レンタルどちらがお得か</Link>
+              に、金額が何で変わるかの考え方は
+              <Link href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] underline mx-1">観葉植物のサブスク・レンタル料金の考え方</Link>
+              にまとめています。ここではオフィス特有の判断材料に絞って整理します。
+            </p>
             <div className="bg-white border-2 border-[#4A7C59] rounded-2xl p-6 mb-6">
               <p className="text-sm text-[#555] leading-relaxed">
                 <strong>同じ鉢を数年そのまま置き続けるなら購入、入れ替えや枯れたときの手当・日々の管理まで任せたいならレンタルが向きます。</strong>
@@ -304,9 +383,11 @@ export default function HoujinOfficePage() {
             </div>
             <p className="text-sm text-[#666] leading-relaxed mt-6">
               サービスごとの違いを一覧で見たい方は
-              <Link href="/compare/kanyou-shokubutsu/" className="text-[#4A7C59] font-bold underline">観葉植物のサブスク・レンタル比較</Link>
-              へ。購入型とレンタル型の基本は
-              <Link href="/guides/kanyou-shokubutsu/" className="text-[#4A7C59] font-bold underline">観葉植物のサブスクの選び方</Link>
+              <Link href="/compare/kanyou-shokubutsu/" className="text-[#4A7C59] font-bold underline">観葉植物は購入とサブスク・レンタルどちらがお得か</Link>
+              へ。金額が何で変わるか・予算の立て方は
+              <Link href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] font-bold underline">観葉植物のサブスク・レンタル料金の考え方</Link>
+              に、置き場所・水やりなど育て方の基本は
+              <Link href="/guides/kanyou-shokubutsu/" className="text-[#4A7C59] font-bold underline">観葉植物の育て方・置き場所ガイド</Link>
               で解説しています。
             </p>
             <p className="text-xs text-[#999] mt-4">

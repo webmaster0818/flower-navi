@@ -126,7 +126,7 @@
   </url>
   <url>
     <loc>https://ohana-delivery.com/compare/kanyou-shokubutsu/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -140,6 +140,12 @@
     <loc>https://ohana-delivery.com/compare/souryou-muryou/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ohana-delivery.com/guides/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -185,8 +191,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ohana-delivery.com/guides/kanyou-shokubutsu-ryokin/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ohana-delivery.com/guides/kanyou-shokubutsu/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
