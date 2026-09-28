@@ -19,6 +19,8 @@ export type Service = {
   servicePath: string;
   officialUrl: string;
   affiliateUrl: string;
+  /** 成果地点が手前のプログラム（あるサービスのみ）。検討段階が浅いページで使う */
+  affiliateUrlEarly?: string;
   /** 最安プラン（比較表の主役） */
   cheapest: ServicePlan;
   plans: ServicePlan[];
@@ -43,7 +45,11 @@ export const SERVICES: Service[] = [
     name: "medelu（メデル）",
     servicePath: "/services/medelu/",
     officialUrl: "https://medelu.flowers/",
+    // medelu は felmat に2プログラムある。ページの検討段階で使い分ける（2026-09-28 MediaXAI判断）。
+    //   affiliateUrl      … 【9186】成果地点=決済完了 / 2,307円。申込直前のページ（サービス個別・解約・口コミ）で使う
+    //   affiliateUrlEarly … 【6599】成果地点=申し込み / 1,153円。検討段階が浅いページ（比較・料金・入門）で使う
     affiliateUrl: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L",
+    affiliateUrlEarly: "https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L",
     cheapest: { name: "Mini", price: 748, flowers: "3〜4本", postDelivery: true },
     plans: [
       { name: "Mini", price: 748, flowers: "3〜4本", postDelivery: true },

@@ -20,6 +20,7 @@ function yen(n: number) {
   return n.toLocaleString("ja-JP");
 }
 
+// 料金比較ページは検討段階が浅いため、成果地点が手前のプログラム(affiliateUrlEarly)があればそちらを使う。
 export default function RyokinPage() {
   const faq = [
     {
@@ -107,7 +108,7 @@ export default function RyokinPage() {
                   <td className="p-3 border-b border-[#E8E0D8]">{s.minDeliveries ? `${s.minDeliveries}回継続` : "縛りなし"}</td>
                   <td className="p-3 border-b border-[#E8E0D8] text-right">{yen(minTotal(s))}円</td>
                   <td className="p-3 border-b border-[#E8E0D8] text-center">
-                    <a href={s.affiliateUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="inline-block bg-[#4A7C59] text-white text-xs font-bold px-3 py-2 rounded-full hover:bg-[#3A6247]">公式へ</a>
+                    <a href={s.affiliateUrlEarly ?? s.affiliateUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="inline-block bg-[#4A7C59] text-white text-xs font-bold px-3 py-2 rounded-full hover:bg-[#3A6247]">公式へ</a>
                   </td>
                 </tr>
               ))}

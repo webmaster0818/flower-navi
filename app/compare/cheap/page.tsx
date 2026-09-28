@@ -60,7 +60,7 @@ const rankingData = [
     minOrders: "なし",
     quality: "あり",
     url: "/services/medelu",
-    officialUrl: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L",
+    officialUrl: "https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L",
     highlight: "送料無料で業界最安水準。市場直送で新鮮なお花が届く。回数縛りなしで気軽にお試し可能。",
     bestFor: "とにかく安く始めたい方、送料込みのコスパを重視する方",
     detail: "medeluは市場直送の仕組みにより中間マージンを削減し、送料無料を実現しています。Miniプランは1回748円（税込）で3〜4本のお花が届き、送料込みの総額で業界最安水準です。回数縛りもないため、花のサブスクを初めて試す方にも安心です。配送は隔週・毎週から選べ、スキップも自由にできます。",

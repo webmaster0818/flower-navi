@@ -760,7 +760,7 @@ export default function BloomeeVsMedeluPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L"
+                href="https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="inline-block text-sm text-[#4A7C59] underline hover:text-[#3A6247] transition-colors"

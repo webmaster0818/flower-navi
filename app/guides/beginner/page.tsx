@@ -532,7 +532,7 @@ export default function BeginnerGuidePage() {
                     medeluの詳細レビューを見る
                   </a>
                   <a
-                    href="https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L"
+                    href="https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"

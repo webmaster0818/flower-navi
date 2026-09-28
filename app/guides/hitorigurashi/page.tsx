@@ -56,7 +56,7 @@ const rankingData = [
     minOrders: "なし",
     quality: "あり",
     url: "/services/medelu",
-    officialUrl: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L",
+    officialUrl: "https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L",
     highlight: "748円〜送料無料。ポスト投函で不在でも受け取れる。回数縛りなしで気軽に始められる。",
     bestFor: "コスパ重視の一人暮らし、初めて花のサブスクを試す方",
     detail:
