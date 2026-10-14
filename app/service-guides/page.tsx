@@ -56,10 +56,20 @@ export default function ServiceGuidesIndexPage() {
               サービス別 解約方法・口コミ完全ガイド
             </h1>
             <p className="text-base text-[#666] leading-relaxed">
-              8 サービス × 解約・口コミ の 16 ページで、申込み前の最終チェックを完了できます。
-              各ページに解約手順・引き止め有無・実利用者の本音レビューを網羅しています。
+              サービスごとの解約方法と口コミの傾向をまとめています。申込み前の最終チェックにお使いください。
+              bloomee・medelu・AND PLANTS・ハナメクの口コミ・評判は、料金や解約条件とあわせて各サービスの詳細ページにまとめています。
             </p>
           </header>
+
+          <section className="mb-10 bg-white border border-[#E8E0D8] rounded-xl p-5">
+            <h2 className="text-base font-bold text-[#333] mb-3">口コミ・評判（出典つき）はサービス詳細ページへ</h2>
+            <ul className="grid sm:grid-cols-2 gap-2 text-sm">
+              <li><Link href="/services/bloomee/" className="text-[#4A7C59] underline">ブルーミー（bloomee）の口コミ・評判</Link></li>
+              <li><Link href="/services/medelu/" className="text-[#4A7C59] underline">メデル（medelu）の口コミ・評判</Link></li>
+              <li><Link href="/services/and-plants/" className="text-[#4A7C59] underline">アンドプランツ（AND PLANTS）の口コミ・評判</Link></li>
+              <li><Link href="/services/hanameku/" className="text-[#4A7C59] underline">ハナメク（hanameku）の口コミ・評判</Link></li>
+            </ul>
+          </section>
 
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">

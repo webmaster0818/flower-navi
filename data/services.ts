@@ -29,6 +29,8 @@ export type Service = {
   shippingNote: string;
   /** 最低受取回数（縛り）。null = 縛りなし／公式明記なし */
   minDeliveries: number | null;
+  /** 比較表に出す「縛り」の短い表記（公式表記に基づく） */
+  commitmentLabel: string;
   cancellation: string;
   /** 公式確認日 */
   verifiedAt: string;
@@ -58,11 +60,13 @@ export const SERVICES: Service[] = [
       { name: "Basic", price: 2330, flowers: "6〜9本", postDelivery: false },
     ],
     shippingIncluded: true,
-    shippingNote: "送料込み（Mini・Liteはポスト投函）",
+    shippingNote: "送料込み（Mini・Liteはポスト投函）。北海道・東北のLite/Lite+/Basicは遠隔地送料（Lite 140円・Lite+ 200円・Basic 240円）が加算",
     minDeliveries: null,
-    cancellation: "回数縛りなし。決済日（金曜）前日の木曜までにマイページで手続きすれば次回から停止",
-    verifiedAt: "2026年7月3日",
-    source: "medelu公式（medelu.flowers/courses）",
+    commitmentLabel: "公式に記載なし",
+    cancellation: "公式に最低利用回数の記載なし。決済日（お届け週の前週金曜）の前日・木曜までにマイページで解約すれば次回から停止（過ぎると最後に1回届く）。スキップは3回先まで",
+    verifiedAt: "2026年10月14日",
+    source: "medelu公式（medelu.flowers/courses・特商法・ヘルプセンター）",
+    note: "品質保証は到着当日中に写真を送り、枯れていると判断されれば送料を含め全額返金（交換なし）。2026年10月14日公式ヘルプで確認。",
   },
   {
     id: "hanameku",
@@ -73,15 +77,17 @@ export const SERVICES: Service[] = [
     cheapest: { name: "ライトプラン", price: 1210, flowers: "3〜4本", postDelivery: true },
     plans: [
       { name: "ライトプラン", price: 1210, flowers: "3〜4本", postDelivery: true },
-      { name: "セルフアレンジプラン", price: 1958, flowers: "1〜8本ほか", postDelivery: false },
+      { name: "セルフアレンジ S", price: 1958, flowers: "1〜8本", postDelivery: false },
+      { name: "セルフアレンジ L", price: 3278, flowers: "1〜12本", postDelivery: false },
     ],
     shippingIncluded: true,
-    shippingNote: "税込・配送料込（ライトはポスト投函）",
+    shippingNote: "税込・配送料込（ライトはポスト投函）。セルフアレンジは地域別の追加送料あり（北海道・九州550円、関西220円、中国・四国330円。沖縄・離島は配送不可）",
     minDeliveries: null,
-    cancellation: "回数縛りなし。ただし初回（定期1回目）の解約は不可とFAQ明記。解約・スキップは次回お届け予定日の10日前まで",
-    verifiedAt: "2026年7月3日",
-    source: "hanameku公式（hanameku.jp）",
-    note: "「定期1回目（初回）の解約は受け付けていない」と公式FAQに明記（2026-07-03確認）＝実質初回1回は受け取り必須。",
+    commitmentLabel: "初回（1回目）は解約不可",
+    cancellation: "最低回数の記載はないが、初回（定期1回目）の解約は不可と公式FAQに明記。解約・スキップ・変更はお届け予定日の10日前まで（スキップは次回分のみ）",
+    verifiedAt: "2026年10月14日",
+    source: "hanameku公式（hanameku.jp ライト・セルフアレンジ各ページ・FAQ・特商法）",
+    note: "「定期1回目（初回）の解約は受け付けていない」と公式FAQに明記（2026-10-14再確認）＝実質初回1回は受け取り必須。品質保証は到着日を含め3日以内に写真つきで申請（返金または代替品）。",
   },
   {
     id: "bloomee",
@@ -89,17 +95,20 @@ export const SERVICES: Service[] = [
     servicePath: "/services/bloomee/",
     officialUrl: "https://bloomeelife.com/",
     affiliateUrl: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L",
-    cheapest: { name: "お試しプラン", price: 980, flowers: "3本以上", postDelivery: true },
+    cheapest: { name: "お試しプラン", price: 980, flowers: "4本以上", postDelivery: true },
     plans: [
-      { name: "お試しプラン", price: 980, flowers: "3本以上", postDelivery: true },
+      { name: "お試しプラン", price: 980, flowers: "4本以上（約18〜25cm）", postDelivery: true },
+      { name: "グリーンプラン", price: 980, flowers: "グリーン中心（約18〜25cm）", postDelivery: true },
+      { name: "ベーシックプラン", price: 2180, flowers: "8本以上（約25〜30cm）", postDelivery: false },
     ],
     shippingIncluded: false,
-    shippingNote: "花代980円＋送料385円/回（ポスト投函）。ベーシックは2,180円＋送料550円",
+    shippingNote: "花代とは別に送料が毎回かかる（お試し・グリーン385円／ベーシック550円）。お試しは実質1,365円/回",
     minDeliveries: 4,
-    cancellation: "初回契約は4回。4回未満の解約は残回数分の途中解約料が発生（5回目以降はいつでも停止可・締切は前週木曜）",
-    verifiedAt: "2026年7月3日",
-    source: "bloomee公式（bloomeelife.com）",
-    note: "お試し980円＋送料385円、ベーシック2,180円＋送料550円を公式確認（2026-07-03）。途中解約料の根拠は特商法ページに明記。",
+    commitmentLabel: "4回（未満は途中解約料）",
+    cancellation: "最初の4回は受け取りが必要。4回未満で解約すると「4回分のうち残回数分の商品代金（税込）」を途中解約料として支払う（特商法）",
+    verifiedAt: "2026年10月14日",
+    source: "bloomee公式（bloomeelife.com トップの料金表・特商法表記・利用規約）",
+    note: "料金は公式トップの料金画像で確認（2026-10-14）。本数はユーザーライク社の2026年2月17日プレスリリース表記。品質保証の申請期限は定期便で2週間以内（特商法）。",
   },
   {
     id: "andplants",
@@ -114,11 +123,13 @@ export const SERVICES: Service[] = [
       { name: "Large", price: 4980, flowers: "14〜18本", postDelivery: false },
     ],
     shippingIncluded: true,
-    shippingNote: "送料込み（宅配・都度払い）",
+    shippingNote: "送料込み（クール便オプションは別料金）",
     minDeliveries: null,
-    cancellation: "都度払い・いつでも解約/スキップ可",
-    verifiedAt: "2026年7月3日",
-    source: "AND PLANTS公式（andplants.jp/collections/subscription-flower）",
+    commitmentLabel: "なし（いつでも解約可）",
+    cancellation: "解約はいつでも可能（最低回数の記載なし）。スキップは決済完了前の注文のみ（決済はお届けの約1週間前）",
+    verifiedAt: "2026年10月14日",
+    source: "AND PLANTS公式（andplants.jp/collections/subscription-flower・返品交換規定）",
+    note: "2026年5月から花の事業は「AND FLOWER」ブランドで展開（定期便ページはandplants.jp配下）。お届け頻度は1・2・4週ごと。生花の交換申請は到着後1日以内。料金の税込/税抜の明記は公式ページで確認できず。",
   },
 ];
 

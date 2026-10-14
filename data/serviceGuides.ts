@@ -131,7 +131,7 @@ const bloomeeKaiyaku: ServiceGuide = {
     },
     {
       heading: "解約のベストタイミング",
-      body: "5回目の配送日の前日(オンライン解約締切23:59)が最もスムーズ。これにより5回目を受け取り、6回目以降の請求を回避できます。4回目で解約する場合は4回目受取の翌日が最速。",
+      body: "途中解約料をかけずに辞めるなら、4回目のお届けが確定した後に解約手続きをするのが基本です（4回未満の解約は「4回分のうち残回数分の商品代金」が途中解約料・特商法）。締切は利用規約上「当社が定める時点」とされているため、マイページに表示される次回分の締切を確認してください（2026年10月14日確認）。",
     },
     {
       heading: "解約手順 (7ステップ)",
@@ -235,7 +235,7 @@ const medeluKaiyaku: ServiceGuide = {
   sections: [
     {
       heading: "medelu 解約の基本ルール",
-      body: "medelu は『回数縛りなし』『違約金なし』『初回からいつでも解約OK』が公式に明記されています。1回受取後でも解約可能で、手数料は一切発生しません。",
+      body: "medelu の公式サイト・特定商取引法に基づく表記には、最低利用回数や違約金の記載が見当たりません（2026年10月14日確認）。決済日前日の木曜までにマイページで手続きすれば、次回から止められます。",
     },
     {
       heading: "解約手順 (4ステップ)",
@@ -243,7 +243,7 @@ const medeluKaiyaku: ServiceGuide = {
     },
     {
       heading: "解約のベストタイミング",
-      body: "次回お届け日の『前日23:59』までに手続き完了が必要。例: 次回お届けが木曜なら水曜23:59が締切。締切以降は次回1回分発生。",
+      body: "締切は決済日（お届け週の前週金曜日）の前日・木曜日です。木曜までに手続きすれば次回から止まり、過ぎると決済済みの1回が最後に届きます（公式ヘルプ・2026年10月14日確認）。",
     },
     {
       heading: "完全解約 vs 一時的お休み",
@@ -349,7 +349,7 @@ const andPlantsKaiyaku: ServiceGuide = {
     },
     {
       heading: "解約のベストタイミング",
-      body: "次回お届け予定日の『2日前23:59』までに手続き完了が必要。AND PLANTS は注文確定〜発送までのリードタイムが他社よりやや長いため、ぎりぎりのタイミングだと次回1回分発生する場合あり。",
+      body: "公式に「◯日前まで」という日数の記載はありません。決済はお届けの約1週間前で、スキップ・変更は決済完了前の注文に限られるため、解約も次回分の決済前に済ませるのが確実です（2026年10月14日確認）。",
     },
     {
       heading: "観葉植物・グッズの返品ルール",
@@ -629,7 +629,7 @@ const hanamekuKaiyaku: ServiceGuide = {
   intent: "kaiyaku",
   title: "ハナメク(hanameku)の解約方法｜マイページから1分で完了",
   h1: "ハナメク(hanameku)の解約方法を完全ガイド｜シンプルな手順",
-  description: "ハナメク(hanameku)の解約方法を画面付きで詳しく解説。回数縛りなし・違約金なし・引き止めなしのシンプル設計。",
+  description: "ハナメク(hanameku)の解約方法を解説。締切はお届け予定日の10日前、初回（1回目）は解約不可などの公式ルールと、マイページでの手順をまとめました。",
   intro:
     "ハナメク(hanameku)は1ヶ月から始められるシンプルな花のサブスクで、解約も Web 完結・回数縛りなしの設計です。本ページではハナメクの解約手順・タイミングを詳しく解説します。",
   sections: [
@@ -643,7 +643,7 @@ const hanamekuKaiyaku: ServiceGuide = {
     },
     {
       heading: "解約のベストタイミング",
-      body: "次回お届け予定日の『前日23:59』までに手続き完了。締切後は次回1回分発生。",
+      body: "解約・スキップの締切はお届け予定日の10日前です（2024年7月に9日前から変更）。また、初回（定期1回目）は解約できません（公式FAQ・2026年10月14日確認）。",
     },
     {
       heading: "解約後の取り扱い",
@@ -822,7 +822,16 @@ const mirafloraKuchikomi: ServiceGuide = {
   ],
 };
 
-export const serviceGuides: ServiceGuide[] = [
+// 2026-10-14: 提携4社の「口コミ」ガイドは /services/<slug>/（口コミ・評判の受け皿）と検索意図が重複し、
+// Google が受け皿側をインデックスしない原因になっていたため統合。public/_redirects で 301 転送している。
+export const MERGED_KUCHIKOMI_GUIDES: Record<string, string> = {
+  "bloomee-kuchikomi": "/services/bloomee/",
+  "medelu-kuchikomi": "/services/medelu/",
+  "and-plants-kuchikomi": "/services/and-plants/",
+  "hanameku-kuchikomi": "/services/hanameku/",
+};
+
+const allGuides: ServiceGuide[] = [
   bloomeeKaiyaku,
   bloomeeKuchikomi,
   medeluKaiyaku,
@@ -840,6 +849,19 @@ export const serviceGuides: ServiceGuide[] = [
   mirafloraKaiyaku,
   mirafloraKuchikomi,
 ];
+
+export const serviceGuides: ServiceGuide[] = allGuides
+  .filter((g) => !(g.slug in MERGED_KUCHIKOMI_GUIDES))
+  .map((g) => ({
+    ...g,
+    relatedPaths: g.relatedPaths
+      .map((r) => {
+        const slug = r.href.replace(/^\/service-guides\/|\/$/g, "");
+        return slug in MERGED_KUCHIKOMI_GUIDES ? { ...r, href: MERGED_KUCHIKOMI_GUIDES[slug] } : r;
+      })
+      // 統合でサービス詳細へのリンクと重複したものは1本にまとめる
+      .filter((r, i, arr) => arr.findIndex((x) => x.href === r.href) === i),
+  }));
 
 export function findServiceGuide(slug: string): ServiceGuide | undefined {
   return serviceGuides.find((g) => g.slug === slug);

@@ -29,7 +29,7 @@ const comparisonItems = [
   { item: "送料", bloomee: "385円〜", hitohana: "無料", winner: "hitohana" },
   { item: "総額（最安）", bloomee: "1,365円/回", hitohana: "1,320円/回", winner: "hitohana" },
   { item: "花の本数", bloomee: "3本〜（プランによる）", hitohana: "4本〜（サイズによる）", winner: "hitohana" },
-  { item: "花の色選択", bloomee: "不可（おまかせ）", hitohana: "可能（7色から選択）", winner: "hitohana" },
+  { item: "花の色選択", bloomee: "不可（おまかせ）", hitohana: "可能（6色＋おまかせ）", winner: "hitohana" },
   { item: "配送方法", bloomee: "ポスト投函 / 宅配便", hitohana: "宅配便のみ", winner: "bloomee" },
   { item: "回数縛り", bloomee: "4回", hitohana: "なし", winner: "hitohana" },
   { item: "配送頻度", bloomee: "毎週 / 隔週", hitohana: "毎週 / 隔週 / 月1回", winner: "hitohana" },
@@ -149,7 +149,7 @@ export default function BloomeeVsHitohanaPage() {
             </h2>
             <div className="space-y-4">
               {[
-                { title: "花の色を7色から選べる", text: "ホワイト・レッド・イエロー・オレンジ・ブルー・ブラウン・ピンクの7色から好みの色を選択可能。部屋のインテリアや気分に合わせてカスタマイズできるのはHitoHanaならではの魅力です。" },
+                { title: "花の色を6色＋おまかせから選べる", text: "6色＋おまかせから毎回好みの色を指定可能（2026年10月14日公式確認）。部屋のインテリアや気分に合わせてカスタマイズできるのはHitoHanaならではの魅力です。" },
                 { title: "送料無料でトータルコストが明確", text: "すべてのプランで送料無料。表示価格がそのまま支払い総額になるため、料金体系がわかりやすく、隠れコストがありません。" },
                 { title: "回数縛りなしでいつでも解約OK", text: "最低利用回数の縛りがないため、1回試して合わなければすぐに解約できます。初めてで不安な方も、金銭的リスクなく始められます。" },
               ].map((item, i) => (

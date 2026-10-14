@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'medelu（メデル）の口コミ・評判は？748円〜・送料無料の料金と解約を検証【2026年7月】｜flowerデリ',
-  description: '業界最安値748円〜・送料無料のコスパ最強お花のサブスク「medelu」。 実際の利用者の口コミ・評判をもとに、料金プラン・メリット・デメリットを詳しく解説します。',
+  title: 'メデル（medelu）の花の口コミ・評判は？良い・悪い口コミと748円〜の料金・解約を検証【2026年10月】｜flowerデリ',
+  description: 'メデル（medelu）の花の定期便の口コミ・評判を出典つきで検証。良い口コミ・悪い口コミの傾向、メリット・デメリット、748円（税込・送料込）〜の料金、解約の締切（木曜）、全額返金の品質保証を2026年10月14日に公式サイトで確認した情報でまとめました。',
   alternates: { canonical: "/services/medelu/" },
   openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
-    title: 'medelu（メデル）の口コミ・評判は？748円〜・送料無料の料金と解約を検証【2026年7月】｜flowerデリ',
-    description: '業界最安値748円〜・送料無料のコスパ最強お花のサブスク「medelu」。 実際の利用者の口コミ・評判をもとに、料金プラン・メリット・デメリットを詳しく解説します。',
+    title: 'メデル（medelu）の花の口コミ・評判は？良い・悪い口コミと748円〜の料金・解約を検証【2026年10月】｜flowerデリ',
+    description: 'メデル（medelu）の花の定期便の口コミ・評判を出典つきで検証。良い口コミ・悪い口コミの傾向、メリット・デメリット、748円（税込・送料込）〜の料金、解約の締切（木曜）、全額返金の品質保証を2026年10月14日に公式サイトで確認した情報でまとめました。',
     url: "/services/medelu/",
     type: "article",
   },
-  twitter: { card: "summary_large_image", title: 'medelu（メデル）の口コミ・評判は？748円〜・送料無料の料金と解約を検証【2026年7月】｜flowerデリ', description: '業界最安値748円〜・送料無料のコスパ最強お花のサブスク「medelu」。 実際の利用者の口コミ・評判をもとに、料金プラン・メリット・デメリットを詳しく解説します。' },
+  twitter: { card: "summary_large_image", title: 'メデル（medelu）の花の口コミ・評判は？良い・悪い口コミと748円〜の料金・解約を検証【2026年10月】｜flowerデリ', description: 'メデル（medelu）の花の定期便の口コミ・評判を出典つきで検証。良い口コミ・悪い口コミの傾向、メリット・デメリット、748円（税込・送料込）〜の料金、解約の締切（木曜）、全額返金の品質保証を2026年10月14日に公式サイトで確認した情報でまとめました。' },
 };
 
 export default function SegmentLayout({ children }: { children: React.ReactNode }) {

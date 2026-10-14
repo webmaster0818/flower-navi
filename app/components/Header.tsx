@@ -49,11 +49,11 @@ export default function Header() {
 
             <div className="border-t border-[#E8E0D8] my-3" />
             <p className="text-xs text-[#9B8F87] font-medium tracking-wider mb-2">サービス詳細</p>
-            <a href="/services/bloomee" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">bloomee（ブルーミー）</a>
-            <a href="/services/medelu" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">medelu（メデル）</a>
-            <a href="/services/and-plants" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">AND PLANTS</a>
-            <a href="/services/nihon-sogo-engei" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">花の定期便（日本総合園芸）</a>
-            <a href="/services/hanameku" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">hanameku（ハナメク）</a>
+            <a href="/services/bloomee/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">bloomee（ブルーミー）</a>
+            <a href="/services/medelu/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">medelu（メデル）</a>
+            <a href="/services/and-plants/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">AND PLANTS</a>
+            <a href="/services/nihon-sogo-engei/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">花の定期便（日本総合園芸）</a>
+            <a href="/services/hanameku/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">hanameku（ハナメク）</a>
 
             <div className="border-t border-[#E8E0D8] my-3" />
             <p className="text-xs text-[#9B8F87] font-medium tracking-wider mb-2">ガイド</p>

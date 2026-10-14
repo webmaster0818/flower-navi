@@ -395,6 +395,17 @@ export default function MeritDemeritGuidePage() {
             </a>
           </div>
         </section>
+        <section className="py-10 bg-[#FBF8F4]">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl font-bold text-[#333] mb-4">サービスごとのメリット・デメリットと口コミ</h2>
+            <ul className="grid sm:grid-cols-2 gap-2 text-sm">
+              <li><a href="/services/bloomee/" className="text-[#4A7C59] underline">ブルーミー（bloomee）のメリット・デメリットと口コミ</a></li>
+              <li><a href="/services/medelu/" className="text-[#4A7C59] underline">メデル（medelu）のメリット・デメリットと口コミ</a></li>
+              <li><a href="/services/hanameku/" className="text-[#4A7C59] underline">ハナメク（hanameku）のメリット・デメリットと口コミ</a></li>
+              <li><a href="/services/and-plants/" className="text-[#4A7C59] underline">アンドプランツ（AND PLANTS）のメリット・デメリットと口コミ</a></li>
+            </ul>
+          </div>
+        </section>
       </main>
 
       {/* ─── Footer ─── */}

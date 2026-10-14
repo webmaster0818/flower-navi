@@ -27,65 +27,7 @@ const faqItems = [
   },
 ];
 
-/* ─── User Reviews ─── */
-const userReviews = [
-  {
-    name: "S.Y.",
-    age: "30代女性",
-    rating: 5,
-    title: "鮮度が全然違います",
-    text: "以前他のサブスクを使っていましたが、LIFFTに変えてから花の持ちが格段に良くなりました。市場直送のクール便なので、届いた時点の花がとにかく元気。2週間以上楽しめることもあります。月1回なので負担も少なく、届くのが毎月の楽しみです。",
-    date: "2026年2月",
-  },
-  {
-    name: "K.H.",
-    age: "40代女性",
-    rating: 4,
-    title: "Journalが嬉しいサプライズ",
-    text: "花と一緒に届くLIFFT Journalがとても素敵です。花の名前や産地を知ると愛着が湧きますし、お手入れ方法も参考になります。花だけでなく「知る楽しみ」がセットになっているのは他にはないサービスだと思います。ただ、3,300円は安くはないので、予算に余裕がある方向けかもしれません。",
-    date: "2026年1月",
-  },
-  {
-    name: "M.A.",
-    age: "20代女性",
-    rating: 4,
-    title: "パッケージがおしゃれ",
-    text: "届いた箱のデザインがシンプルでおしゃれなので、開封する瞬間がワクワクします。花自体もセンスが良い組み合わせで、そのまま花瓶に入れるだけでインテリアになります。月1回なのでもう少し頻度を選べるとさらに嬉しいのですが、品質には大満足です。",
-    date: "2025年12月",
-  },
-];
 
-/* ─── Star Rating Component ─── */
-function StarRating({ rating }: { rating: number }) {
-  return (
-    <>
-                {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"LIFFT（リフト）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"LIFFT（リフト）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/lifft/\"}" }} />
-        {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"LIFFT（リフト）\",\"description\":\"LIFFT（リフト）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.3\",\"reviewCount\":3,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"S.Y.\"},\"datePublished\":\"2026-2-01\",\"reviewBody\":\"以前他のサブスクを使っていましたが、LIFFTに変えてから花の持ちが格段に良くなりました。市場直送のクール便なので、届いた時点の花がとにかく元気。2週間以上楽しめることもあります。月1回なので負担も少なく、届くのが毎月の楽しみです。\",\"name\":\"鮮度が全然違います\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"K.H.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"花と一緒に届くLIFFT Journalがとても素敵です。花の名前や産地を知ると愛着が湧きますし、お手入れ方法も参考になります。花だけでなく「知る楽しみ」がセットになっているのは他にはないサービスだと思います。ただ、3,300円は安くはないので、予算に余裕がある方向けかもしれません。\",\"name\":\"Journalが嬉しいサプライズ\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"M.A.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"届いた箱のデザインがシンプルでおしゃれなので、開封する瞬間がワクワクします。花自体もセンスが良い組み合わせで、そのまま花瓶に入れるだけでインテリアになります。月1回なのでもう少し頻度を選べるとさらに嬉しいのですが、品質には大満足です。\",\"name\":\"パッケージがおしゃれ\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}}]}" }} />
-                {/* CANCEL_FLOW_SCHEMA_v1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"LIFFT（リフト）の解約手順\",\"description\":\"LIFFT（リフト）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"LIFFT公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期購入の管理」を開く\",\"text\":\"メニューから定期購入管理画面へ。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期購入を解約」をクリック\",\"text\":\"スキップにするか解約にするか選択できます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由選択(任意)\",\"text\":\"アンケートに任意で回答。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を最終確定\",\"text\":\"次回配送日の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"完了確認メール\",\"text\":\"LIFFTから解約完了通知が届きます。\"}]}" }} />
-        {/* JSONLD_INJECTED_v1 #0 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"LIFFT（リフト）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/lifft/\"}]}" }} />
-        {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"LIFFT（リフト）の評判・口コミ・料金プラン\",\"description\":\"LIFFT（リフト）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/lifft/\"}}" }} />
-        {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"LIFFT（リフト）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTの花束プランは1回3,300円（税込・送料無料）です。月に1回届くペースで、届く花は6〜8本のボリュームある花束です。季節限定でコーヒーと花のセットプランも提供されることがあります。いずれのプランも回数縛りなしで、いつでも解約可能です。\"}},{\"@type\":\"Question\",\"name\":\"LIFFTの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTの解約はマイページから手続きできます。回数縛りがないため、いつでも好きなタイミングで解約可能です。次回配送日の数日前までに手続きを完了すれば、次回以降の配送が停止されます。一時的にお届けを止めたい場合はスキップ機能も利用できます。\"}},{\"@type\":\"Question\",\"name\":\"LIFFTのお花はポスト投函ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTのお花はポスト投函には対応しておらず、宅配便（クール便）での配送となります。花のボリュームが大きく、鮮度を保つためにクール便を採用しているためです。配達時間帯の指定が可能なので、在宅している時間帯を指定して受け取りましょう。\"}},{\"@type\":\"Question\",\"name\":\"LIFFT Journalとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFT Journalは、お花と一緒に届く花の読み物（リーフレット）です。届いた花の種類や産地の紹介、花言葉、お手入れ方法、飾り方のヒントなどが掲載されています。花を飾るだけでなく、花について学ぶ楽しみも提供するLIFFT独自のサービスで、花のある暮らしをより深く楽しめます。\"}},{\"@type\":\"Question\",\"name\":\"LIFFTはどの地域に届けてもらえますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTは離島を除く日本全国に配送対応しています。クール便（ヤマト運輸）での配送のため、通常のヤマト運輸が届く地域であれば問題なく利用できます。ただし、一部地域では配達に通常より1日多くかかる場合があります。\"}}]}" }} />
-    <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
-      {[1, 2, 3, 4, 5].map((star) => (
-        <svg
-          key={star}
-          className={`w-5 h-5 ${star <= rating ? "text-yellow-400" : "text-gray-300"}`}
-          fill="currentColor"
-          viewBox="0 0 20 20"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-  </>
-  );
-}
 
 /* ─── Main Component ─── */
 export default function LifftServicePage() {
@@ -93,6 +35,16 @@ export default function LifftServicePage() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"LIFFT（リフト）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"LIFFT（リフト）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/lifft/\"}" }} />
+      {/* CANCEL_FLOW_SCHEMA_v1 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"LIFFT（リフト）の解約手順\",\"description\":\"LIFFT（リフト）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"LIFFT公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期購入の管理」を開く\",\"text\":\"メニューから定期購入管理画面へ。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期購入を解約」をクリック\",\"text\":\"スキップにするか解約にするか選択できます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由選択(任意)\",\"text\":\"アンケートに任意で回答。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を最終確定\",\"text\":\"次回配送日の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"完了確認メール\",\"text\":\"LIFFTから解約完了通知が届きます。\"}]}" }} />
+      {/* JSONLD_INJECTED_v1 #0 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"LIFFT（リフト）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/lifft/\"}]}" }} />
+      {/* JSONLD_INJECTED_v1 #1 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"LIFFT（リフト）の評判・口コミ・料金プラン\",\"description\":\"LIFFT（リフト）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/lifft/\"}}" }} />
+      {/* JSONLD_INJECTED_v1 #2 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"LIFFT（リフト）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTの花束プランは1回3,300円（税込・送料無料）です。月に1回届くペースで、届く花は6〜8本のボリュームある花束です。季節限定でコーヒーと花のセットプランも提供されることがあります。いずれのプランも回数縛りなしで、いつでも解約可能です。\"}},{\"@type\":\"Question\",\"name\":\"LIFFTの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTの解約はマイページから手続きできます。回数縛りがないため、いつでも好きなタイミングで解約可能です。次回配送日の数日前までに手続きを完了すれば、次回以降の配送が停止されます。一時的にお届けを止めたい場合はスキップ機能も利用できます。\"}},{\"@type\":\"Question\",\"name\":\"LIFFTのお花はポスト投函ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTのお花はポスト投函には対応しておらず、宅配便（クール便）での配送となります。花のボリュームが大きく、鮮度を保つためにクール便を採用しているためです。配達時間帯の指定が可能なので、在宅している時間帯を指定して受け取りましょう。\"}},{\"@type\":\"Question\",\"name\":\"LIFFT Journalとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFT Journalは、お花と一緒に届く花の読み物（リーフレット）です。届いた花の種類や産地の紹介、花言葉、お手入れ方法、飾り方のヒントなどが掲載されています。花を飾るだけでなく、花について学ぶ楽しみも提供するLIFFT独自のサービスで、花のある暮らしをより深く楽しめます。\"}},{\"@type\":\"Question\",\"name\":\"LIFFTはどの地域に届けてもらえますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTは離島を除く日本全国に配送対応しています。クール便（ヤマト運輸）での配送のため、通常のヤマト運輸が届く地域であれば問題なく利用できます。ただし、一部地域では配達に通常より1日多くかかる場合があります。\"}}]}" }} />
       <Header />
 
       <title>LIFFT（リフト）の口コミ・評判は？料金3,300円〜と花の質を実際に検証【2026年最新】</title>
@@ -270,24 +222,11 @@ export default function LifftServicePage() {
         <section id="reviews" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              LIFFT（リフト）の口コミ・評判
+              LIFFTの口コミ・評判について
             </h2>
-            <div className="space-y-4">
-              {userReviews.map((review, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-bold text-[#333]">{review.name}</span>
-                      <span className="text-xs text-[#999]">{review.age}</span>
-                    </div>
-                    <span className="text-xs text-[#999]">{review.date}</span>
-                  </div>
-                  <StarRating rating={review.rating} />
-                  <h3 className="text-sm font-bold text-[#333] mt-2 mb-1">{review.title}</h3>
-                  <p className="text-sm text-[#666] leading-relaxed">{review.text}</p>
-                </div>
-              ))}
-            </div>
+            <p className="text-sm md:text-base text-[#666] leading-relaxed">
+              当サイトは、出典を確認できない個人の口コミ（イニシャル・年代つきの体験談や星評価）は掲載しない方針です（2026年10月14日に旧掲載分を削除）。メリット・デメリットは公式サイトで確認できる仕組み・条件をもとに整理しています。実際の利用者の声は、公式サイトやSNSの投稿もあわせてご確認ください。
+            </p>
           </div>
         </section>
 

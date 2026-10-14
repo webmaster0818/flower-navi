@@ -1,0 +1,9 @@
+# 2026-10-14 口コミガイドを /services/<slug>/（口コミ・評判の受け皿）へ統合
+/service-guides/bloomee-kuchikomi/ /services/bloomee/ 301
+/service-guides/bloomee-kuchikomi /services/bloomee/ 301
+/service-guides/medelu-kuchikomi/ /services/medelu/ 301
+/service-guides/medelu-kuchikomi /services/medelu/ 301
+/service-guides/and-plants-kuchikomi/ /services/and-plants/ 301
+/service-guides/and-plants-kuchikomi /services/and-plants/ 301
+/service-guides/hanameku-kuchikomi/ /services/hanameku/ 301
+/service-guides/hanameku-kuchikomi /services/hanameku/ 301

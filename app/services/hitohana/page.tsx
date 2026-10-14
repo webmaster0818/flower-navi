@@ -6,42 +6,42 @@ import Header from "@/app/components/Header";
 /* ─── FAQ Data ─── */
 const faqItems = [
   {
-    q: "HitoHanaの花の定期便は色を選べますか？",
-    a: "はい、HitoHanaでは7色（ホワイト&グリーン、レッド、イエロー&オレンジ、ピンク、パープル、ブラウン、ブルー）から好きな色を選べます。また「おまかせ」も選択可能で、季節に合わせた旬の色合いの花が届きます。色は注文後もマイページから変更できます。",
+    q: "hitohana（ヒトハナ）の公式サイトはどこですか？",
+    a: "hitohanaの公式サイトは hitohana.tokyo です。運営は株式会社Beer and Techで、観葉植物・フラワーギフト・胡蝶蘭・お花の定期便などを扱っています。当サイト（flowerデリ）は花の定期便の比較サイトで、公式サイトではありません。",
   },
   {
-    q: "HitoHanaの最低利用回数はありますか？",
-    a: "HitoHanaの花の定期便には最低3回の受け取りが必要です。3回受け取り後は、マイページからいつでも解約が可能です。初回で合わなかった場合でも3回は継続する必要があるため、まずは小さめのプラン（Liteプラン1,320円）から始めるのがおすすめです。",
+    q: "hitohanaの花の定期便の料金はいくらですか？",
+    a: "特定商取引法に基づく表記では、1回あたりにかかる金額（税込）がLite 1,320円、S 1,980円、M 2,640円、L 3,850円、LL 4,950円と掲載されています（2026年10月14日確認）。クール便は有料オプションです（Liteは通常便のみ）。",
   },
   {
-    q: "HitoHanaの花はポスト投函で届きますか？",
-    a: "HitoHanaの花の定期便はポスト投函には対応しておらず、すべて宅配便（手渡し）での配送となります。配送日の時間帯指定が可能なので、在宅時に受け取れるよう設定できます。不在の場合は再配達の手続きが必要です。ポスト投函希望の方はbloomeeやmedeluの利用をおすすめします。",
+    q: "hitohanaの花の定期便に回数の縛りはありますか？",
+    a: "ありません。特定商取引法に基づく表記に「当社の定期購入には回数の縛りがございません」と明記されています。変更・解約はお届け日の3日前0時までにマイページから手続きできます（確定済みの次回分はキャンセル不可）。",
   },
   {
-    q: "HitoHanaの品質保証はどのような内容ですか？",
-    a: "HitoHanaでは、届いた花に問題（萎れ、折れ、虫食い等）があった場合、写真を添付してカスタマーサポートに連絡すると、無料で新しい花を再送してもらえます。品質保証の申請期限はお届けから3日以内です。配送時の品質管理も徹底しており、花の状態には定評があります。",
+    q: "hitohanaの花の定期便は色を選べますか？",
+    a: "はい。6色＋おまかせから毎回色を指定でき、ボリュームは5サイズから選べます。花の種類は指定できません（公式FAQ）。",
   },
   {
-    q: "HitoHanaの花の定期便とフラワーギフトは違いますか？",
-    a: "はい、HitoHanaでは「花の定期便（サブスクリプション）」と「フラワーギフト（1回限りの注文）」の両方を提供しています。定期便は毎週・2週間に1回・月1回の定期配送で、ギフトは花束・アレンジメント・観葉植物などを1回だけ注文するサービスです。定期便からギフトへの切り替えや、ギフトの一時的な追加注文も可能です。",
+    q: "hitohanaの花はポスト投函で届きますか？",
+    a: "いいえ。専用ボックスに入れて宅急便で届けると公式に案内されており、ポスト投函ではありません。",
   },
   {
-    q: "HitoHanaは法人でも利用できますか？",
-    a: "はい、HitoHanaは法人向けサービスにも力を入れています。オフィスの受付やエントランスに飾る定期的なフラワーアレンジメントや、取引先への贈答用フラワーギフトなど、ビジネスシーンでの利用も可能です。法人プランの場合は請求書払いにも対応しています。詳しくはHitoHana公式サイトの法人ページをご確認ください。",
+    q: "hitohanaの口コミ・評判は？",
+    a: "公式の定期便ページでは総合評価4.2（レビュー11,687件の平均・2026年10月14日確認）です。「色味がかわいい」「花材の組み合わせが良い」という声が多い一方、「色指定と違った」「思ったよりボリュームが少ない」という声もあります。",
   },
   {
-    q: "HitoHanaで届く花の種類は選べますか？",
-    a: "花の色味は7色から選べますが、具体的な花の種類（バラ、ガーベラなど）を個別に指定することはできません。選んだ色のテーマに合わせて、プロのフローリストが旬の花をセレクトしてアレンジします。どんな花が届くかは届いてからのお楽しみです。ただし、フラワーギフト（1回注文）の場合は花の種類を指定して注文できます。",
+    q: "届いた花が傷んでいたら交換できますか？",
+    a: "公式FAQでは、傷んだ花の画像を送って連絡するよう案内されています。届いたらすぐに状態を確認しましょう。",
   },
 ];
 
 /* ─── Pricing Data ─── */
 const pricingPlans = [
-  { name: "Lite", price: "1,320円", volume: "花 4〜6本", description: "ちょっとした彩りを添えたい方に" },
-  { name: "S", price: "1,980円", volume: "花 4〜9本", description: "テーブルや棚に飾るのにちょうど良いボリューム" },
-  { name: "M", price: "2,640円", volume: "花 7〜11本", description: "リビングや寝室をしっかり華やかに" },
-  { name: "L", price: "3,850円", volume: "花 10〜15本", description: "存在感のある豪華なアレンジメント" },
-  { name: "LL", price: "4,950円", volume: "花 13〜20本", description: "圧巻のボリューム。来客のあるお部屋にも" },
+  { name: "Lite", price: "1,320円", volume: "4〜6本" },
+  { name: "S", price: "1,980円", volume: "4〜9本" },
+  { name: "M", price: "2,640円", volume: "7〜11本" },
+  { name: "L", price: "3,850円", volume: "10〜15本" },
+  { name: "LL", price: "4,950円", volume: "13〜20本" },
 ];
 
 /* ─── Main Component ─── */
@@ -53,13 +53,13 @@ export default function HitoHanaPage() {
                 {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"HitoHana（ヒトハナ）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"HitoHana（ヒトハナ）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/hitohana/\"}" }} />
                 {/* CANCEL_FLOW_SCHEMA_v1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"HitoHana（ヒトハナ）の解約手順\",\"description\":\"HitoHana（ヒトハナ）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"HitoHana公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便」セクションを開く\",\"text\":\"契約中の定期便プランを表示。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約手続き」をクリック\",\"text\":\"解約フォームへ進みます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由・改善点を入力(任意)\",\"text\":\"フィードバックは任意。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を最終確定\",\"text\":\"次回配送日の3日前までに手続き完了を。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"完了メール受信\",\"text\":\"解約完了の通知メールが届きます。\"}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"HitoHana（ヒトハナ）の解約手順\",\"description\":\"HitoHana（ヒトハナ）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"HitoHana公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便」セクションを開く\",\"text\":\"契約中の定期便プランを表示。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約手続き」をクリック\",\"text\":\"解約フォームへ進みます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由・改善点を入力(任意)\",\"text\":\"フィードバックは任意。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を最終確定\",\"text\":\"お届け日の3日前0時までに手続き完了を。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"完了メール受信\",\"text\":\"解約完了の通知メールが届きます。\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"HitoHana（ヒトハナ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hitohana/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"HitoHana（ヒトハナ）の評判・口コミ・料金プラン\",\"description\":\"HitoHana（ヒトハナ）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hitohana/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"HitoHana（ヒトハナ）の評判・口コミ・料金プラン\",\"description\":\"HitoHana（ヒトハナ）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hitohana/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"HitoHanaの花の定期便は色を選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、HitoHanaでは7色（ホワイト&グリーン、レッド、イエロー&オレンジ、ピンク、パープル、ブラウン、ブルー）から好きな色を選べます。また「おまかせ」も選択可能で、季節に合わせた旬の色合いの花が届きます。色は注文後もマイページから変更できます。\"}},{\"@type\":\"Question\",\"name\":\"HitoHanaの最低利用回数はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"HitoHanaの花の定期便には最低3回の受け取りが必要です。3回受け取り後は、マイページからいつでも解約が可能です。初回で合わなかった場合でも3回は継続する必要があるため、まずは小さめのプラン（Liteプラン1,320円）から始めるのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"HitoHanaの花はポスト投函で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"HitoHanaの花の定期便はポスト投函には対応しておらず、すべて宅配便（手渡し）での配送となります。配送日の時間帯指定が可能なので、在宅時に受け取れるよう設定できます。不在の場合は再配達の手続きが必要です。ポスト投函希望の方はbloomeeやmedeluの利用をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"HitoHanaの品質保証はどのような内容ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"HitoHanaでは、届いた花に問題（萎れ、折れ、虫食い等）があった場合、写真を添付してカスタマーサポートに連絡すると、無料で新しい花を再送してもらえます。品質保証の申請期限はお届けから3日以内です。配送時の品質管理も徹底しており、花の状態には定評があります。\"}},{\"@type\":\"Question\",\"name\":\"HitoHanaの花の定期便とフラワーギフトは違いますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、HitoHanaでは「花の定期便（サブスクリプション）」と「フラワーギフト（1回限りの注文）」の両方を提供しています。定期便は毎週・2週間に1回・月1回の定期配送で、ギフトは花束・アレンジメント・観葉植物などを1回だけ注文するサービスです。定期便からギフトへの切り替えや、ギフトの一時的な追加注文も可能です。\"}},{\"@type\":\"Question\",\"name\":\"HitoHanaは法人でも利用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、HitoHanaは法人向けサービスにも力を入れています。オフィスの受付やエントランスに飾る定期的なフラワーアレンジメントや、取引先への贈答用フラワーギフトなど、ビジネスシーンでの利用も可能です。法人プランの場合は請求書払いにも対応しています。詳しくはHitoHana公式サイトの法人ページをご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"HitoHanaで届く花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の色味は7色から選べますが、具体的な花の種類（バラ、ガーベラなど）を個別に指定することはできません。選んだ色のテーマに合わせて、プロのフローリストが旬の花をセレクトしてアレンジします。どんな花が届くかは届いてからのお楽しみです。ただし、フラワーギフト（1回注文）の場合は花の種類を指定して注文できます。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -86,36 +86,44 @@ export default function HitoHanaPage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F9E8E8] py-12 md:py-20">
+        <section className="bg-[#F9E8E8] py-12 md:py-16">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
-              花のサブスク個別レビュー
+              花のサブスク個別レビュー｜2026年10月14日更新
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              HitoHana（ひとはな）の口コミ・評判を<br className="hidden md:block" />
-              徹底調査【2026年最新】
+              hitohana（ヒトハナ）の花の定期便とは？<br className="hidden md:block" />
+              料金1,320円〜・口コミ評判・送料を公式確認
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              好きな色とボリュームを自分で選べる花の定期便「HitoHana（ひとはな）」。
-              1回1,320円から始められるサービスの実力を、料金・メリット・デメリット・口コミから詳しく検証します。
+            <p className="text-sm md:text-base text-[#666] mb-6 max-w-2xl mx-auto leading-relaxed">
+              hitohana（ヒトハナ／HitoHana）は、観葉植物・フラワーギフト・胡蝶蘭と「お花の定期便」を扱う花と植物の通販サイトです。
+              このページでは、色とボリュームを選べる定期便の料金・回数縛り・締切・口コミの傾向を、2026年10月14日に公式サイトで確認した情報でまとめています。
             </p>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">選べる色</p>
-                <p className="text-xl font-bold text-[#4A7C59]">7色</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">プラン数</p>
-                <p className="text-xl font-bold text-[#4A7C59]">5種類</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">最安プラン</p>
-                <p className="text-xl font-bold text-[#4A7C59]">1,320円/回〜</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">品質保証</p>
-                <p className="text-xl font-bold text-[#4A7C59]">あり</p>
-              </div>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-6">
+              <div className="bg-white rounded-xl px-5 py-3 shadow-sm"><p className="text-xs text-[#999] mb-1">定期便の料金</p><p className="text-xl font-bold text-[#4A7C59]">1,320円/回〜</p></div>
+              <div className="bg-white rounded-xl px-5 py-3 shadow-sm"><p className="text-xs text-[#999] mb-1">回数縛り</p><p className="text-xl font-bold text-[#4A7C59]">なし</p></div>
+              <div className="bg-white rounded-xl px-5 py-3 shadow-sm"><p className="text-xs text-[#999] mb-1">選べる色</p><p className="text-xl font-bold text-[#4A7C59]">6色＋おまかせ</p></div>
+              <div className="bg-white rounded-xl px-5 py-3 shadow-sm"><p className="text-xs text-[#999] mb-1">公式レビュー</p><p className="text-xl font-bold text-[#4A7C59]">4.2（11,687件）</p></div>
+            </div>
+            <p className="text-xs text-[#888]">
+              公式サイトを探している方へ：hitohanaの公式サイトは <a href="https://hitohana.tokyo/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">hitohana.tokyo</a> です（当サイトは比較・情報サイトです）。
+            </p>
+          </div>
+        </section>
+
+        {/* ─── Verdict ─── */}
+        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+          <div className="max-w-3xl mx-auto px-4">
+            <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F6FAF7] p-5 md:p-6">
+              <p className="text-xs text-[#4A7C59] font-bold mb-1">最終更新：2026年10月14日（料金・条件・レビュー数は同日に公式サイトで確認）</p>
+              <h2 className="text-lg md:text-xl font-bold text-[#333] mb-3">結論：hitohanaの花の定期便はこんなサービス</h2>
+              <ul className="text-sm md:text-base text-[#444] leading-relaxed space-y-2">
+                <li>・<strong>色（6色＋おまかせ）とボリューム（5サイズ）を毎回選べる</strong>のが最大の特徴。花の種類は指定できません。</li>
+                <li>・料金は1回1,320円（Lite）〜4,950円（LL）。特定商取引法の表記では「1回あたりにかかる金額（税込）」として掲載されています。</li>
+                <li>・<strong>回数の縛りはなし</strong>（特商法に明記）。変更・解約の締切はお届け日の3日前0時。</li>
+                <li>・届き方は専用ボックスの宅急便（ポスト投函ではない）。お届け頻度は毎週・2週間に1回・4週間に1回の利用例があります。</li>
+                <li>・公式の定期便ページでは総合評価4.2（レビュー11,687件の平均）。良い声は「色味がかわいい」「花材の組み合わせが良い」、気になる声は「色指定と違った」「思ったよりボリュームが少ない」など。</li>
+              </ul>
             </div>
           </div>
         </section>
@@ -127,15 +135,15 @@ export default function HitoHanaPage() {
               <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">1. HitoHanaとは？サービス概要</a></li>
-                  <li><a href="#features" className="hover:text-[#4A7C59] transition-colors">2. 花の定期便の特徴</a></li>
-                  <li><a href="#pricing" className="hover:text-[#4A7C59] transition-colors">3. 料金プラン一覧</a></li>
-                  <li><a href="#pros" className="hover:text-[#4A7C59] transition-colors">4. HitoHanaのメリット</a></li>
-                  <li><a href="#cons" className="hover:text-[#4A7C59] transition-colors">5. HitoHanaのデメリット</a></li>
-                  <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">6. 利用の流れ（5ステップ）</a></li>
+                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">1. hitohana（ヒトハナ）とは？</a></li>
+                  <li><a href="#pricing" className="hover:text-[#4A7C59] transition-colors">2. 花の定期便の料金（公式確認）</a></li>
+                  <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">3. 口コミ・評判の傾向</a></li>
+                  <li><a href="#pros" className="hover:text-[#4A7C59] transition-colors">4. メリット</a></li>
+                  <li><a href="#cons" className="hover:text-[#4A7C59] transition-colors">5. デメリット・注意点</a></li>
+                  <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">6. 始め方</a></li>
                   <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">7. こんな方におすすめ</a></li>
                   <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">8. よくある質問</a></li>
-                  <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">9. まとめ</a></li>
+                  <li><a href="#cancellation" className="hover:text-[#4A7C59] transition-colors">9. 解約手順</a></li>
                 </ol>
               </nav>
             </div>
@@ -146,81 +154,124 @@ export default function HitoHanaPage() {
         <section id="overview" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              HitoHana（ひとはな）とは？
+              hitohana（ヒトハナ）とは？
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
-              HitoHana（ひとはな）は、株式会社Beer and Techが運営する花と植物の総合ECサイトです。花束・アレンジメント・観葉植物・胡蝶蘭などのフラワーギフトに加えて、2020年から花の定期便（サブスクリプション）サービスも開始しました。
+            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+              hitohana（ヒトハナ／HitoHana）は、株式会社Beer and Tech（埼玉県さいたま市）が運営する花と植物の通販サイトです。観葉植物、花束・アレンジメント・スタンド花などのフラワーギフト、胡蝶蘭、花瓶・鉢カバーなどを扱い、その中の一つとして自宅向けの「お花の定期便」を提供しています。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
-              HitoHanaの最大の特徴は「自分で色とボリュームを選べる」こと。一般的な花のサブスクでは届く花はおまかせですが、HitoHanaでは7色から好みの色味を、5段階のボリュームから好みの花束サイズを選択できます。インテリアのテイストや部屋の雰囲気に合わせた花選びができるのが他サービスにはない強みです。
+            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+              「hitohana」で検索する方の多くはギフトや観葉植物の購入先を探していると考えられますが、このページでは比較サイトとして、花の定期便（サブスク）を中心に料金・条件・口コミを整理しています。ギフトや観葉植物を探している方は公式サイトをご覧ください。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
-              運営会社のBeer and Techは、花き業界のDXに取り組むスタートアップ企業で、テクノロジーを活用した新しい花の買い方を提案しています。花の産地や品種に関する情報も充実しており、花を選ぶ楽しさも提供しているサービスです。
-            </p>
-            <div className="bg-[#F8F8F8] rounded-xl p-5 mt-6">
-              <h3 className="text-sm font-bold text-[#333] mb-3">HitoHana 基本情報</h3>
+            <div className="bg-[#F8F8F8] rounded-xl p-5 mt-2">
+              <h3 className="text-sm font-bold text-[#333] mb-3">hitohana 基本情報（2026年10月14日 公式確認）</h3>
               <div className="grid grid-cols-2 gap-3 text-sm">
-                <div className="text-[#999]">運営会社</div>
-                <div className="text-[#333]">株式会社Beer and Tech</div>
-                <div className="text-[#999]">サービス開始</div>
-                <div className="text-[#333]">2014年（定期便は2020年〜）</div>
-                <div className="text-[#999]">公式サイト</div>
-                <div className="text-[#333]">
-                  <a href="https://hitohana.tokyo/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] hover:underline">
-                    hitohana.tokyo
-                  </a>
-                </div>
-                <div className="text-[#999]">サービス内容</div>
-                <div className="text-[#333]">花の定期便、フラワーギフト、観葉植物</div>
-                <div className="text-[#999]">配送エリア</div>
-                <div className="text-[#333]">日本全国（離島を除く）</div>
+                <div className="text-[#999]">運営会社</div><div className="text-[#333]">株式会社Beer and Tech</div>
+                <div className="text-[#999]">公式サイト</div><div className="text-[#333]"><a href="https://hitohana.tokyo/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] hover:underline">hitohana.tokyo</a></div>
+                <div className="text-[#999]">主な商品</div><div className="text-[#333]">観葉植物・フラワーギフト・胡蝶蘭・お花の定期便</div>
+                <div className="text-[#999]">定期便の届き方</div><div className="text-[#333]">専用ボックスの宅急便（ポスト投函なし）</div>
+                <div className="text-[#999]">支払い方法</div><div className="text-[#333]">定期便はクレジットカードのみ（公式FAQ）</div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ─── Features ─── */}
-        <section id="features" className="py-12 md:py-16 bg-[#F8F8F8]">
+        {/* ─── Pricing ─── */}
+        <section id="pricing" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              HitoHana 花の定期便の特徴
+              hitohana 花の定期便の料金プラン
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              HitoHanaの花の定期便にはどのような特徴があるのでしょうか。他サービスとの違いを含めて、5つのポイントを解説します。
+            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+              特定商取引法に基づく表記では、定期便の価格は「1回あたりにかかる金額（消費税込）」として次のとおり掲載されています（2026年10月14日確認）。色は6色＋おまかせから、ボリュームは5サイズから選べます。
             </p>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden">
+                <thead>
+                  <tr className="bg-[#4A7C59] text-white">
+                    <th className="px-4 py-3 text-left font-medium">ボリューム</th>
+                    <th className="px-4 py-3 text-center font-medium">1回あたり（税込）</th>
+                    <th className="px-4 py-3 text-center font-medium">花材の本数の目安</th>
+                  </tr>
+                </thead>
+                <tbody className="text-[#666]">
+                  {pricingPlans.map((plan, i) => (
+                    <tr key={i} className={`border-b border-[#E5E5E5] ${i % 2 === 1 ? "bg-[#F8F8F8]" : ""}`}>
+                      <td className="px-4 py-3 font-bold text-[#333]">{plan.name}</td>
+                      <td className="px-4 py-3 text-center font-bold text-[#4A7C59]">{plan.price}</td>
+                      <td className="px-4 py-3 text-center">{plan.volume}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <ul className="text-xs md:text-sm text-[#666] space-y-1">
+              <li>・本数は公式の定期便ページに掲載されたお届け例の表記（Lite 4〜6本、S 4〜9本など）。LLは表記に揺れがあるとの公式レビューもあります。</li>
+              <li>・クール便を選べます（有料・Liteは通常便のみ）。クール便の料金は公式の静的ページでは確認できなかったため、申込画面で確認してください。</li>
+              <li>・出典：hitohana公式 特定商取引法に基づく表記・お花の定期便ページ（2026年10月14日確認）。</li>
+            </ul>
+          </div>
+        </section>
 
-            <div className="space-y-4">
+        {/* ─── Reviews ─── */}
+        <section id="reviews" className="py-12 md:py-16 bg-white">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              hitohanaの口コミ・評判の傾向
+            </h2>
+            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+              hitohanaは公式の定期便ページでレビューを公開しており、総合評価は4.2（レビュー投稿件数11,687件の平均・2026年10月14日確認）です。公式に掲載されたレビューから読み取れる傾向は次のとおりです。
+            </p>
+            <div className="grid md:grid-cols-2 gap-5 mb-4">
+              <div className="rounded-xl bg-[#F6FAF7] border border-[#DDE8E0] p-5">
+                <h3 className="font-bold text-[#4A7C59] mb-3">良い口コミの傾向</h3>
+                <ul className="space-y-2 text-sm text-[#555]">
+                  <li>◎ 色味がかわいく、箱を開けた瞬間に癒される</li>
+                  <li>◎ スーパーにないような珍しい花材が入り、組み合わせのバランスが良い</li>
+                  <li>◎ クール便を選ぶと暑い時期もきれいな状態で届いた</li>
+                </ul>
+              </div>
+              <div className="rounded-xl bg-[#FBF7F2] border border-[#F0DCCB] p-5">
+                <h3 className="font-bold text-[#C08552] mb-3">気になる口コミの傾向</h3>
+                <ul className="space-y-2 text-sm text-[#555]">
+                  <li>△ 指定した色と違う印象の花が届いた</li>
+                  <li>△ 思ったよりボリュームが少なく、送料分を考えるとスーパーの方が多いと感じた</li>
+                  <li>△ 同じ花材（カーネーションなど）がかぶることがある</li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-xs text-[#999]">出典：<a href="https://hitohana.tokyo/flower-subscription" target="_blank" rel="noopener noreferrer nofollow" className="underline">hitohana公式 お花の定期便ページのレビュー</a>（2026年10月14日確認）。公式サイト上のレビューで、件数・評価は変動します。当サイトは個人の体験談を創作・掲載しません。</p>
+          </div>
+        </section>
+
+        {/* ─── Pros ─── */}
+        <section id="pros" className="py-12 md:py-16 bg-[#F8F8F8]">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              hitohanaのメリット
+            </h2>
+            <div className="space-y-5">
               {[
                 {
-                  num: "1",
-                  title: "好きな色を7色から選べる",
-                  text: "ホワイト&グリーン、レッド、イエロー&オレンジ、ピンク、パープル、ブラウン、ブルーの7色から好みの色味を選択できます。「おまかせ」も選べるので、季節に合わせた旬の花を楽しみたい方にも対応。色はマイページからいつでも変更可能です。インテリアの雰囲気に合わせて色を選べるのはHitoHanaならではの魅力です。",
+                  title: "色を毎回選べる",
+                  text: "6色＋おまかせから、毎回お届けの色を指定できます（公式FAQ）。インテリアや季節に合わせて変えられます。",
                 },
                 {
-                  num: "2",
-                  title: "5段階のボリュームから選べる",
-                  text: "Lite（4〜6本）、S（4〜9本）、M（7〜11本）、L（10〜15本）、LL（13〜20本）の5段階から、飾りたい場所や予算に合わせてボリュームを選択できます。少量でテーブルに飾りたい方から、リビングを豪華に彩りたい方まで幅広く対応しています。",
+                  title: "ボリュームを5サイズから選べる",
+                  text: "Lite（1,320円）からLL（4,950円）まで、飾る場所や予算に合わせて選べます。",
                 },
                 {
-                  num: "3",
-                  title: "1回1,320円〜の明瞭な料金体系",
-                  text: "最もリーズナブルなLiteプランは1回1,320円（税込）。プランごとに価格が固定されているため、毎月の支出が明確です。ただし別途送料がかかる点には注意が必要です。送料は配送先エリアによって異なります。",
+                  title: "回数の縛りがない",
+                  text: "特定商取引法に基づく表記に「当社の定期購入には回数の縛りがございません」と明記されています。",
                 },
                 {
-                  num: "4",
-                  title: "お届け頻度は3パターン",
-                  text: "毎週・2週間に1回・月1回の3つの配送頻度から選べます。忙しい方は月1回から、常に花のある暮らしを楽しみたい方は毎週と、ライフスタイルに合わせた選択が可能です。頻度はマイページからいつでも変更でき、スキップ機能で一時的に配送を止めることもできます。",
-                },
-                {
-                  num: "5",
-                  title: "品質保証制度あり",
-                  text: "届いた花に問題があった場合は、写真を添付してカスタマーサポートに連絡すると、無料で新しい花を再送してもらえます。配送時の品質管理にも力を入れており、専用のボックスで花が傷みにくい状態で届きます。安心して利用できる体制が整っています。",
+                  title: "宅急便で丁寧に届く",
+                  text: "専用ボックスで宅配業者が届けるため、ポストに押し込まれる心配がありません。傷んでいた場合は写真を送れば交換・返品の相談ができます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+                <div key={i} className="bg-[#E8F0EB] rounded-xl p-5">
                   <div className="flex items-start gap-3">
-                    <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
-                      {item.num}
+                    <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
+                      {i + 1}
                     </span>
                     <div>
                       <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
@@ -233,112 +284,41 @@ export default function HitoHanaPage() {
           </div>
         </section>
 
-        {/* ─── Pricing ─── */}
-        <section id="pricing" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              HitoHana 料金プラン一覧
-            </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              HitoHanaの花の定期便は5つのプランから選べます。すべて税込価格です。別途、配送先エリアに応じた送料がかかります。
-            </p>
-
-            <div className="overflow-x-auto mb-6">
-              <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden">
-                <thead>
-                  <tr className="bg-[#4A7C59] text-white">
-                    <th className="px-4 py-3 text-left font-medium">プラン</th>
-                    <th className="px-4 py-3 text-center font-medium">価格（税込）</th>
-                    <th className="px-4 py-3 text-center font-medium">花の本数</th>
-                    <th className="px-4 py-3 text-left font-medium">特徴</th>
-                  </tr>
-                </thead>
-                <tbody className="text-[#666]">
-                  {pricingPlans.map((plan, i) => (
-                    <tr key={i} className={`border-b border-[#E5E5E5] ${i % 2 === 1 ? "bg-[#F8F8F8]" : ""}`}>
-                      <td className="px-4 py-3 font-bold text-[#333]">{plan.name}</td>
-                      <td className="px-4 py-3 text-center font-bold text-[#4A7C59]">{plan.price}</td>
-                      <td className="px-4 py-3 text-center">{plan.volume}</td>
-                      <td className="px-4 py-3">{plan.description}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            <div className="bg-[#F8F8F8] rounded-xl p-5">
-              <h3 className="text-sm font-bold text-[#333] mb-2">送料について</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
-                HitoHanaの花の定期便は、花代とは別に送料がかかります。送料は配送先の地域によって異なります。北海道・沖縄・離島は追加送料が発生する場合があります。最新の送料情報はHitoHana公式サイトでご確認ください。送料込みの総額で他サービスと比較する際は、この点に注意が必要です。
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── Pros ─── */}
-        <section id="pros" className="py-12 md:py-16 bg-[#F8F8F8]">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              HitoHanaのメリット（良い評判）
-            </h2>
-            <div className="space-y-4">
-              {[
-                {
-                  title: "自分の好みの色を選べるのが嬉しい",
-                  text: "他の花のサブスクでは届く花がすべておまかせのことが多いですが、HitoHanaでは7色から色を選択できます。部屋のインテリアに合わせて統一感のあるコーディネートが可能。「毎回ピンク系の花が欲しい」「モノトーンのインテリアにはホワイト&グリーンを」といった使い方ができます。",
-                },
-                {
-                  title: "ボリュームを自分で調整できる",
-                  text: "5段階のボリューム選択は、花のサブスクとしては珍しい特徴です。初めての方はLiteプランから小さく始めて、慣れてきたらMやLにステップアップという使い方も。飾る場所のサイズや予算に合わせて柔軟に選べるのは大きなメリットです。",
-                },
-                {
-                  title: "品質保証があるので安心",
-                  text: "万が一届いた花が傷んでいた場合も、写真を送れば無料で再送してもらえる品質保証があります。宅配便での配送のため、花が潰れたり折れたりするリスクが低く、ポスト投函サービスより状態の良い花が届きやすいのも利点です。",
-                },
-                {
-                  title: "法人利用にも対応",
-                  text: "HitoHanaはオフィスのエントランスや受付、会議室などへの定期的なフラワーアレンジメントにも対応しています。請求書払いが可能で、法人としても利用しやすい体制が整っています。福利厚生やオフィス環境の向上に花の定期便を導入する企業も増えています。",
-                },
-              ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                  <h3 className="text-base font-bold text-[#4A7C59] mb-2 flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-full bg-[#E8F0EB] flex items-center justify-center text-xs">○</span>
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* ─── Cons ─── */}
         <section id="cons" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              HitoHanaのデメリット（悪い評判）
+              hitohanaのデメリット・注意点
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-5">
               {[
                 {
                   title: "ポスト投函に対応していない",
-                  text: "HitoHanaの花の定期便はすべて宅配便（手渡し）での配送です。ポスト投函には対応していないため、配送時に在宅している必要があります。日中不在が多い方は配送日時の指定を活用するか、ポスト投函対応のbloomeeやmedeluを検討するとよいでしょう。",
+                  text: "宅急便でのお届けなので、受け取りの手間はポスト投函型（medelu・ハナメクのライトなど）より大きくなります。",
                 },
                 {
-                  title: "最低3回の受け取りが必要",
-                  text: "HitoHanaの花の定期便には最低3回の受け取り義務があります。3回受け取る前に解約すると、残り回数分の花代が発生します。「1回だけ試してみたい」という方には向かないため、まずはLiteプラン（1,320円）で3回試してから継続を判断するのがおすすめです。",
+                  title: "花の種類は指定できない",
+                  text: "選べるのは色とボリュームで、具体的な花の種類は指定できません。",
                 },
                 {
-                  title: "送料が別途かかる",
-                  text: "花代は明瞭ですが、別途送料がかかります。送料は地域によって異なるため、送料込みの総額で比較すると他サービスより割高になる場合があります。送料無料のmedeluやAND PLANTSと比較する際は、総額ベースで検討しましょう。",
+                  title: "最安でも1,320円",
+                  text: "ポスト投函型のmedelu（748円・送料込）などと比べると、1回あたりの料金は高めです。",
+                },
+                {
+                  title: "締切はお届け日の3日前0時",
+                  text: "変更・解約はお届け日の3日前0時まで（特商法）。確定済みの次回分はキャンセルできません。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                  <h3 className="text-base font-bold text-[#E0B8B8] mb-2 flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-full bg-[#FDF5F5] flex items-center justify-center text-xs">x</span>
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                <div key={i} className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
+                  <div className="flex items-start gap-3">
+                    <span className="bg-[#E0B8B8] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
+                      {i + 1}
+                    </span>
+                    <div>
+                      <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -349,35 +329,15 @@ export default function HitoHanaPage() {
         <section id="how-to-start" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              HitoHana 花の定期便の始め方（5ステップ）
+              hitohana 花の定期便の始め方
             </h2>
             <div className="space-y-4">
               {[
-                {
-                  step: "STEP 1",
-                  title: "HitoHana公式サイトにアクセス",
-                  text: "HitoHanaの公式サイト（hitohana.tokyo）にアクセスし、「花の定期便」のページを開きます。トップページのナビゲーションから「定期便」を選択するか、直接定期便ページにアクセスできます。",
-                },
-                {
-                  step: "STEP 2",
-                  title: "ボリューム（プラン）を選択",
-                  text: "Lite / S / M / L / LL の5つのプランから、お好みのボリュームを選びます。初めての方はLiteプラン（1,320円、4〜6本）かSプラン（1,980円、4〜9本）から始めるのがおすすめです。",
-                },
-                {
-                  step: "STEP 3",
-                  title: "色と配送頻度を選択",
-                  text: "7色（ホワイト&グリーン、レッド、イエロー&オレンジ、ピンク、パープル、ブラウン、ブルー）または「おまかせ」から好みの色を選びます。配送頻度は毎週・2週間に1回・月1回から選択します。",
-                },
-                {
-                  step: "STEP 4",
-                  title: "お届け先情報・支払い方法を登録",
-                  text: "氏名、住所、電話番号などのお届け先情報と、クレジットカード情報を登録します。配送日時の指定も可能です。在宅時間に合わせて設定しましょう。",
-                },
-                {
-                  step: "STEP 5",
-                  title: "申し込み完了 → 花が届くのを待つ",
-                  text: "申し込み完了後、指定した日時に花が届きます。届いたら茎を水切りして花瓶に飾りましょう。品質に問題があれば3日以内にカスタマーサポートに連絡すれば、品質保証で対応してもらえます。",
-                },
+                { step: "STEP 1", title: "公式の定期便ページを開く", text: "hitohana公式サイト（hitohana.tokyo）の「お花の定期便」ページを開きます。" },
+                { step: "STEP 2", title: "ボリュームと色を選ぶ", text: "Lite／S／M／L／LLの5サイズと、6色＋おまかせから選びます。迷ったらLiteかSから。" },
+                { step: "STEP 3", title: "お届け頻度・お届け日を選ぶ", text: "お届けの頻度と日付を選びます。暑い時期はクール便（有料・Lite以外）も検討しましょう。" },
+                { step: "STEP 4", title: "支払い方法を登録", text: "定期便の支払いはクレジットカードのみです（公式FAQ）。" },
+                { step: "STEP 5", title: "締切を確認しておく", text: "変更・スキップ・解約はお届け日の3日前0時までにマイページから。" },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
                   <div className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
@@ -397,67 +357,24 @@ export default function HitoHanaPage() {
         <section id="recommend" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              HitoHanaはこんな方におすすめ
+              hitohanaはこんな方におすすめ
             </h2>
-
-            <div className="grid gap-4 md:grid-cols-2">
-              {/* おすすめの人 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#4A7C59] mb-4 flex items-center gap-2">
-                  <span className="w-7 h-7 rounded-full bg-[#E8F0EB] flex items-center justify-center text-sm">
-                    ○
-                  </span>
-                  おすすめの人
-                </h3>
+                <h3 className="text-base font-bold text-[#4A7C59] mb-4">おすすめの人</h3>
                 <ul className="text-sm text-[#666] space-y-3">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-1 shrink-0">--</span>
-                    <span>花の色を自分で選びたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-1 shrink-0">--</span>
-                    <span>インテリアに合わせた花を飾りたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-1 shrink-0">--</span>
-                    <span>ボリュームを自分で調整したい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-1 shrink-0">--</span>
-                    <span>品質の良い花を宅配便で受け取りたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-1 shrink-0">--</span>
-                    <span>法人でオフィスに花を飾りたい方</span>
-                  </li>
+                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>花の色を自分で選びたい方</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>飾る場所に合わせてボリュームを選びたい方</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>回数の縛りなしで始めたい方</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>宅急便で丁寧に受け取りたい方</span></li>
                 </ul>
               </div>
-
-              {/* おすすめしない人 */}
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#E0B8B8] mb-4 flex items-center gap-2">
-                  <span className="w-7 h-7 rounded-full bg-[#FDF5F5] flex items-center justify-center text-sm">
-                    x
-                  </span>
-                  おすすめしない人
-                </h3>
+                <h3 className="text-base font-bold text-[#C08552] mb-4">おすすめしない人</h3>
                 <ul className="text-sm text-[#666] space-y-3">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-1 shrink-0">--</span>
-                    <span>ポスト投函で受け取りたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-1 shrink-0">--</span>
-                    <span>1回だけ試してみたい方（3回縛りあり）</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-1 shrink-0">--</span>
-                    <span>送料込みで最安のサービスを探している方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-1 shrink-0">--</span>
-                    <span>サプライズ感を楽しみたい方（色を選ぶため）</span>
-                  </li>
+                  <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>ポスト投函で受け取りたい方</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>1回あたりの安さを最優先したい方</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>花の種類まで指定したい方</span></li>
                 </ul>
               </div>
             </div>
@@ -509,7 +426,7 @@ export default function HitoHanaPage() {
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
               HitoHana（ヒトハナ）の解約手順【完全ガイド】
             </h2>
-            <p className="text-sm text-[#666] mb-6">回数縛りなし。次回配送日の3日前までに手続きを。</p>
+            <p className="text-sm text-[#666] mb-6">回数縛りなし（特商法に明記）。お届け日の3日前0時までに手続きを。</p>
             <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
@@ -543,7 +460,7 @@ export default function HitoHanaPage() {
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
                     <h3 className="font-bold text-[#333] mb-1">解約を最終確定</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">次回配送日の3日前までに手続き完了を。</p>
+                    <p className="text-sm text-[#666] leading-relaxed">お届け日の3日前0時までに手続き完了を。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
@@ -562,16 +479,16 @@ export default function HitoHanaPage() {
         <section id="summary" className="py-12 md:py-16 bg-[#F9E8E8]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：HitoHanaは「色とボリュームを選びたい」方に最適
+              まとめ：hitohanaの花の定期便は「色とボリュームを選びたい」方向け
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              HitoHana（ひとはな）は、7色から好きな色を選べて、5段階のボリュームから好みのサイズを選択できる、カスタマイズ性の高い花の定期便サービスです。1回1,320円からと価格も手頃で、品質保証もあるため安心して利用できます。
+              hitohana（ヒトハナ）の花の定期便は、6色＋おまかせから色を、5サイズからボリュームを毎回選べるのが特徴です。回数の縛りがなく、1回1,320円（Lite）から始められます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              一方で、ポスト投函に対応していない点や、最低3回の受け取りが必要な点は事前に把握しておく必要があります。送料も別途かかるため、総額ベースで他サービスと比較することをおすすめします。
+              一方で、ポスト投函には対応しておらず宅急便での受け取りになる点、変更・解約の締切がお届け日の3日前0時である点は把握しておきましょう。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              「インテリアに合わせた色の花を飾りたい」「ボリュームを自分で決めたい」という方にはぴったりのサービスです。まずはLiteプランで気軽に試してみてはいかがでしょうか。
+              安さとポスト投函を重視するならmedeluやハナメク、色を選んで丁寧に受け取りたいならhitohana、と目的で選ぶのがおすすめです。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
@@ -642,7 +559,7 @@ export default function HitoHanaPage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              料金・条件は2026年10月14日時点で公式サイトから確認したものです。最新の料金・サービス内容は各公式サイトでご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

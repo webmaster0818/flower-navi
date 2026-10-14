@@ -167,8 +167,10 @@ export default function RyokinPage() {
               <div>
                 <h3 className="font-bold text-[#4A7C59] mb-3">口コミ・解約を確認</h3>
                 <ul className="space-y-2 text-[#666]">
-                  <li><a href="/service-guides/bloomee-kuchikomi/" className="hover:text-[#4A7C59] underline">ブルーミーの口コミ・評判</a></li>
-                  <li><a href="/service-guides/medelu-kuchikomi/" className="hover:text-[#4A7C59] underline">メデルの口コミ・評判</a></li>
+                  <li><a href="/services/bloomee/" className="hover:text-[#4A7C59] underline">ブルーミーの口コミ・評判</a></li>
+                  <li><a href="/services/medelu/" className="hover:text-[#4A7C59] underline">メデルの口コミ・評判</a></li>
+                  <li><a href="/services/hanameku/" className="hover:text-[#4A7C59] underline">ハナメクの口コミ・評判</a></li>
+                  <li><a href="/services/and-plants/" className="hover:text-[#4A7C59] underline">アンドプランツの口コミ・評判</a></li>
                   <li><a href="/service-guides/bloomee-kaiyaku/" className="hover:text-[#4A7C59] underline">ブルーミーの解約方法</a></li>
                   <li><a href="/service-guides/hanameku-kaiyaku/" className="hover:text-[#4A7C59] underline">ハナメクの解約方法</a></li>
                 </ul>

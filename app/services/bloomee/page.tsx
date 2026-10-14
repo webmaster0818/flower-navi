@@ -4,125 +4,50 @@ import { useState } from "react";
 import type { Metadata } from "next";
 import Header from "@/app/components/Header";
 import { SERVICES } from "@/data/services";
+import { findReviewEvidence } from "@/data/reviewEvidence";
+import { CompareSection, OfficialPlans, ReviewEvidence, ReviewVerdict } from "@/app/components/ReviewEvidence";
 
 /* 料金は単一データソース(services.ts)を参照（公式確認済み・ページ間のズレ防止） */
 const S = SERVICES.find((s) => s.id === "bloomee")!;
+const RE = findReviewEvidence("bloomee");
 
 /* ─── FAQ Data ─── */
 const faqItems = [
   {
     q: "bloomee（ブルーミー）の口コミ・評判は悪い？",
-    a: "公開口コミの傾向としては、「ポスト投函で不在でも受け取れて手軽」「季節感のある花束がおしゃれ」「初回無料で試しやすい」といった好意的な声が多い一方、「ボリュームが少なく花を選べない」「時期や提携花屋により花の状態・鮮度にばらつき」「初回4回の回数縛りがあり途中解約で解約料が発生する」といった気になる声もあります（みん評ほか・2026年7月時点。平均★は本体取得不可のため未掲載）。回数縛りと解約条件を理解したうえで、まずはお試しプランで相性を確かめるのがおすすめです。",
+    a: "良い口コミは「ポスト投函で不在でも受け取れる」「花代980円〜で始めやすい」「季節の花が届く」が中心です。一方、みん評（掲載562件・2026年10月14日確認）などでは「花がしおれていた・同じ花が続く」「最初の4回は解約できず途中解約料がかかる」「解約が分かりにくい」といった厳しい声も目立ちます。4回受け取る前提なら有力候補、1〜2回だけ試したい人には向きません。",
+  },
+  {
+    q: "ブルーミーの悪い口コミで多いのは？",
+    a: "多いのは①花の状態のばらつき（しおれ・同じ花が続く。夏場のポスト投函で増えやすい）②最初の4回の受け取りが必要で、4回未満の解約は途中解約料がかかる③解約・スキップの手続きが分かりにくい、の3つです。送料が毎回別にかかり「980円」の印象より高いという声もあります。",
   },
   {
     q: "bloomee（ブルーミー）の料金はいくらですか？",
-    a: "bloomeeには3つのプランがあります。体験プランは1回980円（税込・送料385円別）、レギュラープランは1回2,180円（税込・送料385円別）、リッチプランは1回3,680円（税込・送料550円別）です。いずれも隔週または毎週の配送頻度を選べます。",
+    a: "2026年10月14日に公式サイトで確認した継続コースの料金は、お試しプラン980円＋送料385円、グリーンプラン980円＋送料385円、ベーシックプラン2,180円＋送料550円（いずれも1回あたり）です。お試しプランは送料込みで実質1,365円/回、最初の4回の総額は5,460円になります。",
   },
   {
-    q: "bloomeeの解約方法を教えてください。",
-    a: "bloomeeの解約はマイページから手続きできます。ただし、初回契約時に4回分の最低受け取り回数が設定されており、4回受け取り前に解約すると残り回数分の料金が発生します。4回受け取り後は、次回配送日の前週金曜日までにマイページで解約手続きを行えば、追加料金なしで解約可能です。",
+    q: "4回未満で解約するとどうなりますか？",
+    a: "公式の特定商取引法に基づく表記では、最初の4回の途中で解約する場合「4回分のうち残回数分の商品代金（税込）」を途中解約料として支払うと定められています。5回目以降は途中解約料なしで解約できます。解約の締切は規約上「当社が定める時点」とされているため、マイページで次回の締切日を確認してください。",
   },
   {
     q: "bloomeeのお花が傷んで届いた場合はどうすればいいですか？",
-    a: "bloomeeには品質保証制度（再送保証）があります。届いたお花が傷んでいた場合、マイページの「品質保証フォーム」から写真を添付して申請すると、無料で新しいお花を再送してもらえます。申請期限はお届け日を含めて2日以内です。",
-  },
-  {
-    q: "bloomeeはどのくらいの頻度で届きますか？",
-    a: "bloomeeの配送頻度は「毎週」または「隔週」から選択できます。マイページからいつでも変更可能です。また、旅行や出張などで受け取れない週は「スキップ機能」を使って配送を1回飛ばすこともできます。スキップは無料で、マイページから簡単に設定できます。",
+    a: "公式の特定商取引法に基づく表記では、商品に不良があった場合、定期便は2週間以内に連絡すれば返金または交換の対象になります（単品購入は到着後2日以内）。届いた時点の写真を撮っておくと申請がスムーズです。",
   },
   {
     q: "bloomeeのお花はポストに届きますか？",
-    a: "体験プランとレギュラープランはポスト投函で届きます。専用のパッケージに入った状態で届くため、不在時でも受け取れます。リッチプランは花のボリュームが大きいため、宅配便（手渡し）での配送となります。ポスト投函の場合、ポストのサイズが投函口の幅が4.5cm以上、奥行きが15cm以上あれば問題なく届きます。",
+    a: "お試しプランとグリーンプランはポストに半投函の形で届き、水〜金曜日のお届けで日時指定はできません。ベーシックプランは手渡しで、水〜日曜日から日付と時間帯を指定できます（一部エリアは宅配便）。",
   },
   {
-    q: "bloomeeはどの花屋さんからお花が届きますか？",
-    a: "bloomeeは全国200店舗以上の提携花屋と契約しており、お届け先の地域に近い花屋さんからお花が届きます。届く花屋さんは毎回異なる場合があり、さまざまなフローリストのアレンジを楽しめます。どの花屋さんから届いたかはお届け時のカードに記載されています。",
+    q: "bloomeeはどのくらいの頻度で届きますか？",
+    a: "公式サイトでは毎週のお届けが基本で、4回目のお届け以降は隔週に変更できると案内されています。",
   },
   {
-    q: "bloomeeをプレゼントとして贈ることはできますか？",
-    a: "はい、bloomeeではギフト用の「花の定期便ギフトチケット」を販売しています。チケットを購入して相手に贈ると、相手が好きなタイミングでお花の定期便を始められます。母の日や誕生日のプレゼントとして人気があります。",
-  },
-  {
-    q: "bloomeeの対応エリアはどこですか？",
-    a: "bloomeeは離島やごく一部の地域を除き、日本全国に配送対応しています。ポスト投函プランは日本郵便のゆうパケット、リッチプランは宅配便で届くため、通常の郵便・宅配が届く地域であれば利用可能です。",
+    q: "bloomeeの運営会社はどこですか？",
+    a: "ユーザーライク株式会社（東京都渋谷区道玄坂）です。旧サービス名は「Bloomee LIFE（ブルーミーライフ）」で、公式サイトでは「お花のお届け実績3,000万本以上（自社調べ）」と表記されています。",
   },
 ];
 
-/* ─── User Reviews ─── */
-const userReviews = [
-  {
-    name: "M.K.",
-    age: "30代女性",
-    rating: 5,
-    title: "毎週届くのが楽しみになりました",
-    text: "一人暮らしで花を買う習慣がなかったのですが、bloomeeを始めてから部屋に花があるのが当たり前になりました。ポスト投函なので仕事で遅くなっても受け取れるのが助かります。体験プランでも十分かわいいお花が届くので満足しています。",
-    date: "2025年12月",
-  },
-  {
-    name: "A.S.",
-    age: "40代女性",
-    rating: 4,
-    title: "品質保証があるので安心",
-    text: "夏場に一度だけ元気のないお花が届いたことがありますが、品質保証フォームから申請したらすぐに再送してもらえました。対応が早くて好印象です。レギュラープランにしてからは花の種類も増えて、毎回どんなお花が届くかワクワクしています。",
-    date: "2025年11月",
-  },
-  {
-    name: "Y.T.",
-    age: "20代女性",
-    rating: 3,
-    title: "手軽だけどボリュームはやや少なめ",
-    text: "体験プランを利用しています。手軽に始められるのは良いのですが、正直なところ3本だと少し物足りなさを感じます。もう少し花の本数が多ければ嬉しいです。ただ、980円という価格を考えると妥当かもしれません。花屋に行く時間がない人には便利だと思います。",
-    date: "2025年10月",
-  },
-  {
-    name: "R.N.",
-    age: "30代女性",
-    rating: 4,
-    title: "インスタ映えするアレンジが嬉しい",
-    text: "届くお花がいつもセンス良くまとめられていて、インスタに投稿するのが楽しいです。花屋さんによってアレンジの雰囲気が違うのも面白いポイント。リッチプランはボリュームがあって見栄えも抜群です。ただ解約のときに4回縛りがあるのは事前に知っておくべきでした。",
-    date: "2026年1月",
-  },
-  {
-    name: "K.M.",
-    age: "50代女性",
-    rating: 2,
-    title: "解約手続きがわかりにくかった",
-    text: "お花自体は綺麗で良かったのですが、解約しようとしたときに手続きがわかりにくく、少し困りました。マイページの奥の方に解約ページがあり、引き止めのページも何度か表示されます。4回の最低利用期間があることも、もっとわかりやすく表示してほしかったです。",
-    date: "2025年9月",
-  },
-];
 
-/* ─── Star Rating Component ─── */
-function StarRating({ rating }: { rating: number }) {
-  return (
-    <>
-                {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"bloomee（ブルーミー）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"bloomee（ブルーミー）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/bloomee/\"}" }} />
-        {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"bloomee（ブルーミー）\",\"description\":\"bloomee（ブルーミー）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"3.6\",\"reviewCount\":5,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"M.K.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"一人暮らしで花を買う習慣がなかったのですが、bloomeeを始めてから部屋に花があるのが当たり前になりました。ポスト投函なので仕事で遅くなっても受け取れるのが助かります。体験プランでも十分かわいいお花が届くので満足しています。\",\"name\":\"毎週届くのが楽しみになりました\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.S.\"},\"datePublished\":\"2025-11-01\",\"reviewBody\":\"夏場に一度だけ元気のないお花が届いたことがありますが、品質保証フォームから申請したらすぐに再送してもらえました。対応が早くて好印象です。レギュラープランにしてからは花の種類も増えて、毎回どんなお花が届くかワクワクしています。\",\"name\":\"品質保証があるので安心\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"Y.T.\"},\"datePublished\":\"2025-10-01\",\"reviewBody\":\"体験プランを利用しています。手軽に始められるのは良いのですが、正直なところ3本だと少し物足りなさを感じます。もう少し花の本数が多ければ嬉しいです。ただ、980円という価格を考えると妥当かもしれません。花屋に行く時間がない人には便利だと思います。\",\"name\":\"手軽だけどボリュームはやや少なめ\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"R.N.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"届くお花がいつもセンス良くまとめられていて、インスタに投稿するのが楽しいです。花屋さんによってアレンジの雰囲気が違うのも面白いポイント。リッチプランはボリュームがあって見栄えも抜群です。ただ解約のときに4回縛りがあるのは事前に知っておくべきでした。\",\"name\":\"インスタ映えするアレンジが嬉しい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"K.M.\"},\"datePublished\":\"2025-9-01\",\"reviewBody\":\"お花自体は綺麗で良かったのですが、解約しようとしたときに手続きがわかりにくく、少し困りました。マイページの奥の方に解約ページがあり、引き止めのページも何度か表示されます。4回の最低利用期間があることも、もっとわかりやすく表示してほしかったです。\",\"name\":\"解約手続きがわかりにくかった\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":2,\"bestRating\":5,\"worstRating\":1}}]}" }} />
-                {/* CANCEL_FLOW_SCHEMA_v1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"bloomee（ブルーミー）の解約手順\",\"description\":\"bloomee（ブルーミー）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"bloomee公式サイトの右上「マイページ」からログイン。登録メールアドレスとパスワードを入力します。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「お届け情報」→「定期コース管理」を選択\",\"text\":\"マイページのメニューから「お届け情報」→「定期コース管理」へ進みます。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期コースを解約する」をクリック\",\"text\":\"ページ下部に「定期コースを解約する」リンクがあります。クリックして解約フローへ。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を選択(任意)\",\"text\":\"アンケートが表示されますが、回答は任意。スキップしてもOKです。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約する」を最終確定\",\"text\":\"最終確認画面で「解約する」ボタンをクリック。次回配送日の前週金曜日23:59までに完了させましょう。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了メール受信\",\"text\":\"登録メールアドレスに解約完了通知が届きます。メールを保管しておくと安心。\"}]}" }} />
-        {/* JSONLD_INJECTED_v1 #0 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/bloomee/\"}]}" }} />
-        {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-07-03T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
-        {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomee（ブルーミー）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeには3つのプランがあります。体験プランは1回980円（税込・送料385円別）、レギュラープランは1回2,180円（税込・送料385円別）、リッチプランは1回3,680円（税込・送料550円別）です。いずれも隔週または毎週の配送頻度を選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeの解約はマイページから手続きできます。ただし、初回契約時に4回分の最低受け取り回数が設定されており、4回受け取り前に解約すると残り回数分の料金が発生します。4回受け取り後は、次回配送日の前週金曜日までにマイページで解約手続きを行えば、追加料金なしで解約可能です。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeのお花が傷んで届いた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeには品質保証制度（再送保証）があります。届いたお花が傷んでいた場合、マイページの「品質保証フォーム」から写真を添付して申請すると、無料で新しいお花を再送してもらえます。申請期限はお届け日を含めて2日以内です。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeの配送頻度は「毎週」または「隔週」から選択できます。マイページからいつでも変更可能です。また、旅行や出張などで受け取れない週は「スキップ機能」を使って配送を1回飛ばすこともできます。スキップは無料で、マイページから簡単に設定できます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeのお花はポストに届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"体験プランとレギュラープランはポスト投函で届きます。専用のパッケージに入った状態で届くため、不在時でも受け取れます。リッチプランは花のボリュームが大きいため、宅配便（手渡し）での配送となります。ポスト投函の場合、ポストのサイズが投函口の幅が4.5cm以上、奥行きが15cm以上あれば問題なく届きます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeはどの花屋さんからお花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは全国200店舗以上の提携花屋と契約しており、お届け先の地域に近い花屋さんからお花が届きます。届く花屋さんは毎回異なる場合があり、さまざまなフローリストのアレンジを楽しめます。どの花屋さんから届いたかはお届け時のカードに記載されています。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeをプレゼントとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、bloomeeではギフト用の「花の定期便ギフトチケット」を販売しています。チケットを購入して相手に贈ると、相手が好きなタイミングでお花の定期便を始められます。母の日や誕生日のプレゼントとして人気があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの対応エリアはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島やごく一部の地域を除き、日本全国に配送対応しています。ポスト投函プランは日本郵便のゆうパケット、リッチプランは宅配便で届くため、通常の郵便・宅配が届く地域であれば利用可能です。\"}}]}" }} />
-    <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
-      {[1, 2, 3, 4, 5].map((star) => (
-        <svg
-          key={star}
-          className={`w-5 h-5 ${star <= rating ? "text-yellow-400" : "text-gray-300"}`}
-          fill="currentColor"
-          viewBox="0 0 20 20"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-  </>
-  );
-}
 
 /* ─── Main Component ─── */
 export default function BloomeePage() {
@@ -130,6 +55,16 @@ export default function BloomeePage() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"bloomee（ブルーミー）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"bloomee（ブルーミー）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/bloomee/\"}" }} />
+      {/* CANCEL_FLOW_SCHEMA_v1 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"bloomee（ブルーミー）の解約手順\",\"description\":\"bloomee（ブルーミー）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"bloomee公式サイトの右上「マイページ」からログイン。登録メールアドレスとパスワードを入力します。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「お届け情報」→「定期コース管理」を選択\",\"text\":\"マイページのメニューから「お届け情報」→「定期コース管理」へ進みます。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期コースを解約する」をクリック\",\"text\":\"ページ下部に「定期コースを解約する」リンクがあります。クリックして解約フローへ。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を選択(任意)\",\"text\":\"アンケートが表示されますが、回答は任意。スキップしてもOKです。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約する」を最終確定\",\"text\":\"最終確認画面で「解約する」ボタンをクリック。締切はマイページに表示される次回分の締切までに完了させましょう（規約上の締切は「当社が定める時点」）。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了メール受信\",\"text\":\"登録メールアドレスに解約完了通知が届きます。メールを保管しておくと安心。\"}]}" }} />
+      {/* JSONLD_INJECTED_v1 #0 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/bloomee/\"}]}" }} />
+      {/* JSONLD_INJECTED_v1 #1 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
+      {/* JSONLD_INJECTED_v1 #2 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
 
       <main className="flex-1">
@@ -158,28 +93,28 @@ export default function BloomeePage() {
         <section className="bg-[#F9E8E8] py-12 md:py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
-              花のサブスク個別レビュー
+              花のサブスク個別レビュー｜{RE.updatedAt}更新
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              bloomee（ブルーミー）の口コミ・評判を<br className="hidden md:block" />
-              徹底調査【2026年最新】
+              bloomee（ブルーミー）の口コミ・評判は悪い？<br className="hidden md:block" />
+              良い声・悪い声と料金・4回縛りを検証
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              累計3,000万本以上のお花を届けてきた日本最大級の花のサブスク「bloomee」。
-              実際の利用者の口コミ・評判をもとに、料金プラン・メリット・デメリットを詳しく解説します。
+              ポストに届く花の定期便「bloomee（ブルーミー）」の口コミ・評判を、みん評やレビュー記事などの出典つきで整理。
+              料金（花代＋送料）・最初の4回の途中解約料・品質保証は、{S.verifiedAt}に公式サイトで確認した値で解説します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">累計お届け</p>
-                <p className="text-xl font-bold text-[#4A7C59]">3,000万本以上</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">提携花屋</p>
-                <p className="text-xl font-bold text-[#4A7C59]">全国200店舗以上</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">最安プラン</p>
+                <p className="text-xs text-[#999] mb-1">最安プラン（花代）</p>
                 <p className="text-xl font-bold text-[#4A7C59]">{S.cheapest.price.toLocaleString()}円/回〜</p>
+              </div>
+              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
+                <p className="text-xs text-[#999] mb-1">送料</p>
+                <p className="text-xl font-bold text-[#4A7C59]">385円〜/回</p>
+              </div>
+              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
+                <p className="text-xs text-[#999] mb-1">最低受取回数</p>
+                <p className="text-xl font-bold text-[#4A7C59]">{S.minDeliveries}回</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">届き方</p>
@@ -189,6 +124,8 @@ export default function BloomeePage() {
           </div>
         </section>
 
+        <ReviewVerdict d={RE} s={S} />
+
         {/* ─── Table of Contents ─── */}
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
@@ -196,184 +133,111 @@ export default function BloomeePage() {
               <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">1. bloomeeとは？サービス概要</a></li>
-                  <li><a href="#pricing" className="hover:text-[#4A7C59] transition-colors">2. 料金プラン・送料の詳細</a></li>
-                  <li><a href="#pros" className="hover:text-[#4A7C59] transition-colors">3. bloomeeのメリット（良い評判）</a></li>
-                  <li><a href="#cons" className="hover:text-[#4A7C59] transition-colors">4. bloomeeのデメリット（悪い評判）</a></li>
-                  <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">5. 利用者の口コミ・評判</a></li>
+                  <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">1. ブルーミーの口コミ・評判（出典つき）</a></li>
+                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">2. bloomeeとは？サービス概要</a></li>
+                  <li><a href="#pricing" className="hover:text-[#4A7C59] transition-colors">3. 料金プラン・送料（公式確認）</a></li>
+                  <li><a href="#pros" className="hover:text-[#4A7C59] transition-colors">4. メリット（良い評判の理由）</a></li>
+                  <li><a href="#cons" className="hover:text-[#4A7C59] transition-colors">5. デメリット（悪い評判の理由）</a></li>
                   <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">6. こんな人におすすめ／おすすめしない人</a></li>
                   <li><a href="#comparison" className="hover:text-[#4A7C59] transition-colors">7. 競合サービスとの比較</a></li>
                   <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">8. bloomeeの始め方</a></li>
                   <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">9. よくある質問</a></li>
-                  <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">10. まとめ</a></li>
+                  <li><a href="#cancellation" className="hover:text-[#4A7C59] transition-colors">10. 解約手順</a></li>
                 </ol>
               </nav>
             </div>
           </div>
         </section>
 
+        {/* ─── User Reviews ─── */}
+        <section id="reviews" className="py-12 md:py-16 bg-white">
+          <div className="max-w-3xl mx-auto px-4">
+            <ReviewEvidence d={RE} s={S} />
+          </div>
+        </section>
+
         {/* ─── Service Overview ─── */}
-        <section id="overview" className="py-12 md:py-16 bg-white">
+        <section id="overview" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
               bloomee（ブルーミー）とは？
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              bloomee（ブルーミー）は、株式会社Crunch Style（クランチスタイル）が2016年から運営している日本最大級のお花の定期便（花のサブスク）サービスです。
-              旧サービス名は「Bloomee LIFE（ブルーミーライフ）」で、2021年3月に現在の「bloomee」にリブランディングしました。
+              bloomee（ブルーミー）は、ユーザーライク株式会社（旧社名：株式会社Crunch Style）が運営するお花の定期便（花のサブスク）です。
+              旧サービス名は「Bloomee LIFE（ブルーミーライフ）」。公式サイトでは「お花のお届け実績3,000万本以上（自社調べ）」と表記されています。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              累計3,000万本以上のお花を届けた実績があり、SNSでの認知度は花のサブスクの中でもトップクラスです。
-              全国200店舗以上の提携花屋さんがアレンジしたお花が、ポスト投函で届くのが最大の特徴。
-              忙しい方や不在が多い方でも、気軽にお花のある生活を始められるサービスとして人気を集めています。
+              市場で仕入れた季節の花を小ぶりの花束にして届けるのが特徴で、お試しプラン・グリーンプランはポストに半投函の形で届くため、不在が多い人でも受け取れます。
+              一方、最初の4回は受け取りが必要で、送料が毎回別にかかる点は申込前に知っておきたいポイントです。
             </p>
             <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">bloomee 基本情報</h3>
+              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">bloomee 基本情報（{S.verifiedAt} 公式確認）</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                <div className="flex">
-                  <span className="text-[#999] w-28 shrink-0">運営会社</span>
-                  <span className="text-[#333]">株式会社Crunch Style</span>
-                </div>
-                <div className="flex">
-                  <span className="text-[#999] w-28 shrink-0">サービス開始</span>
-                  <span className="text-[#333]">2016年</span>
-                </div>
-                <div className="flex">
-                  <span className="text-[#999] w-28 shrink-0">累計お届け</span>
-                  <span className="text-[#333]">3,000万本以上</span>
-                </div>
-                <div className="flex">
-                  <span className="text-[#999] w-28 shrink-0">提携花屋</span>
-                  <span className="text-[#333]">全国200店舗以上</span>
-                </div>
-                <div className="flex">
-                  <span className="text-[#999] w-28 shrink-0">届き方</span>
-                  <span className="text-[#333]">ポスト投函 / 宅配便</span>
-                </div>
-                <div className="flex">
-                  <span className="text-[#999] w-28 shrink-0">対応エリア</span>
-                  <span className="text-[#333]">全国（離島除く）</span>
-                </div>
-                <div className="flex">
-                  <span className="text-[#999] w-28 shrink-0">配送頻度</span>
-                  <span className="text-[#333]">毎週 / 隔週</span>
-                </div>
-                <div className="flex">
-                  <span className="text-[#999] w-28 shrink-0">品質保証</span>
-                  <span className="text-[#333]">あり（再送保証）</span>
-                </div>
+                {[
+                  ["運営会社", "ユーザーライク株式会社"],
+                  ["プラン", "お試し／グリーン／ベーシック"],
+                  ["料金", "花代980円〜＋送料385円〜/回"],
+                  ["届き方", "ポスト投函（お試し・グリーン）／手渡し（ベーシック）"],
+                  ["お届け日", "水〜金曜（ポスト投函・日時指定不可）"],
+                  ["最低受取回数", "4回（未満は途中解約料）"],
+                  ["配送頻度", "毎週（4回目以降は隔週に変更可）"],
+                  ["品質保証", "定期便は2週間以内の連絡で返金・交換（特商法）"],
+                ].map(([k, v]) => (
+                  <div key={k} className="flex">
+                    <span className="text-[#999] w-28 shrink-0">{k}</span>
+                    <span className="text-[#333]">{v}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
         {/* ─── Pricing Table ─── */}
-        <section id="pricing" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="pricing" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              bloomeeの料金プラン・送料
+              bloomeeの料金プラン・送料（値段はいくら？）
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              bloomeeは3つのプランを提供しています。いずれも税込価格で、送料は別途かかります。
-              配送頻度は「毎週」または「隔週」から選択可能です。
+            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+              公式サイトの料金表（継続コース）は、お試しプラン・グリーンプランが花代980円＋送料385円、ベーシックプランが花代2,180円＋送料550円です。
+              「980円」は花代のみの表記なので、送料を含めた実質の金額で比べるのがポイントです。
             </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
-              {/* 体験プラン */}
-              <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
-                <div className="bg-[#F9E8E8] px-5 py-4 text-center">
-                  <p className="text-xs text-[#999] mb-1">初めての方に</p>
-                  <h3 className="text-lg font-bold text-[#333]">体験プラン</h3>
-                </div>
-                <div className="px-5 py-5 text-center">
-                  <p className="text-3xl font-bold text-[#4A7C59] mb-1">980<span className="text-base font-medium">円/回</span></p>
-                  <p className="text-xs text-[#999] mb-4">+ 送料385円</p>
-                  <div className="text-sm text-[#666] space-y-2 text-left">
-                    <p>お花の本数：3本以上</p>
-                    <p>届き方：ポスト投函</p>
-                    <p>1回あたり合計：1,365円</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* レギュラープラン */}
-              <div className="bg-white rounded-xl border-2 border-[#4A7C59] overflow-hidden relative">
-                <div className="absolute top-0 right-0 bg-[#4A7C59] text-white text-xs px-3 py-1 rounded-bl-lg">
-                  人気
-                </div>
-                <div className="bg-[#E8F0EB] px-5 py-4 text-center">
-                  <p className="text-xs text-[#4A7C59] mb-1">一番人気</p>
-                  <h3 className="text-lg font-bold text-[#333]">レギュラープラン</h3>
-                </div>
-                <div className="px-5 py-5 text-center">
-                  <p className="text-3xl font-bold text-[#4A7C59] mb-1">2,180<span className="text-base font-medium">円/回</span></p>
-                  <p className="text-xs text-[#999] mb-4">+ 送料385円</p>
-                  <div className="text-sm text-[#666] space-y-2 text-left">
-                    <p>お花の本数：4本以上</p>
-                    <p>届き方：ポスト投函</p>
-                    <p>1回あたり合計：2,565円</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* リッチプラン */}
-              <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
-                <div className="bg-[#F9E8E8] px-5 py-4 text-center">
-                  <p className="text-xs text-[#999] mb-1">豪華に楽しみたい方に</p>
-                  <h3 className="text-lg font-bold text-[#333]">リッチプラン</h3>
-                </div>
-                <div className="px-5 py-5 text-center">
-                  <p className="text-3xl font-bold text-[#4A7C59] mb-1">3,680<span className="text-base font-medium">円/回</span></p>
-                  <p className="text-xs text-[#999] mb-4">+ 送料550円</p>
-                  <div className="text-sm text-[#666] space-y-2 text-left">
-                    <p>お花の本数：8本以上</p>
-                    <p>届き方：宅配便（手渡し）</p>
-                    <p>1回あたり合計：4,230円</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl border border-[#E5E5E5] p-5">
-              <h3 className="text-sm font-bold text-[#333] mb-3">料金に関する補足</h3>
+            <OfficialPlans s={S} />
+            <div className="bg-[#FBF7F2] rounded-xl border border-[#E8DFD5] p-5 mt-6">
+              <h3 className="text-sm font-bold text-[#333] mb-3">送料込みの実質金額と、最初の4回の総額</h3>
               <ul className="text-sm text-[#666] space-y-2">
-                <li>・ 表示価格はすべて税込です</li>
-                <li>・ 送料はプランにより異なります（体験・レギュラー：385円、リッチ：550円）</li>
-                <li>・ 配送頻度は「毎週」「隔週」から選択可能（マイページで変更可）</li>
-                <li>・ 初回契約は4回分の最低受け取りが条件です</li>
-                <li>・ スキップ機能あり（配送を1回飛ばすことが無料で可能）</li>
+                <li>・お試し／グリーン：980円＋送料385円＝<strong>1,365円/回</strong>（4回で5,460円）</li>
+                <li>・ベーシック：2,180円＋送料550円＝<strong>2,730円/回</strong>（4回で10,920円）</li>
+                <li>・4回未満で解約すると「4回分のうち残回数分の商品代金（税込）」が途中解約料になります（公式・特定商取引法に基づく表記）。</li>
               </ul>
             </div>
           </div>
         </section>
 
         {/* ─── Pros Section ─── */}
-        <section id="pros" className="py-12 md:py-16 bg-white">
+        <section id="pros" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              bloomeeのメリット・良い評判
+              bloomeeのメリット（良い評判の理由）
             </h2>
             <div className="space-y-5">
               {[
                 {
-                  title: "ポスト投函で受け取り簡単",
-                  text: "体験プランとレギュラープランはポスト投函で届くため、不在時でも問題なく受け取れます。専用の箱に入った状態で届くので、仕事で帰りが遅い方や一人暮らしの方でもストレスなくお花を受け取れる点が高く評価されています。",
+                  title: "ポスト投函で不在でも受け取れる",
+                  text: "お試しプランとグリーンプランはポストに半投函の形で届くため、仕事で帰りが遅い人や一人暮らしでも受け取りの手間がかかりません。口コミでも最も多く挙がる良い点です。",
                 },
                 {
-                  title: "初心者に最適なサービス設計",
-                  text: "980円/回の体験プランから始められるため、お花のサブスクが初めての方でもハードルが低いのが魅力です。花瓶がなくても付属のガイドに簡単な飾り方が書かれており、お花の知識がなくても楽しめるよう工夫されています。",
+                  title: "花代980円〜で始めやすい",
+                  text: "お試しプランは花代980円（送料385円別）。花瓶ひとつに飾れる小ぶりの花束なので、花を飾る習慣がない人の入門として選ばれています。",
                 },
                 {
-                  title: "品質保証制度（再送保証）あり",
-                  text: "配送中にお花が傷んでしまった場合、マイページから写真を添付して申請すると無料で再送してもらえます。この品質保証制度があることで、安心して利用を続けられるという口コミが多く見られます。",
+                  title: "季節の花に出会える",
+                  text: "市場で仕入れた季節の花が届くため、自分では選ばない花に出会えるという声が多く見られます。",
                 },
                 {
-                  title: "全国200店舗以上の提携花屋から届く",
-                  text: "bloomeeは全国の花屋と提携しており、お届け先の近くの花屋さんがアレンジしたお花が届きます。毎回異なる花屋さんのアレンジを楽しめるため、飽きずに続けられるという声があります。地域の花屋を応援できる点も好評です。",
-                },
-                {
-                  title: "SNSでの認知度・人気がNo.1クラス",
-                  text: "Instagramを中心にSNSでの投稿数が非常に多く、花のサブスクの中でも認知度はトップクラスです。届いたお花をSNSに投稿して楽しむユーザーが多いことから、毎回フォトジェニックなアレンジが届くと評判です。",
+                  title: "不良時は返金・交換の対象",
+                  text: "公式の特定商取引法に基づく表記では、定期便は2週間以内に連絡すれば不良品の返金または交換の対象になります。届いたらすぐ写真を撮っておくと安心です。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-[#E8F0EB] rounded-xl p-5">
@@ -393,24 +257,28 @@ export default function BloomeePage() {
         </section>
 
         {/* ─── Cons Section ─── */}
-        <section id="cons" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="cons" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#F0D0D0]">
-              bloomeeのデメリット・悪い評判
+              bloomeeのデメリット（悪い評判の理由）
             </h2>
             <div className="space-y-5">
               {[
                 {
-                  title: "花のボリュームが少なめ",
-                  text: "体験プランは3本以上、レギュラープランでも4本以上と、他社サービスと比較するとお花の本数がやや少なめです。特に体験プランの3本ではテーブルに飾るには物足りないという口コミがあります。ボリュームを求める方はリッチプラン（8本以上）を検討するか、他サービスとの比較をおすすめします。",
+                  title: "最初の4回は解約できない（途中解約料あり）",
+                  text: "最初の4回は受け取りが必要で、途中で解約すると「4回分のうち残回数分の商品代金（税込）」を支払う決まりです。お試しプランなら、送料込みで総額5,460円は払う前提で申し込みましょう。",
                 },
                 {
-                  title: "夏場の鮮度リスク",
-                  text: "ポスト投函の場合、夏場はポスト内の高温でお花が傷みやすくなります。特に7〜9月の猛暑の時期は、届いたお花がしおれているという報告が増える傾向にあります。ただし品質保証制度で再送対応してもらえるため、申請すれば代わりのお花を受け取れます。",
+                  title: "送料が毎回別にかかる",
+                  text: "花代とは別に送料が毎回かかります（お試し・グリーン385円、ベーシック550円）。送料込みのmedelu（748円〜）などと比べると、実質の負担は大きくなります。",
                 },
                 {
-                  title: "解約手続きがやや複雑",
-                  text: "bloomeeの解約はマイページから手続きできますが、解約ページにたどり着くまでに複数のステップがあり、引き止めのページが表示されるため、やや手間がかかるという声があります。また、4回の最低受け取り回数を満たす前の解約は残り回数分の料金が発生する点にも注意が必要です。",
+                  title: "花の状態・種類にばらつきがある",
+                  text: "口コミサイトでは「しおれていた」「同じ花が続く」という声が目立ちます。とくに夏場はポスト内の暑さで傷みやすいため、届いたら早めに取り出して水に挿しましょう。",
+                },
+                {
+                  title: "本数が少なく感じることも",
+                  text: "お試しプランは4本以上・約18〜25cmの小ぶりの花束です。テーブルを華やかにしたい人は、8本以上のベーシックプランか、ボリュームのある他社も比較しましょう。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
@@ -423,49 +291,6 @@ export default function BloomeePage() {
                       <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ─── User Reviews ─── */}
-        <section id="reviews" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            {/* 公開口コミの傾向（出典・調査年月つき） */}
-            <div className="mb-10 rounded-2xl border border-[#E8DFD5] bg-[#FBF7F2] p-5 md:p-7">
-              <h3 className="font-bold text-[#333] mb-1">公開口コミの傾向</h3>
-              <p className="text-xs text-[#999] mb-4">出典：みん評（口コミ約560件掲載）・複数のレビュー記事（2026年7月時点）。口コミは傾向の要約で、個別の体験には差があります。</p>
-              <div className="grid md:grid-cols-2 gap-5">
-                <div><p className="font-bold text-[#4A7C59] text-sm mb-2">好意的な傾向</p><ul className="space-y-2"><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>ポスト投函で不在でも受け取れて手軽</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>季節感のある小ぶりの花束がおしゃれで癒しになる</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>手頃な価格＋初回無料クーポンで試しやすい</span></li></ul></div>
-                <div><p className="font-bold text-[#C08552] text-sm mb-2">気になる/否定的な傾向</p><ul className="space-y-2"><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>ボリュームが少なく、自分で花を選べない</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>花の状態・鮮度にばらつき（夏場の高温・ポスト内放置・提携花屋による差）</span></li><li className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>解約が分かりづらく、初回は4回の回数縛りがある（4回未満の途中解約は解約料が発生）</span></li></ul></div>
-              </div>
-              <p className="text-xs text-[#999] mt-4">※ 平均★はみん評本体が取得不可のため未掲載。公式アプリは2021年12月で提供終了しWeb運用のため、アプリストアの現行評価は対象外です。</p>
-            </div>
-
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              bloomee利用者の口コミ・評判
-            </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              実際にbloomeeを利用したユーザーの口コミをご紹介します。良い口コミだけでなく改善を求める声も含め、バランスよくまとめました。
-            </p>
-            <div className="space-y-5">
-              {userReviews.map((review, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-[#E8F0EB] flex items-center justify-center">
-                        <span className="text-sm font-bold text-[#4A7C59]">{review.name.charAt(0)}</span>
-                      </div>
-                      <div>
-                        <p className="text-sm font-medium text-[#333]">{review.name} / {review.age}</p>
-                        <p className="text-xs text-[#999]">{review.date}</p>
-                      </div>
-                    </div>
-                    <StarRating rating={review.rating} />
-                  </div>
-                  <h3 className="text-sm font-bold text-[#333] mb-2">{review.title}</h3>
-                  <p className="text-sm text-[#666] leading-relaxed">{review.text}</p>
                 </div>
               ))}
             </div>
@@ -543,95 +368,7 @@ export default function BloomeePage() {
         </section>
 
         {/* ─── Comparison Section ─── */}
-        <section id="comparison" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              bloomee vs 競合サービス比較
-            </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              bloomeeと人気の花のサブスク2社を比較しました。それぞれの特徴を把握して、自分に合ったサービスを選びましょう。
-            </p>
-            <div className="table-wrapper">
-              <table className="comparison-table w-full text-sm border-collapse">
-                <thead>
-                  <tr>
-                    <th className="rounded-tl-lg">比較項目</th>
-                    <th>bloomee</th>
-                    <th>medelu</th>
-                    <th className="rounded-tr-lg">AND PLANTS</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="font-medium text-[#333]">最安プラン</td>
-                    <td>980円/回</td>
-                    <td>748円/回</td>
-                    <td>1,980円/回</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#333]">送料</td>
-                    <td>385〜550円</td>
-                    <td>無料</td>
-                    <td>無料</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#333]">花の本数（最安）</td>
-                    <td>3本以上</td>
-                    <td>3本</td>
-                    <td>4〜6本</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#333]">届き方</td>
-                    <td>ポスト投函</td>
-                    <td>ポスト投函</td>
-                    <td>宅配便</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#333]">回数縛り</td>
-                    <td>4回</td>
-                    <td>なし</td>
-                    <td>なし</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#333]">品質保証</td>
-                    <td>あり</td>
-                    <td>あり</td>
-                    <td>あり</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#333]">SNS人気</td>
-                    <td className="font-bold text-[#4A7C59]">非常に高い</td>
-                    <td>普通</td>
-                    <td>高い</td>
-                  </tr>
-                  <tr>
-                    <td className="font-medium text-[#333]">おすすめポイント</td>
-                    <td>初心者向け、手軽さ</td>
-                    <td>コスパ最強</td>
-                    <td>おしゃれ重視</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="mt-6 space-y-4">
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">bloomee vs medelu</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  コスパを重視するならmedeluが有利です。medeluは月額748円で送料無料のため、1回あたりの総額はbloomeeの体験プラン（980円+送料385円=1,365円）の約半額になります。
-                  一方、bloomeeは全国200店舗以上の提携花屋からのアレンジが届くため、毎回異なるテイストのお花を楽しめる点が強みです。SNSでの情報量もbloomeeのほうが圧倒的に多く、事前に他のユーザーの投稿を参考にできます。
-                </p>
-              </div>
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">bloomee vs AND PLANTS</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  AND PLANTSはプロのフローリストによるハイセンスなアレンジが特徴で、インテリアにこだわる方に向いています。送料無料でボリュームも多いですが、最安プランが1,980円/回とbloomeeより高めです。
-                  手軽に少額から始めたい初心者にはbloomee、デザイン性とボリュームを求める方にはAND PLANTSがおすすめです。
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CompareSection s={S} all={SERVICES} note="ブルーミーは「花代＋送料」の料金体系で、最初の4回の受け取りが条件です。送料込み・最低回数の記載なしで比べたいならmedelu（748円〜）やハナメク（1,210円〜）、本数と宅配を重視するならAND PLANTS（1,980円〜）も候補になります。ポスト投函の定番で、届いた花の実例をSNSやレビューで事前に確認しやすいのはブルーミーの強みです。" />
 
         {/* ─── How to Sign Up ─── */}
         <section id="how-to-start" className="py-12 md:py-16 bg-[#F8F8F8]">
@@ -644,17 +381,17 @@ export default function BloomeePage() {
                 {
                   step: "STEP 1",
                   title: "公式サイトにアクセス",
-                  text: "bloomeeの公式サイト（bloomee.jp）にアクセスし、「お花の定期便を申し込む」ボタンをクリックします。",
+                  text: "bloomeeの公式サイト（bloomeelife.com）にアクセスし、プラン選択へ進みます。",
                 },
                 {
                   step: "STEP 2",
                   title: "プランを選択",
-                  text: "体験プラン（980円）、レギュラープラン（2,180円）、リッチプラン（3,680円）の中から希望のプランを選びます。",
+                  text: "お試しプラン（980円＋送料385円）、グリーンプラン（980円＋送料385円）、ベーシックプラン（2,180円＋送料550円）から選びます。迷ったらお試しプランから。",
                 },
                 {
                   step: "STEP 3",
-                  title: "配送頻度を選択",
-                  text: "「毎週届く」または「隔週届く」のどちらかを選択します。迷ったら隔週から始めるのがおすすめです。",
+                  title: "最初の4回の条件を確認",
+                  text: "最初の4回は受け取りが必要です（4回未満の解約は途中解約料）。お届けは毎週が基本で、4回目以降は隔週に変更できます。",
                 },
                 {
                   step: "STEP 4",
@@ -664,12 +401,12 @@ export default function BloomeePage() {
                 {
                   step: "STEP 5",
                   title: "支払い方法を登録",
-                  text: "クレジットカード情報を登録します。VISA、Mastercard、JCB、American Express、Dinersに対応しています。",
+                  text: "支払い方法を登録します。利用できる支払い方法は申込画面で確認してください。",
                 },
                 {
                   step: "STEP 6",
                   title: "申し込み完了、お届けを待つ",
-                  text: "申し込み完了後、最短で翌週からお花が届き始めます。届いたお花は水切りをしてから花瓶に飾りましょう。",
+                  text: "申し込みが完了すると、お届け予定日が案内されます。届いたお花は早めに取り出し、水切りをしてから花瓶に飾りましょう。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
@@ -765,7 +502,7 @@ export default function BloomeePage() {
                   <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
                     <h3 className="font-bold text-[#333] mb-1">「解約する」を最終確定</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">最終確認画面で「解約する」ボタンをクリック。次回配送日の前週金曜日23:59までに完了させましょう。</p>
+                    <p className="text-sm text-[#666] leading-relaxed">最終確認画面で「解約する」ボタンをクリック。締切はマイページに表示される次回分の締切までに完了させましょう（規約上の締切は「当社が定める時点」）。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
@@ -784,14 +521,14 @@ export default function BloomeePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#F9E8E8]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：bloomeeは初心者に最適な花のサブスク
+              まとめ：ブルーミーの口コミ・評判から分かる向き不向き
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              bloomee（ブルーミー）は、ポスト投函で手軽に受け取れる点と、980円/回からの手頃な価格設定で、お花のサブスク初心者に最も選ばれているサービスです。
-              全国200店舗以上の提携花屋からセンスの良いアレンジが届き、品質保証制度もあるため安心して利用できます。
+              bloomee（ブルーミー）は、ポスト投函で手軽に受け取れる点と、花代980円/回からの始めやすさが口コミで評価されている花のサブスクです。
+              不良時は定期便なら2週間以内の連絡で返金・交換の対象になります（特商法）。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              一方で、花のボリュームがやや少なめな点や、4回の最低受け取り回数がある点はデメリットとして把握しておく必要があります。
+              一方で、送料が毎回別にかかる点、最初の4回は受け取りが必要な点（お試しなら総額5,460円）、花の状態にばらつきがあるという口コミは把握しておきましょう。
               コスパ重視ならmedelu、デザイン性重視ならAND PLANTSも検討した上で、自分に合ったサービスを選びましょう。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -818,6 +555,7 @@ export default function BloomeePage() {
           <div className="max-w-5xl mx-auto px-4">
             <h2 className="heading-serif text-2xl font-bold text-[#3D3632] mb-5">bloomeeに関連する比較・ガイド</h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+              <a href="/service-guides/bloomee-kaiyaku/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomeeの解約方法（締切・注意点） →</a>
               <a href="/vs/bloomee-vs-and-plants/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomee vs AND PLANTS 比較 →</a>
               <a href="/compare/bloomee-vs-medelu/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomee vs medelu 比較 →</a>
               <a href="/compare/bloomee-vs-hitohana/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomee vs HitoHana 比較 →</a>
@@ -864,7 +602,7 @@ export default function BloomeePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              料金・条件は{S.verifiedAt}時点で公式サイトから確認したものです。最新の料金・サービス内容は各公式サイトでご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

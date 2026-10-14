@@ -27,65 +27,7 @@ const faqItems = [
   },
 ];
 
-/* ─── User Reviews ─── */
-const userReviews = [
-  {
-    name: "A.K.",
-    age: "20代女性",
-    rating: 5,
-    title: "528円でこの満足度はすごい",
-    text: "月1,000円以下でお花のある暮らしが始められるのが嬉しいです。3本でも小さな花瓶に飾るとかわいくて、一人暮らしの部屋にちょうど良いサイズ感。花の廃棄を減らすサステナブルな取り組みも共感できます。",
-    date: "2026年3月",
-  },
-  {
-    name: "T.M.",
-    age: "30代女性",
-    rating: 4,
-    title: "エコな花のサブスクとして応援したい",
-    text: "規格外の花を活用しているということですが、届く花は全く問題ない品質です。むしろ「この花が捨てられるなんて」と思うくらい綺麗な花もあります。環境に配慮しながら花を楽しめるのは気分が良いです。送料が別途かかるのが少し残念ですが、総額1,210円なら十分お手頃です。",
-    date: "2026年1月",
-  },
-  {
-    name: "N.S.",
-    age: "40代女性",
-    rating: 3,
-    title: "コスパは良いけど本数は物足りない",
-    text: "+actプランの3本は、正直なところ少し物足りなさを感じます。もう少しボリュームが欲しい方は+liveプラン（5本）の方がおすすめかもしれません。ただ、この価格帯で定期的にお花が届くのは他にあまりないので、入門としては良いと思います。",
-    date: "2025年12月",
-  },
-];
 
-/* ─── Star Rating Component ─── */
-function StarRating({ rating }: { rating: number }) {
-  return (
-    <>
-                {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"+hana（タスハナ）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"+hana（タスハナ）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/tasuhana/\"}" }} />
-        {/* SERVICE_SCHEMA_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"+hana（タスハナ）\",\"description\":\"+hana（タスハナ）は花のサブスクリプションサービスです。\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.0\",\"reviewCount\":3,\"bestRating\":5,\"worstRating\":1},\"review\":[{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"A.K.\"},\"datePublished\":\"2026-3-01\",\"reviewBody\":\"月1,000円以下でお花のある暮らしが始められるのが嬉しいです。3本でも小さな花瓶に飾るとかわいくて、一人暮らしの部屋にちょうど良いサイズ感。花の廃棄を減らすサステナブルな取り組みも共感できます。\",\"name\":\"528円でこの満足度はすごい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"T.M.\"},\"datePublished\":\"2026-1-01\",\"reviewBody\":\"規格外の花を活用しているということですが、届く花は全く問題ない品質です。むしろ「この花が捨てられるなんて」と思うくらい綺麗な花もあります。環境に配慮しながら花を楽しめるのは気分が良いです。送料が別途かかるのが少し残念ですが、総額1,210円なら十分お手頃です。\",\"name\":\"エコな花のサブスクとして応援したい\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1}},{\"@type\":\"Review\",\"author\":{\"@type\":\"Person\",\"name\":\"N.S.\"},\"datePublished\":\"2025-12-01\",\"reviewBody\":\"+actプランの3本は、正直なところ少し物足りなさを感じます。もう少しボリュームが欲しい方は+liveプラン（5本）の方がおすすめかもしれません。ただ、この価格帯で定期的にお花が届くのは他にあまりないので、入門としては良いと思います。\",\"name\":\"コスパは良いけど本数は物足りない\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":3,\"bestRating\":5,\"worstRating\":1}}]}" }} />
-                {/* CANCEL_FLOW_SCHEMA_v1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"+hana（タスハナ）の解約手順\",\"description\":\"+hana（タスハナ）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"タスハナ公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便管理」を開く\",\"text\":\"メニューから定期便管理画面に進む。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約する」を選択\",\"text\":\"解約リンクをクリック。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由を選択(任意)\",\"text\":\"フィードバックは任意で。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を確定\",\"text\":\"次回配送日の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知の確認\",\"text\":\"完了メールで確認。\"}]}" }} />
-        {/* JSONLD_INJECTED_v1 #0 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"+hana（タスハナ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/tasuhana/\"}]}" }} />
-        {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"+hana（タスハナ）の評判・口コミ・料金プラン\",\"description\":\"+hana（タスハナ）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/tasuhana/\"}}" }} />
-        {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"タスハナ（+hana）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナには2つのプランがあります。「+act for flowers」は1回528円（税込）で花が3本届きます。「+live for flowers」は1回770円（税込）で花が5本届きます。いずれも送料330円が別途かかります。配送頻度は隔週（2週間に1回）です。\"}},{\"@type\":\"Question\",\"name\":\"タスハナの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナの解約はマイページから手続きできます。回数縛りがないため、いつでも解約可能です。次回配送日の5日前までに手続きを完了すれば、次回以降の配送が停止されます。一時的にお届けを止めたい場合はスキップ機能も利用できます。\"}},{\"@type\":\"Question\",\"name\":\"タスハナのお花はポスト投函ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、タスハナはポスト投函に対応しています。専用のコンパクトなパッケージに入った状態で届くため、不在時でも受け取れます。ポストのサイズが投函口の幅4cm以上、奥行き15cm以上あれば問題なく届きます。\"}},{\"@type\":\"Question\",\"name\":\"タスハナの「サステナブル」とはどういう意味ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナは、花市場で流通基準に満たない「規格外の花」を積極的に活用しています。茎の長さや花の大きさが規格と少し異なるだけで廃棄されてしまう花を、品質には問題のない状態で届けることで、フラワーロス（花の廃棄）の削減に貢献しています。花を飾ることが環境配慮にもつながる、サステナブルな仕組みです。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナでは届く花の種類を自分で選ぶことはできません。プロが旬の花を季節に合わせてセレクトしてお届けします。そのため、毎回異なる花との出会いを楽しめます。苦手な花やアレルギーがある場合は、カスタマーサポートに事前に相談することをおすすめします。\"}}]}" }} />
-    <div className="flex gap-0.5" aria-label={`${rating}つ星`}>
-      {[1, 2, 3, 4, 5].map((star) => (
-        <svg
-          key={star}
-          className={`w-5 h-5 ${star <= rating ? "text-yellow-400" : "text-gray-300"}`}
-          fill="currentColor"
-          viewBox="0 0 20 20"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-  </>
-  );
-}
 
 /* ─── Main Component ─── */
 export default function TasuhanaServicePage() {
@@ -93,6 +35,16 @@ export default function TasuhanaServicePage() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"+hana（タスハナ）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"+hana（タスハナ）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/tasuhana/\"}" }} />
+      {/* CANCEL_FLOW_SCHEMA_v1 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"+hana（タスハナ）の解約手順\",\"description\":\"+hana（タスハナ）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"タスハナ公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便管理」を開く\",\"text\":\"メニューから定期便管理画面に進む。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約する」を選択\",\"text\":\"解約リンクをクリック。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由を選択(任意)\",\"text\":\"フィードバックは任意で。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を確定\",\"text\":\"次回配送日の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知の確認\",\"text\":\"完了メールで確認。\"}]}" }} />
+      {/* JSONLD_INJECTED_v1 #0 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"+hana（タスハナ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/tasuhana/\"}]}" }} />
+      {/* JSONLD_INJECTED_v1 #1 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"+hana（タスハナ）の評判・口コミ・料金プラン\",\"description\":\"+hana（タスハナ）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/tasuhana/\"}}" }} />
+      {/* JSONLD_INJECTED_v1 #2 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"タスハナ（+hana）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナには2つのプランがあります。「+act for flowers」は1回528円（税込）で花が3本届きます。「+live for flowers」は1回770円（税込）で花が5本届きます。いずれも送料330円が別途かかります。配送頻度は隔週（2週間に1回）です。\"}},{\"@type\":\"Question\",\"name\":\"タスハナの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナの解約はマイページから手続きできます。回数縛りがないため、いつでも解約可能です。次回配送日の5日前までに手続きを完了すれば、次回以降の配送が停止されます。一時的にお届けを止めたい場合はスキップ機能も利用できます。\"}},{\"@type\":\"Question\",\"name\":\"タスハナのお花はポスト投函ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、タスハナはポスト投函に対応しています。専用のコンパクトなパッケージに入った状態で届くため、不在時でも受け取れます。ポストのサイズが投函口の幅4cm以上、奥行き15cm以上あれば問題なく届きます。\"}},{\"@type\":\"Question\",\"name\":\"タスハナの「サステナブル」とはどういう意味ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナは、花市場で流通基準に満たない「規格外の花」を積極的に活用しています。茎の長さや花の大きさが規格と少し異なるだけで廃棄されてしまう花を、品質には問題のない状態で届けることで、フラワーロス（花の廃棄）の削減に貢献しています。花を飾ることが環境配慮にもつながる、サステナブルな仕組みです。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナでは届く花の種類を自分で選ぶことはできません。プロが旬の花を季節に合わせてセレクトしてお届けします。そのため、毎回異なる花との出会いを楽しめます。苦手な花やアレルギーがある場合は、カスタマーサポートに事前に相談することをおすすめします。\"}}]}" }} />
       <Header />
 
       <title>タスハナ（+hana）の口コミ・評判【2026年最新】528円の花サブスクを検証</title>
@@ -288,24 +240,11 @@ export default function TasuhanaServicePage() {
         <section id="reviews" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              タスハナ（+hana）の口コミ・評判
+              タスハナの口コミ・評判について
             </h2>
-            <div className="space-y-4">
-              {userReviews.map((review, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-bold text-[#333]">{review.name}</span>
-                      <span className="text-xs text-[#999]">{review.age}</span>
-                    </div>
-                    <span className="text-xs text-[#999]">{review.date}</span>
-                  </div>
-                  <StarRating rating={review.rating} />
-                  <h3 className="text-sm font-bold text-[#333] mt-2 mb-1">{review.title}</h3>
-                  <p className="text-sm text-[#666] leading-relaxed">{review.text}</p>
-                </div>
-              ))}
-            </div>
+            <p className="text-sm md:text-base text-[#666] leading-relaxed">
+              当サイトは、出典を確認できない個人の口コミ（イニシャル・年代つきの体験談や星評価）は掲載しない方針です（2026年10月14日に旧掲載分を削除）。メリット・デメリットは公式サイトで確認できる仕組み・条件をもとに整理しています。実際の利用者の声は、公式サイトやSNSの投稿もあわせてご確認ください。
+            </p>
           </div>
         </section>
 
