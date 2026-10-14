@@ -200,6 +200,20 @@ export default async function PersonaPage({ params }: Props) {
             </ul>
           </section>
 
+          {/* Siblings */}
+          <section className="mb-12 bg-white border border-[#E8E0D8] rounded-xl p-5">
+            <h2 className="text-base font-bold text-[#333] mb-4">ほかのライフスタイル別ガイド</h2>
+            <ul className="space-y-2">
+              {personas.filter((x) => x.slug !== p.slug).map((x) => (
+                <li key={x.slug}>
+                  <Link href={`/personas/${x.slug}/`} className="text-sm text-[#4A7C59] hover:underline">
+                    → {x.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+
           {/* CTA back to TOP */}
           <div className="text-center mb-8">
             <Link href="/" className="inline-block bg-[#4A7C59] text-white font-bold px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors">

@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: '敬老の日に贈る花のサブスク・花ギフトおすすめ【2026年9月21日】｜flowerデリ',
   description: '2026年の敬老の日は9月21日（月・祝）。一度きりの花束ではなく、毎月届く「花のサブスク」を敬老の日ギフトに。ギフト対応・日付指定・遠方の祖父母への贈り方を、各サービスの実情報で比較して解説します。',
   alternates: { canonical: "/guides/keirou-no-hi/" },
-  openGraph: {
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
     title: '敬老の日に贈る花のサブスク・花ギフトおすすめ【2026年9月21日】｜flowerデリ',
     description: '2026年の敬老の日は9月21日（月・祝）。毎月届く花のサブスクを敬老の日ギフトに。ギフト対応・日付指定・遠方への贈り方を実情報で比較解説。',
     url: "/guides/keirou-no-hi/",

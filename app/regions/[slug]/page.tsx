@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Header from "@/app/components/Header";
-import { findRegion, allRegionSlugs } from "@/data/regions";
+import { regions, findRegion, allRegionSlugs } from "@/data/regions";
 
 const SITE_URL = "https://ohana-delivery.com";
 
@@ -186,6 +186,20 @@ export default async function RegionPage({ params }: Props) {
                 <li key={i}>
                   <Link href={p.href} className="text-sm text-[#4A7C59] hover:underline">
                     → {p.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Siblings */}
+          <section className="mb-12 bg-white border border-[#E8E0D8] rounded-xl p-5">
+            <h2 className="text-base font-bold text-[#333] mb-4">ほかの地域の花のサブスク情報</h2>
+            <ul className="space-y-2">
+              {regions.filter((x) => x.slug !== r.slug).map((x) => (
+                <li key={x.slug}>
+                  <Link href={`/regions/${x.slug}/`} className="text-sm text-[#4A7C59] hover:underline">
+                    → {x.title}
                   </Link>
                 </li>
               ))}

@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: '花のサブスクの始め方｜申し込みの流れと失敗しない選び方【月748円〜・2026年】｜flowerデリ',
   description: '花のサブスク（定期便）を始めたいけど「どのサービスを選べばいいの？」「届いたお花はどうすればいいの？」と悩んでいませんか。 この記事では、初心者が失敗しないための選び方・始め方・お花の飾り方まで、すべてを分かりやすく解説します。',
   alternates: { canonical: "/guides/beginner/" },
-  openGraph: {
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
     title: '花のサブスクの始め方｜申し込みの流れと失敗しない選び方【月748円〜・2026年】｜flowerデリ',
     description: '花のサブスク（定期便）を始めたいけど「どのサービスを選べばいいの？」「届いたお花はどうすればいいの？」と悩んでいませんか。 この記事では、初心者が失敗しないための選び方・始め方・お花の飾り方まで、すべてを分かりやすく解説します。',
     url: "/guides/beginner/",

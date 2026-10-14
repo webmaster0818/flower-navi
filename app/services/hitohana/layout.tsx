@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'HitoHana（ひとはな）の口コミ・評判を徹底調査【2026年最新】｜flowerデリ',
   description: '好きな色とボリュームを自分で選べる花の定期便「HitoHana（ひとはな）」。 1回1,320円から始められるサービスの実力を、料金・メリット・デメリット・口コミから詳しく検証します。',
   alternates: { canonical: "/services/hitohana/" },
-  openGraph: {
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
     title: 'HitoHana（ひとはな）の口コミ・評判を徹底調査【2026年最新】｜flowerデリ',
     description: '好きな色とボリュームを自分で選べる花の定期便「HitoHana（ひとはな）」。 1回1,320円から始められるサービスの実力を、料金・メリット・デメリット・口コミから詳しく検証します。',
     url: "/services/hitohana/",

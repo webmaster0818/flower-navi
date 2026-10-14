@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'クリスマス・お正月に飾る花のサブスク・花ギフトおすすめ【2026年】｜flowerデリ',
   description: '冬は切り花が長持ちする季節。クリスマスの華やかなアレンジから、松・千両・葉牡丹などのお正月アレンジ（しめ飾りの代わり）まで、花のサブスクで手軽に楽しめます。ギフト対応・日付指定・配送の混雑と早めの申し込みを各サービスの実情報で解説します。',
   alternates: { canonical: "/guides/christmas-oshogatsu/" },
-  openGraph: {
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
     title: 'クリスマス・お正月に飾る花のサブスク・花ギフトおすすめ【2026年】｜flowerデリ',
     description: '冬は花が長持ち。クリスマス〜お正月の花のサブスクを、ギフト対応・日付指定・お正月アレンジ（しめ飾りの代わり）とあわせて実情報で解説。',
     url: "/guides/christmas-oshogatsu/",

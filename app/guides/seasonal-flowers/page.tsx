@@ -766,6 +766,12 @@ export default function SeasonalFlowersPage() {
               >
                 安い順ランキングを見る
               </a>
+              <a
+                href="/guides/christmas-oshogatsu/"
+                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+              >
+                クリスマス・お正月の花を見る
+              </a>
             </div>
             <a
               href="/"

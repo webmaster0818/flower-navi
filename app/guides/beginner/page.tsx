@@ -818,6 +818,12 @@ export default function BeginnerGuidePage() {
                 安い花のサブスクランキングを見る
               </a>
               <a
+                href="/compare/campaign/"
+                className="inline-block text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+              >
+                初回特典・お試しプランを比較する
+              </a>
+              <a
                 href="/"
                 className="inline-block text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
               >

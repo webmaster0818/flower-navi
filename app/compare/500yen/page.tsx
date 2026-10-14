@@ -596,6 +596,12 @@ export default function FiveHundredYenPage() {
             >
               安い花のサブスク総合ランキングも見る
             </a>
+            <a
+              href="/compare/campaign/"
+              className="inline-block mt-4 ml-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+            >
+              初回特典・お試しプランの比較も見る
+            </a>
           </div>
         </section>
       </main>

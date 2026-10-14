@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESC,
   alternates: { canonical: "/guides/" },
-  openGraph: { title: TITLE, description: DESC, url: "/guides/", type: "website" },
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }],  title: TITLE, description: DESC, url: "/guides/", type: "website" },
   twitter: { card: "summary_large_image", title: TITLE, description: DESC },
 };
 

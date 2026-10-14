@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'LIFFT（リフト）の口コミ・評判は？料金・花の質を実際に検証【2026年最新】｜flowerデリ',
   description: 'LIFFT（リフト）はBOTANIC株式会社が運営する花の定期便サービスです。 市場直送・クール便配送で鮮度にこだわった花が届きます。実際の口コミとともにその実力を検証します。',
   alternates: { canonical: "/services/lifft/" },
-  openGraph: {
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
     title: 'LIFFT（リフト）の口コミ・評判は？料金・花の質を実際に検証【2026年最新】｜flowerデリ',
     description: 'LIFFT（リフト）はBOTANIC株式会社が運営する花の定期便サービスです。 市場直送・クール便配送で鮮度にこだわった花が届きます。実際の口コミとともにその実力を検証します。',
     url: "/services/lifft/",

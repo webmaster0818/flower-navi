@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Header from "@/app/components/Header";
-import { findKnowGuide, allKnowSlugs } from "@/data/knowGuides";
+import { knowGuides, findKnowGuide, allKnowSlugs } from "@/data/knowGuides";
 
 const SITE_URL = "https://ohana-delivery.com";
 
@@ -129,6 +129,20 @@ export default async function KnowGuidePage({ params }: Props) {
                 <li key={i}>
                   <Link href={r.href} className="text-sm text-[#4A7C59] hover:underline">
                     → {r.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Siblings */}
+          <section className="mb-12 bg-white border border-[#E8E0D8] rounded-xl p-5">
+            <h2 className="text-base font-bold text-[#333] mb-4">ほかのお花の基礎知識</h2>
+            <ul className="space-y-2">
+              {knowGuides.filter((x) => x.slug !== g.slug).map((x) => (
+                <li key={x.slug}>
+                  <Link href={`/know-guides/${x.slug}/`} className="text-sm text-[#4A7C59] hover:underline">
+                    → {x.title}
                   </Link>
                 </li>
               ))}

@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'ポスト投函できるお花の定期便おすすめ比較｜不在でも安心｜flowerデリ',
   description: '「届く日に不在だったらどうしよう...」そんな心配は不要です。 ポスト投函対応の花のサブスクなら、不在でも郵便ポストにお花が届きます。 人気5サービスのポスト投函対応状況を徹底比較しました。',
   alternates: { canonical: "/compare/post-delivery/" },
-  openGraph: {
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
     title: 'ポスト投函できるお花の定期便おすすめ比較｜不在でも安心｜flowerデリ',
     description: '「届く日に不在だったらどうしよう...」そんな心配は不要です。 ポスト投函対応の花のサブスクなら、不在でも郵便ポストにお花が届きます。 人気5サービスのポスト投函対応状況を徹底比較しました。',
     url: "/compare/post-delivery/",

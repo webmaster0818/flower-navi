@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: '送料無料のお花の定期便3選総額で比較【2026年】｜flowerデリ',
   description: '花のサブスクは送料が意外と高く、年間で1万円以上の差がつくことも。 送料無料で利用できるサービスを総額ベースで徹底比較します。',
   alternates: { canonical: "/compare/souryou-muryou/" },
-  openGraph: {
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
     title: '送料無料のお花の定期便3選総額で比較【2026年】｜flowerデリ',
     description: '花のサブスクは送料が意外と高く、年間で1万円以上の差がつくことも。 送料無料で利用できるサービスを総額ベースで徹底比較します。',
     url: "/compare/souryou-muryou/",

@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: '仏壇に供える仏花の選び方・お手入れガイド｜定期便おすすめ3選【2026年最新】｜flowerデリ',
   description: '仏壇に供える仏花に向く花・避ける花の選び方と、長持ちさせるお手入れ方法を解説。あわせて、忙しい毎日でも新鮮なお花を仏壇に飾れる「仏花の定期便」から、仏花に適したサービスを厳選してご紹介します。',
   alternates: { canonical: "/guides/butsudan/" },
-  openGraph: {
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
     title: '仏壇に供える仏花の選び方・お手入れガイド｜定期便おすすめ3選【2026年最新】｜flowerデリ',
     description: '仏壇に供える仏花に向く花・避ける花の選び方と、長持ちさせるお手入れ方法を解説。あわせて、忙しい毎日でも新鮮なお花を仏壇に飾れる「仏花の定期便」から、仏花に適したサービスを厳選してご紹介します。',
     url: "/guides/butsudan/",

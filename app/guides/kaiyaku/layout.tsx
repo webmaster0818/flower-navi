@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: '花サブスク解約方法まとめ｜各社の解約手順と注意点を徹底解説｜flowerデリ',
   description: '花のサブスクをやめたいけど「解約方法がわからない」「違約金がかかるの？」と不安に思っていませんか。 この記事では、人気5サービスの解約方法・手順・注意点をわかりやすくまとめました。',
   alternates: { canonical: "/guides/kaiyaku/" },
-  openGraph: {
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
     title: '花サブスク解約方法まとめ｜各社の解約手順と注意点を徹底解説｜flowerデリ',
     description: '花のサブスクをやめたいけど「解約方法がわからない」「違約金がかかるの？」と不安に思っていませんか。 この記事では、人気5サービスの解約方法・手順・注意点をわかりやすくまとめました。',
     url: "/guides/kaiyaku/",

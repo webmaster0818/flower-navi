@@ -193,6 +193,20 @@ export default async function UseCasePage({ params }: Props) {
             </ul>
           </section>
 
+          {/* Siblings */}
+          <section className="mb-12 bg-white border border-[#E8E0D8] rounded-xl p-5">
+            <h2 className="text-base font-bold text-[#333] mb-4">ほかのシーン別ガイド</h2>
+            <ul className="space-y-2">
+              {useCases.filter((x) => x.slug !== u.slug).map((x) => (
+                <li key={x.slug}>
+                  <Link href={`/use-cases/${x.slug}/`} className="text-sm text-[#4A7C59] hover:underline">
+                    → {x.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+
           <div className="text-center mb-8">
             <Link href="/" className="inline-block bg-[#4A7C59] text-white font-bold px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors">
               全サービス比較表へ

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "flowerデリは、お花の定期便（花のサブスク）人気5社を料金・送料・届き方・花の本数で徹底比較。bloomee・medelu・AND PLANTS・hanamekuなど、あなたにぴったりのサービスが見つかる診断付き。",
   alternates: { canonical: "/" },
-  openGraph: {
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
     title: "花のサブスク比較【2026年最新】お花の定期便おすすめ5選を送料込み料金で徹底比較｜flowerデリ",
     description: "お花の定期便5社を料金・送料・花の本数で徹底比較。あなたにぴったりが見つかる診断付き。",
     type: "website",
