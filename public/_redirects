@@ -7,3 +7,12 @@
 /service-guides/and-plants-kuchikomi /services/and-plants/ 301
 /service-guides/hanameku-kuchikomi/ /services/hanameku/ 301
 /service-guides/hanameku-kuchikomi /services/hanameku/ 301
+# 2026-10-15 未提携4社の口コミガイドも /services/<slug>/ へ統合
+/service-guides/tasuhana-kuchikomi/ /services/tasuhana/ 301
+/service-guides/tasuhana-kuchikomi /services/tasuhana/ 301
+/service-guides/lifft-kuchikomi/ /services/lifft/ 301
+/service-guides/lifft-kuchikomi /services/lifft/ 301
+/service-guides/hitohana-kuchikomi/ /services/hitohana/ 301
+/service-guides/hitohana-kuchikomi /services/hitohana/ 301
+/service-guides/nihon-sogo-engei-kuchikomi/ /services/nihon-sogo-engei/ 301
+/service-guides/nihon-sogo-engei-kuchikomi /services/nihon-sogo-engei/ 301

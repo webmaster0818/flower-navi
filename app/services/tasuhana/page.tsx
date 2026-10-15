@@ -1,601 +1,138 @@
-"use client";
+import ServiceProfilePage, { type ServiceProfile } from "@/app/components/ServiceProfilePage";
 
-import { useState } from "react";
-import Header from "@/app/components/Header";
+// 2026-10-15: /service-guides/tasuhana-kuchikomi/ を統合（301）。料金・条件は同日に公式サイト（tasuhana.com）で確認。
+// 旧ページの「528円・回数縛りなし・5日前締切」は公式と矛盾していたため全面修正。出典のない口コミ・星評価は載せない。
+const V = "2026年10月15日";
+const SRC = "+hana（タスハナ）公式サイト トップページ・よくあるご質問";
 
-/* ─── FAQ Data ─── */
-const faqItems = [
-  {
-    q: "タスハナ（+hana）の料金はいくらですか？",
-    a: "タスハナには2つのプランがあります。「+act for flowers」は1回528円（税込）で花が3本届きます。「+live for flowers」は1回770円（税込）で花が5本届きます。いずれも送料330円が別途かかります。配送頻度は隔週（2週間に1回）です。",
+const p: ServiceProfile = {
+  slug: "tasuhana",
+  name: "タスハナ（+hana）",
+  shortName: "タスハナ",
+  officialUrl: "https://tasuhana.com/",
+  officialLabel: "tasuhana.com",
+  verifiedAt: V,
+  datePublished: "2026-05-23T00:00:00+09:00",
+  dateModified: "2026-10-15T00:00:00+09:00",
+  headline: "タスハナ（+hana）の口コミ・評判・料金プラン",
+  heroKicker: `花のサブスク個別レビュー｜${V}更新`,
+  h1: ["タスハナ（+hana）の口コミ・評判", "料金660円〜・5回縛り・解約条件を公式確認"],
+  heroLead:
+    "タスハナ（+hana）は、規格外などで行き場を失いかけた国産のロスフラワーをポストに届ける花の定期便です。料金・最低出荷回数・解約の締切・口コミの傾向を、2026年10月15日に公式サイトで確認した情報でまとめています。",
+  heroStats: [
+    { label: "最安プラン", value: "660円＋送料330円" },
+    { label: "最低出荷回数", value: "5回" },
+    { label: "受け取り", value: "ポスト投函" },
+    { label: "解約・スキップ締切", value: "次回配送日の10日前" },
+  ],
+  verdict: [
+    <><strong>規格外・試作品種など行き場を失いかけた国産の花（ロスフラワー）</strong>を、市場から直送でポストに届ける定期便です。</>,
+    <>料金は1回660円（+act）・1,100円（+live）・1,430円（+feel）、いずれも税込で<strong>送料330円が別途</strong>かかります（最安で1回990円）。</>,
+    <><strong>5回以上の出荷が前提</strong>で、5回未満の解約は原則不可。解約は5回目の出荷完了後、次回配送日の10日前までにマイページから。</>,
+    <>北海道・九州の一部・沖縄・離島など、ゆうパケットで都内から3日以上かかる地域には届きません。配送日の指定もできません。</>,
+  ],
+  overviewTitle: "タスハナ（+hana）とは？",
+  overview: [
+    "タスハナ（+hana）は、株式会社It（イット・大阪府東大阪市）が運営する花の定期便です。色や形が揃っていない、試作品種であるといった理由で行き場を失いかけた国産の花を市場で選び、ゆうパケットでポストに届けます。",
+    "公式サイトでは、花を飾ることが花農家さんの支援やフラワーロスの削減につながる仕組みとして紹介されています。届く花の種類や色は選べず、季節に合わせたおまかせです。",
+  ],
+  basicInfo: [
+    ["運営会社", "株式会社It（イット）"],
+    ["公式サイト", <a key="o" href="https://tasuhana.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] hover:underline">tasuhana.com</a>],
+    ["届き方", "ゆうパケット（日本郵便）でポスト投函。箱は横20×縦30×厚さ2.8cm"],
+    ["お届け間隔", "14日（原則隔週・月2回）または28日（月1回）"],
+    ["支払い方法", "クレジットカード（VISA・Mastercard・ダイナース・JCB）"],
+    ["最低出荷回数", "5回（5回未満の解約は原則不可）"],
+  ],
+  pricing: {
+    title: "タスハナの料金プラン",
+    intro: "公式サイトに掲載されている定期便の料金は次のとおりです（税込・2026年10月15日確認）。どのプランも送料330円が1回ごとに別途かかります。",
+    columns: ["プラン", "1回あたり（税込）", "送料込みの1回", "内容（公式表記）"],
+    rows: [
+      ["+act for flowers", "660円", "990円", "花・葉物合わせて3品目・3本以上"],
+      ["+live for flowers", "1,100円", "1,430円", "花・葉物合わせて5品目・5本以上"],
+      ["+feel for flowers", "1,430円", "1,760円", "花・葉物合わせて7品目・7本以上"],
+    ],
+    notes: [
+      "公式サイトによると、2026年8月6日以降のお届け分から新価格（+act 660円・+live 1,100円）が適用されています。それ以前の料金を紹介している記事は古い情報です。",
+      "5回の出荷が前提のため、最低でも「送料込みの1回 × 5回」（+actなら4,950円）がかかります。",
+      "決済は初回が注文確定時、2回目以降は各配送予定日の9日前です。",
+      `出典：${SRC}（${V}確認）。`,
+    ],
   },
-  {
-    q: "タスハナの解約方法を教えてください。",
-    a: "タスハナの解約はマイページから手続きできます。回数縛りがないため、いつでも解約可能です。次回配送日の5日前までに手続きを完了すれば、次回以降の配送が停止されます。一時的にお届けを止めたい場合はスキップ機能も利用できます。",
+  reviews: {
+    title: "タスハナの口コミ・評判の傾向",
+    intro:
+      "公式サイトの「会員様の声」には、次のような声が掲載されています（事業者が選んで掲載したものです）。当サイトが独自に集めた口コミや星評価はありません。",
+    good: [
+      "ポストに届くので、子どもがいて出かけにくいときも受け取りやすい",
+      "自分では買わないような花が入っていて毎回楽しめる",
+      "ポスト投函なのにボリュームがあり、手入れをすると長持ちした",
+      "離れて暮らす家族に贈り、連絡を取るきっかけになった",
+    ],
+    bad: [
+      "小さな箱に入るため、届いたときは少しぺたんこになっている（公式掲載の声より）",
+      "花の種類・色は選べない（公式FAQ）",
+      "5回未満の解約は原則できない（公式に明記）",
+    ],
+    source: <>出典：<a href="https://tasuhana.com/" target="_blank" rel="noopener noreferrer nofollow" className="underline">+hana公式サイト「会員様の声」・よくあるご質問</a>（{V}確認）。当サイトは個人の体験談を創作・掲載しません。</>,
   },
-  {
-    q: "タスハナのお花はポスト投函ですか？",
-    a: "はい、タスハナはポスト投函に対応しています。専用のコンパクトなパッケージに入った状態で届くため、不在時でも受け取れます。ポストのサイズが投函口の幅4cm以上、奥行き15cm以上あれば問題なく届きます。",
+  pros: [
+    { title: "1回990円（送料込み）から始められる", text: "最安の+actプランは660円＋送料330円。宅配便型の定期便より1回あたりの負担は小さめです。" },
+    { title: "ポスト投函で不在でも受け取れる", text: "ゆうパケットで届き、切り花用ゼリーで保水されているため不在時も受け取れると公式に案内されています。" },
+    { title: "ロスフラワーの活用につながる", text: "規格外や試作品種など、行き場を失いかけた国産の花を届ける仕組みです。" },
+    { title: "傷んでいた場合の対応が明記されている", text: "傷んだ花が届いた場合は、出荷日から3日以内に画像を添えて連絡すると、返金または次回の増量で対応すると案内されています（交換はなし）。" },
+  ],
+  cons: [
+    { title: "5回の出荷が前提（実質5回縛り）", text: "出荷5回未満の解約は原則不可です（やむを得ない事情は個別相談）。スキップしても出荷回数は消化されません。" },
+    { title: "送料330円が毎回かかる", text: "表示価格とは別に送料一律330円がかかります。" },
+    { title: "配達できない地域がある", text: "北海道・九州の一部・沖縄・離島など、ゆうパケットで都内から3日以上かかる地域は対象外です（公式ページ内で表記に揺れがあるため、郵便番号で確認を）。" },
+    { title: "配送日・花の種類を選べない", text: "出荷日が限られているため配送日の指定はできず、花の種類・色も選べません。" },
+  ],
+  steps: [
+    { title: "配達エリアを確認する", text: "公式サイトの配送対象外地域一覧で、お届け先が対象か確認します。" },
+    { title: "プランとお届け間隔を選ぶ", text: "+act／+live／+feel から選び、14日（月2回）か28日（月1回）を選択します。" },
+    { title: "会員登録・カード登録", text: "新規会員登録をして、クレジットカードで初回分を決済します。" },
+    { title: "5回の出荷前提を確認しておく", text: "5回目の出荷完了メールの後に、マイページへ解約ボタンが表示される仕組みです。" },
+  ],
+  recommend: {
+    yes: ["ポスト投函で手軽に受け取りたい方", "1回1,000円前後で花のある暮らしを続けたい方", "ロスフラワーの活用に関心がある方", "5回（隔週なら約2か月半）は続けるつもりの方"],
+    no: ["1回だけ試してすぐやめたい方", "配送日を指定したい方", "北海道・九州・沖縄・離島にお住まいの方"],
   },
-  {
-    q: "タスハナの「サステナブル」とはどういう意味ですか？",
-    a: "タスハナは、花市場で流通基準に満たない「規格外の花」を積極的に活用しています。茎の長さや花の大きさが規格と少し異なるだけで廃棄されてしまう花を、品質には問題のない状態で届けることで、フラワーロス（花の廃棄）の削減に貢献しています。花を飾ることが環境配慮にもつながる、サステナブルな仕組みです。",
+  faq: [
+    { q: "タスハナ（+hana）の料金はいくらですか？", a: "+act for flowers 660円、+live for flowers 1,100円、+feel for flowers 1,430円（いずれも税込）で、別途送料330円が1回ごとにかかります（2026年10月15日 公式サイトで確認）。" },
+    { q: "タスハナに回数の縛りはありますか？", a: "あります。公式サイトに「5回以上の出荷を前提とした定期便」「出荷回数が5回未満でのご解約は、原則として承っておりません」と明記されています。やむを得ない事情がある場合は個別に相談できます。" },
+    { q: "タスハナの解約方法と締切は？", a: "5回目の「出荷完了のお知らせ」メールの後、マイページの定期購入情報に解約ボタンが表示されます。次回配送日の10日前までに手続きしてください。10日前を過ぎると次回分の注文が確定します。" },
+    { q: "スキップ（お休み）はできますか？", a: "次回配送日の10日前までにマイページで手続きできます。一度にスキップできるのは5回までで、スキップは出荷回数の消化には含まれません。" },
+    { q: "どこに届きますか？ ポスト投函ですか？", a: "日本郵便のゆうパケットでポストに届きます（箱は横20×縦30×厚さ2.8cm）。北海道・九州の一部・沖縄・離島など、都内から3日以上かかる地域には届きません。" },
+    { q: "タスハナの口コミ・評判は？", a: "公式サイトの「会員様の声」では、ポストに届く手軽さ、普段買わない花との出会い、ボリュームの多さなどが紹介されています。一方で、小さな箱のため少しぺたんこで届く、花の種類は選べない、5回未満は解約できないといった点は事前に把握しておきましょう。" },
+  ],
+  cancel: {
+    lead: "解約は5回目の出荷完了後から、次回配送日の10日前までにマイページで（公式FAQ）。",
+    steps: [
+      { title: "5回目の出荷完了メールを確認", text: "「5回目の出荷完了のお知らせ」メールの配信後に、解約ボタンが表示されます。" },
+      { title: "マイページで定期購入情報を開く", text: "マイページメニュー「定期購入情報一覧」から「詳細を見る」をクリックします。" },
+      { title: "「定期購入解約」ボタンを押す", text: "解約理由つきのボタンでも解約できます（理由の回答は任意）。" },
+      { title: "内容を確認して「解約する」", text: "次回配送日の10日前を過ぎると次回分が確定するため、余裕をもって手続きします。" },
+    ],
+    note: `※ ${V}に公式FAQで確認した手順です。最新の手順は+hana（タスハナ）公式サイトでご確認ください。`,
   },
-  {
-    q: "届く花の種類は選べますか？",
-    a: "タスハナでは届く花の種類を自分で選ぶことはできません。プロが旬の花を季節に合わせてセレクトしてお届けします。そのため、毎回異なる花との出会いを楽しめます。苦手な花やアレルギーがある場合は、カスタマーサポートに事前に相談することをおすすめします。",
-  },
-];
+  summaryTitle: "まとめ：タスハナは「5回続ける前提で、ポストで手軽に」受け取りたい方向け",
+  summary: [
+    "タスハナ（+hana）は、行き場を失いかけた国産の花をポストに届ける定期便です。1回660円＋送料330円から始められ、ポスト投函で受け取りの手間がかかりません。",
+    "一方で、5回の出荷が前提で5回未満の解約は原則できない点、送料が毎回かかる点、配達できない地域がある点は申し込み前に確認しておきましょう。",
+    "1回だけ試したい方や、縛りのない定期便を選びたい方は、比較ページで他のサービスもあわせて検討するのがおすすめです。",
+  ],
+  related: [
+    { href: "/vs/tasuhana-vs-medelu/", label: "タスハナ vs medelu 比較" },
+    { href: "/compare/post-delivery/", label: "ポスト投函の花のサブスク比較" },
+    { href: "/compare/cheap/", label: "安い花のサブスク比較" },
+    { href: "/service-guides/tasuhana-kaiyaku/", label: "タスハナの解約方法" },
+    { href: "/guides/beginner/", label: "花サブスク初心者ガイド" },
+    { href: "/services/medelu/", label: "medeluの口コミ・評判" },
+  ],
+};
 
-
-
-/* ─── Main Component ─── */
 export default function TasuhanaServicePage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  return (
-    <div className="flex flex-col min-h-screen">
-      {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"+hana（タスハナ）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"+hana（タスハナ）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/tasuhana/\"}" }} />
-      {/* CANCEL_FLOW_SCHEMA_v1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"+hana（タスハナ）の解約手順\",\"description\":\"+hana（タスハナ）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"タスハナ公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便管理」を開く\",\"text\":\"メニューから定期便管理画面に進む。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約する」を選択\",\"text\":\"解約リンクをクリック。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由を選択(任意)\",\"text\":\"フィードバックは任意で。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を確定\",\"text\":\"次回配送日の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知の確認\",\"text\":\"完了メールで確認。\"}]}" }} />
-      {/* JSONLD_INJECTED_v1 #0 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"+hana（タスハナ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/tasuhana/\"}]}" }} />
-      {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"+hana（タスハナ）の評判・口コミ・料金プラン\",\"description\":\"+hana（タスハナ）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/tasuhana/\"}}" }} />
-      {/* JSONLD_INJECTED_v1 #2 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"タスハナ（+hana）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナには2つのプランがあります。「+act for flowers」は1回528円（税込）で花が3本届きます。「+live for flowers」は1回770円（税込）で花が5本届きます。いずれも送料330円が別途かかります。配送頻度は隔週（2週間に1回）です。\"}},{\"@type\":\"Question\",\"name\":\"タスハナの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナの解約はマイページから手続きできます。回数縛りがないため、いつでも解約可能です。次回配送日の5日前までに手続きを完了すれば、次回以降の配送が停止されます。一時的にお届けを止めたい場合はスキップ機能も利用できます。\"}},{\"@type\":\"Question\",\"name\":\"タスハナのお花はポスト投函ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、タスハナはポスト投函に対応しています。専用のコンパクトなパッケージに入った状態で届くため、不在時でも受け取れます。ポストのサイズが投函口の幅4cm以上、奥行き15cm以上あれば問題なく届きます。\"}},{\"@type\":\"Question\",\"name\":\"タスハナの「サステナブル」とはどういう意味ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナは、花市場で流通基準に満たない「規格外の花」を積極的に活用しています。茎の長さや花の大きさが規格と少し異なるだけで廃棄されてしまう花を、品質には問題のない状態で届けることで、フラワーロス（花の廃棄）の削減に貢献しています。花を飾ることが環境配慮にもつながる、サステナブルな仕組みです。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"タスハナでは届く花の種類を自分で選ぶことはできません。プロが旬の花を季節に合わせてセレクトしてお届けします。そのため、毎回異なる花との出会いを楽しめます。苦手な花やアレルギーがある場合は、カスタマーサポートに事前に相談することをおすすめします。\"}}]}" }} />
-      <Header />
-
-      <title>タスハナ（+hana）の口コミ・評判【2026年最新】528円の花サブスクを検証</title>
-      <meta name="description" content="タスハナ（+hana）の口コミ・評判を徹底検証。528円から始められるサステナブルな花のサブスク。料金プランやメリット・デメリット、実際の利用者の声を紹介します。" />
-
-      <main className="flex-1">
-        {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
-          <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
-              <ol className="flex items-center gap-1.5 flex-wrap">
-                <li><a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a></li>
-                <li aria-hidden="true">/</li>
-                <li><span className="text-[#666]">サービス詳細</span></li>
-                <li aria-hidden="true">/</li>
-                <li><span className="text-[#333] font-medium">タスハナ（+hana）</span></li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-
-        {/* ─── Hero Section ─── */}
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
-          <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
-              サービス詳細レビュー
-            </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              タスハナ（+hana）の口コミ・評判<br className="hidden md:block" />
-              528円の花サブスクを検証【2026年最新】
-            </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              タスハナ（+hana）は528円から始められる、サステナブルな花のサブスクリプションサービスです。
-              規格外の花を活用したエコな仕組みと、業界最安クラスの価格設定が特徴。実際の口コミとともに検証します。
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">最安料金</p>
-                <p className="text-xl font-bold text-[#4A7C59]">528円/回</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">送料</p>
-                <p className="text-xl font-bold text-[#333]">330円</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">届き方</p>
-                <p className="text-xl font-bold text-[#4A7C59]">ポスト投函</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">回数縛り</p>
-                <p className="text-xl font-bold text-[#4A7C59]">なし</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
-          <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
-              <ol className="text-sm text-[#666] space-y-2">
-                <li><a href="#features" className="hover:text-[#4A7C59] transition-colors">1. タスハナの特徴・サービス概要</a></li>
-                <li><a href="#plans" className="hover:text-[#4A7C59] transition-colors">2. 料金プランと配送について</a></li>
-                <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">3. 口コミ・評判</a></li>
-                <li><a href="#merits-demerits" className="hover:text-[#4A7C59] transition-colors">4. メリット・デメリット</a></li>
-                <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">5. 始め方5ステップ</a></li>
-                <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">6. こんな方におすすめ</a></li>
-                <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">7. よくある質問</a></li>
-              </ol>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── Features ─── */}
-        <section id="features" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              タスハナの特徴・サービス概要
-            </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              タスハナ（+hana）は、<a href="https://tasuhana.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">公式サイト</a>で提供されている花の定期便サービスです。「花を足すことで、暮らしにプラスを」がコンセプト。市場で規格外とされた花を活用するサステナブルな仕組みが特徴で、環境に配慮しながら低価格でお花のある暮らしを実現できます。
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">サステナブルな花の活用</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  花市場では、茎の長さや花の大きさが規格と少し異なるだけで流通できず廃棄される花があります。タスハナはこうした「規格外の花」を積極的に活用。見た目や品質には全く問題のない花を、フラワーロス削減に貢献しながらお得な価格で届けています。
-                </p>
-              </div>
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">業界最安クラスの価格設定</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  最安プランは1回528円（税込）と、花のサブスク業界でもトップクラスの低価格です。送料330円を含めても1回あたり1,210円。月に2回届いても1,716円と、2,000円以下で花のある暮らしが楽しめます。初めての方でも気軽に始められる価格帯です。
-                </p>
-              </div>
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">ポスト投函で受け取り簡単</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  専用のコンパクトなパッケージでポスト投函されるため、不在時でも受け取れます。仕事で帰りが遅い方や、日中外出が多い方でも安心して利用できます。届いたらすぐに水切りをして花瓶に飾りましょう。
-                </p>
-              </div>
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">環境配慮へのこだわり</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  タスハナは花のパッケージにも環境配慮素材を採用しています。花を飾ることが自然と環境保護につながる仕組みで、SDGsに関心のある方からも支持されています。「花を楽しむ＝社会貢献」という新しい価値観を提案しています。
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── Plans ─── */}
-        <section id="plans" className="py-12 md:py-16 bg-[#F8F8F8]">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              料金プランと配送について
-            </h2>
-
-            <div className="space-y-4">
-              <div className="bg-white rounded-xl p-5 border-2 border-[#4A7C59]">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1">人気No.1</span>
-                  <h3 className="text-base font-bold text-[#333]">+act for flowers</h3>
-                </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">料金</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">528円/回</p>
-                  </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">花の本数</p>
-                    <p className="text-lg font-bold text-[#333]">3本</p>
-                  </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">送料</p>
-                    <p className="text-lg font-bold text-[#333]">330円</p>
-                  </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">1回合計</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">1,210円</p>
-                  </div>
-                </div>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  花のサブスクを最安で試したい方に最適なプラン。3本の花が隔週で届きます。小さな花瓶に飾るのにちょうど良い本数で、一人暮らしのお部屋にも無理なく取り入れられます。
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#999] text-white text-xs font-bold rounded-lg px-2.5 py-1">ボリュームUP</span>
-                  <h3 className="text-base font-bold text-[#333]">+live for flowers</h3>
-                </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">料金</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">770円/回</p>
-                  </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">花の本数</p>
-                    <p className="text-lg font-bold text-[#333]">5本</p>
-                  </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">送料</p>
-                    <p className="text-lg font-bold text-[#333]">330円</p>
-                  </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">1回合計</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">1,100円</p>
-                  </div>
-                </div>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  より華やかな花を楽しみたい方向けのプラン。5本の花が届くため、中程度の花瓶にボリュームのあるアレンジが楽しめます。1本あたりの単価は+actプランよりもさらにお得です。
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-6 bg-[#E8F0EB] rounded-xl p-5 border border-[#C8D8CE]">
-              <h3 className="text-sm font-bold text-[#333] mb-2">配送について</h3>
-              <ul className="text-sm text-[#666] space-y-1.5">
-                <li>・配送方法：ポスト投函（日本郵便）</li>
-                <li>・配送頻度：隔週（2週間に1回）</li>
-                <li>・送料：330円/回</li>
-                <li>・対応エリア：日本全国（一部離島を除く）</li>
-                <li>・スキップ：マイページからいつでも可能</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── User Reviews ─── */}
-        <section id="reviews" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              タスハナの口コミ・評判について
-            </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed">
-              当サイトは、出典を確認できない個人の口コミ（イニシャル・年代つきの体験談や星評価）は掲載しない方針です（2026年10月14日に旧掲載分を削除）。メリット・デメリットは公式サイトで確認できる仕組み・条件をもとに整理しています。実際の利用者の声は、公式サイトやSNSの投稿もあわせてご確認ください。
-            </p>
-          </div>
-        </section>
-
-        {/* ─── Merits & Demerits ─── */}
-        <section id="merits-demerits" className="py-12 md:py-16 bg-[#F8F8F8]">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              タスハナのメリット・デメリット
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C8D8CE]">
-                <h3 className="text-sm font-bold text-[#4A7C59] mb-3">メリット</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>業界最安クラスの528円/回</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>サステナブルな花の活用で環境に優しい</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>ポスト投函で不在でも受け取れる</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>回数縛りなしでいつでも解約OK</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>規格外でも品質は問題なし</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-[#FFF5F5] rounded-xl p-5 border border-[#F0D8D8]">
-                <h3 className="text-sm font-bold text-[#C4877A] mb-3">デメリット</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>花の種類を自分で選べない</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>最安プランは3本と本数が少なめ</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>送料330円が別途かかる</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>一部地域は配送対応外の場合あり</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>知名度が低くクチコミ情報が少ない</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── How to Start ─── */}
-        <section id="how-to-start" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              タスハナの始め方（申し込み手順）
-            </h2>
-            <div className="space-y-4">
-              {[
-                {
-                  step: "STEP 1",
-                  title: "公式サイトにアクセス",
-                  text: "タスハナの公式サイト（tasuhana.com）にアクセスし、「お花の定期便を始める」ボタンをクリックします。",
-                },
-                {
-                  step: "STEP 2",
-                  title: "プランを選択",
-                  text: "+act for flowers（528円・3本）または +live for flowers（770円・5本）のどちらかを選択します。迷ったら+actプランから始めるのがおすすめです。",
-                },
-                {
-                  step: "STEP 3",
-                  title: "お届け先情報を入力",
-                  text: "氏名、住所、電話番号などを入力します。ポスト投函のため、ポストのサイズ（投函口の幅4cm以上）を事前に確認しておきましょう。",
-                },
-                {
-                  step: "STEP 4",
-                  title: "支払い方法を登録",
-                  text: "クレジットカード情報を登録します。VISA、Mastercard、JCBなど主要ブランドに対応しています。",
-                },
-                {
-                  step: "STEP 5",
-                  title: "申し込み完了、お届けを待つ",
-                  text: "申し込み完了後、次の配送タイミングで花がポストに届きます。届いたらすぐにパッケージを開封し、水切りをしてから花瓶に飾りましょう。",
-                },
-              ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <div className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
-                    {item.step}
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ─── Recommend ─── */}
-        <section id="recommend" className="py-12 md:py-16 bg-[#F8F8F8]">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              タスハナはこんな方におすすめ
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#4A7C59] mb-3">おすすめな人</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>とにかく安く花のサブスクを試したい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>環境に配慮したサービスを選びたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>一人暮らしで少量の花を飾りたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>ポスト投函で手軽に受け取りたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>花のサブスク初心者で気軽に始めたい方</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#C4877A] mb-3">おすすめしない人</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>ボリュームのある華やかな花束がほしい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>花の種類を自分で細かく選びたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>送料込みで500円以下を求める方</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── FAQ ─── */}
-        <section id="faq" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              タスハナに関するよくある質問
-            </h2>
-            <div className="space-y-3">
-              {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
-                  <button
-                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
-                  >
-                    <span className="text-sm font-medium text-[#333] pr-4">
-                      Q. {item.q}
-                    </span>
-                    <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  {openFaq === i && (
-                    <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
-                        A. {item.a}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-                {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
-        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
-          <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              +hana（タスハナ）の解約手順【完全ガイド】
-            </h2>
-            <p className="text-sm text-[#666] mb-6">回数縛りなし。マイページから即解約可能。</p>
-            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">タスハナ公式サイトのマイページへ。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期便管理」を開く</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">メニューから定期便管理画面に進む。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「解約する」を選択</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">解約リンクをクリック。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">理由を選択(任意)</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">フィードバックは任意で。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">解約を確定</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">次回配送日の数日前までに完了。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">解約完了通知の確認</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">完了メールで確認。</p>
-                  </div>
-                </div>
-            </div>
-            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法は+hana（タスハナ）公式サイトでご確認ください。</p>
-          </div>
-        </section>
-
-        {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#F3EDE6]">
-          <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：タスハナは最安で花のサブスクを始めたい方に最適
-            </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              タスハナ（+hana）は、<strong>528円/回</strong>という業界最安クラスの価格で花のある暮らしを始められるサービスです。規格外の花を活用するサステナブルな仕組みで、花を楽しみながら環境にも貢献できます。
-            </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              送料330円を含めても1回1,210円からと非常にリーズナブル。回数縛りもなく、ポスト投函で手軽に受け取れるため、花のサブスクを初めて試す方にぴったりです。ボリュームを求める方は+liveプラン（5本・1,100円）も検討してみてください。
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a
-                href="https://tasuhana.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
-              >
-                タスハナ公式サイトはこちら
-              </a>
-              <a
-                href="/"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
-              >
-                他のサービスと比較する
-              </a>
-            </div>
-            <a
-              href="/"
-              className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
-            >
-              トップページに戻る
-            </a>
-          </div>
-        </section>
-
-        {/* 関連リンク（第二弾: 文脈内部リンク） */}
-        <section className="bg-[#FBF8F4] py-10">
-          <div className="max-w-5xl mx-auto px-4">
-            <h2 className="heading-serif text-2xl font-bold text-[#3D3632] mb-5">タスハナに関連する比較・ガイド</h2>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-              <a href="/vs/tasuhana-vs-medelu/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">タスハナ vs medelu 比較 →</a>
-              <a href="/compare/cheap/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">安い花のサブスク比較 →</a>
-              <a href="/compare/souryou-muryou/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">送料無料で比較 →</a>
-              <a href="/guides/beginner/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">花サブスク初心者ガイド →</a>
-              <a href="/guides/oshare/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">おしゃれな花サブスク →</a>
-              <a href="/services/bloomee/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomeeの口コミ・評判 →</a>
-              <a href="/services/medelu/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">medeluの口コミ・評判 →</a>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
-            <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
-              <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
-              </p>
-            </div>
-            <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
-              <a href="/" className="hover:text-white transition-colors">トップページ</a>
-              <a href="/#comparison" className="hover:text-white transition-colors">比較表</a>
-              <a href="/#reviews" className="hover:text-white transition-colors">サービス詳細</a>
-              <a href="/#faq" className="hover:text-white transition-colors">よくある質問</a>
-            </nav>
-          </div>
-          <div className="border-t border-gray-600 pt-6 text-center">
-            <p className="text-xs text-gray-500">
-              当サイトはアフィリエイトプログラムに参加しています。
-              リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
-            </p>
-            <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
-              <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>
-              <a href="/privacy-policy" className="hover:text-white transition-colors">プライバシーポリシー</a>
-              <a href="/content-policy" className="hover:text-white transition-colors">記事の制作ポリシー</a>
-            </div>
-            <p className="text-xs text-gray-500 mt-4">
-              &copy; 2026 flowerデリ All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
+  return <ServiceProfilePage p={p} />;
 }

@@ -1,584 +1,137 @@
-"use client";
+import ServiceProfilePage, { type ServiceProfile } from "@/app/components/ServiceProfilePage";
 
-import { useState } from "react";
-import Header from "@/app/components/Header";
+// 2026-10-15: /service-guides/lifft-kuchikomi/ を統合（301）。旧ガイドの「公式サイトで確認した基本情報（2026-06-12）」を
+// 同日に公式サイト（lifft.jp/pages/flowersubscription）で再確認して取り込み。
+// 旧ページの「クール便・6〜8本・マイページ解約・数日前締切・離島を除く全国」は公式と矛盾していたため修正。出典のない口コミ・星評価は載せない。
+const V = "2026年10月15日";
+const SRC = "LIFFT公式 お花の定期便ページ（料金・よくある質問）";
 
-/* ─── FAQ Data ─── */
-const faqItems = [
-  {
-    q: "LIFFT（リフト）の料金はいくらですか？",
-    a: "LIFFTの花束プランは1回3,300円（税込・送料無料）です。月に1回届くペースで、届く花は6〜8本のボリュームある花束です。季節限定でコーヒーと花のセットプランも提供されることがあります。いずれのプランも回数縛りなしで、いつでも解約可能です。",
+const p: ServiceProfile = {
+  slug: "lifft",
+  name: "LIFFT（リフト）",
+  shortName: "LIFFT",
+  officialUrl: "https://lifft.jp/pages/flowersubscription",
+  officialLabel: "lifft.jp",
+  verifiedAt: V,
+  datePublished: "2026-05-23T00:00:00+09:00",
+  dateModified: "2026-10-15T00:00:00+09:00",
+  headline: "LIFFT（リフト）の口コミ・評判・料金プラン",
+  heroKicker: `花のサブスク個別レビュー｜${V}更新`,
+  h1: ["LIFFT（リフト）お花の定期便の口コミ・評判", "料金3,300円/月・ライト1,480円・解約条件を公式確認"],
+  heroLead:
+    "LIFFT（リフト）は、生産者の農園から旬の花と読みもの「ジャーナル」を届けるお花の定期便です。料金・締切・解約方法・口コミの傾向を、2026年10月15日に公式サイトで確認した情報でまとめています。",
+  heroStats: [
+    { label: "スタンダード", value: "3,300円/月" },
+    { label: "ライト（2週・4週ごと）", value: "1,480円/回" },
+    { label: "継続期間の縛り", value: "なし" },
+    { label: "スキップ・解約締切", value: "毎月19日" },
+  ],
+  verdict: [
+    <><strong>生産者の農園から届く季節の花＋お花の読みもの「LIFFT Journal」</strong>が特徴の定期便。スタンダードはメインの花と季節の草花で合計9本前後。</>,
+    <>料金はスタンダード3,300円/月（税込）、花瓶セットは初月4,180円・翌月以降3,300円、ライトは1回1,480円（送料・税込）で2週か4週ごと。</>,
+    <><strong>継続期間の縛りはなし</strong>（公式に明記）。スキップ・解約は<strong>毎月19日までにメール（info@lifft.jp）</strong>で連絡する方式です。</>,
+    <>ヤマト宅急便でのお届けで、ポスト投函には非対応。沖縄・離島エリアへのお届けは現在行っていません。</>,
+  ],
+  overviewTitle: "LIFFT（リフト）とは？",
+  overview: [
+    "LIFFT（リフト）は、BOTANIC Inc.が運営する花と植物の通販サイトで、花束・観葉植物・花瓶などのほか「お花の定期便」を提供しています。",
+    "定期便は、届けるお花の最適な時期に合わせてその月の配送期間を決め、指定された配送日時に合わせて農園で採花する仕組みと公式に案内されています。切り花本来の長さのまま届けること、お手入れや飾り方のヒントを載せた「ジャーナル」が同梱されることも特徴です。",
+  ],
+  basicInfo: [
+    ["運営", "BOTANIC Inc."],
+    ["公式サイト", <a key="o" href="https://lifft.jp/pages/flowersubscription" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] hover:underline">lifft.jp（お花の定期便）</a>],
+    ["届き方", "ヤマト宅急便（ポスト投函なし。置き配・宅配ボックスは可）"],
+    ["お届けできない地域", "沖縄・離島エリア"],
+    ["申込締切", "毎月20日までの申込で翌月号から（決済は21日）"],
+    ["スキップ・解約", "毎月19日までにメール（info@lifft.jp）"],
+  ],
+  pricing: {
+    title: "LIFFT お花の定期便の料金プラン",
+    intro: "公式の定期便ページに掲載されている料金は次のとおりです（2026年10月15日確認）。",
+    columns: ["プラン", "料金（税込）", "お届け", "内容（公式表記）"],
+    rows: [
+      ["スタンダード", "3,300円/月", "毎月1回", "メインのお花と季節の草花 合計9本前後＋ジャーナル"],
+      ["花瓶セット", "初月4,180円・翌月以降3,300円", "毎月1回", "初回のみガラスの花瓶つき（2回目以降はスタンダードと同じ）"],
+      ["ライト", "1,480円/回（送料込）", "2週に1回／4週に1回", "お花＋ポストカードサイズのジャーナル"],
+    ],
+    notes: [
+      "スタンダードは毎月20日までの申込で翌月号からのお届け、決済は21日です。お届けは農園の採花状況によりますが、翌月21日までと案内されています。",
+      "配送日時は毎号メールで届くフォームから指定しますが、生産者の出荷状況により希望どおりにならない場合があると公式に記載されています。",
+      "ギフト用のチケット（1ヶ月3,850円・3ヶ月10,450円・6ヶ月20,350円、税込）もあります。",
+      `出典：${SRC}（${V}確認）。`,
+    ],
   },
-  {
-    q: "LIFFTの解約方法を教えてください。",
-    a: "LIFFTの解約はマイページから手続きできます。回数縛りがないため、いつでも好きなタイミングで解約可能です。次回配送日の数日前までに手続きを完了すれば、次回以降の配送が停止されます。一時的にお届けを止めたい場合はスキップ機能も利用できます。",
+  reviews: {
+    title: "LIFFTの口コミ・評判の傾向",
+    intro:
+      "LIFFTの公式定期便ページには、利用者の声（SNS投稿の紹介）が掲載されています。事業者が選んで掲載したものですが、内容の傾向は次のとおりです。当サイトが独自に集めた口コミや星評価はありません。",
+    good: [
+      "季節感のある花や、珍しい花・枝ものとの組み合わせが楽しい",
+      "切り花の長さがしっかりあり、いくつかの花瓶に分けて飾れる",
+      "同封のジャーナル（読みもの）も楽しみのひとつ",
+      "ポスト投函型より満足感がある、という声も",
+    ],
+    bad: [
+      "スキップ・解約はマイページではなくメールでの連絡（毎月19日締切）",
+      "配送日時は希望どおりにならない場合がある（公式FAQ）",
+      "ポスト投函には対応していない（公式FAQ）",
+    ],
+    source: <>出典：<a href="https://lifft.jp/pages/flowersubscription" target="_blank" rel="noopener noreferrer nofollow" className="underline">LIFFT公式 お花の定期便ページ</a>の利用者の声・よくある質問（{V}確認）。当サイトは個人の体験談を創作・掲載しません。</>,
   },
-  {
-    q: "LIFFTのお花はポスト投函ですか？",
-    a: "LIFFTのお花はポスト投函には対応しておらず、宅配便（クール便）での配送となります。花のボリュームが大きく、鮮度を保つためにクール便を採用しているためです。配達時間帯の指定が可能なので、在宅している時間帯を指定して受け取りましょう。",
+  pros: [
+    { title: "継続期間の縛りがない", text: "「LIFFT 定期便は継続期間等を設けておりません」と公式FAQに明記されています。" },
+    { title: "生産者の農園から届く季節の花", text: "配送日時に合わせて農園で採花し、切り花本来の長さのまま届けると案内されています。" },
+    { title: "お花の読みもの「ジャーナル」つき", text: "お花のケアや飾り方の記事、コラムなどを載せたジャーナルが同梱されます（ライトはポストカードサイズ）。" },
+    { title: "1回1,480円のライトプランもある", text: "2週に1回・4週に1回から選べ、送料込みの料金です。" },
+  ],
+  cons: [
+    { title: "スタンダードは月3,300円と高め", text: "ポスト投函型の定期便（medeluのMini 748円など）と比べると1回あたりの料金は高めです。" },
+    { title: "スキップ・解約はメールで19日まで", text: "毎月19日までに info@lifft.jp へメールで連絡する必要があります。過ぎると翌月号が届きます。" },
+    { title: "沖縄・離島には届かない", text: "沖縄離島エリアへのお届けは現在行っていないと公式に記載されています。" },
+    { title: "ポスト投函・日時の確約がない", text: "ヤマト宅急便でのお届けで、配送日時は生産者の出荷状況により希望どおりにならない場合があります。" },
+  ],
+  steps: [
+    { title: "公式の定期便ページを開く", text: "LIFFT公式サイト（lifft.jp）の「お花の定期便」ページを開きます。" },
+    { title: "プランを選ぶ", text: "スタンダード（月1回）、花瓶セット、ライト（2週・4週ごと）から選びます。" },
+    { title: "利用規約に同意して申し込む", text: "毎月20日までの申込で翌月号からのお届けになります。" },
+    { title: "配送日時を指定する", text: "毎号メールで届くフォームから配送日時・お届け先を指定します。" },
+  ],
+  recommend: {
+    yes: ["季節感のある花や枝もの・草花を楽しみたい方", "花の読みもの（ジャーナル）も楽しみたい方", "縛りなしで月1回のペースから始めたい方", "宅急便で受け取れる方"],
+    no: ["1回1,000円以下で始めたい方", "ポスト投函で受け取りたい方", "沖縄・離島にお住まいの方"],
   },
-  {
-    q: "LIFFT Journalとは何ですか？",
-    a: "LIFFT Journalは、お花と一緒に届く花の読み物（リーフレット）です。届いた花の種類や産地の紹介、花言葉、お手入れ方法、飾り方のヒントなどが掲載されています。花を飾るだけでなく、花について学ぶ楽しみも提供するLIFFT独自のサービスで、花のある暮らしをより深く楽しめます。",
+  faq: [
+    { q: "LIFFT（リフト）の定期便の料金はいくらですか？", a: "スタンダードは3,300円/月（税込）、花瓶セットは初月4,180円・翌月以降3,300円（税込）、ライトは1回1,480円（送料・税込）です（2026年10月15日 公式サイトで確認）。" },
+    { q: "LIFFTに回数の縛りはありますか？", a: "ありません。公式FAQに「LIFFT 定期便は継続期間等を設けておりません」と明記されており、いつでも解約を申請できます。" },
+    { q: "LIFFTの解約方法と締切は？", a: "毎月19日までにメール（info@lifft.jp）で解約希望を連絡します。19日を過ぎると翌月号は届く扱いになるため、早めに連絡しましょう。" },
+    { q: "スキップはできますか？", a: "できます。毎月19日までにメール（info@lifft.jp）でスキップ希望を連絡すると、翌月号がスキップになります。" },
+    { q: "LIFFTはポスト投函ですか？ どこに届きますか？", a: "ポスト投函には対応しておらず、ヤマト宅急便でお届けします（置き配・宅配ボックスは可）。沖縄・離島エリアへのお届けは現在行っていません。" },
+    { q: "LIFFTの口コミ・評判は？", a: "公式の定期便ページに掲載された利用者の声では、季節感や珍しい花の組み合わせ、切り花の長さ、ジャーナルへの評価が目立ちます。一方、料金は月3,300円と高めで、スキップ・解約はメール連絡（毎月19日締切）である点は把握しておきましょう。" },
+  ],
+  cancel: {
+    lead: "継続期間の縛りなし。毎月19日までにメール（info@lifft.jp）で連絡（公式FAQ）。",
+    steps: [
+      { title: "締切日を確認する", text: "解約・スキップの締切は毎月19日です。19日を過ぎると翌月号が届きます。" },
+      { title: "info@lifft.jp にメールする", text: "19日までに、定期便を解約したい旨をメールで連絡します（公式FAQ）。" },
+    ],
+    note: `※ ${V}に公式FAQで確認した手順です。最新の手順はLIFFT公式サイトでご確認ください。`,
   },
-  {
-    q: "LIFFTはどの地域に届けてもらえますか？",
-    a: "LIFFTは離島を除く日本全国に配送対応しています。クール便（ヤマト運輸）での配送のため、通常のヤマト運輸が届く地域であれば問題なく利用できます。ただし、一部地域では配達に通常より1日多くかかる場合があります。",
-  },
-];
+  summaryTitle: "まとめ：LIFFTは「季節の花とジャーナルを月1回じっくり楽しみたい」方向け",
+  summary: [
+    "LIFFT（リフト）のお花の定期便は、生産者の農園から届く季節の花とジャーナルが特徴です。継続期間の縛りはなく、スタンダードは月3,300円、気軽なライトは1回1,480円から選べます。",
+    "スキップ・解約はメールで毎月19日まで、お届けはヤマト宅急便（沖縄・離島は対象外）という点は申し込み前に確認しておきましょう。",
+    "安さやポスト投函を重視するなら、比較ページで他のサービスもあわせて検討するのがおすすめです。",
+  ],
+  related: [
+    { href: "/vs/and-plants-vs-lifft/", label: "AND PLANTS vs LIFFT 比較" },
+    { href: "/vs/lifft-vs-hitohana/", label: "LIFFT vs HitoHana 比較" },
+    { href: "/service-guides/lifft-kaiyaku/", label: "LIFFTの解約方法" },
+    { href: "/compare/cheap/", label: "安い花のサブスク比較" },
+    { href: "/guides/oshare/", label: "おしゃれな花サブスク" },
+    { href: "/services/and-plants/", label: "AND PLANTSの口コミ・評判" },
+  ],
+};
 
-
-
-/* ─── Main Component ─── */
 export default function LifftServicePage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  return (
-    <div className="flex flex-col min-h-screen">
-      {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"LIFFT（リフト）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"LIFFT（リフト）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/lifft/\"}" }} />
-      {/* CANCEL_FLOW_SCHEMA_v1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"LIFFT（リフト）の解約手順\",\"description\":\"LIFFT（リフト）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"LIFFT公式サイトのマイページへ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期購入の管理」を開く\",\"text\":\"メニューから定期購入管理画面へ。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期購入を解約」をクリック\",\"text\":\"スキップにするか解約にするか選択できます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由選択(任意)\",\"text\":\"アンケートに任意で回答。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"解約を最終確定\",\"text\":\"次回配送日の数日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"完了確認メール\",\"text\":\"LIFFTから解約完了通知が届きます。\"}]}" }} />
-      {/* JSONLD_INJECTED_v1 #0 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"LIFFT（リフト）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/lifft/\"}]}" }} />
-      {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"LIFFT（リフト）の評判・口コミ・料金プラン\",\"description\":\"LIFFT（リフト）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/lifft/\"}}" }} />
-      {/* JSONLD_INJECTED_v1 #2 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"LIFFT（リフト）の料金はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTの花束プランは1回3,300円（税込・送料無料）です。月に1回届くペースで、届く花は6〜8本のボリュームある花束です。季節限定でコーヒーと花のセットプランも提供されることがあります。いずれのプランも回数縛りなしで、いつでも解約可能です。\"}},{\"@type\":\"Question\",\"name\":\"LIFFTの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTの解約はマイページから手続きできます。回数縛りがないため、いつでも好きなタイミングで解約可能です。次回配送日の数日前までに手続きを完了すれば、次回以降の配送が停止されます。一時的にお届けを止めたい場合はスキップ機能も利用できます。\"}},{\"@type\":\"Question\",\"name\":\"LIFFTのお花はポスト投函ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTのお花はポスト投函には対応しておらず、宅配便（クール便）での配送となります。花のボリュームが大きく、鮮度を保つためにクール便を採用しているためです。配達時間帯の指定が可能なので、在宅している時間帯を指定して受け取りましょう。\"}},{\"@type\":\"Question\",\"name\":\"LIFFT Journalとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFT Journalは、お花と一緒に届く花の読み物（リーフレット）です。届いた花の種類や産地の紹介、花言葉、お手入れ方法、飾り方のヒントなどが掲載されています。花を飾るだけでなく、花について学ぶ楽しみも提供するLIFFT独自のサービスで、花のある暮らしをより深く楽しめます。\"}},{\"@type\":\"Question\",\"name\":\"LIFFTはどの地域に届けてもらえますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LIFFTは離島を除く日本全国に配送対応しています。クール便（ヤマト運輸）での配送のため、通常のヤマト運輸が届く地域であれば問題なく利用できます。ただし、一部地域では配達に通常より1日多くかかる場合があります。\"}}]}" }} />
-      <Header />
-
-      <title>LIFFT（リフト）の口コミ・評判は？料金3,300円〜と花の質を実際に検証【2026年最新】</title>
-      <meta name="description" content="LIFFT（リフト）の口コミ・評判を徹底検証。市場直送・クール便で届く鮮度抜群の花の定期便。3,300円/回の花束プランの実力や、メリット・デメリットを解説します。" />
-
-      <main className="flex-1">
-        {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
-          <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
-              <ol className="flex items-center gap-1.5 flex-wrap">
-                <li><a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a></li>
-                <li aria-hidden="true">/</li>
-                <li><span className="text-[#666]">サービス詳細</span></li>
-                <li aria-hidden="true">/</li>
-                <li><span className="text-[#333] font-medium">LIFFT（リフト）</span></li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-
-        {/* ─── Hero Section ─── */}
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
-          <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
-              サービス詳細レビュー
-            </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              LIFFT（リフト）の口コミ・評判<br className="hidden md:block" />
-              花の定期便の実力を検証【2026年最新】
-            </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              LIFFT（リフト）はBOTANIC株式会社が運営する花の定期便サービスです。
-              市場直送・クール便配送で鮮度にこだわった花が届きます。実際の口コミとともにその実力を検証します。
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">月額料金</p>
-                <p className="text-xl font-bold text-[#4A7C59]">3,300円/回</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">送料</p>
-                <p className="text-xl font-bold text-[#4A7C59]">無料</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">配送方法</p>
-                <p className="text-xl font-bold text-[#4A7C59]">クール便</p>
-              </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">回数縛り</p>
-                <p className="text-xl font-bold text-[#4A7C59]">なし</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
-          <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
-              <ol className="text-sm text-[#666] space-y-2">
-                <li><a href="#features" className="hover:text-[#4A7C59] transition-colors">1. LIFFTの特徴・サービス概要</a></li>
-                <li><a href="#plans" className="hover:text-[#4A7C59] transition-colors">2. 料金プランと配送について</a></li>
-                <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">3. 口コミ・評判</a></li>
-                <li><a href="#merits-demerits" className="hover:text-[#4A7C59] transition-colors">4. メリット・デメリット</a></li>
-                <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">5. 始め方5ステップ</a></li>
-                <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">6. こんな方におすすめ</a></li>
-                <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">7. よくある質問</a></li>
-              </ol>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── Features ─── */}
-        <section id="features" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              LIFFTの特徴・サービス概要
-            </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              LIFFT（リフト）は、BOTANIC株式会社（<a href="https://lifft.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">公式サイト</a>）が運営する花の定期便サービスです。「花のある暮らしを、もっと身近に」をコンセプトに、市場直送の鮮度の高い花を届けています。
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">市場直送・農家と直接取引</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  LIFFTは花の卸売市場や農家と直接取引し、中間マージンをカットしています。市場で仕入れた花をその日のうちに発送するため、花屋の店頭に並ぶ花よりも鮮度が高い状態で届きます。
-                </p>
-              </div>
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">クール便で鮮度キープ</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  全ての配送にヤマト運輸のクール便を使用しています。夏場でも温度管理された状態で届くため、「届いた花がしおれていた」というトラブルが極めて少ないのが特徴です。
-                </p>
-              </div>
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">LIFFT Journal付き</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  花と一緒に届く「LIFFT Journal」は、届いた花の種類・産地・花言葉・飾り方のヒントなどが掲載された読み物です。花を飾るだけでなく、花について学ぶ楽しみも提供しています。
-                </p>
-              </div>
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">おしゃれなパッケージ</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  シンプルでスタイリッシュなパッケージデザインで、開封する瞬間からワクワクできます。ギフトとしてもそのまま贈れるクオリティで、おしゃれな花生活を演出します。
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── Plans ─── */}
-        <section id="plans" className="py-12 md:py-16 bg-[#F8F8F8]">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              料金プランと配送について
-            </h2>
-
-            <div className="space-y-4">
-              <div className="bg-white rounded-xl p-5 border-2 border-[#4A7C59]">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1">メインプラン</span>
-                  <h3 className="text-base font-bold text-[#333]">花束プラン</h3>
-                </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">料金</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">3,300円/回</p>
-                  </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">花の本数</p>
-                    <p className="text-lg font-bold text-[#333]">6〜8本</p>
-                  </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">送料</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">無料</p>
-                  </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">配送頻度</p>
-                    <p className="text-lg font-bold text-[#333]">月1〜2回</p>
-                  </div>
-                </div>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  プロが厳選した旬の花が6〜8本のボリュームある花束で届きます。LIFFT Journal付き。クール便で配送されるため、年間を通じて安定した品質の花を楽しめます。
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#999] text-white text-xs font-bold rounded-lg px-2.5 py-1">季節限定</span>
-                  <h3 className="text-base font-bold text-[#333]">コーヒーと花プラン</h3>
-                </div>
-                <p className="text-sm text-[#666] leading-relaxed">
-                  季節限定で提供される特別プラン。厳選されたスペシャルティコーヒーと旬の花束がセットで届きます。花とコーヒーの両方を楽しみたい方や、ちょっと贅沢な休日を過ごしたい方に人気のプランです。提供時期や料金は公式サイトでご確認ください。
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-6 bg-[#E8F0EB] rounded-xl p-5 border border-[#C8D8CE]">
-              <h3 className="text-sm font-bold text-[#333] mb-2">配送について</h3>
-              <ul className="text-sm text-[#666] space-y-1.5">
-                <li>・配送方法：ヤマト運輸クール便（冷蔵）</li>
-                <li>・配送頻度：月1〜2回（プランによる）</li>
-                <li>・配達日時：時間帯指定可能</li>
-                <li>・対応エリア：離島を除く日本全国</li>
-                <li>・不在時：不在票からの再配達に対応</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── User Reviews ─── */}
-        <section id="reviews" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              LIFFTの口コミ・評判について
-            </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed">
-              当サイトは、出典を確認できない個人の口コミ（イニシャル・年代つきの体験談や星評価）は掲載しない方針です（2026年10月14日に旧掲載分を削除）。メリット・デメリットは公式サイトで確認できる仕組み・条件をもとに整理しています。実際の利用者の声は、公式サイトやSNSの投稿もあわせてご確認ください。
-            </p>
-          </div>
-        </section>
-
-        {/* ─── Merits & Demerits ─── */}
-        <section id="merits-demerits" className="py-12 md:py-16 bg-[#F8F8F8]">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              LIFFTのメリット・デメリット
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C8D8CE]">
-                <h3 className="text-sm font-bold text-[#4A7C59] mb-3">メリット</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>市場直送で鮮度が抜群に良い</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>クール便で年中安定した品質</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>LIFFT Journal付きで花を深く楽しめる</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>おしゃれなパッケージデザイン</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>回数縛りなしでいつでも解約OK</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>送料無料</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-[#FFF5F5] rounded-xl p-5 border border-[#F0D8D8]">
-                <h3 className="text-sm font-bold text-[#C4877A] mb-3">デメリット</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>3,300円/回とやや高価格帯</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>ポスト投函不可（宅配便のみ）</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>配送ペースが月1回とゆっくりめ</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>花の種類やスタイルの指定は不可</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── How to Start ─── */}
-        <section id="how-to-start" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              LIFFTの始め方（申し込み手順）
-            </h2>
-            <div className="space-y-4">
-              {[
-                {
-                  step: "STEP 1",
-                  title: "公式サイトにアクセス",
-                  text: "LIFFTの公式サイト（lifft.jp）にアクセスし、花の定期便ページを開きます。",
-                },
-                {
-                  step: "STEP 2",
-                  title: "プランを選択",
-                  text: "花束プラン（3,300円/回）を選択します。季節限定プランがある場合はそちらも確認しましょう。",
-                },
-                {
-                  step: "STEP 3",
-                  title: "配送頻度と届け先を設定",
-                  text: "配送頻度（月1回または月2回）と届け先住所を入力します。配達時間帯の指定も可能です。",
-                },
-                {
-                  step: "STEP 4",
-                  title: "支払い情報を登録",
-                  text: "クレジットカード情報を登録します。主要なクレジットカードブランドに対応しています。",
-                },
-                {
-                  step: "STEP 5",
-                  title: "申し込み完了、お届けを待つ",
-                  text: "申し込み完了後、次の配送日にクール便で花束が届きます。届いたらすぐに水切りをして花瓶に飾りましょう。LIFFT Journalも一緒に届くのでお楽しみに。",
-                },
-              ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <div className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
-                    {item.step}
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ─── Recommend ─── */}
-        <section id="recommend" className="py-12 md:py-16 bg-[#F8F8F8]">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              LIFFTはこんな方におすすめ
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#4A7C59] mb-3">おすすめな人</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>花の鮮度と品質を最重視する方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>花だけでなく花の知識も楽しみたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>月1回のペースでゆったり楽しみたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>おしゃれな暮らしにこだわる方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>在宅時間が確保でき直接受け取れる方</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#C4877A] mb-3">おすすめしない人</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>月1,000円以下で花のサブスクを始めたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>ポスト投函で手軽に受け取りたい方</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>毎週花が届くペースを希望する方</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ─── FAQ ─── */}
-        <section id="faq" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              LIFFTに関するよくある質問
-            </h2>
-            <div className="space-y-3">
-              {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
-                  <button
-                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
-                  >
-                    <span className="text-sm font-medium text-[#333] pr-4">
-                      Q. {item.q}
-                    </span>
-                    <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  {openFaq === i && (
-                    <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
-                        A. {item.a}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-                {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
-        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
-          <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              LIFFT（リフト）の解約手順【完全ガイド】
-            </h2>
-            <p className="text-sm text-[#666] mb-6">回数縛りなし。スキップ機能で一時停止も可能。</p>
-            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">LIFFT公式サイトのマイページへ。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期購入の管理」を開く</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">メニューから定期購入管理画面へ。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期購入を解約」をクリック</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">スキップにするか解約にするか選択できます。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">理由選択(任意)</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">アンケートに任意で回答。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">解約を最終確定</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">次回配送日の数日前までに完了。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">完了確認メール</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">LIFFTから解約完了通知が届きます。</p>
-                  </div>
-                </div>
-            </div>
-            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法はLIFFT（リフト）公式サイトでご確認ください。</p>
-          </div>
-        </section>
-
-        {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#F3EDE6]">
-          <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：LIFFTは品質重視派に最適な花の定期便
-            </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              LIFFT（リフト）は、市場直送・クール便配送による<strong>圧倒的な鮮度</strong>が最大の強みです。3,300円/回とやや高価格帯ですが、6〜8本のボリュームある花束にLIFFT Journalが付く内容を考えると、花好きな方には十分な価値があります。
-            </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              回数縛りなしでいつでも解約できるため、「一度試してみたい」という気軽な利用も可能です。花の鮮度と品質に妥協したくない方、花について深く知りたい方に自信を持っておすすめできるサービスです。
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a
-                href="https://lifft.jp/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
-              >
-                LIFFT公式サイトはこちら
-              </a>
-              <a
-                href="/"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
-              >
-                他のサービスと比較する
-              </a>
-            </div>
-            <a
-              href="/"
-              className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
-            >
-              トップページに戻る
-            </a>
-          </div>
-        </section>
-
-        {/* 関連リンク（第二弾: 文脈内部リンク） */}
-        <section className="bg-[#FBF8F4] py-10">
-          <div className="max-w-5xl mx-auto px-4">
-            <h2 className="heading-serif text-2xl font-bold text-[#3D3632] mb-5">LIFFTに関連する比較・ガイド</h2>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-              <a href="/vs/and-plants-vs-lifft/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">AND PLANTS vs LIFFT 比較 →</a>
-              <a href="/vs/lifft-vs-hitohana/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">LIFFT vs HitoHana 比較 →</a>
-              <a href="/compare/cheap/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">安い花のサブスク比較 →</a>
-              <a href="/compare/souryou-muryou/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">送料無料で比較 →</a>
-              <a href="/guides/beginner/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">花サブスク初心者ガイド →</a>
-              <a href="/guides/oshare/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">おしゃれな花サブスク →</a>
-              <a href="/services/bloomee/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomeeの口コミ・評判 →</a>
-              <a href="/services/medelu/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">medeluの口コミ・評判 →</a>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
-            <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
-              <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
-              </p>
-            </div>
-            <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
-              <a href="/" className="hover:text-white transition-colors">トップページ</a>
-              <a href="/#comparison" className="hover:text-white transition-colors">比較表</a>
-              <a href="/#reviews" className="hover:text-white transition-colors">サービス詳細</a>
-              <a href="/#faq" className="hover:text-white transition-colors">よくある質問</a>
-            </nav>
-          </div>
-          <div className="border-t border-gray-600 pt-6 text-center">
-            <p className="text-xs text-gray-500">
-              当サイトはアフィリエイトプログラムに参加しています。
-              リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
-            </p>
-            <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
-              <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>
-              <a href="/privacy-policy" className="hover:text-white transition-colors">プライバシーポリシー</a>
-              <a href="/content-policy" className="hover:text-white transition-colors">記事の制作ポリシー</a>
-            </div>
-            <p className="text-xs text-gray-500 mt-4">
-              &copy; 2026 flowerデリ All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
+  return <ServiceProfilePage p={p} />;
 }

@@ -7,7 +7,7 @@ const SITE_URL = "https://ohana-delivery.com";
 
 export const metadata: Metadata = {
   title: "サービス別の解約方法・口コミ完全ガイド｜flowerデリ",
-  description: "bloomee/medelu/AND PLANTS/LIFFT/HitoHana/タスハナ/ハナメク/Miraflora 8サービスの解約方法と口コミを徹底解説。",
+  description: "bloomee/medelu/AND PLANTS/LIFFT/HitoHana/タスハナ/ハナメク/日本総合園芸 8サービスの解約方法を解説。口コミ・評判は各サービスの詳細ページで出典つきでまとめています。",
   alternates: { canonical: "/service-guides/" },
 };
 
@@ -57,7 +57,7 @@ export default function ServiceGuidesIndexPage() {
             </h1>
             <p className="text-base text-[#666] leading-relaxed">
               サービスごとの解約方法と口コミの傾向をまとめています。申込み前の最終チェックにお使いください。
-              bloomee・medelu・AND PLANTS・ハナメクの口コミ・評判は、料金や解約条件とあわせて各サービスの詳細ページにまとめています。
+              各サービスの口コミ・評判は、料金や解約条件とあわせてサービス詳細ページにまとめています。
             </p>
           </header>
 
@@ -68,6 +68,10 @@ export default function ServiceGuidesIndexPage() {
               <li><Link href="/services/medelu/" className="text-[#4A7C59] underline">メデル（medelu）の口コミ・評判</Link></li>
               <li><Link href="/services/and-plants/" className="text-[#4A7C59] underline">アンドプランツ（AND PLANTS）の口コミ・評判</Link></li>
               <li><Link href="/services/hanameku/" className="text-[#4A7C59] underline">ハナメク（hanameku）の口コミ・評判</Link></li>
+              <li><Link href="/services/hitohana/" className="text-[#4A7C59] underline">ヒトハナ（hitohana）の口コミ・評判</Link></li>
+              <li><Link href="/services/lifft/" className="text-[#4A7C59] underline">LIFFT（リフト）の口コミ・評判</Link></li>
+              <li><Link href="/services/tasuhana/" className="text-[#4A7C59] underline">タスハナ（+hana）の口コミ・評判</Link></li>
+              <li><Link href="/services/nihon-sogo-engei/" className="text-[#4A7C59] underline">花の定期便（日本総合園芸）の口コミ・評判</Link></li>
             </ul>
           </section>
 

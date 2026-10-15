@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
 
+const title = "日本総合園芸「花の定期便」の口コミ・評判｜40以上のコース・料金・配達エリアを公式確認【2026年10月】｜flowerデリ";
+const description = "日本総合園芸の花の定期便を公式サイトで確認。40以上のコース、切り花は1回1,298円〜（自社配達便）、自社配達便は関西近郊・宅配便は対象地域のみ、中止は月単位でメール・電話。口コミ・評判の扱いとメリット・デメリットも解説。";
+
 export const metadata: Metadata = {
-  title: '花の定期便 by 日本総合園芸の口コミ・評判を徹底調査【2026年最新】｜flowerデリ',
-  description: '老舗園芸会社が運営する「花の定期便 by 日本総合園芸」。農家直送の新鮮なお花をプロのフローリストがアレンジ。 実際の利用者の口コミ・評判をもとに、料金プラン・メリット・デメリットを詳しく解説します。',
+  title,
+  description,
   alternates: { canonical: "/services/nihon-sogo-engei/" },
-  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
-    title: '花の定期便 by 日本総合園芸の口コミ・評判を徹底調査【2026年最新】｜flowerデリ',
-    description: '老舗園芸会社が運営する「花の定期便 by 日本総合園芸」。農家直送の新鮮なお花をプロのフローリストがアレンジ。 実際の利用者の口コミ・評判をもとに、料金プラン・メリット・デメリットを詳しく解説します。',
-    url: "/services/nihon-sogo-engei/",
-    type: "article",
-  },
-  twitter: { card: "summary_large_image", title: '花の定期便 by 日本総合園芸の口コミ・評判を徹底調査【2026年最新】｜flowerデリ', description: '老舗園芸会社が運営する「花の定期便 by 日本総合園芸」。農家直送の新鮮なお花をプロのフローリストがアレンジ。 実際の利用者の口コミ・評判をもとに、料金プラン・メリット・デメリットを詳しく解説します。' },
+  openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], title, description, url: "/services/nihon-sogo-engei/", type: "article" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function SegmentLayout({ children }: { children: React.ReactNode }) {
