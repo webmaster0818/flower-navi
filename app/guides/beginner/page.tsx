@@ -7,7 +7,7 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "花のサブスクは月額いくらから始められますか？",
-    a: "最安のサービスはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送なら月額約1,496円です。bloomeeの体験プランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。",
+    a: "最安のサービスはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送なら月額約1,496円です。bloomeeのお試しプランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。",
   },
   {
     q: "花のサブスクはどのくらいの頻度で届きますか？",
@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "届いたお花が傷んでいた場合はどうすればいいですか？",
-    a: "品質保証制度があるサービスを選べば安心です。bloomeeでは傷んだお花が届いた場合に再送対応を受けられます。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせ時にスムーズです。",
+    a: "品質保証制度があるサービスを選べば安心です。bloomeeの定期便は到着から2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記）。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせ時にスムーズです。",
   },
   {
     q: "花のサブスクは途中で解約できますか？",
@@ -126,7 +126,7 @@ export default function BeginnerGuidePage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"初心者向け 花のサブスクの選び方\",\"description\":\"初心者向け 花のサブスクの選び方 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/beginner/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月額いくらから始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安のサービスはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送なら月額約1,496円です。bloomeeの体験プランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初心者には隔週がおすすめです。届いたお花が枯れる頃に次が届くサイクルになるため、常にお花がある生活を無理なく続けられます。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"季節やお花の種類によりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていないのですが大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶がなくても問題ありません。コップやグラス、空き瓶、マグカップなど、水を入れられる容器であれば代用できます。100円ショップでもシンプルな花瓶が購入できます。サブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函は不在でも受け取れる手軽さが魅力です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、状態が良いまま届きやすいメリットがあります。初心者にはポスト投函が手軽でおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"品質保証制度があるサービスを選べば安心です。bloomeeでは傷んだお花が届いた場合に再送対応を受けられます。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせ時にスムーズです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。初めてで不安な方は回数縛りなしのサービスから始めるのが安心です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクでお花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的にお花の種類はおまかせです。プロの花屋やフローリストが季節のお花をセレクトして届けてくれるため、自分では選ばないようなお花との出会いを楽しめます。これが花のサブスクの大きな魅力の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月額いくらから始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安のサービスはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送なら月額約1,496円です。bloomeeのお試しプランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初心者には隔週がおすすめです。届いたお花が枯れる頃に次が届くサイクルになるため、常にお花がある生活を無理なく続けられます。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"季節やお花の種類によりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていないのですが大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶がなくても問題ありません。コップやグラス、空き瓶、マグカップなど、水を入れられる容器であれば代用できます。100円ショップでもシンプルな花瓶が購入できます。サブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函は不在でも受け取れる手軽さが魅力です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、状態が良いまま届きやすいメリットがあります。初心者にはポスト投函が手軽でおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"品質保証制度があるサービスを選べば安心です。bloomeeの定期便は到着から2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記）。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせ時にスムーズです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。初めてで不安な方は回数縛りなしのサービスから始めるのが安心です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクでお花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的にお花の種類はおまかせです。プロの花屋やフローリストが季節のお花をセレクトして届けてくれるため、自分では選ばないようなお花との出会いを楽しめます。これが花のサブスクの大きな魅力の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -380,13 +380,13 @@ export default function BeginnerGuidePage() {
               <div className="p-5">
                 <p className="text-sm text-[#666] leading-relaxed mb-5">
                   bloomeeは累計3,000万本以上のお届け実績を持つ、日本最大級の花のサブスクサービスです。
-                  知名度No.1で利用者が多いため、SNSでの口コミや飾り方の参考情報が豊富にあります。
-                  全国200店舗以上の提携花屋がアレンジを担当しており、届くたびに異なるテイストのお花を楽しめます。
+                  利用者のSNS投稿やレビュー記事が多く、飾り方の参考情報を探しやすいサービスです。
+                  季節の花が届くため、届くたびに違う花を楽しめます。お試し・グリーンプランはポストに半投函の形で届きます。
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
                   <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                    <p className="text-xs text-[#999] mb-1">体験プラン</p>
+                    <p className="text-xs text-[#999] mb-1">お試しプラン</p>
                     <p className="text-lg font-bold text-[#333]">980<span className="text-xs font-normal">円</span></p>
                   </div>
                   <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
@@ -399,7 +399,7 @@ export default function BeginnerGuidePage() {
                   </div>
                   <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
                     <p className="text-xs text-[#999] mb-1">花の本数</p>
-                    <p className="text-lg font-bold text-[#333]">3本以上</p>
+                    <p className="text-lg font-bold text-[#333]">4本以上</p>
                   </div>
                 </div>
 
@@ -418,18 +418,18 @@ export default function BeginnerGuidePage() {
                   </div>
                   <div className="flex">
                     <span className="text-[#999] w-28 shrink-0">品質保証</span>
-                    <span className="text-[#333]">あり（再送保証）</span>
+                    <span className="text-[#333]">あり（定期便は2週間以内の連絡で返金・交換）</span>
                   </div>
                 </div>
 
                 <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
                   <p className="text-sm font-bold text-[#4A7C59] mb-2">初心者におすすめの理由</p>
                   <ul className="text-sm text-[#666] space-y-1.5">
-                    <li>・ 知名度No.1で利用者数が多く、安心感がある</li>
-                    <li>・ 品質保証（再送保証）があり、傷んだ花が届いても対応してもらえる</li>
+                    <li>・ 花代980円から始められる</li>
+                    <li>・ 定期便は2週間以内の連絡で返金・交換の対象（公式・特定商取引法に基づく表記）</li>
                     <li>・ SNSに口コミが多く、飾り方の参考情報が豊富</li>
                     <li>・ ポスト投函対応で、不在でも受け取れる</li>
-                    <li>・ 全国200店舗以上の花屋が参加しており、多様なアレンジが届く</li>
+                    <li>・ 4回目以降は隔週への変更や、週単位のストップ・再開ができる</li>
                   </ul>
                 </div>
 

@@ -5,7 +5,7 @@ const CONFIRMED = "2026年7月24日";
 
 const plans = [
   { brand: "medelu（メデル）", href: "/services/medelu", plan: "Miniプラン 月748円（税込）・送料無料", point: "送料込みの実額が最安クラス。初めて・安く始めたい人の第一候補。" },
-  { brand: "bloomee（ブルーミー）", href: "/services/bloomee", plan: "体験プランあり（ポスト投函・少量から）", point: "ポスト投函で受け取りやすく、少量から気軽に。まず試すのに向く。" },
+  { brand: "bloomee（ブルーミー）", href: "/services/bloomee", plan: "お試しプランあり（ポスト投函・少量から）", point: "ポスト投函で受け取りやすく、少量から気軽に。まず試すのに向く。" },
   { brand: "hanameku（ハナメク）", href: "/services/hanameku", plan: "ライトプラン 1,210円/回〜（税込・送料別）", point: "セルフアレンジ型で1回あたりが手頃。ボリュームより手軽さ重視向け。" },
   { brand: "AND PLANTS（アンドプランツ）", href: "/services/and-plants", plan: "お試しプラン 1,480円〜（花・観葉植物）", point: "花に加え観葉植物も扱う。グリーンも一緒に検討したい人に。" },
 ];
@@ -13,7 +13,7 @@ const plans = [
 const faqItems = [
   {
     q: "花のサブスクを一番安く始める方法は？",
-    a: "送料込みの実額で見ると、medeluのMiniプラン（月748円・送料無料）が最安クラスです。安さ重視ならまずmedelu、ポスト投函で少量から試すならbloomeeの体験プランが始めやすい選択です。正確な料金・最新の特典は各社公式でご確認ください。",
+    a: "送料込みの実額で見ると、medeluのMiniプラン（月748円・送料無料）が最安クラスです。安さ重視ならまずmedelu、ポスト投函で少量から試すならbloomeeのお試しプランが始めやすい選択です。正確な料金・最新の特典は各社公式でご確認ください。",
   },
   {
     q: "初回無料やクーポンはありますか？",
@@ -71,7 +71,7 @@ export default function CampaignPage() {
               <p className="font-bold text-[#4A7C59] mb-3">結論：安さ重視ならmedelu、まず試すならbloomee</p>
               <ul className="space-y-2 text-sm text-[#555] leading-relaxed">
                 <li>・<strong>送料込みで最安クラス＝medelu Miniプラン（月748円・送料無料）</strong>。</li>
-                <li>・<strong>ポスト投函で少量から気軽に＝bloomeeの体験プラン</strong>。</li>
+                <li>・<strong>ポスト投函で少量から気軽に＝bloomeeのお試しプラン</strong>。</li>
                 <li>・時限の初回割引・クーポンは変動するため、<strong>各社公式（お申込みリンク）で最新をご確認ください</strong>（当ページは常設の最安・お試しプラン比較です）。</li>
               </ul>
             </div>
@@ -119,7 +119,7 @@ export default function CampaignPage() {
             <h2 className="text-lg md:text-xl font-bold text-[#333] mb-4">まずは安い・お試しプランから</h2>
             <div className="flex flex-wrap justify-center gap-3">
               <Link href="/services/medelu" className="bg-[#4A7C59] text-white font-bold px-6 py-3 rounded-lg text-sm hover:opacity-90 transition">medelu（748円・送料無料）</Link>
-              <Link href="/services/bloomee" className="bg-white border border-[#4A7C59] text-[#4A7C59] font-bold px-6 py-3 rounded-lg text-sm hover:bg-[#F3EDE6] transition">bloomee（体験プラン）</Link>
+              <Link href="/services/bloomee" className="bg-white border border-[#4A7C59] text-[#4A7C59] font-bold px-6 py-3 rounded-lg text-sm hover:bg-[#F3EDE6] transition">bloomee（お試しプラン）</Link>
               <Link href="/compare/ryokin/" className="bg-white border border-[#4A7C59] text-[#4A7C59] font-bold px-6 py-3 rounded-lg text-sm hover:bg-[#F3EDE6] transition">料金を総額で比較</Link>
             </div>
           </div>

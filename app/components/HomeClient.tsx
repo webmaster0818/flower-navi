@@ -28,189 +28,197 @@ const recommendationMap: Record<string, { name: string; reason: string }> = {
   bloomee: {
     name: "bloomee（ブルーミー）",
     reason:
-      "初心者でも始めやすく、ポスト投函で受け取りも簡単。SNSでも話題のサービスです。",
+      "花代980円から始められ、お試しプランはポスト投函で受け取りも簡単。最初の4回は受け取りが必要です。",
   },
   medelu: {
     name: "medelu（メデル）",
     reason:
-      "月額748円からと業界最安クラス。送料無料でコスパを重視する方に最適です。",
+      "Mini 748円（税込・送料込み）からと比較5社で最安。コスパを重視する方に向いています。",
   },
   andplants: {
     name: "AND PLANTS（アンドプランツ）",
     reason:
-      "おしゃれなアレンジが特徴。インテリアにこだわる方におすすめです。",
+      "送料込み1,980円〜で6〜8本からとボリュームがあり、いつでも解約できます。",
   },
   hananoteikibin: {
     name: "花の定期便（日本総合園芸）",
     reason:
-      "農家直送で鮮度抜群。本格的なお花を楽しみたい方に向いています。",
+      "40以上のコースから器や飾り方に合わせて選べます。関西近郊は自社配達便で届きます。",
   },
   hanameku: {
     name: "hanameku（ハナメク）",
     reason:
-      "市場直送で新鮮。回数縛りなしで気軽に始められます。",
+      "ライトは税込・送料込み1,210円でポスト投函。初回（1回目）は解約できない点に注意。",
   },
 };
 
-/* ─── Service Data ─── */
+/* ─── Service Data ───
+ * 2026-10-15: 料金・プラン名を各公式サイトの確認値（services.ts／各サービスページ）に合わせて全面修正。
+ * bloomee の旧プラン名（体験／レギュラー／リッチ）、出典の無い「会員数10万人」「提携花屋200店舗」、
+ * hanameku の終了プラン（スタンダード）・「回数縛りなし」（初回は解約不可）、日本総合園芸の旧料金を削除。 */
 const services = [
   {
     id: "bloomee",
+    href: "/services/bloomee/",
     name: "bloomee（ブルーミー）",
-    tagline: "SNSで話題の初心者向けサービス",
+    tagline: "ポスト投函で始めやすい定番サービス",
     image: "/images/service-bloomee.jpg",
     overview:
-      "bloomeeは、累計会員数10万人以上を誇る、日本最大級のお花の定期便サービスです。全国200店舗以上の提携花屋さんから届くお花は、季節感あふれるアレンジが魅力。届いたお花をSNSに投稿するユーザーも多く、インスタグラムでも話題のサービスです。ポスト投函で届くため、不在時でも受け取れる手軽さが初心者に支持されています。",
+      "bloomee（ブルーミー・旧ブルーミーライフ）は、ユーザーライク株式会社が運営するお花の定期便です。公式サイトでは「お花のお届け実績3,000万本以上（自社調べ）」と表記されています。お試しプラン・グリーンプランはポストに半投函の形で届くため、不在が多い人でも受け取れます。最初の4回は受け取りが必要で、送料が毎回別にかかる点は申込前に確認しておきましょう（2026年10月15日 公式確認）。",
     plans: [
-      { name: "体験プラン", price: "980円/回", flowers: "3本以上", delivery: "隔週" },
-      { name: "レギュラープラン", price: "1,580円/回", flowers: "4本以上", delivery: "隔週" },
-      { name: "リッチプラン", price: "2,980円/回", flowers: "8本以上", delivery: "隔週" },
+      { name: "お試しプラン", price: "980円＋送料385円/回", flowers: "4本以上（約18〜25cm）", delivery: "毎週（4回目以降は隔週も可）" },
+      { name: "グリーンプラン", price: "980円＋送料385円/回", flowers: "グリーン中心（約18〜25cm）", delivery: "毎週（4回目以降は隔週も可）" },
+      { name: "ベーシックプラン", price: "2,180円＋送料550円/回", flowers: "8本以上（約25〜30cm）", delivery: "毎週（4回目以降は隔週も可）" },
     ],
-    shipping: "385円",
-    deliveryMethod: "ポスト投函（リッチプランは手渡し）",
-    cancellation: "4回受け取り後に解約可能",
+    shipping: "別途385円（ベーシックは550円）",
+    deliveryMethod: "ポスト投函（お試し・グリーン）／手渡し（ベーシック）",
+    cancellation: "最初の4回は受け取りが必要（4回未満は途中解約料）",
     pros: [
-      "ポスト投函で不在でも受け取れる",
-      "全国200店舗以上の提携花屋から届く",
-      "品質保証制度あり（痛んでいたら再送）",
-      "SNS映えするアレンジ",
+      "お試し・グリーンはポスト投函で不在でも受け取れる",
+      "花代980円から始められる",
+      "4回目以降は隔週への変更や、週単位のストップ・再開ができる",
+      "定期便は2週間以内の連絡で返金・交換の対象（特商法）",
     ],
     cons: [
-      "送料が別途かかる（385円）",
-      "最低4回の受け取りが必要",
-      "花の種類は選べない",
+      "送料が毎回別にかかる（お試しは実質1,365円/回）",
+      "最初の4回は受け取りが必要",
+      "お試し・グリーンは日時指定ができない（水〜金曜着）",
     ],
     recommended: [
       "お花のサブスクが初めての方",
       "不在が多くポスト投函で受け取りたい方",
-      "SNS映えするお花が欲しい方",
+      "4回は続ける前提で始められる方",
     ],
   },
   {
     id: "medelu",
+    href: "/services/medelu/",
     name: "medelu（メデル）",
-    tagline: "コスパ最強、送料無料の実力派",
+    tagline: "送料込み748円〜のコスパ派",
     image: "/images/service-medelu.jpg",
     overview:
-      "medeluは、月額748円からという業界最安クラスの価格設定が魅力のお花の定期便です。送料無料なのも大きなポイント。お部屋の雰囲気に合わせて「ANYROOM」「MODERN」「NATURAL」の3コースから選べるのが特徴で、インテリアとの調和を意識したアレンジが届きます。コストを抑えながらも質の良いお花を楽しみたい方に最適なサービスです。",
+      "medelu（メデル）は、Mini 748円（税込・送料込み）から始められるお花の定期便です。部屋のテイストに合わせてANYROOM・NATURAL・MODERNのコースを選び、Mini〜Basicの4サイズから量を選べます。Mini・Liteはポスト投函で届きます（2026年10月14日 公式確認）。",
     plans: [
-      { name: "Miniコース", price: "748円/回", flowers: "3〜4本", delivery: "隔週" },
-      { name: "Liteコース", price: "1,330円/回", flowers: "5〜6本", delivery: "隔週" },
-      { name: "Basicコース", price: "2,330円/回", flowers: "6〜9本", delivery: "隔週" },
+      { name: "Mini", price: "748円/回", flowers: "3〜4本", delivery: "ポスト投函" },
+      { name: "Lite", price: "1,330円/回", flowers: "5〜6本", delivery: "ポスト投函" },
+      { name: "Lite+", price: "1,650円/回", flowers: "5〜7本", delivery: "宅配" },
+      { name: "Basic", price: "2,330円/回", flowers: "6〜9本", delivery: "宅配" },
     ],
-    shipping: "込み（Mini・Liteはポスト投函）",
-    deliveryMethod: "ポスト投函（Lite+・Basicは宅配便）",
-    cancellation: "回数縛りなし、いつでも解約可能",
+    shipping: "込み（北海道・東北のLite以上は遠隔地送料あり）",
+    deliveryMethod: "ポスト投函（Mini・Lite）／宅配（Lite+・Basic）",
+    cancellation: "最低回数の公式記載なし（決済日前日の木曜までに解約）",
     pros: [
-      "月額748円からと業界最安クラス",
-      "送料無料で追加費用なし",
-      "部屋の雰囲気に合わせた3コース",
-      "回数縛りなし、いつでも解約可能",
+      "Mini 748円（税込・送料込み）から始められる",
+      "部屋のテイストに合わせてコースを選べる",
+      "最低回数の公式記載なし。スキップは3回先まで",
+      "枯れていたら送料を含め全額返金（到着当日中に写真で申請）",
     ],
     cons: [
-      "対応エリアが限られる場合がある",
-      "Miniコースは花の本数が少なめ",
-      "知名度がbloomeeほど高くない",
+      "Miniは3〜4本と小ぶり",
+      "お届け日の指定ができない",
+      "品質保証は返金のみで交換はない",
     ],
     recommended: [
-      "とにかくコスパを重視する方",
-      "送料無料でお花を楽しみたい方",
+      "とにかく送料込みの安さを重視する方",
       "お部屋のインテリアに合うお花が欲しい方",
+      "回数の縛りを気にせず始めたい方",
     ],
   },
   {
     id: "andplants",
+    href: "/services/and-plants/",
     name: "AND PLANTS（アンドプランツ）",
-    tagline: "おしゃれ派向けのハイセンスな花",
+    tagline: "観葉植物ブランドが手がける花の定期便",
     image: "/images/service-andplants.jpg",
     overview:
-      "AND PLANTSは、おしゃれなインテリアグリーンや観葉植物で知られるブランドが手掛けるお花の定期便です。プロのフローリストが厳選したセンスの良いアレンジが特徴で、インテリアにこだわる方から高い支持を得ています。初回500円OFFのキャンペーンを実施しており、気軽にお試しできるのも魅力。3つのプランから選べ、ボリューム感のあるお花が届きます。",
+      "AND PLANTS（アンドプランツ）は、株式会社Domuzが運営する観葉植物の通販ブランドです。花の定期便は2026年5月から「AND FLOWER」ブランドで展開されています。送料込み1,980円〜の3サイズで、1週・2週・4週ごとから頻度を選べ、解約はいつでも可能です（2026年10月14日 公式確認）。",
     plans: [
-      { name: "Standard", price: "1,980円/回", flowers: "6〜8本", delivery: "隔週/月1回" },
-      { name: "Medium", price: "2,980円/回", flowers: "8〜10本", delivery: "隔週/月1回" },
-      { name: "Large", price: "4,980円/回", flowers: "14〜18本", delivery: "隔週/月1回" },
+      { name: "Standard", price: "1,980円/回", flowers: "6〜8本", delivery: "1週・2週・4週ごと" },
+      { name: "Medium", price: "2,980円/回", flowers: "8〜10本", delivery: "1週・2週・4週ごと" },
+      { name: "Large", price: "4,980円/回", flowers: "14〜18本", delivery: "1週・2週・4週ごと" },
     ],
-    shipping: "無料",
-    deliveryMethod: "宅配便（手渡し）",
-    cancellation: "回数縛りなし",
+    shipping: "込み（クール便オプションは別料金）",
+    deliveryMethod: "宅配便（金〜日曜から選択）",
+    cancellation: "最低回数の記載なし・いつでも解約可",
     pros: [
-      "プロのフローリストによるおしゃれなアレンジ",
-      "初回500円OFFキャンペーン",
-      "花のボリュームが多い",
-      "送料無料",
+      "送料込み1,980円〜で追加費用が分かりやすい",
+      "定期便ページに初回500円オフクーポンの案内あり",
+      "1週・2週・4週ごとから頻度を選べる",
+      "解約はいつでも可能",
     ],
     cons: [
-      "価格帯がやや高め",
-      "ポスト投函に非対応",
-      "在宅での受け取りが必要",
+      "bloomee・medeluの最安プランより高め",
+      "ポスト投函には非対応",
+      "生花の交換申請は到着後1日以内",
     ],
     recommended: [
-      "おしゃれなアレンジを楽しみたい方",
-      "インテリアにこだわる方",
-      "ボリュームのあるお花が欲しい方",
+      "ボリュームのあるお花を飾りたい方",
+      "縛りなしで始めたい方",
+      "週末に受け取りたい方",
     ],
   },
   {
     id: "hananoteikibin",
+    href: "/services/nihon-sogo-engei/",
     name: "花の定期便（日本総合園芸）",
-    tagline: "農家直送で鮮度を追求",
+    tagline: "40以上のコースから選べる",
     image: "/images/service-hananoteikibin.jpg",
     overview:
-      "日本総合園芸が運営する「花の定期便」は、生産者から直接届く鮮度重視のサービスです。市場を通さず農家から直送されるため、通常の花屋で購入するよりも新鮮な状態のお花が届きます。季節の旬の花を中心に、本格的なアレンジメントが楽しめるのが特徴。花持ちの良さを重視する方や、本格的なお花を自宅で楽しみたい方におすすめです。",
+      "日本総合園芸の「花の定期便」は、切り花・水盤生け・アレンジメント・鉢花・観葉植物など「40コース以上」（公式表記）から選べる定期便です。関西近郊は専属スタッフの自社配達便、そのほかの対象エリアはヤマト運輸の宅配便で届き、料金はお届け方法によって異なります（2026年10月15日 公式確認）。",
     plans: [
-      { name: "レギュラー", price: "1,500円〜/回", flowers: "5〜7本", delivery: "隔週/月1回" },
-      { name: "プレミアム", price: "3,000円〜/回", flowers: "10本以上", delivery: "隔週/月1回" },
+      { name: "A. 花瓶・水盤バラエティー", price: "1,298円／2,530円/回", flowers: "公式で確認", delivery: "月3回（自社配達便／宅配便）" },
+      { name: "B. 花瓶スターター", price: "1,540円／2,750円/回", flowers: "公式で確認", delivery: "月3回（自社配達便／宅配便）" },
+      { name: "W. 花瓶・水盤月2回", price: "1,947円／3,300円/回", flowers: "公式で確認", delivery: "月2回（自社配達便／宅配便）" },
     ],
-    shipping: "地域により異なる",
-    deliveryMethod: "宅配便（手渡し）",
-    cancellation: "コースにより異なる",
+    shipping: "お届け方法で料金が異なる",
+    deliveryMethod: "自社配達便（関西近郊）／宅配便（ヤマト運輸）",
+    cancellation: "月単位でメール・電話で中止（最低回数の記載は確認できず）",
     pros: [
-      "農家直送で鮮度が抜群",
-      "花持ちが良い",
-      "季節の旬の花が届く",
-      "本格的なアレンジメント",
+      "40以上のコースから飾り方に合わせて選べる",
+      "関西近郊は自社配達便で、留守でもバケツに入れて届けてくれる",
+      "届く花に手引書が同封される",
     ],
     cons: [
-      "送料が地域により異なる",
-      "ポスト投函に非対応",
-      "プランの選択肢が少なめ",
+      "北海道・東北・沖縄などは配送対象外",
+      "宅配便は同じコースでも1回あたりが高い",
+      "ポスト投函には非対応",
     ],
     recommended: [
-      "花の鮮度にこだわる方",
-      "長く花を楽しみたい方",
-      "本格的なアレンジメントが欲しい方",
+      "関西近郊にお住まいの方",
+      "生け方や器に合わせて本格的に楽しみたい方",
+      "鉢花や観葉植物の定期便も検討したい方",
     ],
   },
   {
     id: "hanameku",
+    href: "/services/hanameku/",
     name: "hanameku（ハナメク）",
-    tagline: "市場直送、回数縛りなしで気軽に",
+    tagline: "税込・送料込み1,210円でポストに届く",
     image: "/images/service-hanameku.jpg",
     overview:
-      "hanamekuは、市場直送にこだわった新鮮なお花が届くサービスです。回数の縛りがないため、いつでも自由にスキップや解約ができる気軽さが特徴。お花のプロが市場で直接仕入れた旬の花をそのまま届けるため、鮮度と品質のバランスが優れています。試しに1回だけ注文してみたいという方にもおすすめです。",
+      "hanameku（ハナメク）は、and factory株式会社が運営するお花の定期便です。ライトプランは税込・送料込み1,210円でポスト投函、セルフアレンジは宅配で届きます。最低回数の記載はありませんが、初回（定期1回目）は解約できず、解約・スキップの締切はお届け予定日の10日前です（2026年10月14日 公式確認）。",
     plans: [
-      { name: "ライトプラン", price: "1,210円/回", flowers: "3本", delivery: "隔週" },
-      { name: "セルフアレンジプラン", price: "1,958円/回", flowers: "7〜10本", delivery: "隔週/月1回" },
-      { name: "スタンダードプラン", price: "2,680円/回", flowers: "花瓶付き", delivery: "隔週/月1回" },
+      { name: "ライトプラン", price: "1,210円/回", flowers: "3〜4本", delivery: "ポスト投函" },
+      { name: "セルフアレンジ S", price: "1,958円/回", flowers: "1〜8本", delivery: "宅配" },
+      { name: "セルフアレンジ L", price: "3,278円/回", flowers: "1〜12本", delivery: "宅配" },
     ],
-    shipping: "無料（一部プラン）",
-    deliveryMethod: "ポスト投函/宅配便",
-    cancellation: "回数縛りなし、いつでも解約可能",
+    shipping: "込み（セルフアレンジは地域別の追加送料あり）",
+    deliveryMethod: "ポスト投函（ライト）／宅配（セルフアレンジ）",
+    cancellation: "初回は解約不可・締切はお届け予定日の10日前",
     pros: [
-      "市場直送で新鮮",
-      "回数縛りなし、いつでも解約OK",
-      "花瓶付きプランあり",
-      "スキップも自由",
+      "ライトは税込・送料込み1,210円で追加費用なし",
+      "ライトはポスト投函で受け取りが楽",
+      "傷んでいたら到着日を含め3日以内の申請で返金または代替品",
     ],
     cons: [
-      "プランによって送料が異なる",
-      "地域によっては届かない場合がある",
-      "アレンジのテイストは選べない",
+      "初回（1回目）は解約できない",
+      "解約・スキップの締切が10日前と早い",
+      "セルフアレンジは沖縄・離島に配送不可",
     ],
     recommended: [
-      "まず試しに始めてみたい方",
-      "縛りなしで気軽に楽しみたい方",
-      "新鮮なお花にこだわる方",
+      "送料込みの定額で始めたい方",
+      "ポストで受け取りたい方",
+      "自分で生けるのも楽しみたい方（セルフアレンジ）",
     ],
   },
 ];
@@ -227,15 +235,15 @@ const faqItems = [
   },
   {
     q: "ポスト投函と手渡し、どちらがいいですか？",
-    a: "不在が多い方にはポスト投函がおすすめです。ポスト投函はbloomee（体験・レギュラープラン）やmedelu（Liteコース）などで対応しています。ただし、ポスト投函は花のボリュームに限りがあるため、大きなアレンジを楽しみたい方は手渡しのサービスを選びましょう。",
+    a: "不在が多い方にはポスト投函がおすすめです。ポスト投函はbloomee（お試し・グリーンプラン）、medelu（Mini・Lite）、hanameku（ライトプラン）などで対応しています。ただし、ポスト投函は花のボリュームに限りがあるため、大きなアレンジを楽しみたい方は手渡しのサービスを選びましょう。",
   },
   {
     q: "お花はどれくらい持ちますか？",
-    a: "一般的に、届いたお花は適切なお手入れをすれば1週間〜10日程度楽しめます。農家直送の花の定期便（日本総合園芸）やhanamekuは鮮度が高いため、より長く楽しめる傾向があります。付属の栄養剤を使い、水をこまめに替えることがポイントです。",
+    a: "一般的に、届いたお花は適切なお手入れをすれば1週間〜10日程度楽しめます。季節や花の種類によって差があるため、付属の栄養剤を使い、水をこまめに替えることがポイントです。",
   },
   {
     q: "解約は簡単にできますか？",
-    a: "サービスによって異なります。medelu、AND PLANTS、hanamekuは回数縛りなしでいつでも解約可能です。bloomeeは最低4回の受け取りが必要です。解約方法はいずれもマイページからオンラインで手続きできます。",
+    a: "サービスによって異なります。medeluとAND PLANTSは最低回数の記載がなく、hanamekuは初回（1回目）のみ解約できません。bloomeeは最初の4回の受け取りが必要で、4回未満の解約は途中解約料がかかります。締切はサービスごとに異なるため、各サービスの解約ガイドで確認してください。",
   },
   {
     q: "届くお花の種類は選べますか？",
@@ -243,7 +251,7 @@ const faqItems = [
   },
   {
     q: "お花が傷んで届いた場合はどうなりますか？",
-    a: "多くのサービスで品質保証制度があります。例えばbloomeeでは、届いたお花が傷んでいた場合、写真を送ることで無料で再送してもらえます。各サービスの保証制度は申し込み前に確認しておきましょう。",
+    a: "多くのサービスで品質保証制度があります。例えばbloomeeの定期便は到着から2週間以内の連絡で返金・交換の対象（公式・特定商取引法に基づく表記）、medeluは到着当日中に写真を送れば全額返金です。各サービスの保証制度は申し込み前に確認しておきましょう。",
   },
   {
     q: "一人暮らしでも利用できますか？",
@@ -251,7 +259,7 @@ const faqItems = [
   },
   {
     q: "プレゼントとして送ることはできますか？",
-    a: "一部のサービスではギフト対応が可能です。AND PLANTSはギフト向けの豪華なプランがあり、bloomeeもギフトチケットを販売しています。プレゼント目的の場合は、手渡し配送のサービスを選ぶと安心です。",
+    a: "一部のサービスではギフト対応が可能です。bloomeeは申込時に「プレゼントとして送る」を選ぶと自分以外の住所に届けられ、AND PLANTSの定期便も配送先を相手の住所にすれば贈れます（ラッピング・メッセージカードは不可）。いずれも2026年10月15日に公式サイトで確認しました。",
   },
   {
     q: "お花の定期便を選ぶ際に最も重要なポイントは？",
@@ -265,21 +273,21 @@ const purposes = [
     title: "一人暮らしの方に",
     icon: "🏠",
     description: "不在でも受け取れるポスト投函対応で、少量から始められるサービスがおすすめ。",
-    services: ["bloomee 体験プラン（980円+送料385円）", "medelu Miniコース（748円・送料込み）"],
+    services: ["bloomee お試しプラン（980円+送料385円）", "medelu Miniコース（748円・送料込み）"],
     best: "medelu",
   },
   {
     title: "プレゼント用に",
     icon: "🎁",
     description: "ボリュームのある華やかなアレンジで、ギフト対応しているサービスが最適。",
-    services: ["AND PLANTS Mプラン以上（2,980円〜）", "bloomee リッチプラン（2,980円）"],
+    services: ["AND PLANTS Mプラン以上（2,980円〜）", "bloomee ベーシックプラン（2,180円+送料550円）"],
     best: "AND PLANTS",
   },
   {
     title: "おしゃれにこだわる方に",
     icon: "✨",
     description: "プロのフローリストによるセンスの良いアレンジが届くサービスを選びましょう。",
-    services: ["AND PLANTS（全プラン）", "medelu MODERNコース"],
+    services: ["AND PLANTS（全プラン）", "medelu MODERNコース（748円〜）"],
     best: "AND PLANTS",
   },
   {
@@ -290,11 +298,11 @@ const purposes = [
     best: "medelu",
   },
   {
-    title: "鮮度重視の方に",
+    title: "傷んで届くのが心配な方に",
     icon: "🌿",
-    description: "農家直送や市場直送で、より新鮮な状態のお花が届くサービスがおすすめ。",
-    services: ["花の定期便（農家直送）", "hanameku（市場直送）"],
-    best: "花の定期便",
+    description: "届いた花の傷みに対応する保証の条件と、手元に届くまでの配送方法で選びましょう。",
+    services: ["medelu（枯れていたら送料込みで全額返金）", "花の定期便（日本総合園芸・関西近郊は自社配達便）"],
+    best: "medelu",
   },
 ];
 
@@ -402,11 +410,11 @@ export default function HomeClient() {
 
               <div className="border-t border-[#E8E0D8] my-3" />
               <p className="text-xs text-[#9B8F87] font-medium tracking-wider mb-2">サービス詳細</p>
-              <a href="/services/bloomee" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">bloomee（ブルーミー）</a>
-              <a href="/services/medelu" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">medelu（メデル）</a>
-              <a href="/services/and-plants" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">AND PLANTS</a>
-              <a href="/services/nihon-sogo-engei" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">花の定期便（日本総合園芸）</a>
-              <a href="/services/hanameku" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">hanameku（ハナメク）</a>
+              <a href="/services/bloomee/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">bloomee（ブルーミー）</a>
+              <a href="/services/medelu/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">medelu（メデル）</a>
+              <a href="/services/and-plants/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">AND PLANTS</a>
+              <a href="/services/nihon-sogo-engei/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">花の定期便（日本総合園芸）</a>
+              <a href="/services/hanameku/" className="block py-2.5 px-3 text-[#3D3632] hover:bg-[#FBF8F4] rounded-lg transition">hanameku（ハナメク）</a>
 
               <div className="border-t border-[#E8E0D8] my-3" />
               <p className="text-xs text-[#9B8F87] font-medium tracking-wider mb-2">ガイド</p>
@@ -664,7 +672,7 @@ export default function HomeClient() {
                 <tbody>
                   {COMPARE_ROWS.map((s) => (
                     <tr key={s.id}>
-                      <td className="font-medium text-[#3D3632]">{shortName(s.name)}</td>
+                      <td className="font-medium text-[#3D3632]"><a href={s.servicePath} className="underline decoration-[#E8E0D8] underline-offset-4 hover:text-[#C4877A]">{shortName(s.name)}</a></td>
                       <td className={s.cheapest.price === COMPARE_ROWS[0].cheapest.price ? "text-[#C4877A] font-medium" : ""}>
                         {s.cheapest.price.toLocaleString("ja-JP")}円/回
                       </td>
@@ -815,6 +823,13 @@ export default function HomeClient() {
                           ))}
                         </ul>
                       </div>
+
+                      <a
+                        href={service.href}
+                        className="block text-center bg-white border border-[#C4877A] text-[#C4877A] font-bold px-6 py-3 rounded-xl text-sm hover:bg-[#F9F2F0] transition"
+                      >
+                        {service.name}の口コミ・評判と料金の詳細を見る →
+                      </a>
                     </div>
                   </div>
                 </article>

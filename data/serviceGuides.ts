@@ -828,6 +828,9 @@ export const MERGED_KUCHIKOMI_GUIDES: Record<string, string> = {
   "lifft-kuchikomi": "/services/lifft/",
   "hitohana-kuchikomi": "/services/hitohana/",
   "nihon-sogo-engei-kuchikomi": "/services/nihon-sogo-engei/",
+  // 2026-10-15: medelu の解約ガイドは 6月から「クロール済み・インデックス未登録」のまま /services/medelu/ の解約セクションと内容が重複
+  // （かつ「違約金なし」「引き止めなし」「Premium Plan 1,198円」など公式で確認できない記載を含む）ため、受け皿へ統合（301）。
+  "medelu-kaiyaku": "/services/medelu/",
 };
 
 const allGuides: ServiceGuide[] = [

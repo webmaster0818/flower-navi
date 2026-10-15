@@ -42,6 +42,22 @@ const faqItems = [
     a: "公式サイトでは毎週のお届けが基本で、4回目のお届け以降は隔週に変更できると案内されています。",
   },
   {
+    q: "ブルーミーの「体験プラン」「レギュラープラン」はもうないのですか？",
+    a: "2026年10月15日に公式サイトで確認したところ、プランはお試しプラン・グリーンプラン・ベーシックプランの3つで、「体験プラン」「レギュラープラン」の表記はありませんでした。ネット上の古い記事に出てくるこれらは旧プラン名です（2024年3月に体験プランがお試しプランに変わったと説明しているレビュー記事もあります）。料金は現行プランの値で比べてください。",
+  },
+  {
+    q: "旅行などで受け取れない週はどうすればいいですか？",
+    a: "公式FAQでは、特定の週だけお届けをスキップできる機能があると案内されています。また決済は配送のある週ごとのため、4回目以降は週単位でお届けのストップ・再開ができます（2026年10月15日確認）。",
+  },
+  {
+    q: "ブルーミーの支払い方法は？",
+    a: "クレジットカード（VISA・Mastercard・AMEX・JCB）またはAmazon Payのみです。銀行振込・コンビニ払い・キャリア決済・電子マネー・デビットカードは使えません（2026年10月15日 公式FAQで確認）。",
+  },
+  {
+    q: "ブルーミーの定期便をプレゼントとして贈れますか？",
+    a: "贈れます。お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、自分以外の住所に届けられ、送り主の名前を登録できます（2026年10月15日 公式FAQで確認）。最初の4回の受け取りが必要な点は贈る場合も同じです。",
+  },
+  {
     q: "bloomeeの運営会社はどこですか？",
     a: "ユーザーライク株式会社（東京都渋谷区道玄坂）です。旧サービス名は「Bloomee LIFE（ブルーミーライフ）」で、公式サイトでは「お花のお届け実績3,000万本以上（自社調べ）」と表記されています。",
   },
@@ -62,7 +78,7 @@ export default function BloomeePage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/bloomee/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-15T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -401,7 +417,7 @@ export default function BloomeePage() {
                 {
                   step: "STEP 5",
                   title: "支払い方法を登録",
-                  text: "支払い方法を登録します。利用できる支払い方法は申込画面で確認してください。",
+                  text: "支払い方法はクレジットカード（VISA・Mastercard・AMEX・JCB）またはAmazon Payのみです（銀行振込・コンビニ払い・キャリア決済は不可。2026年10月15日 公式FAQで確認）。",
                 },
                 {
                   step: "STEP 6",

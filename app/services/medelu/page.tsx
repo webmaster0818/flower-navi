@@ -66,7 +66,7 @@ export default function MedeluPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/medelu/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"description\":\"medelu（メデル）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/medelu/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"description\":\"medelu（メデル）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-15T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/medelu/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -577,7 +577,15 @@ export default function MedeluPage() {
                   </div>
                 </div>
             </div>
-            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法はmedelu（メデル）公式サイトでご確認ください。</p>
+            <div className="bg-white rounded-xl border border-[#E0D5C8] p-5 mt-6 text-sm text-[#555] leading-relaxed">
+              <h3 className="font-bold text-[#333] mb-2">解約前に知っておきたい3つのポイント（公式ヘルプセンターで確認：2026年7月3日・10月14日）</h3>
+              <ul className="space-y-1.5">
+                <li>・「解約（定期便をやめる）」と「退会（会員情報の削除）」は別の手続きです。定期便を止めるだけなら解約、アカウントも消すなら退会まで行います。</li>
+                <li>・締切は決済日（お届け週の前週金曜日）の前日・木曜日。決済後に解約すると、決済済みの1回が最後に届きます。</li>
+                <li>・しばらく休みたいだけなら、スキップ（3回先まで指定可）や休止・再開の機能もあります。</li>
+              </ul>
+            </div>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 画面の名称は変わることがあります。最新の手順はmedelu（メデル）公式サイトのヘルプセンターでご確認ください。</p>
           </div>
         </section>
 
@@ -620,7 +628,7 @@ export default function MedeluPage() {
           <div className="max-w-5xl mx-auto px-4">
             <h2 className="heading-serif text-2xl font-bold text-[#3D3632] mb-5">medeluに関連する比較・ガイド</h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-              <a href="/service-guides/medelu-kaiyaku/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">medeluの解約方法（締切・注意点） →</a>
+              <a href="/guides/kaiyaku/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">花のサブスク解約方法まとめ →</a>
               <a href="/vs/medelu-vs-and-plants/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">medelu vs AND PLANTS 比較 →</a>
               <a href="/vs/hitohana-vs-medelu/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">HitoHana vs medelu 比較 →</a>
               <a href="/vs/tasuhana-vs-medelu/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">タスハナ vs medelu 比較 →</a>

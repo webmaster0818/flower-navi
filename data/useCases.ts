@@ -33,7 +33,7 @@ export const useCases: UseCase[] = [
       { service: "AND PLANTS ギフトプラン", reason: "デザイン性◎、3ヶ月コースで継続的に楽しんでもらえる", priceFrom: 5940 },
       { service: "LIFFT 半年ギフト", reason: "市場直送の本物。長期間続くプレゼントとして印象的", priceFrom: 19800 },
       { service: "HitoHana ギフト", reason: "ボリューム調整可能、1回ギフトから定期ギフトまで柔軟", priceFrom: 3300 },
-      { service: "bloomee 体験ギフト", reason: "1ヶ月お試しから。気軽に贈れる入門編", priceFrom: 2940 },
+      { service: "bloomee お試しプラン", reason: "花代980円＋送料385円。「プレゼントとして送る」で相手の住所に届けられる（最初の4回は受け取りが必要）", priceFrom: 980 },
     ],
     selectionTips: [
       { tip: "予算は3,000円〜30,000円が相場", detail: "1ヶ月コースで3,000〜6,000円、3ヶ月で1〜2万円、半年で2〜3万円が一般的。" },
@@ -51,7 +51,7 @@ export const useCases: UseCase[] = [
       { q: "誕生日プレゼントとして花のサブスクを贈るのは喜ばれる？", a: "実利用者調査では『普通のブーケより嬉しい』が68%。理由は『毎週花が届く特別感』『一度きりじゃない継続性』が好まれているからです。" },
       { q: "サプライズで贈る場合、相手の住所をどう確認する？", a: "全サービスとも贈り主と受取人の登録が別々に可能。事前にさりげなく住所確認をするか、共通の友人経由で確認するのが一般的。" },
       { q: "誕生日当日に確実に届けるには？", a: "AND PLANTS・LIFFT・HitoHanaは配送日指定可能。申込時に誕生日の前日〜当日を指定。bloomeeは『次回○曜日』形式のため、申込タイミングを逆算する必要あり。" },
-      { q: "予算1万円以下でおすすめは？", a: "AND PLANTS ギフト1ヶ月(5,940円)、HitoHana 1ヶ月(3,300円〜)、bloomee 体験プラン3ヶ月(8,820円)が候補。" },
+      { q: "予算1万円以下でおすすめは？", a: "AND PLANTS ギフト1ヶ月(5,940円)、HitoHana 1ヶ月(3,300円〜)、bloomee お試しプランの最初の4回(5,460円・送料込み)が候補。" },
       { q: "花以外も一緒に贈りたい場合は？", a: "AND PLANTSは観葉植物・花瓶・ケアグッズなどとの併用ギフトが充実。LIFFTは花のみ。HitoHanaは菓子・お酒との同梱は不可。" },
     ],
     relatedPaths: [
@@ -115,7 +115,7 @@ export const useCases: UseCase[] = [
     scenes: [
       { situation: "新築一戸建てへの新築祝い", how: "ボリュームのあるHitoHana Lサイズ 3ヶ月コース。広い空間を彩る。" },
       { situation: "賃貸マンションへの引っ越し祝い", how: "コンパクトなmedelu・タスハナ 1ヶ月コース。新生活の負担にならない。" },
-      { situation: "実家から独立した若い世代", how: "bloomee 体験プラン+花瓶セット。花瓶もない若者には花瓶同梱が親切。" },
+      { situation: "実家から独立した若い世代", how: "bloomee お試しプラン+花瓶セット。花瓶もない若者には花瓶同梱が親切。" },
       { situation: "二世帯住宅への新築祝い", how: "AND PLANTS 半年コース。両世代で楽しめるデザイン。" },
     ],
     recommended: [
@@ -162,7 +162,7 @@ export const useCases: UseCase[] = [
       { situation: "手術後の回復期", how: "Mirafloraの小ぶりプラン。負担にならない量で。" },
     ],
     recommended: [
-      { service: "bloomee 体験ギフト", reason: "気軽な少量プラン、回復期の負担にならない", priceFrom: 2940 },
+      { service: "bloomee お試しプラン", reason: "4本以上の小ぶりな花束がポストに届き、回復期の負担にならない", priceFrom: 980 },
       { service: "AND PLANTS 1ヶ月", reason: "デザイン性◎、回復期を彩る", priceFrom: 5940 },
       { service: "Miraflora", reason: "落ち着いた色合い、シニア・療養期向け", priceFrom: 2200 },
     ],
@@ -246,14 +246,14 @@ export const useCases: UseCase[] = [
     intro:
       "出産祝いに花のサブスクを贈ることは、産後の慌ただしい時期に『毎週小さな喜び』を届けることになります。ベビーグッズが集まりがちな出産祝いの中で、ママ自身を労う花のギフトは差別化されたサプライズになります。ただし新生児・産後ママへの配慮として、花の種類選び・量・配送タイミングに注意が必要です。",
     scenes: [
-      { situation: "産後1ヶ月の里帰り中", how: "里帰り先の実家にbloomee 体験プランを送る。ママと祖母両方が楽しめる。" },
+      { situation: "産後1ヶ月の里帰り中", how: "里帰り先の実家にbloomee お試しプランを送る。ママと祖母両方が楽しめる。" },
       { situation: "産後2-3ヶ月の自宅育児期", how: "ポスト投函型のmedelu Mini 3ヶ月コース。受け取りの負担なし。" },
       { situation: "第2子・第3子の出産祝い", how: "上の子と一緒に楽しめるAND PLANTS。家族の話題に。" },
-      { situation: "里帰りなしの自宅出産", how: "1日1配達のbloomee + 花瓶セット。新生児の世話で外出困難なママに。" },
+      { situation: "里帰りなしの自宅出産", how: "ポスト投函のbloomee（お試しプラン）+ 手持ちの小さな花瓶。新生児の世話で外出困難なママに。" },
     ],
     recommended: [
       { service: "medelu Mini", reason: "ポスト投函・少量・低価格、産後ママの負担最小", priceFrom: 748 },
-      { service: "bloomee 体験プラン", reason: "気軽に始められる、新生児期にも安心", priceFrom: 2940 },
+      { service: "bloomee お試しプラン", reason: "ポスト投函で受け取れ、新生児期にも負担が少ない", priceFrom: 980 },
       { service: "AND PLANTS 1ヶ月", reason: "おしゃれな空間でママの気分転換に", priceFrom: 5940 },
     ],
     selectionTips: [

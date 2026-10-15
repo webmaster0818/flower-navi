@@ -32,7 +32,7 @@ export const personas: Persona[] = [
     recommended: [
       { service: "medelu (メデル)", reason: "1回748円〜・送料無料・回数縛りなし。Miniプラン は一人暮らしの予算に最適", priceFrom: 748 },
       { service: "タスハナ (+hana)", reason: "規格外の花を活用する社会貢献型。880円〜とコスパも良好。ポスト投函", priceFrom: 880 },
-      { service: "bloomee (ブルーミー)", reason: "提携花屋から地域密着の花が届く。体験プラン980円から開始可", priceFrom: 980 },
+      { service: "bloomee (ブルーミー)", reason: "季節の花がポストに届く。お試しプラン980円（送料385円別）から開始可", priceFrom: 980 },
       { service: "AND PLANTS", reason: "おしゃれデザイン重視ならココ。1人暮らしの女性のSNS映え◎", priceFrom: 1980 },
     ],
     howToChoose: [
@@ -45,7 +45,7 @@ export const personas: Persona[] = [
     realCases: [
       { author: "30代・東京・SE職", situation: "リモートワーク中心、ペット可賃貸の1LDK", outcome: "medelu Miniを6ヶ月継続。デスク横に花を置くようになり気分転換になっている" },
       { author: "20代・大阪・営業職", situation: "ワンルーム7畳、平日は夜遅め", outcome: "タスハナのポスト投函プランで継続。月1,500円程度で『花のある暮らし』が定着" },
-      { author: "40代・名古屋・看護師", situation: "シフト勤務で受け取り時間が読めない", outcome: "bloomeeのポスト投函体験プランから開始、現在は2年継続中" },
+      { author: "40代・名古屋・看護師", situation: "シフト勤務で受け取り時間が読めない", outcome: "bloomeeのポスト投函お試しプランから開始、現在は2年継続中" },
     ],
     faq: [
       { q: "一人暮らしで月1,000円以内で楽しめる花のサブスクは？", a: "medelu Mini Plan(748円/隔週)とタスハナ ポスト便(880円/隔週)が候補です。どちらも送料込みで1,000円以下、一人暮らしの予算感に合います。" },
@@ -120,7 +120,7 @@ export const personas: Persona[] = [
       { service: "AND PLANTS", reason: "デザイン性◎、リビングに置いて家族で楽しめる", priceFrom: 1980 },
       { service: "HitoHana", reason: "ボリューム重視、ファミリー向けプランも", priceFrom: 1320 },
       { service: "LIFFT", reason: "本物志向、子どもにも本物の美しさを", priceFrom: 3300 },
-      { service: "bloomee リッチ", reason: "週1配送可能でこまめに花が届く", priceFrom: 2980 },
+      { service: "bloomee ベーシック", reason: "8本以上・約25〜30cmで手渡し。毎週届く（4回目以降は隔週も可）", priceFrom: 2180 },
     ],
     howToChoose: [
       { step: 1, title: "設置場所を決める", text: "玄関 or リビング食卓上。子ども・ペットの動線外に。" },
@@ -217,7 +217,7 @@ personas.push(
     ],
     faq: [
       { q: "夫婦どちらの名義で申し込めばいい？", a: "どちらでもOK。料金支払いの口座・カードの本人名義に合わせるとシンプルです。発送先・連絡先は夫婦両方を登録できる場合もあります。" },
-      { q: "二人とも忙しい場合、どのサービスが最適？", a: "ポスト投函+スキップ機能の両方がある medelu Mini または bloomee 体験プランから始めるのが推奨。" },
+      { q: "二人とも忙しい場合、どのサービスが最適？", a: "ポスト投函+スキップ機能の両方がある medelu Mini または bloomee お試しプランから始めるのが推奨。" },
       { q: "花のある暮らしで夫婦関係は変わる？", a: "Florida大学の研究では『花のある家庭で過ごす夫婦は会話が15%増える』との結果。話題のきっかけになる効果があります。" },
     ],
     relatedPaths: [
@@ -242,7 +242,7 @@ personas.push(
     recommended: [
       { service: "medelu Mini", reason: "1回748円、隔週、ポスト投函、回数縛りなし。学生にベスト", priceFrom: 748 },
       { service: "タスハナ(+hana)", reason: "規格外花活用の社会派サブスク。880円〜", priceFrom: 880 },
-      { service: "bloomee 体験プラン", reason: "980円、提携花屋ならではの花。お試し感覚で開始可", priceFrom: 980 },
+      { service: "bloomee お試しプラン", reason: "花代980円（送料385円別）・4本以上。最初の4回は受け取りが必要", priceFrom: 980 },
     ],
     howToChoose: [
       { step: 1, title: "予算月1,000円以内のプランを選ぶ", text: "medelu Miniかタスハナがほぼ唯一の選択肢。" },

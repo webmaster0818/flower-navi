@@ -633,19 +633,18 @@ export default function SeasonalFlowersPage() {
               <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
                 <div className="px-5 py-4 bg-[#E8F0EB] border-b border-[#C5D9CB]">
                   <h3 className="text-base font-bold text-[#333]">bloomee（ブルーミー）</h3>
-                  <p className="text-sm text-[#666]">全国の提携花屋が選ぶ地域ごとの季節花</p>
+                  <p className="text-sm text-[#666]">ポストに届く季節の花</p>
                 </div>
                 <div className="p-5">
                   <p className="text-sm text-[#666] leading-relaxed mb-4">
-                    bloomeeは全国200店舗以上の提携花屋からアレンジが届くサービスです。
-                    地域の花屋がその土地の気候に合わせた旬の花を選ぶため、
-                    季節感のあるアレンジが届きやすいのが特徴です。
+                    bloomeeは季節の花を小ぶりの花束にして届けるお花の定期便です。
+                    お試し・グリーンプランはポストに半投函の形で届き、最初の4回は受け取りが必要です。
                     SNSでの投稿も多く、他の利用者がどんな季節の花を受け取っているか参考にできます。
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm mb-4">
                     <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">980円/回〜</span>
                     <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">送料385円〜</span>
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">品質再送保証</span>
+                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">定期便は2週間以内の連絡で返金・交換</span>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href="/services/bloomee" className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">

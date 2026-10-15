@@ -425,7 +425,7 @@ export default function FlowerCarePage() {
                     中量タイプ
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">hanameku・bloomeeレギュラープランなど（4〜6本）</h3>
+                    <h3 className="text-base font-bold text-[#333] mb-2">medelu Lite・bloomeeお試しプランなど（4〜6本）</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-3">
                       標準的な花束に合うスタンダードサイズの花瓶がおすすめです。高さ15〜20cmで口径5〜8cm程度のものを選ぶと、
                       花束をそのまま入れても窮屈にならず、バランスよく飾れます。

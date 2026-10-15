@@ -15,7 +15,7 @@ const RE = findReviewEvidence("andplants");
 const faqItems = [
   {
     q: "AND PLANTS（アンドプランツ）の口コミ・評判は？",
-    a: "口コミの大半は観葉植物の購入者によるもので、「梱包が丁寧」「植物の状態が良い」「発送前に写真で確認できる」「鉢がおしゃれ」が好評です。一方で「価格がやや高い」「品切れがある」「コバエ・茎折れ・鉢の割れ」の報告もあります。花の定期便だけの口コミは、公開情報ではほとんど見つかりませんでした（2026年10月14日確認）。",
+    a: "口コミの大半は観葉植物の購入者によるもので、「梱包が丁寧」「植物の状態が良い」「発送前に写真で確認できる」「鉢がおしゃれ」が好評です。一方で「価格がやや高い」「品切れがある」「コバエ・茎折れ・鉢の割れ」の報告もあります。花の定期便については、実際に注文した記事で「傷や折れがなく届いた」「咲きかけの花が数日で満開になった」と状態の良さが評価される一方、「次回の決済前に解約・スキップの手続きが必要」「イメージよりボリュームが少ない」という声もあります（2026年10月15日確認）。",
   },
   {
     q: "アンドプランツの悪い評判で多いのは？",
@@ -39,7 +39,23 @@ const faqItems = [
   },
   {
     q: "AND PLANTSの初回クーポンはありますか？",
-    a: "花の定期便ページに「初回500円オフクーポンあり」の案内があります（2026年10月14日確認）。適用条件は申込画面で確認してください。",
+    a: "花の定期便ページに「初回500円オフクーポンあり」の案内があります。別途、公式LINEを友だち追加してアンケートに回答すると500円OFFクーポンがもらえるという案内もあります（2026年10月15日確認）。適用条件は申込画面で確認してください。",
+  },
+  {
+    q: "AND PLANTSの花の定期便の支払い方法は？",
+    a: "公式の花の定期便ページでは、クレジットカード・PayPal・Google Pay・Shop Payが案内されています。月額ではなく、お届けの約1週間前にその回の分が決済される都度払いです（2026年10月15日確認）。",
+  },
+  {
+    q: "夏でも花は傷まずに届きますか？",
+    a: "公式ページでは、配送先の気温を見て主に真夏・真冬にクール便を適用すると案内されています（クール便は別途有料。料金は公式ページに記載なし）。生花の交換申請は到着後1日以内なので、届いたらすぐに状態を確認しましょう（2026年10月15日確認）。",
+  },
+  {
+    q: "AND PLANTSの花の定期便はプレゼントにできますか？",
+    a: "配送先をギフト相手、請求先を自分の住所にすれば贈れます。ただし定期便にはラッピングとメッセージカードは付けられません（2026年10月15日 公式ページで確認）。",
+  },
+  {
+    q: "届く曜日は選べますか？",
+    a: "エリアにより異なりますが、金曜日〜日曜日から選べます。2回目以降は初回と同じ曜日のお届けになります（2026年10月15日 公式ページで確認）。",
   },
   {
     q: "AND PLANTSとAND FLOWERの違いは？",
@@ -62,7 +78,7 @@ export default function AndPlantsPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/and-plants/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"description\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/and-plants/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"description\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-15T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/and-plants/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />

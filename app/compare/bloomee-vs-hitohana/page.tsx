@@ -19,16 +19,16 @@ const faqItems = [
   },
   {
     q: "品質保証制度はどちらにもありますか？",
-    a: "はい、どちらのサービスにも品質保証制度があります。bloomeeは届いた花が傷んでいた場合、写真を送ることで再送対応が受けられます。HitoHanaも同様に、品質に問題があった場合は再送してもらえます。申請期限はどちらも届いてから数日以内です。",
+    a: "はい、どちらのサービスにも品質保証制度があります。bloomeeの定期便は、到着から2週間以内に連絡すれば返金または交換の対象です（公式・特定商取引法に基づく表記、2026年10月15日確認）。HitoHanaの保証条件は申込前に公式サイトで確認してください。",
   },
 ];
 
 /* ─── Comparison Items ─── */
 const comparisonItems = [
-  { item: "最安プラン", bloomee: "980円/回（体験プラン）", hitohana: "1,320円/回（Sサイズ）", winner: "bloomee" },
+  { item: "最安プラン", bloomee: "980円/回（お試しプラン）", hitohana: "1,320円/回（Sサイズ）", winner: "bloomee" },
   { item: "送料", bloomee: "385円〜", hitohana: "無料", winner: "hitohana" },
   { item: "総額（最安）", bloomee: "1,365円/回", hitohana: "1,320円/回", winner: "hitohana" },
-  { item: "花の本数", bloomee: "3本〜（プランによる）", hitohana: "4本〜（サイズによる）", winner: "hitohana" },
+  { item: "花の本数", bloomee: "4本以上（お試し）／8本以上（ベーシック）", hitohana: "4本〜（サイズによる）", winner: "hitohana" },
   { item: "花の色選択", bloomee: "不可（おまかせ）", hitohana: "可能（6色＋おまかせ）", winner: "hitohana" },
   { item: "配送方法", bloomee: "ポスト投函 / 宅配便", hitohana: "宅配便のみ", winner: "bloomee" },
   { item: "回数縛り", bloomee: "4回", hitohana: "なし", winner: "hitohana" },
@@ -48,7 +48,7 @@ export default function BloomeeVsHitohanaPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs HitoHana 徹底比較\",\"description\":\"bloomee vs HitoHana 徹底比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-hitohana/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHana、初心者にはどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"手軽さ重視ならbloomeeがおすすめです。ポスト投函で受け取れ、980円から始められます。一方、花の色やボリュームにこだわりたい方はHitoHanaが向いています。HitoHanaは色を選べるため、インテリアに合わせた花を受け取れます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの4回縛りとHitoHanaの回数縛りについて教えてください\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは最低4回の受け取りが必要で、4回未満での解約は残り回数分の料金が発生します。HitoHanaは回数縛りがなく、いつでも解約可能です。お試しで始めたい方はHitoHanaの方がリスクが少ないです。\"}},{\"@type\":\"Question\",\"name\":\"両方同時に利用することはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、併用は可能です。bloomeeのお手頃プランで日常の花を確保しつつ、HitoHanaの上位プランを月1回利用して特別感のある花を楽しむという使い方をしている方もいます。ただし、費用がかさむため、まずは片方を試してから検討するのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度はどちらにもありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、どちらのサービスにも品質保証制度があります。bloomeeは届いた花が傷んでいた場合、写真を送ることで再送対応が受けられます。HitoHanaも同様に、品質に問題があった場合は再送してもらえます。申請期限はどちらも届いてから数日以内です。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHana、初心者にはどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"手軽さ重視ならbloomeeがおすすめです。ポスト投函で受け取れ、980円から始められます。一方、花の色やボリュームにこだわりたい方はHitoHanaが向いています。HitoHanaは色を選べるため、インテリアに合わせた花を受け取れます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの4回縛りとHitoHanaの回数縛りについて教えてください\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは最低4回の受け取りが必要で、4回未満での解約は残り回数分の料金が発生します。HitoHanaは回数縛りがなく、いつでも解約可能です。お試しで始めたい方はHitoHanaの方がリスクが少ないです。\"}},{\"@type\":\"Question\",\"name\":\"両方同時に利用することはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、併用は可能です。bloomeeのお手頃プランで日常の花を確保しつつ、HitoHanaの上位プランを月1回利用して特別感のある花を楽しむという使い方をしている方もいます。ただし、費用がかさむため、まずは片方を試してから検討するのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度はどちらにもありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、どちらのサービスにも品質保証制度があります。bloomeeの定期便は、到着から2週間以内に連絡すれば返金または交換の対象です（公式・特定商取引法に基づく表記、2026年10月15日確認）。HitoHanaの保証条件は申込前に公式サイトで確認してください。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -128,9 +128,9 @@ export default function BloomeeVsHitohanaPage() {
             </h2>
             <div className="space-y-4">
               {[
-                { title: "ポスト投函で不在時も安心", text: "体験プラン・レギュラープランはポスト投函に対応。日中不在が多い方でも、帰宅後にポストから受け取れます。宅配便の時間指定が難しい方には大きなメリットです。" },
-                { title: "知名度No.1の安心感", text: "花のサブスクで最も知名度が高く、累計利用者数も業界トップクラス。口コミやレビューが豊富で、事前に情報収集しやすいのも利点です。" },
-                { title: "花代980円からの手軽さ", text: "体験プランは花代980円と、気軽に始めやすい価格設定。花のある暮らしをまず体験してみたい初心者に向いています。" },
+                { title: "ポスト投函で不在時も安心", text: "お試しプラン・グリーンプランはポスト投函に対応。日中不在が多い方でも、帰宅後にポストから受け取れます。宅配便の時間指定が難しい方には大きなメリットです。" },
+                { title: "口コミ・レビューが多く情報収集しやすい", text: "公式サイトでは「お花のお届け実績3,000万本以上（自社調べ）」と表記。口コミサイトやレビュー記事が多く、申込前に良い声・悪い声の両方を確認しやすいのも利点です。" },
+                { title: "花代980円からの手軽さ", text: "お試しプランは花代980円と、気軽に始めやすい価格設定。花のある暮らしをまず体験してみたい初心者に向いています。" },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
                   <h3 className="text-sm font-bold text-[#333] mb-2">{item.title}</h3>

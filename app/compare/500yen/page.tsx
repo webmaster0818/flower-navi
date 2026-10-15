@@ -23,7 +23,7 @@ const faqItems = [
   },
   {
     q: "ワンコインで何本の花が届きますか？",
-    a: "最安クラスのプランでは3本程度が一般的です。medeluのLiteコースは3本、タスハナは3〜4本、bloomeeの体験プランは3本以上です。本数は少なめですが、小さな花瓶に飾ったり、一輪挿しにするには十分なボリュームです。テーブルやデスクにちょっとした彩りを添えるのにぴったりです。",
+    a: "最安クラスのプランでは3本程度が一般的です。medeluのLiteコースは3本、タスハナは3〜4本、bloomeeのお試しプランは4本以上です。本数は少なめですが、小さな花瓶に飾ったり、一輪挿しにするには十分なボリュームです。テーブルやデスクにちょっとした彩りを添えるのにぴったりです。",
   },
   {
     q: "安い花のサブスクに回数縛りはありますか？",
@@ -99,18 +99,18 @@ const rankingData = [
     rank: 4,
     name: "bloomee",
     nameJa: "ブルーミー",
-    plan: "体験プラン",
+    plan: "お試しプラン",
     price: sv("bloomee"),
     shipping: 385,
     total: sv("bloomee") + 385,
     shippingLabel: "385円",
-    flowers: "3本以上",
+    flowers: "4本以上",
     delivery: "ポスト投函",
     frequency: "毎週 / 隔週",
     minOrders: "4回",
-    quality: "あり（再送保証）",
+    quality: "あり（定期便は2週間以内の連絡で返金・交換）",
     url: "/services/bloomee",
-    highlight: "花代980円＋送料385円で1回1,365円。知名度No.1の安心感。ただし4回の最低受け取りあり。",
+    highlight: "花代980円＋送料385円で1回1,365円。お試し・グリーンはポスト投函。ただし4回の最低受け取りあり。",
     color: "#6B7280",
   },
 ];
@@ -128,7 +128,7 @@ export default function FiveHundredYenPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"500円から始められる花のサブスク比較\",\"description\":\"500円から始められる花のサブスク比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/500yen/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"本当に500円台でお花の定期便を始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花代だけで見ると、タスハナが528円/回と500円台で始められます。ただし送料330円が別途かかるため、総額は858円/回になります（タスハナは公式サイトが現在確認できないため要確認）。medeluのLiteコースは748円/回ですが送料無料のため、総額ではmedeluが最安です。純粋な「ワンコイン（500円）」で始められるサービスは現時点ではありませんが、1,000円以下で始められるサービスは複数あります。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでも品質は大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、安いサービスでも品質面で問題があるわけではありません。medeluは市場直送の仕組みで中間コストを削減しているため安価でも新鮮なお花が届きます。タスハナも規格外の花（品質に問題はないが形やサイズが規格外のもの）を活用することでロスを減らし、低価格を実現しています。各サービスとも品質保証制度があるため、万が一傷んだ花が届いた場合は無料で再送してもらえます。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluは全プラン送料無料です。Liteコースは748円のみで利用でき、送料を含めた総額で業界最安水準です。AND PLANTSも送料込みの価格設定ですが、最安プランが1,980円/回と価格帯が異なります。bloomeeやhanamekuは別途送料がかかります。\"}},{\"@type\":\"Question\",\"name\":\"ワンコインで何本の花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安クラスのプランでは3本程度が一般的です。medeluのLiteコースは3本、タスハナは3〜4本、bloomeeの体験プランは3本以上です。本数は少なめですが、小さな花瓶に飾ったり、一輪挿しにするには十分なボリュームです。テーブルやデスクにちょっとした彩りを添えるのにぴったりです。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクに回数縛りはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは回数縛りなしで748円から始められるため、1回試してすぐ解約も可能です。タスハナも回数縛りはありません。一方、bloomeeは4回の最低受け取り回数があり、4回受け取り前に解約すると残り回数分の料金が発生します。初めてで不安な方は、回数縛りなしのサービスから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"月額で一番安いのはどのサービスですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"隔週（月2回）配送の場合、medeluのLiteコースが月額約1,396円（748円 x 2回、送料無料）で最安です。月1回配送が可能なサービスでは、hanamekuのライトプランが月1,210円＋送料で利用できます。月の花代を最小限に抑えたい方は、月1回配送を選べるサービスを検討するとよいでしょう。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでポスト投函に対応しているのはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medelu、bloomee、hanameku（ライトプランのポスト投函を選択した場合）がポスト投函に対応しています。ポスト投函なら不在時でも受け取れるため、日中家を空けることが多い方に便利です。ポスト投函対応のサービスの中で最安なのはmedeluのLiteコース（748円/回・送料無料）です。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"本当に500円台でお花の定期便を始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花代だけで見ると、タスハナが528円/回と500円台で始められます。ただし送料330円が別途かかるため、総額は858円/回になります（タスハナは公式サイトが現在確認できないため要確認）。medeluのLiteコースは748円/回ですが送料無料のため、総額ではmedeluが最安です。純粋な「ワンコイン（500円）」で始められるサービスは現時点ではありませんが、1,000円以下で始められるサービスは複数あります。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでも品質は大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、安いサービスでも品質面で問題があるわけではありません。medeluは市場直送の仕組みで中間コストを削減しているため安価でも新鮮なお花が届きます。タスハナも規格外の花（品質に問題はないが形やサイズが規格外のもの）を活用することでロスを減らし、低価格を実現しています。各サービスとも品質保証制度があるため、万が一傷んだ花が届いた場合は無料で再送してもらえます。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluは全プラン送料無料です。Liteコースは748円のみで利用でき、送料を含めた総額で業界最安水準です。AND PLANTSも送料込みの価格設定ですが、最安プランが1,980円/回と価格帯が異なります。bloomeeやhanamekuは別途送料がかかります。\"}},{\"@type\":\"Question\",\"name\":\"ワンコインで何本の花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安クラスのプランでは3本程度が一般的です。medeluのLiteコースは3本、タスハナは3〜4本、bloomeeのお試しプランは4本以上です。本数は少なめですが、小さな花瓶に飾ったり、一輪挿しにするには十分なボリュームです。テーブルやデスクにちょっとした彩りを添えるのにぴったりです。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクに回数縛りはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは回数縛りなしで748円から始められるため、1回試してすぐ解約も可能です。タスハナも回数縛りはありません。一方、bloomeeは4回の最低受け取り回数があり、4回受け取り前に解約すると残り回数分の料金が発生します。初めてで不安な方は、回数縛りなしのサービスから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"月額で一番安いのはどのサービスですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"隔週（月2回）配送の場合、medeluのLiteコースが月額約1,396円（748円 x 2回、送料無料）で最安です。月1回配送が可能なサービスでは、hanamekuのライトプランが月1,210円＋送料で利用できます。月の花代を最小限に抑えたい方は、月1回配送を選べるサービスを検討するとよいでしょう。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでポスト投函に対応しているのはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medelu、bloomee、hanameku（ライトプランのポスト投函を選択した場合）がポスト投函に対応しています。ポスト投函なら不在時でも受け取れるため、日中家を空けることが多い方に便利です。ポスト投函対応のサービスの中で最安なのはmedeluのLiteコース（748円/回・送料無料）です。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -299,11 +299,11 @@ export default function FiveHundredYenPage() {
                   </tr>
                   <tr>
                     <td className="px-3 py-3 font-bold text-[#6B7280]">4位</td>
-                    <td className="px-3 py-3 font-bold text-[#333]">bloomee 体験プラン</td>
+                    <td className="px-3 py-3 font-bold text-[#333]">bloomee お試しプラン</td>
                     <td className="px-3 py-3 text-center">980円</td>
                     <td className="px-3 py-3 text-center">385円</td>
                     <td className="px-3 py-3 text-center font-bold">1,365円</td>
-                    <td className="px-3 py-3 text-center">3本以上</td>
+                    <td className="px-3 py-3 text-center">4本以上</td>
                     <td className="px-3 py-3 text-center">4回</td>
                   </tr>
                 </tbody>
@@ -450,7 +450,7 @@ export default function FiveHundredYenPage() {
                 {
                   num: "2",
                   title: "回数縛りで解約できない",
-                  text: "bloomeeのように最低受け取り回数が設定されているサービスもあります。4回縛りの場合、体験プランでも最低1,365円 x 4回 = 5,460円のコストが発生します。「1回試して合わなければやめたい」という方は、回数縛りなしのmedeluやタスハナ、hanamekuを選びましょう。",
+                  text: "bloomeeのように最低受け取り回数が設定されているサービスもあります。4回縛りの場合、お試しプランでも最低1,365円 x 4回 = 5,460円のコストが発生します。「1回試して合わなければやめたい」という方は、回数縛りなしのmedeluやタスハナ、hanamekuを選びましょう。",
                 },
                 {
                   num: "3",

@@ -288,8 +288,8 @@ export default function MeritDemeritGuidePage() {
                 <tbody>
                   <tr>
                     <td className="font-medium text-[#333]">bloomee</td>
-                    <td>知名度No.1、初心者向け、ポスト投函</td>
-                    <td>4回縛り、送料別、最安は3本</td>
+                    <td>花代980円〜、初心者向け、ポスト投函</td>
+                    <td>4回縛り、送料別、お試しは4本以上</td>
                     <td>手軽に始めたい初心者</td>
                   </tr>
                   <tr>

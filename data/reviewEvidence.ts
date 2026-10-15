@@ -14,13 +14,15 @@ export type ReviewEvidenceData = {
   prosCons: { point: string; merit: string; demerit: string }[];
   method: string;
   sources: ReviewSource[];
+  /** 実際に使ったレビュー記事での観察（花持ち・届いた本数など）。記事名・URL・確認日つきで要約のみ */
+  observations?: { title: string; lead: string; items: { text: string; source: string; url: string; checkedAt: string }[] };
 };
 
 export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
   {
     id: "bloomee",
     shortName: "bloomee（ブルーミー）",
-    updatedAt: "2026年10月14日",
+    updatedAt: "2026年10月15日",
     verdict:
       "ポスト投函で受け取れる手軽さと「花代980円〜」の始めやすさを評価する声が多い一方、口コミサイトでは「花がしおれていた・同じ花が続く」「最初の4回は解約できず、途中解約料がかかる」「解約が分かりにくい」といった厳しい声も目立ちます。4回（お試しなら送料込みで総額5,460円）受け取る前提なら有力候補、1〜2回だけ試したい人には向きません。",
     intro:
@@ -52,15 +54,26 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
       { label: "花と私（hanatowatashi.com）のブルーミー実体験レビュー", url: "https://hanatowatashi.com/bloomee/", note: "自腹レビュー＋SNS投稿の引用", checkedAt: "2026年10月14日" },
       { label: "サブスクスタイル（subsc-style.jp）のブルーミー口コミ記事", url: "https://subsc-style.jp/bloomee-kuchikomi/", note: "5回分の実物写真、送料込みの金額への注意", checkedAt: "2026年10月14日" },
       { label: "bloomee公式 特定商取引法に基づく表記", url: "https://bloomeelife.com/contacts/law", note: "途中解約料・請求日・品質保証の申請期限", checkedAt: "2026年10月14日" },
-      { label: "bloomee公式トップ（料金表・お届け方法）", url: "https://bloomeelife.com/", note: "運営：ユーザーライク株式会社", checkedAt: "2026年10月14日" },
+      { label: "bloomee公式トップ（料金表・お届け方法）", url: "https://bloomeelife.com/", note: "運営：ユーザーライク株式会社。プランはお試し・グリーン・ベーシックの3つ（「体験」「レギュラー」の表記なし）", checkedAt: "2026年10月15日" },
+      { label: "かおりハピネス（kaori-happiness.jp）のお試しプラン4回レビュー", url: "https://kaori-happiness.jp/bloomee-review/", note: "2022年9月に4回受け取り。届いた花の種類・状態を回ごとに記録", checkedAt: "2026年10月15日" },
+      { label: "メモノテ（memo-note.jp）のbloomee 1年利用レビュー", url: "https://memo-note.jp/bloomee/", note: "季節ごとの花持ち・問い合わせ対応の体験", checkedAt: "2026年10月15日" },
     ],
+    observations: {
+      title: "実際に使ったレビュー記事で分かる「花持ち」と届く花",
+      lead: "口コミで多い「すぐ枯れる」「しょぼい」がどの程度なのかを、実際に複数回受け取ったレビュー記事の記録から整理しました（いずれも筆者個人の観察で、時期・地域で変わります）。なお、ネット上の古い記事に出てくる「体験プラン」「レギュラープラン」「リッチプラン」は旧プラン名で、2026年10月15日時点の公式サイトのプランはお試し・グリーン・ベーシックの3つです。",
+      items: [
+        { text: "お試しプランを4回受け取った記録では、各回3種類の花材（例：スターチス・モカラ・アイビー）が届き、花持ちは1週間〜10日程度。種類によっては1週間もたずに傷み始めたものもあった。同封物は栄養剤・はじめてガイド。記事内では、2024年3月1日に体験プランがお試しプランに変わり、レギュラー・リッチプランは廃止されたと説明されている。", source: "かおりハピネス「ブルーミーお試しプランを試したので本音レビュー」", url: "https://kaori-happiness.jp/bloomee-review/", checkedAt: "2026年10月15日" },
+        { text: "1年利用した記録では、切り花の花持ちは夏場（6〜9月ごろ）で約1週間、冬場（12〜3月ごろ）で約2週間。夏季のグリーンプランは2か月ほど持ったという。届いた当日に「萎れている」と連絡した回は1回分無料になったが、届いて2日後の連絡は対応されなかった。", source: "メモノテ「bloomee体験レビュー｜1年使って感じた効果とデメリット」", url: "https://memo-note.jp/bloomee/", checkedAt: "2026年10月15日" },
+        { text: "5回受け取った記録では、1回目は3〜4日目から元気がなくなった一方、バラが届いた回は約2週間飾れたなど、回によって差がある。届いた花の種類は4〜7種類（旧プランを含む2021年の記録）。", source: "サブスクスタイル「ブルーミーの口コミ・評判は？5回使った本音レビュー」", url: "https://subsc-style.jp/bloomee-kuchikomi/", checkedAt: "2026年10月15日" },
+      ],
+    },
   },
   {
     id: "andplants",
     shortName: "AND PLANTS（アンドプランツ）",
-    updatedAt: "2026年10月14日",
+    updatedAt: "2026年10月15日",
     verdict:
-      "「アンドプランツ」の口コミは観葉植物の通販としての声が大半で、梱包の丁寧さ・植物の状態の良さ・発送前に写真で確認できる点が高評価、価格の高さ・品切れ・コバエや茎折れの報告が不満点です。花の定期便（2026年5月から「AND FLOWER」ブランド）は送料込み1,980円〜・いつでも解約できる都度払いで、花の定期便だけの口コミは公開情報ではほとんど見つかりませんでした（2026年10月14日時点）。",
+      "「アンドプランツ」の口コミは観葉植物の通販としての声が大半で、梱包の丁寧さ・植物の状態の良さ・発送前に写真で確認できる点が高評価、価格の高さ・品切れ・コバエや茎折れの報告が不満点です。花の定期便（2026年5月から「AND FLOWER」ブランド）は送料込み1,980円〜・いつでも解約できる都度払いで、実際に注文した記事では「傷や折れがなく届いた」「咲きかけの花が数日で満開になった」と状態の良さが評価される一方、「次回の決済前に手続きが必要」「イメージよりボリュームが少ない」という声もあります（2026年10月15日確認）。",
     intro:
       "アンドプランツは観葉植物の通販が本業で、花の定期便はその一部です。口コミも観葉植物についてのものが中心のため、観葉植物と花の定期便に分けて、出典を示しながら傾向を整理しました。",
     positive: [
@@ -90,12 +103,22 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
       { label: "AND PLANTS公式 花の定期便ページ", url: "https://andplants.jp/collections/subscription-flower", note: "プラン・頻度・解約・スキップ条件", checkedAt: "2026年10月14日" },
       { label: "AND PLANTS公式 返品・交換規定", url: "https://andplants.jp/pages/returned", note: "生花1日以内・観葉植物14日以内", checkedAt: "2026年10月14日" },
       { label: "PR TIMES「AND FLOWER」ブランド独立のお知らせ（株式会社Domuz）", url: "https://prtimes.jp/main/html/rd/p/000000080.000048183.html", checkedAt: "2026年10月14日" },
+      { label: "花と私（hanatowatashi.com）のAND PLANTS花の定期便 注文レビュー", url: "https://hanatowatashi.com/and-plants/", note: "ミディアムプランを注文。届いた本数・花材・梱包を写真つきで記録、X投稿1件を引用", checkedAt: "2026年10月15日" },
+      { label: "あはよくば50（はてなブログ）のアンドプランツ花の定期便 口コミ記事", url: "https://awayokuba50.hatenablog.com/entry/2025/02/12/154105", note: "ネット上の口コミの要約（投稿元の明記なし）", checkedAt: "2026年10月15日" },
     ],
+    observations: {
+      title: "花の定期便を実際に注文した記事で分かること",
+      lead: "「アンドプランツ 口コミ」で見つかる声の多くは観葉植物についてのものです。花の定期便そのものについては、実際に注文したレビュー記事の記録を要約しました（筆者個人の観察で、時期・地域で変わります）。",
+      items: [
+        { text: "ミディアムプラン（公式の目安8〜10本）を注文したところ、届いたのは9本（スプレーバラ・ラナンキュラス・スイートピー・チューリップなど）。切り口にジェル、茎に湿らせたペーパーが巻かれた状態で、傷や折れはなし。咲きかけだったラナンキュラスは飾って数日で満開になった。栄養剤とフラワーガイド（花の名前・手入れ方法）が同封されていた。", source: "花と私「AND PLANTSの定期便を注文してみた！私の感想とみんなの口コミ」", url: "https://hanatowatashi.com/and-plants/", checkedAt: "2026年10月15日" },
+        { text: "ネット上の声として「つぼみで届き、家で少しずつ開くのが楽しい」「1週間以上きれいな状態で楽しめた」「送料込みでこの価格ならアリ」が紹介される一方、「解約やスキップは次回の決済前に手続きしないといけない」「解約方法が少し分かりにくかった」「ボリュームたっぷりの花束をイメージしていたら少し違った」という声も挙がっている（記事内で投稿元の明記はなし）。", source: "あはよくば50「アンドプランツのお花の定期便は本当にお得?」", url: "https://awayokuba50.hatenablog.com/entry/2025/02/12/154105", checkedAt: "2026年10月15日" },
+      ],
+    },
   },
   {
     id: "hanameku",
     shortName: "ハナメク（hanameku）",
-    updatedAt: "2026年10月14日",
+    updatedAt: "2026年10月15日",
     verdict:
       "1,210円（税込・送料込）でポストに届く手軽さと、花持ちの良さ・パステル調の色合いを評価する声が多い一方、「花材がかぶる」「蕾やしおれ気味で届くことがある」という声もあります。最低回数の記載はありませんが、初回（1回目）は解約できない点と、締切が「お届け予定日の10日前」と早い点に注意が必要です。",
     intro:
@@ -127,12 +150,21 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
       { label: "nanas-petunia のハナメク本音レビュー", url: "https://nanas-petunia.com/hanameku_review/", note: "実際に使ったレビュー", checkedAt: "2026年10月14日" },
       { label: "hanameku公式 よくある質問", url: "https://hanameku.jp/shop/faq", note: "初回解約不可・締切", checkedAt: "2026年10月14日" },
       { label: "hanameku公式 特定商取引法に基づく表記", url: "https://hanameku.jp/shop/law_info", note: "運営：and factory株式会社（2026年6月にnarrative株式会社から承継）", checkedAt: "2026年10月14日" },
+      { label: "コスパ部（cospabu.com）のhanameku利用レビュー", url: "https://cospabu.com/service.php?id=189", note: "ライトプラン・旧スタンダードプランを受け取った記録", checkedAt: "2026年10月15日" },
     ],
+    observations: {
+      title: "実際に受け取ったレビュー記事で分かる、届く花と状態",
+      lead: "「ハナメク 口コミ」で見つかるレビュー記事のうち、実際に受け取った記録が書かれているものを要約しました（筆者個人の観察で、時期・地域で変わります）。",
+      items: [
+        { text: "ライトプランを2回受け取った記録では、各回3本（1回目：カスミソウ・スイートピー・ポリシャス、2回目：ガーベラ・シャリンバイ・カール竹）。下処理済みでそのまま生けても長持ちしたが、本数は少なくボリュームは控えめ。生け方・水換えのリーフレットは付くが、花の名前が分かる資料はなかった。", source: "nanas-petunia「【口コミ評判】hanameku(ハナメク)を徹底検証」", url: "https://nanas-petunia.com/hanameku_review/", checkedAt: "2026年10月15日" },
+        { text: "ライトプランは茎がエコゼリーで給水された状態でポストに届き、生け方の説明書と栄養剤が同梱。枯れや傷みはないものの少し元気がない状態で届き、花瓶に生けるとすぐ元気になった。受け取り日時は指定できず、予定日から前後することがあるという。", source: "コスパ部「hanamekuの口コミは？使ってみてわかった注意点」", url: "https://cospabu.com/service.php?id=189", checkedAt: "2026年10月15日" },
+      ],
+    },
   },
   {
     id: "medelu",
     shortName: "medelu（メデル）",
-    updatedAt: "2026年10月14日",
+    updatedAt: "2026年10月15日",
     verdict:
       "748円（税込・送料込）〜の価格と、部屋のテイストで選べるコース・花のセンスの良さを評価する声が多い一方、「Miniは本数が少ない」「暑い時期は花持ちが短い・しおれて届いた」「日付指定ができない」という声もあります。最低利用回数の記載は公式に見当たらず、決済日前日の木曜までに手続きすれば次回から止められるため、試しやすいサービスです。",
     intro:

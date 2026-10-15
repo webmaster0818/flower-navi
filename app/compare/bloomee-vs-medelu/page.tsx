@@ -11,7 +11,7 @@ const faqItems = [
   },
   {
     q: "bloomeeとmedeluの花の品質に違いはありますか？",
-    a: "bloomeeは全国200店舗以上の提携花屋がアレンジするため、届く花屋によって品質やテイストにばらつきがあります。medeluは自社で仕入れ・品質管理を一元化しており、安定した鮮度の花が届く傾向にあります。どちらも品質保証制度があり、傷んだ花が届いた場合は再送対応を受けられます。",
+    a: "口コミでは、bloomeeは「しおれていた・同じ花が続く」といった品質のばらつきを指摘する声が目立ち、medeluは「センスが良い・長持ちする」という声が多い一方で「暑い時期は花持ちが短い」という声もあります。品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換（特商法）、medeluは到着当日中に写真を送れば送料込みで全額返金（交換なし）です（2026年10月14日 公式確認）。",
   },
   {
     q: "bloomeeの4回縛りとは何ですか？",
@@ -52,7 +52,7 @@ export default function BloomeeVsMedeluPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs medelu 徹底比較\",\"description\":\"bloomee vs medelu 徹底比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-medelu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluはどちらが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのLiteコースは748円（送料無料）、bloomeeのお試しプランは980円＋送料385円＝1,365円です。同じポスト投函の最安プランでも、1回あたり約667円の差があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluの花の品質に違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは全国200店舗以上の提携花屋がアレンジするため、届く花屋によって品質やテイストにばらつきがあります。medeluは自社で仕入れ・品質管理を一元化しており、安定した鮮度の花が届く傾向にあります。どちらも品質保証制度があり、傷んだ花が届いた場合は再送対応を受けられます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの4回縛りとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、残り回数分の料金が違約金として発生します。お試しプランの場合、最低でも1,365円 x 4回 = 5,460円の利用が必要です。medeluにはこのような回数縛りはなく、いつでも解約可能です。\"}},{\"@type\":\"Question\",\"name\":\"medeluに回数縛りはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには回数縛りはありません。初回から解約自由で、マイページからいつでも解約手続きが可能です。最低利用回数や違約金の設定がないため、気軽にお試しできる点がmedeluの大きなメリットです。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアに違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島を除く日本全国に配送対応しています。medeluも日本全国に対応していますが、一部離島や配送困難な地域は対象外となる場合があります。どちらもポスト投函プランは日本郵便を利用しており、対応エリアに大きな差はありません。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈るならどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"プレゼント用途ではbloomeeが有利です。bloomeeには「花の定期便ギフトチケット」があり、相手に好きなタイミングでお花の定期便を始めてもらえます。medeluにはギフト専用の仕組みがないため、贈り物として利用する場合はbloomeeを選ぶのが無難です。\"}},{\"@type\":\"Question\",\"name\":\"途中でプラン変更はできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どちらもマイページからプラン変更が可能です。bloomeeはお試し・グリーン・ベーシックの各プラン間で変更でき、配送頻度（毎週・隔週）も変更可能です。medeluもMini・Lite・Lite+・Basicの各コース間で変更でき、配送頻度は隔週・毎週から選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedelu、両方試してから決めることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可能ですが、bloomeeには4回の最低受け取り回数があるため、お試しのつもりでも最低4回分の料金が発生します。まず回数縛りのないmedeluから試し、その後bloomeeを検討するのがリスクの少ない順番です。medeluは1回受け取っただけでも解約できるため、お試し利用に向いています。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluはどちらが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのLiteコースは748円（送料無料）、bloomeeのお試しプランは980円＋送料385円＝1,365円です。同じポスト投函の最安プランでも、1回あたり約667円の差があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluの花の品質に違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"口コミでは、bloomeeは「しおれていた・同じ花が続く」といった品質のばらつきを指摘する声が目立ち、medeluは「センスが良い・長持ちする」という声が多い一方で「暑い時期は花持ちが短い」という声もあります。品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換（特商法）、medeluは到着当日中に写真を送れば送料込みで全額返金（交換なし）です（2026年10月14日 公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの4回縛りとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、残り回数分の料金が違約金として発生します。お試しプランの場合、最低でも1,365円 x 4回 = 5,460円の利用が必要です。medeluにはこのような回数縛りはなく、いつでも解約可能です。\"}},{\"@type\":\"Question\",\"name\":\"medeluに回数縛りはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには回数縛りはありません。初回から解約自由で、マイページからいつでも解約手続きが可能です。最低利用回数や違約金の設定がないため、気軽にお試しできる点がmedeluの大きなメリットです。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアに違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島を除く日本全国に配送対応しています。medeluも日本全国に対応していますが、一部離島や配送困難な地域は対象外となる場合があります。どちらもポスト投函プランは日本郵便を利用しており、対応エリアに大きな差はありません。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈るならどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"プレゼント用途ではbloomeeが有利です。bloomeeには「花の定期便ギフトチケット」があり、相手に好きなタイミングでお花の定期便を始めてもらえます。medeluにはギフト専用の仕組みがないため、贈り物として利用する場合はbloomeeを選ぶのが無難です。\"}},{\"@type\":\"Question\",\"name\":\"途中でプラン変更はできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どちらもマイページからプラン変更が可能です。bloomeeはお試し・グリーン・ベーシックの各プラン間で変更でき、配送頻度（毎週・隔週）も変更可能です。medeluもMini・Lite・Lite+・Basicの各コース間で変更でき、配送頻度は隔週・毎週から選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedelu、両方試してから決めることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可能ですが、bloomeeには4回の最低受け取り回数があるため、お試しのつもりでも最低4回分の料金が発生します。まず回数縛りのないmedeluから試し、その後bloomeeを検討するのがリスクの少ない順番です。medeluは1回受け取っただけでも解約できるため、お試し利用に向いています。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -429,9 +429,8 @@ export default function BloomeeVsMedeluPage() {
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-3">bloomee</h3>
                 <ul className="text-sm text-[#666] space-y-2">
-                  <li>全国200以上の提携花屋が地域ごとに発送</li>
-                  <li>花屋によって品質にばらつきがある</li>
-                  <li>品質保証制度（再送保証）あり</li>
+                  <li>口コミでは「しおれていた・同じ花が続く」という声が目立つ</li>
+                  <li>定期便は2週間以内の連絡で返金・交換（特商法）</li>
                   <li>夏場のポスト投函は傷みのリスクがやや高い</li>
                 </ul>
               </div>
@@ -448,7 +447,7 @@ export default function BloomeeVsMedeluPage() {
             <p className="text-sm md:text-base text-[#666] leading-relaxed">
               花の鮮度に関しては、仕組みの違いがポイントです。bloomeeは提携花屋がそれぞれアレンジして発送するため、花屋ごとの品質差が出やすい面があります。
               一方、medeluは自社で一括して市場から仕入れ、品質管理を行っているため、安定した鮮度の花が届きやすい傾向にあります。
-              ただし、どちらも品質保証制度があるため、万が一傷んだ花が届いた場合は再送対応を受けられます。
+              なお品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換、medeluは到着当日中の写真送付で全額返金（交換なし）と条件が異なります。
             </p>
           </div>
         </section>
@@ -554,11 +553,10 @@ export default function BloomeeVsMedeluPage() {
                     { label: "配送頻度", bloomee: "毎週 / 隔週", medelu: "毎週 / 隔週" },
                     { label: "回数縛り", bloomee: "4回", medelu: "なし" },
                     { label: "解約時の違約金", bloomee: "残り回数分発生", medelu: "なし" },
-                    { label: "品質保証", bloomee: "あり（再送保証）", medelu: "あり" },
+                    { label: "品質保証", bloomee: "あり（定期便は2週間以内の連絡で返金・交換）", medelu: "あり" },
                     { label: "専用アプリ", bloomee: "あり", medelu: "なし" },
                     { label: "ギフト対応", bloomee: "あり", medelu: "なし" },
-                    { label: "花の仕入れ", bloomee: "提携花屋（200店舗以上）", medelu: "自社一括仕入れ" },
-                    { label: "SNS人気", bloomee: "非常に高い", medelu: "普通" },
+                                        { label: "SNS人気", bloomee: "非常に高い", medelu: "普通" },
                     { label: "サービス開始", bloomee: "2016年", medelu: "2018年" },
                     { label: "スキップ機能", bloomee: "あり（無料）", medelu: "あり（無料）" },
                   ].map((row, i) => (
@@ -639,9 +637,8 @@ export default function BloomeeVsMedeluPage() {
                     <li>-- 知名度が高く安心感がある</li>
                     <li>-- 専用アプリで便利に管理できる</li>
                     <li>-- ギフトチケットでプレゼントに使える</li>
-                    <li>-- 全国の花屋のアレンジが楽しめる</li>
-                    <li>-- SNSで情報収集しやすい</li>
-                    <li>-- 品質保証（再送保証）あり</li>
+                                        <li>-- SNSで情報収集しやすい</li>
+                    <li>-- 定期便は2週間以内の連絡で返金・交換（特商法）</li>
                   </ul>
                 </div>
                 <div className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">

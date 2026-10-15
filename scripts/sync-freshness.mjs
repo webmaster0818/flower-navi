@@ -21,6 +21,17 @@ while ((m = re.exec(src)) !== null) {
 }
 if (services.length === 0) throw new Error("services.ts から verifiedAt を抽出できません");
 
+// 2026-10-15: 口コミ・評判の受け皿（/services/<slug>/）は料金を確認し直さなくても本文（口コミ傾向・FAQ）を更新するので、
+// reviewEvidence.ts の updatedAt（本文の最終更新日）が verifiedAt より新しければそちらを採る。
+const reSrc = readFileSync(join(root, "data/reviewEvidence.ts"), "utf8");
+const reRe = /id:\s*"([^"]+)",\s*shortName:[^\n]*\n\s*updatedAt:\s*"(\d{4})年(\d{1,2})月(\d{1,2})日"/g;
+while ((m = reRe.exec(reSrc)) !== null) {
+  const [, id, y, mo, d] = m;
+  const iso = `${y}-${String(mo).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+  const sv = services.find((x) => x.id === id);
+  if (sv && iso > sv.iso) sv.iso = iso;
+}
+
 const latest = services.map((s) => s.iso).sort().at(-1);
 console.log("verifiedAt:", services.map((s) => `${s.id}=${s.iso}`).join(" "), "| latest:", latest);
 

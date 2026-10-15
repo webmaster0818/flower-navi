@@ -352,13 +352,13 @@ export default function ButsudanGuidePage() {
                 </div>
                 <div className="p-5">
                   <p className="text-sm text-[#666] leading-relaxed mb-4">
-                    bloomeeは累計会員数10万人以上を誇る日本最大級の花のサブスクサービスです。体験プラン980円〜と手頃な価格で、ポスト投函で届くため不在時でも受け取れます。全国200店舗以上の提携花屋からアレンジが届くため、季節感のある花を楽しめます。
+                    bloomeeは公式サイトで「お花のお届け実績3,000万本以上（自社調べ）」と表記している花のサブスクです。お試しプラン980円〜と手頃な価格で、ポスト投函で届くため不在時でも受け取れます。季節の花が届きます（最初の4回は受け取りが必要）。
                   </p>
                   <p className="text-sm text-[#666] leading-relaxed mb-4">
                     仏花として利用する場合、届くお花は花屋さんがアレンジしたものなので、菊やカーネーションなど仏花に適した花が含まれることもあります。ただし仏花専用のコースはないため、届いた花から仏花に適したものを選んでお供えする形になります。ポスト投函の手軽さを重視する方におすすめです。
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">体験プラン980円/回</span>
+                    <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">お試しプラン980円/回</span>
                     <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">送料385円</span>
                     <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">ポスト投函</span>
                     <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">品質保証あり</span>

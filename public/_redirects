@@ -16,3 +16,6 @@
 /service-guides/hitohana-kuchikomi /services/hitohana/ 301
 /service-guides/nihon-sogo-engei-kuchikomi/ /services/nihon-sogo-engei/ 301
 /service-guides/nihon-sogo-engei-kuchikomi /services/nihon-sogo-engei/ 301
+# 2026-10-15 medelu 解約ガイドを /services/medelu/ へ統合（6月からクロール済み・未登録、受け皿と重複）
+/service-guides/medelu-kaiyaku/ /services/medelu/ 301
+/service-guides/medelu-kaiyaku /services/medelu/ 301

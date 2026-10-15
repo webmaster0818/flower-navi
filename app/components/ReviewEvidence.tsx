@@ -96,6 +96,23 @@ export function ReviewEvidence({ d, s }: { d: ReviewEvidenceData; s: Service }) 
         </table>
       </div>
 
+      {d.observations ? (
+        <>
+          <h3 className="text-lg font-bold text-[#333] mb-3">{d.observations.title}</h3>
+          <p className="text-sm md:text-base text-[#666] leading-relaxed mb-3">{d.observations.lead}</p>
+          <ul className="space-y-3 mb-8">
+            {d.observations.items.map((o, i) => (
+              <li key={i} className="rounded-xl border border-[#E5E5E5] bg-white p-4 text-sm md:text-base text-[#555] leading-relaxed">
+                {o.text}
+                <span className="block text-xs text-[#999] mt-1">
+                  出典：<a href={o.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">{o.source}</a>（{o.checkedAt}確認）
+                </span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : null}
+
       <h3 className="text-lg font-bold text-[#333] mb-3">口コミの出典と調べ方</h3>
       <div className="rounded-xl border border-[#E8DFD5] bg-[#FBF7F2] p-5 mb-2">
         <p className="text-sm text-[#555] leading-relaxed mb-3">{d.method}</p>
