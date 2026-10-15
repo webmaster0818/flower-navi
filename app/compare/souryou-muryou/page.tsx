@@ -227,9 +227,9 @@ export default function SouryouMuryouPage() {
                   </tr>
                   <tr className="border-b border-[#E5E5E5]">
                     <td className="px-3 py-2 text-[#333]">タスハナ</td>
-                    <td className="px-3 py-2 text-center">528円</td>
+                    <td className="px-3 py-2 text-center">660円</td>
                     <td className="px-3 py-2 text-center text-[#C4877A]">330円</td>
-                    <td className="px-3 py-2 text-center">1,210円</td>
+                    <td className="px-3 py-2 text-center">990円</td>
                     <td className="px-3 py-2 text-center text-[#C4877A]">7,920円</td>
                   </tr>
                   <tr className="border-b border-[#E5E5E5]">

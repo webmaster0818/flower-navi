@@ -213,10 +213,10 @@ export default function ShoboboiGuidePage() {
                 <tbody>
                   <tr>
                     <td className="font-medium text-[#333]">タスハナ</td>
-                    <td>+act 528円/回</td>
-                    <td>3本</td>
+                    <td>+act 660円/回</td>
+                    <td>3本以上</td>
                     <td>330円</td>
-                    <td className="font-bold text-[#4A7C59]">約286円</td>
+                    <td className="font-bold text-[#4A7C59]">約330円</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">medelu</td>

@@ -11,7 +11,7 @@ const faqItems = [
   },
   {
     q: "母の日ギフトにおすすめの予算はいくらですか？",
-    a: "花のサブスクのギフトとしては、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットなら金額を選べますし、HitoHanaなら1回あたり2,000〜5,000円のプランが選べます。1回分だけでなく、3ヶ月分をまとめてギフトにするとより喜ばれます。",
+    a: "花のサブスクのギフトとしては、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットなら金額を選べますし、HitoHanaなら1回あたり1,320〜4,950円（Lite〜LL）のプランが選べます。1回分だけでなく、3ヶ月分をまとめてギフトにするとより喜ばれます。",
   },
   {
     q: "母の日に届くように日付指定できますか？",
@@ -38,7 +38,7 @@ export default function MothersDayGuidePage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"母の日に贈る花のサブスクおすすめ\",\"description\":\"母の日に贈る花のサブスクおすすめ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/mothers-day/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクを母の日ギフトとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスでギフト対応が可能です。bloomeeではギフトチケットを購入して贈ることができ、受け取った方が好きなタイミングで花の定期便を始められます。HitoHanaではメッセージカード付きで届け先を指定でき、AND PLANTSもギフト対応に力を入れています。\"}},{\"@type\":\"Question\",\"name\":\"母の日ギフトにおすすめの予算はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花のサブスクのギフトとしては、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットなら金額を選べますし、HitoHanaなら1回あたり2,000〜5,000円のプランが選べます。1回分だけでなく、3ヶ月分をまとめてギフトにするとより喜ばれます。\"}},{\"@type\":\"Question\",\"name\":\"母の日に届くように日付指定できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって対応が異なります。HitoHanaでは配送日の日付指定が可能で、母の日当日に届けることができます。bloomeeのギフトチケットは受け取った方が自分で開始日を設定するため、日付指定ではなくチケット自体を母の日に渡す形になります。AND PLANTSも配送日の相談が可能です。\"}},{\"@type\":\"Question\",\"name\":\"遠方の母に贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、花のサブスクは配送先を指定できるため、離れて暮らすお母さんにも届けられます。日本全国対応（一部離島を除く）のサービスがほとんどですので、遠方でも問題ありません。事前にお届け先の住所を確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"母がお花のサブスクを気に入らなかった場合、解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"回数縛りのないサービス（medelu、AND PLANTS、HitoHanaなど）なら、いつでも解約可能です。bloomeeは4回の最低受け取り回数がありますが、ギフトチケットの場合はチケット分の回数のみで自動更新はされません。ギフトとして贈る場合は、回数が限定されているプランやチケットを選ぶと、お母さんが気軽に試せます。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクを母の日ギフトとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスでギフト対応が可能です。bloomeeではギフトチケットを購入して贈ることができ、受け取った方が好きなタイミングで花の定期便を始められます。HitoHanaではメッセージカード付きで届け先を指定でき、AND PLANTSもギフト対応に力を入れています。\"}},{\"@type\":\"Question\",\"name\":\"母の日ギフトにおすすめの予算はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花のサブスクのギフトとしては、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットなら金額を選べますし、HitoHanaなら1回あたり1,320〜4,950円（Lite〜LL）のプランが選べます。1回分だけでなく、3ヶ月分をまとめてギフトにするとより喜ばれます。\"}},{\"@type\":\"Question\",\"name\":\"母の日に届くように日付指定できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって対応が異なります。HitoHanaでは配送日の日付指定が可能で、母の日当日に届けることができます。bloomeeのギフトチケットは受け取った方が自分で開始日を設定するため、日付指定ではなくチケット自体を母の日に渡す形になります。AND PLANTSも配送日の相談が可能です。\"}},{\"@type\":\"Question\",\"name\":\"遠方の母に贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、花のサブスクは配送先を指定できるため、離れて暮らすお母さんにも届けられます。日本全国対応（一部離島を除く）のサービスがほとんどですので、遠方でも問題ありません。事前にお届け先の住所を確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"母がお花のサブスクを気に入らなかった場合、解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"回数縛りのないサービス（medelu、AND PLANTS、HitoHanaなど）なら、いつでも解約可能です。bloomeeは4回の最低受け取り回数がありますが、ギフトチケットの場合はチケット分の回数のみで自動更新はされません。ギフトとして贈る場合は、回数が限定されているプランやチケットを選ぶと、お母さんが気軽に試せます。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -198,7 +198,7 @@ export default function MothersDayGuidePage() {
                   </div>
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
                     <p className="text-xs text-[#999]">花の本数</p>
-                    <p className="text-sm font-bold text-[#333]">4〜6本</p>
+                    <p className="text-sm font-bold text-[#333]">6〜8本（Standard）</p>
                   </div>
                 </div>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
@@ -251,10 +251,10 @@ export default function MothersDayGuidePage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">3,000円以下のギフト</h3>
                 <p className="text-sm text-[#666] leading-relaxed mb-2">
-                  気軽に贈りたい方向け。bloomeeのギフトチケット（体験プラン2回分：約2,770円）がおすすめ。お試し感覚で花のある暮らしを体験してもらえます。
+                  気軽に贈りたい方向け。bloomeeのお試しプランは1回1,365円（花代980円＋送料385円）で、2回分なら2,730円が目安です（ギフトチケットの金額・内容は公式サイトでご確認ください）。お試し感覚で花のある暮らしを体験してもらえます。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
-                  <p className="text-xs text-[#4A7C59] font-medium">おすすめ：bloomee ギフトチケット（体験プラン2回分）</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">おすすめ：bloomee（お試しプラン2回分の目安 2,730円）</p>
                 </div>
               </div>
 
@@ -271,7 +271,7 @@ export default function MothersDayGuidePage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">5,000円以上のギフト</h3>
                 <p className="text-sm text-[#666] leading-relaxed mb-2">
-                  しっかり感謝を伝えたい方向け。HitoHanaの上位プラン3回分や、bloomeeのレギュラープラン3回分（約7,695円）がおすすめ。3ヶ月にわたって花が届くため、母の日以降もずっと喜んでもらえます。LIFFTの花束プラン（3,300円）2〜3回分もプレミアム感があります。
+                  しっかり感謝を伝えたい方向け。HitoHanaの上位プラン3回分や、bloomeeのベーシックプラン3回分（花代2,180円＋送料550円×3回＝8,190円）がおすすめ。3ヶ月にわたって花が届くため、母の日以降もずっと喜んでもらえます。LIFFTの花束プラン（3,300円）2〜3回分もプレミアム感があります。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
                   <p className="text-xs text-[#4A7C59] font-medium">おすすめ：HitoHana 上位プラン3回分 または LIFFT 花束プラン2回分</p>
@@ -472,7 +472,7 @@ export default function MothersDayGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              bloomee・AND PLANTS・HitoHanaの料金は2026年10月14日に公式サイトで確認した値です。最新の料金・サービス内容は各公式サイトでご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>
