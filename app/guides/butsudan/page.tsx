@@ -539,7 +539,7 @@ export default function ButsudanGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：仏花の定期便で仏壇に新鮮な花を供え続けられます
+              仏花の定期便で仏壇に新鮮な花を供え続けられます
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               仏花の定期便を利用すると、忙しい日々の中でも仏壇に常に新鮮な花をお供えできます。花屋に行く手間が省けるほか、専門家が選んだ旬の花が届くため、普段は選ばない花に出会える点も定期便の利点です。

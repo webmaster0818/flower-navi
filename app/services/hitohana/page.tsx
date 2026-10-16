@@ -116,7 +116,7 @@ export default function HitoHanaPage() {
           <div className="max-w-3xl mx-auto px-4">
             <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F6FAF7] p-5 md:p-6">
               <p className="text-xs text-[#4A7C59] font-bold mb-1">最終更新：2026年10月14日（料金・条件・レビュー数は同日に公式サイトで確認）</p>
-              <h2 className="text-lg md:text-xl font-bold text-[#333] mb-3">要点：hitohanaの花の定期便の特徴</h2>
+              <h2 className="text-lg md:text-xl font-bold text-[#333] mb-3">hitohanaの色・ボリューム・料金・解約条件の要点</h2>
               <ul className="text-sm md:text-base text-[#444] leading-relaxed space-y-2">
                 <li>・<strong>色（6色＋おまかせ）とボリューム（5サイズ）を毎回選べる</strong>点が最大の特徴です。花の種類は指定できません。</li>
                 <li>・料金は1回1,320円（Lite）〜4,950円（LL）です。特定商取引法に基づく表記では「1回あたりにかかる金額（税込）」として掲載されています。</li>
@@ -479,7 +479,7 @@ export default function HitoHanaPage() {
         <section id="summary" className="py-12 md:py-16 bg-[#F9E8E8]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：hitohanaの花の定期便は色とボリュームを選びたい方に適しています
+              hitohanaの花の定期便は色とボリュームを選びたい方に適しています
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               hitohana（ヒトハナ）の花の定期便は、6色＋おまかせから色を、5サイズからボリュームを毎回選べるのが特徴です。回数の条件はなく、1回1,320円（Lite）から始められます。

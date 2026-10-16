@@ -58,7 +58,7 @@ export default function HanamekuPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hanameku/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"description\":\"hanameku（ハナメク）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-15T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hanameku/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"description\":\"hanameku（ハナメク）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hanameku/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -438,7 +438,7 @@ export default function HanamekuPage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F5E9]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：口コミ・評判からみたハナメクが適している方
+              口コミ・評判からみたハナメクが適している方
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               ハナメク（hanameku）は、1,210円（税込・送料込）でポストに届くライトプランが中心の花のサブスクです。口コミでは花持ちの良さと色合いのかわいさが評価され、自分で生けるセルフアレンジプランも選べます。

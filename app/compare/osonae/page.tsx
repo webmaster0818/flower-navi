@@ -87,7 +87,7 @@ export default function OsonaePage() {
         <section className="py-10 md:py-14 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <div className="border-2 border-[#4A7C59] rounded-2xl p-6">
-              <p className="font-bold text-[#4A7C59] mb-3">要点：目的に応じてお選びください</p>
+              <p className="font-bold text-[#4A7C59] mb-3">目的別に見たお供えの花の選び方</p>
               <ul className="space-y-2 text-sm text-[#555] leading-relaxed">
                 <li>・<strong>お供え専用商品を確実に用意したい場合や、申し込みやすさを重視する場合</strong>は、当サイト提携の <Link href="/services/bloomee" className="text-[#4A7C59] underline">bloomee</Link>（仏花・お供え専用アレンジ／白を選択可／弔事カード可・<strong>4,060円〜</strong>）または <Link href="/services/and-plants" className="text-[#4A7C59] underline">AND PLANTS</Link>（お供え胡蝶蘭・立て札無料）が適しています。</li>
                 <li>・<strong>お供えの品揃えを重視する場合</strong>は <Link href="/services/hitohana" className="text-[#4A7C59] underline">HitoHana</Link> が胡蝶蘭からスタンド花まで最も充実しています（※当サイトは現時点で未提携のため、内容は公式サイトにてご確認ください）。</li>

@@ -68,7 +68,7 @@ export default function CampaignPage() {
         <section className="py-10 md:py-14 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <div className="border-2 border-[#4A7C59] rounded-2xl p-6">
-              <p className="font-bold text-[#4A7C59] mb-3">要点：価格を重視する場合はmedelu、まず試す場合はbloomeeをおすすめします</p>
+              <p className="font-bold text-[#4A7C59] mb-3">価格を重視する場合はmedelu、まず試す場合はbloomeeをおすすめします</p>
               <ul className="space-y-2 text-sm text-[#555] leading-relaxed">
                 <li>・送料込みで最も安い水準のプランは<strong>medelu Miniプラン（月748円・送料無料）</strong>です。</li>
                 <li>・ポスト投函で少量から始められるプランは<strong>bloomeeのお試しプラン</strong>です。</li>

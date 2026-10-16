@@ -554,7 +554,7 @@ export default function CheapRankingPage() {
             </div>
 
             <div className="mt-6 bg-[#E8F0EB] rounded-xl p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">ポイント</h3>
+              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">送料込みの総額で1,000円以下となるプラン</h3>
               <p className="text-sm text-[#666] leading-relaxed">
                 送料込みの総額で1,000円以下となるのは、medeluのMiniプランのみです。
                 「花代1,000円以下」と「総額1,000円以下」は異なるため、予算を検討する際は送料を含めた金額でご確認ください。
@@ -748,7 +748,7 @@ export default function CheapRankingPage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：価格を重視する場合はmedeluをおすすめします
+              価格を重視する場合はmedeluをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクを安い順に比較した結果、送料込みの総額ではmedelu（メデル）のMiniプラン（748円/回・送料無料）が最も安いサービスです。

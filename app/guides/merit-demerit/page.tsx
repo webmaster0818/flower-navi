@@ -365,7 +365,7 @@ export default function MeritDemeritGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：メリットを生かすには選び方が重要です
+              花のサブスクのメリットを生かすには選び方が重要です
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクには、「手間をかけずにフローリストのアレンジが届く」「費用を抑えやすい」「癒やし効果がある」など多くのメリットがあります。一方で、「花の種類を選べない」「夏場に品質が低下するリスクがある」「最低受け取り回数の条件がある」といったデメリットもあります。

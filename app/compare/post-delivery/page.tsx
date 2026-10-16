@@ -589,7 +589,7 @@ export default function PostDeliveryComparisonPage() {
             </div>
 
             <div className="mt-6 bg-[#E8F0EB] rounded-xl p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">要点</h3>
+              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">ポスト投函の利点と宅配便タイプとの使い分け</h3>
               <p className="text-sm text-[#666] leading-relaxed">
                 ポスト投函の主な利点は、手軽さと確実な受け取りです。花のボリュームやサイズに制限はありますが、
                 小さな花瓶に飾るには十分な量が届きます。忙しい方や不在がちな方には、ポスト投函タイプから始めることをおすすめします。
@@ -782,7 +782,7 @@ export default function PostDeliveryComparisonPage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：不在がちな方にはポスト投函対応サービスをおすすめします
+              不在がちな方にはポスト投函対応サービスをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスク5サービスを比較した結果、ポスト投函に対応しているのはbloomee・medelu・hanamekuの3サービスです。

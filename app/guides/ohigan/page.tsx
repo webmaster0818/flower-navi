@@ -27,7 +27,7 @@ export default function OhiganPage() {
           <p className="text-sm text-gray-600 mb-6">最終更新日：2026年7月24日 ／ flowerデリ編集部</p>
 
           <div className="bg-white rounded-2xl border border-[#EADFD3] p-5 mb-8">
-            <p className="font-bold text-[#7a5] mb-1">要点</p>
+            <p className="font-bold text-[#7a5] mb-1">2026年の秋彼岸の日程とお供えの花の選び方</p>
             <p className="text-sm leading-relaxed">2026年の秋彼岸は<strong>9月20日（日）〜26日（土）</strong>、中日は秋分の日の<strong>9月23日（水・祝）</strong>です。お供えの花は<strong>白を基調とし、菊やトルコギキョウなど日持ちする花</strong>が適しており、トゲ・毒・強い香りのある花は避けます。花のサブスクは専用の仏花ではありませんが、落ち着いた色合いのコースを選び、<strong>配送方式に合わせて注文・スキップの時期を調整</strong>することで、お彼岸に新鮮な花を用意できます。お彼岸・連休の時期は配送が混み合うため、<strong>1週間前までの手配</strong>をおすすめします。</p>
           </div>
 

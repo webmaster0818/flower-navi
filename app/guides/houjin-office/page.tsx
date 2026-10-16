@@ -125,7 +125,7 @@ export default function HoujinOfficePage() {
         <section className="py-10 md:py-14 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <div className="border-2 border-[#4A7C59] rounded-2xl p-6">
-              <p className="font-bold text-[#4A7C59] mb-3">要点：まず個人向けの少量プランで試し、規模に応じて法人プランを検討することをおすすめします</p>
+              <p className="font-bold text-[#4A7C59] mb-3">まず個人向けの少量プランで試し、規模に応じて法人プランを検討することをおすすめします</p>
               <ul className="space-y-2 text-sm text-[#555] leading-relaxed">
                 <li>・少量の花を受付やデスクに飾る程度であれば、<strong>個人向けサブスク（medelu 748円・送料無料〜）</strong>で対応できます。</li>
                 <li>・複数拠点・大きめのアレンジ・請求書払い・活け替え回収まで必要な場合は、<strong>法人専用サービス（bloomee biz など）</strong>が適しています。</li>

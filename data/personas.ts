@@ -10,6 +10,7 @@ export interface Persona {
   painPoints: { title: string; text: string }[]; // 抱える悩み
   recommended: { service: string; reason: string; priceFrom: number }[]; // 推奨サービス
   howToChoose: { step: number; title: string; text: string }[]; // 選び方ステップ
+  realCasesTitle: string; // 傾向セクションの見出し（ページごとに個別の文言）
   realCases: { author: string; situation: string; outcome: string }[]; // リアル事例
   faq: { q: string; a: string }[];
   relatedPaths: { label: string; href: string }[]; // 関連ページ内部リンク
@@ -18,6 +19,7 @@ export interface Persona {
 export const personas: Persona[] = [
   {
     slug: "hitorigurashi-josei",
+    realCasesTitle: "一人暮らし女性の住まいと勤務形態別に見た利用ケースの傾向",
     title: "一人暮らし女性向けの花のサブスク",
     h1: "一人暮らしの女性に適した花のサブスク｜癒し・価格・受け取りやすさで選ぶ",
     description: "一人暮らしの女性に人気の花のサブスク6サービスを比較しています。ポスト投函・低価格・少量タイプなど、自分のペースで楽しめるサービスの選び方を解説します。",
@@ -64,6 +66,7 @@ export const personas: Persona[] = [
   },
   {
     slug: "hitorigurashi-dansei",
+    realCasesTitle: "一人暮らし男性の在宅ワーク・住まい別に見た利用ケースの傾向",
     title: "一人暮らし男性向けの花のサブスク",
     h1: "一人暮らしの男性に適した花のサブスク｜部屋の雰囲気を変える3つの選び方",
     description: "一人暮らしの男性に人気の花のサブスクを比較しています。SNSでの見栄え重視・低価格重視など、目的別のおすすめサービスと、男性向けの花の選び方を解説します。",
@@ -105,6 +108,7 @@ export const personas: Persona[] = [
   },
   {
     slug: "kazoku-family",
+    realCasesTitle: "戸建て・マンション別に見たファミリーの利用ケースの傾向",
     title: "ファミリー向けの花のサブスク",
     h1: "家族で楽しむ花のサブスク｜子どもの情操教育や家族の会話のきっかけに",
     description: "ファミリー向けのおすすめの花のサブスクを紹介しています。子どもの情操教育、家族の話題づくり、玄関や食卓を彩るなど、目的別に解説します。",
@@ -145,6 +149,7 @@ export const personas: Persona[] = [
   },
   {
     slug: "shinia-senior",
+    realCasesTitle: "夫婦二人暮らし・一人暮らし別に見たシニアの利用ケースの傾向",
     title: "シニア・年配向けの花のサブスク",
     h1: "シニア向けの花のサブスク｜定年後の趣味と季節を感じる暮らし",
     description: "シニア（60代以上）におすすめの花のサブスクを紹介しています。受け取りやすさ、季節の花、贈り物への活用という観点で比較します。",
@@ -188,6 +193,7 @@ export const personas: Persona[] = [
 personas.push(
   {
     slug: "tomobataraki-fufu",
+    realCasesTitle: "勤務形態・出張の有無別に見た共働き夫婦の利用ケースの傾向",
     title: "共働き夫婦向けの花のサブスク",
     h1: "共働き夫婦に適した花のサブスク｜忙しい二人暮らしを彩る3つの選び方",
     description: "共働き夫婦におすすめの花のサブスクを比較しています。配送の時間帯、価格、二人で楽しめるアレンジの大きさという観点で解説します。",
@@ -228,6 +234,7 @@ personas.push(
   },
   {
     slug: "gakusei-student",
+    realCasesTitle: "仕送り額・上京時期別に見た学生の利用ケースの傾向",
     title: "学生向けの花のサブスク",
     h1: "学生でも続けられる花のサブスク｜月1,000円以内・解約しやすさで選ぶ",
     description: "学生でも続けられる花のサブスクを紹介しています。低価格、回数の条件がないこと、解約のしやすさという観点で、おすすめのサービスを比較します。",
@@ -268,6 +275,7 @@ personas.push(
   },
   {
     slug: "office-desk",
+    realCasesTitle: "在宅勤務・オフィス勤務別に見たデスクでの利用ケースの傾向",
     title: "オフィスデスク向けの花のサブスク",
     h1: "オフィスのデスクに飾る花のサブスク｜在宅・出社の両方に対応",
     description: "オフィスや在宅勤務のデスクに飾る花のサブスクを紹介しています。コンパクトなサイズ、価格、受け取りやすさという観点で解説します。",
@@ -307,6 +315,7 @@ personas.push(
   },
   {
     slug: "zaitaku-freelance",
+    realCasesTitle: "在宅時間・出張頻度別に見たフリーランスの利用ケースの傾向",
     title: "在宅フリーランス向けの花のサブスク",
     h1: "在宅ワーカー・フリーランス向けの花のサブスク｜仕事空間を整える3つのポイント",
     description: "在宅ワーカー・フリーランスにおすすめの花のサブスクを紹介しています。オンライン会議での見栄え、集中力の向上、気分転換という観点で解説します。",

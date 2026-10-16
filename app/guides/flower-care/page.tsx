@@ -746,7 +746,7 @@ export default function FlowerCarePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：基本のお手入れで花を長く楽しめます
+              基本のお手入れで花を長く楽しめます
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花を長持ちさせるために最も大切なのは、「水切り」と「毎日の水替え」です。

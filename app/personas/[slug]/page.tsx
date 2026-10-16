@@ -153,7 +153,7 @@ export default async function PersonaPage({ params }: Props) {
           {p.realCases.length > 0 && (
             <section className="mb-12">
               <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">
-                編集部のまとめ：想定される利用ケースの傾向
+                {p.realCasesTitle}
               </h2>
               <p className="text-xs text-[#999] mb-6">※公式情報やSNS上の口コミをもとに、編集部が傾向を整理した代表的なケースです。特定の個人の体験談ではありません。</p>
               <div className="grid md:grid-cols-2 gap-4">

@@ -192,7 +192,7 @@ export default function FurusatoNouzeiGuidePage() {
         <section className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：ふるさと納税で花のある暮らしをお得に始められます
+              ふるさと納税で花のある暮らしをお得に始められます
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               ふるさと納税の花の定期便は、<strong>実質2,000円で数か月間お花が届く</strong>方法です。産地直送の新鮮な花を楽しみながら、地域の花き農家を応援できる点も利点です。

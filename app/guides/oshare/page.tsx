@@ -683,7 +683,7 @@ export default function OshareGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-gradient-to-b from-[#E8F0EB] to-[#FDF2F8]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：おしゃれさを重視する場合はAND PLANTSをおすすめします
+              おしゃれさを重視する場合はAND PLANTSをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               当サイトでは、おしゃれな花のサブスクを比較した結果、デザイン性・アレンジのセンス・総合的な提案力の面から、AND PLANTS（アンドプランツ）を最もおすすめします。

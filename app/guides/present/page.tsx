@@ -436,7 +436,7 @@ export default function PresentGuidePage() {
         <section id="occasions" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              シーン別のおすすめ：母の日・誕生日・結婚祝い・退職祝い
+              母の日・誕生日・結婚祝い・退職祝いのシーン別のおすすめ
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
               花の定期便をプレゼントする際は、贈る場面に合わせてサービスを選ぶと、より喜ばれるギフトになります。
@@ -676,7 +676,7 @@ export default function PresentGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：花の定期便は継続して花が届くプレゼントです
+              花の定期便は継続して花が届くプレゼントです
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花の定期便は、一度きりの花束では実現できない、毎月花が届く喜びを贈れるギフトです。

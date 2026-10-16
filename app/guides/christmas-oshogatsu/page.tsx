@@ -26,7 +26,7 @@ export default function ChristmasOshogatsuPage() {
           <p className="text-sm text-gray-600 mb-6">最終更新日：2026年7月10日 ／ flowerデリ編集部</p>
 
           <div className="bg-white rounded-2xl border border-[#EADFD3] p-5 mb-8">
-            <p className="font-bold text-[#7a5] mb-1">要点</p>
+            <p className="font-bold text-[#7a5] mb-1">クリスマスからお正月にかけて花のサブスクを利用する際の要点</p>
             <p className="text-sm leading-relaxed">冬は切り花が長持ちしやすく、<strong>クリスマスからお正月にかけては花を飾るのに適した季節</strong>です。毎回新しい花が届く<strong>花のサブスク</strong>であれば、クリスマスの華やかなアレンジから、松・千両・葉牡丹などの<strong>お正月アレンジ（しめ飾りの代わり）</strong>まで、年末年始を通して手軽に楽しめます。12月は配送が最も混み合うため、<strong>早めのお申し込み</strong>をおすすめします。ギフトチケットのあるbloomee、日付指定・メッセージカードに対応したHitoHana、ギフトに対応したAND PLANTSが適しています。</p>
           </div>
 

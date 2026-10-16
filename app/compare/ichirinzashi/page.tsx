@@ -142,7 +142,7 @@ export default function IchirinzashiPage() {
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-3xl mx-auto px-4">
               <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-                要点：一輪挿しには少量プランとポスト投函の組み合わせが適しています
+                一輪挿しには少量プランとポスト投函の組み合わせが適しています
               </h2>
               <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
                 1本のみが届くサブスクは、主要サービスには現在ありません（2026年7月時点・公式サイト確認）。一輪挿しで楽しむ場合は、<strong>3〜4本が届く低価格帯の少量プラン</strong>が適しています。届いた花を1本ずつ分けて、玄関・トイレ・デスク・寝室など複数の一輪挿しに飾ると、1回分の花で部屋全体を彩ることができます。
@@ -281,7 +281,7 @@ export default function IchirinzashiPage() {
           {/* まとめ・CTA */}
           <section className="py-12 md:py-16 bg-[#E8F0EB]">
             <div className="max-w-3xl mx-auto px-4 text-center">
-              <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">まとめ：少量プランで一輪挿しのある暮らしを始められます</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">少量プランで一輪挿しのある暮らしを始められます</h2>
               <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
                 一輪挿しで花を楽しむ場合は、3〜4本の少量プランを分けて飾る方法をおすすめします。送料込み748円/回で回数の条件がないmedelu Miniであれば、気軽に始めて、合わない場合はすぐに解約できます。まずは1回、花のある生活をお試しください。
               </p>

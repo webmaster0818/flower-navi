@@ -73,7 +73,7 @@ export default function RyokinPage() {
         {/* AEO 即答ブロック */}
         <div className="bg-[#F4F8F5] border border-[#D7E6DC] rounded-lg p-4 mb-8">
           <p className="text-sm text-[#333] leading-relaxed">
-            <strong>要点：</strong>花のサブスクは、月額ではなく
+            花のサブスクは、月額ではなく
             <strong>〈送料込みの1回あたりの総額〉〈最低受取回数までの総額〉〈1本あたりの単価〉</strong>で比較することをおすすめします。
             送料込みの最安は<strong>{sorted[0].name}（{yen(sorted[0].cheapest.price)}円・{sorted[0].cheapest.name}）</strong>です。
             まず試してみたい場合は、回数の条件がないサービスをおすすめします（{UPDATED}時点・公式確認）。

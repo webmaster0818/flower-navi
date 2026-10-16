@@ -411,7 +411,7 @@ export default function MothersDayGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#F9E8E8]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：花のサブスクで母の日の感謝を長く届けられます
+              花のサブスクで母の日の感謝を長く届けられます
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               母の日に花を贈ることは一般的ですが、花のサブスクを贈ることで、<strong>毎月花が届く</strong>という新しい体験をプレゼントできます。一度きりの花束ではなく、数か月にわたって花が届く楽しみを、お母さんに味わっていただけます。

@@ -224,7 +224,7 @@ export default function BloomeeVsHitohanaPage() {
         <section className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：総合的にはHitoHanaをおすすめします
+              bloomeeとHitoHanaの比較では総合的にHitoHanaをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               8項目で比較した結果、総合的には<strong>HitoHana</strong>が優位です。送料無料・回数の条件なし・色の選択が可能など、利用者にとっての利点が多いためです。

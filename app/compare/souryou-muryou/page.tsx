@@ -286,7 +286,7 @@ export default function SouryouMuryouPage() {
         <section className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：送料無料のサービスではmedeluが最安です
+              送料無料のサービスではmedeluが最安です
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               送料無料のお花の定期便3サービスを比較した結果、<strong>総額が最も安いのはmedelu Miniコース（748円/回）</strong>です。回数の条件がなく、ポスト投函で手軽に受け取れるため、初めての方にもおすすめします。

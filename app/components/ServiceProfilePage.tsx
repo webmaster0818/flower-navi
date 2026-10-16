@@ -24,6 +24,8 @@ export type ServiceProfile = {
   heroLead: string;
   heroStats: { label: string; value: string }[];
   verdict: ReactNode[];
+  /** 冒頭の要点ボックスの見出し（ページごとに個別の文言） */
+  verdictTitle: string;
   overviewTitle: string;
   overview: string[];
   basicInfo: [string, ReactNode][];
@@ -155,7 +157,7 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
             <div className="max-w-3xl mx-auto px-4">
               <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F6FAF7] p-5 md:p-6">
                 <p className="text-xs text-[#4A7C59] font-bold mb-1">最終更新：{p.verifiedAt}（料金・条件は同日に公式サイトで確認）</p>
-                <h2 className="text-lg md:text-xl font-bold text-[#333] mb-3">要点：{p.shortName}の概要</h2>
+                <h2 className="text-lg md:text-xl font-bold text-[#333] mb-3">{p.verdictTitle}</h2>
                 <ul className="text-sm md:text-base text-[#444] leading-relaxed space-y-2">
                   {p.verdict.map((v, i) => <li key={i}>・{v}</li>)}
                 </ul>

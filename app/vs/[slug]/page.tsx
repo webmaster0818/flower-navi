@@ -155,7 +155,7 @@ export default async function VsPage({ params }: Props) {
           {/* Real cases */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">
-              編集部のまとめ：想定される選び方の傾向
+              {v.realCasesTitle}
             </h2>
             <p className="text-xs text-[#999] mb-6">※公式情報やSNS上の口コミをもとに、編集部が傾向を整理した代表的なケースです。特定の個人の体験談ではありません。</p>
             <div className="space-y-3">

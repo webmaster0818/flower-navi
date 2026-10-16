@@ -26,7 +26,7 @@ export default function KeirouNoHiPage() {
           <p className="text-sm text-gray-600 mb-6">最終更新日：2026年6月23日 ／ flowerデリ編集部</p>
 
           <div className="bg-white rounded-2xl border border-[#EADFD3] p-5 mb-8">
-            <p className="font-bold text-[#7a5] mb-1">要点</p>
+            <p className="font-bold text-[#7a5] mb-1">2026年の敬老の日に花のサブスクを贈る際の要点</p>
             <p className="text-sm leading-relaxed">2026年の敬老の日は<strong>9月21日（月・祝）</strong>です。一度きりの花束より、毎月新しい花が届く<strong>花のサブスク</strong>を贈ると、敬老の日のあとも長く楽しんでいただけます。ギフトチケットのあるbloomee、日付指定・メッセージカードに対応したHitoHana、ギフトに対応したAND PLANTSなどが適しています。配送が混み合う時期のため、早めのお申し込みをおすすめします。</p>
           </div>
 

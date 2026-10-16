@@ -89,7 +89,7 @@ export default function KanyouShokubutsuPage() {
         <section className="py-10 md:py-14 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <div className="border-2 border-[#4A7C59] rounded-2xl p-6">
-              <p className="font-bold text-[#4A7C59] mb-3">要点：置き場所の明るさに合う種類を選び、日数ではなく「土の乾き」を基準に水を与えます</p>
+              <p className="font-bold text-[#4A7C59] mb-3">置き場所の明るさに合う種類を選び、日数ではなく「土の乾き」を基準に水を与えます</p>
               <ul className="space-y-2 text-sm text-[#555] leading-relaxed">
                 <li>・置き場所は<strong>明るさで3タイプ</strong>（窓際・レースカーテン越し・窓から離れた場所）に分けて考えます。</li>
                 <li>・水やりは<strong>土の表面が乾いてからたっぷり</strong>与えます。受け皿にたまった水は必ず捨ててください。</li>
@@ -247,7 +247,7 @@ export default function KanyouShokubutsuPage() {
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">お手入れの手間から、自分で育てるか専門業者に任せるかを選ぶ</h2>
             <div className="border border-[#E8E0D5] bg-[#FAF7F2] rounded-2xl p-6 mb-6">
-              <p className="font-bold text-[#4A7C59] mb-3">サービス選びの要点：育てて楽しむなら「購入型」、手間なく入れ替えるなら「レンタル型」が適しています</p>
+              <p className="font-bold text-[#4A7C59] mb-3">サービスは、育てて楽しむなら「購入型」、手間なく入れ替えるなら「レンタル型」が適しています</p>
               <ul className="space-y-2 text-sm text-[#555] leading-relaxed">
                 <li>・<strong>購入型</strong>（毎回届く植物が自分のものになる）：長く育てたい方に適しています。AND PLANTS など。</li>
                 <li>・<strong>レンタル型</strong>（定額で専門スタッフが交換・メンテナンス）：枯らす不安を避けたい方や、オフィスで常に良い状態を保ちたい方に適しています。</li>

@@ -6,7 +6,7 @@ import type { ReviewEvidenceData } from "@/data/reviewEvidence";
 
 const yen = (n: number) => `${n.toLocaleString()}円`;
 
-/** ヒーロー直下に置く「要点」ボックス（口コミ・評判の要約＋最終確認日） */
+/** ヒーロー直下に置く要点ボックス（口コミ・評判の要約＋最終確認日） */
 export function ReviewVerdict({ d, s }: { d: ReviewEvidenceData; s: Service }) {
   return (
     <section aria-labelledby="verdict-heading" className="bg-white py-8 border-b border-[#E5E5E5]">
@@ -16,7 +16,7 @@ export function ReviewVerdict({ d, s }: { d: ReviewEvidenceData; s: Service }) {
             最終更新：{d.updatedAt}（料金は{s.verifiedAt}に公式サイトで確認）
           </p>
           <h2 id="verdict-heading" className="text-lg md:text-xl font-bold text-[#333] mb-3">
-            要点：{d.shortName}の口コミ・評判の傾向
+            {d.verdictTitle}
           </h2>
           <p className="text-sm md:text-base text-[#444] leading-relaxed mb-4">{d.verdict}</p>
           <div className="grid md:grid-cols-2 gap-3 text-sm">

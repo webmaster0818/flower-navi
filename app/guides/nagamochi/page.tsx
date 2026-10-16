@@ -182,7 +182,7 @@ export default function NagamochiGuidePage() {
         <section className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：基本の3つの手順で花持ちが大幅に向上します
+              基本の3つの手順で花持ちが大幅に向上します
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               切り花を長持ちさせるために最も重要なのは、<strong>(1)水切り、(2)延命剤の使用、(3)こまめな水替え</strong>の3つです。この基本を実践することで、花の寿命は1.5〜2倍に延びます。

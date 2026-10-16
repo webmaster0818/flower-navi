@@ -10,6 +10,7 @@ export interface VsComparison {
   spec: { item: string; a: string; b: string; winner: "A" | "B" | "draw" }[];
   forA: { type: string; reason: string }[]; // A が向く人
   forB: { type: string; reason: string }[]; // B が向く人
+  realCasesTitle: string; // 傾向セクションの見出し（ページごとに個別の文言）
   realCases: { author: string; situation: string; chose: string; outcome: string }[];
   faq: { q: string; a: string }[];
   relatedPaths: { label: string; href: string }[];
@@ -18,6 +19,7 @@ export interface VsComparison {
 export const vsComparisons: VsComparison[] = [
   {
     slug: "and-plants-vs-lifft",
+    realCasesTitle: "在宅での癒し・記念日の贈り物別に見たAND PLANTSとLIFFTの選び方の傾向",
     serviceA: "AND PLANTS",
     serviceB: "LIFFT",
     title: "AND PLANTSとLIFFTの比較｜デザイン重視と本格的な花のどちらを選ぶか",
@@ -69,6 +71,7 @@ export const vsComparisons: VsComparison[] = [
   },
   {
     slug: "medelu-vs-and-plants",
+    realCasesTitle: "勉強・オンライン会議・在宅勤務の目的別に見たmedeluとAND PLANTSの選び方の傾向",
     serviceA: "medelu",
     serviceB: "AND PLANTS",
     title: "medeluとAND PLANTSの比較｜低価格とデザイン性のどちらを選ぶか",
@@ -118,6 +121,7 @@ export const vsComparisons: VsComparison[] = [
   },
   {
     slug: "lifft-vs-hitohana",
+    realCasesTitle: "記念日の贈り物・家族での利用別に見たLIFFTとHitoHanaの選び方の傾向",
     serviceA: "LIFFT",
     serviceB: "HitoHana",
     title: "LIFFTとHitoHanaの比較｜本格的な花とボリュームのどちらを選ぶか",
@@ -166,6 +170,7 @@ export const vsComparisons: VsComparison[] = [
   },
   {
     slug: "hitohana-vs-medelu",
+    realCasesTitle: "家族での利用・予算・置き場所別に見たHitoHanaとmedeluの選び方の傾向",
     serviceA: "HitoHana",
     serviceB: "medelu",
     title: "HitoHanaとmedeluの比較｜ボリュームと低価格のどちらを選ぶか",
@@ -212,6 +217,7 @@ export const vsComparisons: VsComparison[] = [
   },
   {
     slug: "tasuhana-vs-medelu",
+    realCasesTitle: "社会貢献と予算のどちらを重視するかで分かれるタスハナとmedeluの選び方の傾向",
     serviceA: "タスハナ",
     serviceB: "medelu",
     title: "タスハナとmedeluの比較｜社会貢献型と低価格のどちらを選ぶか",
@@ -258,6 +264,7 @@ export const vsComparisons: VsComparison[] = [
   },
   {
     slug: "bloomee-vs-and-plants",
+    realCasesTitle: "継続期間の想定別に見たbloomeeとAND PLANTSの選び方の傾向",
     serviceA: "bloomee",
     serviceB: "AND PLANTS",
     title: "bloomeeとAND PLANTSの比較｜定番のサービスとデザイン重視のサービス",
@@ -304,6 +311,7 @@ export const vsComparisons: VsComparison[] = [
   },
   {
     slug: "hanameku-vs-medelu",
+    realCasesTitle: "新しいサービスの試用と価格重視で分かれるハナメクとmedeluの選び方の傾向",
     serviceA: "ハナメク",
     serviceB: "medelu",
     title: "ハナメクとmedeluの比較｜新しいサービスと低価格のサービスのどちらを選ぶか",

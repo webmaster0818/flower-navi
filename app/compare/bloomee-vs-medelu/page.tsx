@@ -117,7 +117,7 @@ export default function BloomeeVsMedeluPage() {
               <p className="text-sm font-bold text-[#333] mb-3">目次</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#conclusion" className="hover:text-[#4A7C59] transition-colors">1. 要点：bloomeeとmedeluが向いている方</a></li>
+                  <li><a href="#conclusion" className="hover:text-[#4A7C59] transition-colors">1. 利用目的に応じたbloomeeとmedeluの選び分け</a></li>
                   <li><a href="#price" className="hover:text-[#4A7C59] transition-colors">2. 料金比較</a></li>
                   <li><a href="#volume" className="hover:text-[#4A7C59] transition-colors">3. 花の本数・ボリューム</a></li>
                   <li><a href="#delivery" className="hover:text-[#4A7C59] transition-colors">4. 配送方法</a></li>
@@ -141,7 +141,7 @@ export default function BloomeeVsMedeluPage() {
         <section id="conclusion" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              要点：利用目的に応じてbloomeeとmedeluを選び分けられます
+              利用目的に応じてbloomeeとmedeluを選び分けられます
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
               費用と手軽さを重視する場合はmedelu、ブランドの知名度やサービスの充実度を重視する場合はbloomeeをおすすめします。

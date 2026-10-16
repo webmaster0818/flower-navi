@@ -304,7 +304,7 @@ export default function YametaGuidePage() {
         <section className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：解約の前にサービスの見直しをご検討ください
+              解約の前にサービスの見直しをご検討ください
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクをやめたいと感じる理由の多くは、<strong>プランやサービスの選び直し</strong>で解決できる可能性があります。飽きた場合は別のサービスへの乗り換え、費用に不満がある場合はmedeluのような送料無料のサービス、花が好みに合わない場合はHitoHanaのような色を選べるサービスをご検討ください。

@@ -7,6 +7,8 @@ export type ReviewEvidenceData = {
   id: string;
   shortName: string;
   updatedAt: string;
+  /** 冒頭の要点ボックスの見出し（ページごとに個別の文言） */
+  verdictTitle: string;
   verdict: string;
   intro: string;
   positive: string[];
@@ -22,6 +24,7 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
   {
     id: "bloomee",
     shortName: "bloomee（ブルーミー）",
+    verdictTitle: "bloomeeの口コミで評価される点と4回継続の前提",
     updatedAt: "2026年10月15日",
     verdict:
       "ポスト投函で受け取れる手軽さと「花代980円〜」の始めやすさを評価する声が多い一方、口コミサイトでは「花がしおれていた・同じ花が続く」「最初の4回は解約できず、途中解約料がかかる」「解約がわかりにくい」といった厳しい声も目立ちます。4回（お試しなら送料込みで総額5,460円）受け取ることを前提とする場合は有力な候補ですが、1〜2回だけ試したい方には適していません。",
@@ -71,6 +74,7 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
   {
     id: "andplants",
     shortName: "AND PLANTS（アンドプランツ）",
+    verdictTitle: "AND PLANTSの口コミで評価される梱包・植物の状態と不満点",
     updatedAt: "2026年10月15日",
     verdict:
       "「アンドプランツ」の口コミは観葉植物の通販としての声が大半で、梱包の丁寧さ・植物の状態の良さ・発送前に写真で確認できる点が高評価、価格の高さ・品切れ・コバエや茎折れの報告が不満点です。花の定期便（2026年5月から「AND FLOWER」ブランド）は送料込み1,980円〜・いつでも解約できる都度払いで、実際に注文した記事では「傷や折れがなく届いた」「咲きかけの花が数日で満開になった」と状態の良さが評価される一方、「次回の決済前に手続きが必要」「イメージよりボリュームが少ない」という声もあります（2026年10月15日確認）。",
@@ -118,6 +122,7 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
   {
     id: "hanameku",
     shortName: "ハナメク（hanameku）",
+    verdictTitle: "ハナメクの口コミで評価される点と初回解約・締切の注意点",
     updatedAt: "2026年10月15日",
     verdict:
       "1,210円（税込・送料込）でポストに届く手軽さと、花持ちの良さ・パステル調の色合いを評価する声が多い一方、「花材がかぶる」「蕾やしおれ気味で届くことがある」という声もあります。最低回数の記載はありませんが、初回（1回目）は解約できない点と、締切が「お届け予定日の10日前」と早い点に注意が必要です。",
@@ -164,6 +169,7 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
   {
     id: "medelu",
     shortName: "medelu（メデル）",
+    verdictTitle: "medeluの口コミで評価される価格・コースと寄せられる不満点",
     updatedAt: "2026年10月15日",
     verdict:
       "748円（税込・送料込）〜の価格と、部屋のテイストで選べるコース・花のセンスの良さを評価する声が多い一方、「Miniは本数が少ない」「暑い時期は花持ちが短い・しおれて届いた」「日付指定ができない」という声もあります。最低利用回数の記載は公式に見当たらず、決済日前日の木曜までに手続きすれば次回から止められるため、試しやすいサービスです。",

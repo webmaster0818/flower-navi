@@ -132,7 +132,7 @@ export default function KanyouShokubutsuRyokinPage() {
         <section className="py-10 md:py-14 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <div className="border-2 border-[#4A7C59] rounded-2xl p-6">
-              <p className="font-bold text-[#4A7C59] mb-3">要点：料金は「何を置くか」よりも「誰が管理するか」によって決まります</p>
+              <p className="font-bold text-[#4A7C59] mb-3">料金は「何を置くか」よりも「誰が管理するか」によって決まります</p>
               <ul className="space-y-2 text-sm text-[#555] leading-relaxed">
                 <li>・自分で水やりまで行う<strong>購入型</strong>は、最初に植物代・鉢代・送料がかかり、その後の固定費は小さくなります。</li>
                 <li>・管理まで任せる<strong>レンタル型</strong>は、初期費用を抑えられる代わりに、契約している間ずっと月額を払い続けます。</li>

@@ -731,7 +731,7 @@ export default function SeasonalFlowersPage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：季節の花を暮らしに取り入れる方法
+              季節の花を暮らしに取り入れる方法
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクを利用すると、ご自身では選ばない季節の花に触れ、四季の移ろいを日常の中で感じられます。

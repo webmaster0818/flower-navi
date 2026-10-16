@@ -27,7 +27,7 @@ export default function ObonPage() {
           <p className="text-sm text-gray-600 mb-6">最終更新日：2026年6月23日 ／ flowerデリ編集部</p>
 
           <div className="bg-white rounded-2xl border border-[#EADFD3] p-5 mb-8">
-            <p className="font-bold text-[#7a5] mb-1">要点</p>
+            <p className="font-bold text-[#7a5] mb-1">2026年のお盆の日程とお供えの花の選び方</p>
             <p className="text-sm leading-relaxed">2026年のお盆は<strong>8月13〜16日（月遅れ盆）</strong>です。お供えの花は<strong>白を基調とし、菊やトルコギキョウなど日持ちする花</strong>が適しており、トゲ・毒・強い香りのある花は避けます。花のサブスクは専用の仏花ではありませんが、落ち着いた色合いのコース（medeluのNATURAL系など）を選び、<strong>スキップ機能で配送をお盆前に調整</strong>することで、新鮮なお供えの花を用意できます。新盆（初盆）では、特に丁寧に整えることをおすすめします。</p>
           </div>
 

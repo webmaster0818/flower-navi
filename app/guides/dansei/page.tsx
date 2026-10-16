@@ -220,7 +220,7 @@ export default function DanseiGuidePage() {
         <section className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：男性にも花のある暮らしをおすすめします
+              男性にも花のある暮らしをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクは、男性にもおすすめできるサービスです。部屋の雰囲気が良くなるだけでなく、リラックス効果や季節感を得られるメリットがあります。「花屋に入りにくい」「何を選べばよいかわからない」という悩みも、サブスクで解消できます。

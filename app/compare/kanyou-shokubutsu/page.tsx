@@ -522,7 +522,7 @@ export default function KanyouShokubutsuPage() {
         <section className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：観葉植物サブスクにはAND PLANTSをおすすめします
+              観葉植物サブスクにはAND PLANTSをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               観葉植物のサブスクの主な利点は、切り花と比べて手入れの負担が少なく、長く楽しめることです。初心者の方には、当サイトでは<strong>AND PLANTS</strong>を最もおすすめしています。プロが選んだ育てやすい植物が届き、14日間の交換保証もあるため、安心して始められます。
