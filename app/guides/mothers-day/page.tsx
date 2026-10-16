@@ -174,7 +174,7 @@ export default function MothersDayGuidePage() {
                   </div>
                 </div>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">ポイント：受け取った方がお好きなタイミングで開始できるため、「もう花のサブスクを利用している」「いつ届くかわからないと困る」という方にも安心して贈れます。</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">受け取った方がお好きなタイミングで開始できるため、「もう花のサブスクを利用している」「いつ届くかわからないと困る」という方にも安心して贈れます。</p>
                 </div>
               </div>
 
@@ -202,7 +202,7 @@ export default function MothersDayGuidePage() {
                   </div>
                 </div>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">ポイント：ボリュームのあるおしゃれなアレンジが届くため、見栄えのするプレゼントを贈りたい方におすすめです。送料無料で、回数の条件がない点も利点です。</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">ボリュームのあるおしゃれなアレンジが届くため、見栄えのするプレゼントを贈りたい方におすすめです。送料無料で、回数の条件がない点も利点です。</p>
                 </div>
               </div>
 
@@ -230,7 +230,7 @@ export default function MothersDayGuidePage() {
                   </div>
                 </div>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">ポイント：花の色やボリュームを選べるため、お母さんの好みに合わせて贈ることができます。メッセージカードに手書きで感謝の言葉を添えられる点も利点です。</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">花の色やボリュームを選べるため、お母さんの好みに合わせて贈ることができます。メッセージカードに手書きで感謝の言葉を添えられる点も利点です。</p>
                 </div>
               </div>
             </div>

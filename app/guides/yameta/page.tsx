@@ -295,7 +295,7 @@ export default function YametaGuidePage() {
               ※ 2026年5月時点の各社公式情報にもとづいています。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <p className="text-sm text-[#666] mt-6 leading-relaxed">
-              <strong>要点:</strong> いつでも解約できることを重視する場合は、<a href="/services/medelu" className="text-[#4A7C59] underline">medelu</a>が適しています。bloomeeには初回4回の最低受け取り回数があるため、試しに始める場合はまずmedeluを利用し、継続を決めた段階でbloomeeに乗り換える方法をおすすめします。
+              表のとおり、いつでも解約できることを重視する場合は、<a href="/services/medelu" className="text-[#4A7C59] underline">medelu</a>が適しています。bloomeeには初回4回の最低受け取り回数があるため、試しに始める場合はまずmedeluを利用し、継続を決めた段階でbloomeeに乗り換える方法をおすすめします。
             </p>
           </div>
         </section>
