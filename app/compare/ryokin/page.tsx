@@ -147,7 +147,7 @@ export default function RyokinPage() {
                 <h3 className="font-bold text-[#4A7C59] mb-3">比較で選ぶ</h3>
                 <ul className="space-y-2 text-[#666]">
                   <li><a href="/compare/cheap/" className="hover:text-[#4A7C59] underline">安い順ランキング</a></li>
-                  <li><a href="/compare/500yen/" className="hover:text-[#4A7C59] underline">ワンコイン帯で始める</a></li>
+                  <li><a href="/compare/500yen/" className="hover:text-[#4A7C59] underline">500円台で始められる？最安プラン比較</a></li>
                   <li><a href="/compare/ichirinzashi/" className="hover:text-[#4A7C59] underline">一輪挿しに合う少量プラン</a></li>
                   <li><a href="/compare/souryou-muryou/" className="hover:text-[#4A7C59] underline">送料無料で比較</a></li>
                   <li><a href="/compare/post-delivery/" className="hover:text-[#4A7C59] underline">ポスト投函で受け取る</a></li>

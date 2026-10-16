@@ -287,7 +287,7 @@ export default function IchirinzashiPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
                 <a href="/services/medelu/" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">medeluの詳細を見る</a>
-                <a href="/compare/500yen/" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">ワンコイン帯の比較を見る</a>
+                <a href="/compare/500yen/" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">最安プランの比較を見る</a>
                 <a href="/compare/cheap/" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">安い順ランキングを見る</a>
                 <a href="/compare/ryokin/" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">全プラン料金一覧を見る</a>
                 <a href="/know-guides/summer-care/" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">夏の花を長持ちさせる方法を見る</a>
