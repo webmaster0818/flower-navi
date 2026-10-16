@@ -7,23 +7,23 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "花のサブスクは月いくらかかりますか？",
-    a: "サービスやプランによって異なりますが、最安クラスは月1,000円前後（タスハナ+actの月1回で送料込み990円、medelu Miniの隔週で1,496円）、一般的には月1,000〜3,000円程度です。送料が別途かかるサービス（bloomeeは385〜550円）もあれば、送料無料のサービス（medelu、AND PLANTS）もあるため、送料込みの総額で比較することをおすすめします。",
+    a: "サービスやプランによって異なりますが、最も安い価格帯で月1,000円前後（タスハナ+actの月1回で送料込み990円、medelu Miniの隔週で1,496円）、一般的には月1,000〜3,000円程度です。送料が別途かかるサービス（bloomeeは385〜550円）と送料無料のサービス（medelu、AND PLANTS）があるため、送料込みの総額で比較することをおすすめします。",
   },
   {
     q: "花のサブスクはどのくらい続ける人が多いですか？",
-    a: "公式データによると、bloomeeの継続率は約80%以上、medeluも高い継続率を維持しています。3ヶ月以上続ける方が多く、一度生活に花がある暮らしに慣れるとやめられなくなるという声が多いです。まずは回数縛りなしのサービスで1〜2ヶ月試してみるのがおすすめです。",
+    a: "公式データによると、bloomeeの継続率は約80%以上で、medeluも高い継続率を維持しています。3ヶ月以上続ける方が多く、花のある暮らしに慣れると継続したくなるという声が多く寄せられています。まずは回数の条件がないサービスで1〜2ヶ月試すことをおすすめします。",
   },
   {
     q: "一人暮らしでも花のサブスクは使えますか？",
-    a: "一人暮らしの方にこそおすすめです。ポスト投函対応サービスなら不在時でも受け取れますし、少量のプランを選べば場所も取りません。部屋に花があるだけで空間の印象が明るくなり、帰宅時の気分も変わります。medelu ANYROOMコースやタスハナが一人暮らしに人気です。",
+    a: "一人暮らしの方にもおすすめです。ポスト投函に対応したサービスであれば不在時でも受け取れ、少量のプランを選べば場所も取りません。部屋に花を飾ることで空間の印象が明るくなり、帰宅時の気分も変わります。一人暮らしの方には、medelu ANYROOMコースやタスハナが人気です。",
   },
   {
-    q: "花のサブスクとお花屋さん、どちらがお得ですか？",
-    a: "コスパ面ではサブスクの方がお得なケースが多いです。花屋のミニブーケは800〜1,500円程度ですが、サブスクは市場直送で中間マージンがカットされるため、同等の品質で安く手に入ります。一方、特定の花を指定して買いたい場合は花屋の方が自由度が高いです。",
+    q: "花のサブスクとお花屋さんでは、どちらが割安ですか？",
+    a: "費用面では、サブスクのほうが割安になるケースが多くあります。花屋のミニブーケは800〜1,500円程度ですが、サブスクは市場から直送することで中間マージンを抑えているため、同等の品質の花を安く購入できます。一方、特定の花を指定して購入したい場合は、花屋のほうが自由度が高くなります。",
   },
   {
     q: "花のアレルギーがある場合でも利用できますか？",
-    a: "花粉アレルギーの方は注意が必要です。多くのサービスでは届く花の種類を事前に指定できないため、アレルギーの原因となる花が届く可能性があります。事前にカスタマーサポートに相談すると、特定の花を避けて配送してもらえるサービスもあります。花粉が少ない品種を中心に扱うサービスを選ぶのも一つの方法です。",
+    a: "花粉アレルギーの方は注意が必要です。多くのサービスでは届く花の種類を事前に指定できないため、アレルギーの原因となる花が届く可能性があります。事前にカスタマーサポートへ相談すると、特定の花を避けて配送してもらえるサービスもあります。花粉が少ない品種を中心に扱うサービスを選ぶことも一つの方法です。",
   },
 ];
 
@@ -36,14 +36,14 @@ export default function MeritDemeritGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクのメリット・デメリット\",\"item\":\"https://ohana-delivery.com/guides/merit-demerit/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクのメリット・デメリット\",\"description\":\"花のサブスクのメリット・デメリット を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/merit-demerit/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクのメリット・デメリット\",\"description\":\"花のサブスクのメリット・デメリットを解説します。料金・評判・選び方もあわせて説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/merit-demerit/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月いくらかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、最安クラスは月1,000円前後（タスハナ+actの月1回で送料込み990円、medelu Miniの隔週で1,496円）、一般的には月1,000〜3,000円程度です。送料が別途かかるサービス（bloomeeは385〜550円）もあれば、送料無料のサービス（medelu、AND PLANTS）もあるため、送料込みの総額で比較することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらい続ける人が多いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"公式データによると、bloomeeの継続率は約80%以上、medeluも高い継続率を維持しています。3ヶ月以上続ける方が多く、一度生活に花がある暮らしに慣れるとやめられなくなるという声が多いです。まずは回数縛りなしのサービスで1〜2ヶ月試してみるのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしでも花のサブスクは使えますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの方にこそおすすめです。ポスト投函対応サービスなら不在時でも受け取れますし、少量のプランを選べば場所も取りません。部屋に花があるだけで空間の印象が明るくなり、帰宅時の気分も変わります。medelu ANYROOMコースやタスハナが一人暮らしに人気です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクとお花屋さん、どちらがお得ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"コスパ面ではサブスクの方がお得なケースが多いです。花屋のミニブーケは800〜1,500円程度ですが、サブスクは市場直送で中間マージンがカットされるため、同等の品質で安く手に入ります。一方、特定の花を指定して買いたい場合は花屋の方が自由度が高いです。\"}},{\"@type\":\"Question\",\"name\":\"花のアレルギーがある場合でも利用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花粉アレルギーの方は注意が必要です。多くのサービスでは届く花の種類を事前に指定できないため、アレルギーの原因となる花が届く可能性があります。事前にカスタマーサポートに相談すると、特定の花を避けて配送してもらえるサービスもあります。花粉が少ない品種を中心に扱うサービスを選ぶのも一つの方法です。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月いくらかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、最も安い価格帯で月1,000円前後（タスハナ+actの月1回で送料込み990円、medelu Miniの隔週で1,496円）、一般的には月1,000〜3,000円程度です。送料が別途かかるサービス（bloomeeは385〜550円）と送料無料のサービス（medelu、AND PLANTS）があるため、送料込みの総額で比較することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらい続ける人が多いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"公式データによると、bloomeeの継続率は約80%以上で、medeluも高い継続率を維持しています。3ヶ月以上続ける方が多く、花のある暮らしに慣れると継続したくなるという声が多く寄せられています。まずは回数の条件がないサービスで1〜2ヶ月試すことをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしでも花のサブスクは使えますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの方にもおすすめです。ポスト投函に対応したサービスであれば不在時でも受け取れ、少量のプランを選べば場所も取りません。部屋に花を飾ることで空間の印象が明るくなり、帰宅時の気分も変わります。一人暮らしの方には、medelu ANYROOMコースやタスハナが人気です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクとお花屋さんでは、どちらが割安ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"費用面では、サブスクのほうが割安になるケースが多くあります。花屋のミニブーケは800〜1,500円程度ですが、サブスクは市場から直送することで中間マージンを抑えているため、同等の品質の花を安く購入できます。一方、特定の花を指定して購入したい場合は、花屋のほうが自由度が高くなります。\"}},{\"@type\":\"Question\",\"name\":\"花のアレルギーがある場合でも利用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花粉アレルギーの方は注意が必要です。多くのサービスでは届く花の種類を事前に指定できないため、アレルギーの原因となる花が届く可能性があります。事前にカスタマーサポートへ相談すると、特定の花を避けて配送してもらえるサービスもあります。花粉が少ない品種を中心に扱うサービスを選ぶことも一つの方法です。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <title>花のサブスクのメリット・デメリット7選｜始める前に知っておくべきこと</title>
-      <meta name="description" content="花のサブスクのメリット7つとデメリット5つを徹底解説。お花の定期便を始める前に知っておくべきポイントや、おすすめ・おすすめしない人の特徴も紹介します。" />
+      <title>花のサブスクのメリット・デメリット7選｜始める前に確認すべき点</title>
+      <meta name="description" content="当サイトでは、花のサブスクのメリット7つとデメリット5つを解説します。お花の定期便を始める前に確認すべき点や、おすすめできる方・おすすめしない方の特徴もご紹介します。" />
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
@@ -65,15 +65,15 @@ export default function MeritDemeritGuidePage() {
         <section className="bg-[#F3EDE6] py-12 md:py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
-              完全ガイド
+              メリット・デメリット解説
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
               花のサブスクのメリット・デメリット7選<br className="hidden md:block" />
-              始める前に知っておくべきこと
+              始める前に確認すべき点
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              お花の定期便（花のサブスク）を検討中の方に向けて、メリット7つとデメリット5つを徹底解説。
-              自分に合うかどうか、始める前に確認しておきましょう。
+              お花の定期便（花のサブスク）を検討中の方に向けて、当サイトではメリット7つとデメリット5つを解説します。
+              ご自身に合うかどうか、始める前の判断材料としてご活用ください。
             </p>
           </div>
         </section>
@@ -82,12 +82,12 @@ export default function MeritDemeritGuidePage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
               <ol className="text-sm text-[#666] space-y-2">
                 <li><a href="#merits" className="hover:text-[#4A7C59] transition-colors">1. 花のサブスクのメリット7つ</a></li>
                 <li><a href="#demerits" className="hover:text-[#4A7C59] transition-colors">2. 花のサブスクのデメリット5つ</a></li>
-                <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">3. おすすめな人・おすすめしない人</a></li>
-                <li><a href="#comparison" className="hover:text-[#4A7C59] transition-colors">4. 各サービスのメリデメ比較</a></li>
+                <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">3. おすすめできる方・おすすめしない方</a></li>
+                <li><a href="#comparison" className="hover:text-[#4A7C59] transition-colors">4. 各サービスのメリット・デメリット比較</a></li>
                 <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">5. よくある質問</a></li>
               </ol>
             </div>
@@ -105,38 +105,38 @@ export default function MeritDemeritGuidePage() {
               {[
                 {
                   num: "1",
-                  title: "自分で選ぶ手間がなく、忙しくてもOK",
-                  text: "花屋に行く時間がなくても、定期的にプロが選んだ旬の花が届きます。通勤途中に花屋に寄る余裕がない方や、近くに花屋がない方にとって大きなメリットです。注文の手間もなく、一度申し込めば自動的に届き続けるため、忙しい方ほど便利さを実感できます。",
+                  title: "花を選ぶ手間がなく、忙しい方でも続けられる",
+                  text: "花屋に行く時間がなくても、専門スタッフが選んだ旬の花が定期的に届きます。通勤途中に花屋に寄る余裕がない方や、近くに花屋がない方にとって大きなメリットです。一度申し込めば毎回の注文は不要で自動的に届くため、忙しい方ほど利便性を実感しやすいサービスです。",
                 },
                 {
                   num: "2",
-                  title: "プロのフローリストによるおしゃれなアレンジ",
-                  text: "花のサブスクでは、プロのフローリストが季節の花を組み合わせてアレンジしてくれます。自分では思いつかないような色の組み合わせや花の取り合わせを楽しめるのは、サブスクならではの魅力です。花の知識がなくても、そのまま花瓶に飾るだけでおしゃれなインテリアになります。",
+                  title: "フローリストによるデザイン性の高いアレンジ",
+                  text: "花のサブスクでは、フローリストが季節の花を組み合わせてアレンジします。自分では選ばないような色や花の組み合わせを楽しめる点は、サブスクならではの魅力です。花の知識がなくても、花瓶に飾るだけで部屋のインテリアとして見栄えよく整います。",
                 },
                 {
                   num: "3",
-                  title: "花屋で買うよりコスパが良い",
-                  text: "サブスクは市場から直接仕入れることで中間マージンをカットしています。花屋でミニブーケを買うと1本あたり300〜500円ですが、medeluなら1本約187〜249円（Mini 748円・3〜4本）、タスハナなら約220円（+act 660円・3本以上、送料別）とお得。さらに送料無料のサービスも多く、トータルコストで比較すると花屋より経済的です。",
+                  title: "花屋で購入するより費用を抑えやすい",
+                  text: "サブスクは市場から直接仕入れることで中間マージンを抑えています。花屋でミニブーケを購入すると1本あたり300〜500円ですが、medeluは1本約187〜249円（Mini 748円・3〜4本）、タスハナは約220円（+act 660円・3本以上、送料別）です。送料無料のサービスも多く、総額で比較すると花屋より経済的です。",
                 },
                 {
                   num: "4",
                   title: "季節の移り変わりを花で感じられる",
-                  text: "春はチューリップやスイートピー、夏はひまわり、秋はダリアやコスモス、冬はアネモネやラナンキュラス。毎回届く花が変わることで、部屋にいながら季節の移ろいを感じられます。花の名前や特徴を覚える楽しみも生まれ、暮らしに彩りが加わります。",
+                  text: "春はチューリップやスイートピー、夏はひまわり、秋はダリアやコスモス、冬はアネモネやラナンキュラスなど、毎回異なる花が届くため、部屋にいながら季節の移り変わりを感じられます。花の名前や特徴を覚える楽しみも生まれ、暮らしに彩りが加わります。",
                 },
                 {
                   num: "5",
-                  title: "癒し効果・ストレス軽減が科学的に実証済み",
-                  text: "千葉大学の研究では、生花を部屋に飾ることでストレスホルモン（コルチゾール）が減少し、リラックス効果があることが実証されています。在宅勤務のデスクや寝室に花を飾ることで、仕事の疲れやストレスの軽減が期待できます。花の色や香りが心身に良い影響を与えるのは科学的に裏付けられた事実です。",
+                  title: "癒やし効果・ストレス軽減に関する研究結果がある",
+                  text: "千葉大学の研究では、生花を部屋に飾ることでストレスホルモン（コルチゾール）が減少し、リラックス効果があることが実証されています。在宅勤務のデスクや寝室に花を飾ることで、仕事の疲れやストレスの軽減が期待できます。花の色や香りが心身に良い影響を与えることは、科学的にも裏付けられています。",
                 },
                 {
                   num: "6",
-                  title: "部屋のインテリアがワンランクアップ",
-                  text: "生花があるだけで部屋の雰囲気が一気に変わります。特別な飾り付けをしなくても、テーブルや窓辺に小さな花瓶を置くだけでおしゃれな空間に。来客時にも「お花がある生活をしているんだ」という好印象を与えます。インテリアに自信がない方でも、花があるだけで部屋が洗練された印象になります。",
+                  title: "部屋のインテリアの印象が向上する",
+                  text: "生花を飾ることで、部屋の雰囲気は大きく変わります。特別な飾り付けをしなくても、テーブルや窓辺に小さな花瓶を置くだけで、整った空間になります。来客時にも良い印象を与えられます。インテリアに自信がない方でも、花を飾ることで部屋が洗練された印象になります。",
                 },
                 {
                   num: "7",
-                  title: "ギフトとしても喜ばれる",
-                  text: "花のサブスクにはギフトチケットや贈り先指定が可能なサービスもあり、母の日や誕生日のプレゼントとして注目されています。一度きりの花束ではなく、数ヶ月にわたって定期的に花が届くため、長く楽しんでもらえる点が人気の理由です。bloomeeのギフトチケットやHitoHanaのギフト対応が特に人気です。",
+                  title: "ギフトとしても利用できる",
+                  text: "花のサブスクには、ギフトチケットや贈り先の指定に対応したサービスもあり、母の日や誕生日のプレゼントとして注目されています。一度きりの花束ではなく、数ヶ月にわたって定期的に花が届くため、長く楽しんでいただける点が人気の理由です。特に、bloomeeのギフトチケットやHitoHanaのギフト対応が人気です。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C8D8CE]">
@@ -163,27 +163,27 @@ export default function MeritDemeritGuidePage() {
                 {
                   num: "1",
                   title: "届く花の種類を自分で選べない",
-                  text: "ほとんどのサービスでは、届く花の種類はプロのフローリストにお任せです。「バラだけがほしい」「白い花だけがいい」といった細かいリクエストには対応できません。ただし、HitoHanaでは色の指定が可能で、一部サービスではNG花材の指定ができるケースもあります。自分で完全に選びたい方には向いていません。",
+                  text: "ほとんどのサービスでは、届く花の種類はフローリストに一任する形です。「バラだけがほしい」「白い花だけがいい」といった細かい要望には対応していません。ただし、HitoHanaでは色の指定が可能で、一部のサービスでは避けたい花材を指定できる場合もあります。花をすべて自分で選びたい方には適していません。",
                 },
                 {
                   num: "2",
                   title: "夏場は花が傷みやすい",
-                  text: "生花は温度に敏感で、特に夏場（7〜8月）は輸送中やポスト内で花が傷むリスクが高まります。ポスト投函の場合、ポスト内温度が40度以上になることもあり、届いた時点でしおれているケースも。対策としてはクール便対応サービスを選ぶか、宅配便で直接受け取る方法があります。品質保証制度がある各サービスでは、傷んだ花の再送にも対応しています。",
+                  text: "生花は温度の影響を受けやすく、特に夏場（7〜8月）は輸送中やポスト内で花が傷むリスクが高まります。ポスト投函の場合、ポスト内の温度が40度以上になることもあり、届いた時点でしおれている場合があります。対策としては、クール便に対応したサービスを選ぶか、宅配便で直接受け取る方法があります。品質保証制度がある各サービスでは、傷んだ花の再送にも対応しています。",
                 },
                 {
                   num: "3",
-                  title: "定期縛りがあるサービスがある",
-                  text: "bloomeeには4回の最低受け取り回数があり、途中解約すると残り回数分の料金が発生します。「お試しで1回だけ」ということができないため、初めての方は注意が必要です。一方、medelu、AND PLANTS、タスハナ、LIFFTは回数縛りなしで、いつでも解約可能です。初めて試す場合は縛りなしのサービスから始めることをおすすめします。",
+                  title: "最低受け取り回数の条件があるサービスがある",
+                  text: "bloomeeには4回の最低受け取り回数があり、途中で解約すると残り回数分の料金が発生します。「お試しで1回だけ」という利用ができないため、初めての方は注意が必要です。一方、medelu、AND PLANTS、タスハナ、LIFFTには回数の条件がなく、いつでも解約できます。初めて試す場合は、回数の条件がないサービスから始めることをおすすめします。",
                 },
                 {
                   num: "4",
                   title: "不在時の受け取りに工夫が必要",
-                  text: "ポスト投函対応サービスなら不在でも受け取れますが、宅配便タイプ（AND PLANTS、LIFFTなど）は在宅が必要です。不在が多い方は、ポスト投函対応サービスを選ぶか、配送日の時間指定ができるサービスを利用しましょう。また、置き配に対応しているサービスもあるので、事前に確認しておくと安心です。",
+                  text: "ポスト投函に対応したサービスであれば不在時でも受け取れますが、宅配便タイプ（AND PLANTS、LIFFTなど）は在宅が必要です。不在が多い方は、ポスト投函に対応したサービスか、配送日時を指定できるサービスをご利用ください。置き配に対応しているサービスもあるため、事前にご確認ください。",
                 },
                 {
                   num: "5",
                   title: "花粉アレルギーのリスク",
-                  text: "花粉アレルギーの方は、特にユリやカスミソウなど花粉が多い花が届いた場合にアレルギー症状が出る可能性があります。事前にカスタマーサポートに相談すれば、特定の花を避けて配送してもらえるサービスもありますが、完全な対応は難しいのが現状です。花粉が出にくい品種を中心に扱うサービスを選ぶか、届いた花から花粉を事前に取り除く対処が必要です。",
+                  text: "花粉アレルギーの方は、特にユリやカスミソウなど花粉が多い花が届いた場合に、アレルギー症状が出る可能性があります。事前にカスタマーサポートへ相談すれば、特定の花を避けて配送してもらえるサービスもありますが、完全に対応することは難しいのが現状です。花粉が出にくい品種を中心に扱うサービスを選ぶか、届いた花から花粉を取り除く対処が必要です。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
@@ -202,12 +202,12 @@ export default function MeritDemeritGuidePage() {
         <section id="recommend" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              こんな人におすすめ / おすすめしない人
+              おすすめできる方・おすすめしない方
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C8D8CE]">
-                <h3 className="text-sm font-bold text-[#4A7C59] mb-3">おすすめな人</h3>
+                <h3 className="text-sm font-bold text-[#4A7C59] mb-3">おすすめできる方</h3>
                 <ul className="text-sm text-[#666] space-y-2">
                   <li className="flex items-start gap-2">
                     <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
@@ -215,7 +215,7 @@ export default function MeritDemeritGuidePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>花の知識がなくてもおしゃれに飾りたい方</span>
+                    <span>花の知識がなくても見栄えよく飾りたい方</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
@@ -231,13 +231,13 @@ export default function MeritDemeritGuidePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#4A7C59] mt-0.5 shrink-0">&#10003;</span>
-                    <span>コスパよく花のある暮らしを始めたい方</span>
+                    <span>費用を抑えて花のある暮らしを始めたい方</span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-[#FFF5F5] rounded-xl p-5 border border-[#F0D8D8]">
-                <h3 className="text-sm font-bold text-[#C4877A] mb-3">おすすめしない人</h3>
+                <h3 className="text-sm font-bold text-[#C4877A] mb-3">おすすめしない方</h3>
                 <ul className="text-sm text-[#666] space-y-2">
                   <li className="flex items-start gap-2">
                     <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
@@ -245,7 +245,7 @@ export default function MeritDemeritGuidePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>花のお手入れを全くしたくない方</span>
+                    <span>花のお手入れをまったくしたくない方</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
@@ -257,7 +257,7 @@ export default function MeritDemeritGuidePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#E0B8B8] mt-0.5 shrink-0">--</span>
-                    <span>ペットが花を食べてしまうリスクがある方</span>
+                    <span>ペットが花を食べてしまうおそれがある方</span>
                   </li>
                 </ul>
               </div>
@@ -269,10 +269,10 @@ export default function MeritDemeritGuidePage() {
         <section id="comparison" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              各サービスのメリデメ比較表
+              各サービスのメリット・デメリット比較表
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              主要5サービスのメリット・デメリットを一覧で比較しました。自分が重視するポイントに合わせてサービスを選びましょう。
+              当サイトでは、主要5サービスのメリット・デメリットを一覧で比較しています。重視する点に合わせてサービスをお選びください。
             </p>
 
             <div className="table-wrapper">
@@ -282,25 +282,25 @@ export default function MeritDemeritGuidePage() {
                     <th className="rounded-tl-lg">サービス</th>
                     <th>主なメリット</th>
                     <th>主なデメリット</th>
-                    <th className="rounded-tr-lg">こんな方に</th>
+                    <th className="rounded-tr-lg">適している方</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td className="font-medium text-[#333]">bloomee</td>
                     <td>花代980円〜、初心者向け、ポスト投函</td>
-                    <td>4回縛り、送料別、お試しは4本以上</td>
+                    <td>最低4回の受け取りが必要、送料別、お試しは4本以上</td>
                     <td>手軽に始めたい初心者</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">medelu</td>
-                    <td>送料無料、748円〜、縛りなし</td>
+                    <td>送料無料、748円〜、回数の条件なし</td>
                     <td>花の本数が少なめ、知名度が低い</td>
-                    <td>コスパ重視の方</td>
+                    <td>費用を重視する方</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">AND PLANTS</td>
-                    <td>送料無料、おしゃれ、ボリューム多い</td>
+                    <td>送料無料、デザイン性が高い、ボリュームが多い</td>
                     <td>最安1,980円とやや高め、宅配便のみ</td>
                     <td>デザイン重視の方</td>
                   </tr>
@@ -308,11 +308,11 @@ export default function MeritDemeritGuidePage() {
                     <td className="font-medium text-[#333]">タスハナ</td>
                     <td>660円〜（送料別）、ロスフラワー活用、ポスト投函</td>
                     <td>送料別330円、5回の出荷が前提</td>
-                    <td>とにかく安く試したい方</td>
+                    <td>費用を抑えて試したい方</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">LIFFT</td>
-                    <td>市場直送で鮮度抜群、Journal付き</td>
+                    <td>市場直送で鮮度が高い、Journal付き</td>
                     <td>3,300円とやや高め、月1回</td>
                     <td>品質にこだわる方</td>
                   </tr>
@@ -365,13 +365,13 @@ export default function MeritDemeritGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：メリットを最大化する選び方がカギ
+              まとめ：メリットを生かすには選び方が重要です
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花のサブスクには「手間なくプロのアレンジが届く」「コスパが良い」「癒し効果がある」など多くのメリットがあります。一方で、「花の種類が選べない」「夏場の品質リスク」「定期縛り」などのデメリットも存在します。
+              花のサブスクには、「手間をかけずにフローリストのアレンジが届く」「費用を抑えやすい」「癒やし効果がある」など多くのメリットがあります。一方で、「花の種類を選べない」「夏場に品質が低下するリスクがある」「最低受け取り回数の条件がある」といったデメリットもあります。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              大切なのは、自分のライフスタイルや重視するポイントに合ったサービスを選ぶこと。コスパ重視なら<strong>medelu</strong>、手軽さなら<strong>bloomee</strong>、デザイン重視なら<strong>AND PLANTS</strong>、品質重視なら<strong>LIFFT</strong>がおすすめです。まずは回数縛りなしのサービスから気軽に試してみましょう。
+              重要なのは、ご自身のライフスタイルや重視する点に合ったサービスを選ぶことです。費用を重視する場合は<strong>medelu</strong>、手軽さを重視する場合は<strong>bloomee</strong>、デザインを重視する場合は<strong>AND PLANTS</strong>、品質を重視する場合は<strong>LIFFT</strong>をおすすめします。まずは回数の条件がないサービスからお試しください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
@@ -415,7 +415,7 @@ export default function MeritDemeritGuidePage() {
             <div>
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -431,7 +431,7 @@ export default function MeritDemeritGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              掲載情報は2026年4月時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

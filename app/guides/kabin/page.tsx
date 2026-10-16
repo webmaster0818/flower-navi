@@ -7,61 +7,61 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "花のサブスクに合う花瓶のサイズはどれくらいですか？",
-    a: "花のサブスクの最安プラン（3〜4本）なら高さ10〜15cmの小さめの花瓶や一輪挿しが最適です。中間プラン（5〜8本）なら高さ15〜20cmの花瓶、上位プラン（8本以上）なら高さ20〜25cmの花瓶が目安です。口が小さめの花瓶を選ぶと、少ない本数でもバランスよく飾れます。",
+    a: "花のサブスクの最安プラン（3〜4本）には、高さ10〜15cmの小さめの花瓶や一輪挿しが適しています。中間プラン（5〜8本）では高さ15〜20cm、上位プラン（8本以上）では高さ20〜25cmの花瓶が目安です。口が小さめの花瓶を選ぶと、少ない本数でもバランスよく飾ることができます。",
   },
   {
-    q: "100均の花瓶でも大丈夫ですか？",
-    a: "はい、100均の花瓶でも十分に使えます。特にダイソーやセリアのガラス製一輪挿しはシンプルなデザインで、どんな花にも合わせやすいです。まずは100均で数種類のサイズを揃えて、花を分けて飾るのがおすすめです。慣れてきたら、お気に入りの花瓶にアップグレードすると楽しみが広がります。",
+    q: "100円ショップの花瓶でも大丈夫ですか？",
+    a: "はい、100円ショップの花瓶でも十分に使用できます。ダイソーやセリアのガラス製一輪挿しはシンプルなデザインのため、さまざまな花に合わせやすいのが特長です。まずは100円ショップで数種類のサイズをそろえ、花を分けて飾ることをおすすめします。飾ることに慣れた段階で、好みの花瓶に買い替えると楽しみ方が広がります。",
   },
   {
     q: "花瓶のお手入れ方法を教えてください",
-    a: "花を替えるタイミングで、花瓶の内側を食器用洗剤とスポンジで洗いましょう。口の狭い花瓶は、水と少量の漂白剤を入れてしばらく浸け置きすると、ぬめりや細菌を除去できます。週に1回は漂白剤で消毒するのが理想的です。清潔な花瓶は花を長持ちさせる基本です。",
+    a: "花を替える際に、花瓶の内側を食器用洗剤とスポンジで洗ってください。口の狭い花瓶は、水と少量の漂白剤を入れてしばらく浸け置きすると、ぬめりや細菌を除去できます。週に1回は漂白剤で消毒することが望ましいです。花瓶を清潔に保つことが、花を長持ちさせる基本です。",
   },
   {
     q: "花瓶を持っていない場合、何で代用できますか？",
-    a: "ジャムの空き瓶、ワインボトル、グラス、マグカップなど、水が入る容器なら何でも代用可能です。特に口の小さい空き瓶は一輪挿しにぴったりです。ペットボトルの上部をカットしたものに布やペーパーを巻くだけでも、おしゃれな花瓶になります。",
+    a: "ジャムの空き瓶、ワインボトル、グラス、マグカップなど、水を入れられる容器であれば代用できます。口の小さい空き瓶は一輪挿しに適しています。ペットボトルの上部をカットし、布や紙を巻くだけでも花瓶として使用できます。",
   },
   {
     q: "花瓶を複数持つメリットはありますか？",
-    a: "大きなメリットがあります。花を分けて飾ることで、(1)部屋の複数箇所に花を配置でき華やかさが増す、(2)少ない本数でもバランスよく見える、(3)花の種類ごとに分けると長持ちする（エチレンガス対策）。サイズ違いで3つ程度持っておくと、届いた花に合わせて柔軟に飾れます。",
+    a: "はい、あります。花を分けて飾ることで、(1)部屋の複数箇所に花を配置できる、(2)少ない本数でもバランスよく見える、(3)花の種類ごとに分けることで長持ちしやすくなる（エチレンガス対策）、という利点があります。サイズの異なる花瓶を3つ程度用意しておくと、届いた花に合わせて飾り分けることができます。",
   },
 ];
 
 /* ─── Vase Data ─── */
 const vaseCategories = [
   {
-    title: "ガラス製の花瓶（透明感が魅力）",
+    title: "ガラス製の花瓶（透明感が特長）",
     items: [
-      { name: "IKEA TIDVATTEN", price: "299円〜", size: "14cm", desc: "北欧デザインのシンプルなガラス花瓶。ミニブーケに最適なサイズ感で、どんなインテリアにも馴染む。" },
-      { name: "ホルムガード フローラ", price: "3,300円〜", size: "12cm", desc: "デンマーク王室御用達ブランドの一輪挿し。丸みを帯びたフォルムが花を美しく引き立てる。" },
-      { name: "無印良品 ソーダガラス花瓶", price: "990円〜", size: "15cm", desc: "無印らしいシンプルで飽きのこないデザイン。程よいサイズ感で3〜5本の花にちょうど良い。" },
-      { name: "100均 ガラスシリンダー", price: "110円〜", size: "10〜20cm", desc: "ダイソーやセリアで手に入るシンプルな円柱型。複数買いして花を分けて飾るのに最適。" },
+      { name: "IKEA TIDVATTEN", price: "299円〜", size: "14cm", desc: "北欧デザインのシンプルなガラス花瓶です。ミニブーケに適したサイズで、さまざまなインテリアになじみます。" },
+      { name: "ホルムガード フローラ", price: "3,300円〜", size: "12cm", desc: "デンマーク王室御用達ブランドの一輪挿しです。丸みを帯びたフォルムが花を引き立てます。" },
+      { name: "無印良品 ソーダガラス花瓶", price: "990円〜", size: "15cm", desc: "シンプルで飽きのこないデザインです。3〜5本の花に適したサイズです。" },
+      { name: "100円ショップ ガラスシリンダー", price: "110円〜", size: "10〜20cm", desc: "ダイソーやセリアで購入できるシンプルな円柱型です。複数購入して花を分けて飾る用途に適しています。" },
     ],
   },
   {
     title: "陶器製の花瓶（温かみのある質感）",
     items: [
-      { name: "KAHLER ハンマースホイ", price: "5,500円〜", size: "12.5cm", desc: "デンマーク・ケーラーの人気花瓶。横縞のテクスチャーが特徴的で、花がなくてもオブジェとして映える。" },
-      { name: "有田焼 一輪挿し", price: "2,000円〜", size: "10〜15cm", desc: "日本の伝統工芸品ならではの繊細な美しさ。和モダンなインテリアに最適で、一輪の花を引き立てる。" },
-      { name: "フランフラン 陶器花瓶", price: "1,500円〜", size: "15〜20cm", desc: "マットな質感とトレンドカラーが魅力。くすみカラーのラインナップで、おしゃれな部屋に馴染む。" },
-      { name: "波佐見焼 フラワーベース", price: "1,800円〜", size: "12cm", desc: "長崎の波佐見焼はモダンなデザインが多く、北欧インテリアとの相性も抜群。普段使いしやすい。" },
+      { name: "KAHLER ハンマースホイ", price: "5,500円〜", size: "12.5cm", desc: "デンマーク・ケーラーの花瓶です。横縞のテクスチャーが特徴で、花を生けていないときもオブジェとして飾れます。" },
+      { name: "有田焼 一輪挿し", price: "2,000円〜", size: "10〜15cm", desc: "日本の伝統工芸品らしい繊細な仕上がりです。和モダンのインテリアに合い、一輪の花を引き立てます。" },
+      { name: "フランフラン 陶器花瓶", price: "1,500円〜", size: "15〜20cm", desc: "マットな質感と落ち着いたくすみカラーが特長で、さまざまな部屋になじみます。" },
+      { name: "波佐見焼 フラワーベース", price: "1,800円〜", size: "12cm", desc: "長崎の波佐見焼はモダンなデザインが多く、北欧インテリアとも合わせやすいです。日常使いに適しています。" },
     ],
   },
   {
     title: "金属製の花瓶（モダンな印象）",
     items: [
-      { name: "HAY ルミ ベース", price: "4,400円〜", size: "15cm", desc: "デンマーク・HAYのスチール製花瓶。マットなカラーリングがモダンインテリアにぴったり。" },
-      { name: "ZARA HOME メタル花瓶", price: "2,990円〜", size: "18cm", desc: "ゴールドやシルバーのメタリックカラーが高級感を演出。シンプルなフォルムで花を引き立てる。" },
-      { name: "能作 真鍮一輪挿し", price: "3,850円〜", size: "10cm", desc: "富山の伝統的な真鍮鋳物メーカーの一輪挿し。使い込むほど味が出る経年変化も楽しめる。" },
+      { name: "HAY ルミ ベース", price: "4,400円〜", size: "15cm", desc: "デンマーク・HAYのスチール製花瓶です。マットな色合いがモダンなインテリアに合います。" },
+      { name: "ZARA HOME メタル花瓶", price: "2,990円〜", size: "18cm", desc: "ゴールドやシルバーのメタリックカラーで、上質な印象を与えます。シンプルなフォルムが花を引き立てます。" },
+      { name: "能作 真鍮一輪挿し", price: "3,850円〜", size: "10cm", desc: "富山の伝統的な鋳物メーカーによる真鍮の一輪挿しです。使い込むことで生じる経年変化も楽しめます。" },
     ],
   },
   {
-    title: "一輪挿し（花1〜2本をおしゃれに）",
+    title: "一輪挿し（花1〜2本を飾る）",
     items: [
-      { name: "KINTO SACCO", price: "880円〜", size: "9cm", desc: "ころんとした可愛らしいフォルムが人気。ガラス製で花の茎まで美しく見える。デスクにぴったり。" },
-      { name: "スガハラガラス 一輪挿し", price: "2,200円〜", size: "12cm", desc: "日本のガラス工房が一つ一つ手作りする一輪挿し。独特のフォルムと透明感が魅力。" },
-      { name: "scope house 一輪挿し", price: "1,650円〜", size: "10cm", desc: "北欧テイストのシンプルなデザイン。一輪の花を飾るだけで絵になるバランスの良いサイズ。" },
-      { name: "100均 一輪挿し各種", price: "110円〜", size: "8〜12cm", desc: "ダイソー・セリアには多様なデザインの一輪挿しが揃う。試しに複数買いして自分の好みを探るのに最適。" },
+      { name: "KINTO SACCO", price: "880円〜", size: "9cm", desc: "丸みのあるフォルムの一輪挿しです。ガラス製のため花の茎まで見え、デスクに置くのに適しています。" },
+      { name: "スガハラガラス 一輪挿し", price: "2,200円〜", size: "12cm", desc: "日本のガラス工房が一点ずつ手作りする一輪挿しです。独特のフォルムと透明感が特長です。" },
+      { name: "scope house 一輪挿し", price: "1,650円〜", size: "10cm", desc: "北欧テイストのシンプルなデザインです。一輪の花を飾るのに適したサイズです。" },
+      { name: "100円ショップ 一輪挿し各種", price: "110円〜", size: "8〜12cm", desc: "ダイソー・セリアでは多様なデザインの一輪挿しを扱っています。複数購入して好みのデザインを探す用途に適しています。" },
     ],
   },
 ];
@@ -75,16 +75,16 @@ export default function KabinGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクに合う花瓶おすすめ\",\"item\":\"https://ohana-delivery.com/guides/kabin/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクに合う花瓶おすすめ\",\"description\":\"花のサブスクに合う花瓶おすすめ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/kabin/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクに合う花瓶おすすめ\",\"description\":\"花のサブスクに合うおすすめの花瓶と選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/kabin/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクに合う花瓶のサイズはどれくらいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花のサブスクの最安プラン（3〜4本）なら高さ10〜15cmの小さめの花瓶や一輪挿しが最適です。中間プラン（5〜8本）なら高さ15〜20cmの花瓶、上位プラン（8本以上）なら高さ20〜25cmの花瓶が目安です。口が小さめの花瓶を選ぶと、少ない本数でもバランスよく飾れます。\"}},{\"@type\":\"Question\",\"name\":\"100均の花瓶でも大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、100均の花瓶でも十分に使えます。特にダイソーやセリアのガラス製一輪挿しはシンプルなデザインで、どんな花にも合わせやすいです。まずは100均で数種類のサイズを揃えて、花を分けて飾るのがおすすめです。慣れてきたら、お気に入りの花瓶にアップグレードすると楽しみが広がります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶のお手入れ方法を教えてください\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花を替えるタイミングで、花瓶の内側を食器用洗剤とスポンジで洗いましょう。口の狭い花瓶は、水と少量の漂白剤を入れてしばらく浸け置きすると、ぬめりや細菌を除去できます。週に1回は漂白剤で消毒するのが理想的です。清潔な花瓶は花を長持ちさせる基本です。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていない場合、何で代用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ジャムの空き瓶、ワインボトル、グラス、マグカップなど、水が入る容器なら何でも代用可能です。特に口の小さい空き瓶は一輪挿しにぴったりです。ペットボトルの上部をカットしたものに布やペーパーを巻くだけでも、おしゃれな花瓶になります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を複数持つメリットはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"大きなメリットがあります。花を分けて飾ることで、(1)部屋の複数箇所に花を配置でき華やかさが増す、(2)少ない本数でもバランスよく見える、(3)花の種類ごとに分けると長持ちする（エチレンガス対策）。サイズ違いで3つ程度持っておくと、届いた花に合わせて柔軟に飾れます。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクに合う花瓶のサイズはどれくらいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花のサブスクの最安プラン（3〜4本）には、高さ10〜15cmの小さめの花瓶や一輪挿しが適しています。中間プラン（5〜8本）では高さ15〜20cm、上位プラン（8本以上）では高さ20〜25cmの花瓶が目安です。口が小さめの花瓶を選ぶと、少ない本数でもバランスよく飾ることができます。\"}},{\"@type\":\"Question\",\"name\":\"100円ショップの花瓶でも大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、100円ショップの花瓶でも十分に使用できます。ダイソーやセリアのガラス製一輪挿しはシンプルなデザインのため、さまざまな花に合わせやすいのが特長です。まずは100円ショップで数種類のサイズをそろえ、花を分けて飾ることをおすすめします。飾ることに慣れた段階で、好みの花瓶に買い替えると楽しみ方が広がります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶のお手入れ方法を教えてください\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花を替える際に、花瓶の内側を食器用洗剤とスポンジで洗ってください。口の狭い花瓶は、水と少量の漂白剤を入れてしばらく浸け置きすると、ぬめりや細菌を除去できます。週に1回は漂白剤で消毒することが望ましいです。花瓶を清潔に保つことが、花を長持ちさせる基本です。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていない場合、何で代用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ジャムの空き瓶、ワインボトル、グラス、マグカップなど、水を入れられる容器であれば代用できます。口の小さい空き瓶は一輪挿しに適しています。ペットボトルの上部をカットし、布や紙を巻くだけでも花瓶として使用できます。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を複数持つメリットはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、あります。花を分けて飾ることで、(1)部屋の複数箇所に花を配置できる、(2)少ない本数でもバランスよく見える、(3)花の種類ごとに分けることで長持ちしやすくなる（エチレンガス対策）、という利点があります。サイズの異なる花瓶を3つ程度用意しておくと、届いた花に合わせて飾り分けることができます。\"}}]}" }} />
         {/* JSONLD_INJECTED_v1 #3 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"花のサブスクに合う花瓶おすすめ\",\"description\":\"花のサブスクに合う花瓶おすすめ のステップを解説\"}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"花のサブスクに合う花瓶おすすめ\",\"description\":\"花のサブスクに合う花瓶の選び方を順に解説します\"}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
       <title>花瓶・一輪挿しのおすすめ15選｜花のサブスクに合う花瓶の選び方【2026年】</title>
-      <meta name="description" content="花瓶・一輪挿しのおすすめ15選を素材別・サイズ別・予算別に紹介。花のサブスクで届く花に合う花瓶の選び方ポイントも詳しく解説します。" />
+      <meta name="description" content="花瓶・一輪挿しのおすすめ15点を素材別・サイズ別・予算別にご紹介します。花のサブスクで届く花に合う花瓶の選び方もご説明します。" />
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
@@ -111,8 +111,8 @@ export default function KabinGuidePage() {
               おすすめ15選【2026年・素材／サイズ／予算別】
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-4 max-w-2xl mx-auto leading-relaxed">
-              花のサブスクで届いた花をおしゃれに飾るには、花瓶選びが重要です。
-              素材別・サイズ別・予算別におすすめの花瓶15選と、選び方のポイントを解説します。
+              花のサブスクで届いた花をきれいに飾るには、花瓶選びが重要です。
+              当サイトでは、素材別・サイズ別・予算別のおすすめの花瓶15点と、選び方のポイントをご説明します。
             </p>
             <p className="text-sm text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
               少量の花を一輪挿しで楽しみたい方は、
@@ -130,10 +130,10 @@ export default function KabinGuidePage() {
             </h2>
             <div className="space-y-4">
               {[
-                { num: "1", title: "サブスクのプランに合ったサイズを選ぶ", text: "花3〜4本なら高さ10〜15cmの小さめ花瓶、5〜8本なら15〜20cm、8本以上なら20〜25cmが目安です。花瓶が大きすぎると花がスカスカに見え、小さすぎると入りきりません。まずは届く花の本数に合わせたサイズを選びましょう。" },
-                { num: "2", title: "口の大きさに注目する", text: "口が小さめの花瓶は、少ない本数でもバランスよく飾れます。逆に口が広い花瓶は多めの花を豪快に飾るのに向いています。サブスクの花は3〜5本が多いため、口径5〜8cm程度の花瓶がおすすめです。" },
-                { num: "3", title: "インテリアとの調和を考える", text: "ナチュラルな部屋にはガラスや陶器、モダンな部屋には金属やマットな質感の花瓶、和風の部屋には焼き物や竹製の花瓶が合います。部屋のテイストに合った素材・色を選ぶことで、花がインテリアの一部として自然に馴染みます。" },
-                { num: "4", title: "洗いやすさも重要", text: "口が狭すぎる花瓶は内側が洗いにくく、ぬめりや細菌の温床になりがちです。定期的に花瓶を洗うことを考えると、手が入るサイズか、ボトルブラシで洗えるサイズを選ぶと実用的です。" },
+                { num: "1", title: "サブスクのプランに合ったサイズを選ぶ", text: "花3〜4本には高さ10〜15cmの小さめの花瓶、5〜8本には15〜20cm、8本以上には20〜25cmが目安です。花瓶が大きすぎると花がまばらに見え、小さすぎると花が収まりません。まずは届く花の本数に合わせたサイズを選ぶことをおすすめします。" },
+                { num: "2", title: "口の大きさに注目する", text: "口が小さめの花瓶は、少ない本数でもバランスよく飾ることができます。一方、口が広い花瓶は本数の多い花をまとめて飾るのに向いています。サブスクの花は3〜5本のことが多いため、口径5〜8cm程度の花瓶をおすすめします。" },
+                { num: "3", title: "インテリアとの調和を考える", text: "ナチュラルな部屋にはガラスや陶器、モダンな部屋には金属やマットな質感の花瓶、和風の部屋には焼き物や竹製の花瓶が合います。部屋のテイストに合った素材・色を選ぶことで、花がインテリアの一部として自然になじみます。" },
+                { num: "4", title: "洗いやすさを確認する", text: "口が狭すぎる花瓶は内側を洗いにくく、ぬめりや細菌が発生しやすくなります。定期的に洗うことを考慮し、手が入るサイズか、ボトルブラシで洗えるサイズを選ぶことをおすすめします。" },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
                   <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.num}</span>
@@ -151,17 +151,17 @@ export default function KabinGuidePage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              一輪挿し向きの花瓶のおすすめの選び方
+              一輪挿し向きの花瓶の選び方
             </h2>
             <p className="text-sm text-[#666] leading-relaxed mb-4">
-              花を1〜2本だけ飾る一輪挿しは、通常の花瓶と選び方の基準が少し異なります。次の4点を押さえると失敗しにくくなります。
+              花を1〜2本だけ飾る一輪挿しは、通常の花瓶と選び方の基準が一部異なります。選ぶ際は、次の4点を確認してください。
             </p>
             <div className="space-y-3">
               {[
-                { title: "口径2〜3cm程度の狭い口を選ぶ", text: "口が狭いほど、花1本でも自立して様になります。口が広いと花が倒れて縁にもたれてしまい、バランスが取りにくくなります。" },
+                { title: "口径2〜3cm程度の狭い口を選ぶ", text: "口が狭いほど、花1本でもまっすぐに立ちます。口が広いと花が倒れて縁にもたれ、バランスが取りにくくなります。" },
                 { title: "高さは10〜20cmが扱いやすい", text: "花のサブスクで届く花は茎が短めにカットされていることが多いため、背の低い花瓶のほうが合わせやすい傾向があります。花の高さは花瓶の1.5倍程度が目安です。" },
-                { title: "ガラス製なら水の状態が見える", text: "一輪挿しは水量が少なく雑菌が繁殖しやすいので、水の残量と濁りがひと目でわかるガラス製が初心者向きです。替えどきを逃しにくくなります。" },
-                { title: "複数個そろえて「分けて飾る」", text: "サブスクで届く3〜4本を1本ずつ分けて飾るのが一輪挿しの定番の楽しみ方。100均の一輪挿しでも十分なので、サイズ違いで複数そろえておくと柔軟に飾れます。" },
+                { title: "ガラス製なら水の状態が見える", text: "一輪挿しは水量が少なく雑菌が繁殖しやすいため、水の残量と濁りをひと目で確認できるガラス製が初心者に適しています。水を替える時期を判断しやすくなります。" },
+                { title: "複数個そろえて「分けて飾る」", text: "サブスクで届く3〜4本を1本ずつ分けて飾るのが、一輪挿しの一般的な楽しみ方です。100円ショップの一輪挿しでも十分なため、サイズの異なるものを複数そろえておくと飾り分けがしやすくなります。" },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                   <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
@@ -202,14 +202,14 @@ export default function KabinGuidePage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              予算別おすすめ花瓶
+              予算別のおすすめ花瓶
             </h2>
             <div className="space-y-4">
               {[
-                { budget: "500円以下", desc: "100均のガラス花瓶・一輪挿し。まずはここから始めて、自分の好みを探るのがおすすめ。複数買いして花を分けて飾ると華やか。" },
-                { budget: "1,000〜3,000円", desc: "IKEA、無印良品、KINTO、フランフランなど。デザイン性と実用性のバランスが良い価格帯。メインの花瓶として長く使える。" },
-                { budget: "3,000〜5,000円", desc: "ホルムガード、HAY、能作など。ブランド花瓶ならではのデザイン性。花がなくてもインテリアオブジェとして映える。" },
-                { budget: "5,000円以上", desc: "KAHLER、スガハラガラスなど。一生モノの花瓶として愛着を持って使える。ギフトにもおすすめの上質アイテム。" },
+                { budget: "500円以下", desc: "100円ショップのガラス花瓶・一輪挿し。最初に試して好みを探る段階に適しています。複数購入して花を分けて飾ることもできます。" },
+                { budget: "1,000〜3,000円", desc: "IKEA、無印良品、KINTO、フランフランなど。デザイン性と実用性のバランスがよい価格帯で、メインの花瓶として長く使用できます。" },
+                { budget: "3,000〜5,000円", desc: "ホルムガード、HAY、能作など。ブランドの花瓶ならではのデザイン性があり、花を生けていないときもインテリアとして飾れます。" },
+                { budget: "5,000円以上", desc: "KAHLER、スガハラガラスなど。長く愛用できる上質な花瓶で、ギフトにも適しています。" },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                   <h3 className="text-sm font-bold text-[#4A7C59] mb-2">{item.budget}</h3>
@@ -253,13 +253,13 @@ export default function KabinGuidePage() {
         <section className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：花瓶選びで花のある暮らしがもっと楽しくなる
+              まとめ：花瓶を選ぶことで花のある暮らしを楽しめます
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花のサブスクで届いた花を最大限に楽しむには、<strong>花瓶選び</strong>が重要です。まずは100均やIKEAの手頃な花瓶から始めて、サイズ感や好みを把握してから、お気に入りの花瓶にアップグレードするのがおすすめです。
+              花のサブスクで届いた花を楽しむには、<strong>花瓶選び</strong>が重要です。まずは100円ショップやIKEAの手頃な花瓶から始め、適したサイズや好みを把握したうえで、好みの花瓶に買い替えることをおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              異なるサイズの花瓶を2〜3個持っておくと、届いた花のボリュームに合わせて使い分けたり、花を分けて複数の場所に飾ったりと、楽しみ方の幅が広がります。花瓶とセットで、花のサブスクを始めてみましょう。
+              サイズの異なる花瓶を2〜3個用意しておくと、届いた花の量に合わせて使い分けたり、花を分けて複数の場所に飾ったりでき、楽しみ方の幅が広がります。花のサブスクを始める際は、あわせて花瓶もご用意ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
@@ -282,7 +282,7 @@ export default function KabinGuidePage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
-              <p className="text-xs text-gray-400">花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。</p>
+              <p className="text-xs text-gray-400">花のサブスクの料金・サービス内容を、公式情報にもとづいて比較する専門ガイドです。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
               <a href="/" className="hover:text-white transition-colors">トップページ</a>
@@ -293,7 +293,7 @@ export default function KabinGuidePage() {
           </div>
           <div className="border-t border-gray-600 pt-6 text-center">
             <p className="text-xs text-gray-500">当サイトはアフィリエイトプログラムに参加しています。リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。</p>
-            <p className="text-xs text-gray-500 mt-2">掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。</p>
+            <p className="text-xs text-gray-500 mt-2">掲載情報は2026年4月時点のものです。ご利用前に、各公式サイトにて最新情報をご確認ください。</p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>
               <a href="/privacy-policy" className="hover:text-white transition-colors">プライバシーポリシー</a>

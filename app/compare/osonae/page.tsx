@@ -5,27 +5,27 @@ import { OSONAE, OSONAE_VERIFIED, VERDICT_LABEL } from "@/data/osonae";
 const faqItems = [
   {
     q: "仏花やお供えの花は「花の定期便」で用意できますか？",
-    a: "2通りあります。①お供え・仏花の専用商品を単発で注文する（bloomee・AND PLANTS・HitoHana・日本総合園芸などにお供え専用ラインがあります）。②日常の花の定期便で、落ち着いた白系の花を選んでお供えに整える。確実に白でそろえたい、立て札・弔事カードが必要、という場合は①の専用商品が向きます。日常的に仏壇の花を絶やしたくない場合は②の定期便が便利です。",
+    a: "方法は2通りあります。1つ目は、お供え・仏花の専用商品を単発で注文する方法です（bloomee・AND PLANTS・HitoHana・日本総合園芸などにお供え専用の商品があります）。2つ目は、日常の花の定期便で落ち着いた白系の花を選び、お供え用に整える方法です。白で確実にそろえたい場合や、立て札・弔事カードが必要な場合は、1つ目の専用商品が適しています。仏壇の花を日常的に絶やさないようにしたい場合は、2つ目の定期便が便利です。",
   },
   {
     q: "お供えの花を「白系」でそろえたい場合、どこがよいですか？",
-    a: "本ページの一次確認では、bloomeeの「仏花・お供え」専用アレンジ（白を選択可）、HitoHanaのお供え専用ライン（四十九日まで白基調を案内）、日本総合園芸の白ユリ・白胡蝶蘭などが白系に対応しています。日常の定期便（medelu等）は落ち着いた色のコースはありますが、白限定で選べる専用コースは確認できませんでした。",
+    a: "当サイトの公式サイト確認では、bloomeeの「仏花・お供え」専用アレンジ（白を選択可）、HitoHanaのお供え専用ライン（四十九日まで白基調を案内）、日本総合園芸の白ユリ・白胡蝶蘭などが白系に対応しています。日常の定期便（medelu等）には落ち着いた色のコースがありますが、白に限定して選べる専用コースは確認できませんでした。",
   },
   {
     q: "立て札やのし、弔事のメッセージカードは付けられますか？",
-    a: "AND PLANTSは立て札・メッセージカードを無料同封、HitoHanaは立て札・カード無料で御供/御霊前/御仏前の書き分けを案内、bloomeeは弔事の定型カードを選択可（自由文カードは不可）です。のしの明記が確認できない社もあるため、必要な場合は各公式で最終確認してください。",
+    a: "AND PLANTSは立て札・メッセージカードを無料で同封しています。HitoHanaは立て札・カードが無料で、御供・御霊前・御仏前の書き分けを案内しています。bloomeeは弔事の定型カードを選択できます（自由文のカードは選択できません）。のしについて明記が確認できない会社もあるため、必要な場合は各社の公式サイトにて最終確認をお願いします。",
   },
   {
-    q: "お盆やお彼岸に間に合わせるには、いつ頼めばいいですか？",
-    a: "お盆・お彼岸・連休は配送が混み合います。お届け日を指定できる商品は彼岸入り・お盆前の日付を早めに指定し、日付指定ができないポスト投函型はスキップ機能で前倒しして、数日の余裕を見て手配します。時期は「お盆の花」「お彼岸の花」の各ガイドで日程と逆算の目安を解説しています。",
+    q: "お盆やお彼岸に間に合わせるには、いつ注文すればよいですか？",
+    a: "お盆・お彼岸・連休の時期は配送が混み合います。お届け日を指定できる商品は、彼岸入りやお盆前の日付を早めに指定してください。日付指定ができないポスト投函型は、スキップ機能でお届けを前倒しし、数日の余裕をもって手配することをおすすめします。時期については、お盆の花・お彼岸の花の各ガイドで日程と手配時期の目安を解説しています。",
   },
 ];
 
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "仏花・お供えの花を定期便/通販で用意する比較【2026年】8社を一次確認",
-  description: "お供え・仏花の専用商品の有無、白系の可否、立て札・カード、価格、お届け日指定を8社公式一次確認で比較。",
+  headline: "仏花・お供えの花を定期便/通販で用意する比較【2026年】8社の公式情報を確認",
+  description: "お供え・仏花の専用商品の有無、白系の可否、立て札・カード、価格、お届け日指定を、8社の公式サイトで確認して比較しています。",
   datePublished: "2026-07-24T00:00:00+09:00",
   dateModified: "2026-07-24T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
@@ -74,25 +74,25 @@ export default function OsonaePage() {
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">仏花・お供えの花の比較</p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
               仏花・お供えの花を定期便／通販で用意する比較<br className="hidden md:block" />
-              8社の専用商品・白系・立て札を一次確認【2026年】
+              8社の専用商品・白系・立て札を公式サイトで確認【2026年】
             </h1>
             <p className="text-sm md:text-base text-[#666] max-w-2xl mx-auto leading-relaxed">
-              お供え・仏花を「届く形」で用意したい方へ。各社の<strong>お供え専用商品の有無・白系の可否・立て札／弔事カード・価格・お届け日指定</strong>を、
-              2026年7月に公式サイトで一次確認して比較します。確認できなかった項目は正直に「確認できず」と記載しています。
+              当サイトでは、お供え・仏花を配送で用意したい方に向けて、各社の<strong>お供え専用商品の有無・白系の可否・立て札／弔事カード・価格・お届け日指定</strong>を、
+              2026年7月に公式サイトで確認して比較しています。確認できなかった項目は「確認できず」と記載しています。
             </p>
           </div>
         </section>
 
-        {/* 結論 */}
+        {/* 要点 */}
         <section className="py-10 md:py-14 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <div className="border-2 border-[#4A7C59] rounded-2xl p-6">
-              <p className="font-bold text-[#4A7C59] mb-3">結論：目的で選ぶ</p>
+              <p className="font-bold text-[#4A7C59] mb-3">要点：目的に応じてお選びください</p>
               <ul className="space-y-2 text-sm text-[#555] leading-relaxed">
-                <li>・<strong>お供え専用商品を確実に・申し込みやすさ重視</strong>なら、当サイト提携の <Link href="/services/bloomee" className="text-[#4A7C59] underline">bloomee</Link>（仏花・お供え専用アレンジ／白を選択可／弔事カード可・<strong>4,060円〜</strong>）か <Link href="/services/and-plants" className="text-[#4A7C59] underline">AND PLANTS</Link>（お供え胡蝶蘭・立て札無料）。</li>
-                <li>・<strong>お供えの品揃えの多さ重視</strong>なら <Link href="/services/hitohana" className="text-[#4A7C59] underline">HitoHana</Link> が胡蝶蘭〜スタンド花まで最も充実（※当サイトは現時点で未提携のため、内容は公式でご確認ください）。</li>
-                <li>・<strong>日常的に仏壇の花を絶やしたくない</strong>なら、日常の切り花定期便で落ち着いた色を選ぶ方法も。ただし<strong>白限定コースや弔事カードは無い</strong>ため、専用用途には上記が向きます。</li>
-                <li>・お供えの<Link href="/guides/butsudan/" className="text-[#4A7C59] underline">マナー・向く花</Link>、<Link href="/guides/obon/" className="text-[#4A7C59] underline">お盆</Link>・<Link href="/guides/ohigan/" className="text-[#4A7C59] underline">お彼岸</Link>の時期と逆算もあわせてご確認を。</li>
+                <li>・<strong>お供え専用商品を確実に用意したい場合や、申し込みやすさを重視する場合</strong>は、当サイト提携の <Link href="/services/bloomee" className="text-[#4A7C59] underline">bloomee</Link>（仏花・お供え専用アレンジ／白を選択可／弔事カード可・<strong>4,060円〜</strong>）または <Link href="/services/and-plants" className="text-[#4A7C59] underline">AND PLANTS</Link>（お供え胡蝶蘭・立て札無料）が適しています。</li>
+                <li>・<strong>お供えの品揃えを重視する場合</strong>は <Link href="/services/hitohana" className="text-[#4A7C59] underline">HitoHana</Link> が胡蝶蘭からスタンド花まで最も充実しています（※当サイトは現時点で未提携のため、内容は公式サイトにてご確認ください）。</li>
+                <li>・<strong>仏壇の花を日常的に絶やさないようにしたい場合</strong>は、日常の切り花定期便で落ち着いた色を選ぶ方法もあります。ただし<strong>白限定のコースや弔事カードはない</strong>ため、お供え専用の用途には上記のサービスが適しています。</li>
+                <li>・お供えの<Link href="/guides/butsudan/" className="text-[#4A7C59] underline">マナー・向く花</Link>、<Link href="/guides/obon/" className="text-[#4A7C59] underline">お盆</Link>・<Link href="/guides/ohigan/" className="text-[#4A7C59] underline">お彼岸</Link>の時期と手配時期の目安もあわせてご確認ください。</li>
               </ul>
             </div>
           </div>
@@ -101,26 +101,26 @@ export default function OsonaePage() {
         {/* 安いプランの整理 */}
         <section className="py-10 md:py-14 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-4 pb-3 border-b-2 border-[#4A7C59]">仏花の定期便で安いプランはどれ？</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-4 pb-3 border-b-2 border-[#4A7C59]">仏花の定期便で安いプランの比較</h2>
             <p className="text-sm text-[#666] leading-relaxed mb-5">
-              一次確認（{OSONAE_VERIFIED}）の範囲では、8社に「仏花専用の定期便」という商品は確認できませんでした（お供え専用商品はいずれも単発ギフト）。そのため<strong>定期的に・安く</strong>仏壇の花を用意するなら、日常の切り花定期便で落ち着いた色を選んで仏花に整える方法が最も安くなります。確認値ベースの安い順は次のとおりです。
+              当サイトが公式サイトを確認した範囲（{OSONAE_VERIFIED}）では、8社に仏花専用の定期便は確認できませんでした（お供え専用商品はいずれも単発のギフトです）。そのため、<strong>定期的に費用を抑えて</strong>仏壇の花を用意する場合は、日常の切り花定期便で落ち着いた色を選び、仏花として整える方法が最も安価です。確認値にもとづく安い順は次のとおりです。
             </p>
             <div className="grid gap-4">
               <div className="bg-[#FAF7F2] rounded-xl border border-[#E8E0D5] p-5">
                 <p className="font-bold text-[#333] text-sm">1. medelu（メデル）｜定期便 月748円〜（税込・送料込）</p>
-                <p className="mt-2 text-sm text-[#666] leading-relaxed">日常の定期便として今回の確認内で最安。お供え専用商品ではありませんが、NATURAL系など落ち着いた色のコースを仏花に流用できます。<Link href="/services/medelu" className="text-[#4A7C59] underline">medeluの詳細を見る</Link></p>
+                <p className="mt-2 text-sm text-[#666] leading-relaxed">日常の定期便として、今回確認した範囲で最も安いサービスです。お供え専用商品ではありませんが、NATURAL系など落ち着いた色のコースを仏花として利用できます。<Link href="/services/medelu" className="text-[#4A7C59] underline">medeluの詳細を見る</Link></p>
               </div>
               <div className="bg-[#FAF7F2] rounded-xl border border-[#E8E0D5] p-5">
                 <p className="font-bold text-[#333] text-sm">2. hanameku（ハナメク）｜定期便 月1,210円〜（税込・送料込）</p>
-                <p className="mt-2 text-sm text-[#666] leading-relaxed">価格は安いものの、色指定不可・メッセージカード不可のため、お供え・弔事用途には実質不向きと評価しています（公式FAQ確認）。</p>
+                <p className="mt-2 text-sm text-[#666] leading-relaxed">価格は安いものの、色の指定とメッセージカードに対応していないため、当サイトではお供え・弔事の用途には適さないと評価しています（公式FAQ確認）。</p>
               </div>
               <div className="bg-[#FAF7F2] rounded-xl border border-[#E8E0D5] p-5">
                 <p className="font-bold text-[#333] text-sm">3. お供え専用商品を単発で頼む場合｜3,960円〜</p>
-                <p className="mt-2 text-sm text-[#666] leading-relaxed">確認内の最安は日本総合園芸の白ユリ花束3,960円〜（税込・当サイト未提携）。申し込みやすさ重視なら、当サイト提携の<Link href="/services/bloomee" className="text-[#4A7C59] underline">bloomee</Link>の仏花・お供え専用アレンジ4,060円〜（税込・多くが送料無料・白を選択可）です。</p>
+                <p className="mt-2 text-sm text-[#666] leading-relaxed">確認した範囲での最安は、日本総合園芸の白ユリ花束3,960円〜（税込・当サイト未提携）です。申し込みやすさを重視する場合は、当サイト提携の<Link href="/services/bloomee" className="text-[#4A7C59] underline">bloomee</Link>の仏花・お供え専用アレンジ4,060円〜（税込・多くが送料無料・白を選択可）です。</p>
               </div>
             </div>
             <p className="mt-4 text-xs text-[#999] leading-relaxed">
-              ※タスハナ（＋actプラン660円〜＋送料330円）はさらに安いものの、ロスフラワーのお任せ定期便で色指定・日時指定・ラッピング不可のため、お供え用途には不向きです。価格はいずれも{OSONAE_VERIFIED}時点の公式確認値です。
+              ※タスハナ（＋actプラン660円〜＋送料330円）はさらに安価ですが、ロスフラワーのおまかせ定期便で、色指定・日時指定・ラッピングに対応していないため、お供えの用途には適していません。価格はいずれも{OSONAE_VERIFIED}時点の公式確認値です。
             </p>
             <p className="mt-3 text-sm text-[#666] leading-relaxed">
               仏花に向く花・避ける花やお手入れの基本は、<Link href="/guides/butsudan/" className="text-[#4A7C59] underline">仏壇に供える仏花の選び方・お手入れガイド</Link>で詳しく解説しています。
@@ -128,11 +128,11 @@ export default function OsonaePage() {
           </div>
         </section>
 
-        {/* 一次確認・比較表 */}
+        {/* 公式確認・比較表 */}
         <section className="py-12 md:py-16 bg-[#FAF7F2]">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">お供え・仏花対応の一次確認比較（8社）</h2>
-            <p className="text-xs text-[#999] mb-6">※各社公式サイトを当サイトが確認した内容（確認日：{OSONAE_VERIFIED}）。料金・仕様は変動します。最新・正確な内容は各公式でご確認ください。◎=当サイト提携（申込みリンクあり）。</p>
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">お供え・仏花への対応状況の比較（8社）</h2>
+            <p className="text-xs text-[#999] mb-6">※各社の公式サイトを当サイトが確認した内容です（確認日：{OSONAE_VERIFIED}）。料金・仕様は変動します。最新かつ正確な内容は、各社の公式サイトにてご確認ください。◎は当サイトの提携サービス（お申し込みリンクあり）を示します。</p>
             <div className="overflow-x-auto">
               <table className="w-full text-xs md:text-sm border border-[#E8E0D5] bg-white rounded-xl overflow-hidden">
                 <thead className="bg-[#F3EDE4]">
@@ -170,7 +170,7 @@ export default function OsonaePage() {
         {/* 提携・お供え対応 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">お供え専用商品があり、申し込みやすい（当サイト提携）</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">お供え専用商品があり、申し込みやすいサービス（当サイト提携）</h2>
             <div className="grid gap-4">
               {ready.map((o) => (
                 <div key={o.id} className="bg-[#FAF7F2] rounded-xl border border-[#E8E0D5] p-5">
@@ -181,7 +181,7 @@ export default function OsonaePage() {
                   <p className="mt-2 text-sm text-[#666] leading-relaxed">{o.dedicatedNote}</p>
                   <p className="mt-2 text-sm text-[#555]"><strong>白系：</strong>{o.color}／<strong>立て札・カード：</strong>{o.card}</p>
                   <p className="mt-1 text-sm text-[#555]"><strong>価格：</strong>{o.priceFrom}</p>
-                  <Link href={o.servicePath} className="mt-3 inline-block bg-[#4A7C59] text-white font-bold px-5 py-2.5 rounded-lg text-sm hover:opacity-90 transition">{o.name.split("（")[0]}の詳細・最新を見る</Link>
+                  <Link href={o.servicePath} className="mt-3 inline-block bg-[#4A7C59] text-white font-bold px-5 py-2.5 rounded-lg text-sm hover:opacity-90 transition">{o.name.split("（")[0]}の詳細・最新情報を見る</Link>
                 </div>
               ))}
             </div>
@@ -191,9 +191,9 @@ export default function OsonaePage() {
         {/* 品揃え充実・未提携 */}
         <section className="py-12 md:py-16 bg-[#FAF7F2]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-3 pb-3 border-b-2 border-[#4A7C59]">お供え専門の品揃えが充実（参考・当サイト未提携）</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-3 pb-3 border-b-2 border-[#4A7C59]">お供え専門の品揃えが充実したサービス（参考・当サイト未提携）</h2>
             <p className="text-sm text-[#666] leading-relaxed mb-6">
-              以下は<strong>お供え・弔事の専用ラインが特に充実</strong>していますが、当サイトは現時点で申込みの提携をしていないため、申込みリンクは用意していません。品揃え・マナー対応を重視する場合の選択肢として、公式でご確認ください（当サイト内の紹介ページにもまとめています）。
+              以下のサービスは<strong>お供え・弔事の専用商品が特に充実</strong>していますが、当サイトは現時点で提携していないため、お申し込みリンクは設けていません。品揃えやマナーへの対応を重視する場合の選択肢として、公式サイトにてご確認ください（当サイト内の紹介ページにも情報を掲載しています）。
             </p>
             <div className="grid gap-4">
               {giftStrong.map((o) => (
@@ -214,9 +214,9 @@ export default function OsonaePage() {
         {/* 日常定期便・不向き */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-3 pb-3 border-b-2 border-[#4A7C59]">日常の切り花定期便（お供え専用商品はなし）</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-3 pb-3 border-b-2 border-[#4A7C59]">日常の切り花定期便（お供え専用商品はありません）</h2>
             <p className="text-sm text-[#666] leading-relaxed mb-6">
-              以下は<strong>日常の花の定期便</strong>としては魅力的ですが、お供え・仏花の専用商品はありません。落ち着いた色を選んでお供えに流用することはできますが、白限定・立て札・弔事カードには対応していない点にご注意ください（正直な評価として掲載しています）。
+              以下のサービスは<strong>日常の花の定期便</strong>としては優れていますが、お供え・仏花の専用商品はありません。落ち着いた色を選んでお供えに利用することはできますが、白限定・立て札・弔事カードには対応していない点にご注意ください（当サイトの評価として掲載しています）。
             </p>
             <div className="grid gap-4">
               {others.map((o) => (
@@ -240,7 +240,7 @@ export default function OsonaePage() {
             <ul className="grid sm:grid-cols-2 gap-3 text-sm">
               <li><Link href="/guides/butsudan/" className="text-[#4A7C59] underline">仏壇・仏花に向く花と選び方</Link></li>
               <li><Link href="/guides/obon/" className="text-[#4A7C59] underline">お盆・新盆（初盆）の花の用意</Link></li>
-              <li><Link href="/guides/ohigan/" className="text-[#4A7C59] underline">お彼岸の花・2026年の日程と逆算</Link></li>
+              <li><Link href="/guides/ohigan/" className="text-[#4A7C59] underline">お彼岸の花・2026年の日程と手配時期</Link></li>
               <li><Link href="/compare/ryokin/" className="text-[#4A7C59] underline">花のサブスク料金を総額で比較</Link></li>
             </ul>
           </div>
@@ -259,7 +259,7 @@ export default function OsonaePage() {
               ))}
             </div>
             <p className="mt-8 text-xs text-[#999] leading-relaxed">
-              当サイトはアフィリエイトプログラムに参加しており、「◎」の付いた提携サービスのリンク先で購入等が行われた場合、紹介手数料を受け取ることがあります。掲載内容は{OSONAE_VERIFIED}時点で各公式サイトを確認したものです。宗派・地域によりお供えの慣習は異なります。最新・正確な料金・仕様・在庫は各公式サイトでご確認ください。
+              当サイトはアフィリエイトプログラムに参加しており、「◎」の付いた提携サービスのリンク先で購入等が行われた場合、紹介手数料を受け取ることがあります。掲載内容は{OSONAE_VERIFIED}時点で各公式サイトを確認したものです。宗派・地域によりお供えの慣習は異なります。最新かつ正確な料金・仕様・在庫は、各公式サイトにてご確認ください。
             </p>
           </div>
         </section>

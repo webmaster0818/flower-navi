@@ -7,7 +7,7 @@ const SITE_URL = "https://ohana-delivery.com";
 
 export const metadata: Metadata = {
   title: "利用シーン別の花のサブスクおすすめ｜ギフト・お祝い活用ガイド｜flowerデリ",
-  description: "誕生日・結婚記念日・新築祝い・退院祝い・開店祝い・出産祝いに最適な花のサブスクを徹底解説。シーン別の選び方とタブー花を網羅。",
+  description: "誕生日・結婚記念日・新築祝い・退院祝い・開店祝い・出産祝いに適した花のサブスクを解説します。シーン別の選び方と、避けるべき花をまとめています。",
   alternates: { canonical: "/use-cases/" },
 };
 
@@ -58,8 +58,8 @@ export default function UseCasesIndexPage() {
             </h1>
             <p className="text-base text-[#666] leading-relaxed">
               花のサブスクは『誕生日』『結婚記念日』『新築祝い』『退院祝い』『開店祝い』『出産祝い』など、
-              さまざまな利用シーンで活躍します。本ガイドでは{useCases.length}のシーン別に、最適なサブスクサービス・予算相場・タブー花までを徹底解説。
-              贈る相手の状況に応じた選び方を学べます。
+              さまざまな利用シーンで活用できます。当サイトでは{useCases.length}のシーン別に、適したサービス・予算の相場・避けるべき花を解説しています。
+              贈る相手の状況に応じた選び方をご確認いただけます。
             </p>
           </header>
 
@@ -76,7 +76,7 @@ export default function UseCasesIndexPage() {
                 >
                   <h3 className="font-bold text-[#333] mb-2 leading-snug">{u.title}</h3>
                   <p className="text-sm text-[#666] leading-relaxed line-clamp-3">{u.description}</p>
-                  <p className="mt-3 text-xs text-[#4A7C59] font-bold">詳しく見る →</p>
+                  <p className="mt-3 text-xs text-[#4A7C59] font-bold">詳細を確認する →</p>
                 </Link>
               ))}
             </div>

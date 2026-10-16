@@ -15,7 +15,7 @@ const faqItems = [
   },
   {
     q: "安い花のサブスクでも品質保証はありますか？",
-    a: "確認した3社には品質保証の定めがあります。medeluは到着当日中に写真を送り、枯れていると判断されれば送料を含めて全額返金（交換はなし）、hanamekuは到着日を含め3日以内に写真つきで申請（返金または代替品）、bloomeeは定期便で2週間以内の連絡が条件です（いずれも各社公式で確認）。",
+    a: "確認した3社には品質保証の定めがあります。medeluは到着当日中に写真を送り、枯れていると判断されれば送料を含めて全額返金（交換はなし）、hanamekuは到着日を含め3日以内に写真付きで申請（返金または代替品）、bloomeeは定期便で2週間以内の連絡が条件です（いずれも各社公式で確認）。",
   },
   {
     q: "送料込みの料金なのはどのサービスですか？",
@@ -26,12 +26,12 @@ const faqItems = [
     a: "公式の表記では、medelu Miniが3〜4本、hanamekuライトプランが3〜4本、bloomeeお試しプランが4本以上（約18〜25cm）、タスハナ+actが花・葉物合わせて3品目・3本以上です。",
   },
   {
-    q: "安い花のサブスクに回数縛りはありますか？",
-    a: "サービスによって違います。bloomeeは最初の4回の受け取りが必要で、4回未満で解約すると残り回数分の商品代金がかかります。タスハナは5回以上の出荷を前提とした定期便です。hanamekuは初回（定期1回目）の解約ができません。medeluは公式に最低利用回数の記載がありません。",
+    q: "安い花のサブスクに回数の条件はありますか？",
+    a: "サービスによって異なります。bloomeeは最初の4回の受け取りが必要で、4回未満で解約すると残り回数分の商品代金がかかります。タスハナは5回以上の出荷を前提とした定期便です。hanamekuは初回（定期1回目）の解約ができません。medeluは公式に最低利用回数の記載がありません。",
   },
   {
     q: "2回受け取るといくらかかりますか？",
-    a: "送料込みの1回あたりの総額×2回で、medelu Mini 1,496円、タスハナ+act 1,980円、hanamekuライト 2,420円、bloomeeお試し 2,730円です。お届けの間隔（毎週・隔週など）の選択肢はサービスごとに違うため、各公式サイトでご確認ください。",
+    a: "送料込みの1回あたりの総額×2回で、medelu Mini 1,496円、タスハナ+act 1,980円、hanamekuライト 2,420円、bloomeeお試し 2,730円です。お届けの間隔（毎週・隔週など）の選択肢はサービスごとに異なるため、各公式サイトでご確認ください。",
   },
   {
     q: "ポストに届く安いプランはどれですか？",
@@ -54,7 +54,7 @@ const rankingData = [
     minOrders: "公式に記載なし",
     quality: "あり（当日中に写真・全額返金）",
     url: "/services/medelu/",
-    highlight: "花代748円で送料込み。送料込みの総額で最安。公式に最低利用回数の記載はありません。",
+    highlight: "花代748円（送料込み）で、送料込みの総額は確認した中で最安です。公式に最低利用回数の記載はありません。",
     color: "#F59E0B",
   },
   {
@@ -70,7 +70,7 @@ const rankingData = [
     minOrders: "5回以上の出荷が前提",
     quality: "当サイト未確認",
     url: "/services/tasuhana/",
-    highlight: "花代660円は確認した中で最安。ただし送料330円が毎回かかり1回990円。5回以上の出荷を前提とした定期便です（2026年8月6日のお届け分から新価格）。",
+    highlight: "花代660円は確認した中で最安です。ただし送料330円が毎回かかるため、1回あたり990円となります。5回以上の出荷を前提とした定期便です（2026年8月6日のお届け分から新価格）。",
     color: "#9CA3AF",
   },
   {
@@ -86,7 +86,7 @@ const rankingData = [
     minOrders: "初回は解約不可",
     quality: "あり（3日以内に写真・返金または代替品）",
     url: "/services/hanameku/",
-    highlight: "1,210円で配送料込み。初回（定期1回目）は解約できない点に注意。",
+    highlight: "1,210円（配送料込み）です。初回（定期1回目）は解約できない点にご注意ください。",
     color: "#B45309",
   },
   {
@@ -116,9 +116,9 @@ export default function FiveHundredYenPage() {
                 {/* COMPARE_ITEMLIST_v1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"花のサブスク最安プラン比較\",\"description\":\"花のサブスク最安プラン比較のサービス一覧\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"url\":\"https://ohana-delivery.com/services/medelu/\",\"name\":\"medelu（メデル）\"},{\"@type\":\"ListItem\",\"position\":2,\"url\":\"https://ohana-delivery.com/services/bloomee/\",\"name\":\"bloomee（ブルーミー）\"},{\"@type\":\"ListItem\",\"position\":3,\"url\":\"https://ohana-delivery.com/services/tasuhana/\",\"name\":\"+hana（タスハナ）\"},{\"@type\":\"ListItem\",\"position\":4,\"url\":\"https://ohana-delivery.com/services/hanameku/\",\"name\":\"hanameku（ハナメク）\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"500円から始められる花のサブスク比較\",\"item\":\"https://ohana-delivery.com/compare/500yen/\"}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"500円台の花のサブスク比較\",\"item\":\"https://ohana-delivery.com/compare/500yen/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"500円から始められる花のサブスク比較\",\"description\":\"500円から始められる花のサブスク比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-16T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/500yen/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"500円台の花のサブスク比較\",\"description\":\"花のサブスク各社の最安プランを、送料込みの総額で比較・解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-16T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/500yen/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
     <div className="flex flex-col min-h-screen">
@@ -153,12 +153,12 @@ export default function FiveHundredYenPage() {
               花のサブスク価格比較
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              お花の定期便は500円台で始められる？<br className="hidden md:block" />
+              お花の定期便を500円台で始められるかを検証<br className="hidden md:block" />
                 最安プランを送料込みで比較【2026年10月】
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              「まずは500円くらいの安いプランで試したい」という方へ。
-                4サービスの最安プランを公式サイトで確認し（2026年10月14〜16日）、送料込みの総額と回数縛りで比べました。
+              まずは500円程度の安いプランで試したい方に向けて、当サイトでは
+                4サービスの最安プランを公式サイトで確認し（2026年10月14〜16日）、送料込みの総額と回数の条件で比較しました。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -181,15 +181,15 @@ export default function FiveHundredYenPage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#intro" className="hover:text-[#4A7C59] transition-colors">1. 500円台で始められるお花の定期便はある？</a></li>
+                  <li><a href="#intro" className="hover:text-[#4A7C59] transition-colors">1. 500円台で始められるお花の定期便の有無</a></li>
                   <li><a href="#comparison-table" className="hover:text-[#4A7C59] transition-colors">2. 最安プラン比較表（送料込み総額）</a></li>
-                  <li><a href="#ranking" className="hover:text-[#4A7C59] transition-colors">3. 安い花サブスクランキング</a></li>
-                  <li><a href="#total-cost" className="hover:text-[#4A7C59] transition-colors">4. 送料込み総額で比較するのが重要</a></li>
-                  <li><a href="#caution" className="hover:text-[#4A7C59] transition-colors">5. 安さだけで選ぶと失敗する理由</a></li>
-                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">6. 1,000円前後で花のある暮らしを始めるコツ</a></li>
+                  <li><a href="#ranking" className="hover:text-[#4A7C59] transition-colors">3. 安い花のサブスクランキング</a></li>
+                  <li><a href="#total-cost" className="hover:text-[#4A7C59] transition-colors">4. 送料込みの総額で比較する理由</a></li>
+                  <li><a href="#caution" className="hover:text-[#4A7C59] transition-colors">5. 価格以外に確認すべき点</a></li>
+                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">6. 1,000円前後で花のある暮らしを始める方法</a></li>
                   <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">7. よくある質問</a></li>
                   <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">8. まとめ</a></li>
                 </ol>
@@ -202,20 +202,20 @@ export default function FiveHundredYenPage() {
         <section id="intro" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              500円台で始められるお花の定期便はある？
+              500円台で始められるお花の定期便の有無
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
-              結論から言うと、当サイトが公式サイトで確認した範囲（2026年10月16日）では、花代が500円台の定期便は見つかりませんでした。花代が最も安いのはタスハナ（+hana）の+actプランで1回660円（税込）です。ただし花代とは別に送料がかかるサービスもあるため、送料を含めた「総額」で比べることが大切です。
+              当サイトが公式サイトで確認した範囲（2026年10月16日）では、花代が500円台の定期便は見つかりませんでした。花代が最も安いのはタスハナ（+hana）の+actプランで1回660円（税込）です。ただし花代とは別に送料がかかるサービスもあるため、送料を含めた総額で比較することが大切です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
-              例えば、タスハナは花代660円に送料330円が毎回かかるため、1回あたりの総額は990円になります。一方、花代748円のmedelu Miniは送料込みなので、総額はそのまま748円です。花代だけを見ると、実際の支出を見誤ります。
+              例えば、タスハナは花代660円に送料330円が毎回かかるため、1回あたりの総額は990円になります。一方、花代748円のmedelu Miniは送料込みなので、総額はそのまま748円です。花代だけでは、実際の支出を正確に把握できません。
               </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
-              この記事では、各サービスの最安プランを「送料込みの総額」で比較し、本当にお得なサービスをご紹介します。1,000円前後で花のある暮らしを始めたい方は参考にしてください。
+              当サイトでは、各サービスの最安プランを送料込みの総額で比較し、費用を抑えて利用できるサービスをご紹介します。1,000円前後で花のある暮らしを始めたい方はご参照ください。
             </p>
 
             <div className="bg-[#E8F0EB] rounded-xl p-5 mt-6">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">この記事のポイント</h3>
+              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">本ページの要点</h3>
               <ul className="text-sm text-[#666] space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="text-[#4A7C59] mt-0.5 shrink-0">--</span>
@@ -227,11 +227,11 @@ export default function FiveHundredYenPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#4A7C59] mt-0.5 shrink-0">--</span>
-                  <span>花代だけならタスハナ+act（660円/回）が最安。ただし送料330円で総額990円・5回以上の出荷が前提</span>
+                  <span>花代のみではタスハナ+act（660円/回）が最安。ただし送料330円を加えた総額は990円で、5回以上の出荷が前提</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#4A7C59] mt-0.5 shrink-0">--</span>
-                  <span>花代500円台の定期便は、確認した範囲では見つからなかった</span>
+                  <span>確認した範囲では、花代500円台の定期便はなし</span>
                 </li>
               </ul>
             </div>
@@ -245,7 +245,7 @@ export default function FiveHundredYenPage() {
               最安プラン比較表（送料込み総額で比較）
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              各サービスの最安プランを、花代・送料・1回あたりの総額で比較しました。安い順に並べています。
+              各サービスの最安プランを、花代・送料・1回あたりの総額で比較しました。総額の安い順に掲載しています。
             </p>
 
             <div className="overflow-x-auto">
@@ -258,7 +258,7 @@ export default function FiveHundredYenPage() {
                     <th className="px-3 py-3 text-center font-medium">送料</th>
                     <th className="px-3 py-3 text-center font-medium">総額/回</th>
                     <th className="px-3 py-3 text-center font-medium">花の本数</th>
-                    <th className="px-3 py-3 text-center font-medium">回数縛り</th>
+                    <th className="px-3 py-3 text-center font-medium">回数の条件</th>
                   </tr>
                 </thead>
                 <tbody className="text-[#666]">
@@ -312,7 +312,7 @@ export default function FiveHundredYenPage() {
         <section id="ranking" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              安い花サブスクランキング（詳細解説）
+              安い花のサブスクランキング（詳細）
             </h2>
 
             <div className="space-y-6">
@@ -323,7 +323,7 @@ export default function FiveHundredYenPage() {
                 >
                   {item.rank === 1 && (
                     <div className="bg-[#4A7C59] text-white text-xs text-center py-1.5 font-bold">
-                      送料込み総額で最安 ─ おすすめNo.1
+                      送料込みの総額が最安
                     </div>
                   )}
                   <div className="p-5">
@@ -365,7 +365,7 @@ export default function FiveHundredYenPage() {
 
                     <div className="flex flex-wrap gap-2 mb-4 text-xs">
                       <span className="bg-[#F8F8F8] text-[#666] px-3 py-1 rounded-full">配送: {item.delivery}</span>
-                                            <span className="bg-[#F8F8F8] text-[#666] px-3 py-1 rounded-full">縛り: {item.minOrders}</span>
+                                            <span className="bg-[#F8F8F8] text-[#666] px-3 py-1 rounded-full">回数の条件: {item.minOrders}</span>
                       <span className="bg-[#F8F8F8] text-[#666] px-3 py-1 rounded-full">品質保証: {item.quality}</span>
                     </div>
 
@@ -388,14 +388,14 @@ export default function FiveHundredYenPage() {
         <section id="total-cost" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              送料込み総額で比較するのが重要な理由
+              送料込みの総額で比較する理由
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
-              花のサブスクを比較する際、多くの方が花代だけを見て「安い」「高い」と判断しがちです。しかし、実際の支出は「花代 + 送料」の総額で決まります。この差は無視できないほど大きいのです。
+              花のサブスクを比較する際は、花代だけで価格を判断しがちです。しかし、実際の支出は花代と送料を合わせた総額で決まり、その差は小さくありません。
             </p>
 
             <div className="bg-white rounded-xl p-5 border border-[#E5E5E5] mb-6">
-              <h3 className="text-sm font-bold text-[#333] mb-3">具体例で比較</h3>
+              <h3 className="text-sm font-bold text-[#333] mb-3">具体例による比較</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex items-center justify-between py-2 border-b border-[#E5E5E5]">
                   <span className="text-[#666]">タスハナ: 花代660円 + 送料330円</span>
@@ -411,7 +411,7 @@ export default function FiveHundredYenPage() {
                 </div>
               </div>
               <p className="text-sm text-[#666] mt-4 leading-relaxed">
-                花代だけを見るとタスハナ（660円）が最安ですが、送料を加えた総額ではmedelu（748円）が最も安くなります。花代の安さに惹かれても、実際の支出は送料込みで考える必要があります。
+                花代だけを見るとタスハナ（660円）が最安ですが、送料を加えた総額ではmedelu（748円）が最も安くなります。実際の支出は、送料を含めて考える必要があります。
               </p>
             </div>
 
@@ -425,28 +425,28 @@ export default function FiveHundredYenPage() {
         <section id="caution" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              安さだけで選ぶと失敗する3つの理由
+              価格以外に確認すべき3つの点
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              価格は重要な判断基準ですが、安さだけで選ぶと期待はずれになることも。以下の3つのポイントも必ず確認しましょう。
+              価格は重要な判断基準ですが、価格だけで選ぶと期待と異なる場合があります。申し込み前に、以下の3点もご確認ください。
             </p>
 
             <div className="space-y-4">
               {[
                 {
                   num: "1",
-                  title: "花の本数が少なすぎて物足りない",
-                  text: "最安クラスのプランは、公式の表記で3〜4本程度です。一輪挿しや小さな花瓶には十分ですが、「もっとボリュームが欲しい」と感じる方も少なくありません。見栄えを重視するなら、少し上のプランも検討する価値があります。1本あたりの単価で見ると、上位プランの方がお得な場合もあります。",
+                  title: "最安プランは花の本数が少ない",
+                  text: "最安クラスのプランは、公式の表記で3〜4本程度です。一輪挿しや小さな花瓶には十分ですが、ボリュームが足りないと感じる方も少なくありません。見栄えを重視する場合は、上位のプランもご検討ください。1本あたりの単価では、上位プランのほうが割安な場合もあります。",
                 },
                 {
                   num: "2",
-                  title: "回数縛りで解約できない",
-                  text: "bloomeeは最初の4回の受け取りが必要で、お試しプランでも最低1,365円×4回＝5,460円かかります。タスハナは5回以上の出荷が前提（最低990円×5回＝4,950円）、hanamekuは初回の解約ができません。「1回試して合わなければやめたい」なら、申し込む前に各社の解約条件を確認しましょう。medeluは公式に最低利用回数の記載がありません。",
+                  title: "回数の条件により、すぐには解約できない",
+                  text: "bloomeeは最初の4回の受け取りが必要で、お試しプランでも最低1,365円×4回＝5,460円かかります。タスハナは5回以上の出荷が前提（最低990円×5回＝4,950円）、hanamekuは初回の解約ができません。1回試して判断したい場合は、申し込む前に各社の解約条件をご確認ください。medeluは公式に最低利用回数の記載がありません。",
                 },
                 {
                   num: "3",
-                  title: "花の品質やアレンジが期待と違う",
-                  text: "最安クラスのプランは、花の種類や色を選べないおまかせが基本です（タスハナは公式FAQで「選べない」と明記）。インテリアに合わせて色を選びたい方は、多少価格が上がってもHitoHanaのような色が選べるサービスを検討するとよいでしょう。",
+                  title: "花の品質やアレンジが期待と異なる場合がある",
+                  text: "最安クラスのプランは、花の種類や色を選べないおまかせが基本です（タスハナは公式FAQで「選べない」と明記）。インテリアに合わせて色を選びたい方は、多少価格が上がってもHitoHanaのような色が選べるサービスをご検討ください。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-[#FDF5F5] rounded-xl p-5 border border-[#E0B8B8]">
@@ -469,25 +469,25 @@ export default function FiveHundredYenPage() {
         <section id="tips" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              1,000円前後で花のある暮らしを始める3つのコツ
+              1,000円前後で花のある暮らしを始める3つの方法
             </h2>
 
             <div className="space-y-4">
               {[
                 {
                   num: "1",
-                  title: "まずはお届けの間隔を空けて始める",
-                  text: "お届けの間隔が短いほど、月あたりの支出は増えます。最初は間隔を空けて始め、慣れてきたら増やすのがおすすめです。選べる間隔はサービスごとに違うため、申し込み画面で確認しましょう。",
+                  title: "お届けの間隔を空けて始める",
+                  text: "お届けの間隔が短いほど、月あたりの支出は増えます。最初は間隔を空けて始め、慣れてから頻度を増やす方法をおすすめします。選べる間隔はサービスごとに異なるため、申し込み画面でご確認ください。",
                 },
                 {
                   num: "2",
                   title: "切り花延命剤で花を長持ちさせる",
-                  text: "届いた花を少しでも長く楽しむために、切り花延命剤の活用をおすすめします。100円ショップやホームセンターで手軽に購入できます。花が長く持てば、お届けの間隔を空けても花のある状態を保ちやすくなります。",
+                  text: "届いた花を少しでも長く楽しむために、切り花延命剤の活用をおすすめします。100円ショップやホームセンターで購入できます。花が長持ちすれば、お届けの間隔を空けても花のある状態を保ちやすくなります。",
                 },
                 {
                   num: "3",
                   title: "解約条件を確かめてから申し込む",
-                  text: "初めての方は、最低受け取り回数と解約の締め切りを先に確認しましょう。bloomeeは4回、タスハナは5回以上が前提、hanamekuは初回の解約不可です。medeluは公式に最低利用回数の記載がなく、送料込み748円から始められます。",
+                  text: "初めて利用する方は、最低受け取り回数と解約の締め切りを事前にご確認ください。bloomeeは4回、タスハナは5回以上が前提、hanamekuは初回の解約不可です。medeluは公式に最低利用回数の記載がなく、送料込み748円から始められます。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
@@ -549,16 +549,16 @@ export default function FiveHundredYenPage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：送料込みで最安はmedelu、花代最安はタスハナ
+              送料込みの最安はmedelu、花代の最安はタスハナです
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花代500円台の定期便は、確認した範囲では見つかりませんでした。送料込みの総額で最も安いのは<strong>medelu Miniコース（748円/回・送料込み）</strong>です。公式に最低利用回数の記載がなく、ポストで受け取れます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花代だけで見ると<strong>タスハナ+act（660円/回）</strong>が最安ですが、送料330円を加えると990円/回で、5回以上の出荷が前提です。送料込みで初回だけ受け取って試したい場合は、初回の解約ができない<strong>hanameku（1,210円/回）</strong>より、medeluのほうが条件は緩やかです。
+              花代だけで見ると<strong>タスハナ+act（660円/回）</strong>が最安ですが、送料330円を加えると990円/回で、5回以上の出荷が前提です。初回のみ受け取って試したい場合は、初回の解約ができない<strong>hanameku（1,210円/回）</strong>より、medeluのほうが条件は緩やかです。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              安さだけでなく、花の本数・品質・回数縛りの有無・配送方法など、総合的に判断することが大切です。まずは回数縛りなしのサービスで気軽に試してみて、花のある暮らしを始めてみましょう。
+              価格だけでなく、花の本数・品質・回数の条件の有無・配送方法などを総合的に判断することが大切です。初めての方には、回数の条件が少ないサービスから試す方法をおすすめします。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
@@ -604,7 +604,7 @@ export default function FiveHundredYenPage() {
             <div>
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -628,7 +628,7 @@ export default function FiveHundredYenPage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年10月14〜16日に各公式サイトで確認したものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              掲載情報は2026年10月14〜16日に各公式サイトで確認したものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

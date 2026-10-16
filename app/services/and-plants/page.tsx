@@ -14,12 +14,12 @@ const RE = findReviewEvidence("andplants");
 /* ─── FAQ Data ─── */
 const faqItems = [
   {
-    q: "AND PLANTS（アンドプランツ）の口コミ・評判は？",
-    a: "口コミの大半は観葉植物の購入者によるもので、「梱包が丁寧」「植物の状態が良い」「発送前に写真で確認できる」「鉢がおしゃれ」が好評です。一方で「価格がやや高い」「品切れがある」「コバエ・茎折れ・鉢の割れ」の報告もあります。花の定期便については、実際に注文した記事で「傷や折れがなく届いた」「咲きかけの花が数日で満開になった」と状態の良さが評価される一方、「次回の決済前に解約・スキップの手続きが必要」「イメージよりボリュームが少ない」という声もあります（2026年10月15日確認）。",
+    q: "AND PLANTS（アンドプランツ）の口コミ・評判はどうですか？",
+    a: "口コミの大半は観葉植物の購入者によるもので、「梱包が丁寧」「植物の状態が良い」「発送前に写真で確認できる」「鉢がおしゃれ」といった点が評価されています。一方で、「価格がやや高い」「品切れがある」「コバエ・茎折れ・鉢の割れ」の報告もあります。花の定期便については、実際に注文した記事で「傷や折れがなく届いた」「咲きかけの花が数日で満開になった」と状態の良さが評価される一方、「次回の決済前に解約・スキップの手続きが必要」「イメージよりボリュームが少ない」という声もあります（2026年10月15日確認）。",
   },
   {
-    q: "アンドプランツの悪い評判で多いのは？",
-    a: "レビュー記事で繰り返し挙がるのは、①ほかの通販より価格がやや高い②人気品種の品切れ③コバエの発生や配送時の茎折れ・鉢の割れ、の3つです。花の定期便では、生花の交換申請が到着後1日以内と短い点に注意しましょう。",
+    q: "アンドプランツの悪い評判で多い内容は何ですか？",
+    a: "レビュー記事で繰り返し挙げられているのは、①ほかの通販より価格がやや高い、②人気品種の品切れ、③コバエの発生や配送時の茎折れ・鉢の割れ、の3点です。花の定期便では、生花の交換申請の期限が到着後1日以内と短い点にご注意ください。",
   },
   {
     q: "AND PLANTSの花の定期便の料金はいくらですか？",
@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "AND PLANTSの花の定期便に回数縛りはありますか？",
-    a: "公式ページに「解約もいつでも可能」と記載があり、最低回数や解約料の記載はありません。スキップは決済完了前の注文に限られ、決済はお届けの約1週間前です。",
+    a: "公式ページに「解約もいつでも可能」との記載があり、最低回数や解約料の記載はありません。なお、スキップは決済完了前の注文に限られ、決済はお届けの約1週間前に行われます。",
   },
   {
     q: "AND PLANTSのお花が傷んで届いた場合はどうすればいいですか？",
@@ -35,30 +35,30 @@ const faqItems = [
   },
   {
     q: "AND PLANTSはどのくらいの頻度で届きますか？",
-    a: "1週間に1回、2週間に1回、4週間に1回から選べます。届く曜日は金〜日曜から選択できます（エリアにより異なる）。",
+    a: "1週間に1回、2週間に1回、4週間に1回から選べます。届く曜日は金〜日曜から選択できます（エリアにより異なります）。",
   },
   {
     q: "AND PLANTSの初回クーポンはありますか？",
-    a: "花の定期便ページに「初回500円オフクーポンあり」の案内があります。別途、公式LINEを友だち追加してアンケートに回答すると500円OFFクーポンがもらえるという案内もあります（2026年10月15日確認）。適用条件は申込画面で確認してください。",
+    a: "花の定期便ページに「初回500円オフクーポンあり」の案内があります。別途、公式LINEを友だち追加してアンケートに回答すると500円OFFクーポンがもらえるという案内もあります（2026年10月15日確認）。適用条件は申込画面でご確認ください。",
   },
   {
-    q: "AND PLANTSの花の定期便の支払い方法は？",
+    q: "AND PLANTSの花の定期便の支払い方法を教えてください。",
     a: "公式の花の定期便ページでは、クレジットカード・PayPal・Google Pay・Shop Payが案内されています。月額ではなく、お届けの約1週間前にその回の分が決済される都度払いです（2026年10月15日確認）。",
   },
   {
     q: "夏でも花は傷まずに届きますか？",
-    a: "公式ページでは、配送先の気温を見て主に真夏・真冬にクール便を適用すると案内されています（クール便は別途有料。料金は公式ページに記載なし）。生花の交換申請は到着後1日以内なので、届いたらすぐに状態を確認しましょう（2026年10月15日確認）。",
+    a: "公式ページでは、配送先の気温を見て主に真夏・真冬にクール便を適用すると案内されています（クール便は別途有料。料金は公式ページに記載なし）。生花の交換申請は到着後1日以内のため、届いたらすぐに状態をご確認ください（2026年10月15日確認）。",
   },
   {
     q: "AND PLANTSの花の定期便はプレゼントにできますか？",
-    a: "配送先をギフト相手、請求先を自分の住所にすれば贈れます。ただし定期便にはラッピングとメッセージカードは付けられません（2026年10月15日 公式ページで確認）。",
+    a: "配送先をギフトのお相手、請求先をご自身の住所にすれば贈ることができます。ただし、定期便にはラッピングとメッセージカードは付けられません（2026年10月15日 公式ページで確認）。",
   },
   {
     q: "届く曜日は選べますか？",
     a: "エリアにより異なりますが、金曜日〜日曜日から選べます。2回目以降は初回と同じ曜日のお届けになります（2026年10月15日 公式ページで確認）。",
   },
   {
-    q: "AND PLANTSとAND FLOWERの違いは？",
+    q: "AND PLANTSとAND FLOWERの違いは何ですか？",
     a: "どちらも株式会社Domuzのブランドです。2026年5月から花の事業が「AND FLOWER」として展開され、観葉植物は「AND PLANTS」で販売されています。花の定期便のページは現在もandplants.jp配下にあります。",
   },
 ];
@@ -74,11 +74,11 @@ export default function AndPlantsPage() {
       {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"AND PLANTS（アンドプランツ）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"AND PLANTS（アンドプランツ）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/and-plants/\"}" }} />
       {/* CANCEL_FLOW_SCHEMA_v1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"AND PLANTS（アンドプランツ）の解約手順\",\"description\":\"AND PLANTS（アンドプランツ）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"AND PLANTS公式サイトのマイページからログイン。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便管理」を選択\",\"text\":\"マイページから定期便管理画面へ。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期便を解約する」をクリック\",\"text\":\"画面の指示に従って解約フローへ。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由選択(任意)とフィードバック\",\"text\":\"アンケートに任意で回答。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約を確定する」をクリック\",\"text\":\"次回分の決済（お届けの約1週間前）より前に完了させてください。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"確認メール受信\",\"text\":\"AND PLANTSから解約完了通知メールが届きます。\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"AND PLANTS（アンドプランツ）の解約手順\",\"description\":\"AND PLANTS（アンドプランツ）の解約方法を手順ごとにご説明します\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログインする\",\"text\":\"AND PLANTS公式サイトのマイページからログインします。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便管理」を選択する\",\"text\":\"マイページから定期便管理画面に進みます。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期便を解約する」をクリックする\",\"text\":\"画面の指示に従って解約手続きに進みます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を選択する（任意）\",\"text\":\"アンケートへの回答は任意です。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約を確定する」をクリック\",\"text\":\"次回分の決済（お届けの約1週間前）より前に手続きを完了してください。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"確認メールを受信する\",\"text\":\"AND PLANTSから解約完了通知メールが届きます。\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/and-plants/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"description\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-15T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/and-plants/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"description\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-15T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/and-plants/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -112,11 +112,11 @@ export default function AndPlantsPage() {
               花のサブスク個別レビュー｜{RE.updatedAt}更新
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              AND PLANTS（アンドプランツ）の口コミ・評判は？<br className="hidden md:block" />
-              観葉植物と花の定期便の良い声・悪い声を検証
+              AND PLANTS（アンドプランツ）の口コミ・評判<br className="hidden md:block" />
+              観葉植物と花の定期便の良い口コミ・悪い口コミを検証
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              観葉植物の通販と花の定期便（現「AND FLOWER」）を展開する「AND PLANTS（アンドプランツ）」の口コミ・評判を、出典つきで整理。花の定期便の料金・解約・交換条件は、{S.verifiedAt}に公式サイトで確認した値で解説します。
+              当サイトでは、観葉植物の通販と花の定期便（現「AND FLOWER」）を展開する「AND PLANTS（アンドプランツ）」の口コミ・評判を、出典を明記して整理しています。花の定期便の料金・解約・交換条件は、{S.verifiedAt}に公式サイトで確認した値にもとづいてご説明します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -128,7 +128,7 @@ export default function AndPlantsPage() {
                 <p className="text-xl font-bold text-[#4A7C59]">込み</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">回数縛り</p>
+                <p className="text-xs text-[#999] mb-1">回数の条件</p>
                 <p className="text-xl font-bold text-[#4A7C59]">なし</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -145,16 +145,16 @@ export default function AndPlantsPage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">本ページの内容</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">1. アンドプランツの口コミ・評判（出典つき）</a></li>
-                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">2. AND PLANTSとは？観葉植物と花の定期便</a></li>
+                  <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">1. アンドプランツの口コミ・評判（出典付き）</a></li>
+                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">2. AND PLANTSの概要（観葉植物と花の定期便）</a></li>
                   <li><a href="#pricing" className="hover:text-[#4A7C59] transition-colors">3. 花の定期便の料金（公式確認）</a></li>
                   <li><a href="#plants" className="hover:text-[#4A7C59] transition-colors">4. 観葉植物の通販としての特徴</a></li>
                   <li><a href="#pros" className="hover:text-[#4A7C59] transition-colors">5. メリット（良い評判の理由）</a></li>
                   <li><a href="#cons" className="hover:text-[#4A7C59] transition-colors">6. デメリット（悪い評判の理由）</a></li>
-                  <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">7. こんな人におすすめ／おすすめしない人</a></li>
+                  <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">7. おすすめできる方・おすすめできない方</a></li>
                   <li><a href="#comparison" className="hover:text-[#4A7C59] transition-colors">8. ほかの花のサブスクとの比較</a></li>
                   <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">9. 花の定期便の始め方</a></li>
                   <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">10. よくある質問</a></li>
@@ -176,13 +176,13 @@ export default function AndPlantsPage() {
         <section id="overview" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              AND PLANTS（アンドプランツ）とは？
+              AND PLANTS（アンドプランツ）の概要
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
               AND PLANTS（アンドプランツ）は、株式会社Domuz（神奈川県川崎市）が運営する観葉植物の通販サイトです。鉢・プランターとセットで届く観葉植物が中心で、花の定期便もそのサービスの一つとして提供されています。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              2026年5月からは花の事業が「AND FLOWER（アンドフラワー）」ブランドとして展開されていますが、花の定期便のページは現在もandplants.jp配下にあります。「アンドプランツ 口コミ」で見つかる声の多くは観葉植物についてのものなので、このページでは観葉植物と花の定期便を分けて整理しています。
+              2026年5月からは花の事業が「AND FLOWER（アンドフラワー）」ブランドとして展開されていますが、花の定期便のページは現在もandplants.jp配下にあります。「アンドプランツ 口コミ」で見つかる声の多くは観葉植物に関するものであるため、当サイトでは観葉植物と花の定期便を分けて整理しています。
             </p>
             <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6">
               <h3 className="text-sm font-bold text-[#4A7C59] mb-3">AND PLANTS 基本情報（{S.verifiedAt} 公式確認）</h3>
@@ -224,18 +224,18 @@ export default function AndPlantsPage() {
         <section id="plants" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              観葉植物の通販としての特徴（アンドプランツの口コミが多い分野）
+              観葉植物の通販としての特徴（アンドプランツの口コミが多く寄せられている分野）
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
               アンドプランツの口コミの大半は観葉植物の購入者によるものです。公式サイトで確認できる主な特徴は次のとおりです（2026年10月14日確認）。
             </p>
             <ul className="text-sm md:text-base text-[#555] space-y-2 mb-4">
-              <li>・鉢代・植え替え作業代は観葉植物の代金に含まれる（公式トップ）</li>
-              <li>・観葉植物S/M/Lサイズは送料無料（北海道・沖縄は＋2,500円）。テーブル・ハンギングサイズは880円（特定商取引法に基づく表記）</li>
-              <li>・観葉植物・グッズは到着後14日以内なら写真を添えて交換を相談できる（返品・交換規定）</li>
+              <li>・鉢代・植え替え作業代は観葉植物の代金に含まれています（公式トップ）</li>
+              <li>・観葉植物S/M/Lサイズは送料無料（北海道・沖縄は＋2,500円）。テーブル・ハンギングサイズの送料は880円です（特定商取引法に基づく表記）</li>
+              <li>・観葉植物・グッズは、到着後14日以内であれば写真を添えて交換を相談できます（返品・交換規定）</li>
             </ul>
             <p className="text-sm text-[#666] leading-relaxed">
-              観葉植物を選ぶなら、料金や他社との違いを<a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] underline">観葉植物の通販・レンタルの料金ガイド</a>や<a href="/compare/kanyou-shokubutsu/" className="text-[#4A7C59] underline">観葉植物の比較ページ</a>でも確認できます。
+              観葉植物を選ぶ際は、料金や他社との違いを<a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] underline">観葉植物の通販・レンタルの料金ガイド</a>や<a href="/compare/kanyou-shokubutsu/" className="text-[#4A7C59] underline">観葉植物の比較ページ</a>でもご確認いただけます。
             </p>
           </div>
         </section>
@@ -249,19 +249,19 @@ export default function AndPlantsPage() {
             <div className="space-y-5">
               {[
                 {
-                  title: "梱包が丁寧で状態よく届く",
+                  title: "梱包が丁寧で、良い状態で届く",
                   text: "観葉植物・花ともに「梱包が丁寧」「状態が良い」という声がレビュー記事で多く見られます。",
                 },
                 {
-                  title: "花の定期便は回数縛りなし・送料込み",
+                  title: "花の定期便は回数の条件がなく、送料込みである",
                   text: "花の定期便は送料込みの1,980円〜で、公式に「解約もいつでも可能」と明記されています。",
                 },
                 {
                   title: "お届け頻度を1・2・4週から選べる",
-                  text: "毎週から4週に1回まで選べるので、飾るペースに合わせやすいです。",
+                  text: "毎週から4週に1回まで選べるため、飾るペースに合わせて調整できます。",
                 },
                 {
-                  title: "本数が多め",
+                  title: "本数が多めである",
                   text: "最安のスタンダードでも6〜8本と、ポスト投函型の花のサブスク（3〜4本前後）より本数が多めです。",
                 },
               ].map((item, i) => (
@@ -290,19 +290,19 @@ export default function AndPlantsPage() {
             <div className="space-y-5">
               {[
                 {
-                  title: "価格はやや高め",
-                  text: "花の定期便は1,980円〜で、medelu（748円〜）やハナメク（1,210円〜）より高め。観葉植物も「価格がやや高い」という口コミがあります。",
+                  title: "価格はやや高めである",
+                  text: "花の定期便は1,980円〜で、medelu（748円〜）やハナメク（1,210円〜）より高く設定されています。観葉植物についても「価格がやや高い」という口コミがあります。",
                 },
                 {
-                  title: "生花の交換申請は到着後1日以内",
-                  text: "花の定期便を含む生花は、到着後1日以内に写真を添えて連絡する必要があります。届いたらすぐに状態を確認しましょう。",
+                  title: "生花の交換申請は到着後1日以内である",
+                  text: "花の定期便を含む生花は、到着後1日以内に写真を添えて連絡する必要があります。届いたらすぐに状態をご確認ください。",
                 },
                 {
-                  title: "スキップは決済前の注文のみ",
-                  text: "決済はお届けの約1週間前。決済が済んだ注文はスキップできません。",
+                  title: "スキップは決済前の注文のみ可能である",
+                  text: "決済はお届けの約1週間前に行われます。決済が済んだ注文はスキップできません。",
                 },
                 {
-                  title: "品切れ・配送トラブルの報告",
+                  title: "品切れや配送トラブルの報告がある",
                   text: "観葉植物では人気品種の品切れや、コバエ・茎折れ・鉢の割れの報告がレビュー記事で挙がっています。",
                 },
               ].map((item, i) => (
@@ -326,22 +326,22 @@ export default function AndPlantsPage() {
         <section id="recommend" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              AND PLANTSはこんな人におすすめ
+              AND PLANTSをおすすめできる方・おすすめできない方
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#4A7C59] mb-4">おすすめの人</h3>
+                <h3 className="text-base font-bold text-[#4A7C59] mb-4">おすすめできる方</h3>
                 <ul className="text-sm text-[#666] space-y-3">
-                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>回数縛りなしで花の定期便を試したい方</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>回数の条件なしで花の定期便を試したい方</span></li>
                   <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>1回あたりの本数が多い花束を飾りたい方</span></li>
                   <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>観葉植物と花をまとめて同じサイトで選びたい方</span></li>
                   <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>届くペースを1〜4週で調整したい方</span></li>
                 </ul>
               </div>
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#C08552] mb-4">おすすめしない人</h3>
+                <h3 className="text-base font-bold text-[#C08552] mb-4">おすすめできない方</h3>
                 <ul className="text-sm text-[#666] space-y-3">
-                  <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>とにかく安く始めたい方（medeluやハナメクが安い）</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>料金を最優先で抑えたい方（medeluやハナメクの方が安価です）</span></li>
                   <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>ポスト投函で受け取りたい方</span></li>
                   <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>届いた花をすぐ確認できない方（生花の交換申請は1日以内）</span></li>
                 </ul>
@@ -351,7 +351,7 @@ export default function AndPlantsPage() {
         </section>
 
         {/* ─── Comparison Section ─── */}
-        <CompareSection s={S} all={SERVICES} note="AND PLANTSの花の定期便は、最安プランの価格は4社で最も高い一方、本数が多く回数縛りもありません。安さ重視ならmedelu・ハナメク、ポスト投函の定番ならbloomee、ボリュームと解約の自由さを重視するならAND PLANTSが候補です。" />
+        <CompareSection s={S} all={SERVICES} note="AND PLANTSの花の定期便は、最安プランの価格が4社で最も高い一方で、本数が多く、回数の条件もありません。料金を重視する場合はmedelu・ハナメク、ポスト投函型の代表的なサービスを選ぶ場合はbloomee、ボリュームと解約のしやすさを重視する場合はAND PLANTSが候補になります。" />
 
         {/* ─── How to Sign Up ─── */}
         <section id="how-to-start" className="py-12 md:py-16 bg-[#F8F8F8]">
@@ -362,10 +362,10 @@ export default function AndPlantsPage() {
             <div className="space-y-4">
               {[
                 { step: "STEP 1", title: "公式の花の定期便ページを開く", text: "AND PLANTS公式サイト（andplants.jp）の花の定期便ページでプランを確認します。" },
-                { step: "STEP 2", title: "プランを選択", text: "スタンダード（1,980円）、ミディアム（2,980円）、ラージ（4,980円）から選びます。" },
+                { step: "STEP 2", title: "プランを選択する", text: "スタンダード（1,980円）、ミディアム（2,980円）、ラージ（4,980円）から選びます。" },
                 { step: "STEP 3", title: "お届け頻度と曜日を選ぶ", text: "1週・2週・4週ごとから頻度を、金〜日曜からお届け曜日を選びます（エリアによる）。" },
-                { step: "STEP 4", title: "クーポン・支払いを確認", text: "初回500円オフクーポンの案内がある場合は適用条件を確認し、支払い方法を登録します。" },
-                { step: "STEP 5", title: "届いたらすぐ状態を確認", text: "生花の交換申請は到着後1日以内です。届いたら早めに開封して確認しましょう。" },
+                { step: "STEP 4", title: "クーポンと支払い方法を確認する", text: "初回500円オフクーポンの案内がある場合は適用条件を確認し、支払い方法を登録します。" },
+                { step: "STEP 5", title: "届いたらすぐに状態を確認する", text: "生花の交換申請は到着後1日以内です。届いたら早めに開封してご確認ください。" },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
                   <div className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
@@ -424,54 +424,54 @@ export default function AndPlantsPage() {
         <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              AND PLANTS（アンドプランツ）の解約手順【完全ガイド】
+              AND PLANTS（アンドプランツ）の解約手順
             </h2>
-            <p className="text-sm text-[#666] mb-6">回数縛りなし（公式に「解約もいつでも可能」と記載）。決済はお届けの約1週間前なので、それより前に手続きしましょう。</p>
+            <p className="text-sm text-[#666] mb-6">回数の条件はありません（公式に「解約もいつでも可能」と記載）。決済はお届けの約1週間前に行われるため、それより前に手続きしてください。</p>
             <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">AND PLANTS公式サイトのマイページからログイン。</p>
+                    <h3 className="font-bold text-[#333] mb-1">マイページにログインする</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">AND PLANTS公式サイトのマイページからログインします。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期便管理」を選択</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">マイページから定期便管理画面へ。</p>
+                    <h3 className="font-bold text-[#333] mb-1">「定期便管理」を選択する</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">マイページから定期便管理画面に進みます。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期便を解約する」をクリック</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">画面の指示に従って解約フローへ。</p>
+                    <h3 className="font-bold text-[#333] mb-1">「定期便を解約する」をクリックする</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">画面の指示に従って解約手続きに進みます。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">理由選択(任意)とフィードバック</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">アンケートに任意で回答。</p>
+                    <h3 className="font-bold text-[#333] mb-1">解約理由を選択する（任意）</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">アンケートへの回答は任意です。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
                     <h3 className="font-bold text-[#333] mb-1">「解約を確定する」をクリック</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">次回分の決済（お届けの約1週間前）より前に完了させてください。</p>
+                    <p className="text-sm text-[#666] leading-relaxed">次回分の決済（お届けの約1週間前）より前に手続きを完了してください。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">確認メール受信</h3>
+                    <h3 className="font-bold text-[#333] mb-1">確認メールを受信する</h3>
                     <p className="text-sm text-[#666] leading-relaxed">AND PLANTSから解約完了通知メールが届きます。</p>
                   </div>
                 </div>
             </div>
-            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法はAND PLANTS（アンドプランツ）公式サイトでご確認ください。</p>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。ご利用前に、AND PLANTS（アンドプランツ）公式サイトにて最新情報をご確認ください。</p>
           </div>
         </section>
 
@@ -479,15 +479,15 @@ export default function AndPlantsPage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：アンドプランツの口コミ・評判から分かる向き不向き
+              まとめ：口コミ・評判からみたアンドプランツが適している方
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               AND PLANTS（アンドプランツ）は観葉植物の通販が中心で、梱包の丁寧さや植物の状態の良さが口コミで評価されています。花の定期便（現AND FLOWER）は送料込み1,980円〜で6〜8本と本数が多めです。
-              回数縛りがなく「解約もいつでも可能」と公式に記載があり、初回500円オフクーポンの案内もあります。お届け頻度は1・2・4週ごとから選べます。
+              回数の条件はなく、公式に「解約もいつでも可能」と記載されているほか、初回500円オフクーポンの案内もあります。お届け頻度は1・2・4週ごとから選べます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              一方で、他社と比べて価格がやや高めな点や、ポスト投函ではなく宅配で届く点、生花の交換申請が到着後1日以内と短い点はデメリットとして把握しておきましょう。
-              コスパ重視ならmedelu、手軽さ重視ならbloomeeも検討した上で、自分のライフスタイルに合ったサービスを選ぶのがおすすめです。
+              一方で、他社と比べて価格がやや高めである点、ポスト投函ではなく宅配で届く点、生花の交換申請の期限が到着後1日以内と短い点にご留意ください。
+              費用を重視する場合はmedelu、手軽さを重視する場合はbloomeeもあわせて検討し、ご自身のライフスタイルに合ったサービスをお選びください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
@@ -536,7 +536,7 @@ export default function AndPlantsPage() {
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
 
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -560,7 +560,7 @@ export default function AndPlantsPage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              料金・条件は{S.verifiedAt}時点で公式サイトから確認したものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              料金・条件は{S.verifiedAt}時点で公式サイトから確認したものです。ご利用前に、各公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

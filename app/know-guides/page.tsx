@@ -6,8 +6,8 @@ import { knowGuides } from "@/data/knowGuides";
 const SITE_URL = "https://ohana-delivery.com";
 
 export const metadata: Metadata = {
-  title: "花のサブスク Know系ナレッジ｜花言葉/法人/ペット安全 等｜flowerデリ",
-  description: "花のサブスクに関する Know系ナレッジを網羅。花言葉・法人プラン・ペット安全・アロマ組み合わせ・ドライフラワー化など実用ガイド。",
+  title: "花のサブスクの基礎知識｜花言葉・法人利用・ペットへの配慮など｜flowerデリ",
+  description: "花のサブスクに関する基礎知識をまとめています。花言葉、法人プラン、ペットへの配慮、アロマとの組み合わせ、ドライフラワーの作り方などの実用的なガイドです。",
   alternates: { canonical: "/know-guides/" },
 };
 
@@ -23,7 +23,7 @@ export default function KnowIndexPage() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "ホーム", item: SITE_URL },
-              { "@type": "ListItem", position: 2, name: "Know系ナレッジ", item: url },
+              { "@type": "ListItem", position: 2, name: "基礎知識", item: url },
             ],
           }),
         }}
@@ -32,15 +32,15 @@ export default function KnowIndexPage() {
         <Header />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <nav className="text-xs text-[#999] mb-4">
-            <Link href="/" className="hover:underline">トップ</Link> &gt; Know系ナレッジ
+            <Link href="/" className="hover:underline">トップ</Link> &gt; 基礎知識
           </nav>
           <header className="mb-10">
             <h1 className="text-2xl md:text-3xl font-bold text-[#333] mb-4 leading-snug">
-              花のサブスク Know系ナレッジ完全ガイド
+              花のサブスクの基礎知識ガイド
             </h1>
             <p className="text-base text-[#666] leading-relaxed">
-              花のサブスクを最大限楽しむための {knowGuides.length} の知識ガイド。
-              花言葉・法人プラン・ペット安全・アロマ・ドライフラワー化など、サブスクの先にある暮らしの広がりを網羅。
+              花のサブスクをより楽しむための{knowGuides.length}の知識ガイドです。
+              花言葉・法人プラン・ペットへの配慮・アロマ・ドライフラワーの作り方など、花のある暮らしに役立つ情報をまとめています。
             </p>
           </header>
           <section className="mb-12">
@@ -53,7 +53,7 @@ export default function KnowIndexPage() {
                 >
                   <h3 className="font-bold text-[#333] mb-2 leading-snug">{g.title}</h3>
                   <p className="text-sm text-[#666] leading-relaxed line-clamp-3">{g.description}</p>
-                  <p className="mt-3 text-xs text-[#4A7C59] font-bold">詳しく見る →</p>
+                  <p className="mt-3 text-xs text-[#4A7C59] font-bold">詳細を確認する →</p>
                 </Link>
               ))}
             </div>

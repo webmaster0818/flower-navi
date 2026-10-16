@@ -39,7 +39,7 @@ export default async function PersonaPage({ params }: Props) {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "ホーム", item: SITE_URL },
-              { "@type": "ListItem", position: 2, name: "おすすめペルソナ別", item: `${SITE_URL}/personas/` },
+              { "@type": "ListItem", position: 2, name: "ライフスタイル別のおすすめ", item: `${SITE_URL}/personas/` },
               { "@type": "ListItem", position: 3, name: p.title, item: url },
             ],
           }),
@@ -95,7 +95,7 @@ export default async function PersonaPage({ params }: Props) {
           {/* Pain Points */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              よくあるお悩み・気になる点
+              よくある悩みと確認すべき点
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               {p.painPoints.map((item, i) => (
@@ -113,7 +113,7 @@ export default async function PersonaPage({ params }: Props) {
           {/* Recommended */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              おすすめ花のサブスク
+              おすすめの花のサブスク
             </h2>
             <div className="space-y-4">
               {p.recommended.map((r, i) => (
@@ -122,7 +122,7 @@ export default async function PersonaPage({ params }: Props) {
                   <div className="flex-1">
                     <h3 className="text-lg font-bold text-[#333] mb-1">{r.service}</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-2">{r.reason}</p>
-                    <p className="text-xs text-[#999]">参考価格: {r.priceFrom.toLocaleString()}円〜/回</p>
+                    <p className="text-xs text-[#999]">参考価格：{r.priceFrom.toLocaleString()}円〜/回</p>
                   </div>
                 </div>
               ))}
@@ -132,7 +132,7 @@ export default async function PersonaPage({ params }: Props) {
           {/* How to Choose */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              失敗しない選び方
+              選び方の手順
             </h2>
             <ol className="space-y-3">
               {p.howToChoose.map((s) => (
@@ -153,14 +153,14 @@ export default async function PersonaPage({ params }: Props) {
           {p.realCases.length > 0 && (
             <section className="mb-12">
               <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">
-                編集部まとめ：想定される利用ケースの傾向
+                編集部のまとめ：想定される利用ケースの傾向
               </h2>
-              <p className="text-xs text-[#999] mb-6">※公式情報やSNS上の口コミをもとに編集部が傾向を整理した代表的なケース像です。特定の個人の体験談ではありません。</p>
+              <p className="text-xs text-[#999] mb-6">※公式情報やSNS上の口コミをもとに、編集部が傾向を整理した代表的なケースです。特定の個人の体験談ではありません。</p>
               <div className="grid md:grid-cols-2 gap-4">
                 {p.realCases.map((c, i) => (
                   <article key={i} className="bg-white border border-[#E8E0D8] rounded-xl p-5">
                     <p className="text-xs text-[#999] mb-2">{c.author}</p>
-                    <p className="text-sm text-[#666] leading-relaxed mb-2"><strong>状況:</strong> {c.situation}</p>
+                    <p className="text-sm text-[#666] leading-relaxed mb-2"><strong>状況：</strong> {c.situation}</p>
                     <p className="text-sm text-[#333] leading-relaxed">{c.outcome}</p>
                   </article>
                 ))}
@@ -217,7 +217,7 @@ export default async function PersonaPage({ params }: Props) {
           {/* CTA back to TOP */}
           <div className="text-center mb-8">
             <Link href="/" className="inline-block bg-[#4A7C59] text-white font-bold px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors">
-              全サービス比較表へ
+              全サービスの比較表を確認する
             </Link>
           </div>
         </main>

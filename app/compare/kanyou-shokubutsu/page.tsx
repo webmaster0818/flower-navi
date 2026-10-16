@@ -7,47 +7,47 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "月額制の観葉植物サブスクは、購入と比べてどちらがお得ですか？",
-    a: "同じ鉢を数年そのまま置き続けるなら購入、入れ替えや枯れたときの手当・日々の管理まで任せたいなら月額制（レンタル）が得になります。購入は最初に植物代・鉢代・送料がかかる代わりに以降の固定費が下がり、月額制は初期費用を抑えられる代わりに使っている間ずっと支払いが続きます。損益が入れ替わる時期は鉢のサイズ・月額・入れ替え頻度で変わるため、一律の月数では示せません。判断に迷う場合は「購入価格 ÷ 月額」で何か月分に相当するかを出し、その月数より長く置く見込みがあるかで決めてください。あわせて、枯れたときの買い直しをどちらが負担するか、やめるときの処分・撤去費がどちらにかかるかも計算に入れると判断がぶれません。",
+    a: "同じ鉢を数年そのまま置き続けるなら購入、入れ替えや枯れたときの手当・日々の管理まで任せたいなら月額制（レンタル）のほうが有利です。購入は最初に植物代・鉢代・送料がかかる代わりに以降の固定費が下がり、月額制は初期費用を抑えられる代わりに使っている間ずっと支払いが続きます。損益が入れ替わる時期は鉢のサイズ・月額・入れ替え頻度で変わるため、一律の月数では示せません。判断に迷う場合は「購入価格 ÷ 月額」で何か月分に相当するかを出し、その月数より長く置く見込みがあるかで決めてください。あわせて、枯れたときの買い直しをどちらが負担するか、やめるときの処分・撤去費がどちらにかかるかも計算に入れると、より正確に判断できます。",
   },
   {
     q: "観葉植物のサブスクと花のサブスクはどう違いますか？",
-    a: "花のサブスクは切り花が定期的に届き、1〜2週間で枯れるため常に新しい花を楽しめます。観葉植物のサブスクは鉢植えのグリーンが届き、適切に育てれば何年も楽しめます。お手入れの手間は観葉植物の方が少なく、水やりは週1〜2回程度です。コストは観葉植物の方が初期費用が高めですが、長期的にはコスパが良くなります。",
+    a: "花のサブスクは切り花が定期的に届き、1〜2週間で枯れるため常に新しい花を楽しめます。観葉植物のサブスクは鉢植えのグリーンが届き、適切に育てれば何年も楽しめます。お手入れの手間は観葉植物のほうが少なく、水やりは週1〜2回程度です。初期費用は観葉植物のほうが高めですが、長期的には費用対効果が高くなります。",
   },
   {
-    q: "観葉植物を枯らしてしまいそうで不安です",
-    a: "AND PLANTSでは、初心者でも育てやすい種類を選んでくれるオプションがあります。また、育て方の説明書が同封されるため、水やりの頻度や日当たりの条件がわかりやすいです。万が一枯れてしまった場合の交換保証があるサービスもあるため、初心者でも安心して始められます。",
+    q: "観葉植物を枯らしてしまわないか不安ですが、初心者でも始められますか？",
+    a: "AND PLANTSには、初心者でも育てやすい種類を選定してもらえるオプションがあります。また、育て方の説明書が同封されるため、水やりの頻度や日当たりの条件を把握しやすくなっています。万が一枯れてしまった場合の交換保証を設けているサービスもあるため、初心者の方でも安心して始められます。",
   },
   {
     q: "賃貸マンションでも観葉植物は置けますか？",
-    a: "はい、問題なく置けます。小型の観葉植物（ポトス、サンスベリアなど）なら棚やテーブルの上に置けるため、床を汚す心配もありません。受け皿を使えば水漏れも防げます。壁掛けタイプや吊り下げタイプを選べば、スペースを取らずにグリーンを楽しめます。",
+    a: "はい、置くことができます。小型の観葉植物（ポトス、サンスベリアなど）なら棚やテーブルの上に置けるため、床を汚す心配もありません。受け皿を使えば水漏れも防げます。壁掛けタイプや吊り下げタイプを選べば、スペースを取らずにグリーンを楽しめます。",
   },
   {
     q: "花のサブスクと観葉植物のサブスクは併用できますか？",
-    a: "もちろん併用できます。観葉植物で部屋のベースとなるグリーンを確保し、花のサブスクで季節の彩りをプラスするのは人気の組み合わせです。AND PLANTSでは切り花と観葉植物の両方を扱っているため、一つのサービスでまとめることも可能です。",
+    a: "併用できます。観葉植物で部屋の基調となるグリーンを置き、花のサブスクで季節の彩りを加える方法は、人気のある組み合わせです。AND PLANTSでは切り花と観葉植物の両方を扱っているため、一つのサービスでまとめることも可能です。",
   },
   {
     q: "サービス別に見ると、季節ごとに植物を入れ替えられるのはどこですか？",
-    a: "鉢そのものを入れ替えられるのは、交換に対応するレンタル型です。当ページ掲載ではCLASが交換・返却に対応しています。購入型（AND PLANTSの定期便や、HitoHanaの単品購入）は届いた植物が自分のものになるため、季節ごとの入れ替えは前提になっていません。観葉植物は常緑の種類が中心で鉢の見た目が季節で大きく変わるわけではないので、季節感はベースのグリーンを据え置きにして切り花の定期便だけを入れ替える形が運用しやすい組み合わせです。",
+    a: "鉢そのものを入れ替えられるのは、交換に対応するレンタル型です。当サイトの掲載サービスでは、CLASが交換・返却に対応しています。購入型（AND PLANTSの定期便や、HitoHanaの単品購入）は届いた植物が自分のものになるため、季節ごとの入れ替えは前提になっていません。観葉植物は常緑の種類が中心で、鉢の見た目が季節によって大きく変わるわけではないため、季節感はベースのグリーンを据え置きにして切り花の定期便だけを入れ替える形が運用しやすい組み合わせです。",
   },
   {
     q: "メンテナンス付きで枯れる心配が少ないのは、どのサービスですか？",
-    a: "日々の管理まで任せたい場合は、メンテナンスが定額に含まれるレンタル型が該当します。当ページ掲載ではCLASが大型観葉植物のレンタルに対応し、メンテナンス不要のプランと交換・返却があります（料金の公表値は確認できていないため見積もりが前提です）。購入型で選ぶ場合は、AND PLANTSの14日間の交換保証のように、到着時の傷み・不具合に対する交換制度の有無が判断材料になります。訪問メンテナンスの有無は仕組みが根本的に違うため、まず「自分（自社）で水やりをするか、しないか」を先に決めると迷いません。",
+    a: "日々の管理まで任せたい場合は、メンテナンスが定額に含まれるレンタル型が該当します。当サイトの掲載サービスでは、CLASが大型観葉植物のレンタルに対応し、メンテナンス不要のプランと交換・返却があります（料金の公表値は確認できていないため見積もりが前提です）。購入型で選ぶ場合は、AND PLANTSの14日間の交換保証のように、到着時の傷み・不具合に対する交換制度の有無が判断材料になります。訪問メンテナンスの有無によって仕組みが根本的に異なるため、まず「自分（自社）で水やりをするかどうか」を決めておくと、選択がしやすくなります。",
   },
   {
     q: "日当たりの悪い部屋でも育てやすい植物を提案してもらえますか？",
-    a: "AND PLANTSには初心者でも育てやすい種類を選んでくれるオプションがあり、育て方の説明書も同封されます。耐陰性の強い種類（ポトス、サンスベリア、モンステラなど）を選べば、日当たりの悪い部屋でも育てられます。申し込み時に置き場所の明るさを伝えられるか、選定をおまかせできるかがサービス選びのポイントです。置き場所の明るさの見極め方や水やりの調整は、当サイトの「観葉植物の育て方・置き場所ガイド」で解説しています。",
+    a: "AND PLANTSには初心者でも育てやすい種類を選定してもらえるオプションがあり、育て方の説明書も同封されます。耐陰性の強い種類（ポトス、サンスベリア、モンステラなど）を選べば、日当たりの悪い部屋でも育てられます。申し込み時に置き場所の明るさを伝えられるか、選定をおまかせできるかがサービス選びのポイントです。置き場所の明るさの見極め方や水やりの調整は、当サイトの「観葉植物の育て方・置き場所ガイド」で解説しています。",
   },
   {
     q: "訪問メンテナンス込みのプランはありますか？",
-    a: "メンテナンスが定額に含まれるのはレンタル型です。当ページ掲載ではCLASにメンテナンス不要のプランがあることを確認できていますが、訪問頻度・作業範囲の公表値は確認できていないため、当サイトでは回数を断定していません。回数や作業範囲を条件にしたい場合は、鉢数・サイズ・設置場所を伝えて見積もりを取り、契約前に書面で確認してください。オフィス・店舗でメンテナンス込みにしたい場合の進め方は「法人・オフィス向けガイド」に、金額の決まり方は「観葉植物の料金の考え方」にまとめています。",
+    a: "メンテナンスが定額に含まれるのはレンタル型です。当サイトの掲載サービスでは、CLASにメンテナンス不要のプランがあることを確認していますが、訪問頻度・作業範囲の公表値は確認できていないため、当サイトでは回数を断定していません。回数や作業範囲を条件にしたい場合は、鉢数・サイズ・設置場所を伝えて見積もりを取り、契約前に書面で確認してください。オフィス・店舗でメンテナンス込みにしたい場合の進め方は「法人・オフィス向けガイド」に、金額の決まり方は「観葉植物の料金の考え方」にまとめています。",
   },
   {
     q: "置き場所によって向き不向きはありますか？",
-    a: "「置き場所の明るさ」「人の視線が届く場所か」「手入れをする人を決められるか」の3点で決まります。常に良い状態を保つ必要がある場所はメンテナンス込みのレンタル型、多少の手入れを自分で吸収できる場所は購入型でも回ります。水回りや什器の都合で置き場所が限られる場合は、床置きの大型より棚上の小型から試すと失敗しにくくなります。オフィス・店舗での置き場所の決め方と導入手順は当サイトの「法人・オフィス向けガイド」にまとめています。",
+    a: "「置き場所の明るさ」「人の視線が届く場所か」「手入れをする人を決められるか」の3点で判断します。常に良い状態を保つ必要がある場所にはメンテナンス込みのレンタル型が適しており、多少の手入れを自分で担える場所であれば購入型でも対応できます。水回りや什器の都合で置き場所が限られる場合は、床置きの大型より棚上の小型から試すと失敗しにくくなります。オフィス・店舗での置き場所の決め方と導入手順は当サイトの「法人・オフィス向けガイド」にまとめています。",
   },
   {
     q: "枯れてしまったときの交換対応はどのサービスにありますか？",
-    a: "当ページ掲載では、AND PLANTSに14日間の交換保証、CLASに交換・返却の仕組みがあります。HitoHanaの観葉植物については交換条件を確認できていないため、公式サイトでご確認ください。注意したいのは、到着時の傷み・不具合に対する交換と、育てている途中で枯れた場合の扱いは別に定められていることがある点です。申請期限が「到着後◯日以内」と短く設定されている場合もあるため、対象範囲と期限は申し込み前に各公式サイトで確認してください。",
+    a: "当サイトの掲載サービスでは、AND PLANTSに14日間の交換保証、CLASに交換・返却の仕組みがあります。HitoHanaの観葉植物については交換条件を確認できていないため、公式サイトでご確認ください。なお、到着時の傷み・不具合に対する交換と、育てている途中で枯れた場合の扱いは、別に定められていることがある点にご注意ください。申請期限が「到着後◯日以内」と短く設定されている場合もあるため、対象範囲と期限は申し込み前に各公式サイトで確認してください。",
   },
 ];
 
@@ -73,13 +73,13 @@ export default function KanyouShokubutsuPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"観葉植物の定期便・サブスク比較\",\"item\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物は購入とサブスク・レンタルどちらがお得か｜月額料金・メンテナンス・交換対応で比較\",\"description\":\"観葉植物を買って育てるか、サブスク・レンタルで借りて任せるか。提供形態・月額の目安・メンテナンス頻度・交換対応で対比し、損益が入れ替わる考え方まで解説。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-09-16T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物は購入とサブスク・レンタルどちらがお得か｜月額料金・メンテナンス・交換対応で比較\",\"description\":\"観葉植物を購入して育てる方法と、サブスク・レンタルで借りて管理を任せる方法を、提供形態・月額の目安・メンテナンス頻度・交換対応で比較し、損益が入れ替わる考え方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-09-16T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <meta name="description" content="観葉植物は買って育てるのと、サブスク・レンタルで借りて任せるのとどちらがお得か。AND PLANTS・CLAS・HitoHanaを提供形態・月額の目安・メンテナンス頻度・交換対応で対比し、購入価格と月額の損益が入れ替わる考え方まで整理します。" />
+      <meta name="description" content="観葉植物を購入して育てる場合と、サブスク・レンタルで借りて管理を任せる場合の費用を比較します。AND PLANTS・CLAS・HitoHanaを提供形態・月額の目安・メンテナンス頻度・交換対応で対比し、購入価格と月額の損益が入れ替わる考え方を解説します。" />
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
@@ -100,14 +100,14 @@ export default function KanyouShokubutsuPage() {
         {/* ─── Hero Section ─── */}
         <section className="bg-[#F3EDE6] py-12 md:py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">買う vs 借りる（サブスク・レンタル）比較</p>
+            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">購入とサブスク・レンタルの比較</p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
               観葉植物は購入とサブスク・レンタル<br className="hidden md:block" />
               どちらがお得か【2026年】月額料金・交換対応で比較
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-6 max-w-2xl mx-auto leading-relaxed">
-              このページは<strong>「買って育てる」か「借りて任せる」かを決めるため</strong>のページです。
-              提供形態・月額の目安・メンテナンス頻度・交換対応の有無で各社を並べ、どちらの仕組みが自分に合うかを整理します。
+              当サイトでは、<strong>観葉植物を「買って育てる」か「借りて任せる」かを判断するための情報</strong>をまとめています。
+              提供形態・月額の目安・メンテナンス頻度・交換対応の有無で各社を比較し、利用者に合う仕組みを整理します。
             </p>
             <p className="text-xs md:text-sm text-[#666] max-w-2xl mx-auto leading-relaxed">
               置き場所・日当たり・水やりなど<strong>育て方</strong>を知りたい方は
@@ -123,30 +123,30 @@ export default function KanyouShokubutsuPage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              月額制の観葉植物サブスクは、購入と比べてどちらがお得か
+              月額制の観葉植物サブスクと購入の費用比較
             </h2>
             <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F8F8F8] p-6 mb-6">
               <p className="text-sm text-[#555] leading-relaxed">
-                <strong>同じ鉢を数年そのまま置き続けるなら購入、入れ替えや枯れたときの手当・日々の管理まで任せたいならサブスク（レンタル）が得になります。</strong>
+                <strong>同じ鉢を数年そのまま置き続けるなら購入、入れ替えや枯れたときの手当・日々の管理まで任せたいならサブスク（レンタル）が有利です。</strong>
                 購入は最初に植物代・鉢代・送料がかかる代わりに以降の固定費が下がり、月額制は初期費用を抑えられる代わりに使っている間ずっと支払いが続きます。
                 損益が入れ替わる時期は鉢のサイズ・月額・入れ替え頻度で変わるため一律には示せません。判断に迷う場合は<strong>「購入価格 ÷ 月額」で何か月分に相当するか</strong>を出し、その月数より長く置く見込みがあるかで決めてください。
               </p>
             </div>
             <p className="text-sm text-[#666] leading-relaxed mb-6">
-              言葉の整理もしておきます。「サブスク」は植物を購入して定期的に届けてもらい、自分で育てるスタイル。「レンタル」は植物を借りるスタイルで、交換・返却ができ、メンテナンス込みのプランもあります。同じ「月額」でも、支払い終わりに手元に残るかどうかがまったく違います。
+              当サイトでの用語の使い分けは次のとおりです。「サブスク」は植物を購入して定期的に届けてもらい、自分で育てる形態を指します。「レンタル」は植物を借りる形態で、交換・返却ができ、メンテナンス込みのプランもあります。同じ「月額」でも、支払いを終えた後に植物が手元に残るかどうかが大きく異なります。
             </p>
             <div className="grid md:grid-cols-2 gap-5">
               <div className="rounded-xl border-2 border-[#4A7C59] p-6 bg-[#F8F8F8]">
                 <p className="text-xs font-bold text-[#4A7C59] mb-2">買って育てたい方（購入型）</p>
                 <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  <strong>サブスク（買い切りの定期便）が基本</strong>です。AND PLANTSなら1,980円〜/月で育てやすい植物が届き、14日間の交換保証付き。枯らす不安がある初心者でも始めやすい仕組みです。届いた植物は自分のものになるため、長く置くほど1か月あたりの負担は下がっていきます。
+                  <strong>サブスク（買い切りの定期便）が基本の選択肢</strong>です。AND PLANTSでは1,980円〜/月で育てやすい植物が届き、14日間の交換保証が付いています。枯らすことに不安がある初心者の方でも始めやすい仕組みです。届いた植物は自分のものになるため、長く置くほど1か月あたりの負担は下がります。
                 </p>
                 <a href="#osusume-3sen" className="text-sm text-[#4A7C59] font-medium underline">→ 購入型・レンタル型のおすすめ3選を見る</a>
               </div>
               <div className="rounded-xl border border-[#E5E5E5] p-6 bg-[#F8F8F8]">
                 <p className="text-xs font-bold text-[#4A7C59] mb-2">借りて任せたい方（レンタル型）</p>
                 <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  大型グリーンを手間なく維持したい、入れ替えを前提にしたいなら<strong>レンタルが有力</strong>です。CLASのように大型観葉植物をレンタルでき、交換・返却が自由でメンテナンス不要プランを用意するサービスがあります。
+                  大型グリーンを手間をかけずに維持したい場合や、入れ替えを前提にする場合は、<strong>レンタルが有力な選択肢</strong>です。CLASのように、大型観葉植物をレンタルでき、交換・返却が自由で、メンテナンス不要プランを用意しているサービスがあります。
                 </p>
                 <p className="text-xs text-[#999] leading-relaxed">
                   オフィス・店舗での導入（管理担当を置けない、メンテナンス込みにしたい、対応エリアを確認したい）は
@@ -208,7 +208,7 @@ export default function KanyouShokubutsuPage() {
                   name: "AND PLANTS",
                   nameJa: "アンドプランツ",
                   price: "1,980円〜/月",
-                  highlight: "観葉植物と切り花の両方を扱う総合サービス。プロが選んだ育てやすい観葉植物が届き、育て方のサポートも充実。14日間の交換保証付きで初心者も安心。送料無料。",
+                  highlight: "観葉植物と切り花の両方を扱うサービスです。プロが選んだ育てやすい観葉植物が届き、育て方のサポートも用意されています。14日間の交換保証があり、初心者の方も始めやすい内容です。送料は無料です。",
                   features: ["初心者向けの育てやすい植物をセレクト", "14日間の交換保証", "育て方の説明書付き", "切り花プランとの併用可能"],
                   color: "#4A7C59",
                   url: "/services/and-plants",
@@ -218,7 +218,7 @@ export default function KanyouShokubutsuPage() {
                   name: "CLAS",
                   nameJa: "クラス",
                   price: "月額レンタル制",
-                  highlight: "家具・家電のサブスクサービスだが、大型の観葉植物もレンタル可能。オフィスや広いリビングに映える大型グリーンを気軽に試せる。交換・返却も可能。",
+                  highlight: "家具・家電のサブスクサービスで、大型の観葉植物もレンタルできます。オフィスや広いリビングに合う大型グリーンを手軽に試せます。交換・返却にも対応しています。",
                   features: ["大型観葉植物のレンタルが可能", "交換・返却が自由", "メンテナンス不要プランあり", "法人利用にも対応"],
                   color: "#6B8E5B",
                   url: "#",
@@ -228,7 +228,7 @@ export default function KanyouShokubutsuPage() {
                   name: "HitoHana",
                   nameJa: "ひとはな",
                   price: "3,300円〜",
-                  highlight: "花の定期便で知られるHitoHanaは、観葉植物の単品購入にも対応。サブスクではないが、好みの観葉植物を選んで購入でき、育て方のサポートも受けられる。",
+                  highlight: "花の定期便で知られるHitoHanaは、観葉植物の単品購入にも対応しています。サブスクではありませんが、好みの観葉植物を選んで購入でき、育て方のサポートも受けられます。",
                   features: ["豊富な品揃えから選べる", "サイズ・種類が豊富", "ギフト対応あり", "育て方のサポート"],
                   color: "#8B6F5C",
                   url: "/services/hitohana",
@@ -236,7 +236,7 @@ export default function KanyouShokubutsuPage() {
               ].map((item) => (
                 <div key={item.rank} className={`bg-white rounded-xl overflow-hidden ${item.rank === 1 ? "border-2 border-[#4A7C59]" : "border border-[#E5E5E5]"}`}>
                   {item.rank === 1 && (
-                    <div className="bg-[#4A7C59] text-white text-xs text-center py-1.5 font-bold">おすすめNo.1</div>
+                    <div className="bg-[#4A7C59] text-white text-xs text-center py-1.5 font-bold">おすすめ第1位</div>
                   )}
                   <div className="p-5">
                     <div className="flex items-start gap-4 mb-4">
@@ -273,7 +273,7 @@ export default function KanyouShokubutsuPage() {
               観葉植物サブスク・レンタル比較表｜月額の目安・メンテナンス頻度・交換対応・対応エリア
             </h2>
             <p className="text-sm text-[#666] leading-relaxed mb-6">
-              判断に必要な4項目（月額の目安・メンテナンス頻度・交換対応の有無・対応エリア）で並べます。当サイトで公式確認できた値のみを記載し、確認できていない項目は「公式サイトで要確認」としています。
+              判断に必要な4項目（月額の目安・メンテナンス頻度・交換対応の有無・対応エリア）で比較しています。当サイトで公式に確認できた値のみを記載し、確認できていない項目は「公式サイトで要確認」と表記しています。
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse min-w-[640px]">
@@ -296,13 +296,13 @@ export default function KanyouShokubutsuPage() {
                     {
                       item: "月額の目安",
                       ap: "定期便1,980円〜（送料込み・都度払い／2026年7月3日公式確認）。観葉植物は単品購入のため価格は公式サイトで要確認",
-                      clas: "月額レンタル制。月額の公表値は確認できていないため見積もりで確認",
+                      clas: "月額レンタル制。月額の公表値は未確認のため、見積もりでの確認が必要",
                       hh: "3,300円〜（当サイト掲載値。最新価格は公式サイトで要確認）",
                     },
                     {
                       item: "メンテナンス頻度",
                       ap: "訪問メンテナンスなし（自分で水やり・管理）",
-                      clas: "メンテナンス不要プランあり。訪問頻度の公表値は確認できていないため要確認",
+                      clas: "メンテナンス不要プランあり。訪問頻度の公表値は未確認のため要確認",
                       hh: "なし（購入後は自分で管理。育て方のサポートあり）",
                     },
                     {
@@ -342,7 +342,7 @@ export default function KanyouShokubutsuPage() {
               <a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] underline mx-1">観葉植物のサブスク・レンタル料金の考え方</a>
               で解説しています。オフィス・店舗への導入手順、メンテナンス込みの可否、対応エリアの確認方法は
               <a href="/guides/houjin-office/" className="text-[#4A7C59] underline mx-1">法人・オフィス向けガイド</a>
-              に、公式確認値と確認日つきでまとめています。
+              に、公式確認値と確認日を付記してまとめています。
             </p>
           </div>
         </section>
@@ -351,10 +351,10 @@ export default function KanyouShokubutsuPage() {
         <section id="vs" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-4 pb-3 border-b-2 border-[#4A7C59]">
-              サービス同士を直接比較｜どちらを選ぶべきか
+              サービス同士の直接比較と選び分け
             </h2>
             <p className="text-sm text-[#666] leading-relaxed mb-6">
-              3社は仕組みが違うため、「どれが優れているか」ではなく「どちらの仕組みが自分に合うか」で選びます。上の比較表の項目にもとづき、2社ずつ対比します。
+              3社は仕組みが異なるため、当サイトでは優劣ではなく、利用者に合う仕組みかどうかを基準に比較しています。上の比較表の項目にもとづき、2社ずつ対比します。
             </p>
             <div className="space-y-5">
               {[
@@ -378,7 +378,7 @@ export default function KanyouShokubutsuPage() {
                       "法人利用に対応",
                     ],
                   },
-                  verdict: "長く同じ植物を育てたい・費用を公開値で把握したいならAND PLANTS。水やりや入れ替えを任せたい、大型グリーンを置きたい、法人で導入するならCLASです。",
+                  verdict: "長く同じ植物を育てたい場合や、費用を公開値で把握したい場合はAND PLANTSが適しています。水やりや入れ替えを任せたい場合、大型グリーンを置きたい場合、法人で導入する場合はCLASが適しています。",
                 },
                 {
                   title: "AND PLANTS × HitoHana｜おまかせで届くか、自分で選んで買うか",
@@ -400,7 +400,7 @@ export default function KanyouShokubutsuPage() {
                       "定期的に届く仕組みではない",
                     ],
                   },
-                  verdict: "何を置くか決まっていない・選定を任せたいならAND PLANTS。置きたい種類やサイズが決まっている、贈り物にしたいならHitoHanaです。",
+                  verdict: "何を置くか決まっていない場合や、選定を任せたい場合はAND PLANTSが適しています。置きたい種類やサイズが決まっている場合や、贈り物にしたい場合はHitoHanaが適しています。",
                 },
                 {
                   title: "CLAS × HitoHana｜借りて入れ替えるか、買い切って長く置くか",
@@ -422,7 +422,7 @@ export default function KanyouShokubutsuPage() {
                       "法人向けサービスあり（請求書払いに対応）",
                     ],
                   },
-                  verdict: "模様替えや入れ替えを前提にするならCLAS、置き場所と種類が固まっていて長く置くならHitoHana。判断が割れる場合は、レンタル月額の見積もりを取り「購入価格÷月額」で何か月分に相当するかを比べると決めやすくなります。",
+                  verdict: "模様替えや入れ替えを前提にする場合はCLAS、置き場所と種類が決まっていて長く置く場合はHitoHanaが適しています。判断に迷う場合は、レンタル月額の見積もりを取り「購入価格÷月額」で何か月分に相当するかを比べると決めやすくなります。",
                 },
               ].map((v, i) => (
                 <div key={i} className="bg-white rounded-xl border border-[#E5E5E5] p-5">
@@ -446,7 +446,7 @@ export default function KanyouShokubutsuPage() {
               ))}
             </div>
             <p className="text-xs text-[#999] leading-relaxed mt-5">
-              ※ 対比に使った項目は、上の比較表と同じく当サイトで確認できた情報のみです。未確認の項目は「要確認」と明記し、推測での補完はしていません。
+              ※ 対比に使用した項目は、上の比較表と同じく当サイトで確認できた情報に限っています。未確認の項目は「要確認」と明記し、推測による補完は行っていません。
             </p>
           </div>
         </section>
@@ -455,13 +455,13 @@ export default function KanyouShokubutsuPage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              観葉植物サブスクの選び方3つのポイント
+              観葉植物サブスクを選ぶ際の3つのポイント
             </h2>
             <div className="space-y-4">
               {[
-                { num: "1", title: "置き場所に合ったサイズを選ぶ", text: "デスクや棚に置くならミニサイズ（15〜30cm）、リビングに飾るならミディアム（50〜100cm）、シンボルツリーなら大型（100cm以上）が目安です。サブスクで届く植物のサイズ感を事前に確認しましょう。" },
-                { num: "2", title: "日当たり条件をチェックする", text: "窓際で日光が入る部屋なら選択肢は豊富ですが、日当たりの悪い部屋でも育つ耐陰性の強い植物（ポトス、サンスベリア、モンステラなど）もあります。自分の部屋の日当たり条件に合った植物が届くサービスを選びましょう。" },
-                { num: "3", title: "交換・保証制度を確認する", text: "初心者は植物を枯らしてしまう可能性があります。AND PLANTSの14日間交換保証のように、万が一枯れた場合のサポートがあるサービスを選ぶと安心です。" },
+                { num: "1", title: "置き場所に合ったサイズを選ぶ", text: "デスクや棚に置くならミニサイズ（15〜30cm）、リビングに飾るならミディアム（50〜100cm）、シンボルツリーなら大型（100cm以上）が目安です。サブスクで届く植物のサイズを事前にご確認ください。" },
+                { num: "2", title: "日当たりの条件を確認する", text: "窓際で日光が入る部屋なら選択肢は豊富ですが、日当たりの悪い部屋でも育つ耐陰性の強い植物（ポトス、サンスベリア、モンステラなど）もあります。部屋の日当たり条件に合った植物が届くサービスを選ぶことをおすすめします。" },
+                { num: "3", title: "交換・保証制度を確認する", text: "初心者の方は植物を枯らしてしまう可能性があります。AND PLANTSの14日間交換保証のように、万が一枯れた場合のサポートがあるサービスを選ぶと、安心して始められます。" },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
                   <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.num}</span>
@@ -473,7 +473,7 @@ export default function KanyouShokubutsuPage() {
               ))}
             </div>
             <p className="text-sm text-[#666] leading-relaxed mt-5">
-              置き場所の明るさの見極め方、水やりの頻度、季節ごとの管理、枯らさないためのチェックは
+              置き場所の明るさの見極め方、水やりの頻度、季節ごとの管理、枯らさないための確認事項は
               <a href="/guides/kanyou-shokubutsu/" className="text-[#4A7C59] font-medium underline mx-1">観葉植物の育て方・置き場所ガイド</a>
               で解説しています。育て方の条件が決まると、選ぶべきサービスも絞り込みやすくなります。
             </p>
@@ -522,13 +522,13 @@ export default function KanyouShokubutsuPage() {
         <section className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：観葉植物サブスクならAND PLANTSがおすすめ
+              まとめ：観葉植物サブスクにはAND PLANTSをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              観葉植物のサブスクは、切り花と比べてお手入れが楽で長く楽しめるのが最大のメリットです。初心者には<strong>AND PLANTS</strong>が最もおすすめで、プロが選んだ育てやすい植物が届き、14日間の交換保証もあるため安心して始められます。
+              観葉植物のサブスクの主な利点は、切り花と比べて手入れの負担が少なく、長く楽しめることです。初心者の方には、当サイトでは<strong>AND PLANTS</strong>を最もおすすめしています。プロが選んだ育てやすい植物が届き、14日間の交換保証もあるため、安心して始められます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              花のサブスクと観葉植物サブスクを併用すれば、グリーンの癒しと花の華やかさの両方を楽しめます。まずは一つ試してみて、部屋に植物がある暮らしの心地よさを体感してみてください。
+              花のサブスクと観葉植物サブスクを併用すると、グリーンの落ち着いた雰囲気と花の華やかさの両方を楽しめます。まずは一つのサービスから試し、植物のある暮らしをご検討ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a href="/services/and-plants" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
@@ -551,7 +551,7 @@ export default function KanyouShokubutsuPage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
-              <p className="text-xs text-gray-400">花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。</p>
+              <p className="text-xs text-gray-400">花のサブスクを比較し、ご自身に合ったサービス選びを支援します。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
               <a href="/" className="hover:text-white transition-colors">トップページ</a>

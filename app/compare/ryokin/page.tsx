@@ -7,9 +7,9 @@ import { SERVICES, minTotal, perStem, type Service } from "@/data/services";
 const UPDATED = "2026年6月27日";
 
 export const metadata: Metadata = {
-  title: "花の定期便 料金比較表｜送料込み総額・最低支払額・1本単価で正しく比較【2026年6月確認】",
+  title: "花の定期便 料金比較表｜送料込みの総額・最低支払額・1本あたりの単価で比較【2026年6月確認】",
   description:
-    "花のサブスク（定期便）の料金を、月額ではなく〈送料込みの1回総額・最低受取回数までの総額・1本あたり単価〉で比較。bloomee・medelu・AND PLANTS・hanamekuの最新料金を公式サイトで確認した日付つきで掲載しています。",
+    "花のサブスク（定期便）の料金を、月額ではなく〈送料込みの1回あたりの総額・最低受取回数までの総額・1本あたりの単価〉で比較しています。bloomee・medelu・AND PLANTS・hanamekuの最新料金を、公式サイトでの確認日を付記して掲載しています。",
   alternates: { canonical: "/compare/ryokin/" },
 };
 
@@ -24,18 +24,18 @@ function yen(n: number) {
 export default function RyokinPage() {
   const faq = [
     {
-      q: "花のサブスクの料金は何で比較すればいいですか？",
-      a: "「月額」ではなく〈送料込みの1回あたり総額〉〈最低受取回数までに支払う総額〉〈1本あたり単価〉の3点で比較するのが正確です。月額が安く見えても送料や最低継続回数で総額が変わるためです。",
+      q: "花のサブスクの料金は、何を基準に比較すればよいですか？",
+      a: "月額ではなく、〈送料込みの1回あたりの総額〉〈最低受取回数までに支払う総額〉〈1本あたりの単価〉の3点で比較することをおすすめします。月額が安く見えても、送料や最低継続回数によって総額が変わるためです。",
     },
     {
-      q: "送料込みで一番安い花の定期便はどれですか？",
-      a: `送料込みの1回あたり総額では、${sorted[0].name}の${sorted[0].cheapest.name}（${yen(
+      q: "送料込みで最も安い花の定期便はどれですか？",
+      a: `送料込みの1回あたりの総額では、${sorted[0].name}の${sorted[0].cheapest.name}（${yen(
         sorted[0].cheapest.price
-      )}円）が最安です（${UPDATED}時点・公式確認）。ただし最低受取回数や本数も合わせて確認してください。`,
+      )}円）が最安です（${UPDATED}時点・公式確認）。あわせて、最低受取回数や本数もご確認ください。`,
     },
     {
-      q: "最低受取回数（縛り）がある場合の総額はどう考えますか？",
-      a: "縛りがあるサービスは『最安プラン価格 × 最低受取回数』が実質の最低支払額です。本表ではこの『最低受取までの総額』も掲載しています。縛りなしのサービスは1回分のみで解約できます。",
+      q: "最低受取回数の条件がある場合、総額はどのように考えればよいですか？",
+      a: "最低受取回数の条件があるサービスでは、最安プランの価格に最低受取回数を掛けた金額が、実質的な最低支払額となります。当サイトの表では、この最低受取回数までの総額も掲載しています。回数の条件がないサービスは、1回分の支払いのみで解約できます。",
     },
   ];
 
@@ -43,7 +43,7 @@ export default function RyokinPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: "花の定期便 料金比較表（送料込み総額・最低支払額・1本単価）",
-    description: "花のサブスクの料金を送料込み総額・最低支払額・1本単価で比較。公式確認日つき。",
+    description: "花のサブスクの料金を、送料込みの総額・最低支払額・1本あたりの単価で比較しています。公式サイトでの確認日を付記しています。",
     dateModified: "2026-06-27",
   };
   const faqLd = {
@@ -66,17 +66,17 @@ export default function RyokinPage() {
           <Link href="/" className="hover:underline">トップ</Link> ＞ 料金比較
         </nav>
         <h1 className="text-2xl md:text-3xl font-bold text-[#333] leading-tight mb-3">
-          花の定期便 料金比較表｜送料込み総額・最低支払額・1本単価で正しく比較
+          花の定期便 料金比較表｜送料込みの総額・最低支払額・1本あたりの単価で比較
         </h1>
-        <p className="text-xs text-[#999] mb-6">最終更新：{UPDATED}／料金は各公式サイトで確認した実データです。</p>
+        <p className="text-xs text-[#999] mb-6">最終更新：{UPDATED}／料金は各公式サイトで確認した値です。</p>
 
         {/* AEO 即答ブロック */}
         <div className="bg-[#F4F8F5] border border-[#D7E6DC] rounded-lg p-4 mb-8">
           <p className="text-sm text-[#333] leading-relaxed">
-            <strong>結論：</strong>花のサブスクは「月額」でなく
-            <strong>〈送料込みの1回総額〉〈最低受取までの総額〉〈1本単価〉</strong>で比較するのが正確です。
-            送料込み最安は<strong>{sorted[0].name}（{yen(sorted[0].cheapest.price)}円・{sorted[0].cheapest.name}）</strong>。
-            縛りなしで気軽に試すなら回数縛りのないサービスがおすすめです（{UPDATED}時点・公式確認）。
+            <strong>要点：</strong>花のサブスクは、月額ではなく
+            <strong>〈送料込みの1回あたりの総額〉〈最低受取回数までの総額〉〈1本あたりの単価〉</strong>で比較することをおすすめします。
+            送料込みの最安は<strong>{sorted[0].name}（{yen(sorted[0].cheapest.price)}円・{sorted[0].cheapest.name}）</strong>です。
+            まず試してみたい場合は、回数の条件がないサービスをおすすめします（{UPDATED}時点・公式確認）。
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function RyokinPage() {
                 <th className="p-3 text-left">最安プラン</th>
                 <th className="p-3 text-right">1回総額<br />(送料込)</th>
                 <th className="p-3 text-right">1本単価<br />(目安)</th>
-                <th className="p-3 text-left">最低受取/縛り</th>
+                <th className="p-3 text-left">最低受取回数</th>
                 <th className="p-3 text-right">最低支払額</th>
                 <th className="p-3 text-center">公式</th>
               </tr>
@@ -105,7 +105,7 @@ export default function RyokinPage() {
                   </td>
                   <td className="p-3 border-b border-[#E8E0D8] text-right font-bold text-[#C4877A]">{yen(s.cheapest.price)}円</td>
                   <td className="p-3 border-b border-[#E8E0D8] text-right">約{yen(perStem(s))}円/本</td>
-                  <td className="p-3 border-b border-[#E8E0D8]">{s.minDeliveries ? `${s.minDeliveries}回継続` : "縛りなし"}</td>
+                  <td className="p-3 border-b border-[#E8E0D8]">{s.minDeliveries ? `${s.minDeliveries}回継続` : "回数の条件なし"}</td>
                   <td className="p-3 border-b border-[#E8E0D8] text-right">{yen(minTotal(s))}円</td>
                   <td className="p-3 border-b border-[#E8E0D8] text-center">
                     <a href={s.affiliateUrlEarly ?? s.affiliateUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="inline-block bg-[#4A7C59] text-white text-xs font-bold px-3 py-2 rounded-full hover:bg-[#3A6247]">公式へ</a>
@@ -116,7 +116,7 @@ export default function RyokinPage() {
           </table>
         </div>
         <p className="text-[11px] text-[#999] mb-8">
-          ※価格は税込・各公式サイトで{UPDATED}に確認した最安プランです。送料の扱い・最低受取回数・本数はプランや地域で変わるため、申込前に必ず公式サイトで最新条件をご確認ください。
+          ※価格は税込で、各公式サイトで{UPDATED}に確認した最安プランです。送料の扱い・最低受取回数・本数はプランや地域によって異なります。ご利用前に、公式サイトにて最新情報をご確認ください。
           {SERVICES.filter((s) => s.note).map((s) => (
             <span key={s.id} className="block mt-1">・{s.name}：{s.note}</span>
           ))}
@@ -134,7 +134,7 @@ export default function RyokinPage() {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <Link href="/compare/cheap/" className="text-sm text-[#4A7C59] underline">安い花のサブスク ランキングを見る ＞</Link>
+          <Link href="/compare/cheap/" className="text-sm text-[#4A7C59] underline">安い花のサブスクの比較を見る ＞</Link>
           <Link href="/compare/post-delivery/" className="text-sm text-[#4A7C59] underline">ポスト投函できる定期便を見る ＞</Link>
         </div>
       
@@ -146,17 +146,17 @@ export default function RyokinPage() {
               <div>
                 <h3 className="font-bold text-[#4A7C59] mb-3">比較で選ぶ</h3>
                 <ul className="space-y-2 text-[#666]">
-                  <li><a href="/compare/cheap/" className="hover:text-[#4A7C59] underline">安い順ランキング</a></li>
-                  <li><a href="/compare/500yen/" className="hover:text-[#4A7C59] underline">500円台で始められる？最安プラン比較</a></li>
+                  <li><a href="/compare/cheap/" className="hover:text-[#4A7C59] underline">安い順の比較</a></li>
+                  <li><a href="/compare/500yen/" className="hover:text-[#4A7C59] underline">500円台から始められる最安プランの比較</a></li>
                   <li><a href="/compare/ichirinzashi/" className="hover:text-[#4A7C59] underline">一輪挿しに合う少量プラン</a></li>
                   <li><a href="/compare/souryou-muryou/" className="hover:text-[#4A7C59] underline">送料無料で比較</a></li>
                   <li><a href="/compare/post-delivery/" className="hover:text-[#4A7C59] underline">ポスト投函で受け取る</a></li>
-                  <li><a href="/guides/keirou-no-hi/" className="hover:text-[#4A7C59] underline">敬老の日ギフトに贈る（2026年は9月21日）</a></li>
+                  <li><a href="/guides/keirou-no-hi/" className="hover:text-[#4A7C59] underline">敬老の日のギフト（2026年は9月21日）</a></li>
                   <li><a href="/know-guides/summer-care/" className="hover:text-[#4A7C59] underline">夏の花を長持ちさせる方法</a></li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#4A7C59] mb-3">2社で迷ったら</h3>
+                <h3 className="font-bold text-[#4A7C59] mb-3">2社の比較</h3>
                 <ul className="space-y-2 text-[#666]">
                   <li><a href="/compare/bloomee-vs-medelu/" className="hover:text-[#4A7C59] underline">ブルーミー vs メデル</a></li>
                   <li><a href="/vs/hanameku-vs-medelu/" className="hover:text-[#4A7C59] underline">ハナメク vs メデル</a></li>

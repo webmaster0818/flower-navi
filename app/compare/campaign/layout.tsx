@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const TITLE = "花のサブスクの初回特典・お試しプラン比較【2026年7月】安く始める方法｜flowerデリ";
-const DESC = "花のサブスクを初めて・安く始めたい方へ。bloomee・medelu・AND PLANTS・hanamekuの「初回に使えるお試し／最安プラン」を、送料込みの実額で比較します。時限クーポン・初回無料は変動するため、公式での最新確認の仕方もあわせて解説（確認日つき）。";
+const DESC = "花のサブスクを費用を抑えて始めたい方に向けて、bloomee・medelu・AND PLANTS・hanamekuのお試しプラン・最安プランを送料込みの実額で比較しています。期間限定のクーポンや特典は変動するため、公式サイトでの確認方法もあわせて解説します。";
 
 export const metadata: Metadata = {
   title: TITLE,

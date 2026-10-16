@@ -26,7 +26,7 @@ export default function AboutPage() {
         <section className="mb-10 prose prose-gray max-w-none text-sm leading-relaxed space-y-4">
           <h2 className="text-xl font-bold mt-2 mb-3">{SITE_NAME} について</h2>
           <p>
-            {SITE_NAME} は、株式会社MediaXが運営する比較・情報サイトです。利用者が業者選び・サービス選定で失敗しないよう、独自調査・公式情報・業界データに基づく信頼できるコンテンツを提供することを目的としています。
+            {SITE_NAME} は、株式会社MediaXが運営する比較・情報サイトです。利用者が業者やサービスを適切に選べるよう、独自調査・公式情報・業界データに基づく信頼できるコンテンツを提供することを目的としています。
           </p>
           <p>
             当サイトのコンテンツは、最新の業界動向・公式発表・公的データを参照し、編集部による事実確認(ファクトチェック)を経て公開しています。執筆プロセスにAIツールを活用する場合がありますが、すべての記事は人間の編集者による監督・編集を経た上で公開されます。

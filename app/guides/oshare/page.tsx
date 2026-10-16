@@ -6,36 +6,36 @@ import Header from "@/app/components/Header";
 /* ─── FAQ Data ─── */
 const faqItems = [
   {
-    q: "おしゃれな花のサブスクの選び方は？",
-    a: "おしゃれさで選ぶなら、(1)花の組み合わせ・色合いのセンス、(2)パッケージや梱包のデザイン性、(3)SNSでの投稿写真の雰囲気、(4)花瓶やインテリアとの相性の4点をチェックしましょう。公式サイトやInstagramで実際に届いた花の写真を確認するのが最も確実です。",
+    q: "おしゃれな花のサブスクは、どのように選べばよいですか？",
+    a: "おしゃれさを重視して選ぶ場合は、(1)花の組み合わせと色合い、(2)パッケージや梱包のデザイン、(3)SNSに投稿されている写真の雰囲気、(4)手持ちの花瓶やインテリアとの相性、の4点をご確認ください。公式サイトやInstagramで、実際に届いた花の写真を確認する方法が最も確実です。",
   },
   {
-    q: "インスタ映えする花のサブスクはどこですか？",
-    a: "bloomeeは利用者のSNS投稿やレビュー記事が多く、季節の花が届くため毎回違う写真が撮れます。AND PLANTSはプロのフローリストによるハイセンスなアレンジで、洗練された写真が撮りやすいのが特徴です。",
+    q: "SNS向けの写真を撮りやすい花のサブスクはどれですか？",
+    a: "bloomeeは利用者によるSNS投稿やレビュー記事が多く、季節の花が届くため、毎回異なる写真を撮影できます。AND PLANTSはプロのフローリストによるアレンジが届き、洗練された雰囲気の写真を撮影しやすい点が特徴です。",
   },
   {
     q: "花のサブスクで届く花は自分で選べますか？",
-    a: "多くのサービスではプロが旬の花をセレクトして届けるため、基本的に花の種類は選べません。ただし、AND PLANTSでは好みの色味やテイストの傾向を登録でき、それに基づいたアレンジが届きます。サプライズ感を楽しむのも花のサブスクの魅力の一つです。",
+    a: "多くのサービスでは、プロが旬の花を選んで届けるため、花の種類は基本的に指定できません。ただし、AND PLANTSでは好みの色味やテイストの傾向を登録でき、その内容にもとづいたアレンジが届きます。何が届くかを楽しめる点も、花のサブスクの魅力の一つです。",
   },
   {
     q: "おしゃれに飾るためのおすすめの花瓶はありますか？",
-    a: "透明なガラス製の花瓶が最も万能で、どんな花にも合います。茎の断面や水の清涼感が見えることで、写真映えも抜群です。陶器やマットな質感の花瓶はナチュラルな雰囲気に、金属製のフラワーベースはモダンなインテリアに合います。複数の花瓶を使い分けると、飾り方の幅が広がります。",
+    a: "透明なガラス製の花瓶は用途が広く、どのような花にも合わせやすい素材です。茎の断面や水の透明感が見えるため、写真でも見栄えがします。陶器やマットな質感の花瓶はナチュラルな雰囲気に、金属製のフラワーベースはモダンなインテリアに合います。複数の花瓶を使い分けると、飾り方の幅が広がります。",
   },
   {
     q: "花のサブスクはプレゼントとして贈れますか？",
-    a: "はい、多くのサービスがギフト対応しています。AND PLANTSはギフト用のラッピングや観葉植物のギフトにも対応しています。bloomeeもギフトプランがあり、相手の住所に直接届けることが可能です。おしゃれなパッケージで届くため、贈り物として喜ばれるでしょう。",
+    a: "はい、多くのサービスがギフトに対応しています。AND PLANTSはギフト用のラッピングや観葉植物のギフトにも対応しています。bloomeeにもギフトプランがあり、贈り先の住所へ直接届けることができます。デザイン性の高いパッケージで届くため、贈り物にも適しています。",
   },
   {
     q: "賃貸のワンルームでもおしゃれに飾れますか？",
-    a: "もちろん飾れます。小さなテーブルや窓辺、キッチンカウンターなど、わずかなスペースがあれば十分です。bloomeeのお試しプランは4本以上・約18〜25cmの小ぶりな花束で届くため、小さな花瓶でコンパクトに飾れます。壁掛けのフラワーベースやドライフラワーとして吊るす方法も、狭い空間を有効活用するテクニックです。",
+    a: "飾ることができます。小さなテーブル、窓辺、キッチンカウンターなど、限られたスペースでも十分です。bloomeeのお試しプランは4本以上・約18〜25cmの小ぶりな花束で届くため、小さな花瓶にまとめて飾れます。壁掛けのフラワーベースを使う方法や、ドライフラワーにして吊るす方法も、狭い空間を有効に活用する手段です。",
   },
   {
-    q: "届いた花をおしゃれに長持ちさせるコツはありますか？",
-    a: "到着後すぐに茎を斜めにカットし、清潔な水に入れることが基本です。水は毎日交換し、水に浸かる部分の葉は取り除きましょう。直射日光やエアコンの風が直接当たる場所は避け、涼しい場所に置くと長持ちします。栄養剤を使うと花の持ちが1.5倍ほど延びることもあります。",
+    q: "届いた花を見栄えよく長持ちさせる方法はありますか？",
+    a: "到着後すぐに茎を斜めに切り、清潔な水に生けることが基本です。水は毎日交換し、水に浸かる部分の葉は取り除いてください。直射日光やエアコンの風が直接当たる場所を避け、涼しい場所に置くと長持ちします。栄養剤を使うと、花の持ちが1.5倍ほど延びる場合もあります。",
   },
   {
-    q: "花のサブスクとドライフラワーを組み合わせるのはアリですか？",
-    a: "非常におすすめの組み合わせです。サブスクで届いた生花を楽しんだ後、ドライフラワーにして飾り続けることで、部屋に常に花がある暮らしを実現できます。特にバラ、アジサイ、スターチスなどはドライフラワーにしやすい花です。生花とドライフラワーを並べて飾ると、空間に奥行きが生まれます。",
+    q: "花のサブスクとドライフラワーを組み合わせて楽しむことはできますか？",
+    a: "おすすめの組み合わせです。サブスクで届いた生花を楽しんだ後にドライフラワーにして飾り続けると、部屋に常に花がある状態を保てます。特にバラ、アジサイ、スターチスなどはドライフラワーにしやすい花です。生花とドライフラワーを並べて飾ると、空間に奥行きが生まれます。",
   },
 ];
 
@@ -58,14 +58,14 @@ const rankingData = [
     style: "洗練・モダン",
     url: "/services/and-plants",
     officialUrl: "https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L",
-    highlight: "プロのフローリストによるハイセンスなセレクト。独自デザインの梱包ボックス。観葉植物も取り扱い。送料無料。",
-    bestFor: "インテリアにこだわる方、洗練されたアレンジを求める方、観葉植物にも興味がある方",
-    detail: "AND PLANTSは、プロのフローリストが旬の花を一つひとつセレクトしてアレンジするサービスです。最大の特徴は「見せることを意識したデザイン性」にあります。独自開発の梱包ボックスは花が傷みにくい設計でありながら、届いた瞬間の開封体験にもこだわっています。4〜6本のボリュームある花束が届き、そのまま花瓶に活けるだけで様になります。切り花だけでなく観葉植物のサブスクも展開しており、グリーンインテリア全体をトータルコーディネートできるのも他にない強みです。回数縛りなし、送料無料で気軽に始められます。",
+    highlight: "プロのフローリストが花を選定。独自デザインの梱包ボックスを使用。観葉植物も取り扱い。送料無料。",
+    bestFor: "インテリアにこだわる方、洗練されたアレンジを求める方、観葉植物にも関心がある方",
+    detail: "AND PLANTSは、プロのフローリストが旬の花を一つずつ選び、アレンジして届けるサービスです。主な特徴は、飾ったときの見え方を意識したデザインにあります。独自開発の梱包ボックスは花が傷みにくい設計で、開封時の印象にも配慮されています。4〜6本の花束が届き、そのまま花瓶に生けるだけで整った見た目になります。切り花だけでなく観葉植物のサブスクも展開しており、グリーンを含めたインテリア全体をそろえられる点も、他サービスにない特徴です。回数の条件はなく、送料無料で始められます。",
     stylePoints: [
-      "フローリストが色合い・質感のバランスを計算したアレンジ",
+      "フローリストが色合いと質感のバランスを考慮したアレンジ",
       "ニュアンスカラーやくすみ系の色合いが得意",
-      "SNS映えだけでなく、部屋に溶け込むナチュラルな美しさ",
-      "観葉植物と組み合わせた統一感のあるインテリアが実現",
+      "SNS用の写真だけでなく、部屋になじむ自然な美しさ",
+      "観葉植物と組み合わせて、統一感のあるインテリアを実現",
     ],
   },
   {
@@ -86,13 +86,13 @@ const rankingData = [
     url: "/services/bloomee",
     officialUrl: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L",
     highlight: "お届け実績3,000万本以上（公式・自社調べ）。ベーシックは8本以上・約25〜30cmで手渡し。",
-    bestFor: "毎回違う季節の花を楽しみたい方、SNSに花の投稿をしたい方",
-    detail: "bloomeeは公式サイトで「お花のお届け実績3,000万本以上（自社調べ）」と表記している花のサブスクです。おしゃれさ・ボリュームを重視するならベーシックプラン（花代2,180円＋送料550円・8本以上・約25〜30cm）で、お試しプラン（980円＋送料385円・4本以上・約18〜25cm）より花の量と長さが増えます。ベーシックは手渡しで、水〜日曜から日付と時間帯を指定できます。品質保証は、定期便なら2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記。2026年10月15日確認）。SNSでの情報量が豊富なため、他のユーザーの飾り方を参考にできるのも利点です。ただし4回の最低受け取り回数がある点にはご注意ください。",
+    bestFor: "毎回異なる季節の花を楽しみたい方、SNSに花の写真を投稿したい方",
+    detail: "bloomeeは公式サイトで「お花のお届け実績3,000万本以上（自社調べ）」と表記している花のサブスクです。おしゃれさとボリュームを重視する場合はベーシックプラン（花代2,180円＋送料550円・8本以上・約25〜30cm）が適しており、お試しプラン（980円＋送料385円・4本以上・約18〜25cm）と比べて花の量と長さが増えます。ベーシックは手渡しで、水〜日曜から日付と時間帯を指定できます。品質保証は、定期便なら2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記。2026年10月15日確認）。SNS上の投稿が多く、他の利用者の飾り方を参考にできる点も利点です。ただし、最低4回の受け取りが必要な点にご注意ください。",
     stylePoints: [
-      "季節の花が届き、自分では選ばない花に出会える",
+      "季節の花が届き、自分では選ばない花にも出会える",
       "ベーシックは8本以上・約25〜30cmで飾りごたえがある",
-      "SNSに投稿写真が豊富で、飾り方の参考になる",
-      "季節のイベントに合わせた限定アレンジも",
+      "SNSに投稿された写真が多く、飾り方の参考になる",
+      "季節のイベントに合わせた限定アレンジもあり",
     ],
   },
   {
@@ -112,14 +112,14 @@ const rankingData = [
     style: "格式・本格派",
     url: "/services/nihon-sogo-engei",
     officialUrl: "https://nihon-sogo-engei.co.jp",
-    highlight: "プロのフローリストが一つひとつ手作りする本格アレンジ。ボリューム満点の花束。手渡し配送対応。",
-    bestFor: "本格的な花の美しさを求める方、来客時に映えるアレンジが欲しい方、手渡しで確実に受け取りたい方",
-    detail: "日本総合園芸は、長年の実績を持つ花のプロフェッショナル集団が運営するサービスです。プレミアムプランでは、経験豊富なフローリストが一つひとつ丁寧にアレンジした花束が届きます。ボリュームは他サービスと比較しても圧倒的で、玄関やリビングに飾ると空間が一気に華やぎます。最大の特徴は「手渡し配送」に対応している点です。配送員が直接玄関先まで届けてくれるため、花が傷むリスクが最も少ない配送方法といえます。ポスト投函では不安のある大きなアレンジやデリケートな花材も、手渡しなら安心して受け取れます。価格帯はやや高めですが、その分の品質とボリュームは確かです。",
+    highlight: "プロのフローリストが一つずつ手作りする本格的なアレンジ。ボリュームのある花束。手渡し配送に対応。",
+    bestFor: "本格的な花の美しさを求める方、来客時に見栄えのするアレンジを求める方、手渡しで確実に受け取りたい方",
+    detail: "日本総合園芸は、長年の実績を持つ花の専門事業者が運営するサービスです。プレミアムプランでは、経験豊富なフローリストが一つずつ丁寧にアレンジした花束が届きます。ボリュームは他サービスと比較しても特に大きく、玄関やリビングに飾ると空間が華やかになります。主な特徴は、手渡し配送に対応している点です。配送員が玄関先まで直接届けるため、花が傷むリスクが最も少ない配送方法といえます。ポスト投函では不安のある大きなアレンジや繊細な花材も、手渡しであれば安心して受け取れます。価格帯はやや高めですが、その分の品質とボリュームを備えています。",
     stylePoints: [
-      "フローリストの技術が光る立体的で美しいアレンジメント",
-      "高品質な花材をふんだんに使ったボリューム感",
-      "手渡し配送で花の鮮度と形を最高の状態でキープ",
-      "来客時やパーティーシーンでも見劣りしない格式",
+      "フローリストの技術による立体的なアレンジメント",
+      "高品質な花材を十分に使ったボリューム感",
+      "手渡し配送により、花の鮮度と形を良好な状態で維持",
+      "来客時やパーティーの場にもふさわしい格式",
     ],
   },
 ];
@@ -133,9 +133,9 @@ export default function OshareGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"おしゃれな花のサブスクおすすめ\",\"item\":\"https://ohana-delivery.com/guides/oshare/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"おしゃれな花のサブスクおすすめ\",\"description\":\"おしゃれな花のサブスクおすすめ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/oshare/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"おしゃれな花のサブスクおすすめ\",\"description\":\"おしゃれな花のサブスクのおすすめを解説します。料金・評判・選び方をまとめています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/oshare/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"おしゃれな花のサブスクの選び方は？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"おしゃれさで選ぶなら、(1)花の組み合わせ・色合いのセンス、(2)パッケージや梱包のデザイン性、(3)SNSでの投稿写真の雰囲気、(4)花瓶やインテリアとの相性の4点をチェックしましょう。公式サイトやInstagramで実際に届いた花の写真を確認するのが最も確実です。\"}},{\"@type\":\"Question\",\"name\":\"インスタ映えする花のサブスクはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは利用者のSNS投稿やレビュー記事が多く、季節の花が届くため毎回違う写真が撮れます。AND PLANTSはプロのフローリストによるハイセンスなアレンジで、洗練された写真が撮りやすいのが特徴です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届く花は自分で選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスではプロが旬の花をセレクトして届けるため、基本的に花の種類は選べません。ただし、AND PLANTSでは好みの色味やテイストの傾向を登録でき、それに基づいたアレンジが届きます。サプライズ感を楽しむのも花のサブスクの魅力の一つです。\"}},{\"@type\":\"Question\",\"name\":\"おしゃれに飾るためのおすすめの花瓶はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"透明なガラス製の花瓶が最も万能で、どんな花にも合います。茎の断面や水の清涼感が見えることで、写真映えも抜群です。陶器やマットな質感の花瓶はナチュラルな雰囲気に、金属製のフラワーベースはモダンなインテリアに合います。複数の花瓶を使い分けると、飾り方の幅が広がります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはプレゼントとして贈れますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスがギフト対応しています。AND PLANTSはギフト用のラッピングや観葉植物のギフトにも対応しています。bloomeeもギフトプランがあり、相手の住所に直接届けることが可能です。おしゃれなパッケージで届くため、贈り物として喜ばれるでしょう。\"}},{\"@type\":\"Question\",\"name\":\"賃貸のワンルームでもおしゃれに飾れますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"もちろん飾れます。小さなテーブルや窓辺、キッチンカウンターなど、わずかなスペースがあれば十分です。bloomeeのお試しプランは4本以上・約18〜25cmの小ぶりな花束で届くため、小さな花瓶でコンパクトに飾れます。壁掛けのフラワーベースやドライフラワーとして吊るす方法も、狭い空間を有効活用するテクニックです。\"}},{\"@type\":\"Question\",\"name\":\"届いた花をおしゃれに長持ちさせるコツはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"到着後すぐに茎を斜めにカットし、清潔な水に入れることが基本です。水は毎日交換し、水に浸かる部分の葉は取り除きましょう。直射日光やエアコンの風が直接当たる場所は避け、涼しい場所に置くと長持ちします。栄養剤を使うと花の持ちが1.5倍ほど延びることもあります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクとドライフラワーを組み合わせるのはアリですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"非常におすすめの組み合わせです。サブスクで届いた生花を楽しんだ後、ドライフラワーにして飾り続けることで、部屋に常に花がある暮らしを実現できます。特にバラ、アジサイ、スターチスなどはドライフラワーにしやすい花です。生花とドライフラワーを並べて飾ると、空間に奥行きが生まれます。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"おしゃれな花のサブスクは、どのように選べばよいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"おしゃれさを重視して選ぶ場合は、(1)花の組み合わせと色合い、(2)パッケージや梱包のデザイン、(3)SNSに投稿されている写真の雰囲気、(4)手持ちの花瓶やインテリアとの相性、の4点をご確認ください。公式サイトやInstagramで、実際に届いた花の写真を確認する方法が最も確実です。\"}},{\"@type\":\"Question\",\"name\":\"SNS向けの写真を撮りやすい花のサブスクはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは利用者によるSNS投稿やレビュー記事が多く、季節の花が届くため、毎回異なる写真を撮影できます。AND PLANTSはプロのフローリストによるアレンジが届き、洗練された雰囲気の写真を撮影しやすい点が特徴です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届く花は自分で選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスでは、プロが旬の花を選んで届けるため、花の種類は基本的に指定できません。ただし、AND PLANTSでは好みの色味やテイストの傾向を登録でき、その内容にもとづいたアレンジが届きます。何が届くかを楽しめる点も、花のサブスクの魅力の一つです。\"}},{\"@type\":\"Question\",\"name\":\"おしゃれに飾るためのおすすめの花瓶はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"透明なガラス製の花瓶は用途が広く、どのような花にも合わせやすい素材です。茎の断面や水の透明感が見えるため、写真でも見栄えがします。陶器やマットな質感の花瓶はナチュラルな雰囲気に、金属製のフラワーベースはモダンなインテリアに合います。複数の花瓶を使い分けると、飾り方の幅が広がります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはプレゼントとして贈れますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスがギフトに対応しています。AND PLANTSはギフト用のラッピングや観葉植物のギフトにも対応しています。bloomeeにもギフトプランがあり、贈り先の住所へ直接届けることができます。デザイン性の高いパッケージで届くため、贈り物にも適しています。\"}},{\"@type\":\"Question\",\"name\":\"賃貸のワンルームでもおしゃれに飾れますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"飾ることができます。小さなテーブル、窓辺、キッチンカウンターなど、限られたスペースでも十分です。bloomeeのお試しプランは4本以上・約18〜25cmの小ぶりな花束で届くため、小さな花瓶にまとめて飾れます。壁掛けのフラワーベースを使う方法や、ドライフラワーにして吊るす方法も、狭い空間を有効に活用する手段です。\"}},{\"@type\":\"Question\",\"name\":\"届いた花を見栄えよく長持ちさせる方法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"到着後すぐに茎を斜めに切り、清潔な水に生けることが基本です。水は毎日交換し、水に浸かる部分の葉は取り除いてください。直射日光やエアコンの風が直接当たる場所を避け、涼しい場所に置くと長持ちします。栄養剤を使うと、花の持ちが1.5倍ほど延びる場合もあります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクとドライフラワーを組み合わせて楽しむことはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"おすすめの組み合わせです。サブスクで届いた生花を楽しんだ後にドライフラワーにして飾り続けると、部屋に常に花がある状態を保てます。特にバラ、アジサイ、スターチスなどはドライフラワーにしやすい花です。生花とドライフラワーを並べて飾ると、空間に奥行きが生まれます。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -154,7 +154,7 @@ export default function OshareGuidePage() {
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">おしゃれな花サブスクおすすめ</span>
+                  <span className="text-[#333] font-medium">おしゃれな花のサブスクおすすめ</span>
                 </li>
               </ol>
             </nav>
@@ -165,19 +165,19 @@ export default function OshareGuidePage() {
         <section className="bg-gradient-to-b from-[#FDF2F8] to-[#E8F0EB] py-12 md:py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <p className="text-sm text-[#C2567E] font-medium mb-3 tracking-wide">
-              花のサブスク おしゃれ特集
+              おしゃれな花のサブスク特集
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              おしゃれな花サブスクおすすめ3選<br className="hidden md:block" />
-              インスタ映えするセンスの良いサービス
+              おしゃれな花のサブスクおすすめ3選<br className="hidden md:block" />
+              デザイン性の高いサービスを比較
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              「せっかく花のサブスクを始めるなら、おしゃれなサービスを選びたい」と思っていませんか。
-              この記事では、デザイン性・アレンジのセンス・SNS映えの観点から、スタイルにこだわる方に特におすすめの3サービスを厳選してご紹介します。
+              花のサブスクを始めるにあたり、おしゃれなサービスを選びたいと考える方は少なくありません。
+              当サイトでは、デザイン性・アレンジのセンス・SNSでの見栄えの観点から、スタイルを重視する方におすすめの3サービスを選定してご紹介します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">厳選サービス</p>
+                <p className="text-xs text-[#999] mb-1">掲載サービス</p>
                 <p className="text-xl font-bold text-[#4A7C59]">3サービス</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -200,15 +200,15 @@ export default function OshareGuidePage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#what-is-stylish" className="hover:text-[#4A7C59] transition-colors">1. おしゃれな花のサブスクとは？選び方の基準</a></li>
-                  <li><a href="#ranking-table" className="hover:text-[#4A7C59] transition-colors">2. おしゃれな花サブスク3選 比較表</a></li>
+                  <li><a href="#what-is-stylish" className="hover:text-[#4A7C59] transition-colors">1. おしゃれな花のサブスクを選ぶ基準</a></li>
+                  <li><a href="#ranking-table" className="hover:text-[#4A7C59] transition-colors">2. おしゃれな花のサブスク3選の比較表</a></li>
                   <li><a href="#ranking-detail" className="hover:text-[#4A7C59] transition-colors">3. 各サービスの詳細レビュー</a></li>
-                  <li><a href="#instagram-tips" className="hover:text-[#4A7C59] transition-colors">4. 届いた花をインスタ映えさせる撮影・飾り方テクニック</a></li>
-                  <li><a href="#room-coordination" className="hover:text-[#4A7C59] transition-colors">5. お部屋のテイスト別コーディネート術</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">6. おしゃれな花サブスクに関するよくある質問</a></li>
+                  <li><a href="#instagram-tips" className="hover:text-[#4A7C59] transition-colors">4. 届いた花を美しく見せる撮影・飾り方のポイント</a></li>
+                  <li><a href="#room-coordination" className="hover:text-[#4A7C59] transition-colors">5. 部屋のテイスト別のコーディネート方法</a></li>
+                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">6. おしゃれな花のサブスクに関するよくある質問</a></li>
                   <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">7. まとめ</a></li>
                 </ol>
               </nav>
@@ -220,14 +220,14 @@ export default function OshareGuidePage() {
         <section id="what-is-stylish" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              おしゃれな花のサブスクとは？選び方の基準
+              おしゃれな花のサブスクを選ぶ基準
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
               花のサブスクは数多くありますが、「おしゃれ」と感じるかどうかはサービスによって大きく異なります。
-              単に花が届くだけではなく、色合いの計算、花材の組み合わせ、梱包のデザイン性まで含めてトータルで評価することが重要です。
+              花が届くことだけでなく、色合いの組み立て、花材の組み合わせ、梱包のデザインまで含めて総合的に評価することが重要です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              ここでは、おしゃれな花のサブスクを見極めるための5つのチェックポイントをご紹介します。
+              当サイトでは、おしゃれな花のサブスクを見極めるための5つの確認項目を以下のとおりご説明します。
             </p>
 
             <div className="space-y-4">
@@ -235,35 +235,35 @@ export default function OshareGuidePage() {
                 <h3 className="text-sm font-bold text-[#C2567E] mb-2">1. アレンジのセンス・色合い</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
                   プロのフローリストがアレンジを手がけているか、色のトーンに統一感があるかが重要です。
-                  くすみカラーやニュアンスカラーを取り入れたアレンジは、今のインテリアトレンドとも相性が良く、写真映えもします。
+                  くすみカラーやニュアンスカラーを取り入れたアレンジは、近年のインテリアの傾向とも相性が良く、写真でも見栄えがします。
                 </p>
               </div>
               <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
                 <h3 className="text-sm font-bold text-[#C2567E] mb-2">2. パッケージ・梱包のデザイン</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  届いた瞬間の「開封体験」もおしゃれさの一部です。
-                  オリジナルデザインのボックスやペーパー、ブランドロゴ入りのラッピングなど、細部にまでこだわりがあるサービスは満足度が高くなります。
+                  開封時の印象も、おしゃれさを構成する要素の一つです。
+                  オリジナルデザインのボックスやペーパー、ブランドロゴ入りのラッピングなど、細部まで配慮されたサービスは満足度が高い傾向にあります。
                 </p>
               </div>
               <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
                 <h3 className="text-sm font-bold text-[#C2567E] mb-2">3. SNSでの評判・投稿の雰囲気</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  InstagramやXでの投稿を見ると、実際に届く花の雰囲気がよくわかります。
-                  投稿数が多いサービスほど飾り方の参考例も豊富で、自分の理想のスタイルをイメージしやすくなります。
+                  InstagramやXの投稿を見ると、実際に届く花の雰囲気を把握できます。
+                  投稿数が多いサービスほど飾り方の参考例も多く、理想のスタイルを具体的に想像しやすくなります。
                 </p>
               </div>
               <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
                 <h3 className="text-sm font-bold text-[#C2567E] mb-2">4. 花瓶・インテリアとの相性</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  どんなにきれいな花でも、部屋のインテリアと合わなければおしゃれには見えません。
-                  届く花のボリュームやスタイルが、自分の持っている花瓶や部屋のテイストに合うかを事前に確認しましょう。
+                  花がきれいであっても、部屋のインテリアと合わなければおしゃれには見えません。
+                  届く花のボリュームやスタイルが、手持ちの花瓶や部屋のテイストに合うかを事前にご確認ください。
                 </p>
               </div>
               <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
                 <h3 className="text-sm font-bold text-[#C2567E] mb-2">5. 花以外のトータル提案力</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  花だけでなく、観葉植物やドライフラワー、花瓶のセット販売など、暮らし全体をスタイリングする提案があるサービスは、
-                  おしゃれな空間づくりを一歩進めてくれます。
+                  花だけでなく、観葉植物やドライフラワー、花瓶のセット販売など、暮らし全体のスタイリングを提案するサービスは、
+                  おしゃれな空間づくりに役立ちます。
                 </p>
               </div>
             </div>
@@ -274,10 +274,10 @@ export default function OshareGuidePage() {
         <section id="ranking-table" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              おしゃれな花サブスク3選 比較表
+              おしゃれな花のサブスク3選の比較表
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              デザイン性・アレンジのセンス・SNSでの評判を総合的に評価し、おしゃれさで選ぶ方におすすめの3サービスを比較しました。
+              当サイトでは、デザイン性・アレンジのセンス・SNSでの評判を総合的に評価し、おしゃれさを重視する方におすすめの3サービスを比較しています。
             </p>
 
             <div className="overflow-x-auto -mx-4 px-4">
@@ -340,9 +340,9 @@ export default function OshareGuidePage() {
               <h3 className="text-sm font-bold text-[#333] mb-3">表の補足</h3>
               <ul className="text-sm text-[#666] space-y-2">
                 <li>・ 表示価格はすべて税込です</li>
-                <li>・ bloomeeのお試しプラン（980円＋送料385円）でも始められますが、ボリュームも重視するならベーシックプラン（2,180円＋送料550円・8本以上）がおすすめです</li>
+                <li>・ bloomeeはお試しプラン（980円＋送料385円）から始めることもできますが、ボリュームを重視する場合はベーシックプラン（2,180円＋送料550円・8本以上）をおすすめします</li>
                 <li>・ 日本総合園芸の送料は地域によって異なります</li>
-                <li>・ 2026年4月時点の情報です。最新の料金は各公式サイトでご確認ください</li>
+                <li>・ 2026年4月時点の情報です。ご利用前に、公式サイトにて最新情報をご確認ください</li>
               </ul>
             </div>
           </div>
@@ -355,7 +355,7 @@ export default function OshareGuidePage() {
               各サービスの詳細レビュー
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              おしゃれさで選ぶ3サービスそれぞれの、デザインの特徴・届く内容・おすすめの人を詳しく解説します。
+              おしゃれさを重視して選ぶ3サービスについて、デザインの特徴・届く内容・おすすめの利用者をご説明します。
             </p>
 
             <div className="space-y-8">
@@ -425,7 +425,7 @@ export default function OshareGuidePage() {
                         <span className="text-[#333]">{item.frequency}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-28 shrink-0">回数縛り</span>
+                        <span className="text-[#999] w-28 shrink-0">回数の条件</span>
                         <span className="text-[#333]">{item.minOrders}</span>
                       </div>
                       <div className="flex">
@@ -441,7 +441,7 @@ export default function OshareGuidePage() {
 
                     {/* Style Points */}
                     <div className="bg-[#FDF2F8] rounded-lg p-4 mb-5 border border-[#F5D0E0]">
-                      <p className="text-sm font-bold text-[#C2567E] mb-3">おしゃれポイント</p>
+                      <p className="text-sm font-bold text-[#C2567E] mb-3">デザイン面の特徴</p>
                       <ul className="text-sm text-[#666] space-y-2">
                         {item.stylePoints.map((point, idx) => (
                           <li key={idx}>・ {point}</li>
@@ -452,7 +452,7 @@ export default function OshareGuidePage() {
                     {/* Best For */}
                     <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
                       <p className="text-sm">
-                        <span className="font-bold text-[#4A7C59]">こんな人におすすめ：</span>
+                        <span className="font-bold text-[#4A7C59]">おすすめの利用者：</span>
                         <span className="text-[#666]">{item.bestFor}</span>
                       </p>
                     </div>
@@ -485,21 +485,21 @@ export default function OshareGuidePage() {
         <section id="instagram-tips" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#C2567E]">
-              届いた花をインスタ映えさせる撮影・飾り方テクニック
+              届いた花を美しく見せる撮影・飾り方のポイント
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              せっかくおしゃれな花が届いても、飾り方や撮影方法次第で印象は大きく変わります。
-              ここでは、花のサブスクで届いた花をより魅力的に見せるためのテクニックをご紹介します。
+              届いた花の印象は、飾り方や撮影方法によって大きく変わります。
+              当サイトでは、花のサブスクで届いた花をより魅力的に見せる方法をご説明します。
             </p>
 
             <div className="space-y-6">
               {/* Tip 1 */}
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">自然光を活かす撮影がポイント</h3>
+                <h3 className="text-base font-bold text-[#333] mb-3">自然光を活かして撮影する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  花の写真は自然光が最も美しく仕上がります。窓辺に花を置き、午前中の柔らかい光で撮影するのがベストです。
-                  直射日光は影が強くなりすぎるため、レースカーテン越しの光がおすすめです。
-                  蛍光灯やLEDライトの下では花の色味が変わってしまうため、できるだけ自然光の時間帯に撮影しましょう。
+                  花の写真は、自然光で撮影すると最も美しく仕上がります。窓辺に花を置き、午前中の柔らかい光で撮影する方法が適しています。
+                  直射日光では影が強くなりすぎるため、レースカーテン越しの光をおすすめします。
+                  蛍光灯やLEDライトの下では花の色味が変わるため、できるだけ自然光のある時間帯に撮影してください。
                 </p>
               </div>
 
@@ -507,10 +507,10 @@ export default function OshareGuidePage() {
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-3">背景をシンプルに統一する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  花を主役にするためには、背景のごちゃつきを排除することが重要です。
-                  白い壁、木目のテーブル、大理石調のプレートなど、シンプルな背景を選びましょう。
-                  布（リネンやコットン）を敷くだけでも写真の雰囲気が格上げされます。
-                  生活感のあるものが映り込まないよう、撮影前に周囲を整理することも忘れずに。
+                  花を主役にするには、背景を整理することが重要です。
+                  白い壁、木目のテーブル、大理石調のプレートなど、シンプルな背景を選んでください。
+                  リネンやコットンの布を敷くだけでも、写真の雰囲気が向上します。
+                  生活感のあるものが写り込まないよう、撮影前に周囲を片付けておくことも大切です。
                 </p>
               </div>
 
@@ -518,32 +518,32 @@ export default function OshareGuidePage() {
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-3">花瓶の選び方で印象が変わる</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  透明なガラス花瓶は万能ですが、花の色に合わせて花瓶を選ぶとさらに統一感が出ます。
-                  パステルカラーの花にはマットな白い陶器、ビビッドな花にはシンプルなクリアガラス、
-                  グリーン系にはブラウンやテラコッタの素材がよく合います。
-                  一輪挿しを複数並べるテクニックは、少量の花でもおしゃれに見せられる方法としておすすめです。
+                  透明なガラス花瓶はどの花にも合わせやすい一方、花の色に合わせて花瓶を選ぶと、さらに統一感が出ます。
+                  パステルカラーの花にはマットな白い陶器、鮮やかな色の花にはシンプルなクリアガラス、
+                  グリーン系の花にはブラウンやテラコッタの素材がよく合います。
+                  一輪挿しを複数並べる方法は、少量の花でもおしゃれに見せられるためおすすめです。
                 </p>
               </div>
 
               {/* Tip 4 */}
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">小物を添えて世界観をつくる</h3>
+                <h3 className="text-base font-bold text-[#333] mb-3">小物を添えて雰囲気をつくる</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
                   花だけでなく、本・キャンドル・コーヒーカップなどの小物を一緒に配置すると、
-                  暮らしの一場面を切り取ったような雰囲気のある写真になります。
-                  ただし小物は1〜2点に抑え、花を主役にすることがポイントです。
-                  色のトーンを花と揃えると、全体のまとまりが良くなります。
+                  暮らしの一場面を切り取ったような写真になります。
+                  ただし、小物は1〜2点に抑え、花を主役にすることが大切です。
+                  色のトーンを花とそろえると、全体のまとまりが良くなります。
                 </p>
               </div>
 
               {/* Tip 5 */}
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">真上からのアングルを活用する</h3>
+                <h3 className="text-base font-bold text-[#333] mb-3">真上からの撮影も活用する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  花を真上（フラットレイ）から撮影すると、花びらの美しさが際立ちます。
-                  特にバラやラナンキュラスなど花びらが幾重にも重なる花は、真上からのアングルで本領を発揮します。
-                  斜め45度の角度は花束全体のボリューム感を伝えたい時に最適です。
-                  複数のアングルで撮影して、最も映える1枚を選びましょう。
+                  花を真上から撮影する（フラットレイ）と、花びらの美しさが際立ちます。
+                  特にバラやラナンキュラスなど、花びらが幾重にも重なる花は真上からの撮影に適しています。
+                  花束全体のボリューム感を伝えたい場合は、斜め45度の角度が適しています。
+                  複数の角度で撮影し、最も見栄えのよい1枚を選んでください。
                 </p>
               </div>
             </div>
@@ -554,10 +554,10 @@ export default function OshareGuidePage() {
         <section id="room-coordination" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              お部屋のテイスト別コーディネート術
+              部屋のテイスト別のコーディネート方法
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              花のサブスクで届いた花を、自分の部屋のインテリアに合わせておしゃれに飾る方法をテイスト別にご紹介します。
+              花のサブスクで届いた花を、部屋のインテリアに合わせて飾る方法をテイスト別にご説明します。
             </p>
 
             <div className="space-y-6">
@@ -565,12 +565,12 @@ export default function OshareGuidePage() {
               <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C5D9CB]">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="bg-[#4A7C59] text-white text-xs font-bold px-2 py-1 rounded">ナチュラル</span>
-                  <h3 className="text-base font-bold text-[#333]">木目調・北欧風のお部屋に</h3>
+                  <h3 className="text-base font-bold text-[#333]">木目調・北欧風の部屋に合わせる場合</h3>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  白やグリーンを基調としたナチュラルカラーの花が最も相性が良いです。
-                  ユーカリやかすみ草などのグリーン系をメインに、差し色として淡いピンクやイエローを加えると
-                  北欧インテリアに自然に溶け込みます。
+                  白やグリーンを基調としたナチュラルカラーの花が最も合います。
+                  ユーカリやかすみ草などのグリーン系を中心に、差し色として淡いピンクやイエローを加えると、
+                  北欧風のインテリアに自然になじみます。
                 </p>
                 <div className="bg-white rounded-lg p-3">
                   <p className="text-xs text-[#999] mb-1">おすすめサービス</p>
@@ -584,17 +584,17 @@ export default function OshareGuidePage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="bg-[#333] text-white text-xs font-bold px-2 py-1 rounded">モダン</span>
-                  <h3 className="text-base font-bold text-[#333]">モノトーン・シンプルなお部屋に</h3>
+                  <h3 className="text-base font-bold text-[#333]">モノトーン・シンプルな部屋に合わせる場合</h3>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  白やグレーを基調としたモダンな空間には、ビビッドな赤やオレンジの花がアクセントとして映えます。
-                  逆に、白い花だけでまとめるとスタイリッシュで洗練された印象になります。
+                  白やグレーを基調としたモダンな空間では、鮮やかな赤やオレンジの花がアクセントになります。
+                  反対に、白い花だけでまとめると、洗練された印象になります。
                   花瓶はガラスやステンレスなど無機質な素材を選ぶと統一感が出ます。
                 </p>
                 <div className="bg-white rounded-lg p-3">
                   <p className="text-xs text-[#999] mb-1">おすすめサービス</p>
                   <p className="text-sm text-[#666]">
-                    <span className="font-bold text-[#4A7C59]">AND PLANTS</span> -- 洗練されたセレクトでモダン空間との相性が抜群
+                    <span className="font-bold text-[#4A7C59]">AND PLANTS</span> -- 洗練されたセレクトで、モダンな空間と相性が良い
                   </p>
                 </div>
               </div>
@@ -603,17 +603,17 @@ export default function OshareGuidePage() {
               <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="bg-[#C2567E] text-white text-xs font-bold px-2 py-1 rounded">フェミニン</span>
-                  <h3 className="text-base font-bold text-[#333]">ピンク・ホワイト基調のお部屋に</h3>
+                  <h3 className="text-base font-bold text-[#333]">ピンク・ホワイト基調の部屋に合わせる場合</h3>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  ピンクのバラ、ラナンキュラス、トルコキキョウなど華やかな花が良く合います。
-                  花びらのボリュームがある花を選ぶと、フェミニンなインテリアがさらに華やぎます。
-                  パールホワイトやゴールドの花瓶を合わせると、より上品な空間に仕上がります。
+                  ピンクのバラ、ラナンキュラス、トルコキキョウなど、華やかな花がよく合います。
+                  花びらにボリュームのある花を選ぶと、フェミニンなインテリアがより華やかになります。
+                  パールホワイトやゴールドの花瓶を合わせると、上品な空間に仕上がります。
                 </p>
                 <div className="bg-white rounded-lg p-3">
                   <p className="text-xs text-[#999] mb-1">おすすめサービス</p>
                   <p className="text-sm text-[#666]">
-                    <span className="font-bold text-[#4A7C59]">bloomee</span> -- 多彩な花屋のアレンジで華やかなスタイルが豊富
+                    <span className="font-bold text-[#4A7C59]">bloomee</span> -- 多彩な花屋によるアレンジで、華やかなスタイルが豊富
                   </p>
                 </div>
               </div>
@@ -622,17 +622,17 @@ export default function OshareGuidePage() {
               <div className="bg-[#F8F5F0] rounded-xl p-5 border border-[#E5DDD0]">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="bg-[#8B6914] text-white text-xs font-bold px-2 py-1 rounded">クラシック</span>
-                  <h3 className="text-base font-bold text-[#333]">格式高い・上品なお部屋に</h3>
+                  <h3 className="text-base font-bold text-[#333]">格式のある上品な部屋に合わせる場合</h3>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  深い赤のバラ、白いカサブランカ、紫のトルコキキョウなど、格式のある花材が最適です。
+                  深い赤のバラ、白いカサブランカ、紫のトルコキキョウなど、格式のある花材が適しています。
                   ボリュームのある花束をリビングや玄関に飾ると、ホテルのロビーのような上質な空間を演出できます。
                   陶器や真鍮の花器と合わせると、クラシカルな雰囲気が引き立ちます。
                 </p>
                 <div className="bg-white rounded-lg p-3">
                   <p className="text-xs text-[#999] mb-1">おすすめサービス</p>
                   <p className="text-sm text-[#666]">
-                    <span className="font-bold text-[#4A7C59]">日本総合園芸</span> -- プロのアレンジとボリュームで格式ある空間を演出
+                    <span className="font-bold text-[#4A7C59]">日本総合園芸</span> -- プロのアレンジとボリュームで、格式のある空間を演出
                   </p>
                 </div>
               </div>
@@ -644,7 +644,7 @@ export default function OshareGuidePage() {
         <section id="faq" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              おしゃれな花サブスクに関するよくある質問
+              おしゃれな花のサブスクに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
@@ -683,21 +683,21 @@ export default function OshareGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-gradient-to-b from-[#E8F0EB] to-[#FDF2F8]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：おしゃれさで選ぶならAND PLANTSが最有力
+              まとめ：おしゃれさを重視する場合はAND PLANTSをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              おしゃれな花のサブスクを比較した結果、デザイン性・アレンジのセンス・トータル提案力の面でAND PLANTS（アンドプランツ）が最もおすすめです。
-              プロのフローリストによる洗練されたセレクト、独自デザインの梱包、観葉植物まで含めたトータルコーディネートが可能な点は、他サービスにない強みです。
+              当サイトでは、おしゃれな花のサブスクを比較した結果、デザイン性・アレンジのセンス・総合的な提案力の面から、AND PLANTS（アンドプランツ）を最もおすすめします。
+              プロのフローリストによる洗練されたセレクト、独自デザインの梱包、観葉植物まで含めたコーディネートが可能な点は、他サービスにない強みです。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              SNSでの投稿を楽しみたい方にはbloomee（ブルーミー）がおすすめです。
-              季節の花が届くので、毎回違う写真が撮れる楽しさがあります。
-              InstagramやXでの投稿事例も豊富で、飾り方の参考にしやすいのも利点です。
+              SNSへの投稿を楽しみたい方には、bloomee（ブルーミー）をおすすめします。
+              季節の花が届くため、毎回異なる写真を撮影できます。
+              InstagramやXでの投稿事例も多く、飾り方の参考にしやすい点も利点です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              本格的な花の美しさとボリュームを求めるなら、日本総合園芸のプレミアムプランが最適です。
-              手渡し配送で最高の状態で届く花束は、来客時やパーティーシーンでも映える格式があります。
-              自分のライフスタイルやインテリアのテイストに合わせて、最適なサービスを選んでみてください。
+              本格的な花の美しさとボリュームを求める場合は、日本総合園芸のプレミアムプランが適しています。
+              手渡し配送により良好な状態で届く花束は、来客時やパーティーの場にもふさわしい格式を備えています。
+              ライフスタイルやインテリアのテイストに合わせて、適したサービスをお選びください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
@@ -737,7 +737,7 @@ export default function OshareGuidePage() {
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
 
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -761,7 +761,7 @@ export default function OshareGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              掲載情報は2026年4月時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

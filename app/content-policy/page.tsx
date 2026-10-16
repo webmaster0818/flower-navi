@@ -50,7 +50,7 @@ export default function ContentPolicyPage() {
                     <h3 className="text-lg font-bold text-[#3D3632]">ユーザーファースト</h3>
                   </div>
                   <p className="text-sm text-[#6B5F57] leading-relaxed">
-                    お花の定期便を利用するユーザーの多様なニーズに対応し、各サービスの特性を分かりやすく発信します。「初めてお花の定期便を始める方」「コスパ重視の方」「おしゃれにこだわりたい方」など、さまざまな視点から情報を整理し、最適なサービス選びをサポートします。
+                    お花の定期便を利用するユーザーの多様なニーズに対応し、各サービスの特性をわかりやすく発信します。「初めてお花の定期便を始める方」「費用を重視する方」「おしゃれにこだわりたい方」など、さまざまな視点から情報を整理し、適切なサービス選びを支援します。
                   </p>
                 </div>
 
@@ -80,10 +80,10 @@ export default function ContentPolicyPage() {
                 <div className="bg-[#FAF7F2] rounded-xl p-6 border border-[#E8E0D8]">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#C4877A] text-white text-sm font-bold">4</span>
-                    <h3 className="text-lg font-bold text-[#3D3632]">分かりやすさ</h3>
+                    <h3 className="text-lg font-bold text-[#3D3632]">わかりやすさ</h3>
                   </div>
                   <p className="text-sm text-[#6B5F57] leading-relaxed">
-                    お花の定期便選びに必要な情報を整理して提供します。料金比較表、配送方法の違い、各サービスの特徴など、比較検討に必要な情報を図表や一覧で視覚的に分かりやすく表現しています。専門用語には解説を加え、初めての方にも理解しやすい記事づくりを心がけています。
+                    お花の定期便選びに必要な情報を整理して提供します。料金比較表、配送方法の違い、各サービスの特徴など、比較検討に必要な情報を図表や一覧でわかりやすく表現しています。専門用語には解説を加え、初めての方にも理解しやすい記事づくりを心がけています。
                   </p>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function ContentPolicyPage() {
                   <div className="flex-1 pt-1">
                     <h3 className="text-lg font-bold text-[#3D3632] mb-2">企画・調査</h3>
                     <p className="text-sm text-[#6B5F57] leading-relaxed">
-                      ユーザーが知りたい情報を徹底的にリサーチします。お花の定期便に関する検索キーワードやSNSでの口コミ傾向を分析し、ユーザーのニーズに合ったテーマを設定します。各サービスの公式サイトを確認し、最新の料金・プラン・キャンペーン情報を収集します。
+                      ユーザーが知りたい情報を入念に調査します。お花の定期便に関する検索キーワードやSNSでの口コミの傾向を分析し、ユーザーのニーズに合ったテーマを設定します。各サービスの公式サイトを確認し、最新の料金・プラン・キャンペーン情報を収集します。
                     </p>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default function ContentPolicyPage() {
                   <div className="flex-1 pt-1">
                     <h3 className="text-lg font-bold text-[#3D3632] mb-2">記事執筆</h3>
                     <p className="text-sm text-[#6B5F57] leading-relaxed">
-                      調査結果をもとに、正確で分かりやすい記事を作成します。各サービスの特徴やメリット・デメリットを公平に記載し、比較表や図を活用して視覚的に理解しやすいコンテンツを制作します。お花の定期便を初めて利用する方にも分かるよう、丁寧な解説を心がけています。
+                      調査結果をもとに、正確でわかりやすい記事を作成します。各サービスの特徴やメリット・デメリットを公平に記載し、比較表や図を活用して視覚的に理解しやすいコンテンツを制作します。お花の定期便を初めて利用する方にもわかるよう、丁寧な解説を心がけています。
                     </p>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ export default function ContentPolicyPage() {
                   <div className="flex-1 pt-1">
                     <h3 className="text-lg font-bold text-[#3D3632] mb-2">校正・公開</h3>
                     <p className="text-sm text-[#6B5F57] leading-relaxed">
-                      執筆した記事は、情報の正確性・最新性を複数の視点からチェックした上で公開します。料金やプラン内容は公式サイトと照合し、誤りがないことを確認します。表現に偏りがないか、ユーザーにとって分かりやすいかを最終確認してから掲載します。
+                      執筆した記事は、情報の正確性・最新性を複数の視点から確認したうえで公開します。料金やプラン内容は公式サイトと照合し、誤りがないことを確認します。表現に偏りがないか、ユーザーにとってわかりやすいかを最終確認してから掲載します。
                     </p>
                   </div>
                 </div>
@@ -170,7 +170,7 @@ export default function ContentPolicyPage() {
                 情報の訂正・ご意見について
               </h2>
               <p className="text-sm text-[#6B5F57] leading-relaxed text-center mb-4">
-                当サイトに掲載されている情報に誤りを発見された場合、または記事内容に関するご意見・ご要望がございましたら、お気軽にご連絡ください。確認の上、速やかに対応いたします。
+                当サイトに掲載されている情報に誤りを発見された場合や、記事内容に関するご意見・ご要望がございましたら、ご連絡ください。確認のうえ、速やかに対応いたします。
               </p>
               <div className="text-center">
                 <div className="inline-block p-4 bg-[#FAF7F2] rounded-lg border border-[#E8E0D8]">
@@ -197,7 +197,7 @@ export default function ContentPolicyPage() {
             <div>
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
               <p className="text-xs text-gray-400 mt-1">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -209,7 +209,7 @@ export default function ContentPolicyPage() {
           </div>
           <div className="border-t border-gray-600 pt-6 text-center">
             <p className="text-xs text-gray-500">
-              当サイトはアフィリエイトプログラムに参加しています。掲載情報は記事執筆時点のものです。最新情報は各公式サイトでご確認ください。
+              当サイトはアフィリエイトプログラムに参加しています。掲載情報は記事執筆時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <Link href="/terms-of-service" className="hover:text-white transition-colors">利用規約</Link>

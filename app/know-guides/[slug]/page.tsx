@@ -5,6 +5,13 @@ import Header from "@/app/components/Header";
 import { knowGuides, findKnowGuide, allKnowSlugs } from "@/data/knowGuides";
 
 const SITE_URL = "https://ohana-delivery.com";
+/** 本文中の **強調** を <strong> に変換する（素の記号が画面に出るのを防ぐ） */
+function renderBold(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") && part.length > 4 ? <strong key={i}>{part.slice(2, -2)}</strong> : part
+  );
+}
+
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -39,7 +46,7 @@ export default async function KnowGuidePage({ params }: Props) {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "ホーム", item: SITE_URL },
-              { "@type": "ListItem", position: 2, name: "Know系ナレッジ", item: `${SITE_URL}/know-guides/` },
+              { "@type": "ListItem", position: 2, name: "基礎知識", item: `${SITE_URL}/know-guides/` },
               { "@type": "ListItem", position: 3, name: g.title, item: url },
             ],
           }),
@@ -81,7 +88,7 @@ export default async function KnowGuidePage({ params }: Props) {
         <main className="max-w-4xl mx-auto px-4 py-8">
           <nav className="text-xs text-[#999] mb-4">
             <Link href="/" className="hover:underline">トップ</Link> &gt;{" "}
-            <Link href="/know-guides/" className="hover:underline">Know系ナレッジ</Link> &gt;{" "}
+            <Link href="/know-guides/" className="hover:underline">基礎知識</Link> &gt;{" "}
             <span>{g.title}</span>
           </nav>
           <header className="mb-10">
@@ -97,7 +104,7 @@ export default async function KnowGuidePage({ params }: Props) {
                   <h2 className="text-lg md:text-xl font-bold text-[#333] mb-3 pb-2 border-b border-[#E8E0D8]">
                     {s.heading}
                   </h2>
-                  <p className="text-sm text-[#666] leading-relaxed whitespace-pre-line">{s.body}</p>
+                  <p className="text-sm text-[#666] leading-relaxed whitespace-pre-line">{renderBold(s.body)}</p>
                 </div>
               ))}
             </div>

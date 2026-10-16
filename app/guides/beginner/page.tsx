@@ -7,15 +7,15 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "花のサブスクは月額いくらから始められますか？",
-    a: "最安のサービスはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送なら月額約1,496円です。bloomeeのお試しプランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。",
+    a: "当サイト掲載サービスのうち最も安いのはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送の場合、月額は約1,496円です。bloomeeのお試しプランは980円＋送料385円で、1回あたり1,365円です。まずは1,000円前後のプランから試すことをおすすめします。",
   },
   {
     q: "花のサブスクはどのくらいの頻度で届きますか？",
-    a: "サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初心者には隔週がおすすめです。届いたお花が枯れる頃に次が届くサイクルになるため、常にお花がある生活を無理なく続けられます。",
+    a: "サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初めての方には隔週をおすすめします。届いたお花が枯れる頃に次のお花が届く周期となるため、負担なく続けやすい頻度です。",
   },
   {
     q: "届いたお花はどのくらい持ちますか？",
-    a: "季節やお花の種類によりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。",
+    a: "季節やお花の種類によって異なりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。",
   },
   {
     q: "花瓶を持っていないのですが大丈夫ですか？",
@@ -23,19 +23,19 @@ const faqItems = [
   },
   {
     q: "ポスト投函と宅配便の違いは何ですか？",
-    a: "ポスト投函は不在でも受け取れる手軽さが魅力です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、状態が良いまま届きやすいメリットがあります。初心者にはポスト投函が手軽でおすすめです。",
+    a: "ポスト投函は、不在でも受け取れる点が利点です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、よい状態で届きやすいという利点があります。初めての方には、手軽なポスト投函をおすすめします。",
   },
   {
     q: "届いたお花が傷んでいた場合はどうすればいいですか？",
-    a: "品質保証制度があるサービスを選べば安心です。bloomeeの定期便は到着から2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記）。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせ時にスムーズです。",
+    a: "品質保証制度があるサービスであれば、返金・交換などの対応を受けられます。bloomeeの定期便は、到着から2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記）。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせを円滑に進められます。",
   },
   {
     q: "花のサブスクは途中で解約できますか？",
-    a: "ほとんどのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。初めてで不安な方は回数縛りなしのサービスから始めるのが安心です。",
+    a: "多くのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは最低受取回数の設定がなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。継続できるか不安な方には、最低受取回数の設定がないサービスから始めることをおすすめします。",
   },
   {
     q: "花のサブスクでお花の種類は選べますか？",
-    a: "基本的にお花の種類はおまかせです。プロの花屋やフローリストが季節のお花をセレクトして届けてくれるため、自分では選ばないようなお花との出会いを楽しめます。これが花のサブスクの大きな魅力の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。",
+    a: "基本的に、お花の種類はおまかせです。花屋やフローリストが季節のお花を選んで届けるため、ご自身では選ばないお花に触れる機会になります。これは花のサブスクの特長の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。",
   },
 ];
 
@@ -44,22 +44,22 @@ const stepData = [
   {
     step: 1,
     title: "サービスを選んで申し込む",
-    description: "公式サイトからプランを選び、配送先住所・配送頻度・支払い方法を登録します。ほとんどのサービスがクレジットカード決済に対応しています。申し込みは5分程度で完了します。",
+    description: "公式サイトからプランを選び、配送先住所・配送頻度・支払い方法を登録します。多くのサービスがクレジットカード決済に対応しています。申し込みは5分程度で完了します。",
   },
   {
     step: 2,
     title: "お花が届く",
-    description: "指定した頻度でお花が届きます。ポスト投函の場合は専用の箱でポストに届くため、不在でも受け取れます。届いたらすぐに箱から出して水に浸けましょう。",
+    description: "指定した頻度でお花が届きます。ポスト投函の場合は専用の箱でポストに届くため、不在でも受け取れます。届いたらすぐに箱から出して水に浸けてください。",
   },
   {
     step: 3,
     title: "お花を飾って楽しむ",
-    description: "届いたお花を花瓶やグラスに生けて、お部屋に飾ります。テーブル、玄関、洗面台など、目に入る場所に置くと日常が華やかになります。毎日の水替えでお花が長持ちします。",
+    description: "届いたお花を花瓶やグラスに生けて、お部屋に飾ります。テーブル、玄関、洗面台など、目に入りやすい場所に置くことをおすすめします。毎日水を替えることで、お花が長持ちします。",
   },
   {
     step: 4,
     title: "次回のお届けを待つ",
-    description: "お花が枯れる頃に次のお届けがあります。スキップ機能があるサービスなら、旅行や外出で不在の週はお届けを休止できます。自分のペースで無理なく続けられます。",
+    description: "お花が枯れる頃に次のお届けがあります。スキップ機能があるサービスであれば、旅行や外出で不在の週はお届けを休止できます。ご自身の予定に合わせて続けられます。",
   },
 ];
 
@@ -67,23 +67,23 @@ const stepData = [
 const checkPoints = [
   {
     title: "料金（花代＋送料の総額）",
-    detail: "花代だけでなく、送料を含めた1回あたりの総額で比較することが重要です。送料無料のサービスもあれば、1回あたり385〜550円の送料がかかるサービスもあります。月額は「1回あたり総額 x 月の配送回数」で計算しましょう。",
+    detail: "花代だけでなく、送料を含めた1回あたりの総額で比較することが重要です。送料無料のサービスもあれば、1回あたり385〜550円の送料がかかるサービスもあります。月額は「1回あたり総額 × 月の配送回数」で計算してください。",
   },
   {
     title: "配送方法（ポスト投函 or 宅配便）",
-    detail: "ポスト投函は不在でも受け取れる手軽さが魅力です。一方、宅配便は花の状態が良いまま届きやすいメリットがあります。一人暮らしや日中不在が多い方はポスト投函対応のサービスを選ぶと便利です。",
+    detail: "ポスト投函は、不在でも受け取れる点が利点です。一方、宅配便は花がよい状態で届きやすいという利点があります。一人暮らしの方や日中不在が多い方には、ポスト投函に対応したサービスをおすすめします。",
   },
   {
     title: "配送頻度（毎週・隔週・月1回）",
-    detail: "初心者には隔週（2週間に1回）がおすすめです。毎週だと消費が追いつかないことがあり、月1回だとお花がない期間が長くなります。隔週なら前の花が枯れる頃に次が届くちょうど良いサイクルです。",
+    detail: "初めての方には隔週（2週間に1回）をおすすめします。毎週の場合は前回の花がまだ飾られているうちに次の花が届くことがあり、月1回の場合はお花がない期間が長くなります。隔週であれば、前の花が枯れる頃に次の花が届きます。",
   },
   {
-    title: "解約条件（回数縛りの有無）",
-    detail: "サービスによっては最低受け取り回数が設定されています。bloomeeは4回の最低受け取りが条件です。初めてで続けられるか不安な方は、medeluやhanamekuのような回数縛りなしのサービスを選ぶと安心です。",
+    title: "解約条件（最低受取回数の有無）",
+    detail: "サービスによっては最低受け取り回数が設定されています。bloomeeは4回の最低受け取りが条件です。継続できるか不安な方には、medeluやhanamekuのように最低受取回数の設定がないサービスをおすすめします。",
   },
   {
     title: "品質保証の有無",
-    detail: "配送中にお花が傷んでしまうことは稀にあります。品質保証制度があるサービスなら、傷んだお花が届いた場合に再送や返金の対応を受けられます。bloomee、medelu、hanamekuはいずれも品質保証制度を設けています。",
+    detail: "配送中にお花が傷むことがまれにあります。品質保証制度があるサービスであれば、傷んだお花が届いた場合に再送や返金の対応を受けられます。bloomee、medelu、hanamekuはいずれも品質保証制度を設けています。",
   },
 ];
 
@@ -91,27 +91,27 @@ const checkPoints = [
 const mistakeData = [
   {
     mistake: "送料を考慮せずにサービスを選ぶ",
-    solution: "花代だけでなく送料込みの総額で比較しましょう。花代が安くても送料を含めると割高になるケースがあります。medeluやAND PLANTSのような送料無料のサービスは総額が明確で分かりやすいです。",
+    solution: "花代だけでなく、送料込みの総額で比較してください。花代が安くても、送料を含めると割高になる場合があります。medeluやAND PLANTSのような送料無料のサービスは、総額が明確でわかりやすいのが特長です。",
   },
   {
-    mistake: "毎週配送で始めてしまう",
-    solution: "初心者がいきなり毎週配送にすると、お花の消費が追いつかず、まだ元気な花があるのに次が届く状態になりがちです。まずは隔週から始めて、慣れてきたら頻度を上げるのがおすすめです。",
+    mistake: "最初から毎週配送で申し込む",
+    solution: "最初から毎週配送にすると、前回の花がまだ飾られているうちに次の花が届く状態になりやすくなります。まずは隔週から始め、慣れた段階で頻度を上げることをおすすめします。",
   },
   {
     mistake: "届いたお花をすぐに水に浸けない",
-    solution: "届いたお花は配送中に水分を失っています。届いたらすぐに箱から出し、茎の先端を1〜2cm斜めにカットしてから水に浸けましょう。これだけでお花の持ちが大きく変わります。",
+    solution: "届いたお花は配送中に水分を失っています。届いたらすぐに箱から出し、茎の先端を1〜2cm斜めにカットしてから水に浸けてください。この作業により、お花の持ちが大きく変わります。",
   },
   {
     mistake: "直射日光やエアコンの風が当たる場所に飾る",
-    solution: "直射日光はお花を早く傷めます。エアコンの風も乾燥の原因になります。明るい日陰で風が直接当たらない場所が最適です。玄関やリビングの窓から少し離れた場所がおすすめです。",
+    solution: "直射日光はお花を早く傷めます。エアコンの風も乾燥の原因になります。明るい日陰で、風が直接当たらない場所が適しています。玄関や、リビングの窓から少し離れた場所をおすすめします。",
   },
   {
     mistake: "水替えをしない",
-    solution: "水は毎日替えるのが理想です。最低でも2日に1回は替えましょう。水が濁ると雑菌が繁殖し、茎が腐って花の寿命が縮みます。水替えの際に花瓶の内側もさっと洗うとより効果的です。",
+    solution: "水は毎日替えることが望ましく、少なくとも2日に1回は替えてください。水が濁ると雑菌が繁殖し、茎が腐って花の寿命が縮みます。水替えの際に花瓶の内側も軽く洗うと、より長持ちします。",
   },
   {
-    mistake: "回数縛りを確認せずに申し込む",
-    solution: "解約条件は事前に必ず確認しましょう。特にbloomeeは4回の最低受け取りが条件です。「お試し」のつもりが思った以上の出費になることがあります。不安な方は回数縛りなしのサービスから始めましょう。",
+    mistake: "最低受取回数を確認せずに申し込む",
+    solution: "解約条件は事前に必ずご確認ください。特にbloomeeは4回の最低受け取りが条件です。お試しのつもりで申し込んでも、想定以上の支出になることがあります。不安な方には、最低受取回数の設定がないサービスから始めることをおすすめします。",
   },
 ];
 
@@ -124,9 +124,9 @@ export default function BeginnerGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"初心者向け 花のサブスクの選び方\",\"item\":\"https://ohana-delivery.com/guides/beginner/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"初心者向け 花のサブスクの選び方\",\"description\":\"初心者向け 花のサブスクの選び方 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/beginner/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"初心者向け 花のサブスクの選び方\",\"description\":\"初心者向けに花のサブスクの選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/beginner/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月額いくらから始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最安のサービスはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送なら月額約1,496円です。bloomeeのお試しプランは980円＋送料385円で1回あたり1,365円です。まずは1,000円前後のプランから試すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初心者には隔週がおすすめです。届いたお花が枯れる頃に次が届くサイクルになるため、常にお花がある生活を無理なく続けられます。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"季節やお花の種類によりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていないのですが大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶がなくても問題ありません。コップやグラス、空き瓶、マグカップなど、水を入れられる容器であれば代用できます。100円ショップでもシンプルな花瓶が購入できます。サブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函は不在でも受け取れる手軽さが魅力です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、状態が良いまま届きやすいメリットがあります。初心者にはポスト投函が手軽でおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"品質保証制度があるサービスを選べば安心です。bloomeeの定期便は到着から2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記）。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせ時にスムーズです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。初めてで不安な方は回数縛りなしのサービスから始めるのが安心です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクでお花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的にお花の種類はおまかせです。プロの花屋やフローリストが季節のお花をセレクトして届けてくれるため、自分では選ばないようなお花との出会いを楽しめます。これが花のサブスクの大きな魅力の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月額いくらから始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイト掲載サービスのうち最も安いのはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送の場合、月額は約1,496円です。bloomeeのお試しプランは980円＋送料385円で、1回あたり1,365円です。まずは1,000円前後のプランから試すことをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初めての方には隔週をおすすめします。届いたお花が枯れる頃に次のお花が届く周期となるため、負担なく続けやすい頻度です。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"季節やお花の種類によって異なりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていないのですが大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶がなくても問題ありません。コップやグラス、空き瓶、マグカップなど、水を入れられる容器であれば代用できます。100円ショップでもシンプルな花瓶が購入できます。サブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函は、不在でも受け取れる点が利点です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、よい状態で届きやすいという利点があります。初めての方には、手軽なポスト投函をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"品質保証制度があるサービスであれば、返金・交換などの対応を受けられます。bloomeeの定期便は、到着から2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記）。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせを円滑に進められます。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは最低受取回数の設定がなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。継続できるか不安な方には、最低受取回数の設定がないサービスから始めることをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクでお花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的に、お花の種類はおまかせです。花屋やフローリストが季節のお花を選んで届けるため、ご自身では選ばないお花に触れる機会になります。これは花のサブスクの特長の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -156,15 +156,15 @@ export default function BeginnerGuidePage() {
         <section className="bg-[#E8F0EB] py-12 md:py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
-              花サブスク初心者向け完全ガイド
+              花サブスク初心者向けガイド
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
               花サブスク初心者ガイド｜<br className="hidden md:block" />
-              失敗しない選び方と始め方を徹底解説
+              選び方と始め方を解説
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              花のサブスク（定期便）を始めたいけど「どのサービスを選べばいいの？」「届いたお花はどうすればいいの？」と悩んでいませんか。
-              この記事では、初心者が失敗しないための選び方・始め方・お花の飾り方まで、すべてを分かりやすく解説します。
+              花のサブスク（定期便）を初めて利用する方に向けて、サービスの選び方と届いたお花の扱い方をご説明します。
+              当サイトでは、サービスの選び方・申し込みの流れ・お花の飾り方までを順に解説しています。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -180,8 +180,8 @@ export default function BeginnerGuidePage() {
                 <p className="text-xl font-bold text-[#4A7C59]">5〜10日</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">解約縛りなし</p>
-                <p className="text-xl font-bold text-[#4A7C59]">複数あり</p>
+                <p className="text-xs text-[#999] mb-1">最低受取回数の設定なし</p>
+                <p className="text-xl font-bold text-[#4A7C59]">複数のサービス</p>
               </div>
             </div>
           </div>
@@ -191,15 +191,15 @@ export default function BeginnerGuidePage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">本ページの内容</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
                   <li><a href="#what-is" className="hover:text-[#4A7C59] transition-colors">1. 花のサブスク（定期便）とは</a></li>
                   <li><a href="#how-it-works" className="hover:text-[#4A7C59] transition-colors">2. 花のサブスクの仕組み（申込から届くまで）</a></li>
-                  <li><a href="#check-points" className="hover:text-[#4A7C59] transition-colors">3. 申し込み前に確認すべき5つのポイント</a></li>
+                  <li><a href="#check-points" className="hover:text-[#4A7C59] transition-colors">3. 申し込み前に確認すべき5つの項目</a></li>
                   <li><a href="#recommended" className="hover:text-[#4A7C59] transition-colors">4. 初心者におすすめのサービス</a></li>
                   <li><a href="#display-tips" className="hover:text-[#4A7C59] transition-colors">5. 届いたお花の飾り方ガイド</a></li>
-                  <li><a href="#mistakes" className="hover:text-[#4A7C59] transition-colors">6. 初心者がやりがちな失敗と対策</a></li>
+                  <li><a href="#mistakes" className="hover:text-[#4A7C59] transition-colors">6. 初めての方に多い失敗と対策</a></li>
                   <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">7. 花のサブスク初心者のよくある質問</a></li>
                   <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">8. まとめ</a></li>
                 </ol>
@@ -216,41 +216,41 @@ export default function BeginnerGuidePage() {
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
               花のサブスクとは、定期的にお花が自宅に届くサービスです。
-              「花の定期便」とも呼ばれ、毎週や隔週など決まったペースで、プロが選んだ季節のお花がポストや宅配便で届きます。
+              「花の定期便」とも呼ばれ、毎週や隔週など決まった頻度で、花屋が選んだ季節のお花がポスト投函や宅配便で届きます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              自分でお花を買いに行く必要がなく、どんなお花が届くか分からないワクワク感も楽しめます。
-              お花屋さんに行き慣れていない方でも気軽に始められるのが、花のサブスクの大きな魅力です。
+              自分でお花を買いに行く必要がなく、どのようなお花が届くかを楽しみに待つこともできます。
+              花屋を利用した経験が少ない方でも気軽に始められることが、花のサブスクの特長です。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
                 <p className="text-sm font-bold text-[#4A7C59] mb-2">手軽さ</p>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  申し込むだけで定期的にお花が届く。買いに行く手間がゼロ。
+                  申し込むだけで定期的にお花が届きます。買いに行く手間がかかりません。
                 </p>
               </div>
               <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
                 <p className="text-sm font-bold text-[#4A7C59] mb-2">お花との出会い</p>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  プロが選んだ旬のお花が届く。自分では選ばない花との出会いがある。
+                  花屋が選んだ旬のお花が届きます。ご自身では選ばない花に触れる機会になります。
                 </p>
               </div>
               <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
-                <p className="text-sm font-bold text-[#4A7C59] mb-2">リーズナブル</p>
+                <p className="text-sm font-bold text-[#4A7C59] mb-2">手頃な価格</p>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  1回748円から。花屋で買うよりも手頃な価格で始められる。
+                  1回748円から利用でき、花屋で購入するよりも手頃な価格で始められます。
                 </p>
               </div>
             </div>
 
             <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5">
-              <h3 className="text-sm font-bold text-[#333] mb-3">こんな人に向いています</h3>
+              <h3 className="text-sm font-bold text-[#333] mb-3">花のサブスクが適している方</h3>
               <ul className="text-sm text-[#666] space-y-2">
-                <li>・ お花のある暮らしを始めたいけど、何から始めればいいか分からない方</li>
-                <li>・ 仕事が忙しくてお花屋さんに行く時間がない方</li>
+                <li>・ お花のある暮らしを始めたいものの、何から始めればよいかわからない方</li>
+                <li>・ 仕事が忙しく、花屋に行く時間がない方</li>
                 <li>・ お花の知識がなくても気軽に楽しみたい方</li>
-                <li>・ インテリアに彩りをプラスしたい方</li>
+                <li>・ インテリアに彩りを加えたい方</li>
                 <li>・ 季節の移ろいをお花で感じたい方</li>
               </ul>
             </div>
@@ -264,7 +264,7 @@ export default function BeginnerGuidePage() {
               花のサブスクの仕組み（申込から届くまで）
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              花のサブスクはとてもシンプルな仕組みです。4つのステップで、お花のある暮らしが始まります。
+              花のサブスクの仕組みは簡単で、次の4つの手順で利用を始められます。
             </p>
 
             <div className="space-y-6">
@@ -284,10 +284,10 @@ export default function BeginnerGuidePage() {
             </div>
 
             <div className="mt-8 bg-[#E8F0EB] rounded-xl p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">サイクルのポイント</h3>
+              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">配送周期について</h3>
               <p className="text-sm text-[#666] leading-relaxed">
-                隔週配送の場合、届いたお花が5〜10日ほど楽しめるため、お花が枯れる頃にちょうど次のお届けが届きます。
-                旅行や出張で受け取れない週はスキップ機能を使えば、お届けをお休みできます。自分のライフスタイルに合わせて柔軟に調整できるのも花のサブスクの良いところです。
+                隔週配送の場合、届いたお花を5〜10日ほど楽しめるため、お花が枯れる頃に次のお花が届きます。
+                旅行や出張で受け取れない週は、スキップ機能を使えばお届けを休めます。ご自身の生活に合わせて調整できることも、花のサブスクの利点です。
               </p>
             </div>
           </div>
@@ -297,11 +297,11 @@ export default function BeginnerGuidePage() {
         <section id="check-points" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              申し込み前に確認すべき5つのポイント
+              申し込み前に確認すべき5つの項目
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              花のサブスクを選ぶ際に、事前に確認しておきたい5つのポイントをまとめました。
-              この5項目をチェックすれば、自分に合ったサービスを見つけられます。
+              花のサブスクを選ぶ際に、事前に確認していただきたい5つの項目をまとめています。
+              この5項目を確認することで、ご自身に合ったサービスを選びやすくなります。
             </p>
 
             <div className="space-y-5">
@@ -321,13 +321,13 @@ export default function BeginnerGuidePage() {
             </div>
 
             <div className="mt-8 bg-white rounded-xl border-2 border-[#4A7C59] p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">初心者向けの選び方まとめ</h3>
+              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">初めての方向けの選び方の要点</h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse" style={{ minWidth: "480px" }}>
                   <thead>
                     <tr className="bg-[#E8F0EB]">
                       <th className="px-3 py-2 text-left font-medium text-[#333]">項目</th>
-                      <th className="px-3 py-2 text-left font-medium text-[#333]">初心者おすすめ</th>
+                      <th className="px-3 py-2 text-left font-medium text-[#333]">初めての方へのおすすめ</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -345,7 +345,7 @@ export default function BeginnerGuidePage() {
                     </tr>
                     <tr className="border-t border-[#E5E5E5]">
                       <td className="px-3 py-2 text-[#666]">解約条件</td>
-                      <td className="px-3 py-2 text-[#666]">回数縛りなし</td>
+                      <td className="px-3 py-2 text-[#666]">最低受取回数の設定なし</td>
                     </tr>
                     <tr className="border-t border-[#E5E5E5]">
                       <td className="px-3 py-2 text-[#666]">品質保証</td>
@@ -365,23 +365,23 @@ export default function BeginnerGuidePage() {
               初心者におすすめのサービス
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              数ある花のサブスクの中から、初心者が最初に選ぶべきサービスを厳選しました。
-              安心感・コスパ・始めやすさの観点から、まずはこの2つを検討してみてください。
+              当サイトでは、初めての方に適したサービスとして、次の2つをご紹介します。
+              安心感・費用対効果・始めやすさの観点から選定しています。
             </p>
 
             {/* bloomee - Primary Recommendation */}
             <div className="bg-white rounded-xl border-2 border-[#4A7C59] overflow-hidden mb-6">
               <div className="px-5 py-4 bg-[#E8F0EB] border-b border-[#C5D9CB] flex items-center gap-3">
                 <span className="bg-[#4A7C59] text-white text-xs font-bold px-3 py-1 rounded">
-                  初心者に一番おすすめ
+                  初めての方に特におすすめ
                 </span>
                 <h3 className="text-lg font-bold text-[#333]">bloomee（ブルーミー）</h3>
               </div>
               <div className="p-5">
                 <p className="text-sm text-[#666] leading-relaxed mb-5">
                   bloomeeは累計3,000万本以上のお届け実績を持つ、日本最大級の花のサブスクサービスです。
-                  利用者のSNS投稿やレビュー記事が多く、飾り方の参考情報を探しやすいサービスです。
-                  季節の花が届くため、届くたびに違う花を楽しめます。お試し・グリーンプランはポストに半投函の形で届きます。
+                  利用者のSNS投稿やレビュー記事が多く、飾り方の参考情報を探しやすい点が特長です。
+                  季節の花が届くため、届くたびに異なる花を楽しめます。お試し・グリーンプランは、ポストへの半投函の形で届きます。
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
@@ -413,7 +413,7 @@ export default function BeginnerGuidePage() {
                     <span className="text-[#333]">毎週 / 隔週</span>
                   </div>
                   <div className="flex">
-                    <span className="text-[#999] w-28 shrink-0">回数縛り</span>
+                    <span className="text-[#999] w-28 shrink-0">最低受取回数</span>
                     <span className="text-[#333]">4回</span>
                   </div>
                   <div className="flex">
@@ -423,12 +423,12 @@ export default function BeginnerGuidePage() {
                 </div>
 
                 <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
-                  <p className="text-sm font-bold text-[#4A7C59] mb-2">初心者におすすめの理由</p>
+                  <p className="text-sm font-bold text-[#4A7C59] mb-2">初めての方におすすめする理由</p>
                   <ul className="text-sm text-[#666] space-y-1.5">
                     <li>・ 花代980円から始められる</li>
                     <li>・ 定期便は2週間以内の連絡で返金・交換の対象（公式・特定商取引法に基づく表記）</li>
-                    <li>・ SNSに口コミが多く、飾り方の参考情報が豊富</li>
-                    <li>・ ポスト投函対応で、不在でも受け取れる</li>
+                    <li>・ SNSに口コミが多く、飾り方の参考情報が多い</li>
+                    <li>・ ポスト投函に対応しており、不在でも受け取れる</li>
                     <li>・ 4回目以降は隔週への変更や、週単位のストップ・再開ができる</li>
                   </ul>
                 </div>
@@ -436,8 +436,8 @@ export default function BeginnerGuidePage() {
                 <div className="bg-[#FDF5F5] rounded-lg p-4 mb-5 border border-[#F0D0D0]">
                   <p className="text-sm font-bold text-[#333] mb-1">注意点</p>
                   <p className="text-sm text-[#666] leading-relaxed">
-                    最低4回の受け取りが条件です。4回受け取り前に解約すると残り回数分の料金が発生します。
-                    隔週の場合、約2か月間は継続することになります。
+                    最低4回の受け取りが条件です。4回受け取る前に解約すると、残り回数分の料金が発生します。
+                    隔週の場合、約2か月間は継続する必要があります。
                   </p>
                 </div>
 
@@ -454,7 +454,7 @@ export default function BeginnerGuidePage() {
                     rel="noopener noreferrer nofollow"
                     className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"
                   >
-                    bloomee公式サイトはこちら
+                    bloomee公式サイトを見る
                   </a>
                 </div>
               </div>
@@ -464,15 +464,15 @@ export default function BeginnerGuidePage() {
             <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
               <div className="px-5 py-4 bg-[#FFFBEB] border-b border-[#F59E0B] flex items-center gap-3">
                 <span className="bg-[#F59E0B] text-white text-xs font-bold px-3 py-1 rounded">
-                  コスパ重視ならこちら
+                  費用を抑えたい方に
                 </span>
                 <h3 className="text-lg font-bold text-[#333]">medelu（メデル）</h3>
               </div>
               <div className="p-5">
                 <p className="text-sm text-[#666] leading-relaxed mb-5">
-                  medeluは送料無料・回数縛りなしで、最も気軽に始められる花のサブスクです。
-                  Miniプランは1回748円で業界最安水準。市場直送の仕組みにより中間コストを削減し、低価格と新鮮さを両立しています。
-                  「まずは安く試してみたい」「合わなければすぐに解約したい」という方に最適です。
+                  medeluは送料無料で最低受取回数の設定がなく、気軽に始めやすい花のサブスクです。
+                  Miniプランは1回748円で、業界でも低い価格水準です。市場直送の仕組みにより中間コストを削減し、低価格と鮮度を両立しています。
+                  費用を抑えて試したい方や、合わない場合にすぐ解約したい方に適しています。
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
@@ -504,7 +504,7 @@ export default function BeginnerGuidePage() {
                     <span className="text-[#333]">毎週 / 隔週</span>
                   </div>
                   <div className="flex">
-                    <span className="text-[#999] w-28 shrink-0">回数縛り</span>
+                    <span className="text-[#999] w-28 shrink-0">最低受取回数</span>
                     <span className="text-[#333]">なし</span>
                   </div>
                   <div className="flex">
@@ -514,13 +514,13 @@ export default function BeginnerGuidePage() {
                 </div>
 
                 <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
-                  <p className="text-sm font-bold text-[#4A7C59] mb-2">初心者におすすめの理由</p>
+                  <p className="text-sm font-bold text-[#4A7C59] mb-2">初めての方におすすめする理由</p>
                   <ul className="text-sm text-[#666] space-y-1.5">
-                    <li>・ 業界最安水準の748円/回（送料無料）で始められる</li>
-                    <li>・ 回数縛りなしで、合わなければいつでも解約可能</li>
-                    <li>・ 送料無料だから、表示価格＝支払い総額で分かりやすい</li>
-                    <li>・ 市場直送で新鮮なお花が届く</li>
-                    <li>・ スキップも自由にできる</li>
+                    <li>・ 業界でも低い価格水準の748円/回（送料無料）で始められる</li>
+                    <li>・ 最低受取回数の設定がなく、いつでも解約可能</li>
+                    <li>・ 送料無料のため、表示価格と支払総額が一致しわかりやすい</li>
+                    <li>・ 市場直送のため、鮮度の高いお花が届く</li>
+                    <li>・ スキップの手続きができる</li>
                   </ul>
                 </div>
 
@@ -537,7 +537,7 @@ export default function BeginnerGuidePage() {
                     rel="noopener noreferrer nofollow"
                     className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"
                   >
-                    medelu公式サイトはこちら
+                    medelu公式サイトを見る
                   </a>
                 </div>
               </div>
@@ -567,7 +567,7 @@ export default function BeginnerGuidePage() {
                       <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">無料</td>
                     </tr>
                     <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">回数縛り</td>
+                      <td className="px-3 py-2 text-[#666]">最低受取回数</td>
                       <td className="px-3 py-2 text-center text-[#333]">4回</td>
                       <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">なし</td>
                     </tr>
@@ -578,13 +578,13 @@ export default function BeginnerGuidePage() {
                     </tr>
                     <tr className="border-t border-[#E5E5E5]">
                       <td className="px-3 py-2 text-[#666]">知名度</td>
-                      <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">No.1</td>
+                      <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">高い</td>
                       <td className="px-3 py-2 text-center text-[#333]">中程度</td>
                     </tr>
                     <tr className="border-t border-[#E5E5E5]">
                       <td className="px-3 py-2 text-[#666]">おすすめの人</td>
                       <td className="px-3 py-2 text-center text-[#666]">安心感重視</td>
-                      <td className="px-3 py-2 text-center text-[#666]">コスパ重視</td>
+                      <td className="px-3 py-2 text-center text-[#666]">費用重視</td>
                     </tr>
                   </tbody>
                 </table>
@@ -600,7 +600,7 @@ export default function BeginnerGuidePage() {
               届いたお花の飾り方ガイド
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              届いたお花を長く楽しむためのコツを、花瓶の選び方・水替え・置き場所の3つの観点で解説します。
+              届いたお花を長く楽しむための方法を、花瓶の選び方・水替え・置き場所の3つの観点からご説明します。
             </p>
 
             {/* Vase Selection */}
@@ -611,14 +611,14 @@ export default function BeginnerGuidePage() {
               </h3>
               <p className="text-sm text-[#666] leading-relaxed mb-4">
                 花のサブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。
-                口径5〜8cm、高さ15〜20cm程度の小さめの花瓶がちょうど良いサイズです。
+                口径5〜8cm、高さ15〜20cm程度の小さめの花瓶が適しています。
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-lg p-4 border border-[#E5E5E5]">
-                  <p className="text-sm font-bold text-[#333] mb-2">初心者向けの花瓶</p>
+                  <p className="text-sm font-bold text-[#333] mb-2">初めての方に適した花瓶</p>
                   <ul className="text-sm text-[#666] space-y-1.5">
                     <li>・ 口が狭めのもの（花がまとまりやすい）</li>
-                    <li>・ 透明なガラス製（水の汚れが分かりやすい）</li>
+                    <li>・ 透明なガラス製（水の汚れがわかりやすい）</li>
                     <li>・ 安定感のある底が広いもの</li>
                     <li>・ 100円ショップのもので十分</li>
                   </ul>
@@ -639,17 +639,17 @@ export default function BeginnerGuidePage() {
             <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5 mb-6">
               <h3 className="text-base font-bold text-[#333] mb-3 flex items-center gap-2">
                 <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#4A7C59] text-white text-xs font-bold">2</span>
-                水替えのコツ
+                水替えの方法
               </h3>
               <p className="text-sm text-[#666] leading-relaxed mb-4">
                 水替えはお花を長持ちさせるために最も重要なお手入れです。
-                毎日替えるのが理想ですが、最低でも2日に1回は行いましょう。
+                毎日替えることが望ましく、少なくとも2日に1回は行ってください。
               </p>
               <div className="bg-white rounded-lg p-4 border border-[#E5E5E5]">
                 <p className="text-sm font-bold text-[#333] mb-3">水替えの手順</p>
                 <ol className="text-sm text-[#666] space-y-2">
                   <li>1. 花瓶から花を取り出す</li>
-                  <li>2. 花瓶の内側をスポンジや指でさっと洗う（ぬめりを取る）</li>
+                  <li>2. 花瓶の内側をスポンジや指で軽く洗う（ぬめりを取る）</li>
                   <li>3. 茎の先端を1〜2cm斜めにカットする（水切り）</li>
                   <li>4. 新しい水を花瓶の半分〜7分目まで入れる</li>
                   <li>5. 枯れた花や変色した葉があれば取り除く</li>
@@ -657,9 +657,9 @@ export default function BeginnerGuidePage() {
                 </ol>
               </div>
               <div className="mt-4 bg-[#E8F0EB] rounded-lg p-4">
-                <p className="text-sm font-bold text-[#4A7C59] mb-1">ワンポイント</p>
+                <p className="text-sm font-bold text-[#4A7C59] mb-1">補足</p>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  茎を切るときは、よく切れるハサミを使い、水の中で切る「水切り」がベストです。
+                  茎を切る際は、よく切れるハサミを使い、水の中で切る「水切り」をおすすめします。
                   切り口を斜めにすることで、水を吸い上げる面積が大きくなり、お花が長持ちします。
                   キッチンバサミでも代用できます。
                 </p>
@@ -684,7 +684,7 @@ export default function BeginnerGuidePage() {
                     <li>・ 玄関（帰宅時に目に入る）</li>
                     <li>・ ダイニングテーブル</li>
                     <li>・ 洗面台（朝の身支度が華やかに）</li>
-                    <li>・ デスク周り（仕事中の癒し）</li>
+                    <li>・ デスク周り（仕事中の気分転換に）</li>
                   </ul>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-[#E5E5E5]">
@@ -705,11 +705,11 @@ export default function BeginnerGuidePage() {
         <section id="mistakes" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              初心者がやりがちな失敗と対策
+              初めての方に多い失敗と対策
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              花のサブスクを始めたばかりの方がやりがちな失敗パターンと、その対策をまとめました。
-              事前に知っておくことで、快適にお花のある暮らしを始められます。
+              花のサブスクを始めたばかりの方に多い失敗例と、その対策をまとめています。
+              事前に把握しておくことで、円滑に利用を始められます。
             </p>
 
             <div className="space-y-4">
@@ -718,7 +718,7 @@ export default function BeginnerGuidePage() {
                   <div className="px-5 py-4">
                     <div className="flex items-start gap-3 mb-3">
                       <span className="bg-[#FDF5F5] text-[#C53030] text-xs font-bold px-2 py-1 rounded border border-[#F0D0D0] shrink-0">
-                        NG
+                        失敗例
                       </span>
                       <p className="text-sm font-bold text-[#333]">{item.mistake}</p>
                     </div>
@@ -778,23 +778,23 @@ export default function BeginnerGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：初心者はbloomeeかmedeluから始めよう
+              まとめ：初めての方にはbloomeeかmedeluをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花のサブスクは、申し込むだけで定期的にプロが選んだお花が届く便利なサービスです。
-              お花屋さんに行く手間がなく、季節のお花との出会いを楽しめます。
+              花のサブスクは、申し込むだけで花屋が選んだお花が定期的に届くサービスです。
+              花屋に行く手間がかからず、季節のお花を楽しめます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              初心者がサービスを選ぶ際は、料金（送料込みの総額）・配送方法・配送頻度・解約条件・品質保証の5点を確認しましょう。
-              迷ったら、知名度と安心感のbloomee、コスパと気軽さのmedeluのどちらかから始めるのがおすすめです。
+              初めてサービスを選ぶ際は、料金（送料込みの総額）・配送方法・配送頻度・解約条件・品質保証の5点をご確認ください。
+              選択に迷う場合は、知名度と安心感を重視するならbloomee、費用と始めやすさを重視するならmedeluをおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              届いたお花は、こまめな水替えと適切な置き場所を心がけるだけで、5〜10日ほど楽しめます。
-              まずは隔週配送でお花のある暮らしを体験してみてください。
+              届いたお花は、こまめな水替えと適切な置き場所を心がけることで、5〜10日ほど楽しめます。
+              まずは隔週配送から始めることをおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              花のサブスクは「始めてみたら想像以上に良かった」という声が多いサービスです。
-              この記事を参考に、あなたもお花のある暮らしを始めてみませんか。
+              花のサブスクは、利用を始めた方から満足の声が多く寄せられているサービスです。
+              サービス選びの際に、本ページの内容をご活用ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
@@ -842,7 +842,7 @@ export default function BeginnerGuidePage() {
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
 
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -866,7 +866,7 @@ export default function BeginnerGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              掲載情報は2026年4月時点のものです。ご利用前に、各公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

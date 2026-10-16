@@ -7,7 +7,7 @@ const SITE_URL = "https://ohana-delivery.com";
 
 export const metadata: Metadata = {
   title: "地域別の花のサブスクおすすめ｜配送対応エリアガイド｜flowerデリ",
-  description: "東京・大阪・名古屋・横浜・福岡・札幌・仙台・京都の地域別に最適な花のサブスクを徹底解説。配送対応・気候別ケア・地域文化を網羅。",
+  description: "東京・大阪・名古屋・横浜・福岡・札幌・仙台・京都など、地域別に適した花のサブスクを解説します。配送への対応、気候に合わせた手入れ、地域の花文化をまとめています。",
   alternates: { canonical: "/regions/" },
 };
 
@@ -58,8 +58,8 @@ export default function RegionsIndexPage() {
             </h1>
             <p className="text-base text-[#666] leading-relaxed">
               花のサブスクは『配送対応エリア』『気候による花持ち』『地域の花文化』など、
-              お住まいの地域によって選び方が変わります。本ガイドでは {regions.length} 地域別に、最適なサービス・配送注意点・地域文化を徹底解説。
-              気候別の花のケア方法も網羅しているため、年間を通じて最適な花のサブスク体験ができます。
+              お住まいの地域によって選び方が変わります。当サイトでは{regions.length}地域について、適したサービス・配送の注意点・地域の花文化を解説しています。
+              気候に合わせた花の手入れ方法も掲載していますので、年間を通じた花のサブスク選びにお役立てください。
             </p>
           </header>
 
@@ -76,7 +76,7 @@ export default function RegionsIndexPage() {
                 >
                   <h3 className="font-bold text-[#333] mb-2 leading-snug">{r.title}</h3>
                   <p className="text-sm text-[#666] leading-relaxed line-clamp-3">{r.description}</p>
-                  <p className="mt-3 text-xs text-[#4A7C59] font-bold">詳しく見る →</p>
+                  <p className="mt-3 text-xs text-[#4A7C59] font-bold">詳細を確認する →</p>
                 </Link>
               ))}
             </div>

@@ -7,23 +7,23 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "花のサブスクを母の日ギフトとして贈ることはできますか？",
-    a: "はい、多くのサービスでギフト対応が可能です。bloomeeではギフトチケットを購入して贈ることができ、受け取った方が好きなタイミングで花の定期便を始められます。HitoHanaではメッセージカード付きで届け先を指定でき、AND PLANTSもギフト対応に力を入れています。",
+    a: "はい、多くのサービスがギフトに対応しています。bloomeeではギフトチケットを購入して贈ることができ、受け取った方がお好きなタイミングで花の定期便を開始できます。HitoHanaではメッセージカードを添えて届け先を指定でき、AND PLANTSもギフト対応に注力しています。",
   },
   {
     q: "母の日ギフトにおすすめの予算はいくらですか？",
-    a: "花のサブスクのギフトとしては、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットなら金額を選べますし、HitoHanaなら1回あたり1,320〜4,950円（Lite〜LL）のプランが選べます。1回分だけでなく、3ヶ月分をまとめてギフトにするとより喜ばれます。",
+    a: "花のサブスクのギフトでは、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットは金額を選択でき、HitoHanaでは1回あたり1,320〜4,950円（Lite〜LL）のプランから選べます。1回分だけでなく、3か月分をまとめて贈る方法もおすすめです。",
   },
   {
-    q: "母の日に届くように日付指定できますか？",
-    a: "サービスによって対応が異なります。HitoHanaでは配送日の日付指定が可能で、母の日当日に届けることができます。bloomeeのギフトチケットは受け取った方が自分で開始日を設定するため、日付指定ではなくチケット自体を母の日に渡す形になります。AND PLANTSも配送日の相談が可能です。",
+    q: "母の日に届くように日付を指定できますか？",
+    a: "対応はサービスによって異なります。HitoHanaでは配送日を指定でき、母の日当日に届けることができます。bloomeeのギフトチケットは、受け取った方がご自身で開始日を設定するため、配送日を指定するのではなく、チケットそのものを母の日に渡す形になります。AND PLANTSも配送日の相談が可能です。",
   },
   {
     q: "遠方の母に贈ることはできますか？",
-    a: "はい、花のサブスクは配送先を指定できるため、離れて暮らすお母さんにも届けられます。日本全国対応（一部離島を除く）のサービスがほとんどですので、遠方でも問題ありません。事前にお届け先の住所を確認しておきましょう。",
+    a: "はい、花のサブスクは配送先を指定できるため、離れて暮らすお母さんにも届けられます。ほとんどのサービスが日本全国（一部離島を除く）に対応しているため、遠方でも利用できます。事前にお届け先の住所をご確認ください。",
   },
   {
     q: "母がお花のサブスクを気に入らなかった場合、解約できますか？",
-    a: "回数縛りのないサービス（medelu、AND PLANTS、HitoHanaなど）なら、いつでも解約可能です。bloomeeは4回の最低受け取り回数がありますが、ギフトチケットの場合はチケット分の回数のみで自動更新はされません。ギフトとして贈る場合は、回数が限定されているプランやチケットを選ぶと、お母さんが気軽に試せます。",
+    a: "回数の条件がないサービス（medelu、AND PLANTS、HitoHanaなど）であれば、いつでも解約できます。bloomeeには4回の最低受け取り回数がありますが、ギフトチケットの場合はチケット分の回数のみで、自動更新はされません。ギフトとして贈る場合は、回数が限定されているプランやチケットを選ぶと、お母さんが気軽に試せます。",
   },
 ];
 
@@ -34,16 +34,16 @@ export default function MothersDayGuidePage() {
   return (
     <>
         {/* JSONLD_INJECTED_v1 #0 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"母の日に贈る花のサブスクおすすめ\",\"item\":\"https://ohana-delivery.com/guides/mothers-day/\"}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"母の日に贈るおすすめの花のサブスク\",\"item\":\"https://ohana-delivery.com/guides/mothers-day/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"母の日に贈る花のサブスクおすすめ\",\"description\":\"母の日に贈る花のサブスクおすすめ を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/mothers-day/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"母の日に贈るおすすめの花のサブスク\",\"description\":\"母の日に贈る花のサブスクについて、おすすめのサービス・料金・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/mothers-day/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクを母の日ギフトとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスでギフト対応が可能です。bloomeeではギフトチケットを購入して贈ることができ、受け取った方が好きなタイミングで花の定期便を始められます。HitoHanaではメッセージカード付きで届け先を指定でき、AND PLANTSもギフト対応に力を入れています。\"}},{\"@type\":\"Question\",\"name\":\"母の日ギフトにおすすめの予算はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花のサブスクのギフトとしては、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットなら金額を選べますし、HitoHanaなら1回あたり1,320〜4,950円（Lite〜LL）のプランが選べます。1回分だけでなく、3ヶ月分をまとめてギフトにするとより喜ばれます。\"}},{\"@type\":\"Question\",\"name\":\"母の日に届くように日付指定できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって対応が異なります。HitoHanaでは配送日の日付指定が可能で、母の日当日に届けることができます。bloomeeのギフトチケットは受け取った方が自分で開始日を設定するため、日付指定ではなくチケット自体を母の日に渡す形になります。AND PLANTSも配送日の相談が可能です。\"}},{\"@type\":\"Question\",\"name\":\"遠方の母に贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、花のサブスクは配送先を指定できるため、離れて暮らすお母さんにも届けられます。日本全国対応（一部離島を除く）のサービスがほとんどですので、遠方でも問題ありません。事前にお届け先の住所を確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"母がお花のサブスクを気に入らなかった場合、解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"回数縛りのないサービス（medelu、AND PLANTS、HitoHanaなど）なら、いつでも解約可能です。bloomeeは4回の最低受け取り回数がありますが、ギフトチケットの場合はチケット分の回数のみで自動更新はされません。ギフトとして贈る場合は、回数が限定されているプランやチケットを選ぶと、お母さんが気軽に試せます。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクを母の日ギフトとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスがギフトに対応しています。bloomeeではギフトチケットを購入して贈ることができ、受け取った方がお好きなタイミングで花の定期便を開始できます。HitoHanaではメッセージカードを添えて届け先を指定でき、AND PLANTSもギフト対応に注力しています。\"}},{\"@type\":\"Question\",\"name\":\"母の日ギフトにおすすめの予算はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花のサブスクのギフトでは、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットは金額を選択でき、HitoHanaでは1回あたり1,320〜4,950円（Lite〜LL）のプランから選べます。1回分だけでなく、3か月分をまとめて贈る方法もおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"母の日に届くように日付を指定できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"対応はサービスによって異なります。HitoHanaでは配送日を指定でき、母の日当日に届けることができます。bloomeeのギフトチケットは、受け取った方がご自身で開始日を設定するため、配送日を指定するのではなく、チケットそのものを母の日に渡す形になります。AND PLANTSも配送日の相談が可能です。\"}},{\"@type\":\"Question\",\"name\":\"遠方の母に贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、花のサブスクは配送先を指定できるため、離れて暮らすお母さんにも届けられます。ほとんどのサービスが日本全国（一部離島を除く）に対応しているため、遠方でも利用できます。事前にお届け先の住所をご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"母がお花のサブスクを気に入らなかった場合、解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"回数の条件がないサービス（medelu、AND PLANTS、HitoHanaなど）であれば、いつでも解約できます。bloomeeには4回の最低受け取り回数がありますが、ギフトチケットの場合はチケット分の回数のみで、自動更新はされません。ギフトとして贈る場合は、回数が限定されているプランやチケットを選ぶと、お母さんが気軽に試せます。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <title>花のサブスクを母の日にプレゼント｜おすすめギフト3選【2026年】</title>
-      <meta name="description" content="花のサブスクを母の日ギフトに贈る方法を徹底解説。おすすめサービス3選や予算別の選び方、注意点を紹介。毎月届くお花のプレゼントで、お母さんに長く楽しんでもらえます。" />
+      <title>花のサブスクを母の日のプレゼントに｜おすすめギフト3選【2026年】</title>
+      <meta name="description" content="花のサブスクを母の日のギフトとして贈る方法を解説します。当サイトでは、おすすめのサービス3選、予算別の選び方、注意点をご紹介します。毎月花が届くため、お母さんに長く楽しんでいただけます。" />
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
@@ -68,13 +68,13 @@ export default function MothersDayGuidePage() {
               母の日ギフトガイド
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              花のサブスクを母の日にプレゼント<br className="hidden md:block" />
+              花のサブスクを母の日のプレゼントに<br className="hidden md:block" />
               おすすめギフト3選【2026年】
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              2026年の母の日は5月10日（日）。今年は一度きりの花束ではなく、
-              毎月届く「花のサブスク」をプレゼントしてみませんか？
-              長く楽しめるギフトとして注目の花の定期便、おすすめ3選をご紹介します。
+              2026年の母の日は5月10日（日）です。一度きりの花束に代えて、
+              毎月花が届く花のサブスクを贈る方法があります。
+              当サイトでは、長く楽しめるギフトとして、おすすめの花の定期便3選をご紹介します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -87,7 +87,7 @@ export default function MothersDayGuidePage() {
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">おすすめ</p>
-                <p className="text-xl font-bold text-[#C4877A]">厳選3サービス</p>
+                <p className="text-xl font-bold text-[#C4877A]">3サービス</p>
               </div>
             </div>
           </div>
@@ -97,11 +97,11 @@ export default function MothersDayGuidePage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
               <ol className="text-sm text-[#666] space-y-2">
-                <li><a href="#why-subscription" className="hover:text-[#4A7C59] transition-colors">1. 花のサブスクが母の日ギフトに最適な理由</a></li>
+                <li><a href="#why-subscription" className="hover:text-[#4A7C59] transition-colors">1. 花のサブスクが母の日のギフトに適している理由</a></li>
                 <li><a href="#recommend-3" className="hover:text-[#4A7C59] transition-colors">2. おすすめサービス3選</a></li>
-                <li><a href="#budget" className="hover:text-[#4A7C59] transition-colors">3. 予算別おすすめ</a></li>
+                <li><a href="#budget" className="hover:text-[#4A7C59] transition-colors">3. 予算別のおすすめプラン</a></li>
                 <li><a href="#cautions" className="hover:text-[#4A7C59] transition-colors">4. 贈る際の注意点</a></li>
                 <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">5. よくある質問</a></li>
               </ol>
@@ -113,29 +113,29 @@ export default function MothersDayGuidePage() {
         <section id="why-subscription" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#C4877A]">
-              花のサブスクが母の日ギフトに最適な理由
+              花のサブスクが母の日のギフトに適している理由
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              母の日にカーネーションの花束を贈るのは定番ですが、花束は1〜2週間で枯れてしまいます。花のサブスクなら毎月新しい花が届くため、「ありがとう」の気持ちを長く届け続けることができます。
+              母の日にカーネーションの花束を贈ることは一般的ですが、花束は1〜2週間で枯れてしまいます。花のサブスクであれば毎月新しい花が届くため、感謝の気持ちを長く伝え続けることができます。
             </p>
 
             <div className="space-y-4">
               <div className="bg-[#FFF5F5] rounded-xl p-5 border border-[#F0D8D8]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">毎回届くサプライズ感</h3>
+                <h3 className="text-sm font-bold text-[#333] mb-2">毎回異なる花が届く</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  花のサブスクは、毎回届く花の種類が異なります。「今月はどんな花が届くかな？」というワクワク感が、母の日の一度きりのプレゼントにはない魅力です。季節の花が届くたびに、お子さんからの贈り物であることを思い出してもらえます。
+                  花のサブスクでは、毎回異なる種類の花が届きます。次にどの花が届くかを楽しみに待てる点は、一度きりのプレゼントにはない魅力です。季節の花が届くたびに、お子さんからの贈り物であることを思い出していただけます。
                 </p>
               </div>
               <div className="bg-[#FFF5F5] rounded-xl p-5 border border-[#F0D8D8]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">数ヶ月にわたって楽しめる</h3>
+                <h3 className="text-sm font-bold text-[#333] mb-2">数か月にわたって楽しめる</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  3ヶ月分のギフトなら、母の日の5月から7月まで花が届き続けます。花束が1〜2週間で終わるのに対し、サブスクギフトは長期間にわたって「花のある暮らし」を楽しんでもらえます。6ヶ月や1年分のギフトならさらに長く喜んでもらえるでしょう。
+                  3か月分のギフトであれば、母の日の5月から7月まで花が届きます。花束が1〜2週間で終わるのに対し、サブスクのギフトは長期間にわたって花のある暮らしを楽しんでいただけます。6か月分や1年分のギフトであれば、さらに長く楽しんでいただけます。
                 </p>
               </div>
               <div className="bg-[#FFF5F5] rounded-xl p-5 border border-[#F0D8D8]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">手間いらずで受け取れる</h3>
+                <h3 className="text-sm font-bold text-[#333] mb-2">受け取りの負担が少ない</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  ポスト投函対応のサービスなら、お母さんが不在でも受け取れます。重い花瓶付きのフラワーアレンジメントと違い、コンパクトなパッケージで届くため、受け取りの負担もありません。届いたら水切りをして花瓶に飾るだけの簡単さも魅力です。
+                  ポスト投函に対応したサービスであれば、お母さんが不在でも受け取れます。重い花瓶付きのフラワーアレンジメントと異なり、コンパクトなパッケージで届くため、受け取りの負担もありません。届いた後は、水切りをして花瓶に生けるだけで飾れます。
                 </p>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function MothersDayGuidePage() {
                   <h3 className="text-base font-bold text-[#333]">bloomee（ブルーミー）のギフトチケット</h3>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed mb-4">
-                  bloomeeでは母の日にぴったりな「花の定期便ギフトチケット」を販売しています。チケットを購入してお母さんに贈ると、お母さん自身が好きなタイミングで花の定期便を開始できます。金額も選べるため、予算に合わせたギフトが可能です。
+                  bloomeeでは、母の日のギフトに適した「花の定期便ギフトチケット」を販売しています。チケットを購入してお母さんに贈ると、お母さんご自身がお好きなタイミングで花の定期便を開始できます。金額も選べるため、予算に合わせて贈ることができます。
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
@@ -174,7 +174,7 @@ export default function MothersDayGuidePage() {
                   </div>
                 </div>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">ポイント：相手が好きなタイミングで始められるため、「もう花のサブスクを利用している」「いつ届くかわからないと困る」という方にも安心して贈れます。</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">ポイント：受け取った方がお好きなタイミングで開始できるため、「もう花のサブスクを利用している」「いつ届くかわからないと困る」という方にも安心して贈れます。</p>
                 </div>
               </div>
 
@@ -185,7 +185,7 @@ export default function MothersDayGuidePage() {
                   <h3 className="text-base font-bold text-[#333]">AND PLANTS（アンドプランツ）</h3>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed mb-4">
-                  AND PLANTSはプロのフローリストによるおしゃれなアレンジが特徴。ボリュームのある花束が送料無料で届きます。ギフト対応にも力を入れており、届け先を指定することで直接お母さんの元にお届けできます。見栄えが良く、花好きなお母さんへのプレゼントに最適です。
+                  AND PLANTSは、プロのフローリストによるおしゃれなアレンジが特徴です。ボリュームのある花束が送料無料で届きます。ギフト対応にも注力しており、届け先を指定することで、お母さんのもとへ直接お届けできます。見栄えが良く、花がお好きなお母さんへのプレゼントに適しています。
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
@@ -202,7 +202,7 @@ export default function MothersDayGuidePage() {
                   </div>
                 </div>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">ポイント：ボリュームがあっておしゃれなアレンジが届くため、「見栄えのするプレゼントを贈りたい」という方におすすめ。送料無料・回数縛りなしも嬉しいポイントです。</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">ポイント：ボリュームのあるおしゃれなアレンジが届くため、見栄えのするプレゼントを贈りたい方におすすめです。送料無料で、回数の条件がない点も利点です。</p>
                 </div>
               </div>
 
@@ -213,7 +213,7 @@ export default function MothersDayGuidePage() {
                   <h3 className="text-base font-bold text-[#333]">HitoHana（ひとはな）</h3>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed mb-4">
-                  HitoHanaは花の色やスタイルを自分で選べるのが最大の特徴です。「お母さんはピンクが好きだから」「和風のアレンジが合いそう」といった細かいリクエストに対応可能。メッセージカード付きで届けられるため、感謝の気持ちを花と一緒に届けられます。ボリュームも豪華で、ギフトにふさわしい華やかさがあります。
+                  HitoHanaは、花の色やスタイルを選べる点が最大の特徴です。「お母さんはピンクが好きだから」「和風のアレンジが合いそう」といった細かい要望にも対応しています。メッセージカードを添えて届けられるため、感謝の気持ちを花と一緒に伝えられます。ボリュームもあり、ギフトにふさわしい華やかさがあります。
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
@@ -226,11 +226,11 @@ export default function MothersDayGuidePage() {
                   </div>
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
                     <p className="text-xs text-[#999]">特徴</p>
-                    <p className="text-sm font-bold text-[#333]">色指定OK</p>
+                    <p className="text-sm font-bold text-[#333]">色指定が可能</p>
                   </div>
                 </div>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">ポイント：花の色やボリュームを選べるため、お母さんの好みに合わせたギフトが可能。メッセージカードに手書きの感謝を添えられるのも嬉しいポイントです。</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">ポイント：花の色やボリュームを選べるため、お母さんの好みに合わせて贈ることができます。メッセージカードに手書きで感謝の言葉を添えられる点も利点です。</p>
                 </div>
               </div>
             </div>
@@ -241,17 +241,17 @@ export default function MothersDayGuidePage() {
         <section id="budget" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#C4877A]">
-              予算別おすすめプラン
+              予算別のおすすめプラン
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              母の日ギフトの予算に合わせて、最適なプランを選びましょう。花のサブスクは1回分だけでなく、複数回分をまとめてギフトにすることもできます。
+              母の日のギフトの予算に合わせて、適したプランをお選びください。花のサブスクは1回分だけでなく、複数回分をまとめてギフトにすることもできます。
             </p>
 
             <div className="space-y-4">
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">3,000円以下のギフト</h3>
                 <p className="text-sm text-[#666] leading-relaxed mb-2">
-                  気軽に贈りたい方向け。bloomeeのお試しプランは1回1,365円（花代980円＋送料385円）で、2回分なら2,730円が目安です（ギフトチケットの金額・内容は公式サイトでご確認ください）。お試し感覚で花のある暮らしを体験してもらえます。
+                  気軽に贈りたい方に適しています。bloomeeのお試しプランは1回1,365円（花代980円＋送料385円）で、2回分の場合は2,730円が目安です（ギフトチケットの金額・内容は公式サイトでご確認ください）。お試しとして、花のある暮らしを体験していただけます。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
                   <p className="text-xs text-[#4A7C59] font-medium">おすすめ：bloomee（お試しプラン2回分の目安 2,730円）</p>
@@ -261,7 +261,7 @@ export default function MothersDayGuidePage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">3,000〜5,000円のギフト</h3>
                 <p className="text-sm text-[#666] leading-relaxed mb-2">
-                  最も人気の価格帯です。AND PLANTSの1〜2回分（1,980〜3,960円）や、HitoHanaの2回分が選べます。ボリュームのある華やかなアレンジが届くため、お母さんの満足度も高いです。
+                  最も人気の価格帯です。AND PLANTSの1〜2回分（1,980〜3,960円）や、HitoHanaの2回分から選べます。ボリュームのある華やかなアレンジが届くため、お母さんの満足度も高い傾向があります。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
                   <p className="text-xs text-[#4A7C59] font-medium">おすすめ：AND PLANTS 2回分 または HitoHana 2回分（色指定付き）</p>
@@ -271,7 +271,7 @@ export default function MothersDayGuidePage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">5,000円以上のギフト</h3>
                 <p className="text-sm text-[#666] leading-relaxed mb-2">
-                  しっかり感謝を伝えたい方向け。HitoHanaの上位プラン3回分や、bloomeeのベーシックプラン3回分（花代2,180円＋送料550円×3回＝8,190円）がおすすめ。3ヶ月にわたって花が届くため、母の日以降もずっと喜んでもらえます。LIFFTの花束プラン（3,300円）2〜3回分もプレミアム感があります。
+                  しっかりと感謝を伝えたい方に適しています。HitoHanaの上位プラン3回分や、bloomeeのベーシックプラン3回分（花代2,180円＋送料550円×3回＝8,190円）をおすすめします。3か月にわたって花が届くため、母の日以降も楽しんでいただけます。LIFFTの花束プラン（3,300円）2〜3回分も、特別感のあるギフトになります。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
                   <p className="text-xs text-[#4A7C59] font-medium">おすすめ：HitoHana 上位プラン3回分 または LIFFT 花束プラン2回分</p>
@@ -292,23 +292,23 @@ export default function MothersDayGuidePage() {
               {[
                 {
                   step: "注意 1",
-                  title: "届け先の住所を事前に確認",
-                  text: "花の定期便は配送先の住所を登録する必要があります。サプライズで贈りたい場合でも、正確な住所を事前に確認しておきましょう。特にマンション名・部屋番号の記載漏れは配送トラブルの原因になります。",
+                  title: "届け先の住所を事前に確認する",
+                  text: "花の定期便は、配送先の住所を登録する必要があります。サプライズで贈る場合でも、正確な住所を事前にご確認ください。特に、マンション名や部屋番号の記載漏れは配送トラブルの原因になります。",
                 },
                 {
                   step: "注意 2",
-                  title: "花粉アレルギーの有無を確認",
-                  text: "お母さんに花粉アレルギーがある場合は注意が必要です。多くのサービスでは届く花の種類を指定できないため、アレルギーのある花が届く可能性があります。事前にカスタマーサポートに相談するか、HitoHanaのように花の種類をある程度選べるサービスを利用しましょう。",
+                  title: "花粉アレルギーの有無を確認する",
+                  text: "お母さんに花粉アレルギーがある場合は注意が必要です。多くのサービスでは届く花の種類を指定できないため、アレルギーの原因となる花が届く可能性があります。事前にカスタマーサポートへ相談するか、HitoHanaのように花の種類をある程度選べるサービスをご利用ください。",
                 },
                 {
                   step: "注意 3",
-                  title: "受け取り方法の確認（ポスト投函 vs 宅配便）",
-                  text: "お母さんが日中不在がちな場合は、ポスト投函対応サービス（bloomee、medeluなど）がおすすめです。宅配便タイプ（AND PLANTS、HitoHana、LIFFT）の場合は、在宅している曜日や時間帯を確認しておきましょう。置き配に対応しているサービスもあります。",
+                  title: "受け取り方法を確認する（ポスト投函と宅配便）",
+                  text: "お母さんが日中不在がちな場合は、ポスト投函に対応したサービス（bloomee、medeluなど）をおすすめします。宅配便タイプ（AND PLANTS、HitoHana、LIFFT）の場合は、在宅している曜日や時間帯を事前にご確認ください。置き配に対応しているサービスもあります。",
                 },
                 {
                   step: "注意 4",
-                  title: "自動更新の有無を確認",
-                  text: "ギフトとして贈る場合、サブスクの自動更新に注意しましょう。bloomeeのギフトチケットなら指定回数分で終了しますが、通常の定期便を代理で申し込む場合は、お母さん自身で解約手続きが必要になる場合があります。解約方法もあわせて伝えておくと親切です。",
+                  title: "自動更新の有無を確認する",
+                  text: "ギフトとして贈る場合は、サブスクの自動更新にご注意ください。bloomeeのギフトチケットは指定回数分で終了しますが、通常の定期便を代理で申し込む場合は、お母さんご自身で解約手続きを行う必要が生じることがあります。解約方法もあわせてお伝えしておくことをおすすめします。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
@@ -371,7 +371,7 @@ export default function MothersDayGuidePage() {
               年間の花のギフトイベントカレンダー
             </h2>
             <p className="text-sm text-[#666] mb-6">
-              母の日以外にも花のサブスクのギフトが活躍するイベントは年間を通じて多数あります。来年・再来年も活用できる年間カレンダーをチェックしましょう。
+              母の日以外にも、花のサブスクをギフトとして贈れるイベントは年間を通じて多数あります。翌年以降も活用できるよう、年間の主なイベントを以下にまとめました。
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
@@ -399,10 +399,10 @@ export default function MothersDayGuidePage() {
               </table>
             </div>
             <p className="text-xs text-[#888] mt-4">
-              ※ 母の日 (2026年は5月10日)・父の日 (2026年は6月21日)・敬老の日 (2026年は9月21日)。毎年日程は変動するため最新情報をチェック。
+              ※ 2026年の日程は、母の日が5月10日、父の日が6月21日、敬老の日が9月21日です。日程は毎年変動するため、最新情報をご確認ください。
             </p>
             <p className="text-sm text-[#666] mt-6 leading-relaxed">
-              <strong>サイクル化のコツ:</strong> 花のサブスクをギフトとして年間複数回送る「<strong>季節ギフトプラン</strong>」も人気。HitoHana・bloomee・LIFFTで連続贈呈の相談ができます。
+              <strong>年間を通じた贈り方：</strong>花のサブスクをギフトとして年に複数回贈る「<strong>季節ギフトプラン</strong>」も人気があります。HitoHana・bloomee・LIFFTでは、継続的な贈呈について相談できます。
             </p>
           </div>
         </section>
@@ -411,13 +411,13 @@ export default function MothersDayGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#F9E8E8]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：花のサブスクで母の日に「続く」感謝を届けよう
+              まとめ：花のサブスクで母の日の感謝を長く届けられます
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              母の日の花のプレゼントは定番ですが、花のサブスクを贈ることで<strong>毎月届くサプライズ</strong>という新しい体験をプレゼントできます。一度きりの花束ではなく、数ヶ月にわたって花が届く喜びを、お母さんに味わってもらいましょう。
+              母の日に花を贈ることは一般的ですが、花のサブスクを贈ることで、<strong>毎月花が届く</strong>という新しい体験をプレゼントできます。一度きりの花束ではなく、数か月にわたって花が届く楽しみを、お母さんに味わっていただけます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              気軽に贈るなら<strong>bloomeeのギフトチケット</strong>、見栄え重視なら<strong>AND PLANTS</strong>、お母さんの好みに合わせたいなら<strong>HitoHana</strong>がおすすめです。2026年の母の日は5月10日。早めに準備して、素敵なギフトをお届けしましょう。
+              気軽に贈る場合は<strong>bloomeeのギフトチケット</strong>、見栄えを重視する場合は<strong>AND PLANTS</strong>、お母さんの好みに合わせたい場合は<strong>HitoHana</strong>をおすすめします。2026年の母の日は5月10日です。余裕をもって準備することをおすすめします。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
@@ -456,7 +456,7 @@ export default function MothersDayGuidePage() {
             <div>
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -472,7 +472,7 @@ export default function MothersDayGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              bloomee・AND PLANTS・HitoHanaの料金は2026年10月14日に公式サイトで確認した値です。最新の料金・サービス内容は各公式サイトでご確認ください。
+              bloomee・AND PLANTS・HitoHanaの料金は2026年10月14日に公式サイトで確認した値です。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

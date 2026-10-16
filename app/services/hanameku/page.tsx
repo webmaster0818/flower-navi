@@ -14,19 +14,19 @@ const RE = findReviewEvidence("hanameku");
 /* ─── FAQ Data ─── */
 const faqItems = [
   {
-    q: "ハナメク（hanameku）の口コミ・評判は？",
-    a: "良い口コミは「花持ちが良い」「パステル調の色合いがかわいい」「1,210円（税込・送料込）でポストに届いて楽」が中心です。悪い口コミは「花材がかぶる」「蕾やしおれ気味で届くことがある」「花の名前が書かれていない」など。SNS投稿を日付つきで引用しているレビュー記事をもとにした傾向です（2026年10月14日確認）。",
+    q: "ハナメク（hanameku）の口コミ・評判はどうですか？",
+    a: "良い口コミは「花持ちが良い」「パステル調の色合いがかわいい」「1,210円（税込・送料込）でポストに届いて楽」が中心です。悪い口コミには「花材が重なる」「蕾やしおれ気味で届くことがある」「花の名前が書かれていない」などがあります。いずれも、SNS投稿を日付付きで引用しているレビュー記事をもとにした傾向です（2026年10月14日確認）。",
   },
   {
-    q: "ハナメクの悪い評判で気をつけることは？",
-    a: "口コミの不満とは別に、申込前に知っておきたいのが①初回（定期1回目）は解約できない②解約・スキップ・変更の締切がお届け予定日の10日前と早い③スキップは次回分のみ、の3点です。いずれも公式FAQ・お知らせに記載されています。",
+    q: "ハナメクを申し込む際に注意すべき点は何ですか？",
+    a: "口コミの内容とは別に、お申し込み前に確認すべき点は、①初回（定期1回目）は解約できない、②解約・スキップ・変更の締切がお届け予定日の10日前と早い、③スキップは次回分のみ、の3点です。いずれも公式FAQ・お知らせに記載されています。",
   },
   {
     q: "ハナメク（hanameku）の料金はいくらですか？",
     a: "2026年10月14日に公式サイトで確認した料金は、ライトプラン1,210円（3〜4本・ポスト投函）、セルフアレンジプランS 1,958円（1〜8本）・L 3,278円（1〜12本）で、いずれも税込・配送料込みの表記です。セルフアレンジは地域別の追加送料（北海道・九州550円、関西220円、中国・四国330円）があり、沖縄・離島は配送できません。",
   },
   {
-    q: "ハナメクに回数縛りはありますか？解約方法は？",
+    q: "ハナメクに回数縛りはありますか？解約方法も教えてください。",
     a: "最低回数の記載はありませんが、公式FAQに「定期1回目（初回）の解約は受け付けておりません」と明記されています。2回目以降はマイページから手続きでき、締切はお届け予定日の10日前です。",
   },
   {
@@ -39,7 +39,7 @@ const faqItems = [
   },
   {
     q: "ハナメクの運営会社はどこですか？",
-    a: "and factory株式会社（東京都目黒区）です。2026年6月1日にnarrative株式会社から事業が移り、カード明細の請求元は当面narrative名義の場合があると公式に案内されています。",
+    a: "and factory株式会社（東京都目黒区）です。2026年6月1日にnarrative株式会社から事業が移管されており、カード明細の請求元は当面narrative名義となる場合があると公式に案内されています。",
   },
 ];
 
@@ -54,11 +54,11 @@ export default function HanamekuPage() {
       {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"hanameku（ハナメク）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"hanameku（ハナメク）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/hanameku/\"}" }} />
       {/* CANCEL_FLOW_SCHEMA_v1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"hanameku（ハナメク）の解約手順\",\"description\":\"hanameku（ハナメク）の解約方法をステップごとに解説\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログイン\",\"text\":\"hanameku公式サイトの「マイページ」へ。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便の管理」を開く\",\"text\":\"メニューから定期便管理画面へ移動。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約する」を選択\",\"text\":\"解約リンクをクリック。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"理由入力(任意)\",\"text\":\"フィードバックは任意で。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約する」を最終確定\",\"text\":\"お届け予定日の10日前までに完了。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知の確認\",\"text\":\"メールで完了通知が届きます。\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"hanameku（ハナメク）の解約手順\",\"description\":\"hanameku（ハナメク）の解約方法を手順ごとにご説明します\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログインする\",\"text\":\"hanameku公式サイトの「マイページ」にログインします。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便の管理」を開く\",\"text\":\"メニューから定期便管理画面に移動します。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約する」を選択する\",\"text\":\"解約リンクをクリックします。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を入力する（任意）\",\"text\":\"フィードバックの入力は任意です。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約する」で最終確定する\",\"text\":\"お届け予定日の10日前までに手続きを完了してください。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知を確認する\",\"text\":\"メールで完了通知が届きます。\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hanameku/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"description\":\"hanameku（ハナメク）の評判・口コミ・料金プラン を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-15T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hanameku/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"description\":\"hanameku（ハナメク）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-15T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hanameku/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -92,11 +92,11 @@ export default function HanamekuPage() {
               花のサブスク個別レビュー｜{RE.updatedAt}更新
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              ハナメク（hanameku）の口コミ・評判は？<br className="hidden md:block" />
-              良い声・悪い声と1,210円の料金・解約を検証
+              ハナメク（hanameku）の口コミ・評判<br className="hidden md:block" />
+              良い口コミ・悪い口コミと1,210円の料金・解約を検証
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              1,210円（税込・送料込）でポストに届く花の定期便「ハナメク（hanameku）」の口コミ・評判を、SNS投稿を引用したレビュー記事の出典つきで整理。料金・初回解約不可のルール・締切・品質保証は、{S.verifiedAt}に公式サイトで確認した値で解説します。
+              当サイトでは、1,210円（税込・送料込）でポストに届く花の定期便「ハナメク（hanameku）」の口コミ・評判を、SNS投稿を引用したレビュー記事の出典を明記して整理しています。料金・初回解約不可のルール・締切・品質保証は、{S.verifiedAt}に公式サイトで確認した値にもとづいてご説明します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -125,15 +125,15 @@ export default function HanamekuPage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">本ページの内容</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">1. ハナメクの口コミ・評判（出典つき）</a></li>
-                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">2. ハナメクとは？サービス概要</a></li>
+                  <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">1. ハナメクの口コミ・評判（出典付き）</a></li>
+                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">2. ハナメクのサービス概要</a></li>
                   <li><a href="#pricing" className="hover:text-[#4A7C59] transition-colors">3. 料金プラン（公式確認）</a></li>
                   <li><a href="#pros" className="hover:text-[#4A7C59] transition-colors">4. メリット（良い評判の理由）</a></li>
                   <li><a href="#cons" className="hover:text-[#4A7C59] transition-colors">5. デメリット（悪い評判の理由）</a></li>
-                  <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">6. こんな人におすすめ／おすすめしない人</a></li>
+                  <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">6. おすすめできる方・おすすめできない方</a></li>
                   <li><a href="#comparison" className="hover:text-[#4A7C59] transition-colors">7. ほかの花のサブスクとの比較</a></li>
                   <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">8. ハナメクの始め方</a></li>
                   <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">9. よくある質問</a></li>
@@ -155,13 +155,13 @@ export default function HanamekuPage() {
         <section id="overview" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              ハナメク（hanameku）とは？
+              ハナメク（hanameku）のサービス概要
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              ハナメク（hanameku）は、and factory株式会社が運営するお花の定期便（花のサブスク）です。2026年6月にnarrative株式会社から事業が移りました（カード明細の請求元は当面narrative名義の場合あり・公式のお知らせより）。
+              ハナメク（hanameku）は、and factory株式会社が運営するお花の定期便（花のサブスク）です。2026年6月にnarrative株式会社から事業が移管されました（カード明細の請求元は当面narrative名義となる場合があります・公式のお知らせより）。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              現在のプランは、ポストに届く「ライトプラン」（1,210円・3〜4本）と、宅配で届き自分で生ける「セルフアレンジプラン」（S 1,958円・L 3,278円）の2種類。ネット上の記事には旧価格（858円）や2023年に終了したスタンダードプランの情報が残っているため注意しましょう。
+              現在のプランは、ポストに届く「ライトプラン」（1,210円・3〜4本）と、宅配で届き自分で生ける「セルフアレンジプラン」（S 1,958円・L 3,278円）の2種類です。インターネット上の記事には旧価格（858円）や2023年に終了したスタンダードプランの情報が残っているため、ご注意ください。
             </p>
             <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6">
               <h3 className="text-sm font-bold text-[#4A7C59] mb-3">ハナメク 基本情報（{S.verifiedAt} 公式確認）</h3>
@@ -193,7 +193,7 @@ export default function HanamekuPage() {
               ハナメクの料金プラン・送料
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              ライトプランは1,210円（税込・配送料込）でポスト投函。セルフアレンジプランは宅配で、Sが1,958円・Lが3,278円です。セルフアレンジは地域によって追加送料がかかります。
+              ライトプランは1,210円（税込・配送料込）で、ポスト投函で届きます。セルフアレンジプランは宅配で、Sが1,958円・Lが3,278円です。セルフアレンジは地域によって追加送料がかかります。
             </p>
             <OfficialPlans s={S} />
           </div>
@@ -208,16 +208,16 @@ export default function HanamekuPage() {
             <div className="space-y-5">
               {[
                 {
-                  title: "1,210円（税込・送料込）で追加費用なし",
-                  text: "ライトプランは配送料込みの1,210円。花代とは別に送料がかかるサービスと違い、表示価格がそのまま1回の支払額です。",
+                  title: "1,210円（税込・送料込）で追加費用がかからない",
+                  text: "ライトプランは配送料込みの1,210円です。花代とは別に送料がかかるサービスと異なり、表示価格がそのまま1回の支払額となります。",
                 },
                 {
                   title: "花持ち・色合いの評価が高い",
                   text: "「2週間たっても元気」「パステル調の色がかわいい」など、花持ちと色合いを評価する声がレビュー記事で繰り返し引用されています。",
                 },
                 {
-                  title: "ポスト投函で受け取りが楽",
-                  text: "ライトプランはポストに届くため、不在がちでも受け取れます。",
+                  title: "ポスト投函で受け取りの手間が少ない",
+                  text: "ライトプランはポストに届くため、不在がちな方でも受け取れます。",
                 },
                 {
                   title: "自分で生けるセルフアレンジも選べる",
@@ -250,19 +250,19 @@ export default function HanamekuPage() {
               {[
                 {
                   title: "初回（1回目）は解約できない",
-                  text: "公式FAQに「定期1回目（初回）の解約は受け付けておりません」と明記されています。最低回数の記載はないものの、少なくとも1回は受け取る前提で申し込みましょう。",
+                  text: "公式FAQに「定期1回目（初回）の解約は受け付けておりません」と明記されています。最低回数の記載はないものの、少なくとも1回は受け取る前提でお申し込みください。",
                 },
                 {
                   title: "解約・スキップの締切が10日前と早い",
-                  text: "解約・スキップ・変更はお届け予定日の10日前まで（2024年7月に9日前から変更）。スキップは次回分のみで、連続スキップはできません。",
+                  text: "解約・スキップ・変更の締切は、お届け予定日の10日前です（2024年7月に9日前から変更）。スキップは次回分のみで、連続スキップはできません。",
                 },
                 {
-                  title: "花材がかぶる・蕾で届くことがある",
+                  title: "花材が重なる、蕾で届くことがある",
                   text: "続けていると同じ花材が続く、蕾やしおれ気味で届くことがあるという声があります。",
                 },
                 {
                   title: "品質保証の申請期限が短い",
-                  text: "不良時は返金または代替品の対象ですが、到着日を含め3日以内に写真つきで申請する必要があります。",
+                  text: "不良時は返金または代替品の対象ですが、到着日を含め3日以内に写真を添えて申請する必要があります。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
@@ -285,11 +285,11 @@ export default function HanamekuPage() {
         <section id="recommend" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              ハナメクはこんな人におすすめ
+              ハナメクをおすすめできる方・おすすめできない方
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#4A7C59] mb-4">おすすめの人</h3>
+                <h3 className="text-base font-bold text-[#4A7C59] mb-4">おすすめできる方</h3>
                 <ul className="text-sm text-[#666] space-y-3">
                   <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>送料込みの定額で花のある暮らしを始めたい方</span></li>
                   <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>ポスト投函で受け取りたい方</span></li>
@@ -298,7 +298,7 @@ export default function HanamekuPage() {
                 </ul>
               </div>
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#C08552] mb-4">おすすめしない人</h3>
+                <h3 className="text-base font-bold text-[#C08552] mb-4">おすすめできない方</h3>
                 <ul className="text-sm text-[#666] space-y-3">
                   <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>1回だけ試してすぐ解約したい方（初回は解約不可）</span></li>
                   <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>予定が直前まで決まらずスキップを多用したい方</span></li>
@@ -310,7 +310,7 @@ export default function HanamekuPage() {
         </section>
 
         {/* ─── Comparison Section ─── */}
-        <CompareSection s={S} all={SERVICES} note="送料込みで比べると、最安はmedeluのMini（748円）、次いでハナメクのライト（1,210円）です。bloomeeは花代980円に送料385円が加わり、最初の4回の受け取りが条件。ハナメクは初回の解約ができない点と、締切が10日前と早い点を押さえておけば、送料込みの定額で続けやすいサービスです。" />
+        <CompareSection s={S} all={SERVICES} note="送料込みで比べると、最安はmedeluのMini（748円）、次いでハナメクのライト（1,210円）です。bloomeeは花代980円に送料385円が加わり、最初の4回の受け取りが条件となります。ハナメクは、初回の解約ができない点と締切が10日前と早い点に留意すれば、送料込みの定額で続けやすいサービスです。" />
 
         {/* ─── How to Sign Up ─── */}
         <section id="how-to-start" className="py-12 md:py-16 bg-[#F8F8F8]">
@@ -320,11 +320,11 @@ export default function HanamekuPage() {
             </h2>
             <div className="space-y-4">
               {[
-                { step: "STEP 1", title: "公式サイトにアクセス", text: "ハナメクの公式サイト（hanameku.jp）でプランを確認します。" },
-                { step: "STEP 2", title: "プランを選択", text: "ポストに届くライトプラン（1,210円）か、宅配のセルフアレンジ（S 1,958円・L 3,278円）を選びます。" },
-                { step: "STEP 3", title: "お届け頻度を選択", text: "ライトは毎週または14日ごと、セルフアレンジは月1回（第2土日）または14日ごとから選びます。" },
-                { step: "STEP 4", title: "お届け先・支払い方法を登録", text: "お届け先と支払い方法を登録します。セルフアレンジは地域別の追加送料も確認しましょう。" },
-                { step: "STEP 5", title: "締切を確認しておく", text: "初回は解約できません。2回目以降の解約・スキップはお届け予定日の10日前が締切です。" },
+                { step: "STEP 1", title: "公式サイトにアクセスする", text: "ハナメクの公式サイト（hanameku.jp）でプランを確認します。" },
+                { step: "STEP 2", title: "プランを選択する", text: "ポストに届くライトプラン（1,210円）か、宅配のセルフアレンジ（S 1,958円・L 3,278円）を選びます。" },
+                { step: "STEP 3", title: "お届け頻度を選択する", text: "ライトは毎週または14日ごと、セルフアレンジは月1回（第2土日）または14日ごとから選びます。" },
+                { step: "STEP 4", title: "お届け先・支払い方法を登録する", text: "お届け先と支払い方法を登録します。セルフアレンジは、地域別の追加送料もご確認ください。" },
+                { step: "STEP 5", title: "締切を確認する", text: "初回は解約できません。2回目以降の解約・スキップはお届け予定日の10日前が締切です。" },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
                   <div className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
@@ -383,54 +383,54 @@ export default function HanamekuPage() {
         <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              hanameku（ハナメク）の解約手順【完全ガイド】
+              hanameku（ハナメク）の解約手順
             </h2>
-            <p className="text-sm text-[#666] mb-6">初回（定期1回目）は解約できません。2回目以降の解約・スキップはお届け予定日の10日前まで。</p>
+            <p className="text-sm text-[#666] mb-6">初回（定期1回目）は解約できません。2回目以降の解約・スキップの締切は、お届け予定日の10日前です。</p>
             <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">マイページにログイン</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">hanameku公式サイトの「マイページ」へ。</p>
+                    <h3 className="font-bold text-[#333] mb-1">マイページにログインする</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">hanameku公式サイトの「マイページ」にログインします。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
                     <h3 className="font-bold text-[#333] mb-1">「定期便の管理」を開く</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">メニューから定期便管理画面へ移動。</p>
+                    <p className="text-sm text-[#666] leading-relaxed">メニューから定期便管理画面に移動します。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「解約する」を選択</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">解約リンクをクリック。</p>
+                    <h3 className="font-bold text-[#333] mb-1">「解約する」を選択する</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">解約リンクをクリックします。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">理由入力(任意)</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">フィードバックは任意で。</p>
+                    <h3 className="font-bold text-[#333] mb-1">解約理由を入力する（任意）</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">フィードバックの入力は任意です。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「解約する」を最終確定</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">お届け予定日の10日前までに完了。</p>
+                    <h3 className="font-bold text-[#333] mb-1">「解約する」で最終確定する</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">お届け予定日の10日前までに手続きを完了してください。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">解約完了通知の確認</h3>
+                    <h3 className="font-bold text-[#333] mb-1">解約完了通知を確認する</h3>
                     <p className="text-sm text-[#666] leading-relaxed">メールで完了通知が届きます。</p>
                   </div>
                 </div>
             </div>
-            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。最新の解約方法はhanameku（ハナメク）公式サイトでご確認ください。</p>
+            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。ご利用前に、hanameku（ハナメク）公式サイトにて最新情報をご確認ください。</p>
           </div>
         </section>
 
@@ -438,14 +438,14 @@ export default function HanamekuPage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F5E9]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：ハナメクの口コミ・評判から分かる向き不向き
+              まとめ：口コミ・評判からみたハナメクが適している方
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               ハナメク（hanameku）は、1,210円（税込・送料込）でポストに届くライトプランが中心の花のサブスクです。口コミでは花持ちの良さと色合いのかわいさが評価され、自分で生けるセルフアレンジプランも選べます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              一方で、初回（1回目）は解約できない点、解約・スキップの締切がお届け予定日の10日前と早い点、花材がかぶることがあるという口コミは把握しておきましょう。
-              より安く始めたいならmedelu（748円〜）、ポスト投函の定番を比べたいならbloomeeも検討して、自分に合ったサービスを選びましょう。
+              一方で、初回（1回目）は解約できない点、解約・スキップの締切がお届け予定日の10日前と早い点、花材が重なることがあるという口コミがある点にご留意ください。
+              より安く始めたい場合はmedelu（748円〜）、ポスト投函型の代表的なサービスと比較したい場合はbloomeeもあわせて検討し、ご自身に合ったサービスをお選びください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
@@ -492,7 +492,7 @@ export default function HanamekuPage() {
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
 
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -516,7 +516,7 @@ export default function HanamekuPage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              料金・条件は{S.verifiedAt}時点で公式サイトから確認したものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              料金・条件は{S.verifiedAt}時点で公式サイトから確認したものです。ご利用前に、各公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

@@ -7,35 +7,35 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "花のサブスクをプレゼントとして贈ることはできますか？",
-    a: "はい、ギフト対応しているサービスであれば、相手の住所に花を届けることができます。bloomeeはギフトチケット（デジタル）を贈る形式、AND PLANTSは注文時に届け先を相手の住所に指定する形式です。日本総合園芸は法人向けの手渡し配達にも対応しています。サービスによってギフトの仕組みが異なるため、事前に確認しましょう。",
+    a: "はい、ギフトに対応しているサービスであれば、贈り先の住所に花を届けることができます。bloomeeはギフトチケット（デジタル）を贈る形式、AND PLANTSは注文時に届け先を相手の住所に指定する形式です。日本総合園芸は法人向けの手渡し配達にも対応しています。サービスによってギフトの仕組みが異なるため、ご利用前に、公式サイトにて最新情報をご確認ください。",
   },
   {
-    q: "母の日に花の定期便を贈りたいのですが、いつまでに申し込めばいいですか？",
-    a: "母の日当日に届けたい場合は、少なくとも1週間前までに申し込むのが安心です。bloomeeのギフトチケットはデジタル発行のため即日贈れますが、実際の花の配送開始日は受け取り側が自分で設定します。AND PLANTSや日本総合園芸は配送日を指定できる場合があるため、早めに公式サイトで母の日向けの対応を確認してください。",
+    q: "母の日に花の定期便を贈る場合、いつまでに申し込めばよいですか？",
+    a: "母の日当日に届けたい場合は、少なくとも1週間前までに申し込むことをおすすめします。bloomeeのギフトチケットはデジタルで発行されるため即日贈ることができますが、実際の花の配送開始日は受け取る側が設定します。AND PLANTSや日本総合園芸は配送日を指定できる場合があるため、早めに公式サイトで母の日向けの対応をご確認ください。",
   },
   {
-    q: "ギフトチケットとは何ですか？どう使いますか？",
-    a: "ギフトチケットとは、花のサブスクの利用権をデジタルチケットとして贈れる仕組みです。bloomeeが提供しており、購入するとURLやQRコードが発行されます。受け取った相手がそのURLから届け先住所やプランを設定すると、花が届き始めます。相手の住所を知らなくても贈れる点が大きなメリットです。",
+    q: "ギフトチケットとは何ですか？どのように使いますか？",
+    a: "ギフトチケットとは、花のサブスクの利用権をデジタルチケットとして贈る仕組みです。bloomeeが提供しており、購入するとURLやQRコードが発行されます。受け取った方がそのURLから届け先住所やプランを設定すると、花が届き始めます。贈り先の住所を知らなくても贈れる点が大きな利点です。",
   },
   {
-    q: "花の定期便をプレゼントする場合、相手の住所を知らなくても大丈夫ですか？",
-    a: "bloomeeのギフトチケットなら相手の住所を知らなくても贈れます。チケットを受け取った相手が自分で届け先を入力するため、住所を聞く必要がありません。一方、AND PLANTSや日本総合園芸は注文時に届け先住所の入力が必要です。サプライズで贈りたい場合はbloomeeのギフトチケットが便利です。",
+    q: "花の定期便をプレゼントする場合、相手の住所を知らなくても贈れますか？",
+    a: "bloomeeのギフトチケットであれば、贈り先の住所を知らなくても贈れます。チケットを受け取った方が自分で届け先を入力するため、住所を尋ねる必要がありません。一方、AND PLANTSや日本総合園芸は注文時に届け先住所の入力が必要です。サプライズで贈りたい場合は、bloomeeのギフトチケットが便利です。",
   },
   {
     q: "プレゼントする期間（回数）は選べますか？",
-    a: "サービスによって異なります。bloomeeのギフトチケットは期間を指定して購入できます（例：3か月、6か月、12か月など）。AND PLANTSは通常のサブスクリプションとして申し込み、贈り主が任意のタイミングで解約する形式です。予算に合わせて回数・期間を調整できますので、公式サイトで最新のギフトプランを確認してください。",
+    a: "サービスによって異なります。bloomeeのギフトチケットは期間を指定して購入できます（例：3か月、6か月、12か月など）。AND PLANTSは通常のサブスクリプションとして申し込み、贈り主が任意の時期に解約する形式です。予算に合わせて回数や期間を調整できるため、公式サイトで最新のギフトプランをご確認ください。",
   },
   {
-    q: "プレゼント用にメッセージカードを付けられますか？",
-    a: "bloomeeのギフトチケットにはデジタルメッセージを添えることができます。AND PLANTSは初回配送時にメッセージカードを同梱できるオプションがある場合があります。日本総合園芸は法人向けの手配を含め、メッセージカードの対応が可能です。いずれも時期やプランによって対応状況が変わるため、注文前に公式サイトで確認してください。",
+    q: "プレゼント用にメッセージカードを付けることはできますか？",
+    a: "bloomeeのギフトチケットにはデジタルメッセージを添えることができます。AND PLANTSは初回配送時にメッセージカードを同梱できるオプションがある場合があります。日本総合園芸は法人向けの手配を含め、メッセージカードの対応が可能です。いずれも時期やプランによって対応状況が変わるため、注文前に公式サイトにて最新情報をご確認ください。",
   },
   {
     q: "花の定期便のギフトにかかる費用はどれくらいですか？",
-    a: "ギフトの費用はサービスとプラン、贈る期間によって異なります。bloomeeの定期便を贈る場合は、お試しプラン（花代980円＋送料385円/回）なら最初の4回で5,460円が目安です（ギフトチケットの金額は2026年10月15日時点で公式サイトから確認できなかったため載せていません）。AND PLANTSは1回1,980円（送料無料）からで、3か月（隔週6回）なら約11,880円です。予算に応じてプランと回数を選べるため、3,000円台から数万円台まで幅広く対応できます。",
+    a: "ギフトの費用はサービスとプラン、贈る期間によって異なります。bloomeeの定期便を贈る場合は、お試しプラン（花代980円＋送料385円/回）なら最初の4回で5,460円が目安です（ギフトチケットの金額は、2026年10月15日時点で公式サイトにて確認できなかったため、掲載を控えています）。AND PLANTSは1回1,980円（送料無料）からで、3か月（隔週6回）なら約11,880円です。予算に応じてプランと回数を選べるため、3,000円台から数万円台まで幅広く対応できます。",
   },
   {
-    q: "贈られた側が届く花のテイストや頻度を変更できますか？",
-    a: "bloomeeのギフトチケットの場合、受け取り側がプラン選択や配送頻度の設定を行えるため、自分好みにカスタマイズ可能です。AND PLANTSは贈り主のアカウントで管理する形式のため、変更は贈り主側で行う必要があります。サービスによって柔軟性が異なるため、相手の好みを尊重したい場合はbloomeeのギフトチケットが適しています。",
+    q: "贈られた側が、届く花のテイストや頻度を変更することはできますか？",
+    a: "bloomeeのギフトチケットの場合、受け取る側がプランの選択や配送頻度の設定を行えるため、好みに合わせて調整できます。AND PLANTSは贈り主のアカウントで管理する形式のため、変更は贈り主が行う必要があります。サービスによって変更できる範囲が異なるため、贈り先の好みを尊重したい場合はbloomeeのギフトチケットが適しています。",
   },
 ];
 
@@ -53,9 +53,9 @@ const giftServices = [
     messageCard: "デジタルメッセージ対応",
     url: "/services/bloomee",
     officialUrl: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L",
-    highlight: "ギフトチケットで住所不要。相手が届け先・プランを選べる。累計3,000万本超の実績で安心感が高い。",
-    bestFor: "相手の住所を知らない場合、気軽なギフトを贈りたい場合、母の日や誕生日のサプライズに",
-    detail: "bloomeeはギフトチケット方式を採用しており、購入するとデジタルチケット（URL/QRコード）が発行されます。LINEやメールで相手に送るだけで、受け取り側が届け先住所やプラン、配送頻度を自分で設定できます。相手の住所を知らなくても贈れるため、遠方の親御さんや友人へのプレゼントに最適です。全国200店舗以上の提携花屋からアレンジが届き、知名度も高いため「花の定期便って何？」という方にも安心して贈れます。",
+    highlight: "ギフトチケットのため住所が不要。贈り先が届け先とプランを選択可能。累計3,000万本超のお届け実績。",
+    bestFor: "相手の住所を知らない場合、手軽なギフトを贈りたい場合、母の日や誕生日のサプライズ",
+    detail: "bloomeeはギフトチケット方式を採用しており、購入するとデジタルチケット（URL/QRコード）が発行されます。LINEやメールで贈り先に送ると、受け取った方が届け先住所やプラン、配送頻度を設定できます。贈り先の住所を知らなくても贈れるため、遠方に住むご両親や友人へのプレゼントに適しています。全国200店舗以上の提携花屋からアレンジが届き、知名度も高いため、花の定期便になじみのない方にも贈りやすいサービスです。",
   },
   {
     rank: 2,
@@ -64,14 +64,14 @@ const giftServices = [
     giftType: "届け先指定（直接配送）",
     price: "1,980円〜/回",
     shipping: "無料",
-    giftPlan: "回数縛りなし（任意で解約）",
+    giftPlan: "回数の条件なし（任意で解約）",
     addressRequired: "必要（注文時に指定）",
     messageCard: "初回メッセージカード対応あり",
     url: "/services/and-plants",
     officialUrl: "https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L",
-    highlight: "プロのフローリストによるおしゃれなブーケ。送料無料で4〜6本のボリューム。初回クーポンあり。",
-    bestFor: "おしゃれな花を贈りたい場合、インテリア好きな相手へのプレゼント、結婚祝いや新築祝いに",
-    detail: "AND PLANTSは注文時に届け先を相手の住所に設定することで、ギフトとして利用できます。プロのフローリストが一つひとつアレンジしたセンスの良いブーケが届くため、見栄えを重視するギフトシーンにぴったりです。1回1,980円で送料無料、4〜6本のボリュームがあり、価格以上の満足感があります。回数縛りがないため、贈り主の判断で好きなタイミングで解約でき、3か月だけ・半年だけなど期間を自由に調整可能です。初回クーポンを活用すればさらにお得に始められます。",
+    highlight: "プロのフローリストによるおしゃれなブーケ。送料無料で4〜6本。初回クーポンあり。",
+    bestFor: "おしゃれな花を贈りたい場合、インテリアに関心のある方へのプレゼント、結婚祝いや新築祝い",
+    detail: "AND PLANTSは、注文時に届け先を贈り先の住所に設定することで、ギフトとして利用できます。プロのフローリストが一つずつアレンジしたブーケが届くため、見栄えを重視するギフトに適しています。1回1,980円で送料無料、4〜6本のボリュームがあり、価格に対する満足度が高いサービスです。回数の条件がないため、贈り主の判断で任意の時期に解約でき、3か月のみ・半年のみなど期間を自由に調整できます。初回クーポンを利用すると、さらに費用を抑えて始められます。",
   },
   {
     rank: 3,
@@ -85,9 +85,9 @@ const giftServices = [
     messageCard: "対応可能",
     url: "/services/nihon-sogo-engei",
     officialUrl: "https://nihon-sogo-engei.co.jp",
-    highlight: "ボリューム満点の季節の花束。手渡し配達対応で法人ギフトにも。老舗ならではの品質と信頼。",
-    bestFor: "ボリュームのある花束を贈りたい場合、法人の退職祝い・開店祝い、手渡しで届けたい場合に",
-    detail: "日本総合園芸は老舗の花き業者が運営するサービスで、季節感のある豪華な花束が届きます。他サービスと比較してボリュームがある点が特徴で、特別感のあるギフトに向いています。手渡し配達にも対応しているため、法人利用の退職祝いや開店祝い、お見舞いなど、配達員から直接手渡しで届けてほしいシーンに適しています。メッセージカードの同梱にも対応しており、フォーマルなギフトシーンでも安心です。",
+    highlight: "ボリュームのある季節の花束。手渡し配達に対応し、法人ギフトにも利用可能。老舗事業者による品質。",
+    bestFor: "ボリュームのある花束を贈りたい場合、法人の退職祝い・開店祝い、手渡しで届けたい場合",
+    detail: "日本総合園芸は老舗の花き事業者が運営するサービスで、季節感のある華やかな花束が届きます。他サービスと比較してボリュームがある点が特徴で、特別な贈り物に適しています。手渡し配達にも対応しているため、法人の退職祝いや開店祝い、お見舞いなど、配達員から直接手渡しで届けたい場面に適しています。メッセージカードの同梱にも対応しており、改まったギフトにも利用できます。",
   },
 ];
 
@@ -96,29 +96,29 @@ const occasions = [
   {
     name: "母の日",
     timing: "毎年5月の第2日曜日",
-    description: "花の定期便は母の日ギフトの定番になりつつあります。一度きりの花束と異なり、毎月届く花のサブスクなら感謝の気持ちを長く届けられます。遠方に住むお母さんにも配送で届くため、帰省できない場合にも最適です。",
+    description: "花の定期便は、母の日のギフトとして選ばれる機会が増えています。一度きりの花束と異なり、毎月届く花のサブスクであれば、感謝の気持ちを長く伝えられます。遠方に住むお母様にも配送で届くため、帰省できない場合にも適しています。",
     recommend: "bloomeeのギフトチケット（住所不要で手軽）またはAND PLANTS（おしゃれなブーケ）",
     budget: "3か月分で3,000円〜6,000円が目安",
   },
   {
     name: "誕生日",
     timing: "相手の誕生日に合わせて開始",
-    description: "誕生日プレゼントに花の定期便を贈れば、誕生月だけでなくその後も毎月花が届く特別な体験をプレゼントできます。「物」ではなく「体験」を贈りたい方に人気が高まっています。",
-    recommend: "AND PLANTS（おしゃれで特別感あり）またはbloomeeのギフトチケット（相手が好みを選べる）",
+    description: "誕生日プレゼントに花の定期便を贈ると、誕生月だけでなく、その後も毎月花が届く体験を贈ることができます。物ではなく体験を贈りたい方に選ばれています。",
+    recommend: "AND PLANTS（おしゃれで特別感がある）またはbloomeeのギフトチケット（贈り先が好みを選べる）",
     budget: "3か月〜6か月分で6,000円〜12,000円が目安",
   },
   {
     name: "結婚祝い",
     timing: "結婚報告後、新居への引越し後",
-    description: "新生活を彩る花の定期便は結婚祝いにぴったりです。新居のインテリアに合わせた花が届くため、新生活のスタートを華やかに演出できます。カタログギフトと並ぶ新しい選択肢として注目されています。",
-    recommend: "AND PLANTS（インテリア映えするアレンジ）または日本総合園芸（ボリューム感ある花束）",
+    description: "新生活を彩る花の定期便は、結婚祝いに適しています。新居のインテリアに合う花が届くため、新生活の始まりを華やかに演出できます。カタログギフトと並ぶ新しい選択肢として注目されています。",
+    recommend: "AND PLANTS（インテリアになじむアレンジ）または日本総合園芸（ボリュームのある花束）",
     budget: "3か月〜6か月分で6,000円〜20,000円が目安",
   },
   {
     name: "退職祝い",
     timing: "退職日前後",
-    description: "退職後の新生活を応援する気持ちを込めて、花の定期便を贈る方が増えています。退職後は自宅で過ごす時間が増えるため、定期的に届く花が生活に彩りを添えます。法人からの贈り物としても、個人的なプレゼントとしても適しています。",
-    recommend: "日本総合園芸（手渡し配達で法人利用に対応）またはbloomeeのギフトチケット（個人間で気軽に）",
+    description: "退職後の新生活を応援する気持ちを込めて、花の定期便を贈る方が増えています。退職後は自宅で過ごす時間が増えるため、定期的に届く花が生活に彩りを添えます。法人からの贈り物にも、個人のプレゼントにも適しています。",
+    recommend: "日本総合園芸（手渡し配達で法人利用に対応）またはbloomeeのギフトチケット（個人間で手軽に贈れる）",
     budget: "3か月〜6か月分で6,000円〜15,000円が目安",
   },
 ];
@@ -132,9 +132,9 @@ export default function PresentGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクをプレゼントに贈る方法\",\"item\":\"https://ohana-delivery.com/guides/present/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクをプレゼントに贈る方法\",\"description\":\"花のサブスクをプレゼントに贈る方法 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/present/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクをプレゼントに贈る方法\",\"description\":\"花のサブスクをプレゼントに贈る方法を解説します。料金・評判・選び方をまとめています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/present/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクをプレゼントとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ギフト対応しているサービスであれば、相手の住所に花を届けることができます。bloomeeはギフトチケット（デジタル）を贈る形式、AND PLANTSは注文時に届け先を相手の住所に指定する形式です。日本総合園芸は法人向けの手渡し配達にも対応しています。サービスによってギフトの仕組みが異なるため、事前に確認しましょう。\"}},{\"@type\":\"Question\",\"name\":\"母の日に花の定期便を贈りたいのですが、いつまでに申し込めばいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"母の日当日に届けたい場合は、少なくとも1週間前までに申し込むのが安心です。bloomeeのギフトチケットはデジタル発行のため即日贈れますが、実際の花の配送開始日は受け取り側が自分で設定します。AND PLANTSや日本総合園芸は配送日を指定できる場合があるため、早めに公式サイトで母の日向けの対応を確認してください。\"}},{\"@type\":\"Question\",\"name\":\"ギフトチケットとは何ですか？どう使いますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ギフトチケットとは、花のサブスクの利用権をデジタルチケットとして贈れる仕組みです。bloomeeが提供しており、購入するとURLやQRコードが発行されます。受け取った相手がそのURLから届け先住所やプランを設定すると、花が届き始めます。相手の住所を知らなくても贈れる点が大きなメリットです。\"}},{\"@type\":\"Question\",\"name\":\"花の定期便をプレゼントする場合、相手の住所を知らなくても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeのギフトチケットなら相手の住所を知らなくても贈れます。チケットを受け取った相手が自分で届け先を入力するため、住所を聞く必要がありません。一方、AND PLANTSや日本総合園芸は注文時に届け先住所の入力が必要です。サプライズで贈りたい場合はbloomeeのギフトチケットが便利です。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントする期間（回数）は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。bloomeeのギフトチケットは期間を指定して購入できます（例：3か月、6か月、12か月など）。AND PLANTSは通常のサブスクリプションとして申し込み、贈り主が任意のタイミングで解約する形式です。予算に合わせて回数・期間を調整できますので、公式サイトで最新のギフトプランを確認してください。\"}},{\"@type\":\"Question\",\"name\":\"プレゼント用にメッセージカードを付けられますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeのギフトチケットにはデジタルメッセージを添えることができます。AND PLANTSは初回配送時にメッセージカードを同梱できるオプションがある場合があります。日本総合園芸は法人向けの手配を含め、メッセージカードの対応が可能です。いずれも時期やプランによって対応状況が変わるため、注文前に公式サイトで確認してください。\"}},{\"@type\":\"Question\",\"name\":\"花の定期便のギフトにかかる費用はどれくらいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ギフトの費用はサービスとプラン、贈る期間によって異なります。bloomeeの定期便を贈る場合は、お試しプラン（花代980円＋送料385円/回）なら最初の4回で5,460円が目安です（ギフトチケットの金額は2026年10月15日時点で公式サイトから確認できなかったため載せていません）。AND PLANTSは1回1,980円（送料無料）からで、3か月（隔週6回）なら約11,880円です。予算に応じてプランと回数を選べるため、3,000円台から数万円台まで幅広く対応できます。\"}},{\"@type\":\"Question\",\"name\":\"贈られた側が届く花のテイストや頻度を変更できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeのギフトチケットの場合、受け取り側がプラン選択や配送頻度の設定を行えるため、自分好みにカスタマイズ可能です。AND PLANTSは贈り主のアカウントで管理する形式のため、変更は贈り主側で行う必要があります。サービスによって柔軟性が異なるため、相手の好みを尊重したい場合はbloomeeのギフトチケットが適しています。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクをプレゼントとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ギフトに対応しているサービスであれば、贈り先の住所に花を届けることができます。bloomeeはギフトチケット（デジタル）を贈る形式、AND PLANTSは注文時に届け先を相手の住所に指定する形式です。日本総合園芸は法人向けの手渡し配達にも対応しています。サービスによってギフトの仕組みが異なるため、ご利用前に、公式サイトにて最新情報をご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"母の日に花の定期便を贈る場合、いつまでに申し込めばよいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"母の日当日に届けたい場合は、少なくとも1週間前までに申し込むことをおすすめします。bloomeeのギフトチケットはデジタルで発行されるため即日贈ることができますが、実際の花の配送開始日は受け取る側が設定します。AND PLANTSや日本総合園芸は配送日を指定できる場合があるため、早めに公式サイトで母の日向けの対応をご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"ギフトチケットとは何ですか？どのように使いますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ギフトチケットとは、花のサブスクの利用権をデジタルチケットとして贈る仕組みです。bloomeeが提供しており、購入するとURLやQRコードが発行されます。受け取った方がそのURLから届け先住所やプランを設定すると、花が届き始めます。贈り先の住所を知らなくても贈れる点が大きな利点です。\"}},{\"@type\":\"Question\",\"name\":\"花の定期便をプレゼントする場合、相手の住所を知らなくても贈れますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeのギフトチケットであれば、贈り先の住所を知らなくても贈れます。チケットを受け取った方が自分で届け先を入力するため、住所を尋ねる必要がありません。一方、AND PLANTSや日本総合園芸は注文時に届け先住所の入力が必要です。サプライズで贈りたい場合は、bloomeeのギフトチケットが便利です。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントする期間（回数）は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。bloomeeのギフトチケットは期間を指定して購入できます（例：3か月、6か月、12か月など）。AND PLANTSは通常のサブスクリプションとして申し込み、贈り主が任意の時期に解約する形式です。予算に合わせて回数や期間を調整できるため、公式サイトで最新のギフトプランをご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"プレゼント用にメッセージカードを付けることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeのギフトチケットにはデジタルメッセージを添えることができます。AND PLANTSは初回配送時にメッセージカードを同梱できるオプションがある場合があります。日本総合園芸は法人向けの手配を含め、メッセージカードの対応が可能です。いずれも時期やプランによって対応状況が変わるため、注文前に公式サイトにて最新情報をご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"花の定期便のギフトにかかる費用はどれくらいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ギフトの費用はサービスとプラン、贈る期間によって異なります。bloomeeの定期便を贈る場合は、お試しプラン（花代980円＋送料385円/回）なら最初の4回で5,460円が目安です（ギフトチケットの金額は、2026年10月15日時点で公式サイトにて確認できなかったため、掲載を控えています）。AND PLANTSは1回1,980円（送料無料）からで、3か月（隔週6回）なら約11,880円です。予算に応じてプランと回数を選べるため、3,000円台から数万円台まで幅広く対応できます。\"}},{\"@type\":\"Question\",\"name\":\"贈られた側が、届く花のテイストや頻度を変更することはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeのギフトチケットの場合、受け取る側がプランの選択や配送頻度の設定を行えるため、好みに合わせて調整できます。AND PLANTSは贈り主のアカウントで管理する形式のため、変更は贈り主が行う必要があります。サービスによって変更できる範囲が異なるため、贈り先の好みを尊重したい場合はbloomeeのギフトチケットが適しています。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -153,7 +153,7 @@ export default function PresentGuidePage() {
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">花の定期便をプレゼントに贈ろう</span>
+                  <span className="text-[#333] font-medium">花の定期便をプレゼントに贈る方法</span>
                 </li>
               </ol>
             </nav>
@@ -167,12 +167,12 @@ export default function PresentGuidePage() {
               花の定期便ギフトガイド
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              花の定期便をプレゼントに贈ろう<br className="hidden md:block" />
+              花の定期便をプレゼントに贈る方法<br className="hidden md:block" />
               母の日・誕生日におすすめのギフト対応サービス
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              花のサブスクはプレゼントとしても人気が高まっています。
-              この記事では、ギフト対応している花の定期便サービスの比較、贈り方の手順、シーン別のおすすめをまとめました。
+              花のサブスクは、プレゼントとしても選ばれる機会が増えています。
+              当サイトでは、ギフトに対応している花の定期便サービスの比較、贈り方の手順、シーン別のおすすめをご説明します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -199,15 +199,15 @@ export default function PresentGuidePage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
                   <li><a href="#intro" className="hover:text-[#4A7C59] transition-colors">1. 花の定期便がプレゼントに選ばれる理由</a></li>
-                  <li><a href="#comparison-table" className="hover:text-[#4A7C59] transition-colors">2. ギフト対応サービス比較表</a></li>
+                  <li><a href="#comparison-table" className="hover:text-[#4A7C59] transition-colors">2. ギフト対応サービスの比較表</a></li>
                   <li><a href="#service-detail" className="hover:text-[#4A7C59] transition-colors">3. おすすめギフト対応サービスの詳細</a></li>
-                  <li><a href="#occasions" className="hover:text-[#4A7C59] transition-colors">4. シーン別おすすめ（母の日・誕生日・結婚祝い・退職祝い）</a></li>
+                  <li><a href="#occasions" className="hover:text-[#4A7C59] transition-colors">4. シーン別のおすすめ（母の日・誕生日・結婚祝い・退職祝い）</a></li>
                   <li><a href="#how-to-gift" className="hover:text-[#4A7C59] transition-colors">5. 花の定期便をプレゼントする手順</a></li>
-                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">6. ギフトで失敗しないためのポイント</a></li>
+                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">6. ギフトを贈る際の注意点</a></li>
                   <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">7. 花の定期便ギフトに関するよくある質問</a></li>
                   <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">8. まとめ</a></li>
                 </ol>
@@ -224,36 +224,36 @@ export default function PresentGuidePage() {
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
               花の定期便（花のサブスク）をプレゼントに選ぶ方が増えています。
-              一度きりの花束と違い、毎月届く花のサブスクは「長く楽しめる体験」を贈れるのが最大の魅力です。
+              一度きりの花束と異なり、毎月届く花のサブスクは、長く楽しめる体験を贈れる点が大きな魅力です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              特に母の日のギフトとして注目されており、遠方に住むお母さんへ毎月花を届けられる手段として人気が高まっています。
-              誕生日や結婚祝い、退職祝いなど、さまざまなお祝いシーンにも対応できる汎用性の高いギフトです。
+              特に母の日のギフトとして注目されており、遠方に住むお母様へ毎月花を届ける手段として選ばれています。
+              誕生日や結婚祝い、退職祝いなど、さまざまなお祝いの場面に利用できるギフトです。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
                 <p className="text-2xl font-bold text-[#4A7C59] mb-2">毎月届く</p>
-                <p className="text-sm text-[#666]">一度きりでなく、数か月にわたって花が届く「体験」のギフト</p>
+                <p className="text-sm text-[#666]">一度きりではなく、数か月にわたって花が届く体験型のギフト</p>
               </div>
               <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
-                <p className="text-2xl font-bold text-[#4A7C59] mb-2">手間いらず</p>
-                <p className="text-sm text-[#666]">申し込むだけで自動配送。花屋に行く手間も不要</p>
+                <p className="text-2xl font-bold text-[#4A7C59] mb-2">手間がかからない</p>
+                <p className="text-sm text-[#666]">申し込み後は自動で配送。花屋に行く手間も不要</p>
               </div>
               <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
-                <p className="text-2xl font-bold text-[#4A7C59] mb-2">遠方でもOK</p>
+                <p className="text-2xl font-bold text-[#4A7C59] mb-2">遠方にも配送可能</p>
                 <p className="text-sm text-[#666]">離れて暮らす相手にも全国配送で届けられる</p>
               </div>
             </div>
 
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6 border border-[#E5E5E5]">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">この記事のポイント</h3>
+              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">当ページの要点</h3>
               <ul className="text-sm text-[#666] space-y-2">
-                <li>・ ギフト対応している花の定期便サービス3社を比較</li>
+                <li>・ ギフトに対応している花の定期便サービス3社を比較</li>
                 <li>・ 母の日・誕生日・結婚祝い・退職祝いなどシーン別のおすすめ</li>
-                <li>・ 花の定期便を実際にプレゼントする手順を解説</li>
-                <li>・ ギフトで失敗しないための注意点も紹介</li>
-                <li>・ 2026年4月時点の情報に基づく</li>
+                <li>・ 花の定期便をプレゼントする手順を解説</li>
+                <li>・ ギフトを贈る際の注意点を紹介</li>
+                <li>・ 2026年4月時点の情報にもとづく</li>
               </ul>
             </div>
           </div>
@@ -263,10 +263,10 @@ export default function PresentGuidePage() {
         <section id="comparison-table" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              ギフト対応サービス比較表
+              ギフト対応サービスの比較表
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              花の定期便をプレゼントとして贈れる3つのサービスを、ギフト対応の仕組み・料金・特徴で比較しました。
+              当サイトでは、花の定期便をプレゼントとして贈れる3つのサービスを、ギフト対応の仕組み・料金・特徴の観点から比較しています。
             </p>
 
             <div className="overflow-x-auto -mx-4 px-4">
@@ -317,10 +317,10 @@ export default function PresentGuidePage() {
               <h3 className="text-sm font-bold text-[#333] mb-3">表の補足</h3>
               <ul className="text-sm text-[#666] space-y-2">
                 <li>・ bloomeeのギフトチケットは公式サイトから購入可能です</li>
-                <li>・ AND PLANTSは注文時に届け先を相手の住所に設定することでギフト利用できます</li>
+                <li>・ AND PLANTSは注文時に届け先を贈り先の住所に設定することで、ギフトとして利用できます</li>
                 <li>・ 日本総合園芸の送料は地域によって異なります</li>
                 <li>・ 表示価格はすべて税込です</li>
-                <li>・ 2026年4月時点の情報です。最新情報は各公式サイトでご確認ください</li>
+                <li>・ 2026年4月時点の情報です。ご利用前に、公式サイトにて最新情報をご確認ください</li>
               </ul>
             </div>
           </div>
@@ -333,7 +333,7 @@ export default function PresentGuidePage() {
               おすすめギフト対応サービスの詳細
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              ギフトとして花の定期便を贈る際におすすめの3サービスを、ギフト対応の仕組み・料金・おすすめシーンとともに詳しく解説します。
+              花の定期便をギフトとして贈る際におすすめの3サービスについて、ギフト対応の仕組み・料金・適した利用場面をご説明します。
             </p>
 
             <div className="space-y-8">
@@ -403,7 +403,7 @@ export default function PresentGuidePage() {
                     {/* Best For */}
                     <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
                       <p className="text-sm">
-                        <span className="font-bold text-[#4A7C59]">こんなギフトシーンにおすすめ：</span>
+                        <span className="font-bold text-[#4A7C59]">おすすめの利用場面：</span>
                         <span className="text-[#666]">{item.bestFor}</span>
                       </p>
                     </div>
@@ -436,11 +436,11 @@ export default function PresentGuidePage() {
         <section id="occasions" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              シーン別おすすめ：母の日・誕生日・結婚祝い・退職祝い
+              シーン別のおすすめ：母の日・誕生日・結婚祝い・退職祝い
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              花の定期便をプレゼントする際、贈るシーンに合わせてサービスを選ぶと、より喜ばれるギフトになります。
-              代表的な4つのシーンごとに、おすすめのサービスと予算の目安をまとめました。
+              花の定期便をプレゼントする際は、贈る場面に合わせてサービスを選ぶと、より喜ばれるギフトになります。
+              当サイトでは、代表的な4つの場面ごとに、おすすめのサービスと予算の目安を以下のとおりまとめています。
             </p>
 
             <div className="space-y-6">
@@ -481,7 +481,7 @@ export default function PresentGuidePage() {
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
               花の定期便をギフトとして贈る方法は、サービスによって異なります。
-              ここでは代表的な2つの方法を、具体的な手順とともに解説します。
+              当サイトでは、代表的な2つの方法を具体的な手順とともにご説明します。
             </p>
 
             {/* Method 1: Gift Ticket */}
@@ -514,8 +514,8 @@ export default function PresentGuidePage() {
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">3</span>
                   </div>
                   <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">LINEやメールで相手にチケットを送る</p>
-                    <p className="text-sm text-[#666]">チケットのURLをLINE、メール、SNSなど好きな方法で相手に共有します。</p>
+                    <p className="text-sm font-bold text-[#333] mb-1">LINEやメールで贈り先にチケットを送る</p>
+                    <p className="text-sm text-[#666]">チケットのURLを、LINE、メール、SNSなど任意の方法で贈り先に共有します。</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -523,8 +523,8 @@ export default function PresentGuidePage() {
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">4</span>
                   </div>
                   <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">相手が届け先・配送頻度を設定</p>
-                    <p className="text-sm text-[#666]">受け取った相手がURLから自分の住所や配送頻度を設定すると、花が届き始めます。</p>
+                    <p className="text-sm font-bold text-[#333] mb-1">贈り先が届け先・配送頻度を設定</p>
+                    <p className="text-sm text-[#666]">受け取った方がURLから住所や配送頻度を設定すると、花が届き始めます。</p>
                   </div>
                 </div>
               </div>
@@ -551,8 +551,8 @@ export default function PresentGuidePage() {
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">2</span>
                   </div>
                   <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">届け先に相手の住所を入力</p>
-                    <p className="text-sm text-[#666]">注文フォームの届け先欄に、自分の住所ではなく相手の住所を入力します。</p>
+                    <p className="text-sm font-bold text-[#333] mb-1">届け先に贈り先の住所を入力</p>
+                    <p className="text-sm text-[#666]">注文フォームの届け先欄に、ご自身の住所ではなく贈り先の住所を入力します。</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -560,18 +560,18 @@ export default function PresentGuidePage() {
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">3</span>
                   </div>
                   <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">支払い完了後、花が相手に届く</p>
-                    <p className="text-sm text-[#666]">支払いは贈り主のクレジットカード等で行い、花は相手の住所に届きます。贈りたい期間が終わったら解約します。</p>
+                    <p className="text-sm font-bold text-[#333] mb-1">支払い完了後、花が贈り先に届く</p>
+                    <p className="text-sm text-[#666]">支払いは贈り主のクレジットカード等で行い、花は贈り先の住所に届きます。贈りたい期間が終了したら解約します。</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="bg-[#E8F0EB] rounded-xl p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">どちらの方式を選ぶべき？</h3>
+              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">方式の選び方</h3>
               <p className="text-sm text-[#666] leading-relaxed">
-                相手の住所を知らない場合や、相手に届くタイミングや頻度を自分で選んでもらいたい場合は、bloomeeのギフトチケット方式が便利です。
-                一方、花のテイストやボリュームにこだわりたい場合や、確実に届く日を自分でコントロールしたい場合は、AND PLANTSや日本総合園芸の届け先指定方式がおすすめです。
+                贈り先の住所を知らない場合や、届く時期や頻度を贈り先に選んでもらいたい場合は、bloomeeのギフトチケット方式が便利です。
+                一方、花のテイストやボリュームを重視する場合や、届く日を贈り主が確実に管理したい場合は、AND PLANTSや日本総合園芸の届け先指定方式をおすすめします。
               </p>
             </div>
           </div>
@@ -581,52 +581,52 @@ export default function PresentGuidePage() {
         <section id="tips" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              ギフトで失敗しないためのポイント
+              ギフトを贈る際の注意点
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              花の定期便をプレゼントする際に、事前に確認しておくべきポイントをまとめました。
-              贈った後に「こうすればよかった」とならないために、以下の点を押さえておきましょう。
+              花の定期便をプレゼントする際に、事前に確認しておきたい点を以下にまとめています。
+              贈った後に想定と異なる事態が生じないよう、ご確認ください。
             </p>
 
             <div className="space-y-4">
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-2">相手の生活スタイルを考慮する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  不在がちな方にはポスト投函対応のサービス（bloomee）が向いています。在宅時間が確保できる方なら宅配便（AND PLANTS、日本総合園芸）でも問題ありません。
-                  また、花の手入れに慣れていない方には、本数が少なめで管理しやすいプランから始めるのがおすすめです。
+                  不在が多い方には、ポスト投函に対応したサービス（bloomee）が適しています。在宅時間を確保できる方であれば、宅配便（AND PLANTS、日本総合園芸）でも問題ありません。
+                  また、花の手入れに慣れていない方には、本数が少なく管理しやすいプランから始めることをおすすめします。
                 </p>
               </div>
 
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-2">配送頻度と期間を慎重に決める</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  毎週届くと花の管理が大変になる場合があります。初めてのギフトなら隔週または月1回がおすすめです。
-                  期間も最初は3か月程度から始め、相手が気に入ったら延長するのが無難です。長期間のギフトは負担に感じる方もいるため、相手の反応を見ながら調整しましょう。
+                  毎週届くと、花の管理が負担になる場合があります。初めてのギフトであれば、隔週または月1回をおすすめします。
+                  期間も最初は3か月程度とし、贈り先が気に入った場合に延長する方法が確実です。長期間のギフトを負担に感じる方もいるため、贈り先の反応を確認しながら調整してください。
                 </p>
               </div>
 
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-2">花のアレルギーやペットの有無を確認する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  花粉アレルギーをお持ちの方には配慮が必要です。また、猫を飼っている家庭ではユリ科の花が危険なため注意が必要です。
-                  事前にアレルギーやペットの有無を確認しておくと安心です。気になる場合は、花の種類を選べるサービスや、届いた花の品種が事前にわかるサービスを選びましょう。
+                  花粉アレルギーをお持ちの方には配慮が必要です。また、猫を飼っている家庭では、ユリ科の花が危険なため注意が必要です。
+                  事前にアレルギーやペットの有無を確認しておくと安心です。懸念がある場合は、花の種類を選べるサービスや、届く花の品種が事前にわかるサービスをお選びください。
                 </p>
               </div>
 
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-2">事前に一言伝えておく</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  完全なサプライズも素敵ですが、届け先指定方式の場合は突然花が届いて相手が困惑する可能性もあります。
-                  「花の定期便を贈るから届くよ」と事前に伝えておくと、相手も受け取りの準備ができて安心です。ギフトチケット方式なら、チケットを渡す際に説明できるためスムーズです。
+                  サプライズで贈る方法もありますが、届け先指定方式の場合は、突然花が届いて贈り先が戸惑う可能性があります。
+                  花の定期便を贈ることを事前に伝えておくと、贈り先も受け取りの準備ができます。ギフトチケット方式であれば、チケットを渡す際に説明できるため円滑です。
                 </p>
               </div>
 
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-2">解約のタイミングを把握しておく</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  届け先指定方式でギフトを贈る場合、贈りたい期間が終わった後に解約を忘れないようにしましょう。
+                  届け先指定方式でギフトを贈る場合は、贈りたい期間が終了した後の解約手続きを忘れないようご注意ください。
                   bloomeeのギフトチケットは購入時に期間が確定するため、自動的に終了します。AND PLANTSや日本総合園芸は贈り主が自分で解約手続きを行う必要があります。
-                  カレンダーにリマインダーを設定しておくと安心です。
+                  カレンダーにリマインダーを設定しておくと確実です。
                 </p>
               </div>
             </div>
@@ -676,19 +676,19 @@ export default function PresentGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：花の定期便で「届き続ける」プレゼントを
+              まとめ：花の定期便は継続して花が届くプレゼントです
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花の定期便は、一度きりの花束では実現できない「毎月届く喜び」を贈れるギフトです。
+              花の定期便は、一度きりの花束では実現できない、毎月花が届く喜びを贈れるギフトです。
               母の日、誕生日、結婚祝い、退職祝いなど、さまざまなシーンで活用できます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              相手の住所を知らなくても贈れるbloomeeのギフトチケットは、手軽さで選ぶなら最有力です。
-              おしゃれなブーケにこだわるならAND PLANTS、ボリューム感と手渡し対応を求めるなら日本総合園芸がおすすめです。
+              手軽さを重視する場合は、贈り先の住所を知らなくても贈れるbloomeeのギフトチケットをおすすめします。
+              おしゃれなブーケを重視する場合はAND PLANTS、ボリュームと手渡し対応を求める場合は日本総合園芸が適しています。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              贈るシーンや相手の生活スタイルに合わせてサービスを選び、花を通じて気持ちを届けましょう。
-              まずは気になるサービスの公式サイトでギフト対応の詳細を確認してみてください。
+              贈る場面や贈り先の生活スタイルに合わせて、サービスをお選びください。
+              ギフト対応の詳細は、ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
@@ -740,7 +740,7 @@ export default function PresentGuidePage() {
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
 
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -764,7 +764,7 @@ export default function PresentGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              掲載情報は2026年4月時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

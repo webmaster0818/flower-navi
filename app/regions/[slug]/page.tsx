@@ -94,7 +94,7 @@ export default async function RegionPage({ params }: Props) {
           {/* Recommended */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              {r.title.replace("で花のサブスクを始めるなら", "")}おすすめの花のサブスク
+              {r.title.split("で花のサブスク")[0]}でおすすめの花のサブスク
             </h2>
             <div className="space-y-4">
               {r.recommended.map((rec, i) => (
@@ -103,7 +103,7 @@ export default async function RegionPage({ params }: Props) {
                   <div className="flex-1">
                     <h3 className="text-lg font-bold text-[#333] mb-1">{rec.service}</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-2">{rec.reason}</p>
-                    <p className="text-xs text-[#999]">参考価格: {rec.priceFrom.toLocaleString()}円〜</p>
+                    <p className="text-xs text-[#999]">参考価格：{rec.priceFrom.toLocaleString()}円〜</p>
                   </div>
                 </div>
               ))}
@@ -113,17 +113,17 @@ export default async function RegionPage({ params }: Props) {
           {/* Climate */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              季節別の気候特徴と花のケア
+              季節別の気候の特徴と花の手入れ
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               {r.climate.map((c, i) => (
                 <div key={i} className="bg-white border border-[#E8E0D8] rounded-xl p-5">
                   <h3 className="font-bold text-[#333] mb-2">{c.season}</h3>
                   <p className="text-sm text-[#666] leading-relaxed mb-2">
-                    <strong>特徴:</strong> {c.characteristics}
+                    <strong>特徴：</strong> {c.characteristics}
                   </p>
                   <p className="text-sm text-[#4A7C59] leading-relaxed">
-                    <strong>花のケア:</strong> {c.flowerCare}
+                    <strong>花の手入れ：</strong> {c.flowerCare}
                   </p>
                 </div>
               ))}
@@ -148,7 +148,7 @@ export default async function RegionPage({ params }: Props) {
           {/* Local preference */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              地域の花文化・好まれる傾向
+              地域の花文化と好まれる傾向
             </h2>
             <div className="space-y-3">
               {r.localPreference.map((p, i) => (
@@ -208,7 +208,7 @@ export default async function RegionPage({ params }: Props) {
 
           <div className="text-center mb-8">
             <Link href="/" className="inline-block bg-[#4A7C59] text-white font-bold px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors">
-              全サービス比較表へ
+              全サービスの比較表を確認する
             </Link>
           </div>
         </main>

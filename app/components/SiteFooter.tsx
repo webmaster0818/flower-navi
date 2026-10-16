@@ -27,7 +27,7 @@ const guides = [
   ["beginner", "初心者ガイド"],
   ["merit-demerit", "メリット・デメリット"],
   ["kaiyaku", "解約方法まとめ"],
-  ["flower-care", "花を長持ちさせるコツ"],
+  ["flower-care", "花を長持ちさせる方法"],
   ["nagamochi", "切り花を長持ち"],
   ["kabin", "花瓶の選び方"],
   ["seasonal-flowers", "季節の花カレンダー"],
@@ -38,12 +38,12 @@ const guides = [
   ["dansei", "男性におすすめ"],
   ["butsudan", "仏花の定期便"],
   ["furusato-nouzei", "ふるさと納税で"],
-  ["shoboi", "しょぼい？実態検証"],
+  ["shoboi", "しょぼいと言われる理由の検証"],
   ["yameta", "やめた理由"],
 ];
 
 const clusters = [
-  ["/personas/", "ペルソナ別おすすめ"],
+  ["/personas/", "利用者のタイプ別おすすめ"],
   ["/use-cases/", "利用シーン別(誕生日・記念日ほか)"],
   ["/regions/", "地域別(東京・大阪ほか)"],
   ["/vs/", "サービス1対1比較"],

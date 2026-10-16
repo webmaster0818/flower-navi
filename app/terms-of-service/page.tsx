@@ -302,7 +302,7 @@ export default function TermsOfServicePage() {
             <div>
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
               <p className="text-xs text-gray-400 mt-1">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -314,7 +314,7 @@ export default function TermsOfServicePage() {
           </div>
           <div className="border-t border-gray-600 pt-6 text-center">
             <p className="text-xs text-gray-500">
-              当サイトはアフィリエイトプログラムに参加しています。掲載情報は記事執筆時点のものです。最新情報は各公式サイトでご確認ください。
+              当サイトはアフィリエイトプログラムに参加しています。掲載情報は記事執筆時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <Link href="/terms-of-service" className="hover:text-white transition-colors">利用規約</Link>

@@ -94,7 +94,7 @@ export default async function UseCasePage({ params }: Props) {
           {/* Scenes */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              シーン別の活用法
+              シーン別の活用方法
             </h2>
             <div className="space-y-3">
               {u.scenes.map((s, i) => (
@@ -109,7 +109,7 @@ export default async function UseCasePage({ params }: Props) {
           {/* Recommended */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              おすすめサービス
+              おすすめのサービス
             </h2>
             <div className="space-y-4">
               {u.recommended.map((r, i) => (
@@ -118,7 +118,7 @@ export default async function UseCasePage({ params }: Props) {
                   <div className="flex-1">
                     <h3 className="text-lg font-bold text-[#333] mb-1">{r.service}</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-2">{r.reason}</p>
-                    <p className="text-xs text-[#999]">参考価格: {r.priceFrom.toLocaleString()}円〜</p>
+                    <p className="text-xs text-[#999]">参考価格：{r.priceFrom.toLocaleString()}円〜</p>
                   </div>
                 </div>
               ))}
@@ -128,7 +128,7 @@ export default async function UseCasePage({ params }: Props) {
           {/* Selection Tips */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              花選び5つのコツ
+              花選びの5つのポイント
             </h2>
             <ol className="space-y-3">
               {u.selectionTips.map((s, i) => (
@@ -146,7 +146,7 @@ export default async function UseCasePage({ params }: Props) {
           {/* Taboos */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#C4877A]">
-              避けるべきタブー花
+              避けるべき花
             </h2>
             <div className="space-y-3">
               {u.taboos.map((t, i) => (
@@ -209,7 +209,7 @@ export default async function UseCasePage({ params }: Props) {
 
           <div className="text-center mb-8">
             <Link href="/" className="inline-block bg-[#4A7C59] text-white font-bold px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors">
-              全サービス比較表へ
+              全サービスの比較表を確認する
             </Link>
           </div>
         </main>

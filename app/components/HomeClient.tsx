@@ -33,7 +33,7 @@ const recommendationMap: Record<string, { name: string; reason: string }> = {
   medelu: {
     name: "medelu（メデル）",
     reason:
-      "Mini 748円（税込・送料込み）からと比較5社で最安。コスパを重視する方に向いています。",
+      "Mini 748円（税込・送料込み）からと、比較した5社の中で最も安い価格です。費用を抑えたい方に適しています。",
   },
   andplants: {
     name: "AND PLANTS（アンドプランツ）",
@@ -48,7 +48,7 @@ const recommendationMap: Record<string, { name: string; reason: string }> = {
   hanameku: {
     name: "hanameku（ハナメク）",
     reason:
-      "ライトは税込・送料込み1,210円でポスト投函。初回（1回目）は解約できない点に注意。",
+      "ライトは税込・送料込み1,210円でポスト投函です。初回（1回目）は解約できない点にご注意ください。",
   },
 };
 
@@ -64,7 +64,7 @@ const services = [
     tagline: "ポスト投函で始めやすい定番サービス",
     image: "/images/service-bloomee.jpg",
     overview:
-      "bloomee（ブルーミー・旧ブルーミーライフ）は、ユーザーライク株式会社が運営するお花の定期便です。公式サイトでは「お花のお届け実績3,000万本以上（自社調べ）」と表記されています。お試しプラン・グリーンプランはポストに半投函の形で届くため、不在が多い人でも受け取れます。最初の4回は受け取りが必要で、送料が毎回別にかかる点は申込前に確認しておきましょう（2026年10月15日 公式確認）。",
+      "bloomee（ブルーミー・旧ブルーミーライフ）は、ユーザーライク株式会社が運営するお花の定期便です。公式サイトでは「お花のお届け実績3,000万本以上（自社調べ）」と表記されています。お試しプラン・グリーンプランはポストに半投函の形で届くため、不在が多い方でも受け取れます。最初の4回は受け取りが必要で、送料が毎回別にかかる点を申し込み前にご確認ください（2026年10月15日 公式確認）。",
     plans: [
       { name: "お試しプラン", price: "980円＋送料385円/回", flowers: "4本以上（約18〜25cm）", delivery: "毎週（4回目以降は隔週も可）" },
       { name: "グリーンプラン", price: "980円＋送料385円/回", flowers: "グリーン中心（約18〜25cm）", delivery: "毎週（4回目以降は隔週も可）" },
@@ -94,7 +94,7 @@ const services = [
     id: "medelu",
     href: "/services/medelu/",
     name: "medelu（メデル）",
-    tagline: "送料込み748円〜のコスパ派",
+    tagline: "送料込み748円からの低価格プラン",
     image: "/images/service-medelu.jpg",
     overview:
       "medelu（メデル）は、Mini 748円（税込・送料込み）から始められるお花の定期便です。部屋のテイストに合わせてANYROOM・NATURAL・MODERNのコースを選び、Mini〜Basicの4サイズから量を選べます。Mini・Liteはポスト投函で届きます（2026年10月14日 公式確認）。",
@@ -141,7 +141,7 @@ const services = [
     deliveryMethod: "宅配便（金〜日曜から選択）",
     cancellation: "最低回数の記載なし・いつでも解約可",
     pros: [
-      "送料込み1,980円〜で追加費用が分かりやすい",
+      "送料込み1,980円〜で、追加費用がわかりやすい",
       "定期便ページに初回500円オフクーポンの案内あり",
       "1週・2週・4週ごとから頻度を選べる",
       "解約はいつでも可能",
@@ -175,7 +175,7 @@ const services = [
     cancellation: "月単位でメール・電話で中止（最低回数の記載は確認できず）",
     pros: [
       "40以上のコースから飾り方に合わせて選べる",
-      "関西近郊は自社配達便で、留守でもバケツに入れて届けてくれる",
+      "関西近郊は自社配達便で、留守の場合もバケツに入れて届けられる",
       "届く花に手引書が同封される",
     ],
     cons: [
@@ -227,19 +227,19 @@ const services = [
 const faqItems = [
   {
     q: "お花の定期便とは何ですか？",
-    a: "お花の定期便（花のサブスク）とは、定期的に自宅にお花が届くサブスクリプションサービスです。毎回プロが選んだ季節のお花が届くため、自分で花屋に行く手間がなく、常に新鮮なお花を楽しめます。",
+    a: "お花の定期便（花のサブスク）とは、定期的に自宅にお花が届くサブスクリプションサービスです。専門のスタッフが選んだ季節のお花が毎回届くため、花屋に行く手間がかからず、常に新鮮なお花を楽しめます。",
   },
   {
     q: "お花の定期便の相場はどれくらいですか？",
-    a: "お花の定期便の相場は、1回あたり700円〜5,000円程度です。最安値はmedeluの748円/回、手軽に始められるbloomeeは980円/回からとなっています。送料込みの総額で比較することが大切です。",
+    a: "お花の定期便の相場は、1回あたり700円〜5,000円程度です。最安はmedeluの748円/回、bloomeeは花代980円/回からとなっています。送料込みの総額で比較することが大切です。",
   },
   {
     q: "ポスト投函と手渡し、どちらがいいですか？",
-    a: "不在が多い方にはポスト投函がおすすめです。ポスト投函はbloomee（お試し・グリーンプラン）、medelu（Mini・Lite）、hanameku（ライトプラン）などで対応しています。ただし、ポスト投函は花のボリュームに限りがあるため、大きなアレンジを楽しみたい方は手渡しのサービスを選びましょう。",
+    a: "不在が多い方には、ポスト投函をおすすめします。ポスト投函は、bloomee（お試し・グリーンプラン）、medelu（Mini・Lite）、hanameku（ライトプラン）などで対応しています。ただし、ポスト投函は花のボリュームに限りがあるため、大きなアレンジを楽しみたい方は、手渡しのサービスをお選びください。",
   },
   {
     q: "お花はどれくらい持ちますか？",
-    a: "一般的に、届いたお花は適切なお手入れをすれば1週間〜10日程度楽しめます。季節や花の種類によって差があるため、付属の栄養剤を使い、水をこまめに替えることがポイントです。",
+    a: "一般的に、届いたお花は適切に手入れをすれば、1週間〜10日程度楽しめます。季節や花の種類によって差があるため、付属の栄養剤を使い、水をこまめに替えることが大切です。",
   },
   {
     q: "解約は簡単にできますか？",
@@ -251,11 +251,11 @@ const faqItems = [
   },
   {
     q: "お花が傷んで届いた場合はどうなりますか？",
-    a: "多くのサービスで品質保証制度があります。例えばbloomeeの定期便は到着から2週間以内の連絡で返金・交換の対象（公式・特定商取引法に基づく表記）、medeluは到着当日中に写真を送れば全額返金です。各サービスの保証制度は申し込み前に確認しておきましょう。",
+    a: "多くのサービスに品質保証制度があります。例えば、bloomeeの定期便は到着から2週間以内の連絡で返金・交換の対象（公式・特定商取引法に基づく表記）、medeluは到着当日中に写真を送れば全額返金です。各サービスの保証制度は、申し込み前にご確認ください。",
   },
   {
     q: "一人暮らしでも利用できますか？",
-    a: "もちろん利用できます。むしろ一人暮らしの方にこそおすすめです。ポスト投函対応のbloomeeやmedeluなら不在時でも受け取れ、少量プランを選べばお花の世話の負担も少なく楽しめます。",
+    a: "利用できます。一人暮らしの方にも適しており、ポスト投函に対応したbloomeeやmedeluであれば不在時でも受け取れます。少量のプランを選べば、お花の手入れの負担も少なく楽しめます。",
   },
   {
     q: "プレゼントとして送ることはできますか？",
@@ -263,7 +263,7 @@ const faqItems = [
   },
   {
     q: "お花の定期便を選ぶ際に最も重要なポイントは？",
-    a: "最も重要なのは「続けやすさ」です。料金、送料、届く頻度、受け取り方法、解約条件の5つを総合的に見て、自分のライフスタイルに合ったサービスを選びましょう。まずは安いプランやお試しから始めるのがおすすめです。",
+    a: "最も重要なのは、続けやすさです。料金、送料、届く頻度、受け取り方法、解約条件の5つを総合的に確認し、ご自身の生活に合ったサービスをお選びください。まずは安いプランやお試しから始めることをおすすめします。",
   },
 ];
 
@@ -272,35 +272,35 @@ const purposes = [
   {
     title: "一人暮らしの方に",
     icon: "🏠",
-    description: "不在でも受け取れるポスト投函対応で、少量から始められるサービスがおすすめ。",
+    description: "不在でも受け取れるポスト投函に対応し、少量から始められるサービスが適しています。",
     services: ["bloomee お試しプラン（980円+送料385円）", "medelu Miniコース（748円・送料込み）"],
     best: "medelu",
   },
   {
     title: "プレゼント用に",
     icon: "🎁",
-    description: "ボリュームのある華やかなアレンジで、ギフト対応しているサービスが最適。",
+    description: "ボリュームのある華やかなアレンジを選べ、ギフトに対応しているサービスが適しています。",
     services: ["AND PLANTS Mプラン以上（2,980円〜）", "bloomee ベーシックプラン（2,180円+送料550円）"],
     best: "AND PLANTS",
   },
   {
     title: "おしゃれにこだわる方に",
     icon: "✨",
-    description: "プロのフローリストによるセンスの良いアレンジが届くサービスを選びましょう。",
+    description: "フローリストによるアレンジが届くサービスが適しています。",
     services: ["AND PLANTS（全プラン）", "medelu MODERNコース（748円〜）"],
     best: "AND PLANTS",
   },
   {
-    title: "コスパ重視の方に",
+    title: "費用を抑えたい方に",
     icon: "💰",
-    description: "送料込みの総額で比較して、最もお得に続けられるサービスを選びましょう。",
+    description: "送料込みの総額で比較し、最も費用を抑えて続けられるサービスをお選びください。",
     services: ["medelu Miniコース（748円・送料込み）", "hanameku ライトプラン（1,210円・送料込み）"],
     best: "medelu",
   },
   {
     title: "傷んで届くのが心配な方に",
     icon: "🌿",
-    description: "届いた花の傷みに対応する保証の条件と、手元に届くまでの配送方法で選びましょう。",
+    description: "届いた花の傷みに対する保証の条件と、手元に届くまでの配送方法でお選びください。",
     services: ["medelu（枯れていたら送料込みで全額返金）", "花の定期便（日本総合園芸・関西近郊は自社配達便）"],
     best: "medelu",
   },
@@ -311,27 +311,27 @@ const howToChoose = [
   {
     title: "料金と送料の総額で比較する",
     description:
-      "月額料金だけでなく、送料を含めた総額で比較しましょう。例えばbloomeeは月額980円ですが送料385円が別途かかります。一方medeluは748円で送料無料。月2回届く場合の月額総額で計算すると実質的なコスパがわかります。",
+      "料金だけでなく、送料を含めた総額で比較してください。例えば、bloomeeは花代980円/回に加えて送料385円が別途かかります。一方、medeluは748円/回で送料込みです。月2回届く場合の月額の総額で計算すると、実質的な費用を比較できます。",
   },
   {
     title: "届き方（ポスト投函 vs 手渡し）を確認する",
     description:
-      "日中不在がちな方はポスト投函対応のサービスがおすすめです。ただし、ポスト投函は花のサイズに制限があるため、ボリュームのあるお花を希望する場合は手渡し配送のサービスを選びましょう。",
+      "日中不在がちな方には、ポスト投函に対応したサービスをおすすめします。ただし、ポスト投函は花のサイズに制限があるため、ボリュームのあるお花を希望する場合は、手渡しで配送するサービスをお選びください。",
   },
   {
-    title: "解約条件・回数縛りをチェックする",
+    title: "解約条件・最低受取回数を確認する",
     description:
-      "お花の定期便によっては最低受け取り回数が設定されています。bloomeeは4回の縛りがありますが、medelu・AND PLANTS・hanamekuは回数縛りなし。初めて試す方は縛りなしのサービスが安心です。",
+      "お花の定期便には、最低受取回数が設定されているものがあります。bloomeeは4回の受け取りが必要ですが、medelu・AND PLANTS・hanamekuは回数の縛りがありません。初めて利用する方は、回数の縛りがないサービスをおすすめします。",
   },
   {
     title: "花の本数とボリュームを確認する",
     description:
-      "同じ価格帯でも届く花の本数はサービスによって異なります。テーブルに飾るなら3〜5本で十分ですが、リビングを華やかにしたい場合は8本以上届くプランがおすすめです。",
+      "同じ価格帯でも、届く花の本数はサービスによって異なります。テーブルに飾る場合は3〜5本で十分ですが、リビングを華やかにしたい場合は、8本以上届くプランをおすすめします。",
   },
   {
     title: "品質保証制度の有無を確認する",
     description:
-      "配送中にお花が傷んでしまうこともあります。品質保証があるサービスなら、写真を送るだけで再送や返金に対応してもらえるため安心です。bloomeeなどは保証制度が充実しています。",
+      "配送中にお花が傷む場合もあります。品質保証があるサービスであれば、写真を送ることで再送や返金に対応してもらえます。bloomeeなどは、保証制度が充実しています。",
   },
 ];
 
@@ -452,17 +452,17 @@ export default function HomeClient() {
                 Flower Subscription Guide
               </p>
               <h1 className="heading-serif text-4xl md:text-6xl font-bold text-[#3D3632] mb-6 leading-[1.2]">
-                暮らしに、
+                お花の定期便の
                 <br />
-                お花を。
+                比較ガイド
                 <span className="block text-xl md:text-2xl font-bold text-[#C4877A] mt-4 leading-snug">
-                  お花の定期便おすすめ5社を徹底比較
+                  お花の定期便おすすめ5社の比較
                 </span>
               </h1>
               <p className="text-base md:text-lg text-[#6B5F57] leading-relaxed mb-10 max-w-md">
-                人気のお花の定期便5社を徹底比較。
-                あなたのライフスタイルにぴったりの
-                サービスが見つかります。
+                人気のお花の定期便5社を比較しています。
+                ご自身の生活に合った
+                サービス選びにご活用ください。
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -475,7 +475,7 @@ export default function HomeClient() {
                   href="#comparison"
                   className="inline-block bg-white/80 text-[#3D3632] border border-[#E8E0D8] px-8 py-4 rounded-full font-medium hover:bg-white transition-all text-center"
                 >
-                  比較表を見る
+                  比較表を確認する
                 </a>
               </div>
             </div>
@@ -493,10 +493,10 @@ export default function HomeClient() {
             <div className="text-center mb-12">
               <p className="text-sm text-[#C4877A] tracking-widest mb-3">DIAGNOSIS</p>
               <h2 className="heading-serif text-3xl md:text-4xl font-bold text-[#3D3632] mb-4">
-                あなたに合ったサービスを診断
+                ご自身に合ったサービスの診断
               </h2>
               <p className="text-[#6B5F57]">
-                3つの質問に答えるだけで、おすすめのお花の定期便がわかります
+                3つの質問に答えると、おすすめのお花の定期便がわかります
               </p>
             </div>
 
@@ -510,7 +510,7 @@ export default function HomeClient() {
                 {diagnosisStep === 0 && (
                   <div className="text-center">
                     <p className="text-lg text-[#3D3632] mb-8">
-                      簡単3ステップで<br className="md:hidden" />ぴったりのサービスを見つけましょう
+                      3つの質問で<br className="md:hidden" />適したサービスを確認できます
                     </p>
                     <button
                       onClick={() => setDiagnosisStep(1)}
@@ -528,7 +528,7 @@ export default function HomeClient() {
                       <span className="text-sm text-[#C4877A]">質問 1/3</span>
                     </div>
                     <p className="text-lg font-medium text-[#3D3632] mb-6">
-                      お花の定期便に何を求めますか？
+                      お花の定期便に求めることを選んでください
                     </p>
                     <div className="grid gap-3">
                       {[
@@ -555,11 +555,11 @@ export default function HomeClient() {
                       <span className="text-sm text-[#C4877A]">質問 2/3</span>
                     </div>
                     <p className="text-lg font-medium text-[#3D3632] mb-6">
-                      最も重視するポイントは？
+                      最も重視する点を選んでください
                     </p>
                     <div className="grid gap-3">
                       {[
-                        { value: "cost", label: "コスパ（できるだけ安く）" },
+                        { value: "cost", label: "価格（できるだけ安く）" },
                         { value: "freshness", label: "鮮度（長持ちするお花）" },
                         { value: "design", label: "デザイン（おしゃれさ）" },
                       ].map((opt) => (
@@ -582,12 +582,12 @@ export default function HomeClient() {
                       <span className="text-sm text-[#C4877A]">質問 3/3</span>
                     </div>
                     <p className="text-lg font-medium text-[#3D3632] mb-6">
-                      受け取り方法の希望は？
+                      希望する受け取り方法を選んでください
                     </p>
                     <div className="grid gap-3">
                       {[
-                        { value: "post", label: "ポスト投函（不在でもOK）" },
-                        { value: "hand", label: "手渡し（大きなアレンジOK）" },
+                        { value: "post", label: "ポスト投函（不在でも受け取れる）" },
+                        { value: "hand", label: "手渡し（大きなアレンジも可能）" },
                         { value: "flexible", label: "どちらでもよい" },
                       ].map((opt) => (
                         <button
@@ -608,7 +608,7 @@ export default function HomeClient() {
                       RESULT
                     </p>
                     <p className="text-lg text-[#6B5F57] mb-2">
-                      あなたにおすすめは
+                      おすすめのサービス
                     </p>
                     <p className="heading-serif text-3xl md:text-4xl font-bold text-[#C4877A] mb-5">
                       {recommendationMap[result]?.name}
@@ -621,7 +621,7 @@ export default function HomeClient() {
                         href={`#${result}`}
                         className="inline-block bg-[#C4877A] text-white px-8 py-3 rounded-full font-medium hover:bg-[#A86B5E] transition-all"
                       >
-                        詳細を見る
+                        詳細を確認する
                       </a>
                       <button
                         onClick={resetDiagnosis}
@@ -651,7 +651,7 @@ export default function HomeClient() {
                 お花の定期便 主要4社の料金比較表
               </h2>
               <p className="text-[#6B5F57]">
-                料金・送料・届き方を一目で比較できます
+                料金・送料・届き方を一覧で比較できます
               </p>
             </div>
 
@@ -692,7 +692,7 @@ export default function HomeClient() {
             </div>
 
             <p className="text-sm text-[#9B8F87] mt-6 text-center">
-              ※ 料金は税込み表示です。最新の料金は各公式サイトでご確認ください。
+              ※ 料金は税込み表示です。ご利用前に、公式サイトにて最新の料金をご確認ください。
             </p>
           </div>
         </section>
@@ -703,10 +703,10 @@ export default function HomeClient() {
             <div className="text-center mb-16">
               <p className="text-sm text-[#C4877A] tracking-widest mb-3">REVIEWS</p>
               <h2 className="heading-serif text-3xl md:text-4xl font-bold text-[#3D3632] mb-4">
-                各サービスの詳細レビュー
+                各サービスの詳細
               </h2>
               <p className="text-[#6B5F57]">
-                5つのサービスを徹底的に解説します
+                5つのサービスの特徴をご説明します
               </p>
             </div>
 
@@ -812,7 +812,7 @@ export default function HomeClient() {
                       {/* Recommended For */}
                       <div className="bg-[#FBF8F4] rounded-2xl p-6 border border-[#E8E0D8]">
                         <h4 className="font-bold text-[#3D3632] mb-3">
-                          こんな方におすすめ
+                          適している方
                         </h4>
                         <ul className="space-y-2">
                           {service.recommended.map((rec) => (
@@ -828,7 +828,7 @@ export default function HomeClient() {
                         href={service.href}
                         className="block text-center bg-white border border-[#C4877A] text-[#C4877A] font-bold px-6 py-3 rounded-xl text-sm hover:bg-[#F9F2F0] transition"
                       >
-                        {service.name}の口コミ・評判と料金の詳細を見る →
+                        {service.name}の口コミ・評判と料金の詳細 →
                       </a>
                     </div>
                   </div>
@@ -844,10 +844,10 @@ export default function HomeClient() {
             <div className="text-center mb-12">
               <p className="text-sm text-[#C4877A] tracking-widest mb-3">FOR YOU</p>
               <h2 className="heading-serif text-3xl md:text-4xl font-bold text-[#3D3632] mb-4">
-                目的別おすすめサービス
+                目的別のおすすめサービス
               </h2>
               <p className="text-[#6B5F57]">
-                あなたの目的に合ったサービスを見つけましょう
+                目的に合ったサービスをお選びください
               </p>
             </div>
 
@@ -875,7 +875,7 @@ export default function HomeClient() {
                     ))}
                   </div>
                   <p className="text-sm font-medium text-[#C4877A] bg-[#F9F2F0] inline-block px-3 py-1 rounded-full">
-                    イチオシ: {purpose.best}
+                    おすすめ: {purpose.best}
                   </p>
                 </div>
               ))}
@@ -892,7 +892,7 @@ export default function HomeClient() {
                 お花の定期便の選び方
               </h2>
               <p className="text-[#6B5F57]">
-                失敗しないために押さえておきたい5つのポイント
+                選ぶ際に確認すべき5つのポイント
               </p>
             </div>
 
@@ -932,7 +932,7 @@ export default function HomeClient() {
                 よくある質問
               </h2>
               <p className="text-[#6B5F57]">
-                お花の定期便に関する疑問にお答えします
+                お花の定期便に関するよくある質問と回答です
               </p>
             </div>
 
@@ -979,21 +979,21 @@ export default function HomeClient() {
           <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
             <p className="text-sm text-[#C4877A] tracking-widest mb-3">SUMMARY</p>
             <h2 className="heading-serif text-3xl md:text-4xl font-bold text-[#3D3632] mb-8">
-              自分に合ったお花の定期便を<br className="hidden md:inline" />選びましょう
+              ご自身に合ったお花の定期便を<br className="hidden md:inline" />お選びください
             </h2>
             <div className="text-left bg-white/90 backdrop-blur-sm rounded-3xl p-8 md:p-10 mb-10 text-[#6B5F57] leading-[1.9] space-y-4 shadow-sm border border-[#E8E0D8]">
               <p>
-                お花の定期便は、忙しい毎日の中に彩りを添えてくれるサービスです。
-                この記事では人気5社を比較してきましたが、それぞれに特徴があり、一概に「これが一番」とは言えません。
+                お花の定期便は、日々の暮らしに彩りを添えるサービスです。
+                本ページでは人気の5社を比較しましたが、それぞれに特徴があり、一概に最適なサービスを決めることはできません。
               </p>
-              <p>大切なのは、あなたのライフスタイルに合ったサービスを選ぶことです。</p>
+              <p>大切なのは、ご自身の生活に合ったサービスを選ぶことです。</p>
               <ul className="space-y-3 my-4">
                 {[
-                  { label: "初心者で手軽に始めたいなら", value: "bloomee" },
-                  { label: "コスパ最優先なら", value: "medelu（送料無料で748円〜）" },
-                  { label: "おしゃれなお花が欲しいなら", value: "AND PLANTS" },
-                  { label: "鮮度重視なら", value: "花の定期便（農家直送）" },
-                  { label: "縛りなしで気軽に試したいなら", value: "hanameku" },
+                  { label: "初めてで手軽に始めたい場合", value: "bloomee" },
+                  { label: "費用を最優先する場合", value: "medelu（送料込みで748円〜）" },
+                  { label: "デザイン性の高いお花を希望する場合", value: "AND PLANTS" },
+                  { label: "鮮度を重視する場合", value: "花の定期便（農家直送）" },
+                  { label: "回数の縛りなく試したい場合", value: "hanameku" },
                 ].map((item) => (
                   <li key={item.label} className="flex items-start gap-3">
                     <span className="text-[#C4877A] shrink-0 mt-1">&#9656;</span>
@@ -1004,15 +1004,15 @@ export default function HomeClient() {
                 ))}
               </ul>
               <p>
-                迷ったら、まずは安いプランやお試しキャンペーンから始めてみることをおすすめします。
-                実際に届いたお花を見て、自分の好みに合うかどうかを確かめるのが一番確実な方法です。
+                判断に迷う場合は、まず安いプランやお試しのキャンペーンから始めることをおすすめします。
+                実際に届いたお花を確認し、好みに合うかどうかを確かめる方法が確実です。
               </p>
             </div>
             <a
               href="#diagnosis"
               className="inline-block bg-[#C4877A] text-white px-10 py-4 rounded-full font-medium text-lg hover:bg-[#A86B5E] transition-all hover:shadow-lg"
             >
-              もう一度診断してみる
+              もう一度診断する
             </a>
           </div>
         </section>
@@ -1027,7 +1027,7 @@ export default function HomeClient() {
                 <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
               </div>
               <p className="text-sm text-gray-400 leading-relaxed">
-                お花の定期便（花のサブスク）の比較情報サイトです。各サービスの料金、届き方、口コミなどを徹底調査し、あなたにぴったりのサービス選びをサポートします。
+                お花の定期便（花のサブスク）の比較情報サイトです。各サービスの料金、届き方、口コミなどを調査し、サービス選びに役立つ情報を掲載しています。
               </p>
             </div>
             <div>
@@ -1053,7 +1053,7 @@ export default function HomeClient() {
           </div>
           <div className="border-t border-gray-600 pt-8 text-center">
             <p className="text-xs text-gray-500 leading-relaxed">
-              当サイトはアフィリエイトプログラムに参加しています。掲載情報は記事執筆時点のものです。最新情報は各公式サイトでご確認ください。
+              当サイトはアフィリエイトプログラムに参加しています。掲載情報は記事執筆時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-[#C4877A] transition-colors">利用規約</a>

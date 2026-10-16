@@ -19,19 +19,19 @@ const planRows = (id: string) =>
 const faqItems = [
   {
     q: "送料無料のサービスは本当に追加費用がかかりませんか？",
-    a: "medeluとAND PLANTSは表示価格に送料が含まれており、追加の送料は一切かかりません。hanamekuはプランや配送方法によって送料が異なり、一部プランのみ送料無料です。各サービスの公式サイトで最新の料金体系をご確認ください。",
+    a: "medeluとAND PLANTSは表示価格に送料が含まれており、追加の送料はかかりません。hanamekuはプランや配送方法によって送料が異なり、一部のプランのみ送料無料です。各サービスの最新の料金体系は、公式サイトにてご確認ください。",
   },
   {
     q: "送料無料のサービスは品質が劣りますか？",
-    a: "いいえ、品質が劣ることはありません。medeluは市場直送の仕組みで中間コストを削減し、AND PLANTSはプロのフローリストがアレンジを担当しています。送料を無料にできる理由は、配送ルートの効率化やビジネスモデルの工夫であり、花の品質を落としているわけではありません。",
+    a: "送料無料であることを理由に品質が劣ることはありません。medeluは市場から直送する仕組みで中間コストを削減しており、AND PLANTSはプロのフローリストがアレンジを担当しています。送料を無料にできる理由は配送ルートの効率化やビジネスモデルの工夫によるもので、花の品質を下げているわけではありません。",
   },
   {
-    q: "送料無料と送料別、年間でどれくらい差がつきますか？",
-    a: "例えばbloomeeの送料385円を隔週（月2回）で利用すると、送料だけで年間9,240円になります。送料無料のmedeluなら、この分がまるまるお得です。毎週配送にすると年間約2万円の差になることもあり、長期利用するほど送料無料サービスのメリットが大きくなります。",
+    q: "送料無料と送料別では、年間でどれくらいの差がありますか？",
+    a: "例えば、送料385円のbloomeeを隔週（月2回）で利用すると、送料だけで年間9,240円になります。送料無料のmedeluであれば、この金額がかかりません。毎週配送の場合は年間約2万円の差になることもあり、長期間利用するほど送料無料サービスの利点が大きくなります。",
   },
   {
     q: "離島や北海道・沖縄でも送料無料ですか？",
-    a: "サービスによって異なります。medeluは全国送料無料ですが、一部離島は配送対象外の場合があります。AND PLANTSは沖縄・離島への配送に追加料金がかかる場合があります。お住まいの地域が配送対象かどうか、事前に公式サイトでご確認ください。",
+    a: "サービスによって異なります。medeluは全国送料無料ですが、一部の離島は配送対象外となる場合があります。AND PLANTSは沖縄・離島への配送に追加料金がかかる場合があります。お住まいの地域が配送対象かどうかは、事前に公式サイトにてご確認ください。",
   },
 ];
 
@@ -41,7 +41,7 @@ const comparisonData = [
     name: "medelu",
     nameJa: "メデル",
     plans: planRows("medelu"),
-    highlight: "全プラン送料込み。市場直送で鮮度が良く、748円/回から始められる最安水準。",
+    highlight: "全プランが送料込みです。市場からの直送で鮮度が高く、748円/回から始められる最も安い水準のサービスです。",
     url: "/services/medelu",
     color: "#4A7C59",
   },
@@ -49,7 +49,7 @@ const comparisonData = [
     name: "AND PLANTS",
     nameJa: "アンドプランツ",
     plans: planRows("andplants"),
-    highlight: "送料込み1,980円/回から。プロのフローリストによるデザイン性の高いアレンジが届く。",
+    highlight: "送料込み1,980円/回から利用できます。プロのフローリストによるデザイン性の高いアレンジが届きます。",
     url: "/services/and-plants",
     color: "#6B8E5B",
   },
@@ -57,7 +57,7 @@ const comparisonData = [
     name: "hanameku",
     nameJa: "ハナメク",
     plans: planRows("hanameku"),
-    highlight: "税込・配送料込。ライトプランは1,210円/回・ポスト投函で受け取りやすい。",
+    highlight: "税込・配送料込みの価格です。ライトプランは1,210円/回で、ポスト投函のため受け取りやすいプランです。",
     url: "/services/hanameku",
     color: "#8B6F5C",
   },
@@ -74,14 +74,14 @@ export default function SouryouMuryouPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"送料無料の花のサブスク比較\",\"item\":\"https://ohana-delivery.com/compare/souryou-muryou/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"送料無料の花のサブスク比較\",\"description\":\"送料無料の花のサブスク比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/souryou-muryou/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"送料無料の花のサブスク比較\",\"description\":\"送料無料の花のサブスクの料金・評判・選び方を比較して解説しています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/souryou-muryou/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"送料無料のサービスは本当に追加費用がかかりませんか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとAND PLANTSは表示価格に送料が含まれており、追加の送料は一切かかりません。hanamekuはプランや配送方法によって送料が異なり、一部プランのみ送料無料です。各サービスの公式サイトで最新の料金体系をご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスは品質が劣りますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"いいえ、品質が劣ることはありません。medeluは市場直送の仕組みで中間コストを削減し、AND PLANTSはプロのフローリストがアレンジを担当しています。送料を無料にできる理由は、配送ルートの効率化やビジネスモデルの工夫であり、花の品質を落としているわけではありません。\"}},{\"@type\":\"Question\",\"name\":\"送料無料と送料別、年間でどれくらい差がつきますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"例えばbloomeeの送料385円を隔週（月2回）で利用すると、送料だけで年間9,240円になります。送料無料のmedeluなら、この分がまるまるお得です。毎週配送にすると年間約2万円の差になることもあり、長期利用するほど送料無料サービスのメリットが大きくなります。\"}},{\"@type\":\"Question\",\"name\":\"離島や北海道・沖縄でも送料無料ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは全国送料無料ですが、一部離島は配送対象外の場合があります。AND PLANTSは沖縄・離島への配送に追加料金がかかる場合があります。お住まいの地域が配送対象かどうか、事前に公式サイトでご確認ください。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"送料無料のサービスは本当に追加費用がかかりませんか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとAND PLANTSは表示価格に送料が含まれており、追加の送料はかかりません。hanamekuはプランや配送方法によって送料が異なり、一部のプランのみ送料無料です。各サービスの最新の料金体系は、公式サイトにてご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスは品質が劣りますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料無料であることを理由に品質が劣ることはありません。medeluは市場から直送する仕組みで中間コストを削減しており、AND PLANTSはプロのフローリストがアレンジを担当しています。送料を無料にできる理由は配送ルートの効率化やビジネスモデルの工夫によるもので、花の品質を下げているわけではありません。\"}},{\"@type\":\"Question\",\"name\":\"送料無料と送料別では、年間でどれくらいの差がありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"例えば、送料385円のbloomeeを隔週（月2回）で利用すると、送料だけで年間9,240円になります。送料無料のmedeluであれば、この金額がかかりません。毎週配送の場合は年間約2万円の差になることもあり、長期間利用するほど送料無料サービスの利点が大きくなります。\"}},{\"@type\":\"Question\",\"name\":\"離島や北海道・沖縄でも送料無料ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは全国送料無料ですが、一部の離島は配送対象外となる場合があります。AND PLANTSは沖縄・離島への配送に追加料金がかかる場合があります。お住まいの地域が配送対象かどうかは、事前に公式サイトにてご確認ください。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <title>送料無料のお花の定期便3選｜総額で比較【2026年】</title>
-      <meta name="description" content="送料無料の花のサブスク・お花の定期便を徹底比較。medelu、AND PLANTS、hanamekuの送料込み総額を一覧表で比較し、最もお得なサービスをご紹介します。" />
+      <title>送料無料のお花の定期便3選｜総額で比較【2026年】｜flowerデリ</title>
+      <meta name="description" content="送料無料の花のサブスク・お花の定期便を比較しています。medelu、AND PLANTS、hanamekuの送料込みの総額を一覧表で比較し、総額が最も安いサービスをご紹介します。" />
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
@@ -108,8 +108,8 @@ export default function SouryouMuryouPage() {
               総額で比較【2026年】
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              花のサブスクは送料が意外と高く、年間で1万円以上の差がつくことも。
-              送料無料で利用できるサービスを総額ベースで徹底比較します。
+              花のサブスクは送料によって、年間で1万円以上の差が生じる場合があります。
+              当サイトでは、送料無料で利用できるサービスを総額で比較しています。
             </p>
           </div>
         </section>
@@ -118,10 +118,10 @@ export default function SouryouMuryouPage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              なぜ送料無料が重要なのか
+              送料無料が重要な理由
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
-              花のサブスクを選ぶ際、花代だけに注目しがちですが、<strong>送料を含めた総額</strong>で比較することが非常に重要です。送料は1回あたり300〜500円が相場で、隔週配送なら月600〜1,000円、年間では7,200〜12,000円もの差になります。
+              花のサブスクを選ぶ際は花代に注目しがちですが、<strong>送料を含めた総額</strong>で比較することが重要です。送料は1回あたり300〜500円が相場で、隔週配送の場合は月600〜1,000円、年間では7,200〜12,000円の差になります。
             </p>
             <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C8D8CB]">
               <h3 className="text-sm font-bold text-[#333] mb-3">年間送料シミュレーション（隔週配送の場合）</h3>
@@ -147,7 +147,7 @@ export default function SouryouMuryouPage() {
         <section className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              送料無料サービス3選（詳細比較）
+              送料無料サービス3選の詳細比較
             </h2>
 
             <div className="space-y-6">
@@ -155,7 +155,7 @@ export default function SouryouMuryouPage() {
                 <div key={idx} className={`bg-white rounded-xl overflow-hidden ${idx === 0 ? "border-2 border-[#4A7C59]" : "border border-[#E5E5E5]"}`}>
                   {idx === 0 && (
                     <div className="bg-[#4A7C59] text-white text-xs text-center py-1.5 font-bold">
-                      送料無料で最安 - おすすめNo.1
+                      送料無料のサービスで最安・おすすめ第1位
                     </div>
                   )}
                   <div className="p-5">
@@ -195,7 +195,7 @@ export default function SouryouMuryouPage() {
               ))}
             </div>
             <p className="text-xs text-[#999] mt-3">
-              ※ 価格はすべて税込。2026年4月時点の情報です。最新の料金は各公式サイトでご確認ください。
+              ※ 価格はすべて税込です。2026年4月時点の情報です。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
           </div>
         </section>
@@ -204,7 +204,7 @@ export default function SouryouMuryouPage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              送料込み総額比較表（送料有料サービスとの比較）
+              送料込みの総額比較表（送料有料のサービスとの比較）
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -249,7 +249,7 @@ export default function SouryouMuryouPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#999] mt-3">※ 年間送料は隔週（月2回・年24回）配送で計算</p>
+            <p className="text-xs text-[#999] mt-3">※ 年間送料は、隔週（月2回・年24回）配送の場合で計算しています。</p>
           </div>
         </section>
 
@@ -257,7 +257,7 @@ export default function SouryouMuryouPage() {
         <section id="faq" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              送料無料の花サブスクに関するよくある質問
+              送料無料の花のサブスクに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
@@ -286,13 +286,13 @@ export default function SouryouMuryouPage() {
         <section className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：送料無料で選ぶならmedeluが最安
+              まとめ：送料無料のサービスではmedeluが最安です
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              送料無料のお花の定期便3サービスを比較した結果、<strong>総額で最も安いのはmedelu Miniコース（748円/回）</strong>です。回数縛りもなく、ポスト投函で手軽に受け取れるため、初めての方にもおすすめです。
+              送料無料のお花の定期便3サービスを比較した結果、<strong>総額が最も安いのはmedelu Miniコース（748円/回）</strong>です。回数の条件がなく、ポスト投函で手軽に受け取れるため、初めての方にもおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              ボリュームとデザイン性を重視するなら<strong>AND PLANTS（1,980円/回）</strong>、本数重視なら<strong>hanamekuのセルフアレンジプラン（1,958円/回）</strong>がおすすめです。いずれも送料を気にせず利用できるため、長期利用に向いています。
+              ボリュームとデザイン性を重視する場合は<strong>AND PLANTS（1,980円/回）</strong>、本数を重視する場合は<strong>hanamekuのセルフアレンジプラン（1,958円/回）</strong>をおすすめします。いずれも送料を気にせず利用できるため、長期間の利用に適しています。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
@@ -303,7 +303,7 @@ export default function SouryouMuryouPage() {
               </a>
             </div>
             <a href="/compare/cheap" className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline">
-              安い花のサブスク総合ランキングも見る
+              安い花のサブスクの総合比較を見る
             </a>
           </div>
         </section>
@@ -315,7 +315,7 @@ export default function SouryouMuryouPage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
-              <p className="text-xs text-gray-400">花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。</p>
+              <p className="text-xs text-gray-400">花のサブスクを比較し、ご自身に合ったサービス選びを支援します。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
               <a href="/" className="hover:text-white transition-colors">トップページ</a>

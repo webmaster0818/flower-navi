@@ -7,19 +7,19 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "花のサブスクをやめた後、また再開できますか？",
-    a: "はい、ほとんどのサービスで再開可能です。bloomee、medelu、AND PLANTSなどは解約後も再登録が可能で、以前のアカウント情報が残っている場合もあります。再開時にクーポンが配布されることもあるため、公式サイトやメルマガをチェックしておくとお得に再開できます。",
+    a: "はい、ほとんどのサービスで再開できます。bloomee、medelu、AND PLANTSなどは解約後も再登録が可能で、以前のアカウント情報が残っている場合もあります。再開時にクーポンが配布されることもあるため、公式サイトやメールマガジンを確認しておくと、割安に再開できる場合があります。",
   },
   {
     q: "やめる前にスキップ機能で様子を見ることはできますか？",
-    a: "多くのサービスがスキップ（配送停止）機能を提供しています。medeluは次回配送のスキップが可能、bloomeeもマイページからスキップできます。「しばらく休みたいけど完全にやめるのは迷う」という場合は、スキップ機能を活用して様子を見るのがおすすめです。",
+    a: "多くのサービスがスキップ（配送停止）機能を提供しています。medeluは次回配送のスキップが可能で、bloomeeもマイページからスキップできます。「しばらく休みたいが、解約するかは迷っている」という場合は、スキップ機能を活用して様子を見ることをおすすめします。",
   },
   {
     q: "花のサブスクの代わりになるものはありますか？",
-    a: "生花以外の選択肢として、ドライフラワーの定期便、観葉植物のサブスク（AND PLANTSなど）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を買う方法も、自分のペースで花を楽しめるためおすすめです。",
+    a: "生花以外の選択肢として、ドライフラワーの定期便、観葉植物のサブスク（AND PLANTSなど）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を購入する方法も、自分のペースで花を楽しめるためおすすめです。",
   },
   {
     q: "花のサブスクを続けるメリットは何ですか？",
-    a: "定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花との出会いがあること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。継続割引があるサービスもあり、長く続けるほどお得になる場合もあります。",
+    a: "定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花に出会えること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。継続割引があるサービスもあり、長く続けるほど割安になる場合があります。",
   },
 ];
 
@@ -32,15 +32,15 @@ export default function YametaGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクをやめた人の理由と対処法\",\"item\":\"https://ohana-delivery.com/guides/yameta/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクをやめた人の理由と対処法\",\"description\":\"花のサブスクをやめた人の理由と対処法 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/yameta/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクをやめた人の理由と対処法\",\"description\":\"花のサブスクをやめた方の理由と対処法を解説します。料金・評判・選び方もあわせて説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/yameta/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた後、また再開できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ほとんどのサービスで再開可能です。bloomee、medelu、AND PLANTSなどは解約後も再登録が可能で、以前のアカウント情報が残っている場合もあります。再開時にクーポンが配布されることもあるため、公式サイトやメルマガをチェックしておくとお得に再開できます。\"}},{\"@type\":\"Question\",\"name\":\"やめる前にスキップ機能で様子を見ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスがスキップ（配送停止）機能を提供しています。medeluは次回配送のスキップが可能、bloomeeもマイページからスキップできます。「しばらく休みたいけど完全にやめるのは迷う」という場合は、スキップ機能を活用して様子を見るのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"生花以外の選択肢として、ドライフラワーの定期便、観葉植物のサブスク（AND PLANTSなど）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を買う方法も、自分のペースで花を楽しめるためおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクを続けるメリットは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花との出会いがあること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。継続割引があるサービスもあり、長く続けるほどお得になる場合もあります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた後、また再開できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ほとんどのサービスで再開できます。bloomee、medelu、AND PLANTSなどは解約後も再登録が可能で、以前のアカウント情報が残っている場合もあります。再開時にクーポンが配布されることもあるため、公式サイトやメールマガジンを確認しておくと、割安に再開できる場合があります。\"}},{\"@type\":\"Question\",\"name\":\"やめる前にスキップ機能で様子を見ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスがスキップ（配送停止）機能を提供しています。medeluは次回配送のスキップが可能で、bloomeeもマイページからスキップできます。「しばらく休みたいが、解約するかは迷っている」という場合は、スキップ機能を活用して様子を見ることをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"生花以外の選択肢として、ドライフラワーの定期便、観葉植物のサブスク（AND PLANTSなど）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を購入する方法も、自分のペースで花を楽しめるためおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクを続けるメリットは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花に出会えること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。継続割引があるサービスもあり、長く続けるほど割安になる場合があります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
       {/* ─── Head (SEO) ─── */}
-      <title>花のサブスクをやめた理由5選｜続けるべきかの判断基準【2026年】</title>
-      <meta name="description" content="花のサブスクをやめた人に多い理由5つを徹底解説。飽きた・コスパが悪い・花が合わないなどのリアルな声と、続けるべき人・やめるべき人の判断基準をご紹介します。" />
+      <title>花のサブスクをやめた理由5選｜続けるかどうかの判断基準【2026年】</title>
+      <meta name="description" content="当サイトでは、花のサブスクをやめた方に多い理由5つを解説します。飽きた、費用に見合わない、花が好みに合わないといった利用者の声と、継続をおすすめする方・解約を検討すべき方の判断基準をご紹介します。" />
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
@@ -64,11 +64,11 @@ export default function YametaGuidePage() {
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">お花の定期便ガイド</p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
               花のサブスクをやめた理由5選<br className="hidden md:block" />
-              続けるべきかの判断基準【2026年】
+              続けるかどうかの判断基準【2026年】
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              「花のサブスク やめた」「お花の定期便 やめた理由」で検索するあなたへ。
-              よくあるやめた理由を分析し、続けるべきか・やめるべきかの判断基準を解説します。
+              「花のサブスク やめた」「お花の定期便 やめた理由」で検索された方に向けて、
+              当サイトではよくあるやめた理由を分析し、継続するか解約するかの判断基準を解説します。
             </p>
           </div>
         </section>
@@ -77,11 +77,11 @@ export default function YametaGuidePage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
               <ol className="text-sm text-[#666] space-y-2">
                 <li><a href="#reasons" className="hover:text-[#4A7C59] transition-colors">1. よくあるやめた理由5選</a></li>
-                <li><a href="#continue" className="hover:text-[#4A7C59] transition-colors">2. 続けるべき人の特徴</a></li>
-                <li><a href="#quit" className="hover:text-[#4A7C59] transition-colors">3. やめるべき人の特徴</a></li>
+                <li><a href="#continue" className="hover:text-[#4A7C59] transition-colors">2. 継続をおすすめする方の特徴</a></li>
+                <li><a href="#quit" className="hover:text-[#4A7C59] transition-colors">3. 解約を検討すべき方の特徴</a></li>
                 <li><a href="#alternatives" className="hover:text-[#4A7C59] transition-colors">4. やめた後の代替案</a></li>
                 <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">5. よくある質問</a></li>
               </ol>
@@ -96,7 +96,7 @@ export default function YametaGuidePage() {
               花のサブスクをやめた理由5選
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              SNSや口コミサイトに寄せられた「やめた理由」を分析すると、大きく5つのパターンに分けられます。共通しているのは、<strong>期待と現実のギャップ</strong>が原因であることが多い点です。
+              SNSや口コミサイトに寄せられた「やめた理由」を分析すると、大きく5つのパターンに分けられます。いずれも、<strong>期待と実際の内容との差</strong>が原因であることが多いのが共通点です。
             </p>
 
             <div className="space-y-4">
@@ -104,27 +104,27 @@ export default function YametaGuidePage() {
                 {
                   num: "1",
                   title: "届く花に飽きてしまった",
-                  text: "毎回届く花が似たようなラインナップだと、マンネリを感じてしまうことがあります。特に同じサービスを半年以上続けると、季節の花が一巡して既視感が出てきます。対策としては、サービスを乗り換えて新鮮さを取り戻す、上位プランに変更して花の種類を増やすなどの方法があります。",
+                  text: "毎回似たような花が届くと、変化が乏しく感じられることがあります。特に同じサービスを半年以上続けると、季節の花が一巡し、以前と同じ印象を受けやすくなります。対策としては、別のサービスに乗り換える、上位プランに変更して花の種類を増やすなどの方法があります。",
                 },
                 {
                   num: "2",
-                  title: "コスパが悪いと感じた",
-                  text: "「スーパーで花を買った方が安い」「花屋の方がボリュームがある」という不満は非常に多いです。確かに花代だけを比較すると、スーパーの切り花は1束300〜500円程度で買えます。ただし、サブスクは自宅に届く利便性、プロのアレンジ、季節の花との出会いという付加価値があります。",
+                  title: "費用に見合わないと感じた",
+                  text: "「スーパーで花を買ったほうが安い」「花屋のほうがボリュームがある」という不満は多く見られます。花代だけを比較すると、スーパーの切り花は1束300〜500円程度で購入できます。ただし、サブスクには自宅に届く利便性、フローリストによるアレンジ、季節の花に出会えるという付加価値があります。",
                 },
                 {
                   num: "3",
                   title: "届く花が好みに合わなかった",
-                  text: "おまかせアレンジのサービスでは、自分の好みと合わない花が届くことがあります。「派手な色は苦手なのにビビッドな花が届いた」「部屋のインテリアと合わない」という声が目立ちます。色やテイストを選べるHitoHanaや、好みを学習するAND PLANTSなど、カスタマイズ性の高いサービスに切り替えるのが有効です。",
+                  text: "おまかせアレンジのサービスでは、好みに合わない花が届くことがあります。「派手な色は苦手なのにビビッドな花が届いた」「部屋のインテリアと合わない」という声が多く見られます。色やテイストを選べるHitoHanaや、好みを学習するAND PLANTSなど、好みを反映しやすいサービスに切り替えることが有効です。",
                 },
                 {
                   num: "4",
                   title: "花がすぐに枯れてしまう",
-                  text: "特に夏場は配送中に花が傷みやすく、届いた時点で元気がないケースもあります。水切りや栄養剤の活用、こまめな水替えなどお手入れの知識がないと花がすぐに枯れてしまい、もったいなく感じることも。クール便対応のサービスを選ぶ、品質保証制度を活用するなどの対策があります。",
+                  text: "特に夏場は配送中に花が傷みやすく、届いた時点で状態が良くない場合もあります。水切りや栄養剤の活用、こまめな水替えなどのお手入れを行わないと花が早く枯れてしまい、費用に見合わないと感じる原因になります。クール便に対応したサービスを選ぶ、品質保証制度を活用するなどの対策があります。",
                 },
                 {
                   num: "5",
                   title: "忙しくてお手入れができない",
-                  text: "花の水替えや花瓶の洗浄など、日々のお手入れが負担に感じる方もいます。仕事や育児で忙しいと、届いた花を飾る余裕すらないことも。配送頻度を隔週や月1回に変更する、お手入れが楽な茎の強い花が届くサービスを選ぶ、ドライフラワーに切り替えるなどの工夫で解決できる場合があります。",
+                  text: "花の水替えや花瓶の洗浄など、日々のお手入れを負担に感じる方もいます。仕事や育児で忙しい場合、届いた花を飾る時間を確保できないこともあります。配送頻度を隔週や月1回に変更する、お手入れが容易な茎の強い花が届くサービスを選ぶ、ドライフラワーに切り替えるなどの方法で解決できる場合があります。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-[#FFF8F0] rounded-xl p-5 border border-[#F0E0D0]">
@@ -147,15 +147,15 @@ export default function YametaGuidePage() {
         <section id="continue" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              花のサブスクを続けるべき人の特徴
+              花のサブスクの継続をおすすめする方の特徴
             </h2>
             <div className="space-y-3">
               {[
-                "花屋に行く時間がなく、定期的に届く利便性に価値を感じる人",
-                "季節の花との新しい出会いを楽しめる人",
-                "インテリアとして部屋に花を飾る習慣をつけたい人",
-                "プランやサービスの変更で不満を解消できそうな人",
-                "品質保証制度を活用して、傷んだ花の再送を受けられることを知っている人",
+                "花屋に行く時間がなく、定期的に届く利便性に価値を感じる方",
+                "季節の花との新しい出会いを楽しめる方",
+                "インテリアとして部屋に花を飾る習慣をつけたい方",
+                "プランやサービスの変更で不満を解消できる見込みがある方",
+                "品質保証制度を活用して、傷んだ花の再送を受けられることを把握している方",
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-4 border border-[#E5E5E5] flex items-start gap-3">
                   <span className="text-[#4A7C59] text-lg shrink-0">&#10003;</span>
@@ -170,15 +170,15 @@ export default function YametaGuidePage() {
         <section id="quit" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              花のサブスクをやめるべき人の特徴
+              花のサブスクの解約を検討すべき方の特徴
             </h2>
             <div className="space-y-3">
               {[
-                "自分で花を選びたい、おまかせアレンジにストレスを感じる人",
-                "花のお手入れが面倒で、枯れた花を放置してしまう人",
-                "月々の出費をできるだけ減らしたい、花にお金をかけたくない人",
-                "不在が多く、届いた花がポストで長時間放置されてしまう人",
-                "複数のサービスを試しても満足できなかった人",
+                "自分で花を選びたい方、おまかせアレンジに負担を感じる方",
+                "花のお手入れが負担で、枯れた花をそのままにしてしまう方",
+                "月々の出費をできるだけ減らしたい方、花に費用をかけたくない方",
+                "不在が多く、届いた花がポストに長時間置かれたままになる方",
+                "複数のサービスを試しても満足できなかった方",
               ].map((item, i) => (
                 <div key={i} className="bg-[#FDF5F5] rounded-xl p-4 border border-[#E0B8B8] flex items-start gap-3">
                   <span className="text-[#C4877A] text-lg shrink-0">&#10005;</span>
@@ -193,24 +193,24 @@ export default function YametaGuidePage() {
         <section id="alternatives" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              やめた後の代替案3選
+              解約後の代替案3選
             </h2>
             <div className="space-y-4">
               {[
                 {
                   num: "1",
                   title: "スーパーや直売所で自分で花を買う",
-                  text: "週末にスーパーの花売り場や地元の直売所で花を選ぶ方法です。1束300〜500円程度で手に入り、自分の好みの花を選べます。ただし、花屋のような専門的なアレンジやアドバイスは期待できません。",
+                  text: "週末にスーパーの花売り場や地元の直売所で花を選ぶ方法です。1束300〜500円程度で購入でき、好みの花を選べます。ただし、花屋のような専門的なアレンジや助言は受けられません。",
                 },
                 {
                   num: "2",
                   title: "観葉植物のサブスクに切り替える",
-                  text: "AND PLANTSなどの観葉植物サブスクは、切り花に比べてお手入れが楽で長持ちします。水やりは週1〜2回で済み、インテリアとしても映えます。グリーンのある暮らしを楽しみたい方におすすめです。",
+                  text: "AND PLANTSなどの観葉植物のサブスクは、切り花に比べてお手入れの手間が少なく、長く楽しめます。水やりは週1〜2回で済み、インテリアとしての見栄えも良好です。植物のある暮らしを楽しみたい方におすすめです。",
                 },
                 {
                   num: "3",
                   title: "ドライフラワーや造花を活用する",
-                  text: "お手入れ不要で長期間楽しめるドライフラワーや高品質な造花（アーティフィシャルフラワー）も選択肢です。初期費用はかかりますが、ランニングコストがゼロなのが魅力。季節ごとに入れ替えることで、変化も楽しめます。",
+                  text: "お手入れが不要で長期間楽しめるドライフラワーや、高品質な造花（アーティフィシャルフラワー）も選択肢の一つです。初期費用はかかりますが、継続的な費用がかからない点が利点です。季節ごとに入れ替えることで、変化も楽しめます。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
@@ -233,7 +233,7 @@ export default function YametaGuidePage() {
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              花のサブスクをやめる前に知りたいQ&A
+              花のサブスクをやめる前に確認したいQ&A
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
@@ -265,24 +265,24 @@ export default function YametaGuidePage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              サービス別 解約のしやすさ早見表
+              サービス別 解約のしやすさ一覧
             </h2>
             <p className="text-sm text-[#666] mb-6">
-              「やめたい」と思った時にすぐ解約できるかは事前に知っておきたいポイント。回数縛り・違約金・解約方法をサービス別にまとめました。
+              解約したいと考えた際にすぐ解約できるかどうかは、申し込み前に確認しておくべき点です。当サイトでは、回数の条件・違約金・解約方法をサービス別にまとめています。
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
                 <thead className="bg-[#4A7C59] text-white">
                   <tr>
                     <th className="px-3 py-2 text-left">サービス</th>
-                    <th className="px-3 py-2 text-left">回数縛り</th>
+                    <th className="px-3 py-2 text-left">回数の条件</th>
                     <th className="px-3 py-2 text-left">違約金</th>
                     <th className="px-3 py-2 text-left">解約手続き</th>
                     <th className="px-3 py-2 text-left">難易度</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">bloomee</td><td className="px-3 py-2">4回</td><td className="px-3 py-2 text-[#C56565]">あり (残回数分)</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#C56565]">やや厳しい</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">bloomee</td><td className="px-3 py-2">4回</td><td className="px-3 py-2 text-[#C56565]">あり (残回数分)</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#C56565]">やや難しい</td></tr>
                   <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">medelu</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから即解約</td><td className="px-3 py-2 text-[#4A7C59]">非常に簡単</td></tr>
                   <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">HitoHana</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
                   <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">AND PLANTS</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
@@ -292,10 +292,10 @@ export default function YametaGuidePage() {
               </table>
             </div>
             <p className="text-xs text-[#888] mt-4">
-              ※ 2026年5月時点の各社公式情報より。最新条件は各サービスの公式サイトでご確認ください。
+              ※ 2026年5月時点の各社公式情報にもとづいています。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <p className="text-sm text-[#666] mt-6 leading-relaxed">
-              <strong>結論:</strong> いつでもやめたいなら<a href="/services/medelu" className="text-[#4A7C59] underline">medelu</a>がベスト。bloomeeは初回4回縛りがあるため、お試し感覚で始めるならまずmedeluから入って、本格的に始めたくなったらbloomeeに乗り換えるのが安全な選択です。
+              <strong>要点:</strong> いつでも解約できることを重視する場合は、<a href="/services/medelu" className="text-[#4A7C59] underline">medelu</a>が適しています。bloomeeには初回4回の最低受け取り回数があるため、試しに始める場合はまずmedeluを利用し、継続を決めた段階でbloomeeに乗り換える方法をおすすめします。
             </p>
           </div>
         </section>
@@ -304,20 +304,20 @@ export default function YametaGuidePage() {
         <section className="py-12 md:py-16 bg-[#F3EDE6]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：やめる前にサービスの見直しも検討しよう
+              まとめ：解約の前にサービスの見直しをご検討ください
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花のサブスクをやめたいと感じる理由の多くは、<strong>プランやサービスの選び直し</strong>で解決できる可能性があります。飽きたなら別サービスへの乗り換え、コスパ不満ならmedeluのような送料無料サービス、花が合わないならHitoHanaのような色選択可能なサービスを試してみてください。
+              花のサブスクをやめたいと感じる理由の多くは、<strong>プランやサービスの選び直し</strong>で解決できる可能性があります。飽きた場合は別のサービスへの乗り換え、費用に不満がある場合はmedeluのような送料無料のサービス、花が好みに合わない場合はHitoHanaのような色を選べるサービスをご検討ください。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              それでも満足できなければ、無理に続ける必要はありません。スーパーで自分で花を選ぶ、観葉植物に切り替えるなど、自分に合った方法で花のある暮らしを楽しみましょう。
+              それでも満足できない場合は、無理に続ける必要はありません。スーパーで花を選ぶ、観葉植物に切り替えるなど、ご自身に合った方法で花のある暮らしをお楽しみください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
-                コスパ最強 medeluを見る
+                費用を抑えたい方向け medeluを見る
               </a>
               <a href="/services/hitohana" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
-                花を選べる HitoHanaを見る
+                色を選べる HitoHanaを見る
               </a>
             </div>
             <a href="/" className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline">
@@ -333,7 +333,7 @@ export default function YametaGuidePage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
-              <p className="text-xs text-gray-400">花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。</p>
+              <p className="text-xs text-gray-400">花のサブスクを比較し、ご自身に合ったサービス選びを支援します。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
               <a href="/" className="hover:text-white transition-colors">トップページ</a>
@@ -344,7 +344,7 @@ export default function YametaGuidePage() {
           </div>
           <div className="border-t border-gray-600 pt-6 text-center">
             <p className="text-xs text-gray-500">当サイトはアフィリエイトプログラムに参加しています。リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。</p>
-            <p className="text-xs text-gray-500 mt-2">掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。</p>
+            <p className="text-xs text-gray-500 mt-2">掲載情報は2026年4月時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。</p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>
               <a href="/privacy-policy" className="hover:text-white transition-colors">プライバシーポリシー</a>

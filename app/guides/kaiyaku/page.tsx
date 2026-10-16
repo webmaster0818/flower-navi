@@ -7,35 +7,35 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "花のサブスクは途中で解約できますか？",
-    a: "ほとんどのサービスは途中解約が可能です。ただしbloomeeのように最低受取回数（4回）が設定されているサービスでは、4回受け取る前に解約すると残り回数分の料金が発生します。medelu、hanameku、日本総合園芸は回数縛りがないため、いつでも解約できます。AND PLANTSは都度払い方式のため、次回配送前にスキップまたは停止すれば追加料金はかかりません。",
+    a: "多くのサービスで途中解約が可能です。ただし、bloomeeのように最低受取回数（4回）が設定されているサービスでは、4回受け取る前に解約すると残り回数分の料金が発生します。medelu、hanameku、日本総合園芸は最低受取回数の設定がないため、いつでも解約できます。AND PLANTSは都度払い方式のため、次回配送前にスキップまたは停止の手続きを行えば追加料金はかかりません。",
   },
   {
     q: "bloomeeの解約方法を教えてください。",
-    a: "bloomeeはマイページから解約手続きが可能です。ログイン後、マイページの「プラン・登録情報の確認/変更」から「解約する」を選択します。ただし、4回の最低受取回数を満たしていない場合は解約できず、残り回数分の料金が発生します。解約ではなく「お届けをストップ」（休止）を選ぶことも可能で、休止中は料金が発生しません。解約と休止の違いを理解したうえで手続きしましょう。",
+    a: "bloomeeはマイページから解約手続きが可能です。ログイン後、マイページの「プラン・登録情報の確認/変更」から「解約する」を選択します。ただし、4回の最低受取回数を満たしていない場合は解約できず、残り回数分の料金が発生します。解約ではなく「お届けをストップ」（休止）を選ぶことも可能で、休止中は料金が発生しません。解約と休止の違いをご確認のうえ、手続きを行ってください。",
   },
   {
     q: "解約と休止の違いは何ですか？",
-    a: "解約はサービスの利用を完全にやめることで、アカウント情報やクーポンなどが失われる場合があります。休止は一時的にお届けを止めることで、アカウントや設定はそのまま保持されます。再開したくなったときに休止のほうがスムーズに戻れます。迷っている段階であれば、まず休止を選ぶのがおすすめです。bloomeeやmedeluには休止機能があります。",
+    a: "解約はサービスの利用を終了することで、アカウント情報やクーポンなどが失われる場合があります。休止は一時的にお届けを止めることで、アカウントや設定はそのまま保持されます。再開する際は、休止のほうが円滑に利用を再開できます。解約するかどうか判断に迷う場合は、まず休止を選ぶことをおすすめします。bloomeeやmedeluには休止機能があります。",
   },
   {
     q: "解約後に届いた花はどうなりますか？",
-    a: "解約手続きのタイミングによっては、既に手配済みの花が届くことがあります。多くのサービスでは「次回お届け日の○日前まで」に解約する必要があり、この期限を過ぎると次回分が届き、料金が発生します。解約を検討している場合は、次回お届け日を確認し、余裕を持って手続きしましょう。",
+    a: "解約手続きの時期によっては、すでに手配済みの花が届くことがあります。多くのサービスでは「次回お届け日の○日前まで」に解約する必要があり、この期限を過ぎると次回分が届き、料金が発生します。解約を検討している場合は、次回お届け日を確認し、余裕をもって手続きを行ってください。",
   },
   {
     q: "解約したら違約金はかかりますか？",
-    a: "今回紹介した5サービスにおいて、違約金が発生するのはbloomeeのみです。bloomeeは4回の最低受取回数があり、4回未満で解約すると残り回数分の花代＋送料が請求されます。それ以外のmedelu、AND PLANTS、hanameku、日本総合園芸には違約金はありません。",
+    a: "当サイトで紹介している5サービスのうち、違約金が発生するのはbloomeeのみです。bloomeeは4回の最低受取回数があり、4回未満で解約すると残り回数分の花代＋送料が請求されます。それ以外のmedelu、AND PLANTS、hanameku、日本総合園芸には違約金はありません。",
   },
   {
     q: "花のサブスクを解約する人の主な理由は何ですか？",
-    a: "よくある解約理由としては「花が好みに合わなかった」「コストが気になるようになった」「花のお手入れが負担になった」「引っ越しや生活環境の変化」「届く頻度が多すぎた」などがあります。配送頻度の変更やプラン変更で解決できる場合もあるため、解約前にサービスの設定を見直すのがおすすめです。",
+    a: "主な解約理由として「花が好みに合わなかった」「費用が負担になった」「花のお手入れが負担になった」「引っ越しや生活環境の変化」「届く頻度が多すぎた」などが挙げられます。配送頻度の変更やプラン変更で解決できる場合もあるため、解約前にサービスの設定を見直すことをおすすめします。",
   },
   {
     q: "一度解約しても再開できますか？",
-    a: "はい、ほとんどのサービスで再開が可能です。ただし、解約した場合は新規登録と同じ手続きが必要になることがあります。休止であれば、マイページから簡単にお届けを再開できるサービスが多いです。bloomee、medelu、hanamekuはいずれも再開に対応しています。以前のアカウント情報を使えるかどうかはサービスによって異なるため、公式サイトで確認してください。",
+    a: "はい、多くのサービスで再開が可能です。ただし、解約した場合は新規登録と同じ手続きが必要になることがあります。休止の場合は、マイページからお届けを再開できるサービスが多くあります。bloomee、medelu、hanamekuはいずれも再開に対応しています。以前のアカウント情報を使えるかどうかはサービスによって異なるため、公式サイトで確認してください。",
   },
   {
     q: "解約前にやっておくべきことはありますか？",
-    a: "まず次回お届け日と解約期限を確認しましょう。次に、ポイントやクーポンが残っている場合は使い切ることをおすすめします。また、解約ではなく休止やスキップで対応できないかも検討してください。配送頻度の変更やプランのダウングレードで不満が解消される場合もあります。解約理由を明確にしたうえで、本当に解約が必要かどうかを判断しましょう。",
+    a: "まず次回お届け日と解約期限をご確認ください。次に、ポイントやクーポンが残っている場合は使い切ることをおすすめします。また、解約ではなく休止やスキップで対応できないかもご検討ください。配送頻度の変更やプランのダウングレードで不満が解消される場合もあります。解約理由を明確にしたうえで、解約が必要かどうかを判断することをおすすめします。",
   },
 ];
 
@@ -49,11 +49,11 @@ const cancellationData = [
     penalty: "あり（4回未満で残額請求）",
     pauseOption: "あり（お届けストップ）",
     deadline: "次回お届け日の前週金曜日まで",
-    difficulty: "やや注意が必要",
+    difficulty: "注意事項あり",
     url: "/services/bloomee",
     officialUrl: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L",
     steps: [
-      "bloomee公式サイトにログイン",
+      "bloomee公式サイトにログインする",
       "マイページを開く",
       "「プラン・登録情報の確認/変更」を選択",
       "ページ下部の「解約する」をクリック",
@@ -62,8 +62,8 @@ const cancellationData = [
     ],
     notes: [
       "4回受け取るまで解約できません。4回未満で手続きすると残り回数分の料金が発生します。",
-      "「解約」と「お届けストップ（休止）」は別の機能です。一時的にやめたい場合は休止を選びましょう。",
-      "休止中は料金が発生しません。再開も簡単にできます。",
+      "「解約」と「お届けストップ（休止）」は別の機能です。一時的に止めたい場合は休止をお選びください。",
+      "休止中は料金が発生しません。再開の手続きも簡単です。",
       "解約期限は次回お届け日の前週金曜日です。期限を過ぎると次回分が届きます。",
       "解約するとアカウント情報やクーポンが失われる場合があります。",
     ],
@@ -80,18 +80,18 @@ const cancellationData = [
     url: "/services/medelu",
     officialUrl: "https://t.felmat.net/fmcl?ak=R9186L.1.31353750.A135745L",
     steps: [
-      "medelu公式サイトにログイン",
+      "medelu公式サイトにログインする",
       "マイページを開く",
       "「定期便の設定」を選択",
       "「解約する」を選択",
       "解約理由を入力して確認画面へ進む",
-      "内容を確認し解約を完了",
+      "内容を確認し、解約を完了する",
     ],
     notes: [
-      "回数縛りがないため、いつでも解約できます。",
-      "解約前にスキップ（次回1回分を飛ばす）や休止も検討しましょう。",
+      "最低受取回数の設定がないため、いつでも解約できます。",
+      "解約前に、スキップ（次回1回分を休む）や休止もご検討ください。",
       "解約手続きは次回お届け日の数日前までに行う必要があります。",
-      "手続きが完了すると確認メールが届きます。届かない場合はサポートに問い合わせましょう。",
+      "手続きが完了すると確認メールが届きます。届かない場合はサポート窓口へお問い合わせください。",
     ],
   },
   {
@@ -106,17 +106,17 @@ const cancellationData = [
     url: "/services/and-plants",
     officialUrl: "https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L",
     steps: [
-      "AND PLANTS公式サイトにログイン",
+      "AND PLANTS公式サイトにログインする",
       "マイページを開く",
-      "「お届けスケジュール」を確認",
-      "次回配送をスキップ、または定期便を停止",
+      "「お届けスケジュール」を確認する",
+      "次回配送をスキップする、または定期便を停止する",
       "停止を選択して確認画面へ進む",
-      "内容を確認して停止を完了",
+      "内容を確認し、停止を完了する",
     ],
     notes: [
       "都度払い方式のため、厳密には「解約」ではなく「停止」です。",
       "次回配送前にスキップすれば、その回の料金は発生しません。",
-      "停止後も再開は簡単にできます。",
+      "停止後も簡単に再開できます。",
       "次回お届け日の5日前までに手続きが必要です。",
     ],
   },
@@ -132,16 +132,16 @@ const cancellationData = [
     url: "/services/hanameku",
     officialUrl: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L",
     steps: [
-      "hanameku公式サイトにログイン",
+      "hanameku公式サイトにログインする",
       "マイページを開く",
       "「定期便の管理」を選択",
       "「解約する」を選択",
       "解約理由を入力して確認画面へ進む",
-      "内容を確認し解約を完了",
+      "内容を確認し、解約を完了する",
     ],
     notes: [
-      "回数縛りがないため、いつでも解約できます。",
-      "解約前にスキップ機能の利用も検討しましょう。",
+      "最低受取回数の設定がないため、いつでも解約できます。",
+      "解約前に、スキップ機能の利用もご検討ください。",
       "解約手続きは次回お届け日の数日前までに行う必要があります。",
       "手続き完了後、確認メールが届きます。",
     ],
@@ -158,17 +158,17 @@ const cancellationData = [
     url: "/services/nihon-sogo-engei",
     officialUrl: "https://nihon-sogo-engei.co.jp",
     steps: [
-      "日本総合園芸の公式サイトで連絡先を確認",
-      "電話またはメールで解約の旨を連絡",
+      "日本総合園芸の公式サイトで連絡先を確認する",
+      "電話またはメールで解約の旨を連絡する",
       "氏名・登録情報を伝える",
       "解約希望日を伝える",
       "解約完了の確認を受ける",
     ],
     notes: [
       "マイページからのオンライン解約には対応していません。電話またはメールでの連絡が必要です。",
-      "回数縛りはないため、違約金は発生しません。",
-      "次回お届け日の1週間前までに連絡するのが安心です。",
-      "営業時間内に連絡する必要があるため、事前に公式サイトで営業時間を確認しましょう。",
+      "最低受取回数の設定はないため、違約金は発生しません。",
+      "次回お届け日の1週間前までに連絡することをおすすめします。",
+      "営業時間内に連絡する必要があるため、事前に公式サイトで営業時間をご確認ください。",
     ],
   },
 ];
@@ -182,11 +182,11 @@ export default function KaiyakuGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスク 解約方法と注意点\",\"item\":\"https://ohana-delivery.com/guides/kaiyaku/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスク 解約方法と注意点\",\"description\":\"花のサブスク 解約方法と注意点 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/kaiyaku/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスク 解約方法と注意点\",\"description\":\"花のサブスクの解約方法と注意点を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/kaiyaku/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスは途中解約が可能です。ただしbloomeeのように最低受取回数（4回）が設定されているサービスでは、4回受け取る前に解約すると残り回数分の料金が発生します。medelu、hanameku、日本総合園芸は回数縛りがないため、いつでも解約できます。AND PLANTSは都度払い方式のため、次回配送前にスキップまたは停止すれば追加料金はかかりません。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeはマイページから解約手続きが可能です。ログイン後、マイページの「プラン・登録情報の確認/変更」から「解約する」を選択します。ただし、4回の最低受取回数を満たしていない場合は解約できず、残り回数分の料金が発生します。解約ではなく「お届けをストップ」（休止）を選ぶことも可能で、休止中は料金が発生しません。解約と休止の違いを理解したうえで手続きしましょう。\"}},{\"@type\":\"Question\",\"name\":\"解約と休止の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"解約はサービスの利用を完全にやめることで、アカウント情報やクーポンなどが失われる場合があります。休止は一時的にお届けを止めることで、アカウントや設定はそのまま保持されます。再開したくなったときに休止のほうがスムーズに戻れます。迷っている段階であれば、まず休止を選ぶのがおすすめです。bloomeeやmedeluには休止機能があります。\"}},{\"@type\":\"Question\",\"name\":\"解約後に届いた花はどうなりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"解約手続きのタイミングによっては、既に手配済みの花が届くことがあります。多くのサービスでは「次回お届け日の○日前まで」に解約する必要があり、この期限を過ぎると次回分が届き、料金が発生します。解約を検討している場合は、次回お届け日を確認し、余裕を持って手続きしましょう。\"}},{\"@type\":\"Question\",\"name\":\"解約したら違約金はかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"今回紹介した5サービスにおいて、違約金が発生するのはbloomeeのみです。bloomeeは4回の最低受取回数があり、4回未満で解約すると残り回数分の花代＋送料が請求されます。それ以外のmedelu、AND PLANTS、hanameku、日本総合園芸には違約金はありません。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクを解約する人の主な理由は何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"よくある解約理由としては「花が好みに合わなかった」「コストが気になるようになった」「花のお手入れが負担になった」「引っ越しや生活環境の変化」「届く頻度が多すぎた」などがあります。配送頻度の変更やプラン変更で解決できる場合もあるため、解約前にサービスの設定を見直すのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"一度解約しても再開できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ほとんどのサービスで再開が可能です。ただし、解約した場合は新規登録と同じ手続きが必要になることがあります。休止であれば、マイページから簡単にお届けを再開できるサービスが多いです。bloomee、medelu、hanamekuはいずれも再開に対応しています。以前のアカウント情報を使えるかどうかはサービスによって異なるため、公式サイトで確認してください。\"}},{\"@type\":\"Question\",\"name\":\"解約前にやっておくべきことはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"まず次回お届け日と解約期限を確認しましょう。次に、ポイントやクーポンが残っている場合は使い切ることをおすすめします。また、解約ではなく休止やスキップで対応できないかも検討してください。配送頻度の変更やプランのダウングレードで不満が解消される場合もあります。解約理由を明確にしたうえで、本当に解約が必要かどうかを判断しましょう。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスで途中解約が可能です。ただし、bloomeeのように最低受取回数（4回）が設定されているサービスでは、4回受け取る前に解約すると残り回数分の料金が発生します。medelu、hanameku、日本総合園芸は最低受取回数の設定がないため、いつでも解約できます。AND PLANTSは都度払い方式のため、次回配送前にスキップまたは停止の手続きを行えば追加料金はかかりません。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの解約方法を教えてください。\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeはマイページから解約手続きが可能です。ログイン後、マイページの「プラン・登録情報の確認/変更」から「解約する」を選択します。ただし、4回の最低受取回数を満たしていない場合は解約できず、残り回数分の料金が発生します。解約ではなく「お届けをストップ」（休止）を選ぶことも可能で、休止中は料金が発生しません。解約と休止の違いをご確認のうえ、手続きを行ってください。\"}},{\"@type\":\"Question\",\"name\":\"解約と休止の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"解約はサービスの利用を終了することで、アカウント情報やクーポンなどが失われる場合があります。休止は一時的にお届けを止めることで、アカウントや設定はそのまま保持されます。再開する際は、休止のほうが円滑に利用を再開できます。解約するかどうか判断に迷う場合は、まず休止を選ぶことをおすすめします。bloomeeやmedeluには休止機能があります。\"}},{\"@type\":\"Question\",\"name\":\"解約後に届いた花はどうなりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"解約手続きの時期によっては、すでに手配済みの花が届くことがあります。多くのサービスでは「次回お届け日の○日前まで」に解約する必要があり、この期限を過ぎると次回分が届き、料金が発生します。解約を検討している場合は、次回お届け日を確認し、余裕をもって手続きを行ってください。\"}},{\"@type\":\"Question\",\"name\":\"解約したら違約金はかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイトで紹介している5サービスのうち、違約金が発生するのはbloomeeのみです。bloomeeは4回の最低受取回数があり、4回未満で解約すると残り回数分の花代＋送料が請求されます。それ以外のmedelu、AND PLANTS、hanameku、日本総合園芸には違約金はありません。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクを解約する人の主な理由は何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"主な解約理由として「花が好みに合わなかった」「費用が負担になった」「花のお手入れが負担になった」「引っ越しや生活環境の変化」「届く頻度が多すぎた」などが挙げられます。配送頻度の変更やプラン変更で解決できる場合もあるため、解約前にサービスの設定を見直すことをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"一度解約しても再開できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスで再開が可能です。ただし、解約した場合は新規登録と同じ手続きが必要になることがあります。休止の場合は、マイページからお届けを再開できるサービスが多くあります。bloomee、medelu、hanamekuはいずれも再開に対応しています。以前のアカウント情報を使えるかどうかはサービスによって異なるため、公式サイトで確認してください。\"}},{\"@type\":\"Question\",\"name\":\"解約前にやっておくべきことはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"まず次回お届け日と解約期限をご確認ください。次に、ポイントやクーポンが残っている場合は使い切ることをおすすめします。また、解約ではなく休止やスキップで対応できないかもご検討ください。配送頻度の変更やプランのダウングレードで不満が解消される場合もあります。解約理由を明確にしたうえで、解約が必要かどうかを判断することをおすすめします。\"}}]}" }} />
         {/* JSONLD_INJECTED_v1 #3 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"花のサブスク 解約方法と注意点\",\"description\":\"花のサブスク 解約方法と注意点 のステップを解説\"}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"花のサブスク 解約方法と注意点\",\"description\":\"花のサブスクの解約手順を解説します\"}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -205,7 +205,7 @@ export default function KaiyakuGuidePage() {
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">花サブスク解約方法まとめ</span>
+                  <span className="text-[#333] font-medium">花サブスクの解約方法</span>
                 </li>
               </ol>
             </nav>
@@ -219,12 +219,12 @@ export default function KaiyakuGuidePage() {
               花のサブスク解約ガイド
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              花サブスク解約方法まとめ｜<br className="hidden md:block" />
-              各社の解約手順と注意点を徹底解説
+              花サブスクの解約方法｜<br className="hidden md:block" />
+              各社の解約手順と注意点を解説
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              花のサブスクをやめたいけど「解約方法がわからない」「違約金がかかるの？」と不安に思っていませんか。
-              この記事では、人気5サービスの解約方法・手順・注意点をわかりやすくまとめました。
+              花のサブスクの解約を検討している方に向けて、解約方法や違約金の有無をご説明します。
+              当サイトでは、主要5サービスの解約方法・手順・注意点をまとめています。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -232,7 +232,7 @@ export default function KaiyakuGuidePage() {
                 <p className="text-xl font-bold text-[#4A7C59]">5サービス</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">回数縛りあり</p>
+                <p className="text-xs text-[#999] mb-1">最低受取回数の設定あり</p>
                 <p className="text-xl font-bold text-[#4A7C59]">1サービスのみ</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -251,14 +251,14 @@ export default function KaiyakuGuidePage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">本ページの内容</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
                   <li><a href="#intro" className="hover:text-[#4A7C59] transition-colors">1. 花のサブスクを解約する前に確認すべきこと</a></li>
                   <li><a href="#comparison-table" className="hover:text-[#4A7C59] transition-colors">2. 解約条件の比較表（5サービス一覧）</a></li>
                   <li><a href="#step-by-step" className="hover:text-[#4A7C59] transition-colors">3. 各サービスの解約手順と注意点</a></li>
                   <li><a href="#reasons" className="hover:text-[#4A7C59] transition-colors">4. 花のサブスクをやめた理由（よくある解約理由）</a></li>
-                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">5. 解約して後悔しないためのポイント</a></li>
+                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">5. 解約前に確認していただきたい事項</a></li>
                   <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">6. 花のサブスクの解約に関するよくある質問</a></li>
                   <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">7. まとめ</a></li>
                 </ol>
@@ -274,8 +274,8 @@ export default function KaiyakuGuidePage() {
               花のサブスクを解約する前に確認すべきこと
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              花のサブスクの解約を考えたとき、すぐに解約手続きに進む前にいくつか確認しておきたいポイントがあります。
-              確認を怠ると、不要な料金が発生したり、後で後悔したりする可能性があります。
+              花のサブスクを解約する際は、手続きに進む前に確認していただきたい事項がいくつかあります。
+              確認せずに手続きを行うと、不要な料金が発生する可能性があります。
             </p>
 
             <div className="space-y-4 mb-8">
@@ -283,42 +283,42 @@ export default function KaiyakuGuidePage() {
                 <h3 className="text-sm font-bold text-[#333] mb-2">最低受取回数を満たしているか</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
                   bloomeeには4回の最低受取回数があります。4回受け取る前に解約すると、残り回数分の料金（花代＋送料）が請求されます。
-                  まずは自分が何回受け取ったかを確認しましょう。他のサービス（medelu、AND PLANTS、hanameku、日本総合園芸）には回数縛りはありません。
+                  まずはこれまでの受取回数をご確認ください。他のサービス（medelu、AND PLANTS、hanameku、日本総合園芸）には最低受取回数の設定はありません。
                 </p>
               </div>
 
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">次回お届け日と解約期限を確認</h3>
+                <h3 className="text-sm font-bold text-[#333] mb-2">次回お届け日と解約期限を確認する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
                   多くのサービスでは、次回お届け日の数日前までに解約手続きを完了する必要があります。
-                  期限を過ぎると次回分の料金が発生してしまうため、マイページで次回お届け日を確認し、余裕を持って手続きしましょう。
+                  期限を過ぎると次回分の料金が発生するため、マイページで次回お届け日を確認し、余裕をもって手続きを行ってください。
                 </p>
               </div>
 
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">解約ではなく「休止」や「スキップ」で解決できないか</h3>
+                <h3 className="text-sm font-bold text-[#333] mb-2">解約ではなく「休止」や「スキップ」で対応できるかを確認する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
                   一時的に花が不要な場合や、頻度を減らしたい場合は、解約ではなく休止やスキップで対応できることがあります。
-                  休止ならアカウント情報が保持されるため、再開時の手続きが簡単です。完全にやめる決意が固まっていない場合は、まず休止を検討しましょう。
+                  休止の場合はアカウント情報が保持されるため、再開時の手続きが簡単です。解約するかどうか判断に迷う場合は、まず休止をご検討ください。
                 </p>
               </div>
 
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">ポイントやクーポンの残高を確認</h3>
+                <h3 className="text-sm font-bold text-[#333] mb-2">ポイントやクーポンの残高を確認する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
                   解約するとポイントやクーポンが失効する場合があります。
-                  残っているポイントやクーポンがあれば、解約前に使い切るのがおすすめです。
+                  残っているポイントやクーポンがある場合は、解約前に使い切ることをおすすめします。
                 </p>
               </div>
             </div>
 
             <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">この記事の対象サービス</h3>
+              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">本ページの対象サービス</h3>
               <ul className="text-sm text-[#666] space-y-2">
                 <li>・ bloomee（ブルーミー）-- 4回受取後にマイページから解約</li>
-                <li>・ medelu（メデル）-- 回数縛りなし、マイページからいつでも解約</li>
+                <li>・ medelu（メデル）-- 最低受取回数の設定なし、マイページからいつでも解約</li>
                 <li>・ AND PLANTS（アンドプランツ）-- 都度払い、スキップ/停止で対応</li>
-                <li>・ hanameku（ハナメク）-- 回数縛りなし、マイページから解約</li>
+                <li>・ hanameku（ハナメク）-- 最低受取回数の設定なし、マイページから解約</li>
                 <li>・ 日本総合園芸 -- 電話またはメールで解約</li>
               </ul>
             </div>
@@ -332,7 +332,7 @@ export default function KaiyakuGuidePage() {
               解約条件の比較表（5サービス一覧）
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              人気5サービスの解約条件を一覧で比較しました。回数縛り・解約方法・違約金・休止オプションの有無を確認できます。
+              主要5サービスの解約条件を一覧にしています。最低受取回数・解約方法・違約金・休止機能の有無をご確認いただけます。
             </p>
 
             <div className="overflow-x-auto -mx-4 px-4">
@@ -340,7 +340,7 @@ export default function KaiyakuGuidePage() {
                 <thead>
                   <tr className="bg-[#4A7C59] text-white">
                     <th className="px-4 py-3 text-left font-medium">サービス名</th>
-                    <th className="px-4 py-3 text-center font-medium">回数縛り</th>
+                    <th className="px-4 py-3 text-center font-medium">最低受取回数</th>
                     <th className="px-4 py-3 text-center font-medium">解約方法</th>
                     <th className="px-4 py-3 text-center font-medium">違約金</th>
                     <th className="px-4 py-3 text-center font-medium">休止機能</th>
@@ -391,7 +391,7 @@ export default function KaiyakuGuidePage() {
                 <li>・ bloomeeのみ4回の最低受取回数があり、未達で解約すると残額が請求されます</li>
                 <li>・ 日本総合園芸はオンライン解約に対応しておらず、電話またはメールでの連絡が必要です</li>
                 <li>・ AND PLANTSは都度払い方式のため、「解約」ではなく「停止」という扱いになります</li>
-                <li>・ 2026年7月8日に各公式サイト等で再確認した情報です。最新の解約条件は各公式サイトでご確認ください</li>
+                <li>・ 2026年7月8日に各公式サイト等で再確認した情報です。ご利用前に、公式サイトにて最新情報をご確認ください</li>
               </ul>
             </div>
           </div>
@@ -404,7 +404,7 @@ export default function KaiyakuGuidePage() {
               各サービスの解約手順と注意点
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              5サービスそれぞれの具体的な解約手順をステップごとに解説します。注意点もあわせて確認してください。
+              5サービスそれぞれの解約手順を順にご説明します。注意点もあわせてご確認ください。
             </p>
 
             <div className="space-y-8">
@@ -421,7 +421,7 @@ export default function KaiyakuGuidePage() {
                         {item.name}（{item.nameJa}）の解約方法
                       </h3>
                       <p className="text-sm text-[#666]">
-                        解約方法：{item.method}　｜　回数縛り：{item.minOrders}　｜　難易度：{item.difficulty}
+                        解約方法：{item.method}　｜　最低受取回数：{item.minOrders}　｜　難易度：{item.difficulty}
                       </p>
                     </div>
                   </div>
@@ -431,7 +431,7 @@ export default function KaiyakuGuidePage() {
                     {/* Info Grid */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
                       <div className="bg-white rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">回数縛り</p>
+                        <p className="text-xs text-[#999] mb-1">最低受取回数</p>
                         <p className={`text-base font-bold ${item.minOrders === "なし" ? "text-[#4A7C59]" : "text-[#C53030]"}`}>
                           {item.minOrders}
                         </p>
@@ -499,7 +499,7 @@ export default function KaiyakuGuidePage() {
                         rel="noopener noreferrer nofollow"
                         className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"
                       >
-                        {item.name}公式サイトはこちら
+                        {item.name}公式サイトを見る
                       </a>
                     </div>
                   </div>
@@ -516,8 +516,8 @@ export default function KaiyakuGuidePage() {
               花のサブスクをやめた理由（よくある解約理由）
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              花のサブスクを解約した方がよく挙げる理由をまとめました。
-              自分の状況に当てはまるかどうか確認し、解約以外の方法で解決できないかも検討してみましょう。
+              花のサブスクを解約した方が挙げる主な理由をまとめています。
+              ご自身の状況に当てはまるかを確認し、解約以外の方法で解決できないかもご検討ください。
             </p>
 
             <div className="space-y-4">
@@ -529,11 +529,11 @@ export default function KaiyakuGuidePage() {
                   <div>
                     <h3 className="text-base font-bold text-[#333] mb-2">花が好みに合わなかった</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-2">
-                      届く花の色合いや種類が自分の好みと合わないという声は少なくありません。
-                      特にランダムアレンジのサービスでは、毎回好みの花が届くとは限りません。
+                      届く花の色合いや種類が好みと合わないという声は少なくありません。
+                      特に花材をお任せで選ぶサービスでは、毎回好みの花が届くとは限りません。
                     </p>
                     <p className="text-sm text-[#4A7C59]">
-                      対策：色の好みを登録できるサービス（medeluなど）に切り替える、またはプランを変更して選択肢を広げる。
+                      対策：色の好みを登録できるサービス（medeluなど）に切り替える、またはプランを変更して選択肢を広げます。
                     </p>
                   </div>
                 </div>
@@ -545,13 +545,13 @@ export default function KaiyakuGuidePage() {
                     理由2
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">コストが気になるようになった</h3>
+                    <h3 className="text-base font-bold text-[#333] mb-2">費用が負担になった</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-2">
-                      最初は気にならなかった月々の費用が、続けるうちに負担に感じるケースがあります。
+                      利用を続けるうちに、月々の費用が負担に感じられる場合があります。
                       特に送料込みで月3,000円以上かかる場合、年間では36,000円以上になります。
                     </p>
                     <p className="text-sm text-[#4A7C59]">
-                      対策：より安いプランにダウングレードする、配送頻度を隔週や月1回に変更する、送料無料のサービスに乗り換える。
+                      対策：より安いプランに変更する、配送頻度を隔週や月1回に変更する、送料無料のサービスに乗り換える、といった方法があります。
                     </p>
                   </div>
                 </div>
@@ -565,11 +565,11 @@ export default function KaiyakuGuidePage() {
                   <div>
                     <h3 className="text-base font-bold text-[#333] mb-2">花のお手入れが負担になった</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-2">
-                      水替えや切り戻し、枯れた花の処理など、花のお手入れが思ったより手間に感じるという声もあります。
-                      特に忙しい時期には、お手入れが後回しになりがちです。
+                      水替えや切り戻し、枯れた花の処理など、花のお手入れが想定以上に手間に感じられるという声もあります。
+                      特に忙しい時期には、お手入れが後回しになりやすくなります。
                     </p>
                     <p className="text-sm text-[#4A7C59]">
-                      対策：配送頻度を減らす（月1回にする）、長持ちしやすい花を扱うサービスを選ぶ、延命剤を活用する。
+                      対策：配送頻度を減らす（月1回にする）、長持ちしやすい花を扱うサービスを選ぶ、延命剤を活用する、といった方法があります。
                     </p>
                   </div>
                 </div>
@@ -583,10 +583,10 @@ export default function KaiyakuGuidePage() {
                   <div>
                     <h3 className="text-base font-bold text-[#333] mb-2">届く頻度が多すぎた</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-2">
-                      毎週届くプランにしていたものの、前回の花がまだ元気なうちに次の花が届いてしまい、飾る場所や花瓶が足りなくなることがあります。
+                      毎週届くプランの場合、前回の花がまだ傷んでいないうちに次の花が届き、飾る場所や花瓶が不足することがあります。
                     </p>
                     <p className="text-sm text-[#4A7C59]">
-                      対策：隔週や月1回の配送に変更する、スキップ機能を活用する。解約の必要がないケースが多い。
+                      対策：隔週や月1回の配送に変更する、スキップ機能を活用する、といった方法があります。解約の必要がない場合も多くあります。
                     </p>
                   </div>
                 </div>
@@ -600,10 +600,10 @@ export default function KaiyakuGuidePage() {
                   <div>
                     <h3 className="text-base font-bold text-[#333] mb-2">引っ越し・生活環境の変化</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-2">
-                      引っ越しやライフスタイルの変化（出産、入院、長期出張など）で花を受け取れなくなるケースもあります。
+                      引っ越しや生活環境の変化（出産、入院、長期出張など）により、花を受け取れなくなる場合もあります。
                     </p>
                     <p className="text-sm text-[#4A7C59]">
-                      対策：一時的な場合は解約ではなく休止やスキップで対応する。住所変更のみで解決する場合もある。
+                      対策：一時的な場合は、解約ではなく休止やスキップで対応できます。住所変更のみで解決する場合もあります。
                     </p>
                   </div>
                 </div>
@@ -618,10 +618,10 @@ export default function KaiyakuGuidePage() {
                     <h3 className="text-base font-bold text-[#333] mb-2">届いた花の鮮度に不満があった</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-2">
                       ポスト投函の場合、夏場や配送状況によって花がしおれて届くことがあります。
-                      品質保証のあるサービスでは再送対応を受けられますが、それでも繰り返されると不満につながります。
+                      品質保証のあるサービスでは再送対応を受けられますが、同様の事態が繰り返されると不満につながります。
                     </p>
                     <p className="text-sm text-[#4A7C59]">
-                      対策：宅配便配送のサービス（AND PLANTSなど）に切り替える、品質保証を利用して再送を依頼する。
+                      対策：宅配便で配送するサービス（AND PLANTSなど）に切り替える、品質保証を利用して再送を依頼する、といった方法があります。
                     </p>
                   </div>
                 </div>
@@ -634,45 +634,45 @@ export default function KaiyakuGuidePage() {
         <section id="tips" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              解約して後悔しないためのポイント
+              解約前に確認していただきたい事項
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              解約してから「やっぱり続ければよかった」と後悔する方もいます。
-              以下のポイントを確認してから解約手続きに進みましょう。
+              解約後に「続けておけばよかった」と感じる方もいます。
+              以下の事項を確認してから、解約手続きに進むことをおすすめします。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C5D9CB]">
-                <h3 className="text-base font-bold text-[#333] mb-3">まず休止・スキップを試す</h3>
+                <h3 className="text-base font-bold text-[#333] mb-3">まず休止・スキップを利用する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  完全に解約する前に、1〜2か月の休止やスキップを試してみましょう。
-                  花のない生活を体験して「やっぱり花があったほうがいい」と気づく方は少なくありません。
-                  休止中は料金が発生しないため、リスクなく判断できます。
+                  解約する前に、1〜2か月の休止やスキップを利用することをおすすめします。
+                  花のない期間を経て、花のある暮らしを続けたいと考え直す方は少なくありません。
+                  休止中は料金が発生しないため、費用をかけずに判断できます。
                 </p>
               </div>
 
               <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C5D9CB]">
-                <h3 className="text-base font-bold text-[#333] mb-3">プラン変更で不満が解消しないか検討</h3>
+                <h3 className="text-base font-bold text-[#333] mb-3">プラン変更で不満が解消できるかを検討する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  料金が負担なら安いプランへのダウングレード、頻度が多ければ月1回に変更、花の好みが合わなければ別のサービスに乗り換えなど、
-                  解約以外の選択肢で不満が解消するケースは多くあります。
+                  料金が負担であれば安いプランへの変更、頻度が多ければ月1回への変更、花の好みが合わなければ別のサービスへの乗り換えなど、
+                  解約以外の方法で不満が解消される場合は多くあります。
                 </p>
               </div>
 
               <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C5D9CB]">
-                <h3 className="text-base font-bold text-[#333] mb-3">他サービスへの乗り換えを検討</h3>
+                <h3 className="text-base font-bold text-[#333] mb-3">他サービスへの乗り換えを検討する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  今のサービスに不満があっても、花のサブスク自体を辞める必要はないかもしれません。
-                  サービスごとに花のテイスト・料金・配送方法が異なるため、別のサービスに変えるだけで満足度が大きく向上することがあります。
+                  現在のサービスに不満がある場合でも、花のサブスクそのものをやめる必要がない場合があります。
+                  サービスごとに花のテイスト・料金・配送方法が異なるため、別のサービスに変更することで満足度が向上することがあります。
                 </p>
               </div>
 
               <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C5D9CB]">
                 <h3 className="text-base font-bold text-[#333] mb-3">解約理由を明確にする</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  「なんとなく」で解約すると後悔しやすくなります。
-                  具体的に何が不満なのか、その不満は解約でしか解決できないのかを整理しましょう。
-                  理由が明確であれば、解約後もすっきりとした気持ちで次のステップに進めます。
+                  理由が明確でないまま解約すると、後から再検討が必要になる場合があります。
+                  具体的に何が不満なのか、その不満は解約以外の方法で解決できないかを整理することをおすすめします。
+                  理由が明確であれば、解約後の判断もしやすくなります。
                 </p>
               </div>
             </div>
@@ -722,18 +722,18 @@ export default function KaiyakuGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：解約前に休止やプラン変更も検討しよう
+              まとめ：解約前に休止やプラン変更もご検討ください
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花のサブスクの解約は、ほとんどのサービスでマイページから簡単に手続きできます。
-              注意が必要なのはbloomeeの4回最低受取回数と、日本総合園芸の電話/メール解約の2点です。
+              花のサブスクの解約は、多くのサービスでマイページから手続きできます。
+              注意が必要なのは、bloomeeの最低受取回数（4回）と、日本総合園芸の電話・メールによる解約の2点です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              解約を考えている方は、まず「本当に解約が必要か」を振り返ってみてください。
-              配送頻度の変更、プランのダウングレード、休止やスキップなど、解約せずに不満を解消できる方法が見つかるかもしれません。
+              解約を検討している方は、まず解約が必要かどうかをご確認ください。
+              配送頻度の変更、プランの変更、休止やスキップなど、解約せずに不満を解消できる方法もあります。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              それでも解約する場合は、次回お届け日と解約期限を確認し、余裕を持って手続きを進めましょう。
+              解約する場合は、次回お届け日と解約期限を確認し、余裕をもって手続きを行ってください。
               別のサービスに乗り換えたい方は、当サイトの比較ページも参考にしてください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
@@ -741,7 +741,7 @@ export default function KaiyakuGuidePage() {
                 href="/"
                 className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
               >
-                花サブスク5社比較トップへ
+                花サブスク5社の比較（トップページ）
               </a>
               <a
                 href="/compare/cheap"
@@ -774,7 +774,7 @@ export default function KaiyakuGuidePage() {
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
 
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -798,7 +798,7 @@ export default function KaiyakuGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              掲載情報は2026年4月時点のものです。ご利用前に、各公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

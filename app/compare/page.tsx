@@ -3,7 +3,7 @@ import Link from "next/link";
 import Header from "@/app/components/Header";
 
 const TITLE = "花のサブスク・定期便の比較【2026年】料金・送料・目的別のおすすめ比較ガイド一覧｜flowerデリ";
-const DESC = "花のサブスク（定期便）の比較をお探しの方へ。料金は「総額（花代＋送料）」で比べるのが基本です。料金・安さ・送料無料・ポスト投函・一輪挿し・観葉植物・1対1比較まで、目的別の比較ガイドをまとめました。数値は公式確認値のみで、架空の価格は掲載していません。";
+const DESC = "花のサブスク（定期便）の比較ガイド一覧です。当サイトでは、料金を「総額（花代＋送料）」で比較することを基本としています。料金・送料無料・ポスト投函・一輪挿し・観葉植物・2社の直接比較など、目的別の比較ガイドを掲載しています。数値は公式サイトで確認した値のみを掲載しています。";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -16,31 +16,31 @@ export const metadata: Metadata = {
 const groups: { heading: string; note: string; items: { href: string; label: string; desc: string }[] }[] = [
   {
     heading: "料金・安さで比較する",
-    note: "花のサブスクは「月額の安さ」だけでなく、送料を含めた“総額”と1本あたり単価で比べるのが失敗しないコツです。",
+    note: "花のサブスクは、月額料金だけでなく、送料を含めた総額と1本あたりの単価で比較することをおすすめします。",
     items: [
-      { href: "/compare/ryokin/", label: "料金比較表（総額・最低支払額・1本単価）", desc: "送料込みの総額・最低支払額・1本単価で正しく比較。まず全体像を掴むならここ。" },
-      { href: "/compare/campaign/", label: "初回特典・お試しプラン比較（安く始める）", desc: "各社の初回・お試し／最安プランを比較。時限クーポンの探し方も正直に解説。" },
-      { href: "/compare/cheap/", label: "安い順ランキング（送料込み実価格）", desc: "送料込みの実価格748円〜で安い順に比較（公式確認済）。" },
-      { href: "/compare/500yen/", label: "500円台で始められる？最安プラン比較", desc: "最安プランを送料込みの総額と回数縛りで比較。" },
-      { href: "/compare/souryou-muryou/", label: "送料無料の定期便3選", desc: "送料無料のサービスを総額で比較。" },
+      { href: "/compare/ryokin/", label: "料金比較表（総額・最低支払額・1本単価）", desc: "送料込みの総額・最低支払額・1本あたりの単価で比較しています。全体像を把握する際にご利用ください。" },
+      { href: "/compare/campaign/", label: "初回特典・お試しプラン比較（安く始める）", desc: "各社の初回特典・お試しプラン・最安プランを比較しています。期間限定クーポンの確認方法も解説しています。" },
+      { href: "/compare/cheap/", label: "安い順の比較（送料込みの実価格）", desc: "送料込みの実価格（748円〜）を安い順に比較しています（公式サイトで確認済み）。" },
+      { href: "/compare/500yen/", label: "500円台から始められる最安プランの比較", desc: "最安プランを、送料込みの総額と回数の条件で比較しています。" },
+      { href: "/compare/souryou-muryou/", label: "送料無料の定期便3選", desc: "送料無料のサービスを総額で比較しています。" },
     ],
   },
   {
     heading: "目的・用途で比較する",
-    note: "受け取り方や飾りたいもので選ぶと、続けやすいサービスが見つかります。",
+    note: "受け取り方法や飾りたいものに合わせて選ぶと、継続しやすいサービスを見つけやすくなります。",
     items: [
-      { href: "/compare/post-delivery/", label: "ポスト投函できる定期便", desc: "不在でも受け取れるポスト投函対応を比較。" },
-      { href: "/compare/ichirinzashi/", label: "一輪挿しに合う少量プラン", desc: "少量プランと一輪挿しの飾り方のコツ。" },
-      { href: "/compare/kanyou-shokubutsu/", label: "観葉植物のサブスク", desc: "切り花ではなく観葉植物の定期便・レンタルを比較（選び方は<ガイド>も）。" },
-      { href: "/compare/osonae/", label: "仏花・お供えの花（定期便／通販）", desc: "お供え専用商品の有無・白系・立て札・価格を8社一次確認で比較。お盆・お彼岸の用意にも。" },
+      { href: "/compare/post-delivery/", label: "ポスト投函できる定期便", desc: "不在時でも受け取れるポスト投函対応のサービスを比較しています。" },
+      { href: "/compare/ichirinzashi/", label: "一輪挿しに合う少量プラン", desc: "少量プランの比較と、一輪挿しの飾り方を解説しています。" },
+      { href: "/compare/kanyou-shokubutsu/", label: "観葉植物のサブスク", desc: "切り花ではなく、観葉植物の定期便・レンタルを比較しています（選び方は<ガイド>もご参照ください）。" },
+      { href: "/compare/osonae/", label: "仏花・お供えの花（定期便／通販）", desc: "お供え専用商品の有無・白系の花・立て札・価格を、8社の公式情報で比較しています。お盆・お彼岸の準備にもご利用いただけます。" },
     ],
   },
   {
     heading: "人気ブランドを1対1で比較する",
-    note: "候補が絞れてきたら、主要ブランドの直接比較で最終判断を。",
+    note: "候補を絞り込んだ後は、主要ブランドの直接比較を最終判断にお役立てください。",
     items: [
-      { href: "/compare/bloomee-vs-medelu/", label: "bloomee vs medelu", desc: "8つの違いを比較（総額最安はmedelu 748円/回）。" },
-      { href: "/compare/bloomee-vs-hitohana/", label: "bloomee vs HitoHana", desc: "2社を徹底比較、どっちがおすすめか。" },
+      { href: "/compare/bloomee-vs-medelu/", label: "bloomee vs medelu", desc: "8つの違いを比較しています（総額の最安はmedeluの748円/回）。" },
+      { href: "/compare/bloomee-vs-hitohana/", label: "bloomee vs HitoHana", desc: "2社の違いを比較し、目的別のおすすめを解説しています。" },
     ],
   },
 ];
@@ -71,8 +71,8 @@ export default function CompareIndexPage() {
               料金・送料・目的別に選ぶ
             </h1>
             <p className="text-sm md:text-base text-[#666] max-w-2xl mx-auto leading-relaxed">
-              花のサブスク（定期便）は、月額の安さだけでなく<strong>「総額（花代＋送料）」</strong>で比べるのが基本。
-              目的別の比較ガイドから、あなたに合うサービスを見つけてください。数値は公式確認値のみ・架空の価格は掲載していません。
+              当サイトでは、花のサブスク（定期便）を月額料金だけでなく<strong>総額（花代＋送料）</strong>で比較しています。
+              目的別の比較ガイドから、ご自身に合うサービスをお選びください。数値は公式サイトで確認した値のみを掲載しています。
             </p>
           </div>
         </section>
@@ -96,7 +96,7 @@ export default function CompareIndexPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-lg md:text-xl font-bold text-[#333] mb-4">まずは人気サービスから試す</h2>
+            <h2 className="text-lg md:text-xl font-bold text-[#333] mb-4">人気のサービスから選ぶ</h2>
             <div className="flex flex-wrap justify-center gap-3">
               <Link href="/services/medelu" className="bg-[#4A7C59] text-white font-bold px-6 py-3 rounded-lg text-sm hover:opacity-90 transition">medelu（748円・送料無料）</Link>
               <Link href="/services/bloomee" className="bg-white border border-[#4A7C59] text-[#4A7C59] font-bold px-6 py-3 rounded-lg text-sm hover:bg-[#F3EDE6] transition">bloomee</Link>

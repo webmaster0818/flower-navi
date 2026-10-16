@@ -39,7 +39,7 @@ export default async function VsPage({ params }: Props) {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "ホーム", item: SITE_URL },
-              { "@type": "ListItem", position: 2, name: "サービスVS比較", item: `${SITE_URL}/vs/` },
+              { "@type": "ListItem", position: 2, name: "2サービス比較", item: `${SITE_URL}/vs/` },
               { "@type": "ListItem", position: 3, name: v.title, item: url },
             ],
           }),
@@ -81,7 +81,7 @@ export default async function VsPage({ params }: Props) {
         <main className="max-w-4xl mx-auto px-4 py-8">
           <nav className="text-xs text-[#999] mb-4">
             <Link href="/" className="hover:underline">トップ</Link> &gt;{" "}
-            <Link href="/vs/" className="hover:underline">サービスVS比較</Link> &gt;{" "}
+            <Link href="/vs/" className="hover:underline">2サービス比較</Link> &gt;{" "}
             <span>{v.title}</span>
           </nav>
 
@@ -94,7 +94,7 @@ export default async function VsPage({ params }: Props) {
           {/* Spec table */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              項目別 詳細比較
+              項目別の詳細比較
             </h2>
             <div className="bg-white border border-[#E8E0D8] rounded-xl overflow-hidden">
               <table className="w-full text-sm">
@@ -103,7 +103,7 @@ export default async function VsPage({ params }: Props) {
                     <th className="px-3 py-2 text-left text-[#333] font-bold">項目</th>
                     <th className="px-3 py-2 text-left text-[#333] font-bold">{v.serviceA}</th>
                     <th className="px-3 py-2 text-left text-[#333] font-bold">{v.serviceB}</th>
-                    <th className="px-3 py-2 text-center text-[#333] font-bold">勝者</th>
+                    <th className="px-3 py-2 text-center text-[#333] font-bold">優位なサービス</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -113,7 +113,7 @@ export default async function VsPage({ params }: Props) {
                       <td className="px-3 py-2 text-[#666]">{s.a}</td>
                       <td className="px-3 py-2 text-[#666]">{s.b}</td>
                       <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">
-                        {s.winner === "A" ? `← ${v.serviceA}` : s.winner === "B" ? `${v.serviceB} →` : "互角"}
+                        {s.winner === "A" ? `← ${v.serviceA}` : s.winner === "B" ? `${v.serviceB} →` : "同等"}
                       </td>
                     </tr>
                   ))}
@@ -125,7 +125,7 @@ export default async function VsPage({ params }: Props) {
           {/* For A */}
           <section className="mb-8">
             <h2 className="text-xl font-bold text-[#333] mb-4 pb-2 border-b border-[#E8E0D8]">
-              {v.serviceA} が向く人
+              {v.serviceA} が適している方
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               {v.forA.map((f, i) => (
@@ -140,7 +140,7 @@ export default async function VsPage({ params }: Props) {
           {/* For B */}
           <section className="mb-12">
             <h2 className="text-xl font-bold text-[#333] mb-4 pb-2 border-b border-[#E8E0D8]">
-              {v.serviceB} が向く人
+              {v.serviceB} が適している方
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               {v.forB.map((f, i) => (
@@ -155,15 +155,15 @@ export default async function VsPage({ params }: Props) {
           {/* Real cases */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">
-              編集部まとめ：想定される選び方の傾向
+              編集部のまとめ：想定される選び方の傾向
             </h2>
-            <p className="text-xs text-[#999] mb-6">※公式情報やSNS上の口コミをもとに編集部が傾向を整理した代表的なケース像です。特定の個人の体験談ではありません。</p>
+            <p className="text-xs text-[#999] mb-6">※公式情報やSNS上の口コミをもとに、編集部が傾向を整理した代表的なケースです。特定の個人の体験談ではありません。</p>
             <div className="space-y-3">
               {v.realCases.map((c, i) => (
                 <div key={i} className="bg-white border border-[#E8E0D8] rounded-xl p-5">
                   <p className="text-xs text-[#999] mb-1">{c.author}</p>
-                  <p className="text-sm text-[#666] leading-relaxed mb-2"><strong>状況:</strong> {c.situation}</p>
-                  <p className="text-sm text-[#4A7C59] font-bold mb-1">選んだのは: {c.chose}</p>
+                  <p className="text-sm text-[#666] leading-relaxed mb-2"><strong>状況：</strong> {c.situation}</p>
+                  <p className="text-sm text-[#4A7C59] font-bold mb-1">選んだサービス：{c.chose}</p>
                   <p className="text-sm text-[#333] leading-relaxed">{c.outcome}</p>
                 </div>
               ))}

@@ -6,36 +6,36 @@ import Header from "@/app/components/Header";
 /* ─── FAQ Data ─── */
 const faqItems = [
   {
-    q: "一人暮らしで花のサブスクを始めるのにおすすめのサービスは？",
-    a: "一人暮らしにはmedelu（メデル）のMiniプランが最もおすすめです。748円（送料込み）で始められ、ポスト投函で受け取れるため不在でも安心。回数縛りもないので気軽にお試しできます。",
+    q: "一人暮らしで花のサブスクを始める場合、おすすめのサービスはどれですか？",
+    a: "当サイトでは、一人暮らしの方にはmedelu（メデル）のMiniプランを最もおすすめしています。748円（送料込み）で始められ、ポスト投函で受け取れるため、不在が多い方でも利用しやすいサービスです。回数の条件もないため、試しに利用しやすい点も特長です。",
   },
   {
     q: "一人暮らしで不在が多くても大丈夫ですか？",
-    a: "ポスト投函に対応しているサービスなら、不在でも問題ありません。medelu・bloomee・hanameku（ポスト投函プラン）はいずれもポストに届くため、帰宅後に受け取れます。ポストのサイズが小さい場合は事前に確認しておきましょう。",
+    a: "ポスト投函に対応しているサービスであれば、不在でも受け取りに支障はありません。medelu・bloomee・hanameku（ポスト投函プラン）はいずれもポストに届くため、帰宅後に受け取れます。ポストの投入口が小さい場合は、事前にサイズをご確認ください。",
   },
   {
     q: "花瓶がなくても始められますか？",
-    a: "はい、始められます。100均のガラスコップやジャムの空き瓶でも十分代用できます。まずは手持ちのグラスや空き瓶で試してみて、気に入ったら小さな花瓶を購入するのがおすすめです。",
+    a: "はい、始められます。100円ショップのガラスコップやジャムの空き瓶でも十分に代用できます。まずは手持ちのグラスや空き瓶で試し、継続する場合に小さな花瓶を購入する方法をおすすめします。",
   },
   {
-    q: "お花の手入れは大変ですか？",
-    a: "基本的なお手入れは水替えと茎のカットだけです。2〜3日に1回、水を替えて茎を1cmほど斜めにカットするだけで長持ちします。1回5分もかかりません。花のサブスクにはお手入れガイドが同封されていることが多いので、初心者でも安心です。",
+    q: "花の手入れは大変ですか？",
+    a: "基本的なお手入れは、水替えと茎のカットのみです。2〜3日に1回水を替え、茎を1cmほど斜めにカットすることで長持ちします。1回の作業は5分以内で済みます。花のサブスクにはお手入れガイドが同封されていることが多く、初めての方でも取り組みやすい内容です。",
   },
   {
     q: "ワンルームでも花を飾るスペースはありますか？",
-    a: "3本程度のミニブーケなら、テーブルの隅・キッチンカウンター・洗面台・窓際など、小さなスペースで十分飾れます。むしろコンパクトな空間のほうが花の存在感が際立ち、部屋全体の雰囲気が変わります。",
+    a: "3本程度のミニブーケであれば、テーブルの隅・キッチンカウンター・洗面台・窓際など、小さなスペースで十分に飾れます。コンパクトな空間のほうが花の存在感が際立ち、部屋全体の雰囲気が変わります。",
   },
   {
     q: "旅行や出張で受け取れない週はどうすればいいですか？",
-    a: "ほとんどのサービスでスキップ（配送停止）機能があります。medeluは配送日の変更やスキップが自由にでき、hanamekuも同様です。bloomeeもマイページからスキップ可能です。旅行の予定がわかったら早めに手続きしておきましょう。",
+    a: "ほとんどのサービスにスキップ（配送停止）機能があります。medeluは配送日の変更やスキップを自由に行えます。hanamekuも同様です。bloomeeもマイページからスキップが可能です。旅行の予定が決まった時点で、早めに手続きを行ってください。",
   },
   {
-    q: "月額いくらくらいが目安ですか？",
-    a: "一人暮らしなら月1,000〜2,000円程度が目安です。medeluのMiniプランを隔週で利用すれば月約1,496円（748円x2回）、bloomeeのお試しプランは最初の4回が毎週届くため最初の1か月は約5,460円（1,365円x4回）、5回目以降に隔週へ変えると月約2,730円（1,365円x2回）です。まずは隔週配送から始めて、ペースをつかむのがおすすめです。",
+    q: "月額の目安はいくらですか？",
+    a: "一人暮らしの場合、月1,000〜2,000円程度が目安です。medeluのMiniプランを隔週で利用すれば月約1,496円（748円x2回）、bloomeeのお試しプランは最初の4回が毎週届くため最初の1か月は約5,460円（1,365円x4回）、5回目以降に隔週へ変えると月約2,730円（1,365円x2回）です。まずは隔週配送から始め、ご自身に合うペースを確認する方法をおすすめします。",
   },
   {
     q: "花のサブスクはいつでも解約できますか？",
-    a: "medeluとhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは4回の最低受け取り回数があるため、4回受け取り前に解約すると残り回数分の料金が発生します。気軽に試したい方は回数縛りなしのサービスから始めるのがおすすめです。",
+    a: "medeluとhanamekuには回数の条件がなく、いつでも解約できます。bloomeeには4回の最低受け取り回数があるため、4回受け取る前に解約すると残り回数分の料金が発生します。試しに利用したい方には、回数の条件がないサービスから始める方法をおすすめします。",
   },
 ];
 
@@ -57,10 +57,10 @@ const rankingData = [
     quality: "あり",
     url: "/services/medelu",
     officialUrl: "https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L",
-    highlight: "748円〜送料無料。ポスト投函で不在でも受け取れる。回数縛りなしで気軽に始められる。",
-    bestFor: "コスパ重視の一人暮らし、初めて花のサブスクを試す方",
+    highlight: "748円から、送料無料です。ポスト投函のため不在時も受け取れます。回数の条件がなく、始めやすいサービスです。",
+    bestFor: "費用を抑えたい一人暮らしの方、初めて花のサブスクを試す方",
     detail:
-      "medeluは一人暮らしに最もおすすめの花のサブスクです。Miniプランは1回748円で送料無料、3本のお花がポストに届きます。市場直送で中間マージンを削減しているため、低価格でも新鮮なお花が届くのが強みです。回数縛りがないため「まずは試してみたい」という方にも安心。配送頻度は毎週・隔週から選べ、スキップも自由。一人暮らしの小さなテーブルに飾るにはちょうど良い3本というボリューム感も魅力です。",
+      "当サイトでは、medeluを一人暮らしの方に最もおすすめの花のサブスクと位置付けています。Miniプランは1回748円（送料無料）で、3本の花がポストに届きます。市場直送で中間マージンを削減しているため、低価格でも新鮮な花が届く点が強みです。回数の条件がないため、まず試してみたい方にも適しています。配送頻度は毎週・隔週から選べ、スキップも自由に行えます。3本というボリュームは、一人暮らしの小さなテーブルに飾るのに適した量です。",
   },
   {
     rank: 2,
@@ -78,10 +78,10 @@ const rankingData = [
     quality: "あり（定期便は2週間以内の連絡で返金・交換）",
     url: "/services/bloomee",
     officialUrl: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L",
-    highlight: "お届け実績3,000万本以上（公式・自社調べ）。お試し・グリーンプランはポスト投函で届く。",
-    bestFor: "安心感・知名度を重視する方、SNSで花の投稿を楽しみたい方",
+    highlight: "お届け実績3,000万本以上（公式・自社調べ）です。お試しプラン・グリーンプランはポスト投函で届きます。",
+    bestFor: "安心感や知名度を重視する方、SNSで花の投稿を楽しみたい方",
     detail:
-      "bloomeeは公式サイトで「お花のお届け実績3,000万本以上（自社調べ）」と表記している花のサブスクです。お試しプランは980円で送料385円を合わせると1回1,365円ですが、季節の花が届くため、毎回違う花を楽しめます。品質保証は、定期便なら2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記）。SNSでの投稿が盛んで、他の利用者のアレンジを参考にできるのも一人暮らしには心強いポイントです。ただし4回の最低受け取り回数がある点には注意が必要です。",
+      "bloomeeは公式サイトで「お花のお届け実績3,000万本以上（自社調べ）」と表記している花のサブスクです。お試しプランは980円で、送料385円を含めると1回1,365円です。季節の花が届くため、毎回異なる花を楽しめます。品質保証は、定期便であれば2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記）。SNSでの投稿が多く、他の利用者のアレンジを参考にできる点も、一人暮らしの方にとっての利点です。ただし、4回の最低受け取り回数がある点にご注意ください。",
   },
   {
     rank: 3,
@@ -99,10 +99,10 @@ const rankingData = [
     quality: "あり",
     url: "/services/hanameku",
     officialUrl: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L",
-    highlight: "1,210円から。市場直送で鮮度抜群。ポスト投函と宅配便を選べる柔軟な配送。",
-    bestFor: "鮮度にこだわりたい方、月1回からゆっくり始めたい方",
+    highlight: "1,210円からです。市場直送のため鮮度が高く、配送方法はポスト投函と宅配便から選べます。",
+    bestFor: "鮮度を重視する方、月1回から始めたい方",
     detail:
-      "hanamekuは市場直送にこだわった花のサブスクです。ライトプランは1,210円（税込・配送料込）で、ポスト投函で受け取れて市場から直接届くため鮮度が抜群。ポスト投函と宅配便の両方に対応しており、一人暮らしで不在がちな方はポスト投函を選べます。配送頻度も毎週・隔週・月1回と幅広く、月1回から気軽に始められるのが特徴です。回数縛りもないため、合わなければいつでも解約可能。花のサブスクに慣れてきたらプランをアップグレードする、という使い方もおすすめです。",
+      "hanamekuは市場直送を特長とする花のサブスクです。ライトプランは1,210円（税込・配送料込）で、ポスト投函で受け取れます。市場から直接届くため、鮮度が高い点が特長です。ポスト投函と宅配便の両方に対応しており、不在がちな一人暮らしの方はポスト投函を選べます。配送頻度は毎週・隔週・月1回から選べ、月1回から始められます。回数の条件もないため、合わない場合はいつでも解約できます。利用に慣れた段階で上位プランに変更する使い方もおすすめです。",
   },
 ];
 
@@ -115,9 +115,9 @@ export default function HitorigurashiGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"一人暮らしにおすすめの花のサブスク\",\"item\":\"https://ohana-delivery.com/guides/hitorigurashi/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"一人暮らしにおすすめの花のサブスク\",\"description\":\"一人暮らしにおすすめの花のサブスク を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/hitorigurashi/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"一人暮らしにおすすめの花のサブスク\",\"description\":\"一人暮らしにおすすめの花のサブスクについて、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/hitorigurashi/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"一人暮らしで花のサブスクを始めるのにおすすめのサービスは？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしにはmedelu（メデル）のMiniプランが最もおすすめです。748円（送料込み）で始められ、ポスト投函で受け取れるため不在でも安心。回数縛りもないので気軽にお試しできます。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしで不在が多くても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函に対応しているサービスなら、不在でも問題ありません。medelu・bloomee・hanameku（ポスト投函プラン）はいずれもポストに届くため、帰宅後に受け取れます。ポストのサイズが小さい場合は事前に確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"花瓶がなくても始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、始められます。100均のガラスコップやジャムの空き瓶でも十分代用できます。まずは手持ちのグラスや空き瓶で試してみて、気に入ったら小さな花瓶を購入するのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"お花の手入れは大変ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的なお手入れは水替えと茎のカットだけです。2〜3日に1回、水を替えて茎を1cmほど斜めにカットするだけで長持ちします。1回5分もかかりません。花のサブスクにはお手入れガイドが同封されていることが多いので、初心者でも安心です。\"}},{\"@type\":\"Question\",\"name\":\"ワンルームでも花を飾るスペースはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"3本程度のミニブーケなら、テーブルの隅・キッチンカウンター・洗面台・窓際など、小さなスペースで十分飾れます。むしろコンパクトな空間のほうが花の存在感が際立ち、部屋全体の雰囲気が変わります。\"}},{\"@type\":\"Question\",\"name\":\"旅行や出張で受け取れない週はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスでスキップ（配送停止）機能があります。medeluは配送日の変更やスキップが自由にでき、hanamekuも同様です。bloomeeもマイページからスキップ可能です。旅行の予定がわかったら早めに手続きしておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"月額いくらくらいが目安ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしなら月1,000〜2,000円程度が目安です。medeluのMiniプランを隔週で利用すれば月約1,496円（748円x2回）、bloomeeのお試しプランは最初の4回が毎週届くため最初の1か月は約5,460円（1,365円x4回）、5回目以降に隔週へ変えると月約2,730円（1,365円x2回）です。まずは隔週配送から始めて、ペースをつかむのがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはいつでも解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとhanamekuは回数縛りがなく、いつでも解約できます。bloomeeは4回の最低受け取り回数があるため、4回受け取り前に解約すると残り回数分の料金が発生します。気軽に試したい方は回数縛りなしのサービスから始めるのがおすすめです。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"一人暮らしで花のサブスクを始める場合、おすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイトでは、一人暮らしの方にはmedelu（メデル）のMiniプランを最もおすすめしています。748円（送料込み）で始められ、ポスト投函で受け取れるため、不在が多い方でも利用しやすいサービスです。回数の条件もないため、試しに利用しやすい点も特長です。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしで不在が多くても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函に対応しているサービスであれば、不在でも受け取りに支障はありません。medelu・bloomee・hanameku（ポスト投函プラン）はいずれもポストに届くため、帰宅後に受け取れます。ポストの投入口が小さい場合は、事前にサイズをご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"花瓶がなくても始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、始められます。100円ショップのガラスコップやジャムの空き瓶でも十分に代用できます。まずは手持ちのグラスや空き瓶で試し、継続する場合に小さな花瓶を購入する方法をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花の手入れは大変ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的なお手入れは、水替えと茎のカットのみです。2〜3日に1回水を替え、茎を1cmほど斜めにカットすることで長持ちします。1回の作業は5分以内で済みます。花のサブスクにはお手入れガイドが同封されていることが多く、初めての方でも取り組みやすい内容です。\"}},{\"@type\":\"Question\",\"name\":\"ワンルームでも花を飾るスペースはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"3本程度のミニブーケであれば、テーブルの隅・キッチンカウンター・洗面台・窓際など、小さなスペースで十分に飾れます。コンパクトな空間のほうが花の存在感が際立ち、部屋全体の雰囲気が変わります。\"}},{\"@type\":\"Question\",\"name\":\"旅行や出張で受け取れない週はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスにスキップ（配送停止）機能があります。medeluは配送日の変更やスキップを自由に行えます。hanamekuも同様です。bloomeeもマイページからスキップが可能です。旅行の予定が決まった時点で、早めに手続きを行ってください。\"}},{\"@type\":\"Question\",\"name\":\"月額の目安はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの場合、月1,000〜2,000円程度が目安です。medeluのMiniプランを隔週で利用すれば月約1,496円（748円x2回）、bloomeeのお試しプランは最初の4回が毎週届くため最初の1か月は約5,460円（1,365円x4回）、5回目以降に隔週へ変えると月約2,730円（1,365円x2回）です。まずは隔週配送から始め、ご自身に合うペースを確認する方法をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはいつでも解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとhanamekuには回数の条件がなく、いつでも解約できます。bloomeeには4回の最低受け取り回数があるため、4回受け取る前に解約すると残り回数分の料金が発生します。試しに利用したい方には、回数の条件がないサービスから始める方法をおすすめします。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -151,11 +151,11 @@ export default function HitorigurashiGuidePage() {
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
               一人暮らしにおすすめの花サブスク3選<br className="hidden md:block" />
-              コスパと手軽さで選ぶ
+              費用と手軽さで比較
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              一人暮らしの部屋にお花を飾りたいけど、「どのサービスがいいの？」「続けられるか不安」と感じていませんか。
-              この記事では、一人暮らしに本当に合う花のサブスクを3つ厳選し、コスパ・手軽さ・受け取りやすさの観点で比較します。
+              一人暮らしの部屋に花を飾りたいものの、どのサービスを選べばよいか、継続できるかどうかで迷う方も少なくありません。
+              当サイトでは、一人暮らしに適した花のサブスクを3つ選び、費用・手軽さ・受け取りやすさの観点で比較しています。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -171,7 +171,7 @@ export default function HitorigurashiGuidePage() {
                 <p className="text-xl font-bold text-[#4A7C59]">全サービス対応</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">回数縛りなし</p>
+                <p className="text-xs text-[#999] mb-1">回数の条件なし</p>
                 <p className="text-xl font-bold text-[#4A7C59]">2サービス</p>
               </div>
             </div>
@@ -182,14 +182,14 @@ export default function HitorigurashiGuidePage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#why-flowers" className="hover:text-[#4A7C59] transition-colors">1. 一人暮らしにお花がおすすめの理由</a></li>
+                  <li><a href="#why-flowers" className="hover:text-[#4A7C59] transition-colors">1. 一人暮らしに花をおすすめする理由</a></li>
                   <li><a href="#how-to-choose" className="hover:text-[#4A7C59] transition-colors">2. 一人暮らし向け花サブスクの選び方</a></li>
                   <li><a href="#ranking-table" className="hover:text-[#4A7C59] transition-colors">3. 一人暮らし向け花サブスク3選 比較表</a></li>
                   <li><a href="#ranking-detail" className="hover:text-[#4A7C59] transition-colors">4. 各サービスの詳細レビュー</a></li>
-                  <li><a href="#room-tips" className="hover:text-[#4A7C59] transition-colors">5. 一人暮らしの部屋で花を飾るコツ</a></li>
+                  <li><a href="#room-tips" className="hover:text-[#4A7C59] transition-colors">5. 一人暮らしの部屋で花を飾る方法</a></li>
                   <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">6. 一人暮らしの花サブスクに関するよくある質問</a></li>
                   <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">7. まとめ</a></li>
                 </ol>
@@ -202,35 +202,35 @@ export default function HitorigurashiGuidePage() {
         <section id="why-flowers" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              一人暮らしにお花がおすすめの理由
+              一人暮らしに花をおすすめする理由
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              「一人暮らしの部屋に花なんて」と思う方もいるかもしれません。しかし、一人暮らしだからこそ花を飾るメリットは大きいのです。
+              一人暮らしの部屋に花を飾ることには、次のような利点があります。
             </p>
 
             <div className="space-y-5 mb-8">
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-2">部屋の雰囲気が変わる</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  ワンルームや1Kの部屋でも、テーブルに花が一輪あるだけで空間の印象は大きく変わります。殺風景になりがちな一人暮らしの部屋に、自然の彩りと生き生きとした雰囲気をプラスできます。インテリアにお金をかけなくても、数百円の花で部屋がぐっとおしゃれに見えるのはコスパが良いと言えるでしょう。
+                  ワンルームや1Kの部屋でも、テーブルに花が一輪あるだけで空間の印象は大きく変わります。殺風景になりがちな一人暮らしの部屋に、自然の彩りを加えられます。インテリアに費用をかけなくても、数百円の花で部屋の印象を整えられる点は、費用対効果の高い方法といえます。
                 </p>
               </div>
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-2">リラックス効果・ストレス軽減</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  花には視覚的なリラックス効果があるとされています。仕事や学校から疲れて帰ってきたとき、部屋に花があるだけで気持ちが和らぎます。一人暮らしでは話し相手がいない分、花のお世話をすることが日々のちょっとした楽しみや癒しになるという声も多いです。
+                  花には視覚的なリラックス効果があるとされています。仕事や学校から帰宅した際、部屋に花があることで気持ちが和らぎます。一人暮らしでは会話の機会が少ない分、花の手入れが日々の楽しみや癒やしになっているという声も多く聞かれます。
                 </p>
               </div>
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-2">季節感を感じられる</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  花のサブスクでは季節に合わせた旬のお花が届きます。忙しい日々の中で季節の移ろいを感じられるのは、心の豊かさにつながります。春はチューリップ、夏はヒマワリ、秋はコスモス、冬はスイートピーなど、季節ごとの花が届く楽しみがあります。
+                  花のサブスクでは、季節に合わせた旬の花が届きます。忙しい日々の中でも、季節の移り変わりを感じられます。春はチューリップ、夏はヒマワリ、秋はコスモス、冬はスイートピーなど、季節ごとの花を楽しめます。
                 </p>
               </div>
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-2">生活にリズムが生まれる</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  定期的にお花が届くことで、水替えやお手入れといったルーティンが生まれます。一人暮らしはどうしても生活が不規則になりがちですが、花のお世話をすることで小さな生活リズムが生まれ、丁寧な暮らしにつながります。
+                  定期的に花が届くことで、水替えや手入れといった習慣が生まれます。一人暮らしは生活が不規則になりがちですが、花の手入れが生活のリズムを整えるきっかけになります。
                 </p>
               </div>
             </div>
@@ -244,7 +244,7 @@ export default function HitorigurashiGuidePage() {
               一人暮らし向け花サブスクの選び方
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              一人暮らしで花のサブスクを選ぶ際に、特に重視すべきポイントは以下の4つです。
+              一人暮らしの方が花のサブスクを選ぶ際に重視すべき点は、次の4つです。
             </p>
 
             <div className="space-y-5">
@@ -254,9 +254,9 @@ export default function HitorigurashiGuidePage() {
                     Point 1
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">ポスト投函で受け取れるか</h3>
+                    <h3 className="text-base font-bold text-[#333] mb-2">ポスト投函で受け取れるかを確認する</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      一人暮らしで最も重要なのが受け取り方法です。仕事や外出で不在が多い場合、ポスト投函に対応しているサービスを選びましょう。宅配便だと再配達の手間がかかり、ストレスの原因になります。今回紹介する3サービスはいずれもポスト投函に対応しています。
+                      一人暮らしで最も重要なのは受け取り方法です。仕事や外出で不在が多い場合は、ポスト投函に対応したサービスをおすすめします。宅配便の場合は再配達の手間がかかり、負担になるためです。当サイトで紹介する3サービスは、いずれもポスト投函に対応しています。
                     </p>
                   </div>
                 </div>
@@ -268,9 +268,9 @@ export default function HitorigurashiGuidePage() {
                     Point 2
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">送料込みの総額が予算内か</h3>
+                    <h3 className="text-base font-bold text-[#333] mb-2">送料込みの総額が予算内に収まるかを確認する</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      花代だけでなく送料を含めた総額で比較することが大切です。一人暮らしの限られた生活費の中で無理なく続けるには、月1,000〜2,000円程度が目安。送料無料のサービスなら、表示価格がそのまま支払い額になるのでわかりやすいです。
+                      花代だけでなく、送料を含めた総額で比較することが大切です。一人暮らしの生活費の中で無理なく続けるには、月1,000〜2,000円程度が目安です。送料無料のサービスであれば、表示価格がそのまま支払額になるため、費用を把握しやすくなります。
                     </p>
                   </div>
                 </div>
@@ -282,9 +282,9 @@ export default function HitorigurashiGuidePage() {
                     Point 3
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">回数縛り・解約の自由度</h3>
+                    <h3 className="text-base font-bold text-[#333] mb-2">回数の条件と解約の自由度を確認する</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      初めて花のサブスクを試す場合、回数縛りがないサービスのほうが安心です。「思っていたのと違った」「忙しくて手入れできない」と感じたときに、すぐ解約できるかどうかは重要なポイント。medeluとhanamekuは回数縛りなし、bloomeeは4回の最低受け取りがあります。
+                      初めて花のサブスクを利用する場合は、回数の条件がないサービスのほうが安心です。イメージと異なった場合や、手入れの時間が取れない場合に、すぐ解約できるかどうかは重要な判断材料です。medeluとhanamekuには回数の条件がなく、bloomeeには4回の最低受け取り回数があります。
                     </p>
                   </div>
                 </div>
@@ -296,9 +296,9 @@ export default function HitorigurashiGuidePage() {
                     Point 4
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">スキップ機能があるか</h3>
+                    <h3 className="text-base font-bold text-[#333] mb-2">スキップ機能の有無を確認する</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      一人暮らしだと旅行や帰省で家を空けることも多いでしょう。そんなときに配送をスキップできる機能があると便利です。今回紹介する3サービスはいずれもスキップに対応しており、不在時に無駄な出費を抑えられます。
+                      一人暮らしでは、旅行や帰省で家を空ける機会もあります。その際に配送をスキップできる機能があると便利です。当サイトで紹介する3サービスはいずれもスキップに対応しており、不在時の不要な出費を抑えられます。
                     </p>
                   </div>
                 </div>
@@ -314,7 +314,7 @@ export default function HitorigurashiGuidePage() {
               一人暮らし向け花サブスク3選 比較表
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              一人暮らしにおすすめの3サービスを、料金・配送方法・回数縛りなどの観点で比較しました。
+              一人暮らしにおすすめの3サービスを、料金・配送方法・回数の条件などの観点で比較しています。
             </p>
 
             <div className="overflow-x-auto -mx-4 px-4">
@@ -327,7 +327,7 @@ export default function HitorigurashiGuidePage() {
                     <th className="px-4 py-3 text-right font-medium">送料</th>
                     <th className="px-4 py-3 text-right font-medium">1回あたり総額</th>
                     <th className="px-4 py-3 text-center font-medium">届き方</th>
-                    <th className="px-4 py-3 text-center font-medium">回数縛り</th>
+                    <th className="px-4 py-3 text-center font-medium">回数の条件</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -385,7 +385,7 @@ export default function HitorigurashiGuidePage() {
                 <li>・ 表示価格はすべて税込です</li>
                 <li>・ hanamekuの送料は配送方法（ポスト投函 / 宅配便）や地域によって異なります</li>
                 <li>・ bloomeeは4回の最低受け取り回数があります</li>
-                <li>・ 2026年4月時点の情報です。最新の料金は各公式サイトでご確認ください</li>
+                <li>・ 2026年4月時点の情報です。ご利用前に、公式サイトにて最新情報をご確認ください</li>
               </ul>
             </div>
           </div>
@@ -398,7 +398,7 @@ export default function HitorigurashiGuidePage() {
               各サービスの詳細レビュー
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              一人暮らしの視点で、3サービスそれぞれのメリット・注意点を詳しく解説します。
+              一人暮らしの視点から、3サービスそれぞれの特長と注意点を解説します。
             </p>
 
             <div className="space-y-8">
@@ -468,7 +468,7 @@ export default function HitorigurashiGuidePage() {
                         <span className="text-[#333]">{item.frequency}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-28 shrink-0">回数縛り</span>
+                        <span className="text-[#999] w-28 shrink-0">回数の条件</span>
                         <span className="text-[#333]">{item.minOrders}</span>
                       </div>
                       <div className="flex">
@@ -485,7 +485,7 @@ export default function HitorigurashiGuidePage() {
                     {/* Best For */}
                     <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
                       <p className="text-sm">
-                        <span className="font-bold text-[#4A7C59]">こんな一人暮らしにおすすめ：</span>
+                        <span className="font-bold text-[#4A7C59]">おすすめの方：</span>
                         <span className="text-[#666]">{item.bestFor}</span>
                       </p>
                     </div>
@@ -518,32 +518,32 @@ export default function HitorigurashiGuidePage() {
         <section id="room-tips" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              一人暮らしの部屋で花を飾るコツ
+              一人暮らしの部屋で花を飾る方法
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              「花を飾りたいけど、ワンルームだとスペースが...」という方でも大丈夫。一人暮らしの部屋で花を素敵に飾るコツをご紹介します。
+              ワンルームなどスペースが限られた部屋でも、花を飾ることは可能です。一人暮らしの部屋で花を飾る際のポイントをご紹介します。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-3">おすすめの飾る場所</h3>
                 <ul className="text-sm text-[#666] space-y-2">
-                  <li>・ <span className="font-medium text-[#333]">テーブル・デスクの隅</span> - 食事やリモートワーク中に目に入り、気分転換に</li>
-                  <li>・ <span className="font-medium text-[#333]">キッチンカウンター</span> - 料理中に花が見えると楽しい気分に</li>
-                  <li>・ <span className="font-medium text-[#333]">洗面台</span> - 朝の身支度中に花があるとリフレッシュ</li>
-                  <li>・ <span className="font-medium text-[#333]">窓際</span> - 自然光で花がきれいに映える（直射日光は避ける）</li>
-                  <li>・ <span className="font-medium text-[#333]">玄関</span> - 帰宅時に最初に目に入る場所で「おかえり」の気分に</li>
+                  <li>・ <span className="font-medium text-[#333]">テーブル・デスクの隅</span> - 食事中やリモートワーク中に目に入り、気分転換になる</li>
+                  <li>・ <span className="font-medium text-[#333]">キッチンカウンター</span> - 料理中に花が目に入り、気分が明るくなる</li>
+                  <li>・ <span className="font-medium text-[#333]">洗面台</span> - 朝の身支度の際に気分を切り替えられる</li>
+                  <li>・ <span className="font-medium text-[#333]">窓際</span> - 自然光で花がきれいに見える（直射日光は避ける）</li>
+                  <li>・ <span className="font-medium text-[#333]">玄関</span> - 帰宅時に最初に目に入り、出迎えられる印象になる</li>
                 </ul>
               </div>
 
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">花瓶がなくても大丈夫</h3>
+                <h3 className="text-base font-bold text-[#333] mb-3">花瓶がなくても飾れます</h3>
                 <ul className="text-sm text-[#666] space-y-2">
-                  <li>・ <span className="font-medium text-[#333]">100均のガラスコップ</span> - 3本程度ならコップで十分飾れる</li>
-                  <li>・ <span className="font-medium text-[#333]">ジャムやソースの空き瓶</span> - 洗って再利用。ナチュラルな雰囲気に</li>
-                  <li>・ <span className="font-medium text-[#333]">マグカップ</span> - 使わなくなったカップも花瓶代わりに</li>
-                  <li>・ <span className="font-medium text-[#333]">ペットボトルを切ったもの</span> - 応急処置にはこれでもOK</li>
-                  <li>・ <span className="font-medium text-[#333]">100均の一輪挿し</span> - 110円で購入可能。おしゃれなものも多い</li>
+                  <li>・ <span className="font-medium text-[#333]">100円ショップのガラスコップ</span> - 3本程度であればコップで十分に飾れる</li>
+                  <li>・ <span className="font-medium text-[#333]">ジャムやソースの空き瓶</span> - 洗って再利用でき、ナチュラルな雰囲気になる</li>
+                  <li>・ <span className="font-medium text-[#333]">マグカップ</span> - 使わなくなったカップも花瓶の代わりになる</li>
+                  <li>・ <span className="font-medium text-[#333]">ペットボトルを切ったもの</span> - 一時的な代用として使える</li>
+                  <li>・ <span className="font-medium text-[#333]">100円ショップの一輪挿し</span> - 110円で購入でき、デザインの選択肢も多い</li>
                 </ul>
               </div>
             </div>
@@ -557,25 +557,25 @@ export default function HitorigurashiGuidePage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0">2</span>
-                  <p><span className="font-medium text-[#333]">茎を斜めにカット</span> - 水替えのたびに茎を1cmほど斜めに切ると、水の吸い上げが良くなります。キッチンバサミでOKです。</p>
+                  <p><span className="font-medium text-[#333]">茎を斜めにカット</span> - 水替えのたびに茎を1cmほど斜めに切ると、水の吸い上げが良くなります。キッチンバサミでも問題ありません。</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0">3</span>
-                  <p><span className="font-medium text-[#333]">直射日光・エアコンの風を避ける</span> - 直射日光は花を傷め、エアコンの乾燥した風も花持ちを悪くします。間接光の当たる涼しい場所がベストです。</p>
+                  <p><span className="font-medium text-[#333]">直射日光・エアコンの風を避ける</span> - 直射日光は花を傷め、エアコンの乾燥した風も花持ちを悪くします。間接光の当たる涼しい場所が最適です。</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0">4</span>
-                  <p><span className="font-medium text-[#333]">付属の栄養剤を使う</span> - 花のサブスクには延命剤が同封されていることが多いです。水に混ぜるだけで花持ちが大幅に改善します。</p>
+                  <p><span className="font-medium text-[#333]">付属の栄養剤を使う</span> - 花のサブスクには延命剤が同封されていることが多く、水に混ぜることで花持ちが大きく改善します。</p>
                 </div>
               </div>
             </div>
 
             <div className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
-              <h3 className="text-sm font-bold text-[#333] mb-2">一人暮らしならではの注意点</h3>
+              <h3 className="text-sm font-bold text-[#333] mb-2">一人暮らしの方へのご注意</h3>
               <ul className="text-sm text-[#666] space-y-2">
-                <li>・ 長期不在の際は花を処分してから外出しましょう（水が腐ると不衛生に）</li>
+                <li>・ 長期不在の際は、花を処分してから外出してください（水が腐ると不衛生になるためです）</li>
                 <li>・ 猫を飼っている場合、ユリ科の花は猫に有毒なため注意が必要です</li>
-                <li>・ 夏場は水が傷みやすいので、こまめな水替えを心がけましょう</li>
+                <li>・ 夏場は水が傷みやすいため、こまめに水を替えてください</li>
               </ul>
             </div>
           </div>
@@ -624,19 +624,19 @@ export default function HitorigurashiGuidePage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：一人暮らしの花サブスクはmedeluが最もおすすめ
+              まとめ：一人暮らしの方にはmedeluをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              一人暮らしに合う花のサブスクを3つ比較した結果、総合的に最もおすすめなのはmedelu（メデル）です。
-              748円から始められる手頃な価格、送料無料、ポスト投函で不在でも受け取れる、回数縛りなしでいつでも解約可能と、一人暮らしが求める条件をすべて満たしています。
+              当サイトで一人暮らし向けの花のサブスクを3つ比較した結果、総合的に最もおすすめのサービスはmedelu（メデル）です。
+              748円から始められる価格、送料無料、ポスト投函による不在時の受け取り、回数の条件がなくいつでも解約できる点など、一人暮らしの方が求める条件をすべて満たしています。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              知名度と安心感を重視するならbloomee（ブルーミー）、鮮度にこだわるならhanameku（ハナメク）もよい選択肢です。
-              bloomeeはSNSでの情報量が豊富で、初めてでも安心感があります。hanamekuは市場直送で鮮度が高く、月1回からスタートできる柔軟さが魅力です。
+              知名度と安心感を重視する場合はbloomee（ブルーミー）、鮮度を重視する場合はhanameku（ハナメク）も選択肢になります。
+              bloomeeはSNS上の情報が多く、初めての方も利用のイメージをつかみやすいサービスです。hanamekuは市場直送で鮮度が高く、月1回から始められる点が特長です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              一人暮らしの部屋に花があるだけで、日々の暮らしは想像以上に豊かになります。
-              まずは月700〜1,400円程度の気軽な予算から、お花のある生活を始めてみませんか。
+              一人暮らしの部屋に花を飾ることで、日々の暮らしに彩りが加わります。
+              まずは月700〜1,400円程度の予算から、花のある生活を始めることをおすすめします。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
@@ -676,7 +676,7 @@ export default function HitorigurashiGuidePage() {
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
 
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
@@ -700,7 +700,7 @@ export default function HitorigurashiGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+              掲載情報は2026年4月時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

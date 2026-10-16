@@ -65,7 +65,7 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: `${p.name}の解約手順`,
-      description: `${p.name}の解約方法をステップごとに解説`,
+      description: `${p.name}の解約方法を手順ごとにご説明します`,
       step: p.cancel.steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.title, text: s.text })),
     },
     {
@@ -91,13 +91,13 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
   ];
 
   const toc = [
-    ["overview", `${p.shortName}とは？`],
+    ["overview", `${p.shortName}の概要`],
     ["pricing", "料金プラン（公式確認）"],
     ["reviews", "口コミ・評判の傾向"],
     ["pros", "メリット"],
     ["cons", "デメリット・注意点"],
     ["how-to-start", "始め方"],
-    ["recommend", "こんな方におすすめ"],
+    ["recommend", "適している方"],
     ["faq", "よくある質問"],
     ["cancellation", "解約手順"],
   ];
@@ -143,9 +143,9 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
                 ))}
               </div>
               <p className="text-xs text-[#888]">
-                公式サイトを探している方へ：{p.shortName}の公式サイトは{" "}
+                {p.shortName}の公式サイトは{" "}
                 <a href={p.officialUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">{p.officialLabel}</a>{" "}
-                です（当サイトは比較・情報サイトで、{p.shortName}とは提携していません）。
+                です（当サイトは比較・情報サイトであり、{p.shortName}とは提携していません）。
               </p>
             </div>
           </section>
@@ -155,7 +155,7 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
             <div className="max-w-3xl mx-auto px-4">
               <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F6FAF7] p-5 md:p-6">
                 <p className="text-xs text-[#4A7C59] font-bold mb-1">最終更新：{p.verifiedAt}（料金・条件は同日に公式サイトで確認）</p>
-                <h2 className="text-lg md:text-xl font-bold text-[#333] mb-3">結論：{p.shortName}はこんなサービス</h2>
+                <h2 className="text-lg md:text-xl font-bold text-[#333] mb-3">要点：{p.shortName}の概要</h2>
                 <ul className="text-sm md:text-base text-[#444] leading-relaxed space-y-2">
                   {p.verdict.map((v, i) => <li key={i}>・{v}</li>)}
                 </ul>
@@ -167,7 +167,7 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
           <section className="bg-white py-8 border-b border-[#E5E5E5]">
             <div className="max-w-3xl mx-auto px-4">
               <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-                <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+                <p className="text-sm font-bold text-[#333] mb-3">本ページの内容</p>
                 <nav>
                   <ol className="text-sm text-[#666] space-y-2">
                     {toc.map(([id, label], i) => (
@@ -187,7 +187,7 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
                 <p key={i} className="text-sm md:text-base text-[#666] leading-relaxed mb-6">{t}</p>
               ))}
               <div className="bg-[#F8F8F8] rounded-xl p-5 mt-2">
-                <h3 className="text-sm font-bold text-[#333] mb-3">{p.shortName} 基本情報（{p.verifiedAt} 公式確認）</h3>
+                <h3 className="text-sm font-bold text-[#333] mb-3">{p.shortName}の基本情報（{p.verifiedAt} 公式確認）</h3>
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   {p.basicInfo.map(([k, v], i) => (
                     <div key={i} className="contents">
@@ -317,10 +317,10 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
           {/* Recommend */}
           <section id="recommend" className="py-12 md:py-16 bg-white">
             <div className="max-w-3xl mx-auto px-4">
-              <h2 className={h2}>{p.shortName}はこんな方におすすめ</h2>
+              <h2 className={h2}>{p.shortName}が適している方</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                  <h3 className="text-base font-bold text-[#4A7C59] mb-4">おすすめの人</h3>
+                  <h3 className="text-base font-bold text-[#4A7C59] mb-4">適している方</h3>
                   <ul className="text-sm text-[#666] space-y-3">
                     {p.recommend.yes.map((t, i) => (
                       <li key={i} className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>{t}</span></li>
@@ -328,7 +328,7 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
                   </ul>
                 </div>
                 <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                  <h3 className="text-base font-bold text-[#C08552] mb-4">おすすめしない人</h3>
+                  <h3 className="text-base font-bold text-[#C08552] mb-4">適していない方</h3>
                   <ul className="text-sm text-[#666] space-y-3">
                     {p.recommend.no.map((t, i) => (
                       <li key={i} className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>{t}</span></li>
@@ -395,7 +395,7 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
               ))}
               <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
                 <a href={p.officialUrl} target="_blank" rel="noopener noreferrer nofollow" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
-                  {p.shortName}公式サイトで最新情報を見る
+                  {p.shortName}の公式サイトで最新情報を確認する
                 </a>
                 <a href="/" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
                   他のサービスと比較する
@@ -422,7 +422,7 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
-                <p className="text-xs text-gray-400">花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。</p>
+                <p className="text-xs text-gray-400">花のサブスクを、公式サイトの情報にもとづいて比較する専門ガイドです。</p>
               </div>
               <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
                 <a href="/" className="hover:text-white transition-colors">トップページ</a>
@@ -436,7 +436,7 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
                 当サイトはアフィリエイトプログラムに参加しています。リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
               </p>
               <p className="text-xs text-gray-500 mt-2">
-                料金・条件は{p.verifiedAt}時点で公式サイトから確認したものです。最新の料金・サービス内容は各公式サイトでご確認ください。
+                料金・条件は、{p.verifiedAt}時点で公式サイトから確認したものです。ご利用前に、公式サイトにて最新の料金・サービス内容をご確認ください。
               </p>
               <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
                 <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

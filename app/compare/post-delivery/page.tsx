@@ -11,35 +11,35 @@ const sv = (id: string) => SERVICES.find((s) => s.id === id)!.cheapest.price;
 const faqItems = [
   {
     q: "ポスト投函の花のサブスクとは何ですか？",
-    a: "ポスト投函（ポストに届く）タイプの花のサブスクは、自宅の郵便ポストに直接お花が届くサービスです。専用の細長い箱に入った状態で届くため、不在時でも受け取りが可能です。再配達の手間がなく、忙しい方や一人暮らしの方に特に人気があります。",
+    a: "ポスト投函（ポストに届く）タイプの花のサブスクは、自宅の郵便ポストに直接花が届くサービスです。専用の細長い箱に入った状態で届くため、不在時でも受け取れます。再配達の手間がないため、忙しい方や一人暮らしの方に多く利用されています。",
   },
   {
-    q: "ポスト投函でお花が傷まないか心配です。大丈夫ですか？",
-    a: "各サービスとも、ポスト投函用に設計された専用ボックスを使用しており、お花が傷みにくい工夫がされています。保水ゼリーや保水キャップで水分を保ち、通気口付きの箱で蒸れを防ぎます。万が一届いた花が傷んでいた場合は、bloomee・medelu・hanamekuいずれも品質保証制度（再送・返金対応）があるため安心です。",
+    q: "ポスト投函で花が傷むことはありませんか？",
+    a: "各サービスとも、ポスト投函用に設計された専用ボックスを使用し、花が傷みにくいよう工夫しています。保水ゼリーや保水キャップで水分を保ち、通気口付きの箱で蒸れを防ぎます。届いた花が傷んでいた場合は、bloomee・medelu・hanamekuのいずれも品質保証制度（再送・返金対応）の対象となります。",
   },
   {
     q: "ポストに入らない場合はどうなりますか？",
-    a: "一般的な郵便ポスト（投函口の幅が約3.5cm以上）であれば問題なく届きます。ただし、ポストの投函口が極端に小さい場合や、集合住宅で投函口のサイズが合わない場合は、玄関前に置き配されるか、不在票が入ることがあります。心配な方は事前にポストの投函口のサイズを確認しておきましょう。",
+    a: "一般的な郵便ポスト（投函口の幅が約3.5cm以上）であれば問題なく届きます。ただし、投函口が極端に小さい場合や、集合住宅で投函口のサイズが合わない場合は、玄関前に置き配されるか、不在票が入ることがあります。事前にポストの投函口のサイズをご確認ください。",
   },
   {
     q: "ポスト投函と宅配便、どちらが花の品質が良いですか？",
-    a: "一般的に宅配便のほうが花の状態は良い傾向にあります。宅配便は手渡しで配送時間が短く、箱のサイズにも余裕があるためです。ただし、ポスト投函でも各社の品質管理が向上しており、適切に保水処理された状態で届くため、大きな差はありません。ボリュームのある花束を希望する場合は宅配便が適しています。",
+    a: "一般に、宅配便のほうが花の状態は良い傾向にあります。宅配便は手渡しで配送時間が短く、箱のサイズにも余裕があるためです。ただし、ポスト投函でも各社の品質管理が向上しており、適切に保水処理された状態で届くため、大きな差はありません。ボリュームのある花束を希望する場合は、宅配便が適しています。",
   },
   {
     q: "ポスト投函対応のサービスで一番安いのはどこですか？",
-    a: "ポスト投函対応サービスの中で最も安いのはmedelu（メデル）のMiniプランで、1回748円（送料無料）です。次いでhanameku（ハナメク）のライトプランが1,210円（別途送料）、bloomee（ブルーミー）のお試しプランが980円（送料385円、総額1,365円）と続きます。",
+    a: "ポスト投函対応サービスの中で最も安いのはmedelu（メデル）のMiniプランで、1回748円（送料無料）です。次いでhanameku（ハナメク）のライトプランが1,210円（別途送料）、bloomee（ブルーミー）のお試しプランが980円（送料385円、総額1,365円）です。",
   },
   {
     q: "ポスト投函の花のサブスクは何本届きますか？",
-    a: "サービスやプランによりますが、ポスト投函タイプは一般的に3〜5本程度です。medeluのMiniプランは3本、bloomeeのお試しプランは4本以上、hanamekuのライトプランは花とグリーン数本が届きます。ポストに入るサイズの制約があるため、宅配便タイプと比べるとやや少なめですが、テーブルや玄関に飾るには十分なボリュームです。",
+    a: "サービスやプランによって異なりますが、ポスト投函タイプは一般に3〜5本程度です。medeluのMiniプランは3本、bloomeeのお試しプランは4本以上、hanamekuのライトプランは花とグリーンが数本届きます。ポストに入るサイズの制約があるため宅配便タイプより少なめですが、テーブルや玄関に飾るには十分な量です。",
   },
   {
     q: "宅配便のみのサービスを不在時に受け取る方法はありますか？",
-    a: "AND PLANTSや日本総合園芸など宅配便のみのサービスでは、配送日時の指定が可能です。AND PLANTSは配送日の指定ができ、日本総合園芸は手渡し配達で日時調整が可能です。また、宅配ボックスがある場合はそこに届けてもらえる場合もあります。再配達を依頼することもできますが、生花は鮮度が落ちるため早めの受け取りがおすすめです。",
+    a: "AND PLANTSや日本総合園芸など宅配便のみのサービスでは、配送日時の指定が可能です。AND PLANTSは配送日の指定ができ、日本総合園芸は手渡し配達で日時調整が可能です。また、宅配ボックスがある場合は、宅配ボックスに届けてもらえることもあります。再配達の依頼も可能ですが、生花は時間とともに鮮度が落ちるため、早めの受け取りをおすすめします。",
   },
   {
     q: "一人暮らしにはポスト投函と宅配便どちらがおすすめですか？",
-    a: "一人暮らしの方には、不在でも受け取れるポスト投函タイプが断然おすすめです。日中は仕事で不在がちな場合でも、帰宅時にポストからお花を取り出すだけで済みます。再配達の手間もなく、配達時間を気にする必要もありません。medelu・bloomee・hanamekuの3サービスがポスト投函に対応しています。",
+    a: "一人暮らしの方には、不在でも受け取れるポスト投函タイプをおすすめします。日中は仕事で不在がちな場合でも、帰宅後にポストから花を取り出すだけで受け取れます。再配達の手間がなく、配達時間を気にする必要もありません。medelu・bloomee・hanamekuの3サービスがポスト投函に対応しています。",
   },
 ];
 
@@ -64,9 +64,9 @@ const serviceData = [
     quality: "あり（定期便は2週間以内の連絡で返金・交換）",
     url: "/services/bloomee",
     officialUrl: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L",
-    highlight: "累計3,000万本以上の実績。お試し・グリーンプランはポスト投函で届く。",
+    highlight: "累計3,000万本以上の実績があります。お試し・グリーンプランはポスト投函で届きます。",
     bestFor: "ポスト投函の実績・安心感を重視する方、SNSで花の投稿を楽しみたい方",
-    detail: "bloomeeは公式サイトで「お花のお届け実績3,000万本以上（自社調べ）」と表記している花のサブスクです。お試しプラン（花代980円＋送料385円）とグリーンプラン（同）がポストに半投函の形で届き、水〜金曜着で日時指定はできません。ベーシックプラン（花代2,180円＋送料550円）は手渡しで、日付と時間帯を指定できます。品質保証は、定期便なら2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記。2026年10月15日確認）。",
+    detail: "bloomeeは公式サイトで「お花のお届け実績3,000万本以上（自社調べ）」と表記している花のサブスクです。お試しプラン（花代980円＋送料385円）とグリーンプラン（同）はポストに半投函の形で届き、到着は水〜金曜で、日時指定はできません。ベーシックプラン（花代2,180円＋送料550円）は手渡しで、日付と時間帯を指定できます。品質保証は、定期便の場合、2週間以内に連絡すれば返金・交換の対象となります（公式・特定商取引法に基づく表記。2026年10月15日確認）。",
   },
   {
     rank: 2,
@@ -87,9 +87,9 @@ const serviceData = [
     quality: "あり",
     url: "/services/medelu",
     officialUrl: "https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L",
-    highlight: "全プランポスト投函対応・送料無料。748円から始められるコスパ最強のポスト投函サービス。",
-    bestFor: "送料無料でポスト投函を利用したい方、コスパ重視の方",
-    detail: "medeluは全プランがポスト投函に対応しており、さらに送料無料という点がポスト投函サービスの中で際立った強みです。Miniプラン（748円）は業界最安水準で、送料を含めた総額でもダントツに安く利用できます。市場直送の仕組みで中間マージンを削減し、新鮮なお花をリーズナブルに届けています。回数縛りもないため、初めてポスト投函型の花のサブスクを試す方にも気軽に始められます。",
+    highlight: "全プランがポスト投函に対応し、送料無料です。748円から始められ、ポスト投函サービスの中でも費用を抑えやすいサービスです。",
+    bestFor: "送料無料でポスト投函を利用したい方、費用対効果を重視する方",
+    detail: "medeluは全プランがポスト投函に対応しており、送料無料である点がポスト投函サービスの中で特に優れた点です。Miniプラン（748円）は業界最安水準で、送料を含めた総額でも特に安く利用できます。市場直送の仕組みで中間マージンを削減し、新鮮な花を手頃な価格で届けています。受け取り回数の条件もないため、ポスト投函型の花のサブスクを初めて利用する方も気軽に始められます。",
   },
   {
     rank: 3,
@@ -110,9 +110,9 @@ const serviceData = [
     quality: "あり",
     url: "/services/hanameku",
     officialUrl: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L",
-    highlight: "ポスト投函と宅配便を選べる柔軟性。ライト・スタンダードプランがポスト投函対応。月1回配送もOK。",
+    highlight: "ポスト投函と宅配便を選べます。ライト・スタンダードプランがポスト投函に対応し、月1回配送も選択できます。",
     bestFor: "ポスト投函と宅配便を使い分けたい方、配送頻度を柔軟に選びたい方",
-    detail: "hanamekuはライトプラン（1,210円）とスタンダードプランがポスト投函に対応しています。ポスト投函と宅配便の両方に対応しているため、小さめの花束はポスト投函、ボリュームのある花束は宅配便と使い分けることも可能です。配送頻度も毎週・隔週・月1回と選択肢が多く、ライフスタイルに合わせた利用ができます。回数縛りがないため、合わなければいつでも解約可能です。",
+    detail: "hanamekuはライトプラン（1,210円）とスタンダードプランがポスト投函に対応しています。ポスト投函と宅配便の両方に対応しているため、小さめの花束はポスト投函、ボリュームのある花束は宅配便と使い分けることも可能です。配送頻度も毎週・隔週・月1回から選べるため、生活に合わせて利用できます。受け取り回数の条件がないため、合わない場合はいつでも解約できます。",
   },
   {
     rank: 4,
@@ -133,9 +133,9 @@ const serviceData = [
     quality: "あり",
     url: "/services/and-plants",
     officialUrl: "https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L",
-    highlight: "宅配便のみだがプロのフローリストによるハイセンスなアレンジ。送料無料。ボリュームある4〜6本。",
+    highlight: "宅配便のみの対応ですが、プロのフローリストによるアレンジが届きます。送料無料で、4〜6本とボリュームがあります。",
     bestFor: "在宅で受け取れる方、ボリューム・品質を重視する方",
-    detail: "AND PLANTSはポスト投函には対応しておらず、すべて宅配便での配送です。ただし、宅配便だからこそ実現できるボリューム（4〜6本）とプロのフローリストによるハイセンスなアレンジが魅力です。送料無料で1,980円と、宅配便サービスの中ではリーズナブル。配送日の指定ができるため、在宅のタイミングに合わせて受け取ることが可能です。花の品質が高い状態で届きやすい点も宅配便のメリットです。",
+    detail: "AND PLANTSはポスト投函には対応しておらず、すべて宅配便で配送されます。宅配便ならではのボリューム（4〜6本）と、プロのフローリストによるデザイン性の高いアレンジが特長です。送料無料で1,980円と、宅配便サービスの中では手頃な価格です。配送日を指定できるため、在宅のタイミングに合わせて受け取れます。花が良い状態で届きやすい点も、宅配便の利点です。",
   },
   {
     rank: 5,
@@ -156,9 +156,9 @@ const serviceData = [
     quality: "あり",
     url: "/services/nihon-sogo-engei",
     officialUrl: "https://nihon-sogo-engei.co.jp",
-    highlight: "配達スタッフによる手渡しで最も花の状態が良い。プロの目利きで季節感のある花束が届く。",
-    bestFor: "花の状態を最重視する方、対面で受け取りたい方",
-    detail: "日本総合園芸は手渡し配達のみの対応で、ポスト投函や宅配便は利用できません。ただし、配達スタッフが直接届けるため、花の品質は最も良い状態で受け取れます。配達時に花の取り扱いアドバイスを受けられる場合もあり、花の初心者にとって安心感があります。在宅が前提となるため、受け取り日時の調整が必要です。",
+    highlight: "配達スタッフによる手渡しのため、花を良い状態で受け取れます。専門家が選んだ季節感のある花束が届きます。",
+    bestFor: "花の状態を最も重視する方、対面で受け取りたい方",
+    detail: "日本総合園芸は手渡し配達のみの対応で、ポスト投函や宅配便は利用できません。配達スタッフが直接届けるため、花を良い状態で受け取れます。配達時に花の取り扱いについて助言を受けられる場合もあり、花の扱いに慣れていない方も安心して利用できます。在宅が前提となるため、受け取り日時の調整が必要です。",
   },
 ];
 
@@ -176,9 +176,9 @@ export default function PostDeliveryComparisonPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"ポスト投函型の花のサブスク比較\",\"item\":\"https://ohana-delivery.com/compare/post-delivery/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"ポスト投函型の花のサブスク比較\",\"description\":\"ポスト投函型の花のサブスク比較 を解説。料金・評判・選び方を網羅。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/post-delivery/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"ポスト投函型の花のサブスク比較\",\"description\":\"ポスト投函に対応する花のサブスクを比較し、料金・対応プラン・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/post-delivery/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ポスト投函の花のサブスクとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函（ポストに届く）タイプの花のサブスクは、自宅の郵便ポストに直接お花が届くサービスです。専用の細長い箱に入った状態で届くため、不在時でも受け取りが可能です。再配達の手間がなく、忙しい方や一人暮らしの方に特に人気があります。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函でお花が傷まないか心配です。大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"各サービスとも、ポスト投函用に設計された専用ボックスを使用しており、お花が傷みにくい工夫がされています。保水ゼリーや保水キャップで水分を保ち、通気口付きの箱で蒸れを防ぎます。万が一届いた花が傷んでいた場合は、bloomee・medelu・hanamekuいずれも品質保証制度（再送・返金対応）があるため安心です。\"}},{\"@type\":\"Question\",\"name\":\"ポストに入らない場合はどうなりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的な郵便ポスト（投函口の幅が約3.5cm以上）であれば問題なく届きます。ただし、ポストの投函口が極端に小さい場合や、集合住宅で投函口のサイズが合わない場合は、玄関前に置き配されるか、不在票が入ることがあります。心配な方は事前にポストの投函口のサイズを確認しておきましょう。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便、どちらが花の品質が良いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的に宅配便のほうが花の状態は良い傾向にあります。宅配便は手渡しで配送時間が短く、箱のサイズにも余裕があるためです。ただし、ポスト投函でも各社の品質管理が向上しており、適切に保水処理された状態で届くため、大きな差はありません。ボリュームのある花束を希望する場合は宅配便が適しています。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函対応のサービスで一番安いのはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函対応サービスの中で最も安いのはmedelu（メデル）のMiniプランで、1回748円（送料無料）です。次いでhanameku（ハナメク）のライトプランが1,210円（別途送料）、bloomee（ブルーミー）のお試しプランが980円（送料385円、総額1,365円）と続きます。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函の花のサブスクは何本届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによりますが、ポスト投函タイプは一般的に3〜5本程度です。medeluのMiniプランは3本、bloomeeのお試しプランは4本以上、hanamekuのライトプランは花とグリーン数本が届きます。ポストに入るサイズの制約があるため、宅配便タイプと比べるとやや少なめですが、テーブルや玄関に飾るには十分なボリュームです。\"}},{\"@type\":\"Question\",\"name\":\"宅配便のみのサービスを不在時に受け取る方法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSや日本総合園芸など宅配便のみのサービスでは、配送日時の指定が可能です。AND PLANTSは配送日の指定ができ、日本総合園芸は手渡し配達で日時調整が可能です。また、宅配ボックスがある場合はそこに届けてもらえる場合もあります。再配達を依頼することもできますが、生花は鮮度が落ちるため早めの受け取りがおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしにはポスト投函と宅配便どちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの方には、不在でも受け取れるポスト投函タイプが断然おすすめです。日中は仕事で不在がちな場合でも、帰宅時にポストからお花を取り出すだけで済みます。再配達の手間もなく、配達時間を気にする必要もありません。medelu・bloomee・hanamekuの3サービスがポスト投函に対応しています。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ポスト投函の花のサブスクとは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函（ポストに届く）タイプの花のサブスクは、自宅の郵便ポストに直接花が届くサービスです。専用の細長い箱に入った状態で届くため、不在時でも受け取れます。再配達の手間がないため、忙しい方や一人暮らしの方に多く利用されています。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函で花が傷むことはありませんか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"各サービスとも、ポスト投函用に設計された専用ボックスを使用し、花が傷みにくいよう工夫しています。保水ゼリーや保水キャップで水分を保ち、通気口付きの箱で蒸れを防ぎます。届いた花が傷んでいた場合は、bloomee・medelu・hanamekuのいずれも品質保証制度（再送・返金対応）の対象となります。\"}},{\"@type\":\"Question\",\"name\":\"ポストに入らない場合はどうなりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的な郵便ポスト（投函口の幅が約3.5cm以上）であれば問題なく届きます。ただし、投函口が極端に小さい場合や、集合住宅で投函口のサイズが合わない場合は、玄関前に置き配されるか、不在票が入ることがあります。事前にポストの投函口のサイズをご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便、どちらが花の品質が良いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般に、宅配便のほうが花の状態は良い傾向にあります。宅配便は手渡しで配送時間が短く、箱のサイズにも余裕があるためです。ただし、ポスト投函でも各社の品質管理が向上しており、適切に保水処理された状態で届くため、大きな差はありません。ボリュームのある花束を希望する場合は、宅配便が適しています。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函対応のサービスで一番安いのはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函対応サービスの中で最も安いのはmedelu（メデル）のMiniプランで、1回748円（送料無料）です。次いでhanameku（ハナメク）のライトプランが1,210円（別途送料）、bloomee（ブルーミー）のお試しプランが980円（送料385円、総額1,365円）です。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函の花のサブスクは何本届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、ポスト投函タイプは一般に3〜5本程度です。medeluのMiniプランは3本、bloomeeのお試しプランは4本以上、hanamekuのライトプランは花とグリーンが数本届きます。ポストに入るサイズの制約があるため宅配便タイプより少なめですが、テーブルや玄関に飾るには十分な量です。\"}},{\"@type\":\"Question\",\"name\":\"宅配便のみのサービスを不在時に受け取る方法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"AND PLANTSや日本総合園芸など宅配便のみのサービスでは、配送日時の指定が可能です。AND PLANTSは配送日の指定ができ、日本総合園芸は手渡し配達で日時調整が可能です。また、宅配ボックスがある場合は、宅配ボックスに届けてもらえることもあります。再配達の依頼も可能ですが、生花は時間とともに鮮度が落ちるため、早めの受け取りをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしにはポスト投函と宅配便どちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの方には、不在でも受け取れるポスト投函タイプをおすすめします。日中は仕事で不在がちな場合でも、帰宅後にポストから花を取り出すだけで受け取れます。再配達の手間がなく、配達時間を気にする必要もありません。medelu・bloomee・hanamekuの3サービスがポスト投函に対応しています。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -215,13 +215,12 @@ export default function PostDeliveryComparisonPage() {
               おすすめ比較｜不在でも安心
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
-              「届く日に不在だったらどうしよう...」そんな心配は不要です。
-              ポスト投函対応の花のサブスクなら、不在でも郵便ポストにお花が届きます。
-              人気5サービスのポスト投函対応状況を徹底比較しました。
+              ポスト投函に対応した花のサブスクは、不在時でも郵便ポストに花が届きます。
+              当サイトでは、人気5サービスのポスト投函への対応状況を比較しています。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">ポスト投函OK</p>
+                <p className="text-xs text-[#999] mb-1">ポスト投函対応</p>
                 <p className="text-xl font-bold text-[#4A7C59]">{postOkCount}サービス</p>
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
@@ -244,15 +243,15 @@ export default function PostDeliveryComparisonPage() {
         <section className="bg-white py-8 border-b border-[#E5E5E5]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">この記事の内容</p>
+              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#intro" className="hover:text-[#4A7C59] transition-colors">1. ポスト投函できる花のサブスクとは？</a></li>
+                  <li><a href="#intro" className="hover:text-[#4A7C59] transition-colors">1. ポスト投函できる花のサブスクの概要</a></li>
                   <li><a href="#comparison-table" className="hover:text-[#4A7C59] transition-colors">2. ポスト投函対応 花のサブスク比較表</a></li>
                   <li><a href="#service-detail" className="hover:text-[#4A7C59] transition-colors">3. 各サービスのポスト投函詳細</a></li>
                   <li><a href="#pros-cons" className="hover:text-[#4A7C59] transition-colors">4. ポスト投函のメリット・デメリット</a></li>
-                  <li><a href="#how-to-choose" className="hover:text-[#4A7C59] transition-colors">5. ポスト投函 vs 宅配便の選び方</a></li>
-                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">6. ポスト投函で届いた花を長持ちさせるコツ</a></li>
+                  <li><a href="#how-to-choose" className="hover:text-[#4A7C59] transition-colors">5. ポスト投函と宅配便の選び方</a></li>
+                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">6. ポスト投函で届いた花を長持ちさせる方法</a></li>
                   <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">7. ポスト投函の花のサブスクに関するよくある質問</a></li>
                   <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">8. まとめ</a></li>
                 </ol>
@@ -265,26 +264,26 @@ export default function PostDeliveryComparisonPage() {
         <section id="intro" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              ポスト投函できる花のサブスクとは？
+              ポスト投函できる花のサブスクの概要
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
-              ポスト投函タイプの花のサブスクは、自宅の郵便ポストにお花が届くサービスです。
-              専用の細長いボックスに入った状態で届くため、不在時でも問題なく受け取れます。
-              再配達の手間がなく、一人暮らしの方や共働き世帯に特に人気があります。
+              ポスト投函タイプの花のサブスクは、自宅の郵便ポストに花が届くサービスです。
+              専用の細長いボックスに入った状態で届くため、不在時でも受け取れます。
+              再配達の手間がないため、一人暮らしの方や共働き世帯に多く利用されています。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
               ただし、すべての花のサブスクがポスト投函に対応しているわけではありません。
               宅配便のみのサービスや、手渡し配達のみのサービスもあります。
-              この記事では、人気5サービスのポスト投函対応状況を比較し、それぞれの特徴を詳しく解説します。
+              当サイトでは、人気5サービスのポスト投函への対応状況を比較し、それぞれの特徴を解説します。
             </p>
             <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6">
               <h3 className="text-sm font-bold text-[#4A7C59] mb-3">ポスト投函のポイント</h3>
               <ul className="text-sm text-[#666] space-y-2">
-                <li>・ 不在でも受け取れるため、再配達の手間がない</li>
-                <li>・ 専用ボックスで保水処理済み、花の品質も安心</li>
-                <li>・ ポストのサイズによっては対応できない場合あり</li>
+                <li>・ 不在でも受け取れるため、再配達の手間がかからない</li>
+                <li>・ 専用ボックスで保水処理されており、品質が保たれやすい</li>
+                <li>・ ポストのサイズによっては投函できない場合がある</li>
                 <li>・ 宅配便に比べて花のボリュームはやや少なめ</li>
-                <li>・ 2026年4月時点の情報に基づく</li>
+                <li>・ 2026年4月時点の情報にもとづく</li>
               </ul>
             </div>
           </div>
@@ -297,7 +296,7 @@ export default function PostDeliveryComparisonPage() {
               ポスト投函対応 花のサブスク比較表
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              人気5サービスのポスト投函対応状況を一覧で比較しました。対応プランや料金、届く花の本数も合わせて確認できます。
+              人気5サービスのポスト投函への対応状況を一覧で比較しています。対応プラン・料金・届く花の本数もあわせてご確認いただけます。
             </p>
 
             <div className="overflow-x-auto -mx-4 px-4">
@@ -325,11 +324,11 @@ export default function PostDeliveryComparisonPage() {
                       <td className="px-4 py-4 text-center">
                         {item.postDelivery === "OK" ? (
                           <span className="inline-flex items-center justify-center bg-[#E8F0EB] text-[#4A7C59] font-bold text-xs px-3 py-1 rounded-full">
-                            OK
+                            対応
                           </span>
                         ) : (
                           <span className="inline-flex items-center justify-center bg-[#F5F5F5] text-[#999] font-bold text-xs px-3 py-1 rounded-full">
-                            NG
+                            非対応
                           </span>
                         )}
                       </td>
@@ -355,10 +354,10 @@ export default function PostDeliveryComparisonPage() {
             <div className="mt-6 bg-white rounded-xl border border-[#E5E5E5] p-5">
               <h3 className="text-sm font-bold text-[#333] mb-3">表の補足</h3>
               <ul className="text-sm text-[#666] space-y-2">
-                <li>・ ポスト投函OKのサービスは3社（bloomee・medelu・hanameku）</li>
+                <li>・ ポスト投函に対応しているサービスは3社（bloomee・medelu・hanameku）です</li>
                 <li>・ AND PLANTSは宅配便のみ、日本総合園芸は手渡し配達のみの対応です</li>
                 <li>・ 表示価格はすべて税込です</li>
-                <li>・ 2026年4月時点の情報です。最新の対応状況は各公式サイトでご確認ください</li>
+                <li>・ 2026年4月時点の情報です。ご利用前に、公式サイトにて最新情報をご確認ください</li>
               </ul>
             </div>
           </div>
@@ -371,7 +370,7 @@ export default function PostDeliveryComparisonPage() {
               各サービスのポスト投函詳細
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              5サービスそれぞれのポスト投函対応状況・対応プラン・配送の仕組みを詳しく解説します。
+              5サービスそれぞれのポスト投函への対応状況・対応プラン・配送の仕組みを解説します。
             </p>
 
             <div className="space-y-8">
@@ -388,7 +387,7 @@ export default function PostDeliveryComparisonPage() {
                         ? "bg-[#4A7C59] text-white"
                         : "bg-[#999] text-white"
                     }`}>
-                      ポスト{item.postDelivery === "OK" ? "OK" : "NG"}
+                      ポスト投函{item.postDelivery === "OK" ? "対応" : "非対応"}
                     </span>
                     <div>
                       <h3 className="text-lg font-bold text-[#333]">
@@ -445,7 +444,7 @@ export default function PostDeliveryComparisonPage() {
                         <span className="text-[#333]">{item.frequency}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-32 shrink-0">回数縛り</span>
+                        <span className="text-[#999] w-32 shrink-0">最低受取回数</span>
                         <span className="text-[#333]">{item.minOrders}</span>
                       </div>
                     </div>
@@ -458,7 +457,7 @@ export default function PostDeliveryComparisonPage() {
                     {/* Best For */}
                     <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
                       <p className="text-sm">
-                        <span className="font-bold text-[#4A7C59]">こんな人におすすめ：</span>
+                        <span className="font-bold text-[#4A7C59]">おすすめの方：</span>
                         <span className="text-[#666]">{item.bestFor}</span>
                       </p>
                     </div>
@@ -477,7 +476,7 @@ export default function PostDeliveryComparisonPage() {
                         rel="noopener noreferrer nofollow"
                         className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"
                       >
-                        {item.name}公式サイトはこちら
+                        {item.name}の公式サイトを見る
                       </a>
                     </div>
                   </div>
@@ -494,7 +493,7 @@ export default function PostDeliveryComparisonPage() {
               ポスト投函のメリット・デメリット
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              ポスト投函タイプの花のサブスクには、便利な反面いくつかの注意点もあります。メリットとデメリットを正しく理解した上で選びましょう。
+              ポスト投函タイプの花のサブスクは便利な一方、いくつかの注意点があります。メリットとデメリットを理解したうえでの選択をおすすめします。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -515,28 +514,28 @@ export default function PostDeliveryComparisonPage() {
                   <li className="flex gap-2">
                     <span className="text-[#4A7C59] font-bold shrink-0">2.</span>
                     <div>
-                      <span className="font-medium text-[#333]">配達時間を気にしなくて良い</span>
-                      <p className="text-xs mt-0.5">時間指定不要で、生活リズムに影響しません</p>
+                      <span className="font-medium text-[#333]">配達時間を気にする必要がない</span>
+                      <p className="text-xs mt-0.5">時間指定が不要のため、生活リズムに影響しません</p>
                     </div>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-[#4A7C59] font-bold shrink-0">3.</span>
                     <div>
-                      <span className="font-medium text-[#333]">送料が安い傾向</span>
-                      <p className="text-xs mt-0.5">宅配便より配送コストが低いため、送料が安い or 無料のケースが多い</p>
+                      <span className="font-medium text-[#333]">送料が安い傾向にある</span>
+                      <p className="text-xs mt-0.5">宅配便より配送コストが低いため、送料が安いか無料の場合が多くあります</p>
                     </div>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-[#4A7C59] font-bold shrink-0">4.</span>
                     <div>
-                      <span className="font-medium text-[#333]">対面なしで気軽</span>
-                      <p className="text-xs mt-0.5">配達員とのやり取りが不要で、気楽に受け取れます</p>
+                      <span className="font-medium text-[#333]">対面での受け取りが不要</span>
+                      <p className="text-xs mt-0.5">配達員とのやり取りがなく、手軽に受け取れます</p>
                     </div>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-[#4A7C59] font-bold shrink-0">5.</span>
                     <div>
-                      <span className="font-medium text-[#333]">一人暮らし・共働きに最適</span>
+                      <span className="font-medium text-[#333]">一人暮らし・共働き世帯に適している</span>
                       <p className="text-xs mt-0.5">日中不在がちな方でも確実に受け取れます</p>
                     </div>
                   </li>
@@ -553,7 +552,7 @@ export default function PostDeliveryComparisonPage() {
                   <li className="flex gap-2">
                     <span className="text-[#999] font-bold shrink-0">1.</span>
                     <div>
-                      <span className="font-medium text-[#333]">花のボリュームに制限あり</span>
+                      <span className="font-medium text-[#333]">花のボリュームに制限がある</span>
                       <p className="text-xs mt-0.5">ポストに入るサイズのため、3〜5本程度と少なめです</p>
                     </div>
                   </li>
@@ -574,15 +573,15 @@ export default function PostDeliveryComparisonPage() {
                   <li className="flex gap-2">
                     <span className="text-[#999] font-bold shrink-0">4.</span>
                     <div>
-                      <span className="font-medium text-[#333]">ポストのサイズに依存</span>
+                      <span className="font-medium text-[#333]">ポストのサイズによって受け取れない場合がある</span>
                       <p className="text-xs mt-0.5">投函口が小さいポストでは届かない場合があります</p>
                     </div>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-[#999] font-bold shrink-0">5.</span>
                     <div>
-                      <span className="font-medium text-[#333]">大きな花や枝物は届かない</span>
-                      <p className="text-xs mt-0.5">ユリやひまわりなど大ぶりの花はポスト投函では届きません</p>
+                      <span className="font-medium text-[#333]">大きな花や枝物は対象外</span>
+                      <p className="text-xs mt-0.5">ユリやひまわりなど大ぶりの花は、ポスト投函では届きません</p>
                     </div>
                   </li>
                 </ul>
@@ -590,11 +589,11 @@ export default function PostDeliveryComparisonPage() {
             </div>
 
             <div className="mt-6 bg-[#E8F0EB] rounded-xl p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">結論</h3>
+              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">要点</h3>
               <p className="text-sm text-[#666] leading-relaxed">
-                ポスト投函は「手軽さ・確実な受け取り」が最大の魅力です。花のボリュームやサイズに制限はありますが、
-                小さな花瓶に飾るには十分な量が届きます。忙しい方や不在がちな方は、まずポスト投函タイプから始めてみるのがおすすめです。
-                ボリュームを求める場合は宅配便タイプ（AND PLANTSなど）を検討しましょう。
+                ポスト投函の主な利点は、手軽さと確実な受け取りです。花のボリュームやサイズに制限はありますが、
+                小さな花瓶に飾るには十分な量が届きます。忙しい方や不在がちな方には、ポスト投函タイプから始めることをおすすめします。
+                ボリュームを重視する場合は、宅配便タイプ（AND PLANTSなど）をご検討ください。
               </p>
             </div>
           </div>
@@ -604,32 +603,32 @@ export default function PostDeliveryComparisonPage() {
         <section id="how-to-choose" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              ポスト投函 vs 宅配便の選び方
+              ポスト投函と宅配便の選び方
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              ポスト投函と宅配便、それぞれに向いている人を整理しました。ご自身のライフスタイルに合った配送方法を選びましょう。
+              ポスト投函と宅配便のそれぞれに適した方をまとめました。生活スタイルに合った配送方法の選択にお役立てください。
             </p>
 
             <div className="space-y-5">
               {/* Post Delivery */}
               <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C5D9CB]">
-                <h3 className="text-base font-bold text-[#4A7C59] mb-4">ポスト投函が向いている人</h3>
+                <h3 className="text-base font-bold text-[#4A7C59] mb-4">ポスト投函が適している方</h3>
                 <div className="space-y-3">
                   <div className="bg-white rounded-lg p-4">
                     <p className="text-sm font-medium text-[#333] mb-1">日中不在がちな方（一人暮らし・共働き）</p>
-                    <p className="text-xs text-[#666]">帰宅時にポストからお花を取り出すだけ。再配達の手間がゼロです。</p>
+                    <p className="text-xs text-[#666]">帰宅後にポストから花を取り出すだけで受け取れるため、再配達の手間がかかりません。</p>
                   </div>
                   <div className="bg-white rounded-lg p-4">
-                    <p className="text-sm font-medium text-[#333] mb-1">配達時間に縛られたくない方</p>
-                    <p className="text-xs text-[#666]">時間指定や在宅の必要がないため、自由なスケジュールで過ごせます。</p>
+                    <p className="text-sm font-medium text-[#333] mb-1">配達時間に左右されたくない方</p>
+                    <p className="text-xs text-[#666]">時間指定や在宅の必要がないため、予定を気にせず受け取れます。</p>
                   </div>
                   <div className="bg-white rounded-lg p-4">
-                    <p className="text-sm font-medium text-[#333] mb-1">コスパを重視する方</p>
-                    <p className="text-xs text-[#666]">ポスト投函は送料が安い傾向にあり、medeluなら送料無料で748円から利用可能です。</p>
+                    <p className="text-sm font-medium text-[#333] mb-1">費用対効果を重視する方</p>
+                    <p className="text-xs text-[#666]">ポスト投函は送料が安い傾向にあり、medeluであれば送料無料で748円から利用できます。</p>
                   </div>
                   <div className="bg-white rounded-lg p-4">
-                    <p className="text-sm font-medium text-[#333] mb-1">気軽に始めたい花のサブスク初心者</p>
-                    <p className="text-xs text-[#666]">少量の花から始められるため、花の手入れに慣れていない方にもちょうど良いボリュームです。</p>
+                    <p className="text-sm font-medium text-[#333] mb-1">花のサブスクを初めて利用する方</p>
+                    <p className="text-xs text-[#666]">少量の花から始められるため、花の手入れに慣れていない方にも適した量です。</p>
                   </div>
                 </div>
                 <div className="mt-4 text-sm text-[#4A7C59] font-medium">
@@ -639,7 +638,7 @@ export default function PostDeliveryComparisonPage() {
 
               {/* Courier Delivery */}
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-4">宅配便・手渡しが向いている人</h3>
+                <h3 className="text-base font-bold text-[#333] mb-4">宅配便・手渡しが適している方</h3>
                 <div className="space-y-3">
                   <div className="bg-white rounded-lg p-4">
                     <p className="text-sm font-medium text-[#333] mb-1">在宅時間が確保できる方</p>
@@ -647,14 +646,14 @@ export default function PostDeliveryComparisonPage() {
                   </div>
                   <div className="bg-white rounded-lg p-4">
                     <p className="text-sm font-medium text-[#333] mb-1">花のボリュームを求める方</p>
-                    <p className="text-xs text-[#666]">AND PLANTSなら4〜6本のボリュームある花束が届きます。リビングに飾れる華やかさです。</p>
+                    <p className="text-xs text-[#666]">AND PLANTSでは4〜6本のボリュームのある花束が届き、リビングに飾るのにも適しています。</p>
                   </div>
                   <div className="bg-white rounded-lg p-4">
-                    <p className="text-sm font-medium text-[#333] mb-1">花の品質を最重視する方</p>
-                    <p className="text-xs text-[#666]">宅配便や手渡しのほうが配送中のダメージが少なく、花が良い状態で届きやすいです。</p>
+                    <p className="text-sm font-medium text-[#333] mb-1">花の品質を最も重視する方</p>
+                    <p className="text-xs text-[#666]">宅配便や手渡しのほうが配送中の傷みが少なく、花が良い状態で届きやすい傾向にあります。</p>
                   </div>
                   <div className="bg-white rounded-lg p-4">
-                    <p className="text-sm font-medium text-[#333] mb-1">大きな花やユニークな花材を楽しみたい方</p>
+                    <p className="text-sm font-medium text-[#333] mb-1">大きな花や珍しい花材を楽しみたい方</p>
                     <p className="text-xs text-[#666]">ポストに入らないサイズの花（ユリ・ひまわり・枝物など）は宅配便でのみ届きます。</p>
                   </div>
                 </div>
@@ -670,10 +669,10 @@ export default function PostDeliveryComparisonPage() {
         <section id="tips" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              ポスト投函で届いた花を長持ちさせるコツ
+              ポスト投函で届いた花を長持ちさせる方法
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
-              ポスト投函で届いたお花は、到着後のケア次第で持ちが大きく変わります。以下のポイントを押さえて、1日でも長くお花を楽しみましょう。
+              ポスト投函で届いた花は、到着後の手入れによって持ちが大きく変わります。花を長く楽しむためのポイントは以下のとおりです。
             </p>
 
             <div className="space-y-4">
@@ -683,7 +682,7 @@ export default function PostDeliveryComparisonPage() {
                   <div>
                     <h3 className="text-sm font-bold text-[#333] mb-1">届いたらすぐに開封する</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      ポストの中は高温・多湿になりやすいため、帰宅したらすぐに箱から取り出しましょう。特に夏場は早めの開封が重要です。
+                      ポストの中は高温・多湿になりやすいため、帰宅後はすぐに箱から取り出してください。特に夏場は早めの開封が重要です。
                     </p>
                   </div>
                 </div>
@@ -695,7 +694,7 @@ export default function PostDeliveryComparisonPage() {
                   <div>
                     <h3 className="text-sm font-bold text-[#333] mb-1">茎を1〜2cm斜めにカットする（水切り）</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      配送中に茎の切り口が乾いているため、水の中で斜めにカットすると水の吸い上げが良くなります。
+                      配送中に茎の切り口が乾燥しているため、水の中で斜めにカットすると水の吸い上げが良くなります。
                     </p>
                   </div>
                 </div>
@@ -707,7 +706,7 @@ export default function PostDeliveryComparisonPage() {
                   <div>
                     <h3 className="text-sm font-bold text-[#333] mb-1">付属の栄養剤を花瓶の水に入れる</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      多くのサービスで栄養剤（延命剤）が同封されています。花瓶の水に混ぜることで、花の持ちが格段に良くなります。
+                      多くのサービスでは栄養剤（延命剤）が同封されています。花瓶の水に混ぜることで、花の持ちが大きく向上します。
                     </p>
                   </div>
                 </div>
@@ -719,7 +718,7 @@ export default function PostDeliveryComparisonPage() {
                   <div>
                     <h3 className="text-sm font-bold text-[#333] mb-1">直射日光・エアコンの風を避けて飾る</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      直射日光が当たる場所やエアコンの風が直接当たる場所は花が傷みやすくなります。明るい日陰がベストです。
+                      直射日光やエアコンの風が直接当たる場所では、花が傷みやすくなります。明るい日陰に飾ることをおすすめします。
                     </p>
                   </div>
                 </div>
@@ -731,7 +730,7 @@ export default function PostDeliveryComparisonPage() {
                   <div>
                     <h3 className="text-sm font-bold text-[#333] mb-1">2〜3日ごとに水を替える</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      花瓶の水は雑菌が繁殖しやすいため、こまめに替えましょう。水替えの際に茎の先端を少しカットすると、さらに長持ちします。
+                      花瓶の水は雑菌が繁殖しやすいため、こまめに替えてください。水替えの際に茎の先端を少しカットすると、さらに長持ちします。
                     </p>
                   </div>
                 </div>
@@ -783,20 +782,21 @@ export default function PostDeliveryComparisonPage() {
         <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              まとめ：不在がちな方はポスト投函対応サービスを選ぼう
+              まとめ：不在がちな方にはポスト投函対応サービスをおすすめします
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスク5サービスを比較した結果、ポスト投函に対応しているのはbloomee・medelu・hanamekuの3サービスです。
-              不在がちな方や再配達の手間を省きたい方は、この3サービスから選ぶのがおすすめです。
+              不在がちな方や再配達の手間を省きたい方には、この3サービスからの選択をおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              ポスト投函対応サービスの中でも、コスパで選ぶならmedelu（748円/回・送料無料・全プラン対応）、
-              実績と安心感で選ぶならbloomee（累計3,000万本・品質保証あり）、
-              配送の柔軟さで選ぶならhanameku（ポスト投函と宅配便を選択可能・月1回配送もOK）がそれぞれおすすめです。
+              ポスト投函対応サービスのうち、費用を重視する場合はmedelu（748円/回・送料無料・全プラン対応）、
+              実績と安心感を重視する場合はbloomee（累計3,000万本・品質保証あり）、
+              配送の柔軟さを重視する場合はhanameku（ポスト投函と宅配便を選択可能・月1回配送も可能）をおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              一方、花のボリュームや品質を最重視する方は、宅配便のAND PLANTSや手渡し配達の日本総合園芸も検討してみてください。
-              ポスト投函にこだわらず、自分のライフスタイルに合った配送方法を選ぶことが、花のサブスクを長く楽しむコツです。
+              一方、花のボリュームや品質を最も重視する方は、宅配便のAND PLANTSや手渡し配達の日本総合園芸もご検討ください。
+              ポスト投函に限らず、生活スタイルに合った配送方法を選ぶことが、花のサブスクを長く続けるうえで重要です。
+              ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
@@ -836,7 +836,7 @@ export default function PostDeliveryComparisonPage() {
               <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
 
               <p className="text-xs text-gray-400">
-                花のサブスクを徹底比較。あなたにぴったりのサービスが見つかる。
+                花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">

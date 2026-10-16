@@ -6,7 +6,7 @@ import type { ReviewEvidenceData } from "@/data/reviewEvidence";
 
 const yen = (n: number) => `${n.toLocaleString()}円`;
 
-/** ヒーロー直下に置く「結論」ボックス（口コミ・評判の要約＋最終確認日） */
+/** ヒーロー直下に置く「要点」ボックス（口コミ・評判の要約＋最終確認日） */
 export function ReviewVerdict({ d, s }: { d: ReviewEvidenceData; s: Service }) {
   return (
     <section aria-labelledby="verdict-heading" className="bg-white py-8 border-b border-[#E5E5E5]">
@@ -16,12 +16,12 @@ export function ReviewVerdict({ d, s }: { d: ReviewEvidenceData; s: Service }) {
             最終更新：{d.updatedAt}（料金は{s.verifiedAt}に公式サイトで確認）
           </p>
           <h2 id="verdict-heading" className="text-lg md:text-xl font-bold text-[#333] mb-3">
-            結論：{d.shortName}の口コミ・評判をひとことで
+            要点：{d.shortName}の口コミ・評判の傾向
           </h2>
           <p className="text-sm md:text-base text-[#444] leading-relaxed mb-4">{d.verdict}</p>
           <div className="grid md:grid-cols-2 gap-3 text-sm">
             <div className="bg-white rounded-xl p-4 border border-[#DDE8E0]">
-              <p className="font-bold text-[#4A7C59] mb-2">良い口コミで多い声</p>
+              <p className="font-bold text-[#4A7C59] mb-2">良い口コミに多い声</p>
               <ul className="space-y-1.5 text-[#555]">
                 {d.positive.slice(0, 3).map((p, i) => (
                   <li key={i} className="flex gap-2"><span className="text-[#4A7C59] shrink-0">◎</span><span>{p}</span></li>
@@ -29,7 +29,7 @@ export function ReviewVerdict({ d, s }: { d: ReviewEvidenceData; s: Service }) {
               </ul>
             </div>
             <div className="bg-white rounded-xl p-4 border border-[#F0DCCB]">
-              <p className="font-bold text-[#C08552] mb-2">悪い口コミで多い声</p>
+              <p className="font-bold text-[#C08552] mb-2">悪い口コミに多い声</p>
               <ul className="space-y-1.5 text-[#555]">
                 {d.negative.slice(0, 3).map((p, i) => (
                   <li key={i} className="flex gap-2"><span className="text-[#C08552] shrink-0">△</span><span>{p}</span></li>
@@ -38,7 +38,7 @@ export function ReviewVerdict({ d, s }: { d: ReviewEvidenceData; s: Service }) {
             </div>
           </div>
           <p className="text-xs text-[#888] mt-3">
-            口コミは下記「口コミの出典と調べ方」に挙げた公開情報の傾向要約です。当サイトは個人の体験談や星評価を創作・掲載しません。
+            口コミは、下記「口コミの出典と調べ方」に挙げた公開情報の傾向を要約したものです。当サイトでは、個人の体験談や星評価の創作・掲載は行っていません。
           </p>
         </div>
       </div>
@@ -51,7 +51,7 @@ export function ReviewEvidence({ d, s }: { d: ReviewEvidenceData; s: Service }) 
   return (
     <>
       <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-        {d.shortName}の口コミ・評判（出典つきの傾向まとめ）
+        {d.shortName}の口コミ・評判（出典を明記した傾向のまとめ）
       </h2>
       <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">{d.intro}</p>
 
@@ -74,7 +74,7 @@ export function ReviewEvidence({ d, s }: { d: ReviewEvidenceData; s: Service }) 
         </div>
       </div>
 
-      <h3 className="text-lg font-bold text-[#333] mb-3">メリット・デメリット早見表</h3>
+      <h3 className="text-lg font-bold text-[#333] mb-3">メリット・デメリットの一覧</h3>
       <div className="table-wrapper mb-8">
         <table className="w-full text-sm border-collapse">
           <thead>
@@ -130,7 +130,7 @@ export function ReviewEvidence({ d, s }: { d: ReviewEvidenceData; s: Service }) 
         </ul>
       </div>
       <p className="text-xs text-[#999] mb-2">
-        ※ 口コミは個人の感想で、時期・地域・プランにより体験は異なります。件数や評価点は確認時点の値で、変動します。
+        ※ 口コミは個人の感想であり、時期・地域・プランによって体験は異なります。件数や評価点は確認時点の値であり、変動します。
       </p>
     </>
   );
@@ -167,7 +167,7 @@ export function OfficialPlans({ s }: { s: Service }) {
         <li>・送料：{s.shippingNote}</li>
         <li>・回数縛り・解約：{s.cancellation}</li>
         {s.note ? <li>・補足：{s.note}</li> : null}
-        <li>・出典：{s.source}（{s.verifiedAt}確認）。料金・条件は変わることがあるため、申込前に公式サイトで最新情報をご確認ください。</li>
+        <li>・出典：{s.source}（{s.verifiedAt}確認）。料金・条件は変更される場合があるため、申し込み前に公式サイトにて最新情報をご確認ください。</li>
       </ul>
 
     </>
@@ -190,7 +190,7 @@ export function CompareSection({ s, all, note }: { s: Service; all: Service[]; n
     <section id="comparison" className="py-12 md:py-16 bg-white">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-          {short(s)}とほかの花のサブスクの比較
+          {short(s)}と他の花のサブスクの比較
         </h2>
         <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">{note}</p>
         <div className="table-wrapper">
