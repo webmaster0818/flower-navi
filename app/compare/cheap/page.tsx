@@ -116,7 +116,7 @@ const rankingData = [
     shippingLabel: "無料",
     flowers: "6〜8本（2026年10月17日公式確認）",
     delivery: "宅配便",
-    frequency: "隔週 / 月1回",
+    frequency: "1週・2週・4週ごと（2026年10月17日公式確認）",
     minOrders: "なし",
     quality: "あり",
     url: "/services/and-plants",
@@ -675,11 +675,11 @@ export default function CheapRankingPage() {
                     月3,000円以下
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">bloomee または AND PLANTS（月1回）</h3>
+                    <h3 className="text-base font-bold text-[#333] mb-2">bloomee または AND PLANTS（4週間に1回）</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      bloomeeお試しプランの隔週配送（月約2,730円：1,365円 x 2回）、AND PLANTS Standardプランの月1回配送（月1,980円）が候補です。
+                      bloomeeお試しプランの隔週配送（月約2,730円：1,365円 x 2回）、AND PLANTS Standardプランの4週間に1回の配送（1回1,980円・月およそ1回）が候補です（AND PLANTSの頻度は1週間・2週間・4週間に1回から選択（2026年10月17日公式確認））。
                       知名度と安心感を重視する場合はbloomee、デザイン性の高いアレンジとボリュームを重視する場合はAND PLANTSをおすすめします。
-                      AND PLANTSは月1回でも6〜8本（2026年10月17日公式確認）届くため、1回あたりの満足度が高いサービスです。
+                      AND PLANTSは4週間に1回でも6〜8本（2026年10月17日公式確認）届くため、1回あたりの満足度が高いサービスです。
                     </p>
                   </div>
                 </div>

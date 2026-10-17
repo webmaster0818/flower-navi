@@ -321,7 +321,7 @@ const howToChoose = [
   {
     title: "解約条件・最低受取回数を確認する",
     description:
-      "お花の定期便には、最低受取回数が設定されているものがあります。bloomeeは4回の受け取りが必要ですが、medelu・AND PLANTS・hanamekuは回数の縛りがありません。初めて利用する方は、回数の縛りがないサービスをおすすめします。",
+      "お花の定期便には、最低受取回数が設定されているものがあります。bloomeeは4回の受け取りが必要ですが、medelu・AND PLANTSは回数の縛りがありません。hanamekuは最低回数の記載はありませんが、初回（定期1回目）の解約は受け付けていません（2026年10月17日公式確認）。初めて利用する方は、回数の縛りがないサービスをおすすめします。",
   },
   {
     title: "花の本数とボリュームを確認する",
@@ -993,7 +993,7 @@ export default function HomeClient() {
                   { label: "費用を最優先する場合", value: "medelu（送料込みで748円〜）" },
                   { label: "デザイン性の高いお花を希望する場合", value: "AND PLANTS" },
                   { label: "鮮度を重視する場合", value: "花の定期便（農家直送）" },
-                  { label: "回数の縛りなく試したい場合", value: "hanameku" },
+                  { label: "回数の縛りなく試したい場合", value: "hanameku（最低回数の記載なし。初回（定期1回目）の解約は不可（2026年10月17日公式確認））" },
                 ].map((item) => (
                   <li key={item.label} className="flex items-start gap-3">
                     <span className="text-[#C4877A] shrink-0 mt-1">&#9656;</span>

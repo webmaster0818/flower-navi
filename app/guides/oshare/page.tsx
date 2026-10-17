@@ -52,7 +52,7 @@ const rankingData = [
     shippingLabel: "無料",
     flowers: "6〜8本（2026年10月17日公式確認）",
     delivery: "宅配便（専用ボックス）",
-    frequency: "隔週 / 月1回",
+    frequency: "1週・2週・4週ごと（2026年10月17日公式確認）",
     minOrders: "なし",
     quality: "あり",
     style: "洗練・モダン",
