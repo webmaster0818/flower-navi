@@ -273,7 +273,7 @@ export default function PostDeliveryComparisonPage() {
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
               ただし、すべての花のサブスクがポスト投函に対応しているわけではありません。
-              宅配便のみのサービスや、手渡し配達のみのサービスもあります。
+              宅配便のみのサービスや、自社の配達便で届けるサービス（日本総合園芸）もあります（2026年10月17日公式確認）。
               当サイトでは、人気5サービスのポスト投函への対応状況を比較し、それぞれの特徴を解説します。
             </p>
             <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6">
