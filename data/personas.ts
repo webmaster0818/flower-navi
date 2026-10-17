@@ -81,7 +81,7 @@ export const personas: Persona[] = [
     recommended: [
       { service: "medelu MODERN コース", reason: "モノトーン・グリーン中心の落ち着いた色合いで、男性の部屋に合う", priceFrom: 1198 },
       { service: "AND PLANTS", reason: "デザイン性が高く、アートとして楽しめる。SNSでの見栄えも良い", priceFrom: 1980 },
-      { service: "LIFFT", reason: "市場直送の本格的な花。専門家が選んだ高品質な花が届く", priceFrom: 3300 },
+      { service: "LIFFT", reason: "提携農園からの直送（2026年10月17日公式確認）の本格的な花。専門家が選んだ高品質な花が届く", priceFrom: 3300 },
       { service: "bloomee", reason: "気軽に始められる入門向けのサービス。男性の利用者も増えている", priceFrom: 980 },
     ],
     howToChoose: [
@@ -158,11 +158,11 @@ export const personas: Persona[] = [
     painPoints: [
       { title: "宅配の受け取りが負担", text: "ポスト投函型を選ぶと、玄関で対応する必要がありません。" },
       { title: "操作が複雑だと困る", text: "電話受付のあるサービスを選ぶか、家族と一緒に申し込んでください。" },
-      { title: "季節感のある花がほしい", text: "市場直送のLIFFTであれば、旬の花が届きます。" },
+      { title: "季節感のある花がほしい", text: "提携農園からの直送（2026年10月17日公式確認）のLIFFTであれば、旬の花が届きます。" },
       { title: "仏壇やお墓への供花にも使いたい", text: "仏花に対応しているbloomee・ハナプライムを利用できます。" },
     ],
     recommended: [
-      { service: "LIFFT", reason: "市場直送で旬の花を届ける。シニアに支持されている本格的なサービス", priceFrom: 3300 },
+      { service: "LIFFT", reason: "提携農園からの直送（2026年10月17日公式確認）で旬の花を届ける。シニアに支持されている本格的なサービス", priceFrom: 3300 },
       { service: "HitoHana", reason: "オペレーターに対応しており、申し込み時に相談できる", priceFrom: 1320 },
       { service: "bloomee", reason: "ポスト投函で受け取りが簡単。仏壇の花にも対応", priceFrom: 980 },
       { service: "medelu", reason: "低価格で続けやすく、回数の条件がない", priceFrom: 748 },
@@ -329,7 +329,7 @@ personas.push(
     ],
     recommended: [
       { service: "AND PLANTS", reason: "オンライン会議の背景を華やかにでき、デザイン性も高い。リモート会議が多い方に適している", priceFrom: 1980 },
-      { service: "LIFFT", reason: "市場直送の本格的な花。一週間の仕事の励みになる", priceFrom: 3300 },
+      { service: "LIFFT", reason: "提携農園からの直送（2026年10月17日公式確認）の本格的な花。一週間の仕事の励みになる", priceFrom: 3300 },
       { service: "medelu MODERN", reason: "落ち着いた色合いで、デスクやリビングに合う", priceFrom: 1198 },
       { service: "HitoHana", reason: "ボリュームを調整でき、Lサイズでリビングを華やかにできる", priceFrom: 1320 },
     ],

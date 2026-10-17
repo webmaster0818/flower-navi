@@ -312,7 +312,7 @@ export default function MeritDemeritGuidePage() {
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">LIFFT</td>
-                    <td>市場直送で鮮度が高い、Journal付き</td>
+                    <td>提携農園から直送（2026年10月17日公式確認）で鮮度が高い、Journal付き</td>
                     <td>3,300円とやや高め、月1回</td>
                     <td>品質にこだわる方</td>
                   </tr>

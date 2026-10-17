@@ -133,7 +133,7 @@ const vaseSizeData = [
     size: "ミニサイズ（10〜15cm）",
     bestFor: "1〜3本の花、一輪挿し",
     scene: "デスク、洗面台、トイレなど小さなスペース",
-    subsc: "medeluのMiniプラン（3本）に適している",
+    subsc: "medeluのMiniプラン（3〜4本（2026年10月17日公式確認））に適している",
   },
   {
     size: "スタンダード（15〜20cm）",

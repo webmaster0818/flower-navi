@@ -54,7 +54,7 @@ export default function HanamekuPage() {
       {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"hanameku（ハナメク）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"hanameku（ハナメク）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/hanameku/\"}" }} />
       {/* CANCEL_FLOW_SCHEMA_v1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"hanameku（ハナメク）の解約手順\",\"description\":\"hanameku（ハナメク）の解約方法を手順ごとにご説明します\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログインする\",\"text\":\"hanameku公式サイトの「マイページ」にログインします。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便の管理」を開く\",\"text\":\"メニューから定期便管理画面に移動します。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「解約する」を選択する\",\"text\":\"解約リンクをクリックします。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を入力する（任意）\",\"text\":\"フィードバックの入力は任意です。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「解約する」で最終確定する\",\"text\":\"お届け予定日の10日前までに手続きを完了してください。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知を確認する\",\"text\":\"メールで完了通知が届きます。\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"hanameku（ハナメク）の解約手順\",\"description\":\"hanameku（ハナメク）の解約方法を手順ごとにご説明します\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログインする\",\"text\":\"hanameku公式サイトの「マイページ」にログインします。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"定期管理ページを開く\",\"text\":\"マイページの定期管理ページで、対象商品の詳細を開きます（2026年10月17日公式確認）。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「停止」ボタンを押す\",\"text\":\"対象商品の詳細にある停止ボタンから定期便を停止します（2026年10月17日公式確認）。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を入力する（任意）\",\"text\":\"フィードバックの入力は任意です。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"停止の手続きを確定する\",\"text\":\"お届け予定日の10日前までに手続きを完了してください。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知を確認する\",\"text\":\"メールで完了通知が届きます。\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hanameku/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
@@ -397,15 +397,15 @@ export default function HanamekuPage() {
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期便の管理」を開く</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">メニューから定期便管理画面に移動します。</p>
+                    <h3 className="font-bold text-[#333] mb-1">定期管理ページを開く</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">マイページの定期管理ページで、対象商品の詳細を開きます（2026年10月17日公式確認）。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「解約する」を選択する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">解約リンクをクリックします。</p>
+                    <h3 className="font-bold text-[#333] mb-1">「停止」ボタンを押す</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">対象商品の詳細にある停止ボタンから定期便を停止します（2026年10月17日公式確認）。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
@@ -418,7 +418,7 @@ export default function HanamekuPage() {
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「解約する」で最終確定する</h3>
+                    <h3 className="font-bold text-[#333] mb-1">停止の手続きを確定する</h3>
                     <p className="text-sm text-[#666] leading-relaxed">お届け予定日の10日前までに手続きを完了してください。</p>
                   </div>
                 </div>

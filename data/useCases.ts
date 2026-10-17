@@ -31,7 +31,7 @@ export const useCases: UseCase[] = [
     ],
     recommended: [
       { service: "AND PLANTS ギフトプラン", reason: "デザイン性が高く、3か月コースで継続して楽しんでもらえる", priceFrom: 5940 },
-      { service: "LIFFT 半年ギフト", reason: "市場直送の本格的な花。長く続くプレゼントとして印象に残る", priceFrom: 19800 },
+      { service: "LIFFT 半年ギフト", reason: "提携農園からの直送（2026年10月17日公式確認）の本格的な花。長く続くプレゼントとして印象に残る", priceFrom: 20350 },
       { service: "HitoHana ギフト", reason: "ボリュームを調整でき、1回のギフトから定期ギフトまで柔軟に対応", priceFrom: 3300 },
       { service: "bloomee お試しプラン", reason: "花代980円＋送料385円。「プレゼントとして送る」で相手の住所に届けられる（最初の4回は受け取りが必要）", priceFrom: 980 },
     ],

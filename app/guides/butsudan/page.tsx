@@ -295,13 +295,13 @@ export default function ButsudanGuidePage() {
                     <td className="px-4 py-3 font-medium text-[#333]">最安価格</td>
                     <td className="px-4 py-3 text-center">980円/回</td>
                     <td className="px-4 py-3 text-center font-bold text-[#4A7C59]">748円/回</td>
-                    <td className="px-4 py-3 text-center">2,200円/回</td>
+                    <td className="px-4 py-3 text-center">1,298円/回〜（自社配達便。宅配便は2,530円/回〜）（2026年10月17日公式確認）</td>
                   </tr>
                   <tr className="border-b border-[#E5E5E5] bg-[#F8F8F8]">
                     <td className="px-4 py-3 font-medium text-[#333]">送料</td>
                     <td className="px-4 py-3 text-center">385円</td>
                     <td className="px-4 py-3 text-center font-bold text-[#4A7C59]">無料</td>
-                    <td className="px-4 py-3 text-center">別途（地域による）</td>
+                    <td className="px-4 py-3 text-center">料金に含む（お届け方法で料金が異なる）（2026年10月17日公式確認）</td>
                   </tr>
                   <tr className="border-b border-[#E5E5E5]">
                     <td className="px-4 py-3 font-medium text-[#333]">配送方法</td>
@@ -313,7 +313,7 @@ export default function ButsudanGuidePage() {
                     <td className="px-4 py-3 font-medium text-[#333]">配送頻度</td>
                     <td className="px-4 py-3 text-center">毎週/隔週</td>
                     <td className="px-4 py-3 text-center">毎週/隔週</td>
-                    <td className="px-4 py-3 text-center">月1回/月2回</td>
+                    <td className="px-4 py-3 text-center">月3回（切り花）・月1〜2回・毎週/隔週などコースにより異なる（2026年10月17日公式確認）</td>
                   </tr>
                   <tr className="border-b border-[#E5E5E5]">
                     <td className="px-4 py-3 font-medium text-[#333]">品質保証</td>
@@ -391,7 +391,7 @@ export default function ButsudanGuidePage() {
                     medeluは市場直送の仕組みで中間コストを削減し、748円から・送料無料という特に低い価格水準を実現しているサービスです。仏花として利用する場合は、特に「ANYROOMコース」と「NATURALコース」をおすすめします。
                   </p>
                   <p className="text-sm text-[#666] leading-relaxed mb-4">
-                    ANYROOMコースは場所を選ばない落ち着いた色合いの花が中心で、白・グリーン系を中心としたアレンジが届きます。NATURALコースはナチュラルな雰囲気の花が中心で、仏壇に飾っても違和感のない上品な花が届きます。市場直送のため鮮度が高く、花持ちが良い点も仏花として利用するうえでの利点です。回数の条件がないため、試しに始めやすいサービスです。
+                    ANYROOMコースは、どんなインテリアにもなじむ色とりどりの花が届きます（2026年10月17日公式確認）。NATURALコースはナチュラルな雰囲気の花が中心で、仏壇に飾っても違和感のない上品な花が届きます。市場直送のため鮮度が高く、花持ちが良い点も仏花として利用するうえでの利点です。回数の条件がないため、試しに始めやすいサービスです。
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">748円/回〜</span>
@@ -421,13 +421,13 @@ export default function ButsudanGuidePage() {
                 </div>
                 <div className="p-5">
                   <p className="text-sm text-[#666] leading-relaxed mb-4">
-                    日本総合園芸が運営する「花の定期便」は、農家直送で鮮度の高い花が届くサービスです。基本プランは2,200円/回で、季節に応じた花束が届きます。花屋やスーパーで購入する仏花とは異なり、専門家が選んだ新鮮な花が届く点が最大の特徴です。
+                    日本総合園芸が運営する「花の定期便」は、農家直送で鮮度の高い花が届くサービスです。切り花のコースは1回1,298円〜（自社配達便・月3回。宅配便は2,530円〜）で（2026年10月17日公式確認）、季節に応じた花が届きます。花屋やスーパーで購入する仏花とは異なり、専門家が選んだ新鮮な花が届く点が最大の特徴です。
                   </p>
                   <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
                     農家直送のため中間業者を通さず、摘みたての花が短い流通経路で届きます。そのため花持ちが非常に良く、仏花として2週間以上持つ場合もあります。宅配便での配送となるため、ボリュームのある花束を受け取れる点も特長です。法人のオフィス装花にも対応しており、お寺や葬儀場への導入実績もあるサービスです。
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">2,200円/回〜</span>
+                    <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">1,298円/回〜（自社配達便）（2026年10月17日公式確認）</span>
                     <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">農家直送</span>
                     <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">宅配便</span>
                     <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">花持ちが良い</span>
