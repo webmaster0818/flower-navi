@@ -170,7 +170,7 @@ const bloomeeKuchikomi: ServiceGuide = {
   service: "bloomee (ブルーミー)",
   servicePath: "/services/bloomee/",
   intent: "kuchikomi",
-  title: "bloomee(ブルーミー)の値段・料金プランと口コミ・評判｜送料込みの実質価格【2026年7月公式確認】",
+  title: "bloomee(ブルーミー)の値段・料金プランと口コミ・評判｜送料込みの実質価格【公式確認】",
   h1: "bloomee(ブルーミー)の値段・料金プランと口コミ・評判｜4回継続の条件",
   description: "bloomee(ブルーミー)の口コミ・評判の傾向をまとめています。公式サイトで確認した料金（980円〜）、最低4回の継続条件、スキップ条件、配送方式と、SNSで多く見られる良い評判・不満の傾向を整理しました。",
   intro:

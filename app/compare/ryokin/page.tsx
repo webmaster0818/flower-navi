@@ -7,7 +7,7 @@ import { SERVICES, minTotal, perStem, type Service } from "@/data/services";
 const UPDATED = "2026年6月27日";
 
 export const metadata: Metadata = {
-  title: "花の定期便 料金比較表｜送料込みの総額・最低支払額・1本あたりの単価で比較【2026年6月確認】",
+  title: "花の定期便 料金比較表｜送料込みの総額・最低支払額・1本あたりの単価で比較",
   description:
     "花のサブスク（定期便）の料金を、月額ではなく〈送料込みの1回あたりの総額・最低受取回数までの総額・1本あたりの単価〉で比較しています。bloomee・medelu・AND PLANTS・hanamekuの最新料金を、公式サイトでの確認日を付記して掲載しています。",
   alternates: { canonical: "/compare/ryokin/" },

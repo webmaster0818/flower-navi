@@ -28,7 +28,7 @@ const faqItems = [
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "花のサブスクの初回特典・お試しプラン比較【2026年7月】安く始める方法",
+  headline: "花のサブスクの初回特典・お試しプラン比較｜安く始める方法",
   description: "bloomee・medelu・AND PLANTS・hanamekuの初回・お試しプランを送料込みの実額で比較しています。期間限定のクーポンは公式サイトでの確認方法を案内しています。",
   datePublished: "2026-07-24T00:00:00+09:00",
   dateModified: "2026-07-24T00:00:00+09:00",
@@ -55,7 +55,7 @@ export default function CampaignPage() {
             <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">初回・お試しプラン比較</p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
               花のサブスクの初回特典・お試しプラン比較<br className="hidden md:block" />
-              安く始める方法【2026年7月】
+              安く始める方法
             </h1>
             <p className="text-sm md:text-base text-[#666] max-w-2xl mx-auto leading-relaxed">
               当サイトでは、各社の初回から利用できるお試しプラン・最安プランを、送料込みの実額で比較しています。
