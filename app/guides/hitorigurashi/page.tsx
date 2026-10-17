@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "旅行や出張で受け取れない週はどうすればいいですか？",
-    a: "ほとんどのサービスにスキップ（配送停止）機能があります。medeluは配送日の変更やスキップを自由に行えます。hanamekuも同様です。bloomeeもマイページからスキップが可能です。旅行の予定が決まった時点で、早めに手続きを行ってください。",
+    a: "ほとんどのサービスにスキップ（配送停止）機能があります。medeluは3回先までのスキップや一時休止ができます（決済日前日の木曜日まで）。hanamekuは次回分のスキップができます（お届け予定日の10日前まで）。bloomeeもマイページからスキップが可能です。旅行の予定が決まった時点で、早めに手続きを行ってください。",
   },
   {
     q: "月額の目安はいくらですか？",
@@ -35,7 +35,7 @@ const faqItems = [
   },
   {
     q: "花のサブスクはいつでも解約できますか？",
-    a: "medeluとhanamekuには回数の条件がなく、いつでも解約できます。bloomeeには4回の最低受け取り回数があるため、4回受け取る前に解約すると残り回数分の料金が発生します。試しに利用したい方には、回数の条件がないサービスから始める方法をおすすめします。",
+    a: "medeluには回数の条件がなく、いつでも解約できます。hanamekuは最低回数の記載はありませんが、初回（定期1回目）の解約は受け付けていません。bloomeeには4回の最低受け取り回数があるため、4回受け取る前に解約すると残り回数分の料金が発生します。試しに利用したい方には、回数の条件がないサービスから始める方法をおすすめします。",
   },
 ];
 
@@ -50,7 +50,7 @@ const rankingData = [
     shipping: 0,
     total: 748,
     shippingLabel: "無料",
-    flowers: "3本",
+    flowers: "3〜4本",
     delivery: "ポスト投函",
     frequency: "毎週 / 隔週",
     minOrders: "なし",
@@ -60,7 +60,7 @@ const rankingData = [
     highlight: "748円から、送料無料です。ポスト投函のため不在時も受け取れます。回数の条件がなく、始めやすいサービスです。",
     bestFor: "費用を抑えたい一人暮らしの方、初めて花のサブスクを試す方",
     detail:
-      "当サイトでは、medeluを一人暮らしの方に最もおすすめの花のサブスクと位置付けています。Miniプランは1回748円（送料無料）で、3本の花がポストに届きます。市場直送で中間マージンを削減しているため、低価格でも新鮮な花が届く点が強みです。回数の条件がないため、まず試してみたい方にも適しています。配送頻度は毎週・隔週から選べ、スキップも自由に行えます。3本というボリュームは、一人暮らしの小さなテーブルに飾るのに適した量です。",
+      "当サイトでは、medeluを一人暮らしの方に最もおすすめの花のサブスクと位置付けています。Miniプランは1回748円（送料無料）で、3〜4本の花がポストに届きます。市場直送で中間マージンを削減しているため、低価格でも新鮮な花が届く点が強みです。回数の条件がないため、まず試してみたい方にも適しています。配送頻度は毎週・隔週から選べ、3回先までのスキップや一時休止もマイページで行えます。3〜4本というボリュームは、一人暮らしの小さなテーブルに飾るのに適した量です。",
   },
   {
     rank: 2,
@@ -89,20 +89,20 @@ const rankingData = [
     nameJa: "ハナメク",
     plan: "ライトプラン",
     price: 1210,
-    shipping: null,
-    total: null,
-    shippingLabel: "別途（配送方法による）",
-    flowers: "花とグリーン数本",
-    delivery: "ポスト投函 / 宅配便",
-    frequency: "毎週 / 隔週 / 月1回",
-    minOrders: "なし",
+    shipping: 0,
+    total: 1210,
+    shippingLabel: "無料（配送料込み）",
+    flowers: "3〜4本（グリーンを含む）",
+    delivery: "ポスト投函（セルフアレンジプランは宅配便）",
+    frequency: "毎週 / 隔週（セルフアレンジプランは月1回 / 隔週）",
+    minOrders: "初回は解約不可",
     quality: "あり",
     url: "/services/hanameku",
     officialUrl: "https://t.felmat.net/fmcl?ak=W58911.1.O99396Q.A135745L",
-    highlight: "1,210円からです。市場直送のため鮮度が高く、配送方法はポスト投函と宅配便から選べます。",
+    highlight: "ライトプランは1,210円（税込・配送料込み）です。市場直送のため鮮度が高く、ライトプランはポスト投函、セルフアレンジプランは宅配便で届きます。",
     bestFor: "鮮度を重視する方、月1回から始めたい方",
     detail:
-      "hanamekuは市場直送を特長とする花のサブスクです。ライトプランは1,210円（税込・配送料込）で、ポスト投函で受け取れます。市場から直接届くため、鮮度が高い点が特長です。ポスト投函と宅配便の両方に対応しており、不在がちな一人暮らしの方はポスト投函を選べます。配送頻度は毎週・隔週・月1回から選べ、月1回から始められます。回数の条件もないため、合わない場合はいつでも解約できます。利用に慣れた段階で上位プランに変更する使い方もおすすめです。",
+      "hanamekuは市場直送を特長とする花のサブスクです。ライトプランは1,210円（税込・配送料込）で、グリーンを含む3〜4本の花がポスト投函で届きます。市場から直接届くため、鮮度が高い点が特長です。ライトプランの配送頻度は毎週・隔週から選べます。宅配便で届くセルフアレンジプラン（1,958円〜・地域により220〜550円の追加送料）は月1回・隔週から選べるため、月1回から始めたい方はこちらが選択肢になります。最低回数の記載はありませんが、初回（定期1回目）の解約は受け付けていません。解約・スキップは、お届け予定日の10日前までに手続きします。",
   },
 ];
 
@@ -115,9 +115,9 @@ export default function HitorigurashiGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"一人暮らしにおすすめの花のサブスク\",\"item\":\"https://ohana-delivery.com/guides/hitorigurashi/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"一人暮らしにおすすめの花のサブスク\",\"description\":\"一人暮らしにおすすめの花のサブスクについて、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/hitorigurashi/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"一人暮らしにおすすめの花のサブスク\",\"description\":\"一人暮らしにおすすめの花のサブスクについて、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-17T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/hitorigurashi/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"一人暮らしで花のサブスクを始める場合、おすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイトでは、一人暮らしの方にはmedelu（メデル）のMiniプランを最もおすすめしています。748円（送料込み）で始められ、ポスト投函で受け取れるため、不在が多い方でも利用しやすいサービスです。回数の条件もないため、試しに利用しやすい点も特長です。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしで不在が多くても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函に対応しているサービスであれば、不在でも受け取りに支障はありません。medelu・bloomee・hanameku（ポスト投函プラン）はいずれもポストに届くため、帰宅後に受け取れます。ポストの投入口が小さい場合は、事前にサイズをご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"花瓶がなくても始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、始められます。100円ショップのガラスコップやジャムの空き瓶でも十分に代用できます。まずは手持ちのグラスや空き瓶で試し、継続する場合に小さな花瓶を購入する方法をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花の手入れは大変ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的なお手入れは、水替えと茎のカットのみです。2〜3日に1回水を替え、茎を1cmほど斜めにカットすることで長持ちします。1回の作業は5分以内で済みます。花のサブスクにはお手入れガイドが同封されていることが多く、初めての方でも取り組みやすい内容です。\"}},{\"@type\":\"Question\",\"name\":\"ワンルームでも花を飾るスペースはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"3本程度のミニブーケであれば、テーブルの隅・キッチンカウンター・洗面台・窓際など、小さなスペースで十分に飾れます。コンパクトな空間のほうが花の存在感が際立ち、部屋全体の雰囲気が変わります。\"}},{\"@type\":\"Question\",\"name\":\"旅行や出張で受け取れない週はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスにスキップ（配送停止）機能があります。medeluは配送日の変更やスキップを自由に行えます。hanamekuも同様です。bloomeeもマイページからスキップが可能です。旅行の予定が決まった時点で、早めに手続きを行ってください。\"}},{\"@type\":\"Question\",\"name\":\"月額の目安はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの場合、月1,000〜2,000円程度が目安です。medeluのMiniプランを隔週で利用すれば月約1,496円（748円x2回）、bloomeeのお試しプランは最初の4回が毎週届くため最初の1か月は約5,460円（1,365円x4回）、5回目以降に隔週へ変えると月約2,730円（1,365円x2回）です。まずは隔週配送から始め、ご自身に合うペースを確認する方法をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはいつでも解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとhanamekuには回数の条件がなく、いつでも解約できます。bloomeeには4回の最低受け取り回数があるため、4回受け取る前に解約すると残り回数分の料金が発生します。試しに利用したい方には、回数の条件がないサービスから始める方法をおすすめします。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"一人暮らしで花のサブスクを始める場合、おすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイトでは、一人暮らしの方にはmedelu（メデル）のMiniプランを最もおすすめしています。748円（送料込み）で始められ、ポスト投函で受け取れるため、不在が多い方でも利用しやすいサービスです。回数の条件もないため、試しに利用しやすい点も特長です。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしで不在が多くても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函に対応しているサービスであれば、不在でも受け取りに支障はありません。medelu・bloomee・hanameku（ポスト投函プラン）はいずれもポストに届くため、帰宅後に受け取れます。ポストの投入口が小さい場合は、事前にサイズをご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"花瓶がなくても始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、始められます。100円ショップのガラスコップやジャムの空き瓶でも十分に代用できます。まずは手持ちのグラスや空き瓶で試し、継続する場合に小さな花瓶を購入する方法をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花の手入れは大変ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的なお手入れは、水替えと茎のカットのみです。2〜3日に1回水を替え、茎を1cmほど斜めにカットすることで長持ちします。1回の作業は5分以内で済みます。花のサブスクにはお手入れガイドが同封されていることが多く、初めての方でも取り組みやすい内容です。\"}},{\"@type\":\"Question\",\"name\":\"ワンルームでも花を飾るスペースはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"3本程度のミニブーケであれば、テーブルの隅・キッチンカウンター・洗面台・窓際など、小さなスペースで十分に飾れます。コンパクトな空間のほうが花の存在感が際立ち、部屋全体の雰囲気が変わります。\"}},{\"@type\":\"Question\",\"name\":\"旅行や出張で受け取れない週はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ほとんどのサービスにスキップ（配送停止）機能があります。medeluは3回先までのスキップや一時休止ができます（決済日前日の木曜日まで）。hanamekuは次回分のスキップができます（お届け予定日の10日前まで）。bloomeeもマイページからスキップが可能です。旅行の予定が決まった時点で、早めに手続きを行ってください。\"}},{\"@type\":\"Question\",\"name\":\"月額の目安はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの場合、月1,000〜2,000円程度が目安です。medeluのMiniプランを隔週で利用すれば月約1,496円（748円x2回）、bloomeeのお試しプランは最初の4回が毎週届くため最初の1か月は約5,460円（1,365円x4回）、5回目以降に隔週へ変えると月約2,730円（1,365円x2回）です。まずは隔週配送から始め、ご自身に合うペースを確認する方法をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはいつでも解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには回数の条件がなく、いつでも解約できます。hanamekuは最低回数の記載はありませんが、初回（定期1回目）の解約は受け付けていません。bloomeeには4回の最低受け取り回数があるため、4回受け取る前に解約すると残り回数分の料金が発生します。試しに利用したい方には、回数の条件がないサービスから始める方法をおすすめします。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -172,7 +172,7 @@ export default function HitorigurashiGuidePage() {
               </div>
               <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
                 <p className="text-xs text-[#999] mb-1">回数の条件なし</p>
-                <p className="text-xl font-bold text-[#4A7C59]">2サービス</p>
+                <p className="text-xl font-bold text-[#4A7C59]">1サービス</p>
               </div>
             </div>
           </div>
@@ -284,7 +284,7 @@ export default function HitorigurashiGuidePage() {
                   <div>
                     <h3 className="text-base font-bold text-[#333] mb-2">回数の条件と解約の自由度を確認する</h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      初めて花のサブスクを利用する場合は、回数の条件がないサービスのほうが安心です。イメージと異なった場合や、手入れの時間が取れない場合に、すぐ解約できるかどうかは重要な判断材料です。medeluとhanamekuには回数の条件がなく、bloomeeには4回の最低受け取り回数があります。
+                      初めて花のサブスクを利用する場合は、回数の条件がないサービスのほうが安心です。イメージと異なった場合や、手入れの時間が取れない場合に、すぐ解約できるかどうかは重要な判断材料です。medeluには回数の条件がありません。hanamekuは最低回数の記載はありませんが、初回（定期1回目）の解約は受け付けていません。bloomeeには4回の最低受け取り回数があります。
                     </p>
                   </div>
                 </div>
@@ -385,7 +385,7 @@ export default function HitorigurashiGuidePage() {
                 <li>・ 表示価格はすべて税込です</li>
                 <li>・ hanamekuのライトプランは配送料込みで、追加の送料はかかりません。セルフアレンジプランは地域により220〜550円の追加送料がかかります（2026年10月17日に公式サイトで確認）</li>
                 <li>・ bloomeeは4回の最低受け取り回数があります</li>
-                <li>・ 2026年4月時点の情報です。ご利用前に、公式サイトにて最新情報をご確認ください</li>
+                <li>・ 2026年10月17日時点の情報です。ご利用前に、公式サイトにて最新情報をご確認ください</li>
               </ul>
             </div>
           </div>
@@ -632,7 +632,7 @@ export default function HitorigurashiGuidePage() {
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               知名度と安心感を重視する場合はbloomee（ブルーミー）、鮮度を重視する場合はhanameku（ハナメク）も選択肢になります。
-              bloomeeはSNS上の情報が多く、初めての方も利用のイメージをつかみやすいサービスです。hanamekuは市場直送で鮮度が高く、月1回から始められる点が特長です。
+              bloomeeはSNS上の情報が多く、初めての方も利用のイメージをつかみやすいサービスです。hanamekuは市場直送で鮮度が高く、セルフアレンジプランなら月1回から始められる点が特長です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               一人暮らしの部屋に花を飾ることで、日々の暮らしに彩りが加わります。
@@ -700,7 +700,7 @@ export default function HitorigurashiGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
+              掲載情報は2026年10月17日時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

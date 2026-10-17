@@ -15,7 +15,7 @@ const faqItems = [
   },
   {
     q: "両方同時に利用することはできますか？",
-    a: "はい、併用できます。bloomeeの手頃なプランで日常の花を受け取りつつ、HitoHanaの上位プランを月1回利用して特別な花を楽しむ方法もあります。ただし費用が増えるため、まずはどちらか一方を試してから検討することをおすすめします。",
+    a: "はい、併用できます。bloomeeの手頃なプランで日常の花を受け取りつつ、HitoHanaの上位プランを4週間に1回利用して特別な花を楽しむ方法もあります。ただし費用が増えるため、まずはどちらか一方を試してから検討することをおすすめします。",
   },
   {
     q: "品質保証制度はどちらにもありますか？",
@@ -25,14 +25,14 @@ const faqItems = [
 
 /* ─── Comparison Items ─── */
 const comparisonItems = [
-  { item: "最安プラン", bloomee: "980円/回（お試しプラン）", hitohana: "1,320円/回（Sサイズ）", winner: "bloomee" },
-  { item: "送料", bloomee: "385円〜", hitohana: "無料", winner: "hitohana" },
+  { item: "最安プラン", bloomee: "980円/回（お試しプラン）", hitohana: "1,320円/回（Liteサイズ）", winner: "bloomee" },
+  { item: "送料", bloomee: "385円〜", hitohana: "無料（通常便）", winner: "hitohana" },
   { item: "総額（最安）", bloomee: "1,365円/回", hitohana: "1,320円/回", winner: "hitohana" },
   { item: "花の本数", bloomee: "4本以上（お試し）／8本以上（ベーシック）", hitohana: "4本〜（サイズによる）", winner: "hitohana" },
   { item: "花の色選択", bloomee: "不可（おまかせ）", hitohana: "可能（6色＋おまかせ）", winner: "hitohana" },
   { item: "配送方法", bloomee: "ポスト投函 / 宅配便", hitohana: "宅配便のみ", winner: "bloomee" },
   { item: "回数の条件", bloomee: "4回", hitohana: "なし", winner: "hitohana" },
-  { item: "配送頻度", bloomee: "毎週 / 隔週", hitohana: "毎週 / 隔週 / 月1回", winner: "hitohana" },
+  { item: "配送頻度", bloomee: "毎週 / 隔週", hitohana: "毎週 / 2週間に1回 / 4週間に1回", winner: "hitohana" },
 ];
 
 /* ─── Main Component ─── */
@@ -46,9 +46,9 @@ export default function BloomeeVsHitohanaPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"bloomee vs HitoHana 比較\",\"item\":\"https://ohana-delivery.com/compare/bloomee-vs-hitohana/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs HitoHana 比較\",\"description\":\"bloomeeとHitoHanaの料金・評判・選び方を比較して解説しています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-hitohana/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs HitoHana 比較\",\"description\":\"bloomeeとHitoHanaの料金・評判・選び方を比較して解説しています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-17T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-hitohana/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHana、初心者にはどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"手軽さを重視する場合は、bloomeeをおすすめします。ポスト投函で受け取ることができ、980円から始められます。一方、花の色やボリュームを重視する方にはHitoHanaが適しています。HitoHanaは色を選べるため、インテリアに合わせた花を受け取ることができます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHanaには、最低利用回数の条件がありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは最低4回の受け取りが必要で、4回未満で解約する場合は残りの回数分の料金が発生します。HitoHanaには回数の条件がなく、いつでも解約できます。試験的に始めたい方には、HitoHanaのほうが負担の少ない選択肢です。\"}},{\"@type\":\"Question\",\"name\":\"両方同時に利用することはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、併用できます。bloomeeの手頃なプランで日常の花を受け取りつつ、HitoHanaの上位プランを月1回利用して特別な花を楽しむ方法もあります。ただし費用が増えるため、まずはどちらか一方を試してから検討することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度はどちらにもありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、どちらのサービスにも品質保証制度があります。bloomeeの定期便は、到着から2週間以内に連絡すれば返金または交換の対象です（公式・特定商取引法に基づく表記、2026年10月15日確認）。HitoHanaの保証条件は、お申し込み前に公式サイトにてご確認ください。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHana、初心者にはどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"手軽さを重視する場合は、bloomeeをおすすめします。ポスト投函で受け取ることができ、980円から始められます。一方、花の色やボリュームを重視する方にはHitoHanaが適しています。HitoHanaは色を選べるため、インテリアに合わせた花を受け取ることができます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHanaには、最低利用回数の条件がありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは最低4回の受け取りが必要で、4回未満で解約する場合は残りの回数分の料金が発生します。HitoHanaには回数の条件がなく、いつでも解約できます。試験的に始めたい方には、HitoHanaのほうが負担の少ない選択肢です。\"}},{\"@type\":\"Question\",\"name\":\"両方同時に利用することはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、併用できます。bloomeeの手頃なプランで日常の花を受け取りつつ、HitoHanaの上位プランを4週間に1回利用して特別な花を楽しむ方法もあります。ただし費用が増えるため、まずはどちらか一方を試してから検討することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度はどちらにもありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、どちらのサービスにも品質保証制度があります。bloomeeの定期便は、到着から2週間以内に連絡すれば返金または交換の対象です（公式・特定商取引法に基づく表記、2026年10月15日確認）。HitoHanaの保証条件は、お申し込み前に公式サイトにてご確認ください。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -116,7 +116,7 @@ export default function BloomeeVsHitohanaPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#999] mt-3">※ 価格はすべて税込です。2026年4月時点の情報です。</p>
+            <p className="text-xs text-[#999] mt-3">※ 価格はすべて税込です。2026年10月17日時点の情報です。</p>
           </div>
         </section>
 
@@ -150,7 +150,7 @@ export default function BloomeeVsHitohanaPage() {
             <div className="space-y-4">
               {[
                 { title: "花の色を6色＋おまかせから選べます", text: "6色＋おまかせから、毎回好みの色を指定できます（2026年10月14日公式確認）。部屋のインテリアや気分に合わせて選べる点は、HitoHanaの特長です。" },
-                { title: "送料無料のため総額が明確です", text: "すべてのプランが送料無料です。表示価格がそのまま支払総額になるため、料金体系がわかりやすく、追加の費用が発生しません。" },
+                { title: "送料無料のため総額が明確です", text: "公式の料金表示は1回あたりの支払額（税込）で、通常便の送料は別途かかりません。料金体系がわかりやすい点が利点です。クール便は有料のオプションで、Liteサイズは通常便のみです。" },
                 { title: "回数の条件がなく、いつでも解約できます", text: "最低利用回数の条件がないため、1回試して合わない場合はすぐに解約できます。初めて利用する方も、金銭的な負担を抑えて始められます。" },
               ].map((item, i) => (
                 <div key={i} className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C8D8CB]">
@@ -264,7 +264,7 @@ export default function BloomeeVsHitohanaPage() {
           </div>
           <div className="border-t border-gray-600 pt-6 text-center">
             <p className="text-xs text-gray-500">当サイトはアフィリエイトプログラムに参加しています。リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。</p>
-            <p className="text-xs text-gray-500 mt-2">掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。</p>
+            <p className="text-xs text-gray-500 mt-2">掲載情報は2026年10月17日時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。</p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>
               <a href="/privacy-policy" className="hover:text-white transition-colors">プライバシーポリシー</a>

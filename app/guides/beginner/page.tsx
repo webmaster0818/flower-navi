@@ -31,7 +31,7 @@ const faqItems = [
   },
   {
     q: "花のサブスクは途中で解約できますか？",
-    a: "多くのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは最低受取回数の設定がなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。継続できるか不安な方には、最低受取回数の設定がないサービスから始めることをおすすめします。",
+    a: "多くのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluは最低受取回数の設定がなく、いつでも解約できます。hanamekuは最低回数の記載はありませんが、初回（定期1回目）の解約は受け付けていません。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。継続できるか不安な方には、最低受取回数の設定がないサービスから始めることをおすすめします。",
   },
   {
     q: "花のサブスクでお花の種類は選べますか？",
@@ -79,7 +79,7 @@ const checkPoints = [
   },
   {
     title: "解約条件（最低受取回数の有無）",
-    detail: "サービスによっては最低受け取り回数が設定されています。bloomeeは4回の最低受け取りが条件です。継続できるか不安な方には、medeluやhanamekuのように最低受取回数の設定がないサービスをおすすめします。",
+    detail: "サービスによっては最低受け取り回数が設定されています。bloomeeは4回の最低受け取りが条件です。継続できるか不安な方には、medeluのように最低受取回数の設定がないサービスをおすすめします（hanamekuは最低回数の記載はありませんが、初回の解約は受け付けていません）。",
   },
   {
     title: "品質保証の有無",
@@ -124,9 +124,9 @@ export default function BeginnerGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"初心者向け 花のサブスクの選び方\",\"item\":\"https://ohana-delivery.com/guides/beginner/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"初心者向け 花のサブスクの選び方\",\"description\":\"初心者向けに花のサブスクの選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/beginner/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"初心者向け 花のサブスクの選び方\",\"description\":\"初心者向けに花のサブスクの選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-17T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/beginner/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月額いくらから始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイト掲載サービスのうち最も安いのはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送の場合、月額は約1,496円です。bloomeeのお試しプランは980円＋送料385円で、1回あたり1,365円です。まずは1,000円前後のプランから試すことをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初めての方には隔週をおすすめします。届いたお花が枯れる頃に次のお花が届く周期となるため、負担なく続けやすい頻度です。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"季節やお花の種類によって異なりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていないのですが大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶がなくても問題ありません。コップやグラス、空き瓶、マグカップなど、水を入れられる容器であれば代用できます。100円ショップでもシンプルな花瓶が購入できます。サブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函は、不在でも受け取れる点が利点です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、よい状態で届きやすいという利点があります。初めての方には、手軽なポスト投函をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"品質保証制度があるサービスであれば、返金・交換などの対応を受けられます。bloomeeの定期便は、到着から2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記）。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせを円滑に進められます。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluやhanamekuは最低受取回数の設定がなく、いつでも解約できます。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。継続できるか不安な方には、最低受取回数の設定がないサービスから始めることをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクでお花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的に、お花の種類はおまかせです。花屋やフローリストが季節のお花を選んで届けるため、ご自身では選ばないお花に触れる機会になります。これは花のサブスクの特長の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月額いくらから始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイト掲載サービスのうち最も安いのはmedelu（メデル）のMiniプランで、1回748円（送料込み）から始められます。隔週配送の場合、月額は約1,496円です。bloomeeのお試しプランは980円＋送料385円で、1回あたり1,365円です。まずは1,000円前後のプランから試すことをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらいの頻度で届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、一般的には毎週・隔週（2週間に1回）・月1回から選べます。初めての方には隔週をおすすめします。届いたお花が枯れる頃に次のお花が届く周期となるため、負担なく続けやすい頻度です。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"季節やお花の種類によって異なりますが、適切にお手入れすれば5日から10日ほど楽しめます。こまめに水替えをし、茎を斜めにカットする「水切り」を行うことで、より長持ちさせることができます。夏場はやや短く、冬場はより長持ちする傾向があります。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていないのですが大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶がなくても問題ありません。コップやグラス、空き瓶、マグカップなど、水を入れられる容器であれば代用できます。100円ショップでもシンプルな花瓶が購入できます。サブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。\"}},{\"@type\":\"Question\",\"name\":\"ポスト投函と宅配便の違いは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ポスト投函は、不在でも受け取れる点が利点です。専用の箱に入ってポストに届くため、受け取りの時間を気にする必要がありません。一方、宅配便は手渡しのため在宅が必要ですが、花が箱の中で潰れにくく、よい状態で届きやすいという利点があります。初めての方には、手軽なポスト投函をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"届いたお花が傷んでいた場合はどうすればいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"品質保証制度があるサービスであれば、返金・交換などの対応を受けられます。bloomeeの定期便は、到着から2週間以内の連絡で返金・交換の対象です（公式・特定商取引法に基づく表記）。medeluやhanamekuにも品質保証があります。届いた直後に写真を撮っておくと、問い合わせを円滑に進められます。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは途中で解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスで解約可能です。ただし、サービスによって条件が異なります。medeluは最低受取回数の設定がなく、いつでも解約できます。hanamekuは最低回数の記載はありませんが、初回（定期1回目）の解約は受け付けていません。bloomeeは最低4回の受け取りが条件で、4回未満で解約すると残り回数分の料金が発生します。継続できるか不安な方には、最低受取回数の設定がないサービスから始めることをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクでお花の種類は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的に、お花の種類はおまかせです。花屋やフローリストが季節のお花を選んで届けるため、ご自身では選ばないお花に触れる機会になります。これは花のサブスクの特長の一つです。色味の好み（暖色系・寒色系など）を指定できるサービスもあります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -437,7 +437,7 @@ export default function BeginnerGuidePage() {
                   <p className="text-sm font-bold text-[#333] mb-1">注意点</p>
                   <p className="text-sm text-[#666] leading-relaxed">
                     最低4回の受け取りが条件です。4回受け取る前に解約すると、残り回数分の料金が発生します。
-                    隔週の場合、約2か月間は継続する必要があります。
+                    最初の4回は毎週のお届けとなるため、約1か月間は継続する必要があります（隔週への変更は4回目の受け取り後に可能です）。
                   </p>
                 </div>
 
@@ -490,7 +490,7 @@ export default function BeginnerGuidePage() {
                   </div>
                   <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
                     <p className="text-xs text-[#999] mb-1">花の本数</p>
-                    <p className="text-lg font-bold text-[#333]">3本</p>
+                    <p className="text-lg font-bold text-[#333]">3〜4本</p>
                   </div>
                 </div>
 
@@ -866,7 +866,7 @@ export default function BeginnerGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。ご利用前に、各公式サイトにて最新情報をご確認ください。
+              掲載情報は2026年10月17日時点のものです。ご利用前に、各公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>
