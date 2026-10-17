@@ -27,6 +27,10 @@ export type Service = {
   /** 送料が価格に含まれるか（公式確認） */
   shippingIncluded: boolean;
   shippingNote: string;
+  /** 比較表の送料欄（送料別のサービスのみ。込みの場合は「込み」と表示） */
+  shippingShort?: string;
+  /** 比較表のお届け頻度（公式表記に基づく短い表記） */
+  frequencyShort: string;
   /** 最低受取回数（縛り）。null = 縛りなし／公式明記なし */
   minDeliveries: number | null;
   /** 比較表に出す「縛り」の短い表記（公式表記に基づく） */
@@ -61,6 +65,7 @@ export const SERVICES: Service[] = [
     ],
     shippingIncluded: true,
     shippingNote: "送料込みです（Mini・Liteはポスト投函）。北海道・東北のLite/Lite+/Basicは、遠隔地送料（Lite 140円・Lite+ 200円・Basic 240円）が加算されます",
+    frequencyShort: "毎週・隔週",
     minDeliveries: null,
     commitmentLabel: "公式に記載なし",
     cancellation: "公式に最低利用回数の記載はありません。決済日（お届け週の前週金曜）の前日の木曜までにマイページで解約すれば、次回から停止されます（過ぎると最後に1回届きます）。スキップは3回先まで可能です",
@@ -82,6 +87,7 @@ export const SERVICES: Service[] = [
     ],
     shippingIncluded: true,
     shippingNote: "税込・配送料込みです（ライトはポスト投函）。セルフアレンジは地域別の追加送料があります（北海道・九州550円、関西220円、中国・四国330円。沖縄・離島は配送不可）",
+    frequencyShort: "毎週・14日ごと（ライト）",
     minDeliveries: null,
     commitmentLabel: "初回（1回目）は解約不可",
     cancellation: "最低回数の記載はありませんが、初回（定期1回目）の解約は不可と公式FAQに明記されています。解約・スキップ・変更は、お届け予定日の10日前まで可能です（スキップは次回分のみ）",
@@ -103,6 +109,8 @@ export const SERVICES: Service[] = [
     ],
     shippingIncluded: false,
     shippingNote: "花代とは別に、送料が毎回かかります（お試し・グリーン385円／ベーシック550円）。お試しは実質1,365円/回です",
+    shippingShort: "別途385円〜",
+    frequencyShort: "毎週（4回目以降は隔週も可）",
     minDeliveries: 4,
     commitmentLabel: "4回（未満は途中解約料）",
     cancellation: "最初の4回は受け取りが必要です。4回未満で解約すると、「4回分のうち残回数分の商品代金（税込）」を途中解約料として支払います（特商法）",
@@ -124,6 +132,7 @@ export const SERVICES: Service[] = [
     ],
     shippingIncluded: true,
     shippingNote: "送料込み（クール便オプションは別料金）",
+    frequencyShort: "1・2・4週ごと",
     minDeliveries: null,
     commitmentLabel: "なし（いつでも解約可）",
     cancellation: "解約はいつでも可能です（最低回数の記載なし）。スキップは決済完了前の注文のみ可能です（決済はお届けの約1週間前）",

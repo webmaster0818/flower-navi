@@ -677,13 +677,13 @@ export default function HomeClient() {
                         {s.cheapest.price.toLocaleString("ja-JP")}円/回
                       </td>
                       <td className={s.shippingIncluded ? "text-[#7A9E7E] font-medium" : ""}>
-                        {s.shippingIncluded ? "込み" : "要確認"}
+                        {s.shippingIncluded ? "込み" : (s.shippingShort ?? "別途")}
                       </td>
                       <td>{s.cheapest.postDelivery ? "ポスト投函" : "宅配/手渡し"}</td>
                       <td>{s.cheapest.flowers}</td>
-                      <td>隔週〜</td>
+                      <td>{s.frequencyShort}</td>
                       <td className={s.minDeliveries ? "" : "text-[#7A9E7E]"}>
-                        {s.minDeliveries ? `${s.minDeliveries}回縛り` : "縛りなし"}
+                        {s.commitmentLabel}
                       </td>
                     </tr>
                   ))}
@@ -692,7 +692,7 @@ export default function HomeClient() {
             </div>
 
             <p className="text-sm text-[#9B8F87] mt-6 text-center">
-              ※ 料金は税込み表示です。ご利用前に、公式サイトにて最新の料金をご確認ください。
+              ※ 料金・条件は各社の公式サイトで2026年10月14日に、お届け頻度は2026年10月14日〜17日に確認した表示額・表記です（AND PLANTSは公式ページに税込・税抜の明記がありません）。ご利用前に、公式サイトにて最新の情報をご確認ください。
             </p>
           </div>
         </section>
