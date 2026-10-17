@@ -682,7 +682,7 @@ export default function HomeClient() {
                       <td>{s.cheapest.postDelivery ? "ポスト投函" : "宅配/手渡し"}</td>
                       <td>{s.cheapest.flowers}</td>
                       <td>{s.frequencyShort}</td>
-                      <td className={s.minDeliveries ? "" : "text-[#7A9E7E]"}>
+                      <td className={s.commitmentLabel.startsWith("なし") ? "text-[#7A9E7E]" : ""}>
                         {s.commitmentLabel}
                       </td>
                     </tr>
