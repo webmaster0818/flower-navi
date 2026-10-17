@@ -19,7 +19,7 @@ const planRows = (id: string) =>
 const faqItems = [
   {
     q: "送料無料のサービスは本当に追加費用がかかりませんか？",
-    a: "medeluとAND PLANTSは表示価格に送料が含まれており、追加の送料はかかりません。hanamekuはプランや配送方法によって送料が異なり、一部のプランのみ送料無料です。各サービスの最新の料金体系は、公式サイトにてご確認ください。",
+    a: "medeluとAND PLANTSは表示価格に送料が含まれており、追加の送料はかかりません。hanamekuはライトプランが配送料込みで、追加の送料はかかりません。セルフアレンジプランも配送料込みの表示ですが、北海道・九州で550円、中国・四国で330円、北東北・関西で220円の追加送料がかかります（2026年10月17日に公式サイトで確認）。各サービスの最新の料金体系は、公式サイトにてご確認ください。",
   },
   {
     q: "送料無料のサービスは品質が劣りますか？",
@@ -76,7 +76,7 @@ export default function SouryouMuryouPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"送料無料の花のサブスク比較\",\"description\":\"送料無料の花のサブスクの料金・評判・選び方を比較して解説しています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/souryou-muryou/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"送料無料のサービスは本当に追加費用がかかりませんか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとAND PLANTSは表示価格に送料が含まれており、追加の送料はかかりません。hanamekuはプランや配送方法によって送料が異なり、一部のプランのみ送料無料です。各サービスの最新の料金体系は、公式サイトにてご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスは品質が劣りますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料無料であることを理由に品質が劣ることはありません。medeluは市場から直送する仕組みで中間コストを削減しており、AND PLANTSはプロのフローリストがアレンジを担当しています。送料を無料にできる理由は配送ルートの効率化やビジネスモデルの工夫によるもので、花の品質を下げているわけではありません。\"}},{\"@type\":\"Question\",\"name\":\"送料無料と送料別では、年間でどれくらいの差がありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"例えば、送料385円のbloomeeを隔週（月2回）で利用すると、送料だけで年間9,240円になります。送料無料のmedeluであれば、この金額がかかりません。毎週配送の場合は年間約2万円の差になることもあり、長期間利用するほど送料無料サービスの利点が大きくなります。\"}},{\"@type\":\"Question\",\"name\":\"離島や北海道・沖縄でも送料無料ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは全国送料無料ですが、一部の離島は配送対象外となる場合があります。AND PLANTSは沖縄・離島への配送に追加料金がかかる場合があります。お住まいの地域が配送対象かどうかは、事前に公式サイトにてご確認ください。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"送料無料のサービスは本当に追加費用がかかりませんか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとAND PLANTSは表示価格に送料が含まれており、追加の送料はかかりません。hanamekuはライトプランが配送料込みで、追加の送料はかかりません。セルフアレンジプランも配送料込みの表示ですが、北海道・九州で550円、中国・四国で330円、北東北・関西で220円の追加送料がかかります（2026年10月17日に公式サイトで確認）。各サービスの最新の料金体系は、公式サイトにてご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスは品質が劣りますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料無料であることを理由に品質が劣ることはありません。medeluは市場から直送する仕組みで中間コストを削減しており、AND PLANTSはプロのフローリストがアレンジを担当しています。送料を無料にできる理由は配送ルートの効率化やビジネスモデルの工夫によるもので、花の品質を下げているわけではありません。\"}},{\"@type\":\"Question\",\"name\":\"送料無料と送料別では、年間でどれくらいの差がありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"例えば、送料385円のbloomeeを隔週（月2回）で利用すると、送料だけで年間9,240円になります。送料無料のmedeluであれば、この金額がかかりません。毎週配送の場合は年間約2万円の差になることもあり、長期間利用するほど送料無料サービスの利点が大きくなります。\"}},{\"@type\":\"Question\",\"name\":\"離島や北海道・沖縄でも送料無料ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは全国送料無料ですが、一部の離島は配送対象外となる場合があります。AND PLANTSは沖縄・離島への配送に追加料金がかかる場合があります。お住まいの地域が配送対象かどうかは、事前に公式サイトにてご確認ください。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -292,7 +292,7 @@ export default function SouryouMuryouPage() {
               送料無料のお花の定期便3サービスを比較した結果、<strong>総額が最も安いのはmedelu Miniコース（748円/回）</strong>です。回数の条件がなく、ポスト投函で手軽に受け取れるため、初めての方にもおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              ボリュームとデザイン性を重視する場合は<strong>AND PLANTS（1,980円/回）</strong>、本数を重視する場合は<strong>hanamekuのセルフアレンジプラン（1,958円/回）</strong>をおすすめします。いずれも送料を気にせず利用できるため、長期間の利用に適しています。
+              ボリュームとデザイン性を重視する場合は<strong>AND PLANTS（1,980円/回）</strong>、本数を重視する場合は<strong>hanamekuのセルフアレンジプラン（1,958円/回）</strong>をおすすめします。なお、hanamekuのセルフアレンジプランは、北海道・北東北・関西・中国・四国・九州へのお届けでは220〜550円の追加送料がかかります。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">

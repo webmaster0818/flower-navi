@@ -6,7 +6,7 @@ const CONFIRMED = "2026年7月24日";
 const plans = [
   { brand: "medelu（メデル）", href: "/services/medelu", plan: "Miniプラン 月748円（税込）・送料無料", point: "送料込みの実額が最も安い水準です。初めての方や費用を抑えて始めたい方に適しています。" },
   { brand: "bloomee（ブルーミー）", href: "/services/bloomee", plan: "お試しプランあり（ポスト投函・少量から）", point: "ポスト投函で受け取りやすく、少量から始められます。最初に試す際に適しています。" },
-  { brand: "hanameku（ハナメク）", href: "/services/hanameku", plan: "ライトプラン 1,210円/回〜（税込・送料別）", point: "ご自身で生けるセルフアレンジ型で、1回あたりの価格が手頃です。ボリュームより手軽さを重視する方に適しています。" },
+  { brand: "hanameku（ハナメク）", href: "/services/hanameku", plan: "ライトプラン 1,210円/回〜（税込・配送料込）", point: "ご自身で生けるセルフアレンジ型で、1回あたりの価格が手頃です。ボリュームより手軽さを重視する方に適しています。" },
   { brand: "AND PLANTS（アンドプランツ）", href: "/services/and-plants", plan: "お試しプラン 1,480円〜（花・観葉植物）", point: "花に加えて観葉植物も取り扱っています。グリーンもあわせて検討したい方に適しています。" },
 ];
 

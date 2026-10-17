@@ -62,7 +62,7 @@ export default function MedeluPage() {
       {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"medelu（メデル）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"medelu（メデル）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/medelu/\"}" }} />
       {/* CANCEL_FLOW_SCHEMA_v1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"medelu（メデル）の解約手順\",\"description\":\"medelu（メデル）の解約方法を手順ごとにご説明します\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログインする\",\"text\":\"medelu公式サイトの「マイページ」からログインします。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期購入の管理」を開く\",\"text\":\"マイページから「定期購入の管理」を選択します。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「定期購入を停止する」をクリックする\",\"text\":\"解約用のリンクをクリックし、画面の案内に沿って手続きを進めます。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を選択する（任意）\",\"text\":\"アンケートへの回答は任意で、回答せずに進むことも可能です。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"「停止する」で最終確定する\",\"text\":\"決済日（前週金曜日）の前日・木曜日までに手続きを完了してください。期限を過ぎると、最後に1回届きます。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"完了メールを受信する\",\"text\":\"medeluから解約完了メールが届きます。\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"medelu（メデル）の解約手順\",\"description\":\"medelu（メデル）の解約方法を手順ごとにご説明します\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログインする\",\"text\":\"medelu公式サイトの「マイページ」からログインします。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"「定期便一覧」を開く\",\"text\":\"マイページのメニューから「定期便一覧」を押します。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"解約する定期便の歯車マークを押す\",\"text\":\"解約したい定期便のメニューアイコン（歯車マーク）を押します。解約はご契約のコースごとに行います。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"「定期便を辞める」を押す\",\"text\":\"「定期便を辞める」を押し、画面の案内に沿って手続きを進めます。定期便の解約と、medeluからの退会は別の手続きです。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"締切までに手続きを完了する\",\"text\":\"決済日（前週金曜日）の前日・木曜日までに手続きを完了してください。期限を過ぎると、最後に1回届きます（公式ヘルプ「定期便を辞める（解約）」・2026年10月17日確認）。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"完了メールを受信する\",\"text\":\"medeluから解約完了メールが届きます。\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/medelu/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
@@ -544,29 +544,29 @@ export default function MedeluPage() {
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期購入の管理」を開く</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">マイページから「定期購入の管理」を選択します。</p>
+                    <h3 className="font-bold text-[#333] mb-1">「定期便一覧」を開く</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">マイページのメニューから「定期便一覧」を押します。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期購入を停止する」をクリックする</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">解約用のリンクをクリックし、画面の案内に沿って手続きを進めます。</p>
+                    <h3 className="font-bold text-[#333] mb-1">解約する定期便の歯車マークを押す</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">解約したい定期便のメニューアイコン（歯車マーク）を押します。解約はご契約のコースごとに行います。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">解約理由を選択する（任意）</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">アンケートへの回答は任意で、回答せずに進むことも可能です。</p>
+                    <h3 className="font-bold text-[#333] mb-1">「定期便を辞める」を押す</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">「定期便を辞める」を押し、画面の案内に沿って手続きを進めます。定期便の解約と、medeluからの退会は別の手続きです。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
                   <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「停止する」で最終確定する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">決済日（前週金曜日）の前日・木曜日までに手続きを完了してください。期限を過ぎると、最後に1回届きます。</p>
+                    <h3 className="font-bold text-[#333] mb-1">締切までに手続きを完了する</h3>
+                    <p className="text-sm text-[#666] leading-relaxed">決済日（前週金曜日）の前日・木曜日までに手続きを完了してください。期限を過ぎると、最後に1回届きます（公式ヘルプ「定期便を辞める（解約）」・2026年10月17日確認）。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">

@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "花のサブスクの送料はいくらかかりますか？",
-    a: "送料はサービスによって異なります。medeluとAND PLANTSは送料無料です。bloomeeはお試し・グリーンプランが385円、ベーシックプランが550円です。hanamekuは配送方法や地域によって異なります。日本総合園芸はコースとお届け方法（自社配達便・宅配便）によって料金が異なります。送料を含めた総額での比較をおすすめします。",
+    a: "送料はサービスによって異なります。medeluとAND PLANTSは送料無料です。bloomeeはお試し・グリーンプランが385円、ベーシックプランが550円です。hanamekuはライトプランが配送料込みで、追加の送料はかかりません。セルフアレンジプランは、北海道・九州で550円、中国・四国で330円、北東北・関西で220円の追加送料がかかります（2026年10月17日に公式サイトで確認）。日本総合園芸はコースとお届け方法（自社配達便・宅配便）によって料金が異なります。送料を含めた総額での比較をおすすめします。",
   },
   {
     q: "安い花のサブスクは何本届きますか？",
@@ -160,7 +160,7 @@ export default function CheapRankingPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"安い花のサブスク比較ランキング\",\"description\":\"花のサブスク各社の最安プランを送料込みの総額で比較し、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-14T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/cheap/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクで一番安いのはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの1回あたり総額で比較すると、medelu（メデル）のMiniプランが748円（税込・送料無料）で最も安く、次いでhanameku（ハナメク）のライトプランが1,210円（税込・送料込）です。送料は地域やプランによって異なるため、ご利用前に、公式サイトにて最新情報をご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"1,000円以下で花のサブスクを始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、1,000円以下で始められるサービスは複数あります。medeluのMiniプランは748円（税込・送料無料）です。bloomeeのお試しプランは980円（別途送料385円）で、花代のみであれば1,000円以下です。\"}},{\"@type\":\"Question\",\"name\":\"送料無料の花のサブスクはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとAND PLANTSは送料無料です。medeluは最安のMiniプランを748円（税込）で利用できます。AND PLANTSは送料込みの価格設定のため、追加の送料はかかりません。サービスを比較する際は、送料を含めた総額でご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでも品質に問題はありませんか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"価格が安いことは、品質が劣ることを意味しません。medeluは市場直送により中間コストを削減しているため、低価格でも新鮮な花が届きます。bloomeeやhanamekuにも品質保証制度があり、届いた花が傷んでいた場合は再送対応を受けられます。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクの送料はいくらかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料はサービスによって異なります。medeluとAND PLANTSは送料無料です。bloomeeはお試し・グリーンプランが385円、ベーシックプランが550円です。hanamekuは配送方法や地域によって異なります。日本総合園芸はコースとお届け方法（自社配達便・宅配便）によって料金が異なります。送料を含めた総額での比較をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクは何本届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスとプランによって異なります。medeluのMiniプランは3〜4本、hanamekuのライトプランは花とグリーンが数本、bloomeeのお試しプランは4本以上です。一般に低価格のプランほど本数は少なくなりますが、テーブルに飾るには十分な量です。\"}},{\"@type\":\"Question\",\"name\":\"月額で考えるとどのサービスが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"月額は配送頻度によって変わります。隔週（月2回）配送の場合の目安は、medeluのMiniプランが月額約1,496円、hanamekuのライトプランが月額約2,420円（送料込）、bloomeeのお試しプランが月額約2,730円（送料込み）です。毎週配送の場合は、この約2倍になります。\"}},{\"@type\":\"Question\",\"name\":\"受け取り回数の条件なしで安く始められるサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluは受け取り回数の条件がなく、748円から始められるため、試しに利用したい方に適しています。AND PLANTSにも回数の条件はありません。一方、bloomeeには4回の最低受け取り回数があり、4回受け取る前に解約すると残り回数分の料金が発生します。初めて利用する方には、回数の条件がないサービスから始めることをおすすめします。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクで一番安いのはどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの1回あたり総額で比較すると、medelu（メデル）のMiniプランが748円（税込・送料無料）で最も安く、次いでhanameku（ハナメク）のライトプランが1,210円（税込・送料込）です。送料は地域やプランによって異なるため、ご利用前に、公式サイトにて最新情報をご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"1,000円以下で花のサブスクを始められますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、1,000円以下で始められるサービスは複数あります。medeluのMiniプランは748円（税込・送料無料）です。bloomeeのお試しプランは980円（別途送料385円）で、花代のみであれば1,000円以下です。\"}},{\"@type\":\"Question\",\"name\":\"送料無料の花のサブスクはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとAND PLANTSは送料無料です。medeluは最安のMiniプランを748円（税込）で利用できます。AND PLANTSは送料込みの価格設定のため、追加の送料はかかりません。サービスを比較する際は、送料を含めた総額でご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクでも品質に問題はありませんか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"価格が安いことは、品質が劣ることを意味しません。medeluは市場直送により中間コストを削減しているため、低価格でも新鮮な花が届きます。bloomeeやhanamekuにも品質保証制度があり、届いた花が傷んでいた場合は再送対応を受けられます。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクの送料はいくらかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料はサービスによって異なります。medeluとAND PLANTSは送料無料です。bloomeeはお試し・グリーンプランが385円、ベーシックプランが550円です。hanamekuはライトプランが配送料込みで、追加の送料はかかりません。セルフアレンジプランは、北海道・九州で550円、中国・四国で330円、北東北・関西で220円の追加送料がかかります（2026年10月17日に公式サイトで確認）。日本総合園芸はコースとお届け方法（自社配達便・宅配便）によって料金が異なります。送料を含めた総額での比較をおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"安い花のサブスクは何本届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスとプランによって異なります。medeluのMiniプランは3〜4本、hanamekuのライトプランは花とグリーンが数本、bloomeeのお試しプランは4本以上です。一般に低価格のプランほど本数は少なくなりますが、テーブルに飾るには十分な量です。\"}},{\"@type\":\"Question\",\"name\":\"月額で考えるとどのサービスが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"月額は配送頻度によって変わります。隔週（月2回）配送の場合の目安は、medeluのMiniプランが月額約1,496円、hanamekuのライトプランが月額約2,420円（送料込）、bloomeeのお試しプランが月額約2,730円（送料込み）です。毎週配送の場合は、この約2倍になります。\"}},{\"@type\":\"Question\",\"name\":\"受け取り回数の条件なしで安く始められるサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluは受け取り回数の条件がなく、748円から始められるため、試しに利用したい方に適しています。AND PLANTSにも回数の条件はありません。一方、bloomeeには4回の最低受け取り回数があり、4回受け取る前に解約すると残り回数分の料金が発生します。初めて利用する方には、回数の条件がないサービスから始めることをおすすめします。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -342,7 +342,7 @@ export default function CheapRankingPage() {
               <h3 className="text-sm font-bold text-[#333] mb-3">表の補足</h3>
               <ul className="text-sm text-[#666] space-y-2">
                 <li>・ 表示価格はすべて税込です</li>
-                <li>・ hanamekuの送料は配送方法（ポスト投函 / 宅配便）や地域によって異なります</li>
+                <li>・ hanamekuのライトプランは配送料込みで、追加の送料はかかりません。セルフアレンジプランは地域により220〜550円の追加送料がかかります（2026年10月17日に公式サイトで確認）</li>
                 <li>・ 日本総合園芸の送料は地域によって異なります</li>
                 <li>・ 2026年6月14日に各公式サイトで確認した金額です。ご利用前に、公式サイトにて最新情報をご確認ください</li>
               </ul>
@@ -520,11 +520,11 @@ export default function CheapRankingPage() {
                     <h3 className="text-base font-bold text-[#333] mb-1">hanameku ライトプラン</h3>
                     <p className="text-sm text-[#666] mb-3">
                       ライトプランは1,210円（税込・送料込）で利用できます。
-                      ポスト投函を選ぶと送料を抑えられる場合があります。配送頻度を月1回にすると、月あたりの費用も抑えられます。
+                      ポスト投函で届き、地域による追加送料はかかりません。配送頻度を月1回にすると、月あたりの費用も抑えられます。
                     </p>
                     <div className="flex items-center gap-4 text-sm">
                       <span className="text-[#4A7C59] font-bold">1,210円/回（送料込）</span>
-                      <span className="text-[#999]">送料別途</span>
+                      <span className="text-[#999]">追加送料なし</span>
                       <span className="text-[#999]">花とグリーン数本</span>
                     </div>
                   </div>
@@ -615,7 +615,7 @@ export default function CheapRankingPage() {
             <div className="mt-6 bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
               <h3 className="text-sm font-bold text-[#333] mb-2">送料が有料のサービスの注意点</h3>
               <p className="text-sm text-[#666] leading-relaxed">
-                bloomee（送料385〜550円）、hanameku（送料別途）、日本総合園芸（送料別途）は、花代とは別に送料がかかります。
+                bloomee（送料385〜550円）と日本総合園芸（送料別途）は、花代とは別に送料がかかります。hanamekuはライトプランが配送料込みで、セルフアレンジプランのみ地域により追加送料がかかります。
                 毎週配送を選ぶと月4回分の送料が発生するため、月間で1,540円以上の送料負担となる場合があります。
                 隔週配送にすれば送料は半分になりますが、年間では大きな金額になります。
               </p>

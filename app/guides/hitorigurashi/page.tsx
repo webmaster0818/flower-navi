@@ -383,7 +383,7 @@ export default function HitorigurashiGuidePage() {
               <h3 className="text-sm font-bold text-[#333] mb-3">表の補足</h3>
               <ul className="text-sm text-[#666] space-y-2">
                 <li>・ 表示価格はすべて税込です</li>
-                <li>・ hanamekuの送料は配送方法（ポスト投函 / 宅配便）や地域によって異なります</li>
+                <li>・ hanamekuのライトプランは配送料込みで、追加の送料はかかりません。セルフアレンジプランは地域により220〜550円の追加送料がかかります（2026年10月17日に公式サイトで確認）</li>
                 <li>・ bloomeeは4回の最低受け取り回数があります</li>
                 <li>・ 2026年4月時点の情報です。ご利用前に、公式サイトにて最新情報をご確認ください</li>
               </ul>
