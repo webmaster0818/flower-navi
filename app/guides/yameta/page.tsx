@@ -286,8 +286,8 @@ export default function YametaGuidePage() {
                   <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">medelu</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから即解約</td><td className="px-3 py-2 text-[#4A7C59]">非常に簡単</td></tr>
                   <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">HitoHana</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
                   <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">AND PLANTS</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">LIFFT</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
-                  <tr><td className="px-3 py-2 font-bold">タスハナ</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">LIFFT</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">毎月19日までにメール（info@lifft.jp）で連絡（2026年10月17日公式確認）</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
+                  <tr><td className="px-3 py-2 font-bold">タスハナ</td><td className="px-3 py-2">5回（出荷が前提）（2026年10月17日公式確認）</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
                 </tbody>
               </table>
             </div>

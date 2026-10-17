@@ -667,7 +667,7 @@ export default function SeasonalFlowersPage() {
                   <p className="text-sm text-[#666] leading-relaxed mb-4">
                     AND PLANTSは、フローリストが季節の花を使ってアレンジした花を届けるサービスです。
                     宅配便で配送するため、花がよい状態で届きやすく、夏場でも利用しやすいサービスです。
-                    4〜6本の花が届き、季節感とデザイン性の両方を求める方におすすめします。
+                    6〜8本（2026年10月17日公式確認）の花が届き、季節感とデザイン性の両方を求める方におすすめします。
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm mb-4">
                     <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">1,980円/回〜</span>

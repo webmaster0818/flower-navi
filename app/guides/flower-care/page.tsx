@@ -145,7 +145,7 @@ const vaseSizeData = [
     size: "トールサイズ（20〜30cm）",
     bestFor: "5〜10本の花束、枝ものを含むアレンジ",
     scene: "リビングの棚、ダイニングテーブル",
-    subsc: "AND PLANTSのStandardプラン（4〜6本）に適している",
+    subsc: "AND PLANTSのStandardプラン（6〜8本（2026年10月17日公式確認））に適している",
   },
 ];
 
@@ -446,7 +446,7 @@ export default function FlowerCarePage() {
                     ボリューム型
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">AND PLANTSなど（4〜6本・茎長め）</h3>
+                    <h3 className="text-base font-bold text-[#333] mb-2">AND PLANTSなど（6〜8本（2026年10月17日公式確認）・茎長め）</h3>
                     <p className="text-sm text-[#666] leading-relaxed mb-3">
                       宅配便で届く花は茎が長いまま届くことが多いため、高さ20〜30cmのトールサイズの花瓶が適しています。
                       口径は6〜10cm程度で、底が広く安定したタイプを選ぶと倒れにくくなります。

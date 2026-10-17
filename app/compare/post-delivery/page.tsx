@@ -73,8 +73,8 @@ const serviceData = [
     name: "medelu",
     nameJa: "メデル",
     postDelivery: "OK",
-    postDeliveryDetail: "全プラン対応",
-    postPlans: "Mini / Lite / Basicプラン（全プラン）",
+    postDeliveryDetail: "Mini・Liteのみ対応（2026年10月17日公式確認）",
+    postPlans: "Mini / Liteプラン（Lite+・Basicは手渡し）（2026年10月17日公式確認）",
     boxType: "専用ボックス（保水処理済み）",
     price: sv("medelu"),
     shipping: 0,
@@ -87,9 +87,9 @@ const serviceData = [
     quality: "あり",
     url: "/services/medelu",
     officialUrl: "https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L",
-    highlight: "全プランがポスト投函に対応し、送料無料です。748円から始められ、ポスト投函サービスの中でも費用を抑えやすいサービスです。",
+    highlight: "ポスト投函はMini・Liteが対応し（2026年10月17日公式確認）、送料無料です。748円から始められ、ポスト投函サービスの中でも費用を抑えやすいサービスです。",
     bestFor: "送料無料でポスト投函を利用したい方、費用対効果を重視する方",
-    detail: "medeluは全プランがポスト投函に対応しており、送料無料である点がポスト投函サービスの中で特に優れた点です。Miniプラン（748円）は業界最安水準で、送料を含めた総額でも特に安く利用できます。市場直送の仕組みで中間マージンを削減し、新鮮な花を手頃な価格で届けています。受け取り回数の条件もないため、ポスト投函型の花のサブスクを初めて利用する方も気軽に始められます。",
+    detail: "medeluはMini・Liteがポスト投函に対応しており（Lite+・Basicは手渡し）（2026年10月17日公式確認）、送料無料である点がポスト投函サービスの中で特に優れた点です。Miniプラン（748円）は業界最安水準で、送料を含めた総額でも特に安く利用できます。市場直送の仕組みで中間マージンを削減し、新鮮な花を手頃な価格で届けています。受け取り回数の条件もないため、ポスト投函型の花のサブスクを初めて利用する方も気軽に始められます。",
   },
   {
     rank: 3,
@@ -126,16 +126,16 @@ const serviceData = [
     shipping: 0,
     total: sv("andplants"),
     shippingLabel: "無料",
-    flowers: "4〜6本",
+    flowers: "6〜8本（2026年10月17日公式確認）",
     delivery: "宅配便のみ",
     frequency: "隔週 / 月1回",
     minOrders: "なし",
     quality: "あり",
     url: "/services/and-plants",
     officialUrl: "https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L",
-    highlight: "宅配便のみの対応ですが、プロのフローリストによるアレンジが届きます。送料無料で、4〜6本とボリュームがあります。",
+    highlight: "宅配便のみの対応ですが、プロのフローリストによるアレンジが届きます。送料無料で、6〜8本（2026年10月17日公式確認）とボリュームがあります。",
     bestFor: "在宅で受け取れる方、ボリューム・品質を重視する方",
-    detail: "AND PLANTSはポスト投函には対応しておらず、すべて宅配便で配送されます。宅配便ならではのボリューム（4〜6本）と、プロのフローリストによるデザイン性の高いアレンジが特長です。送料無料で1,980円と、宅配便サービスの中では手頃な価格です。配送日を指定できるため、在宅のタイミングに合わせて受け取れます。花が良い状態で届きやすい点も、宅配便の利点です。",
+    detail: "AND PLANTSはポスト投函には対応しておらず、すべて宅配便で配送されます。宅配便ならではのボリューム（6〜8本（2026年10月17日公式確認））と、プロのフローリストによるデザイン性の高いアレンジが特長です。送料無料で1,980円と、宅配便サービスの中では手頃な価格です。配送日を指定できるため、在宅のタイミングに合わせて受け取れます。花が良い状態で届きやすい点も、宅配便の利点です。",
   },
   {
     rank: 5,
@@ -646,7 +646,7 @@ export default function PostDeliveryComparisonPage() {
                   </div>
                   <div className="bg-white rounded-lg p-4">
                     <p className="text-sm font-medium text-[#333] mb-1">花のボリュームを求める方</p>
-                    <p className="text-xs text-[#666]">AND PLANTSでは4〜6本のボリュームのある花束が届き、リビングに飾るのにも適しています。</p>
+                    <p className="text-xs text-[#666]">AND PLANTSでは6〜8本（2026年10月17日公式確認）のボリュームのある花束が届き、リビングに飾るのにも適しています。</p>
                   </div>
                   <div className="bg-white rounded-lg p-4">
                     <p className="text-sm font-medium text-[#333] mb-1">花の品質を最も重視する方</p>
@@ -789,7 +789,7 @@ export default function PostDeliveryComparisonPage() {
               不在がちな方や再配達の手間を省きたい方には、この3サービスからの選択をおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              ポスト投函対応サービスのうち、費用を重視する場合はmedelu（748円/回・送料無料・全プラン対応）、
+              ポスト投函対応サービスのうち、費用を重視する場合はmedelu（748円/回・送料無料・Mini・Liteが対応（2026年10月17日公式確認））、
               実績と安心感を重視する場合はbloomee（累計3,000万本・品質保証あり）、
               配送の柔軟さを重視する場合はhanameku（ポスト投函と宅配便を選択可能・月1回配送も可能）をおすすめします。
             </p>

@@ -19,7 +19,7 @@ const faqItems = [
   },
   {
     q: "ボリュームに満足できるおすすめのサービスはどれですか？",
-    a: "ボリュームを重視する場合はAND PLANTS（4〜6本、送料無料）、価格を重視する場合はmedelu（748円〜、送料無料）、鮮度を重視する場合はLIFFT（市場直送、3,300円）をおすすめします。いずれも品質保証制度があり、花が傷んでいた場合にも対応を受けられます。",
+    a: "ボリュームを重視する場合はAND PLANTS（6〜8本（2026年10月17日公式確認）、送料無料）、価格を重視する場合はmedelu（748円〜、送料無料）、鮮度を重視する場合はLIFFT（市場直送、3,300円）をおすすめします。いずれも品質保証制度があり、花が傷んでいた場合にも対応を受けられます。",
   },
   {
     q: "品質保証制度とは何ですか？",
@@ -42,7 +42,7 @@ export default function ShoboboiGuidePage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクが「しょぼい」と言われる理由\",\"description\":\"花のサブスクが「しょぼい」と言われる理由について、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/shoboi/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは本当にしょぼいのですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"「しょぼい」と感じるかどうかは、選ぶプランによって大きく異なります。最安プラン（500〜1,000円前後）では花が3本程度と少なめですが、2,000円以上のプランでは5〜8本のボリュームのあるアレンジが届きます。また、サービスによって品質に差があるため、事前に口コミや品質保証制度の有無を確認することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"届いた花がすぐ枯れてしまいます。対処法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花が届いたら、すぐに水切り（水中で茎を斜めに切ること）を行い、切り花延命剤を入れた新しい水に生けてください。夏場はこまめな水替え（毎日が理想です）が必要です。また、直射日光やエアコンの風が直接当たる場所を避けることで、花持ちが大きく改善します。クール便に対応したサービスを選ぶことも有効です。\"}},{\"@type\":\"Question\",\"name\":\"ボリュームに満足できるおすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ボリュームを重視する場合はAND PLANTS（4〜6本、送料無料）、価格を重視する場合はmedelu（748円〜、送料無料）、鮮度を重視する場合はLIFFT（市場直送、3,300円）をおすすめします。いずれも品質保証制度があり、花が傷んでいた場合にも対応を受けられます。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いた花が傷んでいた場合に、無料で再送または返金を受けられる制度です。bloomee、medelu、AND PLANTSなど主要サービスの多くが導入しています。申請は、写真を撮影してマイページやLINEから行う方法が一般的です。申請期限は、お届け日から2〜3日以内としているサービスが多く見られます。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた人が多いのはなぜですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"主な理由は「期待とのギャップ」「花のお手入れの手間」「価格に対する不満」の3点です。特に、最安プランで始めた方が本数の少なさに物足りなさを感じるケースが多く見られます。事前にプラン内容を確認し、お手入れ方法を理解したうえで始めると、継続しやすくなります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは本当にしょぼいのですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"「しょぼい」と感じるかどうかは、選ぶプランによって大きく異なります。最安プラン（500〜1,000円前後）では花が3本程度と少なめですが、2,000円以上のプランでは5〜8本のボリュームのあるアレンジが届きます。また、サービスによって品質に差があるため、事前に口コミや品質保証制度の有無を確認することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"届いた花がすぐ枯れてしまいます。対処法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花が届いたら、すぐに水切り（水中で茎を斜めに切ること）を行い、切り花延命剤を入れた新しい水に生けてください。夏場はこまめな水替え（毎日が理想です）が必要です。また、直射日光やエアコンの風が直接当たる場所を避けることで、花持ちが大きく改善します。クール便に対応したサービスを選ぶことも有効です。\"}},{\"@type\":\"Question\",\"name\":\"ボリュームに満足できるおすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ボリュームを重視する場合はAND PLANTS（6〜8本（2026年10月17日公式確認）、送料無料）、価格を重視する場合はmedelu（748円〜、送料無料）、鮮度を重視する場合はLIFFT（市場直送、3,300円）をおすすめします。いずれも品質保証制度があり、花が傷んでいた場合にも対応を受けられます。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いた花が傷んでいた場合に、無料で再送または返金を受けられる制度です。bloomee、medelu、AND PLANTSなど主要サービスの多くが導入しています。申請は、写真を撮影してマイページやLINEから行う方法が一般的です。申請期限は、お届け日から2〜3日以内としているサービスが多く見られます。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた人が多いのはなぜですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"主な理由は「期待とのギャップ」「花のお手入れの手間」「価格に対する不満」の3点です。特に、最安プランで始めた方が本数の少なさに物足りなさを感じるケースが多く見られます。事前にプラン内容を確認し、お手入れ方法を理解したうえで始めると、継続しやすくなります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -156,7 +156,7 @@ export default function ShoboboiGuidePage() {
                   <strong>原因：</strong>最安プランを選んでいるケースがほとんどです。最安クラスのプラン（1,000円前後）は3〜4本程度で、お試しの位置付けです。1,500円以上のプランを選ぶと、花の本数とバリエーションが大きく増え、満足度も高まります。
                 </p>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">解決策：medelu Lite（1,330円/回・5〜6本）やAND PLANTS（1,980円/回・4〜6本）など、中価格帯のプランをおすすめします。いずれも送料無料のため、総額でも割安です。</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">解決策：medelu Lite（1,330円/回・5〜6本）やAND PLANTS（1,980円/回・6〜8本（2026年10月17日公式確認））など、中価格帯のプランをおすすめします。いずれも送料無料のため、総額でも割安です。</p>
                 </div>
               </div>
 
@@ -235,9 +235,9 @@ export default function ShoboboiGuidePage() {
                   <tr>
                     <td className="font-medium text-[#333]">AND PLANTS</td>
                     <td>1,980円/回</td>
-                    <td>4〜6本</td>
+                    <td>6〜8本（2026年10月17日公式確認）</td>
                     <td>無料</td>
-                    <td className="font-bold text-[#4A7C59]">約330〜495円</td>
+                    <td className="font-bold text-[#4A7C59]">約248〜330円</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#333]">LIFFT</td>
@@ -289,7 +289,7 @@ export default function ShoboboiGuidePage() {
                 {
                   step: "ポイント 4",
                   title: "最低受け取り回数の条件を確認する",
-                  text: "bloomeeには4回の最低受け取り回数がありますが、medelu、AND PLANTS、タスハナ、LIFFTには回数の条件がなく、いつでも解約できます。初めて利用する場合は、回数の条件がないサービスから始めることをおすすめします。",
+                  text: "bloomeeには4回の最低受け取り回数がありますが、medelu、AND PLANTS、LIFFTには回数の条件がなく、いつでも解約できます。タスハナは5回以上の出荷が前提で、5回未満の解約は原則としてできません（2026年10月17日公式確認）。初めて利用する場合は、回数の条件がないサービスから始めることをおすすめします。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
@@ -338,7 +338,7 @@ export default function ShoboboiGuidePage() {
                 {
                   step: "ポイント 5",
                   title: "複数サービスを試して比較する",
-                  text: "回数の条件がないサービス（medelu、タスハナ、LIFFTなど）を順番に利用し、好みに合うサービスを見つける方法もおすすめです。同じ価格帯でもサービスによって花のテイストやアレンジのスタイルが異なり、実際に利用して初めてわかる違いもあります。",
+                  text: "回数の条件がないサービス（medelu、LIFFTなど。タスハナは5回以上の出荷が前提（2026年10月17日公式確認））を順番に利用し、好みに合うサービスを見つける方法もおすすめです。同じ価格帯でもサービスによって花のテイストやアレンジのスタイルが異なり、実際に利用して初めてわかる違いもあります。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">

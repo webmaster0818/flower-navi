@@ -267,7 +267,7 @@ export default function BloomeeVsMedeluPage() {
               <h3 className="text-sm font-bold text-[#4A7C59] mb-2">料金比較のポイント</h3>
               <p className="text-sm text-[#666] leading-relaxed">
                 最安プラン同士で比較すると、medeluのLiteコース（748円）はbloomeeのお試しプラン（1,365円/送料込み）の約半額です。
-                medeluは全コース送料無料のため、表示価格がそのまま実質負担額になるシンプルな料金体系です。
+                medeluは送料込みの価格のため（北海道・東北へのLite以上は遠隔地送料140〜240円が加算（2026年10月17日公式確認））、表示価格がそのまま実質負担額になるシンプルな料金体系です。
                 bloomeeは花代とは別に送料385〜550円がかかるため、総額で考える必要があります。
                 隔週配送の場合、月額の差はbloomeeお試しプラン（月2,730円）とmedelu Miniコース（月1,496円）で約1,234円になります。
               </p>
