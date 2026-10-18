@@ -102,7 +102,7 @@ const topFaqSchema = {
       name: "仏壇用のお花にも使えますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "bloomeeは、ポスト投函で届く唯一の仏花対応のサブスクです。bloomeeのほか、Miraflora・HitoHana・ハナプライムなど、仏花に特化したサブスクもあります。月命日・お盆・お彼岸に合わせた配送も可能です。",
+        text: "bloomeeは、ポスト投函で届く唯一の仏花対応のサブスクです。bloomeeのほか、HitoHana・ハナプライムなど、仏花に特化したサブスクもあります。月命日・お盆・お彼岸に合わせた配送も可能です。",
       },
     },
   ],

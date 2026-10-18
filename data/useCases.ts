@@ -159,12 +159,10 @@ export const useCases: UseCase[] = [
       { situation: "退院後の自宅療養", how: "bloomeeの1か月コースは気軽に贈れます。少量で優しい印象の花が回復を支えます。" },
       { situation: "長期入院後の社会復帰期", how: "AND PLANTSの3か月コースで、新しい生活への希望を花で応援できます。" },
       { situation: "シニアの退院後", how: "LIFFTの1か月コースは、落ち着いた本格的な花で安心感を与えます。" },
-      { situation: "手術後の回復期", how: "Mirafloraの小ぶりなプランは、負担にならない量で届きます。" },
     ],
     recommended: [
       { service: "bloomee お試しプラン", reason: "4本以上の小ぶりな花束がポストに届き、回復期の負担にならない", priceFrom: 980 },
       { service: "AND PLANTS 1ヶ月", reason: "デザイン性が高く、回復期を彩る", priceFrom: 5940 },
-      { service: "Miraflora", reason: "落ち着いた色合いで、シニアや療養中の方に適している", priceFrom: 2200 },
     ],
     selectionTips: [
       { tip: "病院では受け取れない場合があります", detail: "感染症対策のため、病室への生花の持ち込みを禁止する病院が増えています（2020年以降）。退院後の自宅に届くよう、時期を調整してください。" },
