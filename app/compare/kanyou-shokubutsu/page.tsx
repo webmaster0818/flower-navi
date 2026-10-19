@@ -1,21 +1,26 @@
-"use client";
-
-import { useState } from "react";
 import Header from "@/app/components/Header";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
   {
+    q: "季節ごとに植物を変更できる観葉植物サブスクサービスはありますか？",
+    a: "あります。ただし、植物の定期的な入れ替えに対応しているのは主に法人向けのレンタルです。個人向けの購入型（AND PLANTSやHitoHanaの単品購入）には、定期的に入れ替える仕組みはありません。当サイトが公式サイトで確認できた範囲では、GOOD GREENが3か月に1回（スタートアッププランは6か月に1回）の植物交換に対応しており、枯れた場合は回数の制限なく無料で交換されます。HitoHana Rental Greenは月2回の訪問メンテナンスの中で傷んだ植物を交換しますが、季節ごとの定期的な入れ替えについては公式サイトに記載がありません。個人宅で模様替えに合わせて替えたい場合は、CLASのフェイクグリーン（人工の観葉植物）のレンタルが、いつでも交換・返却できる仕組みです（いずれも2026年10月19日公式確認）。",
+  },
+  {
+    q: "忙しい会社でも管理不要で利用できる観葉植物サブスクリプションサービスを知りたいです。",
+    a: "水やり・剪定・病害虫の対応まで事業者が行う、訪問メンテナンス付きの法人向けレンタルが該当します。公式サイトで確認できた例では、HitoHana Rental Greenは専門スタッフが月2回訪問し、社内での作業は発生しないと案内しています。傷んだ植物は交換され、料金はノーマルプランで1鉢あたり月600円（XS）〜3,600円（XXL）（税別）、最低契約期間は1年、訪問1拠点あたりの植物レンタル代は7,800円以上です。GOOD GREENのメンテナンスプランも月2回の訪問で、1鉢あたり月1,430円（S）・2,728円（M/L）（税込）、M・Lサイズ5鉢以上が条件です。生きた植物にこだわらない場合は、水やりが不要なフェイクグリーン（CLASのレンタル、HitoHanaの買い切り）という選択肢もあります（いずれも2026年10月19日公式確認）。",
+  },
+  {
     q: "月額制の観葉植物サブスクは、購入と比べてどちらがお得ですか？",
-    a: "同じ鉢を数年そのまま置き続けるなら購入、入れ替えや枯れたときの手当・日々の管理まで任せたいなら月額制（レンタル）のほうが有利です。購入は最初に植物代・鉢代・送料がかかる代わりに以降の固定費が下がり、月額制は初期費用を抑えられる代わりに使っている間ずっと支払いが続きます。損益が入れ替わる時期は鉢のサイズ・月額・入れ替え頻度で変わるため、一律の月数では示せません。判断に迷う場合は「購入価格 ÷ 月額」で何か月分に相当するかを出し、その月数より長く置く見込みがあるかで決めてください。あわせて、枯れたときの買い直しをどちらが負担するか、やめるときの処分・撤去費がどちらにかかるかも計算に入れると、より正確に判断できます。",
+    a: "同じ鉢を長く置き続け、水やりを自分で行えるなら購入、水やり・交換まで任せたいなら月額制（レンタル）が向いています。公式価格で試算すると、AND PLANTSのパキラ M（高さ目安75〜110cm）13,980円（税込・送料無料）は、HitoHana Rental GreenのノーマルプランM（H80〜100cm）月1,600円（税別、税込換算1,760円）の約8か月分にあたります。HitoHanaの最低契約期間は1年のため、1鉢を置くだけなら購入のほうが支払額は少なくなります。レンタルの月額には月2回の訪問メンテナンスと傷んだ際の交換が含まれるため、その作業を社内で担えるかどうかで判断してください。試算の詳細は「観葉植物の料金の考え方」にまとめています（2026年10月19日公式確認）。",
   },
   {
     q: "観葉植物のサブスクと花のサブスクはどう違いますか？",
-    a: "花のサブスクは切り花が定期的に届き、1〜2週間で枯れるため常に新しい花を楽しめます。観葉植物のサブスクは鉢植えのグリーンが届き、適切に育てれば何年も楽しめます。お手入れの手間は観葉植物のほうが少なく、水やりは週1〜2回程度です。初期費用は観葉植物のほうが高めですが、長期的には費用対効果が高くなります。",
+    a: "花のサブスクは切り花が定期的に届き、1〜2週間ほどで次の花に入れ替わります。観葉植物は鉢植えのため、適切に管理すれば長く置き続けられます。また、花の定期便は1回ごとの料金を払う形が中心ですが、観葉植物は「単品で購入する」か「法人向けのレンタルで借りる」かで費用の性質が大きく異なります。購入なら支払いは一度で、レンタルなら契約期間中は月額が続く代わりに交換やメンテナンスが含まれます。",
   },
   {
     q: "観葉植物を枯らしてしまわないか不安ですが、初心者でも始められますか？",
-    a: "AND PLANTSには、初心者でも育てやすい種類を選定してもらえるオプションがあります。また、育て方の説明書が同封されるため、水やりの頻度や日当たりの条件を把握しやすくなっています。万が一枯れてしまった場合の交換保証を設けているサービスもあるため、初心者の方でも安心して始められます。",
+    a: "始められます。AND PLANTSには置き場所の日当たりなどから植物を絞り込む「パーソナル植物診断」があり、育て方を記したケアカードが付きます。観葉植物は到着後2週間以内であれば、初期不良による傷みや、ケアカードに従って管理したのに枯れた場合などに交換・返金の対象となります（2026年10月19日公式確認）。それでも管理に不安がある場合は、枯れた際の交換が月額に含まれるレンタル（法人向け）か、水やりが不要なフェイクグリーンを検討してください。",
   },
   {
     q: "賃貸マンションでも観葉植物は置けますか？",
@@ -23,31 +28,23 @@ const faqItems = [
   },
   {
     q: "花のサブスクと観葉植物のサブスクは併用できますか？",
-    a: "併用できます。観葉植物で部屋の基調となるグリーンを置き、花のサブスクで季節の彩りを加える方法は、人気のある組み合わせです。AND PLANTSでは切り花と観葉植物の両方を扱っているため、一つのサービスでまとめることも可能です。",
-  },
-  {
-    q: "サービス別に見ると、季節ごとに植物を入れ替えられるのはどこですか？",
-    a: "鉢そのものを入れ替えられるのは、交換に対応するレンタル型です。当サイトの掲載サービスでは、CLASが交換・返却に対応しています。購入型（AND PLANTSの定期便や、HitoHanaの単品購入）は届いた植物が自分のものになるため、季節ごとの入れ替えは前提になっていません。観葉植物は常緑の種類が中心で、鉢の見た目が季節によって大きく変わるわけではないため、季節感はベースのグリーンを据え置きにして切り花の定期便だけを入れ替える形が運用しやすい組み合わせです。",
+    a: "併用できます。観葉植物で部屋の基調となるグリーンを置き、花のサブスクで季節の彩りを加える組み合わせ方です。観葉植物は常緑の種類が中心で季節による見た目の変化が小さいため、季節感は切り花の定期便で出すと運用が簡単になります。AND PLANTSは切り花の定期便と観葉植物の単品購入の両方を扱っているため、一つのサービスでまとめることもできます。",
   },
   {
     q: "メンテナンス付きで枯れる心配が少ないのは、どのサービスですか？",
-    a: "日々の管理まで任せたい場合は、メンテナンスが定額に含まれるレンタル型が該当します。当サイトの掲載サービスでは、CLASが大型観葉植物のレンタルに対応し、メンテナンス不要のプランと交換・返却があります（料金の公表値は確認できていないため見積もりが前提です）。購入型で選ぶ場合は、AND PLANTSの14日間の交換保証のように、到着時の傷み・不具合に対する交換制度の有無が判断材料になります。訪問メンテナンスの有無によって仕組みが根本的に異なるため、まず「自分（自社）で水やりをするかどうか」を決めておくと、選択がしやすくなります。",
+    a: "訪問メンテナンスと交換が月額に含まれる法人向けレンタルが該当します。HitoHana Rental Greenは月2回の訪問で、傷んだ場合は植物を交換します。GOOD GREENは全プランで枯れた場合に回数の制限なく無料交換し、メンテナンスプランでは月2回訪問します（いずれも2026年10月19日公式確認）。購入型では、AND PLANTSの観葉植物は到着後2週間以内、HitoHanaの観葉植物は到着から7日以内の連絡で、到着時の傷み等に対する交換の対象となります。",
   },
   {
     q: "日当たりの悪い部屋でも育てやすい植物を提案してもらえますか？",
-    a: "AND PLANTSには初心者でも育てやすい種類を選定してもらえるオプションがあり、育て方の説明書も同封されます。耐陰性の強い種類（ポトス、サンスベリア、モンステラなど）を選べば、日当たりの悪い部屋でも育てられます。申し込み時に置き場所の明るさを伝えられるか、選定をおまかせできるかがサービス選びのポイントです。置き場所の明るさの見極め方や水やりの調整は、当サイトの「観葉植物の育て方・置き場所ガイド」で解説しています。",
+    a: "AND PLANTSの「パーソナル植物診断」では置き場所の日当たりなどから植物を絞り込め、育て方のケアカードも付きます。耐陰性の強い種類（ポトス、サンスベリア、モンステラなど）を選べば、日当たりの悪い部屋でも育てられます。法人向けレンタルでは、HitoHana Rental Greenが専門のデザイナーによる提案、GOOD GREENがカタログからの選択に対応しています。日照が確保できない場所には、HitoHanaがフェイクグリーンとの組み合わせを提案しています。置き場所の明るさの見極め方は、当サイトの「観葉植物の育て方・置き場所ガイド」で解説しています。",
   },
   {
     q: "訪問メンテナンス込みのプランはありますか？",
-    a: "メンテナンスが定額に含まれるのはレンタル型です。当サイトの掲載サービスでは、CLASにメンテナンス不要のプランがあることを確認していますが、訪問頻度・作業範囲の公表値は確認できていないため、当サイトでは回数を断定していません。回数や作業範囲を条件にしたい場合は、鉢数・サイズ・設置場所を伝えて見積もりを取り、契約前に書面で確認してください。オフィス・店舗でメンテナンス込みにしたい場合の進め方は「法人・オフィス向けガイド」に、金額の決まり方は「観葉植物の料金の考え方」にまとめています。",
-  },
-  {
-    q: "置き場所によって向き不向きはありますか？",
-    a: "「置き場所の明るさ」「人の視線が届く場所か」「手入れをする人を決められるか」の3点で判断します。常に良い状態を保つ必要がある場所にはメンテナンス込みのレンタル型が適しており、多少の手入れを自分で担える場所であれば購入型でも対応できます。水回りや什器の都合で置き場所が限られる場合は、床置きの大型より棚上の小型から試すと失敗しにくくなります。オフィス・店舗での置き場所の決め方と導入手順は当サイトの「法人・オフィス向けガイド」にまとめています。",
+    a: "あります。公式サイトで確認できた範囲では、HitoHana Rental Green（全プラン月2回訪問・法人専用）と、GOOD GREENのメンテナンスプラン（月2回訪問・M・Lサイズ5鉢以上）が該当します。作業内容は、HitoHanaが水やり・剪定・病害虫駆除・設置環境のチェック・植栽引き取り、GOOD GREENが水やりと病害虫・トラブル時の訪問を挙げています（2026年10月19日公式確認）。対応エリアは首都圏が中心のため、拠点の住所で可否を確認してください。オフィスでの進め方は「法人・オフィス向けガイド」にまとめています。",
   },
   {
     q: "枯れてしまったときの交換対応はどのサービスにありますか？",
-    a: "当サイトの掲載サービスでは、AND PLANTSに14日間の交換保証、CLASに交換・返却の仕組みがあります。HitoHanaの観葉植物については交換条件を確認できていないため、公式サイトでご確認ください。なお、到着時の傷み・不具合に対する交換と、育てている途中で枯れた場合の扱いは、別に定められていることがある点にご注意ください。申請期限が「到着後◯日以内」と短く設定されている場合もあるため、対象範囲と期限は申し込み前に各公式サイトで確認してください。",
+    a: "レンタルでは、GOOD GREENが枯れた場合に回数の制限なく無料で交換し、HitoHana Rental Greenは傷んだ場合に植物を交換します。購入型では、AND PLANTSの観葉植物は到着後2週間以内（ケアカードに従って管理したのに枯れた場合を含む）、HitoHanaの観葉植物は到着時の傷み・破損について到着から7日以内の連絡で交換の対象となります（いずれも2026年10月19日公式確認）。購入型は期限を過ぎると自己負担での買い直しになるため、期限と対象範囲は申し込み前に各公式サイトで確認してください。",
   },
 ];
 
@@ -64,22 +61,20 @@ const faqLd = {
 
 /* ─── Main Component ─── */
 export default function KanyouShokubutsuPage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
   return (
     <>
                 {/* COMPARE_ITEMLIST_v1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"観葉植物の定期便・サブスク比較\",\"description\":\"観葉植物の定期便・サブスク比較のサービス一覧\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"url\":\"https://ohana-delivery.com/services/and-plants/\",\"name\":\"AND PLANTS（アンドプランツ）\"},{\"@type\":\"ListItem\",\"position\":2,\"url\":\"https://ohana-delivery.com/services/hitohana/\",\"name\":\"HitoHana（ヒトハナ）\"},{\"@type\":\"ListItem\",\"position\":3,\"url\":\"https://ohana-delivery.com/services/lifft/\",\"name\":\"LIFFT（リフト）\"}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"観葉植物の定期便・サブスク比較\",\"description\":\"観葉植物の定期便・サブスク比較のサービス一覧\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"url\":\"https://ohana-delivery.com/services/and-plants/\",\"name\":\"AND PLANTS（アンドプランツ）\"},{\"@type\":\"ListItem\",\"position\":2,\"url\":\"https://ohana-delivery.com/services/hitohana/\",\"name\":\"HitoHana（ヒトハナ）\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"観葉植物の定期便・サブスク比較\",\"item\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物は購入とサブスク・レンタルどちらがお得か｜月額料金・メンテナンス・交換対応で比較\",\"description\":\"観葉植物を購入して育てる方法と、サブスク・レンタルで借りて管理を任せる方法を、提供形態・月額の目安・メンテナンス頻度・交換対応で比較し、損益が入れ替わる考え方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-09-16T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物のサブスク・レンタル比較｜季節の入れ替え・メンテナンス込み（管理不要）で選ぶ\",\"description\":\"季節ごとに植物を入れ替えられる観葉植物サブスク・レンタルと、水やりまで任せられる法人向けのメンテナンス込みレンタルを、公式サイトで確認した月額・交換頻度・訪問回数・契約条件で比較します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-19T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <meta name="description" content="観葉植物を購入して育てる場合と、サブスク・レンタルで借りて管理を任せる場合の費用を比較します。AND PLANTS・CLAS・HitoHanaを提供形態・月額の目安・メンテナンス頻度・交換対応で対比し、購入価格と月額の損益が入れ替わる考え方を解説します。" />
+      <meta name="description" content="季節ごとに植物を入れ替えられる観葉植物サブスク・レンタルと、水やりまで任せられる法人向けのメンテナンス込みレンタルを、公式サイトで確認した月額・交換頻度・訪問回数・契約条件で比較します（2026年10月19日確認）。" />
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
@@ -100,14 +95,14 @@ export default function KanyouShokubutsuPage() {
         {/* ─── Hero Section ─── */}
         <section className="bg-[#F3EDE6] py-12 md:py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">購入とサブスク・レンタルの比較</p>
+            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">観葉植物サブスク・レンタルの比較</p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
-              観葉植物は購入とサブスク・レンタル<br className="hidden md:block" />
-              どちらがお得か【2026年】月額料金・交換対応で比較
+              観葉植物のサブスク・レンタル比較【2026年】<br className="hidden md:block" />
+              季節の入れ替え・メンテナンス込みで選ぶ
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-6 max-w-2xl mx-auto leading-relaxed">
               当サイトでは、<strong>観葉植物を「買って育てる」か「借りて任せる」かを判断するための情報</strong>をまとめています。
-              提供形態・月額の目安・メンテナンス頻度・交換対応の有無で各社を比較し、利用者に合う仕組みを整理します。
+              植物の入れ替え頻度・訪問メンテナンスの回数・月額・契約条件を各社の公式サイトで確認し、確認日を付けて比較しています（最終更新：2026年10月19日）。
             </p>
             <p className="text-xs md:text-sm text-[#666] max-w-2xl mx-auto leading-relaxed">
               置き場所・日当たり・水やりなど<strong>育て方</strong>を知りたい方は
@@ -115,6 +110,126 @@ export default function KanyouShokubutsuPage() {
               、<strong>料金の決まり方・予算の立て方</strong>を知りたい方は
               <a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] font-medium underline mx-1">観葉植物の料金の考え方</a>
               をご覧ください。
+            </p>
+          </div>
+        </section>
+
+        {/* ─── Direct answers: seasonal swap / maintenance-free ─── */}
+        <section id="nyuretae-kanri-fuyou" className="py-12 md:py-16 bg-white">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              季節ごとに植物を入れ替えられる観葉植物サブスクはありますか
+            </h2>
+            <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F8F8F8] p-6 mb-6">
+              <p className="text-sm text-[#555] leading-relaxed">
+                <strong>あります。ただし、植物の定期的な入れ替えに対応しているのは主に法人向けのレンタルです。</strong>
+                当サイトが公式サイトで確認できた範囲では、GOOD GREENが3か月に1回（スタートアッププランは6か月に1回）の植物交換に対応し、枯れた場合は回数の制限なく無料で交換されます。
+                HitoHana Rental Greenは月2回の訪問メンテナンスの中で傷んだ植物を交換しますが、季節ごとの定期的な入れ替えについては公式サイトに記載がありません。
+                個人向けの購入型（AND PLANTS・HitoHanaの単品購入）には、定期的に入れ替える仕組みはありません。
+              </p>
+            </div>
+            <p className="text-sm text-[#666] leading-relaxed mb-10">
+              個人宅で模様替えに合わせて替えたい場合は、CLASのフェイクグリーン（人工の観葉植物）のレンタルが、いつでも交換・返却できる仕組みです。
+              観葉植物は常緑の種類が中心で、季節によって見た目が大きく変わるわけではありません。季節感を出したい場合は、ベースのグリーンを据え置き、
+              <a href="/compare/ryokin/" className="text-[#4A7C59] underline mx-1">切り花の定期便</a>
+              を組み合わせる方法もあります。
+            </p>
+
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              忙しい会社でも管理不要で使える観葉植物サブスクはありますか
+            </h2>
+            <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F8F8F8] p-6 mb-6">
+              <p className="text-sm text-[#555] leading-relaxed">
+                <strong>あります。水やり・剪定・病害虫の対応まで事業者が行う、訪問メンテナンス付きの法人向けレンタルを選んでください。</strong>
+                HitoHana Rental Greenは専門スタッフが月2回訪問し、社内での作業は発生しないと案内しています（法人専用・最低契約期間1年・訪問1拠点あたりの植物レンタル代7,800円以上）。
+                GOOD GREENのメンテナンスプランも月2回の訪問で、M・Lサイズ5鉢以上が条件です。
+              </p>
+            </div>
+            <p className="text-sm text-[#666] leading-relaxed mb-8">
+              生きた植物にこだわらない場合は、水やりが不要なフェイクグリーン（CLASのレンタル、HitoHanaの買い切り）も選択肢になります。
+              一方、AND PLANTSやHitoHanaの観葉植物を購入する場合は、水やりなどの管理を社内で担う必要があります。
+              導入の手順や見積もりの取り方は
+              <a href="/guides/houjin-office/" className="text-[#4A7C59] underline mx-1">法人・オフィス向けガイド</a>
+              にまとめています。
+            </p>
+
+            <h3 id="hikaku-hyou" className="text-base md:text-lg font-bold text-[#333] mb-3 scroll-mt-20">観葉植物サブスク・レンタル比較表｜公式サイトで確認した入れ替え・メンテナンスの条件（2026年10月19日確認）</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse min-w-[760px]">
+                <thead>
+                  <tr className="bg-[#F8F8F8]">
+                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5] w-36">サービス</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">対象・形態</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">料金（公式表示）</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">入れ替え・交換</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">訪問メンテナンス</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">契約条件・エリア</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    {
+                      name: "HitoHana Rental Green",
+                      who: "法人専用のレンタル（個人宅は対象外）",
+                      price: "1鉢あたり月額（税別）ノーマル XS 600円・S 1,000円・M 1,600円・L 2,300円・XL 3,000円・XXL 3,600円／プレミアム XS 1,300円〜XXL 5,300円",
+                      swap: "傷んだ場合に植物を交換。季節ごとの定期入れ替えの記載はなし",
+                      maint: "全プラン月2回（水やり・剪定・病害虫駆除・設置環境のチェック・植栽引き取り）",
+                      terms: "最低契約期間1年。訪問1拠点あたり植物レンタル代7,800円以上。請求書払い・クレジットカード。東京・神奈川・埼玉・千葉（一部除く）を中心に名古屋・大阪・兵庫・広島（他県は別途見積もり）",
+                    },
+                    {
+                      name: "GOOD GREEN",
+                      who: "観葉植物のレンタル（法人は無料お試しあり）",
+                      price: "1鉢あたり月額（税込）マイグリーン S 990円・M/L 2,178円／メンテナンス S 1,430円・M/L 2,728円／スタートアップ M/L 1,958円",
+                      swap: "3か月に1回交換可（スタートアップは6か月に1回）。枯れた場合は回数の制限なく無料交換",
+                      maint: "メンテナンスプランのみ月2回（M・Lサイズ5鉢以上）。他のプランは自分で水やり（簡単水やりキット付き）",
+                      terms: "1鉢単位のプランは最短利用期間なし。停止希望月の前月25日までの連絡で違約金なし。配送費3,000円（搬入・交換月のみ、月額3,800円以上で無料）。東京都・神奈川県・千葉県・埼玉県（その他は相談）",
+                    },
+                    {
+                      name: "CLAS",
+                      who: "家具・家電のレンタル（個人・法人）。観葉植物はフェイクグリーンと鉢・プランター",
+                      price: "商品ごとに月額を表示（公式サイトで確認）",
+                      swap: "いつでも交換・返却が可能",
+                      maint: "なし（フェイクグリーンのため水やり不要）",
+                      terms: "対応エリア・配送条件は公式サイトで確認",
+                    },
+                    {
+                      name: "AND PLANTS",
+                      who: "観葉植物の単品購入（届いた植物は自分のもの）",
+                      price: "例：パキラ M（高さ目安75〜110cm）13,980円・L（115〜140cm）19,850円（税込・送料無料）",
+                      swap: "定期入れ替えなし。到着後2週間以内の初期不良等は交換・返金",
+                      maint: "なし（自分で管理。ケアカード付き）",
+                      terms: "法人は請求書払いで購入可。宅配便",
+                    },
+                    {
+                      name: "HitoHana",
+                      who: "観葉植物の単品購入",
+                      price: "価格帯「3,000円〜」から掲載",
+                      swap: "定期入れ替えなし。到着時の傷み・破損は到着から7日以内の連絡で返品・交換",
+                      maint: "なし（自分で管理）",
+                      terms: "宅配便",
+                    },
+                  ].map((r, i) => (
+                    <tr key={i} className="border-b border-[#E5E5E5] align-top">
+                      <td className="px-3 py-3 font-medium text-[#333]">{r.name}</td>
+                      <td className="px-3 py-3 text-[#666] leading-relaxed">{r.who}</td>
+                      <td className="px-3 py-3 text-[#666] leading-relaxed">{r.price}</td>
+                      <td className="px-3 py-3 text-[#666] leading-relaxed">{r.swap}</td>
+                      <td className="px-3 py-3 text-[#666] leading-relaxed">{r.maint}</td>
+                      <td className="px-3 py-3 text-[#666] leading-relaxed">{r.terms}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#999] leading-relaxed mt-4">
+              出典（2026年10月19日に各公式サイトで確認）：
+              <a href="https://hitohana-collect.hitohana.tokyo/pages/rental-green" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">HitoHana Rental Green</a>、
+              <a href="https://goodgreen.jp/price/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">GOOD GREEN 料金プラン</a>、
+              <a href="https://clas.style/furniture/interior_green/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">CLAS 観葉植物</a>、
+              <a href="https://andplants.jp/pages/returned" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">AND PLANTS 返品・交換規定</a>、
+              <a href="https://andplants.jp/products/pachira-m" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">AND PLANTS パキラ M</a>、
+              <a href="https://hitohana.tokyo/indoor-plants" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">HitoHana 観葉植物</a>。
+              料金・条件は改定されることがあるため、申し込み前に各公式サイトでご確認ください。GOOD GREENのサイズ区分はS（〜40cm）・M（50〜130cm）・L（140〜200cm）で、HitoHanaとは異なります。
             </p>
           </div>
         </section>
@@ -133,20 +248,20 @@ export default function KanyouShokubutsuPage() {
               </p>
             </div>
             <p className="text-sm text-[#666] leading-relaxed mb-6">
-              当サイトでの用語の使い分けは次のとおりです。「サブスク」は植物を購入して定期的に届けてもらい、自分で育てる形態を指します。「レンタル」は植物を借りる形態で、交換・返却ができ、メンテナンス込みのプランもあります。同じ「月額」でも、支払いを終えた後に植物が手元に残るかどうかが大きく異なります。
+              当サイトでの用語の使い分けは次のとおりです。植物を購入して自分のものにし、自分で育てる形態を「購入型」、月額で借りる形態を「レンタル型」と呼びます。レンタル型には交換・返却があり、訪問メンテナンス込みのプランもあります。支払いを終えた後に植物が手元に残るかどうかが大きく異なります。公式価格を使った試算は<a href="/guides/kanyou-shokubutsu-ryokin/#shisan" className="text-[#4A7C59] underline mx-1">観葉植物の料金の考え方</a>に掲載しています。
             </p>
             <div className="grid md:grid-cols-2 gap-5">
               <div className="rounded-xl border-2 border-[#4A7C59] p-6 bg-[#F8F8F8]">
                 <p className="text-xs font-bold text-[#4A7C59] mb-2">買って育てたい方（購入型）</p>
                 <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  <strong>サブスク（買い切りの定期便）が基本の選択肢</strong>です。AND PLANTSでは1,980円〜/月で育てやすい植物が届き、14日間の交換保証が付いています。枯らすことに不安がある初心者の方でも始めやすい仕組みです。届いた植物は自分のものになるため、長く置くほど1か月あたりの負担は下がります。
+                  <strong>単品購入が基本の選択肢</strong>です。AND PLANTSではパキラ M（高さ目安75〜110cm）が13,980円（税込・送料無料）で、到着後2週間以内の初期不良等には交換・返金の対応があります（2026年10月19日公式確認）。届いた植物は自分のものになるため、長く置くほど1か月あたりの負担は下がります。
                 </p>
                 <a href="#osusume-3sen" className="text-sm text-[#4A7C59] font-medium underline">→ 購入型・レンタル型のおすすめ3選を見る</a>
               </div>
               <div className="rounded-xl border border-[#E5E5E5] p-6 bg-[#F8F8F8]">
                 <p className="text-xs font-bold text-[#4A7C59] mb-2">借りて任せたい方（レンタル型）</p>
                 <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  大型グリーンを手間をかけずに維持したい場合や、入れ替えを前提にする場合は、<strong>レンタルが有力な選択肢</strong>です。CLASのように、大型観葉植物をレンタルでき、交換・返却が自由で、メンテナンス不要プランを用意しているサービスがあります。
+                  大型グリーンを手間をかけずに維持したい場合や、入れ替えを前提にする場合は、<strong>レンタルが有力な選択肢</strong>です。生きた植物の訪問メンテナンス付きレンタルは法人向けが中心で、HitoHana Rental Green（月2回訪問・法人専用）やGOOD GREEN（3か月に1回交換可）があります。個人宅ではCLASのフェイクグリーンのレンタルが利用できます。
                 </p>
                 <p className="text-xs text-[#999] leading-relaxed">
                   オフィス・店舗での導入（管理担当を置けない、メンテナンス込みにしたい、対応エリアを確認したい）は
@@ -179,9 +294,9 @@ export default function KanyouShokubutsuPage() {
                   {[
                     { item: "楽しめる期間", flower: "1〜2週間", plant: "数ヶ月〜数年" },
                     { item: "お手入れ", flower: "水替え毎日〜2日", plant: "水やり週1〜2回" },
-                    { item: "月額目安", flower: "700〜3,000円", plant: "2,000〜5,000円" },
-                    { item: "配送頻度", flower: "毎週〜月1回", plant: "月1回〜不定期" },
-                    { item: "インテリア効果", flower: "華やかさ・彩り", plant: "癒し・空気清浄" },
+                    { item: "費用の払い方", flower: "1回ごとの料金（定期便）", plant: "単品購入、または法人向けレンタルの月額" },
+                    { item: "入れ替え", flower: "届くたびに新しい花", plant: "購入は入れ替えなし／レンタルは3か月ごと等の交換あり" },
+                    { item: "インテリア効果", flower: "華やかさ・季節の彩り", plant: "通年で落ち着いた緑" },
                   ].map((row, i) => (
                     <tr key={i} className="border-b border-[#E5E5E5]">
                       <td className="px-3 py-3 font-medium text-[#333]">{row.item}</td>
@@ -207,9 +322,9 @@ export default function KanyouShokubutsuPage() {
                   rank: 1,
                   name: "AND PLANTS",
                   nameJa: "アンドプランツ",
-                  price: "1,980円〜/月",
-                  highlight: "観葉植物と切り花の両方を扱うサービスです。プロが選んだ育てやすい観葉植物が届き、育て方のサポートも用意されています。14日間の交換保証があり、初心者の方も始めやすい内容です。送料は無料です。",
-                  features: ["初心者向けの育てやすい植物をセレクト", "14日間の交換保証", "育て方の説明書付き", "切り花プランとの併用可能"],
+                  price: "観葉植物は単品購入（例：パキラ M 13,980円・税込・送料無料）",
+                  highlight: "観葉植物と切り花の両方を扱うサービスです。観葉植物は定期便ではなく単品購入で、置き場所の日当たりなどから植物を絞り込める「パーソナル植物診断」と、育て方を記したケアカードがあります。到着後2週間以内であれば、初期不良による傷みや、ケアカードに従って管理したのに枯れた場合などに交換・返金の対象となります（2026年10月19日公式確認）。",
+                  features: ["パーソナル植物診断", "到着後2週間以内の交換・返金対応", "ケアカード付き", "切り花の定期便も提供"],
                   color: "#4A7C59",
                   url: "/services/and-plants",
                 },
@@ -217,9 +332,9 @@ export default function KanyouShokubutsuPage() {
                   rank: 2,
                   name: "CLAS",
                   nameJa: "クラス",
-                  price: "月額レンタル制",
-                  highlight: "家具・家電のサブスクサービスで、大型の観葉植物もレンタルできます。オフィスや広いリビングに合う大型グリーンを手軽に試せます。交換・返却にも対応しています。",
-                  features: ["大型観葉植物のレンタルが可能", "交換・返却が自由", "メンテナンス不要プランあり", "法人利用にも対応"],
+                  price: "月額レンタル制（商品ごとに表示）",
+                  highlight: "家具・家電のレンタルサービスで、観葉植物のカテゴリではフェイクグリーン（人工の観葉植物）と鉢・プランターを扱っています。生きた植物ではないため水やりは不要で、いつでも交換・返却ができます（2026年10月19日公式確認）。法人向けのCLAS Bizもあります。",
+                  features: ["フェイクグリーンのレンタル", "いつでも交換・返却が可能", "水やり不要", "法人向けCLAS Bizあり"],
                   color: "#6B8E5B",
                   url: "#",
                 },
@@ -227,9 +342,9 @@ export default function KanyouShokubutsuPage() {
                   rank: 3,
                   name: "HitoHana",
                   nameJa: "ひとはな",
-                  price: "3,300円〜",
-                  highlight: "花の定期便で知られるHitoHanaは、観葉植物の単品購入にも対応しています。サブスクではありませんが、好みの観葉植物を選んで購入でき、育て方のサポートも受けられます。",
-                  features: ["豊富な品揃えから選べる", "サイズ・種類が豊富", "ギフト対応あり", "育て方のサポート"],
+                  price: "価格帯「3,000円〜」から掲載",
+                  highlight: "花の定期便で知られるHitoHanaは、観葉植物の単品購入にも対応しています。個人向けはサブスクではなく購入で、到着時の傷み・破損は到着から7日以内の連絡で返品・交換の対象です。法人向けには、月2回の訪問メンテナンスが付くレンタル「HitoHana Rental Green」があります（2026年10月19日公式確認）。",
+                  features: ["価格帯・サイズから選べる", "ギフト対応あり", "到着から7日以内の返品・交換", "法人向けレンタルグリーンあり"],
                   color: "#8B6F5C",
                   url: "/services/hitohana",
                 },
@@ -266,87 +381,6 @@ export default function KanyouShokubutsuPage() {
           </div>
         </section>
 
-        {/* ─── Comparison Table: price / maintenance / replacement / area ─── */}
-        <section id="hikaku-hyou" className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-4 pb-3 border-b-2 border-[#4A7C59]">
-              観葉植物サブスク・レンタル比較表｜月額の目安・メンテナンス頻度・交換対応・対応エリア
-            </h2>
-            <p className="text-sm text-[#666] leading-relaxed mb-6">
-              判断に必要な4項目（月額の目安・メンテナンス頻度・交換対応の有無・対応エリア）で比較しています。当サイトで公式に確認できた値のみを記載し、確認できていない項目は「公式サイトで要確認」と表記しています。
-            </p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse min-w-[640px]">
-                <thead>
-                  <tr className="bg-[#F8F8F8]">
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5] w-32">比較項目</th>
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">AND PLANTS</th>
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">CLAS</th>
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">HitoHana</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    {
-                      item: "提供形態",
-                      ap: "購入型（定期便＋単品購入）",
-                      clas: "レンタル（交換・返却あり）",
-                      hh: "単品購入（サブスクではない）",
-                    },
-                    {
-                      item: "月額の目安",
-                      ap: "定期便1,980円〜（送料込み・都度払い／2026年7月3日公式確認）。観葉植物は単品購入のため価格は公式サイトで要確認",
-                      clas: "月額レンタル制。月額の公表値は未確認のため、見積もりでの確認が必要",
-                      hh: "3,300円〜（当サイト掲載値。最新価格は公式サイトで要確認）",
-                    },
-                    {
-                      item: "メンテナンス頻度",
-                      ap: "訪問メンテナンスなし（自分で水やり・管理）",
-                      clas: "メンテナンス不要プランあり。訪問頻度の公表値は未確認のため要確認",
-                      hh: "なし（購入後は自分で管理。育て方のサポートあり）",
-                    },
-                    {
-                      item: "交換対応の有無",
-                      ap: "14日間の交換保証",
-                      clas: "交換・返却が可能",
-                      hh: "交換条件は公式サイトで要確認",
-                    },
-                    {
-                      item: "対応エリア",
-                      ap: "宅配便で全国（北海道・沖縄・離島は追加送料または配送対象外の場合あり）",
-                      clas: "公式サイトで要確認",
-                      hh: "宅配便で配送（北海道・沖縄・離島は追加送料の場合あり）",
-                    },
-                    {
-                      item: "法人利用",
-                      ap: "公式サイトで要確認",
-                      clas: "法人利用に対応",
-                      hh: "法人向けサービスあり（請求書払いに対応）",
-                    },
-                  ].map((row, i) => (
-                    <tr key={i} className="border-b border-[#E5E5E5] align-top">
-                      <td className="px-3 py-3 font-medium text-[#333]">{row.item}</td>
-                      <td className="px-3 py-3 text-[#666] leading-relaxed">{row.ap}</td>
-                      <td className="px-3 py-3 text-[#666] leading-relaxed">{row.clas}</td>
-                      <td className="px-3 py-3 text-[#666] leading-relaxed">{row.hh}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-xs text-[#999] leading-relaxed mt-4">
-              ※ 金額はいずれも当サイトが公式サイトで確認できた値のみを記載しています。確認日を併記していない値は掲載時点の情報のため、申し込み前に各公式サイトで最新の料金・条件をご確認ください。当サイトでは架空の金額・独自の推計値は掲載していません。
-            </p>
-            <p className="text-xs text-[#999] leading-relaxed mt-2">
-              ※ 金額が何で変わるのか、初期費用と月額の内訳、予算から選ぶときの考え方は
-              <a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] underline mx-1">観葉植物のサブスク・レンタル料金の考え方</a>
-              で解説しています。オフィス・店舗への導入手順、メンテナンス込みの可否、対応エリアの確認方法は
-              <a href="/guides/houjin-office/" className="text-[#4A7C59] underline mx-1">法人・オフィス向けガイド</a>
-              に、公式確認値と確認日を付記してまとめています。
-            </p>
-          </div>
-        </section>
-
         {/* ─── Head-to-head comparison ─── */}
         <section id="vs" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
@@ -354,75 +388,75 @@ export default function KanyouShokubutsuPage() {
               サービス同士の直接比較と選び分け
             </h2>
             <p className="text-sm text-[#666] leading-relaxed mb-6">
-              3社は仕組みが異なるため、当サイトでは優劣ではなく、利用者に合う仕組みかどうかを基準に比較しています。上の比較表の項目にもとづき、2社ずつ対比します。
+              各社は仕組みが異なるため、当サイトでは優劣ではなく、利用者に合う仕組みかどうかを基準に比較しています。上の比較表の項目にもとづき、2社ずつ対比します（2026年10月19日公式確認）。
             </p>
             <div className="space-y-5">
               {[
                 {
-                  title: "AND PLANTS × CLAS｜買って育てるか、借りて任せるか",
+                  title: "AND PLANTS × HitoHana Rental Green｜買って育てるか、借りて任せるか",
                   left: {
                     name: "AND PLANTS",
                     points: [
-                      "購入型。届いた植物は自分のものになる",
-                      "定期便1,980円〜（送料込み・都度払い／2026年7月3日公式確認）",
-                      "14日間の交換保証",
-                      "宅配便で全国（一部地域は追加送料・対象外の場合あり）",
+                      "単品購入。届いた植物は自分のものになる",
+                      "例：パキラ M 13,980円・L 19,850円（税込・送料無料）",
+                      "到着後2週間以内の初期不良等は交換・返金",
+                      "水やりなどの管理は自分で行う",
                     ],
                   },
                   right: {
-                    name: "CLAS",
+                    name: "HitoHana Rental Green",
                     points: [
-                      "レンタル型。大型の観葉植物も借りられる",
-                      "月額レンタル制（月額の公表値は未確認・見積もりで確認）",
-                      "交換・返却が自由／メンテナンス不要プランあり",
-                      "法人利用に対応",
+                      "法人専用のレンタル（個人宅は対象外）",
+                      "ノーマルM 月1,600円・L 月2,300円（1鉢・税別）",
+                      "月2回の訪問メンテナンス・傷んだ場合は交換",
+                      "最低契約期間1年・1拠点あたり7,800円以上",
                     ],
                   },
-                  verdict: "長く同じ植物を育てたい場合や、費用を公開値で把握したい場合はAND PLANTSが適しています。水やりや入れ替えを任せたい場合、大型グリーンを置きたい場合、法人で導入する場合はCLASが適しています。",
+                  verdict: "長く同じ植物を育てたい場合や、個人宅に置く場合はAND PLANTSが適しています。水やりや交換を任せたい法人で、首都圏などの対応エリアに拠点がある場合はHitoHana Rental Greenが適しています。",
                 },
                 {
-                  title: "AND PLANTS × HitoHana｜おまかせで届くか、自分で選んで買うか",
+                  title: "HitoHana Rental Green × GOOD GREEN｜メンテナンス込みで任せるか、入れ替え頻度で選ぶか",
                   left: {
-                    name: "AND PLANTS",
+                    name: "HitoHana Rental Green",
                     points: [
-                      "プロが選んだ育てやすい植物が定期的に届く",
-                      "初心者向けの選定オプション・育て方の説明書付き",
-                      "切り花プランとの併用が可能",
-                      "定期便1,980円〜（送料込み／2026年7月3日公式確認）",
+                      "全プラン月2回訪問（水やり・剪定・病害虫駆除）",
+                      "1鉢から（1拠点あたり7,800円以上）",
+                      "季節ごとの定期入れ替えの記載はなし",
+                      "最低契約期間1年",
+                    ],
+                  },
+                  right: {
+                    name: "GOOD GREEN",
+                    points: [
+                      "3か月に1回交換可（スタートアップは6か月に1回）",
+                      "訪問はメンテナンスプランのみ（M・L 5鉢以上）",
+                      "枯れた場合は回数の制限なく無料交換",
+                      "1鉢単位のプランは最短利用期間なし",
+                    ],
+                  },
+                  verdict: "社内の作業をなくしたい場合はHitoHana Rental Green、植物を定期的に入れ替えたい場合や、水やりは社内で行い費用を抑えたい場合はGOOD GREENが適しています。",
+                },
+                {
+                  title: "CLAS × HitoHana｜水やり不要のフェイクグリーンか、生きた植物を買うか",
+                  left: {
+                    name: "CLAS",
+                    points: [
+                      "フェイクグリーンと鉢・プランターのレンタル",
+                      "いつでも交換・返却が可能",
+                      "水やり不要",
+                      "法人向けのCLAS Bizあり",
                     ],
                   },
                   right: {
                     name: "HitoHana",
                     points: [
-                      "単品購入。品揃えから自分で種類・サイズを選ぶ",
-                      "3,300円〜（当サイト掲載値・最新価格は要確認）",
-                      "ギフト対応あり／育て方のサポートあり",
-                      "定期的に届く仕組みではない",
-                    ],
-                  },
-                  verdict: "何を置くか決まっていない場合や、選定を任せたい場合はAND PLANTSが適しています。置きたい種類やサイズが決まっている場合や、贈り物にしたい場合はHitoHanaが適しています。",
-                },
-                {
-                  title: "CLAS × HitoHana｜借りて入れ替えるか、買い切って長く置くか",
-                  left: {
-                    name: "CLAS",
-                    points: [
-                      "レンタルのため返却・交換ができる",
-                      "メンテナンス不要プランあり（訪問頻度は要確認）",
-                      "支払いは利用している間ずっと続く",
-                      "法人利用に対応",
-                    ],
-                  },
-                  right: {
-                    name: "HitoHana",
-                    points: [
-                      "買い切りのため、支払いは購入時のみ",
-                      "返却・交換の仕組みは公式サイトで要確認",
+                      "生きた観葉植物の単品購入（価格帯「3,000円〜」）",
+                      "到着から7日以内の連絡で返品・交換",
                       "管理は自分で行う",
-                      "法人向けサービスあり（請求書払いに対応）",
+                      "法人向けにレンタルグリーンもあり",
                     ],
                   },
-                  verdict: "模様替えや入れ替えを前提にする場合はCLAS、置き場所と種類が決まっていて長く置く場合はHitoHanaが適しています。判断に迷う場合は、レンタル月額の見積もりを取り「購入価格÷月額」で何か月分に相当するかを比べると決めやすくなります。",
+                  verdict: "日当たりが確保できない場所や、模様替えのたびに替えたい場合はCLASのフェイクグリーン、生きた植物を長く育てたい場合はHitoHanaが適しています。",
                 },
               ].map((v, i) => (
                 <div key={i} className="bg-white rounded-xl border border-[#E5E5E5] p-5">
@@ -446,7 +480,7 @@ export default function KanyouShokubutsuPage() {
               ))}
             </div>
             <p className="text-xs text-[#999] leading-relaxed mt-5">
-              ※ 対比に使用した項目は、上の比較表と同じく当サイトで確認できた情報に限っています。未確認の項目は「要確認」と明記し、推測による補完は行っていません。
+              ※ 対比に使用した項目は、上の比較表と同じく当サイトが公式サイトで確認できた情報に限っています。記載のない項目は推測で補っていません。
             </p>
           </div>
         </section>
@@ -455,13 +489,13 @@ export default function KanyouShokubutsuPage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              観葉植物サブスクを選ぶ際の3つのポイント
+              観葉植物サブスク・レンタルを選ぶ際の3つのポイント
             </h2>
             <div className="space-y-4">
               {[
-                { num: "1", title: "置き場所に合ったサイズを選ぶ", text: "デスクや棚に置くならミニサイズ（15〜30cm）、リビングに飾るならミディアム（50〜100cm）、シンボルツリーなら大型（100cm以上）が目安です。サブスクで届く植物のサイズを事前にご確認ください。" },
-                { num: "2", title: "日当たりの条件を確認する", text: "窓際で日光が入る部屋なら選択肢は豊富ですが、日当たりの悪い部屋でも育つ耐陰性の強い植物（ポトス、サンスベリア、モンステラなど）もあります。部屋の日当たり条件に合った植物が届くサービスを選ぶことをおすすめします。" },
-                { num: "3", title: "交換・保証制度を確認する", text: "初心者の方は植物を枯らしてしまう可能性があります。AND PLANTSの14日間交換保証のように、万が一枯れた場合のサポートがあるサービスを選ぶと、安心して始められます。" },
+                { num: "1", title: "置き場所に合ったサイズを選ぶ", text: "デスクや棚に置くならミニサイズ（15〜30cm）、リビングに飾るならミディアム（50〜100cm）、シンボルツリーなら大型（100cm以上）が目安です。サイズの区切り方はサービスごとに異なるため（例：HitoHana Rental GreenのMは80〜100cm、GOOD GREENのMは50〜130cm）、申し込み前に高さの数値でご確認ください。" },
+                { num: "2", title: "日当たりの条件を確認する", text: "窓際で日光が入る部屋なら選択肢は豊富ですが、日当たりの悪い部屋でも育つ耐陰性の強い植物（ポトス、サンスベリア、モンステラなど）もあります。日照が確保できない場所には、水やりも不要なフェイクグリーンという選択肢もあります。" },
+                { num: "3", title: "交換の条件と期限を確認する", text: "購入型の交換は到着時の不具合などが対象で、期限があります（AND PLANTSの観葉植物は到着後2週間以内、HitoHanaは到着から7日以内）。期限後に枯れた場合も交換してほしいときは、GOOD GREEN（枯れた場合は回数の制限なく無料交換）のようなレンタルが該当します（2026年10月19日公式確認）。" },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
                   <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.num}</span>
@@ -488,22 +522,12 @@ export default function KanyouShokubutsuPage() {
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
-                  <button
-                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#E8F0EB] transition-colors text-left"
-                  >
-                    <span className="text-sm font-medium text-[#333] pr-4">Q. {item.q}</span>
-                    <svg className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  {openFaq === i && (
-                    <div className="px-5 py-4 bg-white border-t border-[#E5E5E5]">
-                      <p className="text-sm text-[#666] leading-relaxed">A. {item.a}</p>
-                    </div>
-                  )}
-                </div>
+                <details key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden bg-white">
+                  <summary className="px-5 py-4 cursor-pointer hover:bg-[#E8F0EB] transition-colors text-sm font-medium text-[#333]">Q. {item.q}</summary>
+                  <div className="px-5 py-4 border-t border-[#E5E5E5]">
+                    <p className="text-sm text-[#666] leading-relaxed">A. {item.a}</p>
+                  </div>
+                </details>
               ))}
             </div>
             <div className="mt-6 rounded-xl border border-[#E5E5E5] bg-white p-5">
@@ -522,10 +546,10 @@ export default function KanyouShokubutsuPage() {
         <section className="py-12 md:py-16 bg-[#E8F0EB]">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
-              観葉植物サブスクにはAND PLANTSをおすすめします
+              個人は購入、法人はメンテナンス込みのレンタルから選びます
             </h2>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              観葉植物のサブスクの主な利点は、切り花と比べて手入れの負担が少なく、長く楽しめることです。初心者の方には、当サイトでは<strong>AND PLANTS</strong>を最もおすすめしています。プロが選んだ育てやすい植物が届き、14日間の交換保証もあるため、安心して始められます。
+              自宅に置く場合は、生きた観葉植物の訪問メンテナンス付きレンタルは個人宅を対象外とするサービスもあるため、購入が基本になります。初心者の方には、当サイトでは<strong>AND PLANTS</strong>をおすすめしています。パーソナル植物診断で置き場所に合う植物を絞り込め、到着後2週間以内の初期不良等には交換・返金の対応があります。会社で管理の手間をなくしたい場合は、月2回の訪問メンテナンスが付くHitoHana Rental Greenや、3か月ごとに入れ替えられるGOOD GREENをご検討ください。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               花のサブスクと観葉植物サブスクを併用すると、グリーンの落ち着いた雰囲気と花の華やかさの両方を楽しめます。まずは一つのサービスから試し、植物のある暮らしをご検討ください。
