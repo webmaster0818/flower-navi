@@ -42,6 +42,8 @@ export type ServiceProfile = {
     good?: string[];
     bad?: string[];
     source: ReactNode;
+    /** 第三者のレビュー記事の記録（記事名・URL・確認日つきの要約のみ） */
+    observations?: { title: string; lead: string; items: { text: string; source: string; url: string; checkedAt: string }[] };
   };
   pros: Item[];
   cons: Item[];
@@ -255,6 +257,22 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
                 </div>
               )}
               <p className="text-xs text-[#999]">{p.reviews.source}</p>
+              {p.reviews.observations ? (
+                <div className="mt-8">
+                  <h3 className="text-lg font-bold text-[#333] mb-3">{p.reviews.observations.title}</h3>
+                  <p className="text-sm md:text-base text-[#666] leading-relaxed mb-3">{p.reviews.observations.lead}</p>
+                  <ul className="space-y-3">
+                    {p.reviews.observations.items.map((o, i) => (
+                      <li key={i} className="rounded-xl border border-[#E5E5E5] bg-white p-4 text-sm md:text-base text-[#555] leading-relaxed">
+                        {o.text}
+                        <span className="block text-xs text-[#999] mt-1">
+                          出典：<a href={o.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">{o.source}</a>（{o.checkedAt}確認）
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
             </div>
           </section>
 

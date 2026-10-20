@@ -18,6 +18,14 @@ const faqItems = [
     a: "良い口コミは「ポスト投函で不在でも受け取れる」「花代980円〜で始めやすい」「季節の花が届く」が中心です。一方で、みん評（掲載562件・2026年10月14日確認）などでは「花がしおれていた・同じ花が続く」「最初の4回は解約できず途中解約料がかかる」「解約がわかりにくい」といった厳しい声も多く見られます。4回受け取る前提であれば有力な候補ですが、1〜2回だけ試したい方には適していません。",
   },
   {
+    q: "ブルーミーライフ（bloomee）のメリット・デメリットは何ですか？",
+    a: "公式情報で確認できるメリットは、お試し・グリーンプランがポストに届き不在でも受け取れること、花代980円/回から始められること、4回目以降は週単位でストップ・再開や隔週への変更ができることです。デメリットは、送料が毎回別にかかること（385円、ベーシックは550円）、最初の4回の受け取りが前提で4回未満の解約は途中解約料がかかること、お試し・グリーンは日時指定ができず花の種類も選べないことです（2026年10月20日 公式サイトで確認）。",
+  },
+  {
+    q: "ブルーミーの花の品質やボリュームについての口コミはどうですか？",
+    a: "口コミサイトのみん評（掲載562件・2026年10月14日確認）では、しおれ・同じ花が続くといった品質への不満が多く見られます。一方、複数回受け取った方のレビュー記事では、花持ちは1〜2週間程度で回や季節によって差がある、お試しプラン（公式の表記は4本以上・約18〜25cm）は最初は少なく感じても飾ると寂しくない、という記録が中心です。",
+  },
+  {
     q: "ブルーミーの悪い口コミで多い内容は何ですか？",
     a: "多いのは、①花の状態のばらつき（しおれ・同じ花が続く。夏場のポスト投函で増える傾向があります）、②最初の4回の受け取りが必要で、4回未満の解約は途中解約料がかかること、③解約・スキップの手続きがわかりにくいこと、の3点です。送料が毎回別にかかるため、「980円」という表記から受ける印象より高いという声もあります。",
   },
@@ -150,15 +158,17 @@ export default function BloomeePage() {
               <nav>
                 <ol className="text-sm text-[#666] space-y-2">
                   <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">1. ブルーミーの口コミ・評判（出典付き）</a></li>
-                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">2. bloomeeのサービス概要</a></li>
-                  <li><a href="#pricing" className="hover:text-[#4A7C59] transition-colors">3. 料金プラン・送料（公式確認）</a></li>
-                  <li><a href="#pros" className="hover:text-[#4A7C59] transition-colors">4. メリット（良い評判の理由）</a></li>
-                  <li><a href="#cons" className="hover:text-[#4A7C59] transition-colors">5. デメリット（悪い評判の理由）</a></li>
-                  <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">6. おすすめできる方・おすすめできない方</a></li>
-                  <li><a href="#comparison" className="hover:text-[#4A7C59] transition-colors">7. 競合サービスとの比較</a></li>
-                  <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">8. bloomeeの始め方</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">9. よくある質問</a></li>
-                  <li><a href="#cancellation" className="hover:text-[#4A7C59] transition-colors">10. 解約手順</a></li>
+                  <li><a href="#flower-reviews" className="hover:text-[#4A7C59] transition-colors">2. ブルーミーの花の口コミ（品質・ボリュームの記録と掲載先）</a></li>
+                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">3. bloomeeのサービス概要</a></li>
+                  <li><a href="#pricing" className="hover:text-[#4A7C59] transition-colors">4. 料金プラン・送料（公式確認）</a></li>
+                  <li><a href="#merit-demerit" className="hover:text-[#4A7C59] transition-colors">5. ブルーミーライフ（bloomee）のメリット・デメリット（公式情報で整理）</a></li>
+                  <li><a href="#pros" className="hover:text-[#4A7C59] transition-colors">6. メリット（良い評判の理由）</a></li>
+                  <li><a href="#cons" className="hover:text-[#4A7C59] transition-colors">7. デメリット（悪い評判の理由）</a></li>
+                  <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">8. おすすめできる方・おすすめできない方</a></li>
+                  <li><a href="#comparison" className="hover:text-[#4A7C59] transition-colors">9. 競合サービスとの比較</a></li>
+                  <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">10. bloomeeの始め方</a></li>
+                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">11. よくある質問</a></li>
+                  <li><a href="#cancellation" className="hover:text-[#4A7C59] transition-colors">12. 解約手順</a></li>
                 </ol>
               </nav>
             </div>
@@ -169,6 +179,50 @@ export default function BloomeePage() {
         <section id="reviews" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <ReviewEvidence d={RE} s={S} />
+          </div>
+        </section>
+
+
+        {/* ─── Flower quality reviews (2026-10-20) ─── */}
+        <section id="flower-reviews" className="py-12 md:py-16 bg-[#FBF7F2]">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              ブルーミーの花の口コミ｜届く花の品質・ボリュームの記録と掲載先
+            </h2>
+            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
+              ブルーミーの花そのもの（鮮度・花持ち・本数）についての口コミは、件数の多い口コミサイトでは厳しい声が目立ち、複数回受け取った方のレビュー記事では「花持ちは1〜2週間程度、回や季節によって差がある」という記録が中心です。
+              お試しプランの公式のサイズ目安は約18〜25cm（ベーシックは約25〜30cm）で、花の組み合わせ・色味はおまかせです（2026年10月20日 公式FAQで確認）。
+            </p>
+            <div className="table-wrapper overflow-x-auto rounded-xl border border-[#E8DFD5] bg-white mb-4">
+              <table className="w-full text-sm text-[#555]">
+                <thead className="bg-[#F8F8F8] text-[#333]">
+                  <tr>
+                    <th className="px-3 py-2 text-left font-bold">掲載先</th>
+                    <th className="px-3 py-2 text-left font-bold">件数・利用期間</th>
+                    <th className="px-3 py-2 text-left font-bold">花の品質・ボリュームについての記載</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { name: "みん評「ブルーミーライフ」", url: "https://minhyo.jp/bloomeelife", count: "掲載562件（2026年10月14日確認。平均点は取得できませんでした）", body: "個別の口コミには、しおれ・同じ花が続くといった品質への不満と、解約・問い合わせ対応への不満が多く見られます。" },
+                    { name: "かおりハピネス", url: "https://kaori-happiness.jp/bloomee-review/", count: "お試しプラン4回（2022年9月）", body: "各回3種類の花材。花持ちは1週間〜10日程度で、1週間もたずに傷み始めた種類もあった。" },
+                    { name: "Nana's Petunia", url: "https://nanas-petunia.com/bloomee_review/", count: "お試しプラン4回（2026年3月時点の情報）", body: "4回とも4本。保水ジェル付きで傷みなく届き、約3週間もった回もあった。" },
+                    { name: "サブスクスタイル", url: "https://subsc-style.jp/bloomee-kuchikomi/", count: "5回（2021年・旧プランを含む）", body: "届いた花は4〜7種類。3〜4日目で元気がなくなった回と、約2週間飾れた回があった。" },
+                    { name: "メモノテ", url: "https://memo-note.jp/bloomee/", count: "1年間", body: "花持ちは夏場で約1週間、冬場で約2週間。届いた当日の連絡で1回分が無料になった。" },
+                    { name: "GFGreen お花", url: "https://gfgreenblog.com/bloomee/bloomee-review/", count: "約3年半（お試しプラン）", body: "花の長さは20〜25cmほど、花持ちはおおむね2週間。利用開始から1年半ほどは鮮度・ボリュームにばらつきがあった。" },
+                  ].map((r) => (
+                    <tr key={r.name} className="border-t border-[#EEE] align-top">
+                      <td className="px-3 py-2 whitespace-nowrap"><a href={r.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">{r.name}</a></td>
+                      <td className="px-3 py-2">{r.count}</td>
+                      <td className="px-3 py-2">{r.body}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#999] leading-relaxed">
+              ※ レビュー記事は各筆者個人の記録の要約で、時期・地域・季節によって変わります（各記事は2026年10月14日〜20日に確認）。口コミサイトの件数は確認日時点の表示です。公式サイトにも「ご利用者様の声」が掲載されていますが、事業者が選んで掲載したものです。当サイトでは、体験談の創作や独自の星評価の掲載は行っていません。
+            </p>
           </div>
         </section>
 
@@ -228,6 +282,53 @@ export default function BloomeePage() {
                 <li>・4回未満で解約すると「4回分のうち残回数分の商品代金（税込）」が途中解約料になります（公式・特定商取引法に基づく表記）。</li>
               </ul>
             </div>
+          </div>
+        </section>
+
+
+        {/* ─── Merit / Demerit from official info (2026-10-20) ─── */}
+        <section id="merit-demerit" className="py-12 md:py-16 bg-[#FBF7F2]">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              ブルーミーライフ（bloomee）のメリット・デメリット｜公式情報で整理
+            </h2>
+            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+              ブルーミー（旧ブルーミーライフ）のメリットは、ポストに届く受け取りやすさ、花代980円からの始めやすさ、4回目以降は週単位で停止・再開できる柔軟さです。
+              デメリットは、送料が毎回別にかかること、最初の4回の受け取りが必要なこと、お試し・グリーンは日時指定ができず花も選べないことです。
+              以下は、2026年10月20日に公式サイト（トップページのよくある質問・特定商取引法に基づく表記）で確認した内容だけを項目ごとに整理したものです。
+            </p>
+            <div className="table-wrapper overflow-x-auto rounded-xl border border-[#E5E5E5] bg-white mb-4">
+              <table className="w-full text-sm text-[#555]">
+                <thead className="bg-[#E8F0EB] text-[#333]">
+                  <tr>
+                    <th className="px-3 py-2 text-left font-bold">項目</th>
+                    <th className="px-3 py-2 text-left font-bold">メリット</th>
+                    <th className="px-3 py-2 text-left font-bold">デメリット</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["受け取り", "お試し・グリーンはポストに半投函で届き、不在でも受け取れる", "お試し・グリーンは水〜金曜のお届けで日付・時間の指定は不可。一部エリアは宅配便"],
+                    ["料金", "花代980円/回から（お試し・グリーン）。月額ではなく配送ごとの決済", "送料が毎回別（385円、ベーシックは550円）。お試しは送料込みで1,365円/回"],
+                    ["契約の条件", "半年・1年などの長期契約はない。4回目以降は週単位でストップ・再開でき、隔週への変更や特定の週のスキップもできる", "最初の4回は受け取りが前提。4回未満で解約すると「4回分のうち残回数分の商品代金」が途中解約料になり、4回目までは隔週に変更できない"],
+                    ["花の内容", "市場で仕入れた季節の花を束ねて届ける。ガイドブックと栄養剤が同封される", "花の組み合わせ・色味はおまかせで選べない。サイズ目安はお試し・グリーンが約18〜25cm、ベーシックが約25〜30cm"],
+                    ["品質の保証", "定期便は到着予定日から2週間以内に問い合わせフォームで連絡し、不具合が認められれば返金または代品発送", "問い合わせフォームからの申請が必要で、期限を過ぎると対象外"],
+                    ["支払い方法", "クレジットカードまたはAmazon Payで支払える", "銀行振込・コンビニ払い・キャリア決済・電子マネー・デビットカードは使えない（PayPayは定期購入では使えない）"],
+                    ["お届けエリア", "本州・北海道・四国・九州・沖縄本島に届く", "離島は対象外"],
+                    ["プレゼント", "「プレゼントとして送る」を選ぶと自分以外の住所に届け、送り主の名前を登録できる", "2か所以上に届ける場合は、別のメールアドレスでそれぞれ登録が必要"],
+                  ].map(([k, m, d]) => (
+                    <tr key={k} className="border-t border-[#EEE] align-top">
+                      <td className="px-3 py-2 font-medium text-[#333] whitespace-nowrap">{k}</td>
+                      <td className="px-3 py-2">{m}</td>
+                      <td className="px-3 py-2">{d}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#999] leading-relaxed">
+              出典：<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="underline">bloomee公式サイト（よくある質問）</a>・<a href="https://bloomeelife.com/contacts/law" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（いずれも2026年10月20日確認）。料金は公式の料金表（継続コース）の値です。口コミで多い評価・不満は、次の「メリット（良い評判の理由）」「デメリット（悪い評判の理由）」でご説明します。
+            </p>
           </div>
         </section>
 

@@ -25,7 +25,7 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
     id: "bloomee",
     shortName: "bloomee（ブルーミー）",
     verdictTitle: "bloomeeの口コミで評価される点と4回継続の前提",
-    updatedAt: "2026年10月15日",
+    updatedAt: "2026年10月20日",
     verdict:
       "ポスト投函で受け取れる手軽さと「花代980円〜」の始めやすさを評価する声が多い一方、口コミサイトでは「花がしおれていた・同じ花が続く」「最初の4回は解約できず、途中解約料がかかる」「解約がわかりにくい」といった厳しい声も目立ちます。4回（お試しなら送料込みで総額5,460円）受け取ることを前提とする場合は有力な候補ですが、1〜2回だけ試したい方には適していません。",
     intro:
@@ -60,6 +60,8 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
       { label: "bloomee公式トップ（料金表・お届け方法）", url: "https://bloomeelife.com/", note: "運営：ユーザーライク株式会社。プランはお試し・グリーン・ベーシックの3つです（「体験」「レギュラー」の表記はありません）", checkedAt: "2026年10月15日" },
       { label: "かおりハピネス（kaori-happiness.jp）のお試しプラン4回レビュー", url: "https://kaori-happiness.jp/bloomee-review/", note: "2022年9月に4回受け取った記録です。届いた花の種類・状態を回ごとに記録しています", checkedAt: "2026年10月15日" },
       { label: "メモノテ（memo-note.jp）のbloomee 1年利用レビュー", url: "https://memo-note.jp/bloomee/", note: "季節ごとの花持ち・問い合わせ対応の体験", checkedAt: "2026年10月15日" },
+      { label: "Nana's Petunia（nanas-petunia.com）のお試しプラン4回レビュー", url: "https://nanas-petunia.com/bloomee_review/", note: "4回分の花材・本数・梱包を記録（記事内の情報は2026年3月時点）", checkedAt: "2026年10月20日" },
+      { label: "GFGreen お花（gfgreenblog.com）のブルーミー約3年半利用レビュー", url: "https://gfgreenblog.com/bloomee/bloomee-review/", note: "花の長さ・花持ち・ボリュームの変化を記録", checkedAt: "2026年10月20日" },
     ],
     observations: {
       title: "利用者のレビュー記事からわかる「花持ち」と届く花",
@@ -68,6 +70,8 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
         { text: "お試しプランを4回受け取った記録では、各回3種類の花材（例：スターチス・モカラ・アイビー）が届き、花持ちは1週間〜10日程度でした。種類によっては、1週間もたずに傷み始めたものもありました。同封物は栄養剤と「はじめてガイド」です。記事内では、2024年3月1日に体験プランがお試しプランに変わり、レギュラー・リッチプランは廃止されたと説明されています。", source: "かおりハピネス「ブルーミーお試しプランを試したので本音レビュー」", url: "https://kaori-happiness.jp/bloomee-review/", checkedAt: "2026年10月15日" },
         { text: "1年間利用した記録では、切り花の花持ちは夏場（6〜9月ごろ）で約1週間、冬場（12〜3月ごろ）で約2週間でした。夏季のグリーンプランは、2か月ほど持ったとのことです。届いた当日に「萎れている」と連絡した回は1回分が無料になりましたが、届いて2日後の連絡には対応されませんでした。", source: "メモノテ「bloomee体験レビュー｜1年使って感じた効果とデメリット」", url: "https://memo-note.jp/bloomee/", checkedAt: "2026年10月15日" },
         { text: "5回受け取った記録では、1回目は3〜4日目から元気がなくなった一方、バラが届いた回は約2週間飾れたなど、回によって差がありました。届いた花の種類は4〜7種類です（旧プランを含む2021年の記録）。", source: "サブスクスタイル「ブルーミーの口コミ・評判は？5回使った本音レビュー」", url: "https://subsc-style.jp/bloomee-kuchikomi/", checkedAt: "2026年10月15日" },
+        { text: "お試しプランを4回受け取った記録（2026年3月時点の情報として掲載）では、4回とも花は4本で、箱は約25cm、ポストに半分ほど差し込まれた形で届き、切り口には保水ジェルが塗られていました。筆者は「最初は少ないかと思ったが、1本1本の花つきがよく寂しい感じはなかった」と記しています。こまめに水を替えて約3週間きれいな状態が続いた回もありました。", source: "Nana's Petunia「bloomee(ブルーミー)の花の定期便を徹底検証｜実際に使った本音レビュー」", url: "https://nanas-petunia.com/bloomee_review/", checkedAt: "2026年10月20日" },
+        { text: "お試しプラン（旧レギュラープラン）を約3年半利用した記録では、花の長さは20〜25cmほど、花持ちはおおむね2週間（季節・種類による）でした。利用開始（2021年春）から1年半ほどは鮮度・アレンジやボリュームにばらつきがあり、その後は落ち着いたと記されています。公式サイトの写真と比べてボリュームに差は感じなかったとのことです。", source: "GFGreen お花「ブルーミーを3年半利用した感想と分かったこと」", url: "https://gfgreenblog.com/bloomee/bloomee-review/", checkedAt: "2026年10月20日" },
       ],
     },
   },
@@ -75,9 +79,9 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
     id: "andplants",
     shortName: "AND PLANTS（アンドプランツ）",
     verdictTitle: "AND PLANTSの口コミで評価される梱包・植物の状態と不満点",
-    updatedAt: "2026年10月17日",
+    updatedAt: "2026年10月20日",
     verdict:
-      "「アンドプランツ」の口コミは観葉植物の通販としての声が大半で、梱包の丁寧さ・植物の状態の良さ・発送前に写真で確認できる点が高評価、価格の高さ・品切れ・コバエや茎折れの報告が不満点です。花の定期便（2026年5月から「AND FLOWER」ブランド）は送料込み1,980円〜・いつでも解約できる都度払いで、実際に注文した記事では「傷や折れがなく届いた」「咲きかけの花が数日で満開になった」と状態の良さが評価される一方、「次回の決済前に手続きが必要」「イメージよりボリュームが少ない」という声もあります（2026年10月15日確認）。楽天市場の公式ショップ「【公式】アンドプランツ」のショップ評価は4.77（752件）で、観葉植物を中心としたショップ全体の評価です（多くの商品に「レビュー特典あり」の表示があります。2026年10月17日確認）。",
+      "「アンドプランツ」の口コミは観葉植物の通販としての声が大半で、梱包の丁寧さ・植物の状態の良さ・発送前に写真で確認できる点が高評価、価格の高さ・品切れ・コバエや茎折れの報告が不満点です。花の定期便（2026年5月から「AND FLOWER」ブランド）は送料込み1,980円〜・いつでも解約できる都度払いで、実際に注文した記事では「傷や折れがなく届いた」「咲きかけの花が数日で満開になった」と状態の良さが評価される一方、「次回の決済前に手続きが必要」「イメージよりボリュームが少ない」という声もあります（2026年10月15日確認）。楽天市場の公式ショップ「【公式】アンドプランツ」のショップ評価は4.77（756件）で、観葉植物を中心としたショップ全体の評価です（多くの商品に「レビュー特典あり」の表示があります。2026年10月20日確認）。花を単品で注文できる公式アプリ「アンドフラワー」の App Store 評価は4.6（33件）で、こちらも定期便だけの評価ではありません（2026年10月20日確認）。",
     intro:
       "アンドプランツは観葉植物の通販が本業で、花の定期便はその一部です。口コミも観葉植物についてのものが中心のため、観葉植物と花の定期便に分けて、出典を示しながら傾向を整理しました。",
     positive: [
@@ -108,9 +112,10 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
       { label: "AND PLANTS公式 花の定期便ページ", url: "https://andplants.jp/collections/subscription-flower", note: "プラン・頻度・解約・スキップ条件", checkedAt: "2026年10月14日" },
       { label: "AND PLANTS公式 返品・交換規定", url: "https://andplants.jp/pages/returned", note: "生花1日以内・観葉植物14日以内", checkedAt: "2026年10月14日" },
       { label: "PR TIMES「AND FLOWER」ブランド独立のお知らせ（株式会社Domuz）", url: "https://prtimes.jp/main/html/rd/p/000000080.000048183.html", checkedAt: "2026年10月14日" },
-      { label: "楽天市場「【公式】アンドプランツ」ショップ評価", url: "https://www.rakuten.co.jp/andplants/", note: "ショップ評価4.77（752件）。観葉植物を中心としたショップ全体の評価で、多くの商品ページに「レビュー特典あり」の表示", checkedAt: "2026年10月17日" },
+      { label: "楽天市場「【公式】アンドプランツ」ショップ評価", url: "https://www.rakuten.co.jp/andplants/", note: "ショップ評価4.77（756件）。観葉植物を中心としたショップ全体の評価で、多くの商品ページに「レビュー特典あり」の表示", checkedAt: "2026年10月20日" },
       { label: "AND PLANTS公式 アンドフラワーアプリの案内ページ", url: "https://andplants.jp/pages/andflower-app", note: "1,980円から（送料無料の表記）・新商品を日替わりで発売・到着日を指定可能・沖縄と離島は対象外・到着時に枯れていた場合は交換か返金", checkedAt: "2026年10月17日" },
       { label: "花と私（hanatowatashi.com）のAND PLANTS花の定期便 注文レビュー", url: "https://hanatowatashi.com/and-plants/", note: "ミディアムプランを注文した記録です。届いた本数・花材・梱包を写真で記録し、X投稿1件を引用しています", checkedAt: "2026年10月15日" },
+      { label: "App Store「アンドフラワー お花の通販・花束が届く花屋アプリ」（DOMUZ CO., LTD.）", url: "https://apps.apple.com/jp/app/id6751482449", note: "評価4.6（33件）。単品注文のアプリの評価で、花の定期便の評価ではありません。Google Play 版は評価の表示がありませんでした", checkedAt: "2026年10月20日" },
       { label: "あはよくば50（はてなブログ）のアンドプランツ花の定期便 口コミ記事", url: "https://awayokuba50.hatenablog.com/entry/2025/02/12/154105", note: "ネット上の口コミの要約（投稿元の明記なし）", checkedAt: "2026年10月15日" },
     ],
     observations: {

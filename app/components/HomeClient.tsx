@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { SERVICES } from "@/data/services";
+import { HOME_FAQ } from "@/data/homeFaq";
 
 /** 比較表用：services.ts（単一データソース）から安い順 */
 const COMPARE_ROWS = [...SERVICES].sort((a, b) => a.cheapest.price - b.cheapest.price);
@@ -223,49 +224,9 @@ const services = [
   },
 ];
 
-/* ─── FAQ Data ─── */
-const faqItems = [
-  {
-    q: "お花の定期便とは何ですか？",
-    a: "お花の定期便（花のサブスク）とは、定期的に自宅にお花が届くサブスクリプションサービスです。専門のスタッフが選んだ季節のお花が毎回届くため、花屋に行く手間がかからず、常に新鮮なお花を楽しめます。",
-  },
-  {
-    q: "お花の定期便の相場はどれくらいですか？",
-    a: "お花の定期便の相場は、1回あたり700円〜5,000円程度です。最安はmedeluの748円/回、bloomeeは花代980円/回からとなっています。送料込みの総額で比較することが大切です。",
-  },
-  {
-    q: "ポスト投函と手渡し、どちらがいいですか？",
-    a: "不在が多い方には、ポスト投函をおすすめします。ポスト投函は、bloomee（お試し・グリーンプラン）、medelu（Mini・Lite）、hanameku（ライトプラン）などで対応しています。ただし、ポスト投函は花のボリュームに限りがあるため、大きなアレンジを楽しみたい方は、手渡しのサービスをお選びください。",
-  },
-  {
-    q: "お花はどれくらい持ちますか？",
-    a: "一般的に、届いたお花は適切に手入れをすれば、1週間〜10日程度楽しめます。季節や花の種類によって差があるため、付属の栄養剤を使い、水をこまめに替えることが大切です。",
-  },
-  {
-    q: "解約は簡単にできますか？",
-    a: "サービスによって異なります。medeluとAND PLANTSは最低回数の記載がなく、hanamekuは初回（1回目）のみ解約できません。bloomeeは最初の4回の受け取りが必要で、4回未満の解約は途中解約料がかかります。締切はサービスごとに異なるため、各サービスの解約ガイドで確認してください。",
-  },
-  {
-    q: "届くお花の種類は選べますか？",
-    a: "基本的にお花の種類はプロにおまかせとなります。ただし、medeluではお部屋の雰囲気に合わせた3コース（ANYROOM/MODERN/NATURAL）から選べるため、好みのテイストに近いお花が届きやすくなっています。",
-  },
-  {
-    q: "お花が傷んで届いた場合はどうなりますか？",
-    a: "多くのサービスに品質保証制度があります。例えば、bloomeeの定期便は到着から2週間以内の連絡で返金・交換の対象（公式・特定商取引法に基づく表記）、medeluは到着当日中に写真を送れば全額返金です。各サービスの保証制度は、申し込み前にご確認ください。",
-  },
-  {
-    q: "一人暮らしでも利用できますか？",
-    a: "利用できます。一人暮らしの方にも適しており、ポスト投函に対応したbloomeeやmedeluであれば不在時でも受け取れます。少量のプランを選べば、お花の手入れの負担も少なく楽しめます。",
-  },
-  {
-    q: "プレゼントとして送ることはできますか？",
-    a: "一部のサービスではギフト対応が可能です。bloomeeは申込時に「プレゼントとして送る」を選ぶと自分以外の住所に届けられ、AND PLANTSの定期便も配送先を相手の住所にすれば贈れます（ラッピング・メッセージカードは不可）。いずれも2026年10月15日に公式サイトで確認しました。",
-  },
-  {
-    q: "お花の定期便を選ぶ際に最も重要なポイントは？",
-    a: "最も重要なのは、続けやすさです。料金、送料、届く頻度、受け取り方法、解約条件の5つを総合的に確認し、ご自身の生活に合ったサービスをお選びください。まずは安いプランやお試しから始めることをおすすめします。",
-  },
-];
+/* ─── FAQ Data（data/homeFaq.ts） ─── */
+const faqItems = HOME_FAQ;
+
 
 /* ─── Purpose Recommendations ─── */
 const purposes = [
@@ -460,9 +421,8 @@ export default function HomeClient() {
                 </span>
               </h1>
               <p className="text-base md:text-lg text-[#6B5F57] leading-relaxed mb-10 max-w-md">
-                人気のお花の定期便5社を比較しています。
-                ご自身の生活に合った
-                サービス選びにご活用ください。
+                お花のサブスク（お花の定期便）を、送料込みの料金・届き方・回数の条件で比較しています。
+                ご自身の生活に合ったサービス選びにご活用ください。
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -486,6 +446,36 @@ export default function HomeClient() {
         <div className="flower-divider">
           <span className="text-[#C4877A] text-lg">❀</span>
         </div>
+
+        {/* ─── 比較の要点（2026-10-20） ─── */}
+        <section id="summary-compare" className="py-12 bg-[#FBF8F4]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="heading-serif text-2xl md:text-3xl font-bold text-[#3D3632] mb-4 text-center">
+              お花のサブスク4社を比較してわかる違い
+            </h2>
+            <p className="text-sm md:text-base text-[#6B5F57] leading-relaxed mb-6">
+              送料込みの1回あたりの料金で比べると、最も安いのは{shortName(COMPARE_ROWS[0].name)}の{COMPARE_ROWS[0].cheapest.name} {COMPARE_ROWS[0].cheapest.price.toLocaleString("ja-JP")}円です。
+              bloomeeは花代980円が最安ですが送料385円が別にかかり、送料込みでは1,365円になります。
+              回数の条件は、medelu・AND PLANTSが最低回数の記載なし、bloomeeが最初の4回の受け取りが前提、hanamekuが初回（1回目）の解約不可です。
+            </p>
+            <div className="grid sm:grid-cols-2 gap-3 text-sm">
+              {[
+                ["送料込みで安さを重視する", "medelu Mini 748円（3〜4本・ポスト投函）", "/services/medelu/"],
+                ["不在でもポストで受け取りたい", "bloomee（お試し・グリーン）・medelu（Mini・Lite）・hanameku（ライト）", "/compare/post-delivery/"],
+                ["回数の条件なしでボリュームも欲しい", "AND PLANTS Standard 1,980円（送料込み・6〜8本・宅配）", "/services/and-plants/"],
+                ["まず4回続けて試せる", "bloomee お試しプラン 4回で総額5,460円（送料込み）", "/services/bloomee/"],
+              ].map(([k, v, href]) => (
+                <a key={k} href={href} className="block rounded-xl border border-[#E8E0D8] bg-white p-4 hover:border-[#C4877A] transition">
+                  <span className="block text-xs text-[#9B8F87] mb-1">{k}</span>
+                  <span className="font-medium text-[#3D3632]">{v}</span>
+                </a>
+              ))}
+            </div>
+            <p className="text-xs text-[#9B8F87] mt-4">
+              ※ 料金・条件は各社の公式サイトで2026年10月14日〜17日に確認した表示額・表記です。詳しくは下の比較表をご覧ください。
+            </p>
+          </div>
+        </section>
 
         {/* ─── Quick Diagnosis ─── */}
         <section id="diagnosis" className="py-20 bg-white">
@@ -648,7 +638,7 @@ export default function HomeClient() {
             <div className="text-center mb-12">
               <p className="text-sm text-[#C4877A] tracking-widest mb-3">COMPARISON</p>
               <h2 className="heading-serif text-3xl md:text-4xl font-bold text-[#3D3632] mb-4">
-                お花の定期便 主要4社の料金比較表
+                お花のサブスク 主要4社の比較表（送料込み料金・届き方・回数の条件）
               </h2>
               <p className="text-[#6B5F57]">
                 料金・送料・届き方を一覧で比較できます
