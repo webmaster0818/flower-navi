@@ -413,7 +413,7 @@ export default function ShoboboiGuidePage() {
               <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
                 <h3 className="font-bold text-[#333] mb-2">② 同じプランの写真を複数比較する</h3>
                 <p className="text-sm text-[#666] leading-relaxed">
-                  季節や提携花屋によって、届く花は変わります。<strong>同じプランの実物写真を最低5パターン</strong>確認し、平均的なボリュームを把握してください。最も良い事例だけを基準にすると、「しょぼい」と感じやすくなります。
+                  季節によって、届く花は変わります。<strong>同じプランの実物写真を最低5パターン</strong>確認し、平均的なボリュームを把握してください。最も良い事例だけを基準にすると、「しょぼい」と感じやすくなります。
                 </p>
               </div>
               <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">

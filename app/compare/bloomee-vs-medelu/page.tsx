@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "プレゼントとして贈るならどちらがおすすめですか？",
-    a: "プレゼント用途にはbloomeeが適しています。bloomeeには「花の定期便ギフトチケット」があり、相手に好きなタイミングでお花の定期便を始めてもらえます。medeluにはギフト専用の仕組みがないため、贈り物として利用する場合はbloomeeをおすすめします。",
+    a: "bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluのギフトでの申し込み方法は、公式サイトでご確認ください。",
   },
   {
     q: "途中でプラン変更はできますか？",
@@ -52,7 +52,7 @@ export default function BloomeeVsMedeluPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs medelu 比較\",\"description\":\"bloomeeとmedeluの料金・評判・選び方を比較し、解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-medelu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluはどちらが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのLiteコースは748円（送料無料）、bloomeeのお試しプランは980円＋送料385円＝1,365円です。同じポスト投函の最安プランでも、1回あたり約667円の差があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluの花の品質に違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"口コミでは、bloomeeについて「しおれていた・同じ花が続く」など品質のばらつきを指摘する声が多く見られます。medeluについては「センスが良い・長持ちする」という声が多い一方、「暑い時期は花持ちが短い」という声もあります。品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換（特商法）、medeluは到着当日中に写真を送れば送料込みで全額返金（交換なし）です（2026年10月14日 公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの最低4回の受け取り条件とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、残り回数分の料金が違約金として発生します。お試しプランの場合、最低でも1,365円×4回＝5,460円の利用が必要です。medeluにはこのような回数の条件はなく、いつでも解約できます。\"}},{\"@type\":\"Question\",\"name\":\"medeluに回数の条件はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには回数の条件はありません。初回から解約でき、マイページからいつでも解約手続きが可能です。最低利用回数や違約金の設定がないため、試しに利用しやすい点がmedeluの利点です。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアに違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島を除く日本全国に配送対応しています。medeluも日本全国に対応していますが、一部離島や配送困難な地域は対象外となる場合があります。どちらもポスト投函プランは日本郵便を利用しており、対応エリアに大きな差はありません。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈るならどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"プレゼント用途にはbloomeeが適しています。bloomeeには「花の定期便ギフトチケット」があり、相手に好きなタイミングでお花の定期便を始めてもらえます。medeluにはギフト専用の仕組みがないため、贈り物として利用する場合はbloomeeをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"途中でプラン変更はできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どちらもマイページからプラン変更が可能です。bloomeeはお試し・グリーン・ベーシックの各プラン間で変更でき、配送頻度（毎週・隔週）も変更可能です。medeluもMini・Lite・Lite+・Basicの各コース間で変更でき、配送頻度は隔週・毎週から選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedelu、両方試してから決めることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可能です。ただし、bloomeeには最低4回の受け取り条件があるため、試しに利用する場合でも最低4回分の料金が発生します。回数の条件がないmedeluを先に利用し、その後bloomeeを検討すると、費用面の負担を抑えられます。medeluは1回受け取っただけでも解約できるため、試験的な利用に向いています。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluはどちらが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのLiteコースは748円（送料無料）、bloomeeのお試しプランは980円＋送料385円＝1,365円です。同じポスト投函の最安プランでも、1回あたり約667円の差があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluの花の品質に違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"口コミでは、bloomeeについて「しおれていた・同じ花が続く」など品質のばらつきを指摘する声が多く見られます。medeluについては「センスが良い・長持ちする」という声が多い一方、「暑い時期は花持ちが短い」という声もあります。品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換（特商法）、medeluは到着当日中に写真を送れば送料込みで全額返金（交換なし）です（2026年10月14日 公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの最低4回の受け取り条件とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、残り回数分の料金が違約金として発生します。お試しプランの場合、最低でも1,365円×4回＝5,460円の利用が必要です。medeluにはこのような回数の条件はなく、いつでも解約できます。\"}},{\"@type\":\"Question\",\"name\":\"medeluに回数の条件はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには回数の条件はありません。初回から解約でき、マイページからいつでも解約手続きが可能です。最低利用回数や違約金の設定がないため、試しに利用しやすい点がmedeluの利点です。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアに違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島を除く日本全国に配送対応しています。medeluも日本全国に対応していますが、一部離島や配送困難な地域は対象外となる場合があります。どちらもポスト投函プランは日本郵便を利用しており、対応エリアに大きな差はありません。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈るならどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluのギフトでの申し込み方法は、公式サイトでご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"途中でプラン変更はできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どちらもマイページからプラン変更が可能です。bloomeeはお試し・グリーン・ベーシックの各プラン間で変更でき、配送頻度（毎週・隔週）も変更可能です。medeluもMini・Lite・Lite+・Basicの各コース間で変更でき、配送頻度は隔週・毎週から選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedelu、両方試してから決めることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可能です。ただし、bloomeeには最低4回の受け取り条件があるため、試しに利用する場合でも最低4回分の料金が発生します。回数の条件がないmedeluを先に利用し、その後bloomeeを検討すると、費用面の負担を抑えられます。medeluは1回受け取っただけでも解約できるため、試験的な利用に向いています。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -169,10 +169,6 @@ export default function BloomeeVsMedeluPage() {
                   <li className="flex items-start gap-2">
                     <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
                     <span>ギフトとしてお花の定期便を贈りたい</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
-                    <span>全国の提携花屋によるアレンジを楽しみたい</span>
                   </li>
                 </ul>
               </div>
@@ -445,8 +441,7 @@ export default function BloomeeVsMedeluPage() {
               </div>
             </div>
             <p className="text-sm md:text-base text-[#666] leading-relaxed">
-              花の鮮度は、両サービスの仕組みの違いによって差が出ます。bloomeeは提携花屋がそれぞれアレンジして発送するため、花屋ごとの品質差が出やすい面があります。
-              一方、medeluは自社で一括して市場から仕入れ、品質管理を行っているため、安定した鮮度の花が届きやすい傾向にあります。
+              bloomeeは、市場で仕入れた花を束ねて届けると案内しています（2026年10月20日公式確認）。
               なお品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換、medeluは到着当日中の写真送付で全額返金（交換なし）と条件が異なります。
             </p>
           </div>
@@ -465,7 +460,7 @@ export default function BloomeeVsMedeluPage() {
                   <li>専用アプリあり（iOS/Android）</li>
                   <li>届いた花の名前やお手入れ方法を確認できる</li>
                   <li>品質保証の申請もアプリから可能</li>
-                  <li>ギフトチケットの購入・送付機能あり</li>
+                  <li>お届け先の入力画面で「プレゼントとして送る」を選べる</li>
                   <li>スキップ・プラン変更もアプリで操作可能</li>
                 </ul>
               </div>
@@ -476,13 +471,12 @@ export default function BloomeeVsMedeluPage() {
                   <li>マイページでプラン変更・スキップが可能</li>
                   <li>花の情報はメールで届く</li>
                   <li>シンプルなサービス設計</li>
-                  <li>ギフト専用機能はなし</li>
-                </ul>
+                                  </ul>
               </div>
             </div>
             <p className="text-sm md:text-base text-[#666] leading-relaxed">
               サービスの充実度ではbloomeeが上回っています。bloomeeは専用アプリがあり、届いた花の情報確認、品質保証の申請、スキップやプラン変更まですべてアプリ内で完結します。
-              またギフトチケット機能があるため、プレゼント用途にも対応しています。
+              また、お届け先の入力画面で「プレゼントとして送る」を選べるため、プレゼントにも利用できます。
               medeluは専用アプリがなくWebマイページでの管理となりますが、必要な機能は揃っており、シンプルに利用したい方には使いやすい設計です。
             </p>
           </div>
@@ -591,7 +585,7 @@ export default function BloomeeVsMedeluPage() {
                 {
                   scenario: "プレゼントとして贈る場合",
                   recommend: "bloomee",
-                  reason: "プレゼント用途にはbloomeeが最も適しています。bloomeeにはギフトチケット機能があり、相手に好きなタイミングでお花の定期便を始めてもらえます。知名度が高いため贈られた側も安心感があり、見栄えのよいアレンジは喜ばれやすい傾向があります。medeluにはギフト専用の仕組みがありません。",
+                  reason: "bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluのギフトでの申し込み方法は、公式サイトでご確認ください。",
                 },
                 {
                   scenario: "費用を重視する場合",
@@ -636,7 +630,7 @@ export default function BloomeeVsMedeluPage() {
                   <ul className="text-sm text-[#666] space-y-2">
                     <li>-- 知名度が高く安心感がある</li>
                     <li>-- 専用アプリで便利に管理できる</li>
-                    <li>-- ギフトチケットでプレゼントに使える</li>
+                    <li>-- 「プレゼントとして送る」で相手の住所に届けられる</li>
                                         <li>-- SNSで情報収集しやすい</li>
                     <li>-- 定期便は2週間以内の連絡で返金・交換（特商法）</li>
                   </ul>

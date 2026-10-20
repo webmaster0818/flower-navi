@@ -153,22 +153,24 @@ export default async function VsPage({ params }: Props) {
           </section>
 
           {/* Real cases */}
-          <section className="mb-12">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">
-              {v.realCasesTitle}
-            </h2>
-            <p className="text-xs text-[#999] mb-6">※公式情報やSNS上の口コミをもとに、編集部が傾向を整理した代表的なケースです。特定の個人の体験談ではありません。</p>
-            <div className="space-y-3">
-              {v.realCases.map((c, i) => (
-                <div key={i} className="bg-white border border-[#E8E0D8] rounded-xl p-5">
-                  <p className="text-xs text-[#999] mb-1">{c.author}</p>
-                  <p className="text-sm text-[#666] leading-relaxed mb-2"><strong>状況：</strong> {c.situation}</p>
-                  <p className="text-sm text-[#4A7C59] font-bold mb-1">選んだサービス：{c.chose}</p>
-                  <p className="text-sm text-[#333] leading-relaxed">{c.outcome}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          {v.realCases.length > 0 && (
+            <section className="mb-12">
+              <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">
+                {v.realCasesTitle}
+              </h2>
+              <p className="text-xs text-[#999] mb-6">※公式情報やSNS上の口コミをもとに、編集部が傾向を整理した代表的なケースです。特定の個人の体験談ではありません。</p>
+              <div className="space-y-3">
+                {v.realCases.map((c, i) => (
+                  <div key={i} className="bg-white border border-[#E8E0D8] rounded-xl p-5">
+                    <p className="text-xs text-[#999] mb-1">{c.author}</p>
+                    <p className="text-sm text-[#666] leading-relaxed mb-2"><strong>状況：</strong> {c.situation}</p>
+                    <p className="text-sm text-[#4A7C59] font-bold mb-1">選んだサービス：{c.chose}</p>
+                    <p className="text-sm text-[#333] leading-relaxed">{c.outcome}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* FAQ */}
           <section className="mb-12">

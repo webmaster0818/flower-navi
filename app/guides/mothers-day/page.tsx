@@ -7,15 +7,15 @@ import Header from "@/app/components/Header";
 const faqItems = [
   {
     q: "花のサブスクを母の日ギフトとして贈ることはできますか？",
-    a: "はい、多くのサービスがギフトに対応しています。bloomeeではギフトチケットを購入して贈ることができ、受け取った方がお好きなタイミングで花の定期便を開始できます。HitoHanaではメッセージカードを添えて届け先を指定でき、AND PLANTSもギフト対応に注力しています。",
+    a: "はい、届け先をお母さんの住所にして申し込めば贈ることができます。bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、送り主の名前を登録できます。AND PLANTSは、注文時の配送先をお母さんの住所、請求先をご自身の住所にします（2026年10月20日公式確認）。HitoHanaのギフトでの申し込み方法は、公式サイトでご確認ください。",
   },
   {
     q: "母の日ギフトにおすすめの予算はいくらですか？",
-    a: "花のサブスクのギフトでは、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットは金額を選択でき、HitoHanaでは1回あたり1,320〜4,950円（Lite〜LL）のプランから選べます。1回分だけでなく、3か月分をまとめて贈る方法もおすすめです。",
+    a: "予算は、1回あたりの料金と贈る回数で決まります。bloomeeのお試しプランは1回1,365円（花代980円＋送料385円）で、最初の4回分のお届けが約束されているため、4回分の5,460円が目安です。AND PLANTSは1回1,980円（送料込み）で、解約はいつでも可能です（2026年10月20日公式確認）。HitoHanaでは1回あたり1,320〜4,950円（Lite〜LL）のプランから選べます。",
   },
   {
     q: "母の日に届くように日付を指定できますか？",
-    a: "対応はサービスによって異なります。HitoHanaでは配送日を指定でき、母の日当日に届けることができます。bloomeeのギフトチケットは、受け取った方がご自身で開始日を設定するため、配送日を指定するのではなく、チケットそのものを母の日に渡す形になります。AND PLANTSも配送日の相談が可能です。",
+    a: "対応はサービスによって異なります。HitoHanaの定期便はお届け日を選んで申し込めます（選べない日もあります）。bloomeeのお試しプラン・グリーンプランは水〜金曜日のお届けで日付は指定できず、ベーシックプランは水〜日曜日の中から日付と時間帯を指定できます。AND PLANTSは金〜日曜日の中から配送日を選べます（2026年10月20日公式確認）。",
   },
   {
     q: "遠方の母に贈ることはできますか？",
@@ -23,7 +23,7 @@ const faqItems = [
   },
   {
     q: "母がお花のサブスクを気に入らなかった場合、解約できますか？",
-    a: "回数の条件がないサービス（medelu、AND PLANTS、HitoHanaなど）であれば、いつでも解約できます。bloomeeには4回の最低受け取り回数がありますが、ギフトチケットの場合はチケット分の回数のみで、自動更新はされません。ギフトとして贈る場合は、回数が限定されているプランやチケットを選ぶと、お母さんが気軽に試せます。",
+    a: "回数の条件がないサービス（medelu、AND PLANTS、HitoHanaなど）であれば、いつでも解約できます。bloomeeは最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます（2026年10月20日公式確認）。贈り主が申し込んだ場合、停止・解約の手続きは贈り主が行います。",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function MothersDayGuidePage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"母の日に贈るおすすめの花のサブスク\",\"description\":\"母の日に贈る花のサブスクについて、おすすめのサービス・料金・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/mothers-day/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクを母の日ギフトとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスがギフトに対応しています。bloomeeではギフトチケットを購入して贈ることができ、受け取った方がお好きなタイミングで花の定期便を開始できます。HitoHanaではメッセージカードを添えて届け先を指定でき、AND PLANTSもギフト対応に注力しています。\"}},{\"@type\":\"Question\",\"name\":\"母の日ギフトにおすすめの予算はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花のサブスクのギフトでは、3,000〜5,000円が最も人気の価格帯です。bloomeeのギフトチケットは金額を選択でき、HitoHanaでは1回あたり1,320〜4,950円（Lite〜LL）のプランから選べます。1回分だけでなく、3か月分をまとめて贈る方法もおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"母の日に届くように日付を指定できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"対応はサービスによって異なります。HitoHanaでは配送日を指定でき、母の日当日に届けることができます。bloomeeのギフトチケットは、受け取った方がご自身で開始日を設定するため、配送日を指定するのではなく、チケットそのものを母の日に渡す形になります。AND PLANTSも配送日の相談が可能です。\"}},{\"@type\":\"Question\",\"name\":\"遠方の母に贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、花のサブスクは配送先を指定できるため、離れて暮らすお母さんにも届けられます。ほとんどのサービスが日本全国（一部離島を除く）に対応しているため、遠方でも利用できます。事前にお届け先の住所をご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"母がお花のサブスクを気に入らなかった場合、解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"回数の条件がないサービス（medelu、AND PLANTS、HitoHanaなど）であれば、いつでも解約できます。bloomeeには4回の最低受け取り回数がありますが、ギフトチケットの場合はチケット分の回数のみで、自動更新はされません。ギフトとして贈る場合は、回数が限定されているプランやチケットを選ぶと、お母さんが気軽に試せます。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクを母の日ギフトとして贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、届け先をお母さんの住所にして申し込めば贈ることができます。bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、送り主の名前を登録できます。AND PLANTSは、注文時の配送先をお母さんの住所、請求先をご自身の住所にします（2026年10月20日公式確認）。HitoHanaのギフトでの申し込み方法は、公式サイトでご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"母の日ギフトにおすすめの予算はいくらですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"予算は、1回あたりの料金と贈る回数で決まります。bloomeeのお試しプランは1回1,365円（花代980円＋送料385円）で、最初の4回分のお届けが約束されているため、4回分の5,460円が目安です。AND PLANTSは1回1,980円（送料込み）で、解約はいつでも可能です（2026年10月20日公式確認）。HitoHanaでは1回あたり1,320〜4,950円（Lite〜LL）のプランから選べます。\"}},{\"@type\":\"Question\",\"name\":\"母の日に届くように日付を指定できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"対応はサービスによって異なります。HitoHanaの定期便はお届け日を選んで申し込めます（選べない日もあります）。bloomeeのお試しプラン・グリーンプランは水〜金曜日のお届けで日付は指定できず、ベーシックプランは水〜日曜日の中から日付と時間帯を指定できます。AND PLANTSは金〜日曜日の中から配送日を選べます（2026年10月20日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"遠方の母に贈ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、花のサブスクは配送先を指定できるため、離れて暮らすお母さんにも届けられます。ほとんどのサービスが日本全国（一部離島を除く）に対応しているため、遠方でも利用できます。事前にお届け先の住所をご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"母がお花のサブスクを気に入らなかった場合、解約できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"回数の条件がないサービス（medelu、AND PLANTS、HitoHanaなど）であれば、いつでも解約できます。bloomeeは最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます（2026年10月20日公式確認）。贈り主が申し込んだ場合、停止・解約の手続きは贈り主が行います。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -154,19 +154,19 @@ export default function MothersDayGuidePage() {
               <div className="bg-white rounded-xl p-5 md:p-6 border-2 border-[#C4877A]">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="bg-[#C4877A] text-white text-xs font-bold rounded-lg px-2.5 py-1">おすすめ1</span>
-                  <h3 className="text-base font-bold text-[#333]">bloomee（ブルーミー）のギフトチケット</h3>
+                  <h3 className="text-base font-bold text-[#333]">bloomee（ブルーミー）</h3>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed mb-4">
-                  bloomeeでは、母の日のギフトに適した「花の定期便ギフトチケット」を販売しています。チケットを購入してお母さんに贈ると、お母さんご自身がお好きなタイミングで花の定期便を開始できます。金額も選べるため、予算に合わせて贈ることができます。
+                  bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、お母さんの住所に花を届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。お試しプランは1回1,365円（花代980円＋送料385円）です。
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
                     <p className="text-xs text-[#999]">ギフト形式</p>
-                    <p className="text-sm font-bold text-[#333]">ギフトチケット</p>
+                    <p className="text-sm font-bold text-[#333]">プレゼントとして送る</p>
                   </div>
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">金額</p>
-                    <p className="text-sm font-bold text-[#4A7C59]">選択可能</p>
+                    <p className="text-xs text-[#999]">料金</p>
+                    <p className="text-sm font-bold text-[#4A7C59]">980円/回〜（送料別）</p>
                   </div>
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
                     <p className="text-xs text-[#999]">受け取り</p>
@@ -174,7 +174,7 @@ export default function MothersDayGuidePage() {
                   </div>
                 </div>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">受け取った方がお好きなタイミングで開始できるため、「もう花のサブスクを利用している」「いつ届くかわからないと困る」という方にも安心して贈れます。</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます。贈る期間が終わったら、贈り主が停止の手続きを行います（2026年10月20日公式確認）。</p>
                 </div>
               </div>
 
@@ -185,7 +185,7 @@ export default function MothersDayGuidePage() {
                   <h3 className="text-base font-bold text-[#333]">AND PLANTS（アンドプランツ）</h3>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed mb-4">
-                  AND PLANTSは、プロのフローリストによるおしゃれなアレンジが特徴です。ボリュームのある花束が送料無料で届きます。ギフト対応にも注力しており、届け先を指定することで、お母さんのもとへ直接お届けできます。見栄えが良く、花がお好きなお母さんへのプレゼントに適しています。
+                  AND PLANTSは、プロのフローリストによるおしゃれなアレンジが特徴です。ボリュームのある花束が送料無料で届きます。注文時の配送先をお母さんの住所、請求先をご自身の住所にすると、お母さんのもとへ直接お届けできます。定期便はラッピングとメッセージカードに対応していません（2026年10月20日公式確認）。見栄えが良く、花がお好きなお母さんへのプレゼントに適しています。
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
@@ -251,10 +251,10 @@ export default function MothersDayGuidePage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">3,000円以下のギフト</h3>
                 <p className="text-sm text-[#666] leading-relaxed mb-2">
-                  気軽に贈りたい方に適しています。bloomeeのお試しプランは1回1,365円（花代980円＋送料385円）で、2回分の場合は2,730円が目安です（ギフトチケットの金額・内容は公式サイトでご確認ください）。お試しとして、花のある暮らしを体験していただけます。
+                  気軽に贈りたい方に適しています。AND PLANTSは1回1,980円（送料込み）で、解約はいつでも可能なため、1回分から贈れます（2026年10月20日公式確認）。なお、bloomeeは最初の4回分のお届けが約束されているため、お試しプランでも4回分の5,460円が目安です。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
-                  <p className="text-xs text-[#4A7C59] font-medium">おすすめ：bloomee（お試しプラン2回分の目安 2,730円）</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">おすすめ：AND PLANTS（1回分 1,980円）</p>
                 </div>
               </div>
 
@@ -271,7 +271,7 @@ export default function MothersDayGuidePage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">5,000円以上のギフト</h3>
                 <p className="text-sm text-[#666] leading-relaxed mb-2">
-                  しっかりと感謝を伝えたい方に適しています。HitoHanaの上位プラン3回分や、bloomeeのベーシックプラン3回分（花代2,180円＋送料550円×3回＝8,190円）をおすすめします。3か月にわたって花が届くため、母の日以降も楽しんでいただけます。LIFFTの花束プラン（3,300円）2〜3回分も、特別感のあるギフトになります。
+                  しっかりと感謝を伝えたい方に適しています。HitoHanaの上位プラン3回分や、bloomeeのベーシックプラン4回分（花代2,180円＋送料550円×4回＝10,920円。最初の4回分のお届けが約束されています（2026年10月20日公式確認））をおすすめします。3か月にわたって花が届くため、母の日以降も楽しんでいただけます。LIFFTの花束プラン（3,300円）2〜3回分も、特別感のあるギフトになります。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
                   <p className="text-xs text-[#4A7C59] font-medium">おすすめ：HitoHana 上位プラン3回分 または LIFFT 花束プラン2回分</p>
@@ -308,7 +308,7 @@ export default function MothersDayGuidePage() {
                 {
                   step: "注意 4",
                   title: "自動更新の有無を確認する",
-                  text: "ギフトとして贈る場合は、サブスクの自動更新にご注意ください。bloomeeのギフトチケットは指定回数分で終了しますが、通常の定期便を代理で申し込む場合は、お母さんご自身で解約手続きを行う必要が生じることがあります。解約方法もあわせてお伝えしておくことをおすすめします。",
+                  text: "ギフトとして贈る場合は、定期便が継続する点にご注意ください。贈り主が申し込んだ定期便は、停止・解約の手続きを行うまで続きます。bloomeeは最初の4回分のお届けが約束されており、それ以降は週単位で停止できます（2026年10月20日公式確認）。お母さんご自身の名義で申し込む場合は、解約方法もあわせてお伝えしておくことをおすすめします。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
@@ -417,7 +417,7 @@ export default function MothersDayGuidePage() {
               母の日に花を贈ることは一般的ですが、花のサブスクを贈ることで、<strong>毎月花が届く</strong>という新しい体験をプレゼントできます。一度きりの花束ではなく、数か月にわたって花が届く楽しみを、お母さんに味わっていただけます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              気軽に贈る場合は<strong>bloomeeのギフトチケット</strong>、見栄えを重視する場合は<strong>AND PLANTS</strong>、お母さんの好みに合わせたい場合は<strong>HitoHana</strong>をおすすめします。2026年の母の日は5月10日です。余裕をもって準備することをおすすめします。
+              手軽な価格で贈る場合は<strong>bloomee</strong>（「プレゼントとして送る」で申し込み）、見栄えを重視する場合は<strong>AND PLANTS</strong>、お母さんの好みに合わせたい場合は<strong>HitoHana</strong>をおすすめします。2026年の母の日は5月10日です。余裕をもって準備することをおすすめします。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a

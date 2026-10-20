@@ -1,11 +1,11 @@
 import Header from "@/app/components/Header";
 
 const faqs = [
-  { q: "花のサブスクを敬老の日ギフトとして贈れますか？", a: "はい、多くのサービスがギフトに対応しています。bloomeeはギフトチケットを購入して贈ることができ、受け取った方が希望の時期に定期便を開始できます。HitoHanaはメッセージカードを付けて届け先と配送日を指定でき、AND PLANTSもギフト対応に注力しています。" },
-  { q: "敬老の日当日に届くように指定できますか？", a: "サービスによって異なります。HitoHanaは配送日を指定できるため、敬老の日当日に届けることができます。bloomeeのギフトチケットは受け取った方が開始日を設定する仕組みのため、チケットを敬老の日に渡す形となります。配送が混み合う時期のため、日付を指定する場合は早めのお申し込みをおすすめします。" },
+  { q: "花のサブスクを敬老の日ギフトとして贈れますか？", a: "はい、届け先を祖父母の住所にして申し込めば贈ることができます。bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、送り主の名前を登録できます。AND PLANTSは、注文時の配送先を相手の住所、請求先をご自身の住所にします（2026年10月20日公式確認）。HitoHanaのギフトでの申し込み方法は、公式サイトでご確認ください。" },
+  { q: "敬老の日当日に届くように指定できますか？", a: "サービスによって異なります。HitoHanaの定期便はお届け日を選んで申し込めます（選べない日もあります）。bloomeeのお試しプラン・グリーンプランは水〜金曜日のお届けで日付は指定できず、ベーシックプランは水〜日曜日の中から日付と時間帯を指定できます（2026年10月20日公式確認）。配送が混み合う時期のため、日付を指定する場合は早めのお申し込みをおすすめします。" },
   { q: "離れて暮らす祖父母にも贈れますか？", a: "はい、贈ることができます。花のサブスクは配送先を指定できるため、遠方の祖父母にも届けられます。ほとんどのサービスが日本全国に対応しています（一部離島を除く）。事前にお届け先の住所をご確認ください。" },
   { q: "予算はどのくらいが目安ですか？", a: "花のサブスクのギフトでは、1回あたり3,000〜5,000円が人気の価格帯です。1回分だけでなく3か月分などをまとめて贈ると、敬老の日のあとも長く楽しんでいただけます。" },
-  { q: "気に入ってもらえなかった場合は解約できますか？", a: "回数の条件がないサービス（medelu・AND PLANTS・HitoHana など）は、いつでも解約できます。bloomeeのギフトチケットはチケット分の回数のみで自動更新されないため、受け取った方も負担なく試すことができます。" },
+  { q: "気に入ってもらえなかった場合は解約できますか？", a: "回数の条件がないサービス（medelu・AND PLANTS・HitoHana など）は、いつでも解約できます。bloomeeは最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます（2026年10月20日公式確認）。贈り主が申し込んだ場合、停止・解約の手続きは贈り主が行います。" },
 ];
 
 export default function KeirouNoHiPage() {
@@ -27,7 +27,7 @@ export default function KeirouNoHiPage() {
 
           <div className="bg-white rounded-2xl border border-[#EADFD3] p-5 mb-8">
             <p className="font-bold text-[#7a5] mb-1">2026年の敬老の日に花のサブスクを贈る際の要点</p>
-            <p className="text-sm leading-relaxed">2026年の敬老の日は<strong>9月21日（月・祝）</strong>です。一度きりの花束より、毎月新しい花が届く<strong>花のサブスク</strong>を贈ると、敬老の日のあとも長く楽しんでいただけます。ギフトチケットのあるbloomee、日付指定・メッセージカードに対応したHitoHana、ギフトに対応したAND PLANTSなどが適しています。配送が混み合う時期のため、早めのお申し込みをおすすめします。</p>
+            <p className="text-sm leading-relaxed">2026年の敬老の日は<strong>9月21日（月・祝）</strong>です。一度きりの花束より、毎月新しい花が届く<strong>花のサブスク</strong>を贈ると、敬老の日のあとも長く楽しんでいただけます。「プレゼントとして送る」で申し込めるbloomee、お届け日を選べるHitoHana、配送先を相手の住所にして注文できるAND PLANTSなどが適しています。配送が混み合う時期のため、早めのお申し込みをおすすめします。</p>
           </div>
 
           <section className="mb-8">
@@ -46,11 +46,11 @@ export default function KeirouNoHiPage() {
 
           <section className="mb-8">
             <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">敬老の日ギフトに向いているサービス</h2>
-            <p className="text-sm leading-relaxed text-gray-700 mb-3">ギフトとしての贈りやすさ（チケット・日付指定・メッセージカード・回数の条件の有無）で選ぶことをおすすめします。各サービスの料金・回数の条件・配送の詳細は、比較ページにてご確認ください。</p>
+            <p className="text-sm leading-relaxed text-gray-700 mb-3">ギフトとしての贈りやすさ（申し込み方法・お届け日の指定・回数の条件の有無）で選ぶことをおすすめします。各サービスの料金・回数の条件・配送の詳細は、比較ページにてご確認ください。</p>
             <ul className="space-y-2 text-sm">
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/bloomee/" className="text-[#7a5] font-bold underline">bloomee（ブルーミー）</a>：ギフトチケットで贈ることができ、受け取った方が開始日を選べます</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/hitohana/" className="text-[#7a5] font-bold underline">HitoHana（ヒトハナ）</a>：配送日の指定・メッセージカードに対応しています</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/and-plants/" className="text-[#7a5] font-bold underline">AND PLANTS</a>：ギフト対応に注力しています</li>
+              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/bloomee/" className="text-[#7a5] font-bold underline">bloomee（ブルーミー）</a>：お届け先の入力画面で「プレゼントとして送る」を選ぶと、送り主の名前を登録できます（2026年10月20日公式確認）</li>
+              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/hitohana/" className="text-[#7a5] font-bold underline">HitoHana（ヒトハナ）</a>：定期便はお届け日を選んで申し込めます（選べない日もあります）</li>
+              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/and-plants/" className="text-[#7a5] font-bold underline">AND PLANTS</a>：配送先を相手の住所、請求先をご自身の住所にして注文します（2026年10月20日公式確認）</li>
             </ul>
             <p className="text-sm mt-4"><a href="/compare/cheap/" className="text-[#7a5] underline">→ 料金で選ぶ場合：安い花のサブスクの比較</a></p>
           </section>

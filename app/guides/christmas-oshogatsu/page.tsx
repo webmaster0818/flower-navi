@@ -1,11 +1,11 @@
 import Header from "@/app/components/Header";
 
 const faqs = [
-  { q: "クリスマスに間に合うように花のサブスクを始められますか？", a: "配送日を指定できるサービス（HitoHana など）であれば、クリスマス当日に合わせて届けられます。bloomeeはギフトチケットを渡す形となります。ただし12月は配送が最も混み合う時期のため、遅くとも1〜2週間前までのお申し込みをおすすめします。" },
+  { q: "クリスマスに間に合うように花のサブスクを始められますか？", a: "お届け日を選べるサービスであれば、クリスマスに合わせて申し込めます。HitoHanaの定期便はお届け日を選んで申し込めます（選べない日もあります）。bloomeeのベーシックプランは水〜日曜日の中から日付と時間帯を指定でき、お試しプラン・グリーンプランは水〜金曜日のお届けで日付は指定できません（2026年10月20日公式確認）。ただし12月は配送が最も混み合う時期のため、遅くとも1〜2週間前までのお申し込みをおすすめします。" },
   { q: "お正月飾り・しめ飾りの代わりに花を飾ってもよいですか？", a: "はい、問題ありません。近年は、しめ飾りや門松の代わりに松・千両・菊・葉牡丹などを使った『お正月アレンジ』を飾る家庭も増えています。花のサブスクにも12月下旬〜1月上旬に正月らしい花材が届くサービスがあり、手軽に新年らしい華やかさを演出できます。" },
   { q: "冬は花が長持ちしますか？", a: "はい、長持ちしやすくなります。冬は気温が低く、夏に比べて切り花が長持ちしやすい季節です。暖房の風が直接当たる場所を避け、こまめに水を替えることで、より長く楽しめます。ボリュームのある花が届くプランは、クリスマスからお正月にかけての飾りに適しています。" },
   { q: "ギフトとして贈る場合の予算はどのくらいですか？", a: "花のサブスクのギフトでは、1回あたり3,000〜5,000円が人気の価格帯です。クリスマスとお正月をまたいで2〜3回分をまとめて贈ると、年末年始を通して花を楽しんでいただけます。" },
-  { q: "気に入らなかった場合は解約できますか？", a: "回数の条件がないサービス（medelu・AND PLANTS・HitoHana など）は、いつでも解約できます。bloomeeのギフトチケットはチケット分の回数のみで自動更新されないため、受け取った方も負担なく試すことができます。" },
+  { q: "気に入らなかった場合は解約できますか？", a: "回数の条件がないサービス（medelu・AND PLANTS・HitoHana など）は、いつでも解約できます。bloomeeは最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます（2026年10月20日公式確認）。贈り主が申し込んだ場合、停止・解約の手続きは贈り主が行います。" },
 ];
 
 export default function ChristmasOshogatsuPage() {
@@ -27,7 +27,7 @@ export default function ChristmasOshogatsuPage() {
 
           <div className="bg-white rounded-2xl border border-[#EADFD3] p-5 mb-8">
             <p className="font-bold text-[#7a5] mb-1">クリスマスからお正月にかけて花のサブスクを利用する際の要点</p>
-            <p className="text-sm leading-relaxed">冬は切り花が長持ちしやすく、<strong>クリスマスからお正月にかけては花を飾るのに適した季節</strong>です。毎回新しい花が届く<strong>花のサブスク</strong>であれば、クリスマスの華やかなアレンジから、松・千両・葉牡丹などの<strong>お正月アレンジ（しめ飾りの代わり）</strong>まで、年末年始を通して手軽に楽しめます。12月は配送が最も混み合うため、<strong>早めのお申し込み</strong>をおすすめします。ギフトチケットのあるbloomee、日付指定・メッセージカードに対応したHitoHana、ギフトに対応したAND PLANTSが適しています。</p>
+            <p className="text-sm leading-relaxed">冬は切り花が長持ちしやすく、<strong>クリスマスからお正月にかけては花を飾るのに適した季節</strong>です。毎回新しい花が届く<strong>花のサブスク</strong>であれば、クリスマスの華やかなアレンジから、松・千両・葉牡丹などの<strong>お正月アレンジ（しめ飾りの代わり）</strong>まで、年末年始を通して手軽に楽しめます。12月は配送が最も混み合うため、<strong>早めのお申し込み</strong>をおすすめします。「プレゼントとして送る」で申し込めるbloomee、お届け日を選べるHitoHana、配送先を相手の住所にして注文できるAND PLANTSが適しています。</p>
           </div>
 
           <section className="mb-8">
@@ -40,17 +40,17 @@ export default function ChristmasOshogatsuPage() {
             <ul className="space-y-3 text-sm text-gray-700">
               <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>① 冬は花が長持ちします</strong>：気温が低く切り花が傷みにくいため、クリスマスからお正月まで長く飾れます。</li>
               <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>② 季節の花材が手間なく届きます</strong>：クリスマスのアレンジも、松・千両などのお正月アレンジも、ご自身で選ばなくても旬の花材が届きます。しめ飾りの代わりにも利用できます。</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>③ ギフトにも自宅用にも利用できます</strong>：ギフトチケットや日付指定で贈り物にでき、ご自宅の年末年始の彩りにも使えます。</li>
+              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>③ ギフトにも自宅用にも利用できます</strong>：届け先を相手の住所にして申し込めば贈り物にでき、ご自宅の年末年始の彩りにも使えます。</li>
             </ul>
           </section>
 
           <section className="mb-8">
             <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">クリスマス・お正月に向いているサービス</h2>
-            <p className="text-sm leading-relaxed text-gray-700 mb-3">ボリュームと、ギフトとしての贈りやすさ（日付指定・メッセージカード・チケット）で選ぶことをおすすめします。各サービスの料金・回数の条件・配送の詳細は、比較ページにてご確認ください。12月は配送が混み合うため、早めのお申し込みをおすすめします。</p>
+            <p className="text-sm leading-relaxed text-gray-700 mb-3">ボリュームと、ギフトとしての贈りやすさ（申し込み方法・お届け日の指定）で選ぶことをおすすめします。各サービスの料金・回数の条件・配送の詳細は、比較ページにてご確認ください。12月は配送が混み合うため、早めのお申し込みをおすすめします。</p>
             <ul className="space-y-2 text-sm">
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/bloomee/" className="text-[#7a5] font-bold underline">bloomee（ブルーミー）</a>：ギフトチケットで贈ることができ、受け取った方が開始日を選べます</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/hitohana/" className="text-[#7a5] font-bold underline">HitoHana（ヒトハナ）</a>：配送日の指定・メッセージカードに対応しています。クリスマス当日の指定も可能です</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/and-plants/" className="text-[#7a5] font-bold underline">AND PLANTS</a>：ボリュームとギフト対応に強みがあります</li>
+              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/bloomee/" className="text-[#7a5] font-bold underline">bloomee（ブルーミー）</a>：お届け先の入力画面で「プレゼントとして送る」を選ぶと、送り主の名前を登録できます（2026年10月20日公式確認）</li>
+              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/hitohana/" className="text-[#7a5] font-bold underline">HitoHana（ヒトハナ）</a>：定期便はお届け日を選んで申し込めます（選べない日もあります）</li>
+              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/and-plants/" className="text-[#7a5] font-bold underline">AND PLANTS</a>：配送先を相手の住所、請求先をご自身の住所にして注文します。定期便はラッピングとメッセージカードに対応していません（2026年10月20日公式確認）</li>
             </ul>
             <p className="text-sm mt-4"><a href="/compare/cheap/" className="text-[#7a5] underline">→ 料金で選ぶ場合：安い花のサブスクの比較</a></p>
           </section>
