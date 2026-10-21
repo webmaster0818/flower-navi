@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -58,20 +59,20 @@ export default function BloomeeVsMedeluPage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">比較記事</span>
+                  <span className="text-[#4A4F49]">比較記事</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">bloomee vs medelu</span>
+                  <span className="text-[#1F2420] font-medium">bloomee vs medelu</span>
                 </li>
               </ol>
             </nav>
@@ -79,58 +80,58 @@ export default function BloomeeVsMedeluPage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-gradient-to-b from-[#E8F0EB] to-[#F0E8E8] py-12 md:py-20">
+        <PageHero path="/compare/bloomee-vs-medelu/" services={[{ slug: "bloomee", name: "bloomee（ブルーミー）" }, { slug: "medelu", name: "medelu（メデル）" }]}>
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
               花のサブスク比較
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               bloomee vs medelu<br className="hidden md:block" />
               8つの違いを比較【2026年最新】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               当サイトでは、花のサブスクで人気のある「bloomee（ブルーミー）」と「medelu（メデル）」を、
               料金・花の本数・解約条件など8つの項目で比較し、利用目的に応じた選び方をご説明します。
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8">
-              <div className="bg-white rounded-xl px-6 py-4 shadow-sm border border-[#E5E5E5] flex-1 max-w-xs mx-auto md:mx-0">
-                <p className="text-xs text-[#999] mb-1">bloomee</p>
-                <p className="text-lg font-bold text-[#4A7C59] mb-1">980円/回 + 送料385円</p>
-                <p className="text-xs text-[#666]">花4本以上 / 最低4回の受け取り条件あり</p>
+              <div className="bg-white rounded-md px-6 py-4 border border-[#DEDAD2] flex-1 max-w-xs mx-auto md:mx-0">
+                <p className="text-xs text-[#6B6F6A] mb-1">bloomee</p>
+                <p className="text-lg font-bold text-[#2F5B43] mb-1">980円/回 + 送料385円</p>
+                <p className="text-xs text-[#4A4F49]">花4本以上 / 最低4回の受け取り条件あり</p>
               </div>
               <div className="flex items-center justify-center">
-                <span className="text-2xl font-bold text-[#999]">VS</span>
+                <span className="text-2xl font-bold text-[#6B6F6A]">VS</span>
               </div>
-              <div className="bg-white rounded-xl px-6 py-4 shadow-sm border border-[#E5E5E5] flex-1 max-w-xs mx-auto md:mx-0">
-                <p className="text-xs text-[#999] mb-1">medelu</p>
-                <p className="text-lg font-bold text-[#4A7C59] mb-1">748円/回 送料無料</p>
-                <p className="text-xs text-[#666]">花3〜4本 / 回数の条件なし</p>
+              <div className="bg-white rounded-md px-6 py-4 border border-[#DEDAD2] flex-1 max-w-xs mx-auto md:mx-0">
+                <p className="text-xs text-[#6B6F6A] mb-1">medelu</p>
+                <p className="text-lg font-bold text-[#2F5B43] mb-1">748円/回 送料無料</p>
+                <p className="text-xs text-[#4A4F49]">花3〜4本 / 回数の条件なし</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">目次</p>
               <nav>
-                <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#conclusion" className="hover:text-[#4A7C59] transition-colors">1. 利用目的に応じたbloomeeとmedeluの選び分け</a></li>
-                  <li><a href="#price" className="hover:text-[#4A7C59] transition-colors">2. 料金比較</a></li>
-                  <li><a href="#volume" className="hover:text-[#4A7C59] transition-colors">3. 花の本数・ボリューム</a></li>
-                  <li><a href="#delivery" className="hover:text-[#4A7C59] transition-colors">4. 配送方法</a></li>
-                  <li><a href="#frequency" className="hover:text-[#4A7C59] transition-colors">5. 配送頻度の選択肢</a></li>
-                  <li><a href="#cancel" className="hover:text-[#4A7C59] transition-colors">6. 解約のしやすさ</a></li>
-                  <li><a href="#freshness" className="hover:text-[#4A7C59] transition-colors">7. 花の鮮度</a></li>
-                  <li><a href="#app" className="hover:text-[#4A7C59] transition-colors">8. マイページでの手続き</a></li>
-                  <li><a href="#brand" className="hover:text-[#4A7C59] transition-colors">9. ブランド認知度・実績</a></li>
-                  <li><a href="#table" className="hover:text-[#4A7C59] transition-colors">10. 比較一覧表</a></li>
-                  <li><a href="#scenario" className="hover:text-[#4A7C59] transition-colors">11. 利用シーン別のおすすめ</a></li>
-                  <li><a href="#pros-cons" className="hover:text-[#4A7C59] transition-colors">12. 両サービスのメリット・デメリット</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">13. よくある質問</a></li>
-                  <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">14. まとめ</a></li>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
+                  <li><a href="#conclusion" className="hover:text-[#2F5B43] transition-colors">1. 利用目的に応じたbloomeeとmedeluの選び分け</a></li>
+                  <li><a href="#price" className="hover:text-[#2F5B43] transition-colors">2. 料金比較</a></li>
+                  <li><a href="#volume" className="hover:text-[#2F5B43] transition-colors">3. 花の本数・ボリューム</a></li>
+                  <li><a href="#delivery" className="hover:text-[#2F5B43] transition-colors">4. 配送方法</a></li>
+                  <li><a href="#frequency" className="hover:text-[#2F5B43] transition-colors">5. 配送頻度の選択肢</a></li>
+                  <li><a href="#cancel" className="hover:text-[#2F5B43] transition-colors">6. 解約のしやすさ</a></li>
+                  <li><a href="#freshness" className="hover:text-[#2F5B43] transition-colors">7. 花の鮮度</a></li>
+                  <li><a href="#app" className="hover:text-[#2F5B43] transition-colors">8. マイページでの手続き</a></li>
+                  <li><a href="#brand" className="hover:text-[#2F5B43] transition-colors">9. ブランド認知度・実績</a></li>
+                  <li><a href="#table" className="hover:text-[#2F5B43] transition-colors">10. 比較一覧表</a></li>
+                  <li><a href="#scenario" className="hover:text-[#2F5B43] transition-colors">11. 利用シーン別のおすすめ</a></li>
+                  <li><a href="#pros-cons" className="hover:text-[#2F5B43] transition-colors">12. 両サービスのメリット・デメリット</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">13. よくある質問</a></li>
+                  <li><a href="#summary" className="hover:text-[#2F5B43] transition-colors">14. まとめ</a></li>
                 </ol>
               </nav>
             </div>
@@ -140,62 +141,62 @@ export default function BloomeeVsMedeluPage() {
         {/* ─── Quick Conclusion ─── */}
         <section id="conclusion" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               利用目的に応じてbloomeeとmedeluを選び分けられます
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               費用と手軽さを重視する場合はmedelu、ブランドの知名度やサービスの充実度を重視する場合はbloomeeをおすすめします。
               それぞれに向いている方の特徴は以下のとおりです。
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* bloomeeがおすすめ */}
-              <div className="bg-[#F9E8E8] rounded-xl p-5 md:p-6 border border-[#F0D0D0]">
-                <h3 className="text-base font-bold text-[#333] mb-4 pb-2 border-b border-[#F0D0D0]">
+              <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6 border border-[#E3D3C8]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-4 pb-2 border-b border-[#E3D3C8]">
                   bloomeeが向いている方
                 </h3>
-                <ul className="text-sm text-[#666] space-y-3">
+                <ul className="text-sm text-[#4A4F49] space-y-3">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
+                    <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                     <span>知名度の高いサービスを選びたい</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
+                    <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                     <span>SNSで他の利用者の投稿を参考にしたい</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
+                    <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                     <span>同封のガイドブックで飾り方を知りたい</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
+                    <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                     <span>ギフトとしてお花の定期便を贈りたい</span>
                   </li>
                 </ul>
               </div>
 
               {/* medeluがおすすめ */}
-              <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6 border border-[#C8DCC8]">
-                <h3 className="text-base font-bold text-[#333] mb-4 pb-2 border-b border-[#C8DCC8]">
+              <div className="bg-[#EDF1EC] rounded-md p-5 md:p-6 border border-[#C8DCC8]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-4 pb-2 border-b border-[#C8DCC8]">
                   medeluが向いている方
                 </h3>
-                <ul className="text-sm text-[#666] space-y-3">
+                <ul className="text-sm text-[#4A4F49] space-y-3">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
+                    <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                     <span>送料込みの実質負担をできるだけ抑えたい</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
+                    <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                     <span>回数の条件なしで始めたい</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
+                    <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
+                    <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                     <span>シンプルな料金体系を希望する</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
+                    <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                     <span>まずは1回試してから続けるか決めたい</span>
                   </li>
                 </ul>
@@ -205,62 +206,62 @@ export default function BloomeeVsMedeluPage() {
         </section>
 
         {/* ─── 1. Price Comparison ─── */}
-        <section id="price" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="price" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               比較1：料金（送料込みの実質負担）
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               料金は、表示価格だけでなく送料を含めた1回あたりの実質負担額で比較することが重要です。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* bloomee料金 */}
-              <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
-                <div className="bg-[#F9E8E8] px-5 py-3 text-center">
-                  <h3 className="text-base font-bold text-[#333]">bloomee</h3>
+              <div className="bg-white rounded-md border border-[#DEDAD2] overflow-hidden">
+                <div className="bg-[#F6F4EF] px-5 py-3 text-center">
+                  <h3 className="text-base font-bold text-[#1F2420]">bloomee</h3>
                 </div>
                 <div className="px-5 py-5 space-y-4">
-                  <div className="border-b border-[#E5E5E5] pb-3">
-                    <p className="text-xs text-[#999] mb-1">お試しプラン</p>
-                    <p className="text-sm text-[#666]">980円 + 送料385円 = <span className="font-bold text-[#333]">1,365円/回</span></p>
+                  <div className="border-b border-[#DEDAD2] pb-3">
+                    <p className="text-xs text-[#6B6F6A] mb-1">お試しプラン</p>
+                    <p className="text-sm text-[#4A4F49]">980円 + 送料385円 = <span className="font-bold text-[#1F2420]">1,365円/回</span></p>
                   </div>
-                  <div className="border-b border-[#E5E5E5] pb-3">
-                    <p className="text-xs text-[#999] mb-1">ベーシックプラン</p>
-                    <p className="text-sm text-[#666]">2,180円 + 送料550円 = <span className="font-bold text-[#333]">2,730円/回</span></p>
+                  <div className="border-b border-[#DEDAD2] pb-3">
+                    <p className="text-xs text-[#6B6F6A] mb-1">ベーシックプラン</p>
+                    <p className="text-sm text-[#4A4F49]">2,180円 + 送料550円 = <span className="font-bold text-[#1F2420]">2,730円/回</span></p>
                   </div>
                   <div>
-                    <p className="text-xs text-[#999] mb-1">グリーンプラン</p>
-                    <p className="text-sm text-[#666]">980円 + 送料385円 = <span className="font-bold text-[#333]">1,365円/回</span></p>
+                    <p className="text-xs text-[#6B6F6A] mb-1">グリーンプラン</p>
+                    <p className="text-sm text-[#4A4F49]">980円 + 送料385円 = <span className="font-bold text-[#1F2420]">1,365円/回</span></p>
                   </div>
                 </div>
               </div>
 
               {/* medelu料金 */}
-              <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
-                <div className="bg-[#E8F0EB] px-5 py-3 text-center">
-                  <h3 className="text-base font-bold text-[#333]">medelu</h3>
+              <div className="bg-white rounded-md border border-[#DEDAD2] overflow-hidden">
+                <div className="bg-[#EDF1EC] px-5 py-3 text-center">
+                  <h3 className="text-base font-bold text-[#1F2420]">medelu</h3>
                 </div>
                 <div className="px-5 py-5 space-y-4">
-                  <div className="border-b border-[#E5E5E5] pb-3">
-                    <p className="text-xs text-[#999] mb-1">Miniコース</p>
-                    <p className="text-sm text-[#666]">748円 送料無料 = <span className="font-bold text-[#333]">748円/回</span></p>
+                  <div className="border-b border-[#DEDAD2] pb-3">
+                    <p className="text-xs text-[#6B6F6A] mb-1">Miniコース</p>
+                    <p className="text-sm text-[#4A4F49]">748円 送料無料 = <span className="font-bold text-[#1F2420]">748円/回</span></p>
                   </div>
-                  <div className="border-b border-[#E5E5E5] pb-3">
-                    <p className="text-xs text-[#999] mb-1">Liteコース</p>
-                    <p className="text-sm text-[#666]">1,330円 送料無料 = <span className="font-bold text-[#333]">1,330円/回</span></p>
+                  <div className="border-b border-[#DEDAD2] pb-3">
+                    <p className="text-xs text-[#6B6F6A] mb-1">Liteコース</p>
+                    <p className="text-sm text-[#4A4F49]">1,330円 送料無料 = <span className="font-bold text-[#1F2420]">1,330円/回</span></p>
                   </div>
                   <div>
-                    <p className="text-xs text-[#999] mb-1">Basicコース</p>
-                    <p className="text-sm text-[#666]">2,330円 送料無料 = <span className="font-bold text-[#333]">2,330円/回</span></p>
+                    <p className="text-xs text-[#6B6F6A] mb-1">Basicコース</p>
+                    <p className="text-sm text-[#4A4F49]">2,330円 送料無料 = <span className="font-bold text-[#1F2420]">2,330円/回</span></p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#E8F0EB] rounded-xl p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">料金比較のポイント</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
+            <div className="bg-[#EDF1EC] rounded-md p-5">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-2">料金比較のポイント</h3>
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 最安プラン同士で比較すると、medeluのLiteコース（748円）はbloomeeのお試しプラン（1,365円/送料込み）の約半額です。
                 medeluは送料込みの価格のため（北海道・東北へのLite以上は遠隔地送料140〜240円が加算（2026年10月17日公式確認））、表示価格がそのまま実質負担額になるシンプルな料金体系です。
                 bloomeeは花代とは別に送料385〜550円がかかるため、総額で考える必要があります。
@@ -273,28 +274,28 @@ export default function BloomeeVsMedeluPage() {
         {/* ─── 2. Volume Comparison ─── */}
         <section id="volume" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               比較2：花の本数・ボリューム
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-[#F9E8E8] rounded-xl p-5">
-                <h3 className="text-base font-bold text-[#333] mb-3">bloomee</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-[#F6F4EF] rounded-md p-5">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">bloomee</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>お試しプラン：4本以上（約18〜25cm）</li>
                   <li>グリーンプラン：グリーン中心</li>
                   <li>ベーシックプラン：8本以上（約25〜30cm）</li>
                 </ul>
               </div>
-              <div className="bg-[#E8F0EB] rounded-xl p-5">
-                <h3 className="text-base font-bold text-[#333] mb-3">medelu</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-[#EDF1EC] rounded-md p-5">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">medelu</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>Miniコース：3〜4本</li>
                   <li>Liteコース：5〜6本／Lite+コース：5〜7本</li>
                   <li>Basicコース：6〜9本</li>
                 </ul>
               </div>
             </div>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
               最安プラン同士では、medelu Mini（3〜4本）とbloomeeお試し（4本以上）で本数に大きな差はありません。
               中間プランでは、medeluのLiteコース（5〜6本/1,330円・送料込み）がbloomeeのベーシックプラン（8本以上/2,730円・送料込み）より1回あたり約1,400円安く、本数はbloomeeのベーシックが多くなっています。
               1本あたりの単価では、medeluの費用対効果が高い水準にあります。
@@ -303,24 +304,24 @@ export default function BloomeeVsMedeluPage() {
         </section>
 
         {/* ─── 3. Delivery Method ─── */}
-        <section id="delivery" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="delivery" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               比較3：配送方法
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">bloomee</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">bloomee</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>お試し・グリーン：ポスト投函</li>
                   <li>ベーシックプラン：宅配便</li>
                   <li>ポスト投函はゆうパケットを利用</li>
                   <li>専用の縦長パッケージで届く</li>
                 </ul>
               </div>
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">medelu</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">medelu</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>Mini・Lite：ポスト投函</li>
                   <li>Lite+・Basic：宅配便</li>
                   <li>ポスト投函は日本郵便を利用</li>
@@ -328,7 +329,7 @@ export default function BloomeeVsMedeluPage() {
                 </ul>
               </div>
             </div>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
               配送方法はどちらもほぼ同じ仕組みです。低価格プランはポスト投函、上位プランは宅配便（手渡し）になります。
               ポスト投函は不在時でも受け取れるため、一人暮らしの方や日中不在の方にとって便利です。
               どちらのサービスも、ポストの投函口が幅4.5cm以上・奥行き15cm以上あれば問題なく届きます。
@@ -339,28 +340,28 @@ export default function BloomeeVsMedeluPage() {
         {/* ─── 4. Delivery Frequency ─── */}
         <section id="frequency" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               比較4：配送頻度の選択肢
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-[#F9E8E8] rounded-xl p-5">
-                <h3 className="text-base font-bold text-[#333] mb-3">bloomee</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-[#F6F4EF] rounded-md p-5">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">bloomee</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>毎週 / 隔週から選択</li>
                   <li>マイページからいつでも変更可</li>
                   <li>スキップ機能あり（無料）</li>
                 </ul>
               </div>
-              <div className="bg-[#E8F0EB] rounded-xl p-5">
-                <h3 className="text-base font-bold text-[#333] mb-3">medelu</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-[#EDF1EC] rounded-md p-5">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">medelu</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>隔週 / 毎週から選択</li>
                   <li>マイページからいつでも変更可</li>
                   <li>スキップ機能あり（無料）</li>
                 </ul>
               </div>
             </div>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
               配送頻度の選択肢はどちらも同じで、毎週または隔週から選べます。
               どちらもマイページから配送頻度の変更が可能で、旅行や出張で受け取れない週は、スキップ機能で配送を休止できます。
               スキップは無料のため、生活に合わせて柔軟に調整できます。この項目では両者に差はありません。
@@ -369,33 +370,33 @@ export default function BloomeeVsMedeluPage() {
         </section>
 
         {/* ─── 5. Cancellation ─── */}
-        <section id="cancel" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="cancel" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               比較5：解約のしやすさ
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               解約のしやすさは、両サービスで大きく異なるポイントです。特に、まず試してみたい方にとって重要な比較基準です。
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
-                <h3 className="text-base font-bold text-[#333] mb-3">bloomee</h3>
+              <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#E3D3C8]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">bloomee</h3>
                 <div className="bg-white rounded-lg p-3 mb-3">
-                  <p className="text-sm font-bold text-[#E0B8B8]">4回の最低受け取り回数あり</p>
+                  <p className="text-sm font-bold text-[#D9BFB1]">4回の最低受け取り回数あり</p>
                 </div>
-                <ul className="text-sm text-[#666] space-y-2">
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>4回未満の解約は残り回数分が違約金として発生</li>
                   <li>マイページから解約手続き可能</li>
                   <li>解約ページまでに複数ステップあり</li>
                   <li>引き止めページが表示される</li>
                 </ul>
               </div>
-              <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C8DCC8]">
-                <h3 className="text-base font-bold text-[#333] mb-3">medelu</h3>
+              <div className="bg-[#EDF1EC] rounded-md p-5 border border-[#C8DCC8]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">medelu</h3>
                 <div className="bg-white rounded-lg p-3 mb-3">
-                  <p className="text-sm font-bold text-[#4A7C59]">回数の条件なし・いつでも解約可能</p>
+                  <p className="text-sm font-bold text-[#2F5B43]">回数の条件なし・いつでも解約可能</p>
                 </div>
-                <ul className="text-sm text-[#666] space-y-2">
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>初回から解約自由</li>
                   <li>マイページから簡単に解約可能</li>
                   <li>違約金・手数料なし</li>
@@ -403,9 +404,9 @@ export default function BloomeeVsMedeluPage() {
                 </ul>
               </div>
             </div>
-            <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-              <h3 className="text-sm font-bold text-[#333] mb-2">解約のしやすさの評価</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
+            <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-2">解約のしやすさの評価</h3>
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 解約のしやすさではmedeluが有利です。medeluは回数の条件も違約金もなく、いつでもマイページから解約できます。
                 bloomeeは4回の最低受け取りが条件で、お試しプランの場合は最低でも5,460円（1,365円×4回）の利用が確定します。
                 まず1回試してから判断したい方には、金銭的な負担が少ないmedeluをおすすめします。
@@ -417,27 +418,27 @@ export default function BloomeeVsMedeluPage() {
         {/* ─── 6. Freshness ─── */}
         <section id="freshness" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               比較6：花の鮮度
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">bloomee</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">bloomee</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>口コミでは「しおれていた・同じ花が続く」という声が目立つ</li>
                   <li>定期便は2週間以内の連絡で返金・交換（特商法）</li>
                   <li>夏場のポスト投函は傷みのリスクがやや高い</li>
                 </ul>
               </div>
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">medelu</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">medelu</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>生産者と市場から直接仕入れた花を届けると案内（2026年10月21日公式確認）</li>
                   <li>品質保証制度あり</li>
                 </ul>
               </div>
             </div>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
               bloomeeは、市場で仕入れた花を束ねて届けると案内しています（2026年10月20日公式確認）。
               なお品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換、medeluは到着当日中の写真送付で全額返金（交換なし）と条件が異なります。
             </p>
@@ -445,15 +446,15 @@ export default function BloomeeVsMedeluPage() {
         </section>
 
         {/* ─── 7. App & Services ─── */}
-        <section id="app" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="app" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               比較7：マイページでの手続きと同封物
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-[#F9E8E8] rounded-xl p-5">
-                <h3 className="text-base font-bold text-[#333] mb-3">bloomee</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-[#F6F4EF] rounded-md p-5">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">bloomee</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>マイページで特定の週のスキップが可能</li>
                   <li>4回目の受け取り後は、マイページで隔週に変更可能</li>
                   <li>プランの変更・切り替えもマイページから</li>
@@ -461,9 +462,9 @@ export default function BloomeeVsMedeluPage() {
                   <li>お届け先の入力画面で「プレゼントとして送る」を選べる</li>
                 </ul>
               </div>
-              <div className="bg-[#E8F0EB] rounded-xl p-5">
-                <h3 className="text-base font-bold text-[#333] mb-3">medelu</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-[#EDF1EC] rounded-md p-5">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">medelu</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>Webのマイページで管理</li>
                   <li>マイページでプラン変更・スキップが可能</li>
                   <li>花の情報はメールで届く</li>
@@ -471,7 +472,7 @@ export default function BloomeeVsMedeluPage() {
                                   </ul>
               </div>
             </div>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
               どちらも、スキップやプランの変更はWebのマイページで行います。bloomeeは、4回目の受け取り後に隔週への変更ができ、お花のガイドブックが付き、栄養剤が毎回同封されます（2026年10月21日公式確認）。
               また、お届け先の入力画面で「プレゼントとして送る」を選べるため、プレゼントにも利用できます。
               当サイトでは、bloomeeの専用アプリを公式サイトとApp Storeで確認できませんでした（2026年10月21日時点）。
@@ -482,13 +483,13 @@ export default function BloomeeVsMedeluPage() {
         {/* ─── 8. Brand ─── */}
         <section id="brand" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               比較8：ブランド認知度・実績
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">bloomee</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">bloomee</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>2016年サービス開始</li>
                   <li>累計3,000万本以上のお花をお届け</li>
                   <li>SNS投稿数が花のサブスクで最多クラス</li>
@@ -496,9 +497,9 @@ export default function BloomeeVsMedeluPage() {
                   <li>花のサブスクの代表的なサービスとして知られる</li>
                 </ul>
               </div>
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">medelu</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">medelu</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>2018年サービス開始</li>
                   <li>価格の手頃さが口コミで広がっている</li>
                   <li>SNS投稿数はbloomeeと比べると少なめ</li>
@@ -507,7 +508,7 @@ export default function BloomeeVsMedeluPage() {
                 </ul>
               </div>
             </div>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
               ブランド認知度ではbloomeeが大きく上回っています。2016年の早期参入で花のサブスク市場を開拓し、SNSやメディアでの露出も多いため「花のサブスク＝bloomee」というイメージが定着しています。
               一方、medeluは2018年開始の後発サービスですが、価格の手頃さが口コミで広がり、比較検討する層からの支持を集めています。
               利用者の多さによる安心感を重視する場合はbloomee、実質的なサービス内容を重視する場合はmedeluが適しています。
@@ -516,18 +517,18 @@ export default function BloomeeVsMedeluPage() {
         </section>
 
         {/* ─── Comparison Table ─── */}
-        <section id="table" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="table" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               bloomee vs medelu 比較一覧表
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               ここまでの比較内容を一覧表にまとめました。
             </p>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden shadow-sm">
+              <table className="w-full text-sm border-collapse bg-white rounded-md overflow-hidden">
                 <thead>
-                  <tr className="bg-[#4A7C59] text-white">
+                  <tr className="bg-[#2F5B43] text-white">
                     <th className="px-4 py-3 text-left font-medium">比較項目</th>
                     <th className="px-4 py-3 text-center font-medium">bloomee</th>
                     <th className="px-4 py-3 text-center font-medium">medelu</th>
@@ -550,10 +551,10 @@ export default function BloomeeVsMedeluPage() {
                     { label: "サービス開始", bloomee: "2016年", medelu: "2018年" },
                     { label: "スキップ機能", bloomee: "あり（無料）", medelu: "あり（無料）" },
                   ].map((row, i) => (
-                    <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F8F8F8]"}>
-                      <td className="px-4 py-3 font-medium text-[#333] border-b border-[#E5E5E5]">{row.label}</td>
-                      <td className="px-4 py-3 text-center text-[#666] border-b border-[#E5E5E5]">{row.bloomee}</td>
-                      <td className="px-4 py-3 text-center text-[#666] border-b border-[#E5E5E5]">{row.medelu}</td>
+                    <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F6F4EF]"}>
+                      <td className="px-4 py-3 font-medium text-[#1F2420] border-b border-[#DEDAD2]">{row.label}</td>
+                      <td className="px-4 py-3 text-center text-[#4A4F49] border-b border-[#DEDAD2]">{row.bloomee}</td>
+                      <td className="px-4 py-3 text-center text-[#4A4F49] border-b border-[#DEDAD2]">{row.medelu}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -565,10 +566,10 @@ export default function BloomeeVsMedeluPage() {
         {/* ─── Scenario Recommendations ─── */}
         <section id="scenario" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               利用シーン別のおすすめ
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               当サイトでは、利用シーンごとにbloomeeとmedeluのどちらが適しているかをご説明します。
             </p>
             <div className="space-y-5">
@@ -594,16 +595,16 @@ export default function BloomeeVsMedeluPage() {
                   reason: "花のサブスクが初めてで不安がある方には、bloomeeが向いています。お花のガイドブックが付き、栄養剤も毎回同封されるため、初めての方でも飾り方を確認できます（2026年10月21日公式確認）。SNSに利用者の投稿が多いため、事前にどんな花が届くか参考にできる安心感もあります。ただし、最低4回の受け取り条件がある点にご注意ください。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 md:p-6 border border-[#E5E5E5]">
+                <div key={i} className="bg-[#F6F4EF] rounded-md p-5 md:p-6 border border-[#DEDAD2]">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-3 py-1 shrink-0">
+                    <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-3 py-1 shrink-0">
                       {item.scenario}
                     </span>
-                    <span className="text-base font-bold text-[#333]">
+                    <span className="text-base font-bold text-[#1F2420]">
                       {item.recommend}がおすすめ
                     </span>
                   </div>
-                  <p className="text-sm text-[#666] leading-relaxed">{item.reason}</p>
+                  <p className="text-sm text-[#4A4F49] leading-relaxed">{item.reason}</p>
                 </div>
               ))}
             </div>
@@ -611,19 +612,19 @@ export default function BloomeeVsMedeluPage() {
         </section>
 
         {/* ─── Pros & Cons Summary ─── */}
-        <section id="pros-cons" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="pros-cons" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               両サービスのメリット・デメリット
             </h2>
 
             {/* bloomee */}
             <div className="mb-8">
-              <h3 className="text-lg font-bold text-[#333] mb-4">bloomee（ブルーミー）</h3>
+              <h3 className="text-lg font-bold text-[#1F2420] mb-4">bloomee（ブルーミー）</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-[#E8F0EB] rounded-xl p-5">
-                  <h4 className="text-sm font-bold text-[#4A7C59] mb-3">メリット</h4>
-                  <ul className="text-sm text-[#666] space-y-2">
+                <div className="bg-[#EDF1EC] rounded-md p-5">
+                  <h4 className="text-sm font-bold text-[#2F5B43] mb-3">メリット</h4>
+                  <ul className="text-sm text-[#4A4F49] space-y-2">
                     <li>-- 知名度が高く安心感がある</li>
                     <li>-- お花のガイドブックが付き、栄養剤が毎回同封される</li>
                     <li>-- 「プレゼントとして送る」で相手の住所に届けられる</li>
@@ -631,9 +632,9 @@ export default function BloomeeVsMedeluPage() {
                     <li>-- 定期便は2週間以内の連絡で返金・交換（特商法）</li>
                   </ul>
                 </div>
-                <div className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
-                  <h4 className="text-sm font-bold text-[#E0B8B8] mb-3">デメリット</h4>
-                  <ul className="text-sm text-[#666] space-y-2">
+                <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#E3D3C8]">
+                  <h4 className="text-sm font-bold text-[#D9BFB1] mb-3">デメリット</h4>
+                  <ul className="text-sm text-[#4A4F49] space-y-2">
                     <li>-- 送料が別途かかる（385〜550円）</li>
                     <li>-- 4回の最低受け取り回数がある</li>
                     <li>-- 解約手続きがやや複雑</li>
@@ -645,11 +646,11 @@ export default function BloomeeVsMedeluPage() {
 
             {/* medelu */}
             <div>
-              <h3 className="text-lg font-bold text-[#333] mb-4">medelu（メデル）</h3>
+              <h3 className="text-lg font-bold text-[#1F2420] mb-4">medelu（メデル）</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-[#E8F0EB] rounded-xl p-5">
-                  <h4 className="text-sm font-bold text-[#4A7C59] mb-3">メリット</h4>
-                  <ul className="text-sm text-[#666] space-y-2">
+                <div className="bg-[#EDF1EC] rounded-md p-5">
+                  <h4 className="text-sm font-bold text-[#2F5B43] mb-3">メリット</h4>
+                  <ul className="text-sm text-[#4A4F49] space-y-2">
                     <li>-- 送料無料で料金がわかりやすい</li>
                     <li>-- 回数の条件がなく、いつでも解約可能</li>
                     <li>-- 生産者と市場から直接仕入れた花が届く</li>
@@ -658,9 +659,9 @@ export default function BloomeeVsMedeluPage() {
                     <li>-- 品質保証あり</li>
                   </ul>
                 </div>
-                <div className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
-                  <h4 className="text-sm font-bold text-[#E0B8B8] mb-3">デメリット</h4>
-                  <ul className="text-sm text-[#666] space-y-2">
+                <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#E3D3C8]">
+                  <h4 className="text-sm font-bold text-[#D9BFB1] mb-3">デメリット</h4>
+                  <ul className="text-sm text-[#4A4F49] space-y-2">
                     <li>-- SNSでの情報量が少ない</li>
                     <li>-- 知名度がbloomeeより低い</li>
                     <li>-- 花屋ごとのアレンジの多様性はない</li>
@@ -674,21 +675,21 @@ export default function BloomeeVsMedeluPage() {
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               bloomee vs medeluに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -699,7 +700,7 @@ export default function BloomeeVsMedeluPage() {
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -711,52 +712,52 @@ export default function BloomeeVsMedeluPage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-gradient-to-b from-[#E8F0EB] to-[#F0E8E8]">
+        <section id="summary" className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               bloomeeとmedeluの選び方のまとめ
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               bloomeeとmedeluは、重視する点によって適したサービスが異なります。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               費用と手軽さを重視する場合はmedeluが適しています。送料無料で748円から始められ、回数の条件もないため、金銭的な負担を抑えて試すことができます。
               花のある生活を手軽に始めたい方に向いています。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               ブランドの知名度やサービスの充実度を重視する場合はbloomeeをおすすめします。「プレゼントとして送る」での申し込みや、お花のガイドブックなど、初めての方向けの案内があり、SNSでの情報量も豊富です。
               花のサブスクの代表的なサービスとしての安心感があり、プレゼント用途にも対応しています。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
               <a
                 href="/services/medelu"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 medeluの詳細を見る
               </a>
               <a
                 href="/services/bloomee"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 bloomeeの詳細を見る
               </a>
-              <p className="mt-2 text-xs"><a href="/services/bloomee/" className="text-[#4A7C59] underline">ブルーミーの値段・料金プランと口コミの詳細 →</a></p>
+              <p className="mt-2 text-xs"><a href="/services/bloomee/" className="text-[#2F5B43] underline">ブルーミーの値段・料金プランと口コミの詳細 →</a></p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="inline-block text-sm text-[#4A7C59] underline hover:text-[#3A6247] transition-colors"
+                className="inline-block text-sm text-[#2F5B43] underline hover:text-[#234534] transition-colors"
               >
                 medelu公式サイトはこちら
               </a>
-              <span className="hidden sm:inline text-[#999]">|</span>
+              <span className="hidden sm:inline text-[#6B6F6A]">|</span>
               <a
                 href="https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="inline-block text-sm text-[#4A7C59] underline hover:text-[#3A6247] transition-colors"
+                className="inline-block text-sm text-[#2F5B43] underline hover:text-[#234534] transition-colors"
               >
                 bloomee公式サイトはこちら
               </a>
@@ -766,11 +767,11 @@ export default function BloomeeVsMedeluPage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
 
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。

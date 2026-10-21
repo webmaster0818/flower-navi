@@ -41,7 +41,7 @@ const p: ServiceProfile = {
   ],
   basicInfo: [
     ["運営", "日本総合園芸"],
-    ["公式サイト", <a key="o" href="https://nihon-sogo-engei.com/teikibin/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] hover:underline">nihon-sogo-engei.com（花の定期便）</a>],
+    ["公式サイト", <a key="o" href="https://nihon-sogo-engei.com/teikibin/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] hover:underline">nihon-sogo-engei.com（花の定期便）</a>],
     ["お届け方法", "自社配達便（関西近郊）／宅配便（ヤマト運輸）"],
     ["支払い方法", "コースにより自動引落・現金・クレジットカード"],
     ["問い合わせ", "電話 0744-32-0687（9:00〜12:00／13:00〜17:00・土日休み）・メール・LINE"],

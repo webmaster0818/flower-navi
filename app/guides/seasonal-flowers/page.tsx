@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -140,7 +141,7 @@ const monthlyData = [
 ];
 
 const seasonColors: Record<string, { bg: string; text: string; border: string; label: string }> = {
-  spring: { bg: "bg-[#FFF0F5]", text: "text-[#C75C8A]", border: "border-[#F0C0D0]", label: "春" },
+  spring: { bg: "bg-[#FFF0F5]", text: "text-[#9A5C45]", border: "border-[#F0C0D0]", label: "春" },
   summer: { bg: "bg-[#F0F8FF]", text: "text-[#2E7DB5]", border: "border-[#B0D4F1]", label: "夏" },
   autumn: { bg: "bg-[#FFF8F0]", text: "text-[#B8602A]", border: "border-[#F0D0B0]", label: "秋" },
   winter: { bg: "bg-[#F5F5FF]", text: "text-[#5B5BAA]", border: "border-[#C8C8E8]", label: "冬" },
@@ -163,20 +164,20 @@ export default function SeasonalFlowersPage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">お花ガイド</span>
+                  <span className="text-[#4A4F49]">お花ガイド</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">季節の花カレンダー</span>
+                  <span className="text-[#1F2420] font-medium">季節の花カレンダー</span>
                 </li>
               </ol>
             </nav>
@@ -184,57 +185,57 @@ export default function SeasonalFlowersPage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#E8F0EB] py-12 md:py-20">
+        <PageHero path="/guides/seasonal-flowers/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
               季節のお花ガイド
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               季節の花カレンダー｜月別で届く<br className="hidden md:block" />
               お花の種類とサブスクの楽しみ方
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               花のサブスクでは、季節ごとに旬のお花が届きます。
               当サイトでは、月別の代表的な花の種類、飾り方のポイント、季節に合わせたサブスクの活用方法をご紹介します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">春（3-5月）</p>
-                <p className="text-base font-bold text-[#C75C8A]">チューリップ・バラ</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">春（3-5月）</p>
+                <p className="text-base font-bold text-[#9A5C45]">チューリップ・バラ</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">夏（6-8月）</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">夏（6-8月）</p>
                 <p className="text-base font-bold text-[#2E7DB5]">ひまわり・ユリ</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">秋（9-11月）</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">秋（9-11月）</p>
                 <p className="text-base font-bold text-[#B8602A]">コスモス・ダリア</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">冬（12-2月）</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">冬（12-2月）</p>
                 <p className="text-base font-bold text-[#5B5BAA]">バラ・ユーカリ</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">本ページの内容</p>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">本ページの内容</p>
               <nav>
-                <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#intro" className="hover:text-[#4A7C59] transition-colors">1. 花のサブスクで季節を感じる暮らし</a></li>
-                  <li><a href="#spring" className="hover:text-[#4A7C59] transition-colors">2. 春の花カレンダー（3月・4月・5月）</a></li>
-                  <li><a href="#summer" className="hover:text-[#4A7C59] transition-colors">3. 夏の花カレンダー（6月・7月・8月）</a></li>
-                  <li><a href="#autumn" className="hover:text-[#4A7C59] transition-colors">4. 秋の花カレンダー（9月・10月・11月）</a></li>
-                  <li><a href="#winter" className="hover:text-[#4A7C59] transition-colors">5. 冬の花カレンダー（12月・1月・2月）</a></li>
-                  <li><a href="#calendar" className="hover:text-[#4A7C59] transition-colors">6. 月別花カレンダー一覧表</a></li>
-                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">7. 季節別・花を長持ちさせるポイント</a></li>
-                  <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">8. 季節の花が届くおすすめサブスク</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">9. 季節の花とサブスクに関するよくある質問</a></li>
-                  <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">10. まとめ</a></li>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
+                  <li><a href="#intro" className="hover:text-[#2F5B43] transition-colors">1. 花のサブスクで季節を感じる暮らし</a></li>
+                  <li><a href="#spring" className="hover:text-[#2F5B43] transition-colors">2. 春の花カレンダー（3月・4月・5月）</a></li>
+                  <li><a href="#summer" className="hover:text-[#2F5B43] transition-colors">3. 夏の花カレンダー（6月・7月・8月）</a></li>
+                  <li><a href="#autumn" className="hover:text-[#2F5B43] transition-colors">4. 秋の花カレンダー（9月・10月・11月）</a></li>
+                  <li><a href="#winter" className="hover:text-[#2F5B43] transition-colors">5. 冬の花カレンダー（12月・1月・2月）</a></li>
+                  <li><a href="#calendar" className="hover:text-[#2F5B43] transition-colors">6. 月別花カレンダー一覧表</a></li>
+                  <li><a href="#tips" className="hover:text-[#2F5B43] transition-colors">7. 季節別・花を長持ちさせるポイント</a></li>
+                  <li><a href="#recommend" className="hover:text-[#2F5B43] transition-colors">8. 季節の花が届くおすすめサブスク</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">9. 季節の花とサブスクに関するよくある質問</a></li>
+                  <li><a href="#summary" className="hover:text-[#2F5B43] transition-colors">10. まとめ</a></li>
                 </ol>
               </nav>
             </div>
@@ -244,20 +245,20 @@ export default function SeasonalFlowersPage() {
         {/* ─── Introduction ─── */}
         <section id="intro" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のサブスクで季節を感じる暮らし
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               スーパーや花屋で花を購入する際、同じ種類を選びがちになる方は少なくありません。
               花のサブスク（定期便）を利用すると、フローリストが選んだ旬のお花が自宅に届くため、季節の移り変わりを感じやすくなります。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               春にはチューリップやスイートピーの柔らかな色合い、夏にはひまわりの鮮やかな黄色、秋にはダリアやコスモスの深い色彩、冬にはバラやユーカリのシックな雰囲気と、
               四季折々の花が部屋の印象を変えます。
             </p>
-            <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">本ページの掲載内容</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+            <div className="bg-[#EDF1EC] rounded-md p-5 md:p-6">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-3">本ページの掲載内容</h3>
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ 月ごとの代表的な花の種類と特徴</li>
                 <li>・ 季節ごとの飾り方のポイントとお手入れ方法</li>
                 <li>・ 季節に合わせたサブスクの活用方法</li>
@@ -270,11 +271,11 @@ export default function SeasonalFlowersPage() {
         {/* ─── Spring Section ─── */}
         <section id="spring" className="py-12 md:py-16 bg-[#FFF0F5]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#C75C8A]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-2 pb-3 border-b-2 border-[#9A5C45]">
               春の花カレンダー（3月・4月・5月）
             </h2>
-            <p className="text-sm text-[#C75C8A] font-medium mb-6">チューリップ、バラ、ラナンキュラス、スイートピー</p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm text-[#9A5C45] font-medium mb-6">チューリップ、バラ、ラナンキュラス、スイートピー</p>
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               春は花の種類が最も豊富になる季節です。チューリップやラナンキュラスなどの球根花が出回り、
               スイートピーやフリージアの香りも楽しめます。
               色の種類も多く、パステルカラーから鮮やかな色まで、幅広いアレンジが届きます。
@@ -282,26 +283,26 @@ export default function SeasonalFlowersPage() {
 
             <div className="space-y-5">
               {monthlyData.filter(m => m.season === "spring").map((m) => (
-                <div key={m.month} className="bg-white rounded-xl border border-[#F0C0D0] overflow-hidden">
+                <div key={m.month} className="bg-white rounded-md border border-[#F0C0D0] overflow-hidden">
                   <div className="px-5 py-3 bg-[#FFEEF4] border-b border-[#F0C0D0]">
-                    <h3 className="text-base font-bold text-[#333]">{m.label}の花</h3>
+                    <h3 className="text-base font-bold text-[#1F2420]">{m.label}の花</h3>
                   </div>
                   <div className="p-5">
                     <div className="flex flex-wrap gap-2 mb-4">
                       {m.flowers.map((f) => (
-                        <span key={f} className="bg-[#FFF0F5] text-[#C75C8A] text-sm px-3 py-1 rounded-full border border-[#F0C0D0]">
+                        <span key={f} className="bg-[#FFF0F5] text-[#9A5C45] text-sm px-3 py-1 rounded-md border border-[#F0C0D0]">
                           {f}
                         </span>
                       ))}
                     </div>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-xs font-bold text-[#999] mb-1">飾り方のポイント</p>
-                        <p className="text-sm text-[#666] leading-relaxed">{m.tip}</p>
+                        <p className="text-xs font-bold text-[#6B6F6A] mb-1">飾り方のポイント</p>
+                        <p className="text-sm text-[#4A4F49] leading-relaxed">{m.tip}</p>
                       </div>
                       <div>
-                        <p className="text-xs font-bold text-[#999] mb-1">おすすめサブスク</p>
-                        <p className="text-sm text-[#666] leading-relaxed">{m.recommend}</p>
+                        <p className="text-xs font-bold text-[#6B6F6A] mb-1">おすすめサブスク</p>
+                        <p className="text-sm text-[#4A4F49] leading-relaxed">{m.recommend}</p>
                       </div>
                     </div>
                   </div>
@@ -309,9 +310,9 @@ export default function SeasonalFlowersPage() {
               ))}
             </div>
 
-            <div className="mt-6 bg-white rounded-xl p-5 border border-[#F0C0D0]">
-              <h3 className="text-sm font-bold text-[#C75C8A] mb-2">春のサブスク活用ポイント</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
+            <div className="mt-6 bg-white rounded-md p-5 border border-[#F0C0D0]">
+              <h3 className="text-sm font-bold text-[#9A5C45] mb-2">春のサブスク活用ポイント</h3>
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 春は花の種類が豊富で、サブスクを始めるのに適した季節です。
                 気温が穏やかなため花の日持ちもよく、届いた花を1週間以上楽しめることも珍しくありません。
                 新生活に合わせて利用を始めることをおすすめします。
@@ -323,37 +324,37 @@ export default function SeasonalFlowersPage() {
         {/* ─── Summer Section ─── */}
         <section id="summer" className="py-12 md:py-16 bg-[#F0F8FF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#2E7DB5]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-2 pb-3 border-b-2 border-[#2E7DB5]">
               夏の花カレンダー（6月・7月・8月）
             </h2>
             <p className="text-sm text-[#2E7DB5] font-medium mb-6">ひまわり、ユリ、アジサイ、トルコキキョウ</p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               夏は黄色やオレンジなどの明るい色の花が中心です。ひまわりやトルコキキョウなど、暑さに比較的強い花が出回ります。
               ただし、気温が高いため花の日持ちが短くなりやすく、鮮度の管理が重要な季節です。
             </p>
 
             <div className="space-y-5">
               {monthlyData.filter(m => m.season === "summer").map((m) => (
-                <div key={m.month} className="bg-white rounded-xl border border-[#B0D4F1] overflow-hidden">
+                <div key={m.month} className="bg-white rounded-md border border-[#B0D4F1] overflow-hidden">
                   <div className="px-5 py-3 bg-[#E8F4FD] border-b border-[#B0D4F1]">
-                    <h3 className="text-base font-bold text-[#333]">{m.label}の花</h3>
+                    <h3 className="text-base font-bold text-[#1F2420]">{m.label}の花</h3>
                   </div>
                   <div className="p-5">
                     <div className="flex flex-wrap gap-2 mb-4">
                       {m.flowers.map((f) => (
-                        <span key={f} className="bg-[#F0F8FF] text-[#2E7DB5] text-sm px-3 py-1 rounded-full border border-[#B0D4F1]">
+                        <span key={f} className="bg-[#F0F8FF] text-[#2E7DB5] text-sm px-3 py-1 rounded-md border border-[#B0D4F1]">
                           {f}
                         </span>
                       ))}
                     </div>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-xs font-bold text-[#999] mb-1">飾り方のポイント</p>
-                        <p className="text-sm text-[#666] leading-relaxed">{m.tip}</p>
+                        <p className="text-xs font-bold text-[#6B6F6A] mb-1">飾り方のポイント</p>
+                        <p className="text-sm text-[#4A4F49] leading-relaxed">{m.tip}</p>
                       </div>
                       <div>
-                        <p className="text-xs font-bold text-[#999] mb-1">おすすめサブスク</p>
-                        <p className="text-sm text-[#666] leading-relaxed">{m.recommend}</p>
+                        <p className="text-xs font-bold text-[#6B6F6A] mb-1">おすすめサブスク</p>
+                        <p className="text-sm text-[#4A4F49] leading-relaxed">{m.recommend}</p>
                       </div>
                     </div>
                   </div>
@@ -361,9 +362,9 @@ export default function SeasonalFlowersPage() {
               ))}
             </div>
 
-            <div className="mt-6 bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
+            <div className="mt-6 bg-[#F7F1EC] rounded-md p-5 border border-[#E3D3C8]">
               <h3 className="text-sm font-bold text-[#B84C4C] mb-2">夏の鮮度に関する注意点</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ 届いたらすぐに開封し、水揚げ（茎を水中でカット）をする</li>
                 <li>・ 花瓶の水は毎日交換し、水量は少なめ（茎が3cm浸かる程度）にする</li>
                 <li>・ 付属の延命剤は必ず使用する</li>
@@ -378,37 +379,37 @@ export default function SeasonalFlowersPage() {
         {/* ─── Autumn Section ─── */}
         <section id="autumn" className="py-12 md:py-16 bg-[#FFF8F0]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#B8602A]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-2 pb-3 border-b-2 border-[#B8602A]">
               秋の花カレンダー（9月・10月・11月）
             </h2>
             <p className="text-sm text-[#B8602A] font-medium mb-6">コスモス、ダリア、ケイトウ、リンドウ</p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               秋は深みのある色合いの花が中心です。華やかなダリア、可憐なコスモス、独特の質感のケイトウなど、
               個性的な花がそろいます。気温が下がるため花持ちもよくなり、サブスクの費用対効果が高い季節です。
             </p>
 
             <div className="space-y-5">
               {monthlyData.filter(m => m.season === "autumn").map((m) => (
-                <div key={m.month} className="bg-white rounded-xl border border-[#F0D0B0] overflow-hidden">
+                <div key={m.month} className="bg-white rounded-md border border-[#F0D0B0] overflow-hidden">
                   <div className="px-5 py-3 bg-[#FFF3E8] border-b border-[#F0D0B0]">
-                    <h3 className="text-base font-bold text-[#333]">{m.label}の花</h3>
+                    <h3 className="text-base font-bold text-[#1F2420]">{m.label}の花</h3>
                   </div>
                   <div className="p-5">
                     <div className="flex flex-wrap gap-2 mb-4">
                       {m.flowers.map((f) => (
-                        <span key={f} className="bg-[#FFF8F0] text-[#B8602A] text-sm px-3 py-1 rounded-full border border-[#F0D0B0]">
+                        <span key={f} className="bg-[#FFF8F0] text-[#B8602A] text-sm px-3 py-1 rounded-md border border-[#F0D0B0]">
                           {f}
                         </span>
                       ))}
                     </div>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-xs font-bold text-[#999] mb-1">飾り方のポイント</p>
-                        <p className="text-sm text-[#666] leading-relaxed">{m.tip}</p>
+                        <p className="text-xs font-bold text-[#6B6F6A] mb-1">飾り方のポイント</p>
+                        <p className="text-sm text-[#4A4F49] leading-relaxed">{m.tip}</p>
                       </div>
                       <div>
-                        <p className="text-xs font-bold text-[#999] mb-1">おすすめサブスク</p>
-                        <p className="text-sm text-[#666] leading-relaxed">{m.recommend}</p>
+                        <p className="text-xs font-bold text-[#6B6F6A] mb-1">おすすめサブスク</p>
+                        <p className="text-sm text-[#4A4F49] leading-relaxed">{m.recommend}</p>
                       </div>
                     </div>
                   </div>
@@ -416,9 +417,9 @@ export default function SeasonalFlowersPage() {
               ))}
             </div>
 
-            <div className="mt-6 bg-white rounded-xl p-5 border border-[#F0D0B0]">
+            <div className="mt-6 bg-white rounded-md p-5 border border-[#F0D0B0]">
               <h3 className="text-sm font-bold text-[#B8602A] mb-2">秋のサブスク活用ポイント</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 秋は気温が下がって花の日持ちがよくなるため、月1回の配送でも十分に楽しめます。
                 ドライフラワーにしやすい花材（ケイトウ、ユーカリ、ワレモコウなど）も多いため、
                 届いた花を飾った後にドライフラワーとして残す方法もおすすめします。
@@ -430,11 +431,11 @@ export default function SeasonalFlowersPage() {
         {/* ─── Winter Section ─── */}
         <section id="winter" className="py-12 md:py-16 bg-[#F5F5FF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#5B5BAA]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-2 pb-3 border-b-2 border-[#5B5BAA]">
               冬の花カレンダー（12月・1月・2月）
             </h2>
             <p className="text-sm text-[#5B5BAA] font-medium mb-6">バラ、カーネーション、ユーカリ、クリスマスホーリー</p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               冬は花の種類がやや少なくなりますが、バラやカーネーションなど定番の花を楽しめる季節です。
               クリスマスやお正月に合わせた特別なアレンジが届くこともあり、行事に合わせた飾り付けを楽しめます。
               気温が低いため花が最も長持ちする季節でもあります。
@@ -442,26 +443,26 @@ export default function SeasonalFlowersPage() {
 
             <div className="space-y-5">
               {monthlyData.filter(m => m.season === "winter").map((m) => (
-                <div key={m.month} className="bg-white rounded-xl border border-[#C8C8E8] overflow-hidden">
+                <div key={m.month} className="bg-white rounded-md border border-[#C8C8E8] overflow-hidden">
                   <div className="px-5 py-3 bg-[#EFEFFF] border-b border-[#C8C8E8]">
-                    <h3 className="text-base font-bold text-[#333]">{m.label}の花</h3>
+                    <h3 className="text-base font-bold text-[#1F2420]">{m.label}の花</h3>
                   </div>
                   <div className="p-5">
                     <div className="flex flex-wrap gap-2 mb-4">
                       {m.flowers.map((f) => (
-                        <span key={f} className="bg-[#F5F5FF] text-[#5B5BAA] text-sm px-3 py-1 rounded-full border border-[#C8C8E8]">
+                        <span key={f} className="bg-[#F5F5FF] text-[#5B5BAA] text-sm px-3 py-1 rounded-md border border-[#C8C8E8]">
                           {f}
                         </span>
                       ))}
                     </div>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-xs font-bold text-[#999] mb-1">飾り方のポイント</p>
-                        <p className="text-sm text-[#666] leading-relaxed">{m.tip}</p>
+                        <p className="text-xs font-bold text-[#6B6F6A] mb-1">飾り方のポイント</p>
+                        <p className="text-sm text-[#4A4F49] leading-relaxed">{m.tip}</p>
                       </div>
                       <div>
-                        <p className="text-xs font-bold text-[#999] mb-1">おすすめサブスク</p>
-                        <p className="text-sm text-[#666] leading-relaxed">{m.recommend}</p>
+                        <p className="text-xs font-bold text-[#6B6F6A] mb-1">おすすめサブスク</p>
+                        <p className="text-sm text-[#4A4F49] leading-relaxed">{m.recommend}</p>
                       </div>
                     </div>
                   </div>
@@ -469,9 +470,9 @@ export default function SeasonalFlowersPage() {
               ))}
             </div>
 
-            <div className="mt-6 bg-white rounded-xl p-5 border border-[#C8C8E8]">
+            <div className="mt-6 bg-white rounded-md p-5 border border-[#C8C8E8]">
               <h3 className="text-sm font-bold text-[#5B5BAA] mb-2">冬のサブスク活用ポイント</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 冬は花が最も長持ちする季節です。暖房の効いた部屋でも1週間以上持つことが多く、
                 月1回の配送でも十分に楽しめます。ただし、暖房の温風が直接当たる場所は避けてください。
                 玄関先など涼しい場所に飾ると、さらに長持ちします。年末年始にはお正月花が届くサービスもあり、
@@ -482,19 +483,19 @@ export default function SeasonalFlowersPage() {
         </section>
 
         {/* ─── Monthly Calendar Table ─── */}
-        <section id="calendar" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="calendar" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               月別花カレンダー一覧表
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               12か月分の代表的な花を一覧にしています。サブスクで届く花の目安としてご活用ください。
             </p>
 
             <div className="overflow-x-auto -mx-4 px-4">
-              <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden shadow-sm" style={{ minWidth: "560px" }}>
+              <table className="w-full text-sm border-collapse bg-white rounded-md overflow-hidden" style={{ minWidth: "560px" }}>
                 <thead>
-                  <tr className="bg-[#4A7C59] text-white">
+                  <tr className="bg-[#2F5B43] text-white">
                     <th className="px-4 py-3 text-left font-medium">月</th>
                     <th className="px-4 py-3 text-left font-medium">季節</th>
                     <th className="px-4 py-3 text-left font-medium">代表的な花</th>
@@ -504,14 +505,14 @@ export default function SeasonalFlowersPage() {
                   {monthlyData.map((m, i) => {
                     const sc = seasonColors[m.season];
                     return (
-                      <tr key={m.month} className={`border-t border-[#E5E5E5] ${i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}`}>
-                        <td className="px-4 py-3 font-bold text-[#333]">{m.label}</td>
+                      <tr key={m.month} className={`border-t border-[#DEDAD2] ${i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}`}>
+                        <td className="px-4 py-3 font-bold text-[#1F2420]">{m.label}</td>
                         <td className="px-4 py-3">
                           <span className={`inline-block text-xs font-bold px-2 py-0.5 rounded ${sc.bg} ${sc.text}`}>
                             {sc.label}
                           </span>
                         </td>
-                        <td className="px-4 py-3 text-[#666]">{m.flowers.join("、")}</td>
+                        <td className="px-4 py-3 text-[#4A4F49]">{m.flowers.join("、")}</td>
                       </tr>
                     );
                   })}
@@ -519,9 +520,9 @@ export default function SeasonalFlowersPage() {
               </table>
             </div>
 
-            <div className="mt-6 bg-white rounded-xl border border-[#E5E5E5] p-5">
-              <h3 className="text-sm font-bold text-[#333] mb-3">表の補足</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+            <div className="mt-6 bg-white rounded-md border border-[#DEDAD2] p-5">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-3">表の補足</h3>
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ 掲載している花は代表例です。実際に届く花はサービスや時期によって異なります</li>
                 <li>・ 同じ花でも品種や色のバリエーションがあり、毎回異なるアレンジを楽しめます</li>
                 <li>・ 季節の変わり目には前後の季節の花が混じることもあります</li>
@@ -533,18 +534,18 @@ export default function SeasonalFlowersPage() {
         {/* ─── Seasonal Tips ─── */}
         <section id="tips" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               季節別・花を長持ちさせるポイント
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               季節によって花のお手入れ方法は変わります。季節に合わせた工夫により、花の寿命を数日延ばすことができます。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {/* Spring Tips */}
-              <div className="bg-[#FFF0F5] rounded-xl p-5 border border-[#F0C0D0]">
-                <h3 className="text-base font-bold text-[#C75C8A] mb-3">春のお手入れのポイント</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-[#FFF0F5] rounded-md p-5 border border-[#F0C0D0]">
+                <h3 className="text-base font-bold text-[#9A5C45] mb-3">春のお手入れのポイント</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>・ 茎が柔らかい花が多いため水量は少なめにする</li>
                   <li>・ チューリップは涼しい場所に飾ると長持ち</li>
                   <li>・ 花粉が落ちるユリは雄しべを取り除く</li>
@@ -553,9 +554,9 @@ export default function SeasonalFlowersPage() {
               </div>
 
               {/* Summer Tips */}
-              <div className="bg-[#F0F8FF] rounded-xl p-5 border border-[#B0D4F1]">
+              <div className="bg-[#F0F8FF] rounded-md p-5 border border-[#B0D4F1]">
                 <h3 className="text-base font-bold text-[#2E7DB5] mb-3">夏のお手入れのポイント</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>・ 水替えは毎日行い、可能であれば朝晩2回</li>
                   <li>・ 氷を花瓶に入れて水温を下げる</li>
                   <li>・ 延命剤は必ず使用する</li>
@@ -564,9 +565,9 @@ export default function SeasonalFlowersPage() {
               </div>
 
               {/* Autumn Tips */}
-              <div className="bg-[#FFF8F0] rounded-xl p-5 border border-[#F0D0B0]">
+              <div className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0D0B0]">
                 <h3 className="text-base font-bold text-[#B8602A] mb-3">秋のお手入れのポイント</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>・ ドライフラワー向きの花は早めに吊るす</li>
                   <li>・ 枝物は茎の断面を十字に割ると水揚げがよくなる</li>
                   <li>・ 花瓶の水量はやや多めでも問題ない</li>
@@ -575,9 +576,9 @@ export default function SeasonalFlowersPage() {
               </div>
 
               {/* Winter Tips */}
-              <div className="bg-[#F5F5FF] rounded-xl p-5 border border-[#C8C8E8]">
+              <div className="bg-[#F5F5FF] rounded-md p-5 border border-[#C8C8E8]">
                 <h3 className="text-base font-bold text-[#5B5BAA] mb-3">冬のお手入れのポイント</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>・ 暖房の温風が直接当たらない場所に飾る</li>
                   <li>・ 加湿器の近くに置くと乾燥を防げる</li>
                   <li>・ 水替えは2日に1回程度でもよい</li>
@@ -589,40 +590,40 @@ export default function SeasonalFlowersPage() {
         </section>
 
         {/* ─── Recommended Services ─── */}
-        <section id="recommend" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="recommend" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               季節の花が届くおすすめサブスク
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               当サイトでは、季節の花を楽しむのに適したサブスクを3つご紹介します。
               いずれのサービスも旬の花を中心にアレンジしているため、季節感のあるお花が届きます。
             </p>
 
             <div className="space-y-5">
               {/* medelu */}
-              <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
-                <div className="px-5 py-4 bg-[#E8F0EB] border-b border-[#C5D9CB]">
-                  <h3 className="text-base font-bold text-[#333]">medelu（メデル）</h3>
-                  <p className="text-sm text-[#666]">生産者と市場から直接仕入れた季節の花が届く</p>
+              <div className="bg-white rounded-md border border-[#DEDAD2] overflow-hidden">
+                <div className="px-5 py-4 bg-[#EDF1EC] border-b border-[#C9D6CB]">
+                  <h3 className="text-base font-bold text-[#1F2420]">medelu（メデル）</h3>
+                  <p className="text-sm text-[#4A4F49]">生産者と市場から直接仕入れた季節の花が届く</p>
                 </div>
                 <div className="p-5">
-                  <p className="text-sm text-[#666] leading-relaxed mb-4">
+                  <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                     medeluは、生産者と市場から直接仕入れた花を届けるサービスです（2026年10月21日公式確認）。
                     季節ごとに旬の花を選んでおり、春はチューリップやラナンキュラス、夏はひまわり、秋はダリアなど、
                     その時期ならではの花が届きます。Miniプラン748円（送料無料）から始められるため、
                     気軽に季節の花を楽しみたい方に適しています。
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm mb-4">
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">748円/回〜</span>
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">送料無料</span>
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">最低受取回数の設定なし</span>
+                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">748円/回〜</span>
+                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">送料無料</span>
+                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">最低受取回数の設定なし</span>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <a href="/services/medelu" className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
+                    <a href="/services/medelu" className="inline-block text-center bg-white text-[#2F5B43] font-bold text-sm px-6 py-3 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
                       medeluの詳細を見る
                     </a>
-                    <a href="https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm">
+                    <a href="https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#2F5B43] text-white font-bold text-sm px-6 py-3 rounded-md hover:bg-[#234534] transition-colors">
                       medelu公式サイトを見る
                     </a>
                   </div>
@@ -630,27 +631,27 @@ export default function SeasonalFlowersPage() {
               </div>
 
               {/* bloomee */}
-              <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
-                <div className="px-5 py-4 bg-[#E8F0EB] border-b border-[#C5D9CB]">
-                  <h3 className="text-base font-bold text-[#333]">bloomee（ブルーミー）</h3>
-                  <p className="text-sm text-[#666]">ポストに届く季節の花</p>
+              <div className="bg-white rounded-md border border-[#DEDAD2] overflow-hidden">
+                <div className="px-5 py-4 bg-[#EDF1EC] border-b border-[#C9D6CB]">
+                  <h3 className="text-base font-bold text-[#1F2420]">bloomee（ブルーミー）</h3>
+                  <p className="text-sm text-[#4A4F49]">ポストに届く季節の花</p>
                 </div>
                 <div className="p-5">
-                  <p className="text-sm text-[#666] leading-relaxed mb-4">
+                  <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                     bloomeeは、季節の花を小ぶりの花束にして届けるお花の定期便です。
                     お試し・グリーンプランはポストへの半投函の形で届き、最初の4回は受け取りが必要です。
                     SNSでの投稿も多く、ほかの利用者が受け取っている季節の花を参考にできます。
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm mb-4">
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">980円/回〜</span>
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">送料385円〜</span>
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">定期便は2週間以内の連絡で返金・交換</span>
+                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">980円/回〜</span>
+                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">送料385円〜</span>
+                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">定期便は2週間以内の連絡で返金・交換</span>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <a href="/services/bloomee" className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
+                    <a href="/services/bloomee" className="inline-block text-center bg-white text-[#2F5B43] font-bold text-sm px-6 py-3 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
                       bloomeeの詳細を見る
                     </a>
-                    <a href="https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm">
+                    <a href="https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#2F5B43] text-white font-bold text-sm px-6 py-3 rounded-md hover:bg-[#234534] transition-colors">
                       bloomee公式サイトを見る
                     </a>
                   </div>
@@ -658,27 +659,27 @@ export default function SeasonalFlowersPage() {
               </div>
 
               {/* AND PLANTS */}
-              <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
-                <div className="px-5 py-4 bg-[#E8F0EB] border-b border-[#C5D9CB]">
-                  <h3 className="text-base font-bold text-[#333]">AND PLANTS（アンドプランツ）</h3>
-                  <p className="text-sm text-[#666]">フローリストが手がける季節のアレンジ</p>
+              <div className="bg-white rounded-md border border-[#DEDAD2] overflow-hidden">
+                <div className="px-5 py-4 bg-[#EDF1EC] border-b border-[#C9D6CB]">
+                  <h3 className="text-base font-bold text-[#1F2420]">AND PLANTS（アンドプランツ）</h3>
+                  <p className="text-sm text-[#4A4F49]">フローリストが手がける季節のアレンジ</p>
                 </div>
                 <div className="p-5">
-                  <p className="text-sm text-[#666] leading-relaxed mb-4">
+                  <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                     AND PLANTSは、フローリストが季節の花を使ってアレンジした花を届けるサービスです。
                     宅配便で配送するため、花がよい状態で届きやすく、夏場でも利用しやすいサービスです。
                     6〜8本（2026年10月17日公式確認）の花が届き、季節感とデザイン性の両方を求める方におすすめします。
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm mb-4">
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">1,980円/回〜</span>
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">送料無料</span>
-                    <span className="bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">宅配便で配送</span>
+                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">1,980円/回〜</span>
+                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">送料無料</span>
+                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">宅配便で配送</span>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <a href="/services/and-plants" className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
+                    <a href="/services/and-plants" className="inline-block text-center bg-white text-[#2F5B43] font-bold text-sm px-6 py-3 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
                       AND PLANTSの詳細を見る
                     </a>
-                    <a href="https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm">
+                    <a href="https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L" target="_blank" rel="noopener noreferrer nofollow" className="inline-block text-center bg-[#2F5B43] text-white font-bold text-sm px-6 py-3 rounded-md hover:bg-[#234534] transition-colors">
                       AND PLANTS公式サイトを見る
                     </a>
                   </div>
@@ -691,21 +692,21 @@ export default function SeasonalFlowersPage() {
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               季節の花とサブスクに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -716,7 +717,7 @@ export default function SeasonalFlowersPage() {
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -728,53 +729,53 @@ export default function SeasonalFlowersPage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
+        <section id="summary" className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               季節の花を暮らしに取り入れる方法
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクを利用すると、ご自身では選ばない季節の花に触れ、四季の移ろいを日常の中で感じられます。
               春のチューリップ、夏のひまわり、秋のダリア、冬のバラなど、12か月それぞれに異なる花を楽しめます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のケア方法も季節によって異なります。特に夏場は鮮度管理に注意が必要ですが、
               冬場は花が長持ちしやすく、費用対効果の面でも有利です。
               配送頻度やスキップ機能を活用し、季節に合わせた利用方法をご検討ください。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               まずは関心のあるサービスで、季節の花を一度受け取ることをおすすめします。
               届いた花の名前を調べ、飾り方を工夫することで、花のある暮らしを続けやすくなります。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
                 href="/services/medelu"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 medeluの詳細を見る
               </a>
               <a
                 href="/services/bloomee"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 bloomeeの詳細を見る
               </a>
               <a
                 href="/compare/cheap"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 料金の安い順に比較する
               </a>
               <a
                 href="/guides/christmas-oshogatsu/"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 クリスマス・お正月の花を見る
               </a>
             </div>
             <a
               href="/"
-              className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+              className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
             >
               トップページに戻る
             </a>
@@ -783,11 +784,11 @@ export default function SeasonalFlowersPage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
 
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。

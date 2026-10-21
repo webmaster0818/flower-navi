@@ -1,3 +1,4 @@
+import PageHero from "@/app/components/PageHero";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/app/components/Header";
@@ -62,17 +63,19 @@ export default function RyokinPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <Header />
       <main className="max-w-[960px] mx-auto px-4 py-8 lg:py-12">
-        <nav className="text-[11px] text-[#999] mb-4">
+        <nav className="text-[11px] text-[#6B6F6A] mb-4">
           <Link href="/" className="hover:underline">トップ</Link> ＞ 料金比較
         </nav>
-        <h1 className="text-2xl md:text-3xl font-bold text-[#333] leading-tight mb-3">
-          花の定期便 料金比較表｜送料込みの総額・最低支払額・1本あたりの単価で比較
-        </h1>
-        <p className="text-xs text-[#999] mb-6">最終更新：{UPDATED}／料金は各公式サイトで確認した値です。</p>
+        <PageHero bleed path="/compare/ryokin/">
+          <h1 className="text-2xl md:text-3xl font-bold text-[#1F2420] leading-tight mb-3">
+            花の定期便 料金比較表｜送料込みの総額・最低支払額・1本あたりの単価で比較
+          </h1>
+          <p className="text-xs text-[#6B6F6A] mb-6">最終更新：{UPDATED}／料金は各公式サイトで確認した値です。</p>
+        </PageHero>
 
         {/* AEO 即答ブロック */}
         <div className="bg-[#F4F8F5] border border-[#D7E6DC] rounded-lg p-4 mb-8">
-          <p className="text-sm text-[#333] leading-relaxed">
+          <p className="text-sm text-[#1F2420] leading-relaxed">
             花のサブスクは、月額ではなく
             <strong>〈送料込みの1回あたりの総額〉〈最低受取回数までの総額〉〈1本あたりの単価〉</strong>で比較することをおすすめします。
             送料込みの最安は<strong>{sorted[0].name}（{yen(sorted[0].cheapest.price)}円・{sorted[0].cheapest.name}）</strong>です。
@@ -84,7 +87,7 @@ export default function RyokinPage() {
         <div className="overflow-x-auto mb-3">
           <table className="w-full min-w-[680px] text-sm border-collapse">
             <thead>
-              <tr className="bg-[#4A7C59] text-white">
+              <tr className="bg-[#2F5B43] text-white">
                 <th className="p-3 text-left">サービス</th>
                 <th className="p-3 text-left">最安プラン</th>
                 <th className="p-3 text-right">1回総額<br />(送料込)</th>
@@ -97,25 +100,25 @@ export default function RyokinPage() {
             <tbody>
               {sorted.map((s: Service, i) => (
                 <tr key={s.id} className={i % 2 ? "bg-[#FAFBFA]" : "bg-white"}>
-                  <td className="p-3 border-b border-[#E8E0D8] font-bold">
-                    <Link href={s.servicePath} className="text-[#4A7C59] underline">{s.name}</Link>
+                  <td className="p-3 border-b border-[#DEDAD2] font-bold">
+                    <Link href={s.servicePath} className="text-[#2F5B43] underline">{s.name}</Link>
                   </td>
-                  <td className="p-3 border-b border-[#E8E0D8]">
-                    {s.cheapest.name}<br /><span className="text-[11px] text-[#999]">{s.cheapest.flowers}・{s.shippingNote}</span>
+                  <td className="p-3 border-b border-[#DEDAD2]">
+                    {s.cheapest.name}<br /><span className="text-[11px] text-[#6B6F6A]">{s.cheapest.flowers}・{s.shippingNote}</span>
                   </td>
-                  <td className="p-3 border-b border-[#E8E0D8] text-right font-bold text-[#C4877A]">{yen(s.cheapest.price)}円</td>
-                  <td className="p-3 border-b border-[#E8E0D8] text-right">約{yen(perStem(s))}円/本</td>
-                  <td className="p-3 border-b border-[#E8E0D8]">{s.minDeliveries ? `${s.minDeliveries}回継続` : "回数の条件なし"}</td>
-                  <td className="p-3 border-b border-[#E8E0D8] text-right">{yen(minTotal(s))}円</td>
-                  <td className="p-3 border-b border-[#E8E0D8] text-center">
-                    <a href={s.affiliateUrlEarly ?? s.affiliateUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="inline-block bg-[#4A7C59] text-white text-xs font-bold px-3 py-2 rounded-full hover:bg-[#3A6247]">公式へ</a>
+                  <td className="p-3 border-b border-[#DEDAD2] text-right font-bold text-[#B0694F]">{yen(s.cheapest.price)}円</td>
+                  <td className="p-3 border-b border-[#DEDAD2] text-right">約{yen(perStem(s))}円/本</td>
+                  <td className="p-3 border-b border-[#DEDAD2]">{s.minDeliveries ? `${s.minDeliveries}回継続` : "回数の条件なし"}</td>
+                  <td className="p-3 border-b border-[#DEDAD2] text-right">{yen(minTotal(s))}円</td>
+                  <td className="p-3 border-b border-[#DEDAD2] text-center">
+                    <a href={s.affiliateUrlEarly ?? s.affiliateUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="inline-block bg-[#2F5B43] text-white text-xs font-bold px-3 py-2 rounded-md hover:bg-[#234534]">公式へ</a>
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="text-[11px] text-[#999] mb-8">
+        <p className="text-[11px] text-[#6B6F6A] mb-8">
           ※価格は税込で、各公式サイトで{UPDATED}に確認した最安プランです。送料の扱い・最低受取回数・本数はプランや地域によって異なります。ご利用前に、公式サイトにて最新情報をご確認ください。
           {SERVICES.filter((s) => s.note).map((s) => (
             <span key={s.id} className="block mt-1">・{s.name}：{s.note}</span>
@@ -123,56 +126,56 @@ export default function RyokinPage() {
         </p>
 
         {/* FAQ */}
-        <h2 className="text-xl font-bold text-[#333] mb-4 pb-2 border-b-2 border-[#4A7C59]">よくある質問</h2>
+        <h2 className="text-xl font-bold text-[#1F2420] mb-4 pb-2 border-b-2 border-[#2F5B43]">よくある質問</h2>
         <div className="space-y-3 mb-10">
           {faq.map((f) => (
-            <details key={f.q} className="border border-[#E8E0D8] rounded-lg p-4 bg-white">
-              <summary className="font-bold text-sm cursor-pointer text-[#333]">Q. {f.q}</summary>
-              <p className="text-sm text-[#666] mt-2 leading-relaxed">A. {f.a}</p>
+            <details key={f.q} className="border border-[#DEDAD2] rounded-lg p-4 bg-white">
+              <summary className="font-bold text-sm cursor-pointer text-[#1F2420]">Q. {f.q}</summary>
+              <p className="text-sm text-[#4A4F49] mt-2 leading-relaxed">A. {f.a}</p>
             </details>
           ))}
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <Link href="/compare/cheap/" className="text-sm text-[#4A7C59] underline">安い花のサブスクの比較を見る ＞</Link>
-          <Link href="/compare/post-delivery/" className="text-sm text-[#4A7C59] underline">ポスト投函できる定期便を見る ＞</Link>
+          <Link href="/compare/cheap/" className="text-sm text-[#2F5B43] underline">安い花のサブスクの比較を見る ＞</Link>
+          <Link href="/compare/post-delivery/" className="text-sm text-[#2F5B43] underline">ポスト投函できる定期便を見る ＞</Link>
         </div>
       
         {/* ハブ&スポーク: 関連ページ網 */}
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">目的別の比較・サービス別ガイド</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">目的別の比較・サービス別ガイド</h2>
             <div className="grid md:grid-cols-3 gap-6 text-sm">
               <div>
-                <h3 className="font-bold text-[#4A7C59] mb-3">比較で選ぶ</h3>
-                <ul className="space-y-2 text-[#666]">
-                  <li><a href="/compare/cheap/" className="hover:text-[#4A7C59] underline">安い順の比較</a></li>
-                  <li><a href="/compare/500yen/" className="hover:text-[#4A7C59] underline">500円台から始められる最安プランの比較</a></li>
-                  <li><a href="/compare/ichirinzashi/" className="hover:text-[#4A7C59] underline">一輪挿しに合う少量プラン</a></li>
-                  <li><a href="/compare/souryou-muryou/" className="hover:text-[#4A7C59] underline">送料無料で比較</a></li>
-                  <li><a href="/compare/post-delivery/" className="hover:text-[#4A7C59] underline">ポスト投函で受け取る</a></li>
-                  <li><a href="/guides/keirou-no-hi/" className="hover:text-[#4A7C59] underline">敬老の日のギフト（2026年は9月21日）</a></li>
-                  <li><a href="/know-guides/summer-care/" className="hover:text-[#4A7C59] underline">夏の花を長持ちさせる方法</a></li>
+                <h3 className="font-bold text-[#2F5B43] mb-3">比較で選ぶ</h3>
+                <ul className="space-y-2 text-[#4A4F49]">
+                  <li><a href="/compare/cheap/" className="hover:text-[#2F5B43] underline">安い順の比較</a></li>
+                  <li><a href="/compare/500yen/" className="hover:text-[#2F5B43] underline">500円台から始められる最安プランの比較</a></li>
+                  <li><a href="/compare/ichirinzashi/" className="hover:text-[#2F5B43] underline">一輪挿しに合う少量プラン</a></li>
+                  <li><a href="/compare/souryou-muryou/" className="hover:text-[#2F5B43] underline">送料無料で比較</a></li>
+                  <li><a href="/compare/post-delivery/" className="hover:text-[#2F5B43] underline">ポスト投函で受け取る</a></li>
+                  <li><a href="/guides/keirou-no-hi/" className="hover:text-[#2F5B43] underline">敬老の日のギフト（2026年は9月21日）</a></li>
+                  <li><a href="/know-guides/summer-care/" className="hover:text-[#2F5B43] underline">夏の花を長持ちさせる方法</a></li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#4A7C59] mb-3">2社の比較</h3>
-                <ul className="space-y-2 text-[#666]">
-                  <li><a href="/compare/bloomee-vs-medelu/" className="hover:text-[#4A7C59] underline">ブルーミー vs メデル</a></li>
-                  <li><a href="/vs/hanameku-vs-medelu/" className="hover:text-[#4A7C59] underline">ハナメク vs メデル</a></li>
-                  <li><a href="/vs/bloomee-vs-and-plants/" className="hover:text-[#4A7C59] underline">ブルーミー vs AND PLANTS</a></li>
-                  <li><a href="/vs/medelu-vs-and-plants/" className="hover:text-[#4A7C59] underline">メデル vs AND PLANTS</a></li>
+                <h3 className="font-bold text-[#2F5B43] mb-3">2社の比較</h3>
+                <ul className="space-y-2 text-[#4A4F49]">
+                  <li><a href="/compare/bloomee-vs-medelu/" className="hover:text-[#2F5B43] underline">ブルーミー vs メデル</a></li>
+                  <li><a href="/vs/hanameku-vs-medelu/" className="hover:text-[#2F5B43] underline">ハナメク vs メデル</a></li>
+                  <li><a href="/vs/bloomee-vs-and-plants/" className="hover:text-[#2F5B43] underline">ブルーミー vs AND PLANTS</a></li>
+                  <li><a href="/vs/medelu-vs-and-plants/" className="hover:text-[#2F5B43] underline">メデル vs AND PLANTS</a></li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#4A7C59] mb-3">口コミ・解約を確認</h3>
-                <ul className="space-y-2 text-[#666]">
-                  <li><a href="/services/bloomee/" className="hover:text-[#4A7C59] underline">ブルーミーの口コミ・評判</a></li>
-                  <li><a href="/services/medelu/" className="hover:text-[#4A7C59] underline">メデルの口コミ・評判</a></li>
-                  <li><a href="/services/hanameku/" className="hover:text-[#4A7C59] underline">ハナメクの口コミ・評判</a></li>
-                  <li><a href="/services/and-plants/" className="hover:text-[#4A7C59] underline">アンドプランツの口コミ・評判</a></li>
-                  <li><a href="/service-guides/bloomee-kaiyaku/" className="hover:text-[#4A7C59] underline">ブルーミーの解約方法</a></li>
-                  <li><a href="/service-guides/hanameku-kaiyaku/" className="hover:text-[#4A7C59] underline">ハナメクの解約方法</a></li>
+                <h3 className="font-bold text-[#2F5B43] mb-3">口コミ・解約を確認</h3>
+                <ul className="space-y-2 text-[#4A4F49]">
+                  <li><a href="/services/bloomee/" className="hover:text-[#2F5B43] underline">ブルーミーの口コミ・評判</a></li>
+                  <li><a href="/services/medelu/" className="hover:text-[#2F5B43] underline">メデルの口コミ・評判</a></li>
+                  <li><a href="/services/hanameku/" className="hover:text-[#2F5B43] underline">ハナメクの口コミ・評判</a></li>
+                  <li><a href="/services/and-plants/" className="hover:text-[#2F5B43] underline">アンドプランツの口コミ・評判</a></li>
+                  <li><a href="/service-guides/bloomee-kaiyaku/" className="hover:text-[#2F5B43] underline">ブルーミーの解約方法</a></li>
+                  <li><a href="/service-guides/hanameku-kaiyaku/" className="hover:text-[#2F5B43] underline">ハナメクの解約方法</a></li>
                 </ul>
               </div>
             </div>

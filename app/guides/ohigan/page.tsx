@@ -1,3 +1,4 @@
+import PageHero from "@/app/components/PageHero";
 import Header from "@/app/components/Header";
 
 const faqs = [
@@ -16,26 +17,28 @@ export default function OhiganPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"お彼岸の花を用意する時期｜2026年秋彼岸の日程とお供えの花・注文時期の目安\",\"description\":\"2026年秋彼岸の日程、お供えに向く花・避ける花、花のサブスクでの用意の方法、配送方式ごとの注文時期の目安を解説しています。\",\"datePublished\":\"2026-07-24T00:00:00+09:00\",\"dateModified\":\"2026-07-24T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/ohigan/\"}}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
 
-      <div className="min-h-screen bg-[#FAF8F5] text-[#333]">
+      <div className="min-h-screen bg-[#FAF8F5] text-[#1F2420]">
         <Header />
         <main className="max-w-3xl mx-auto px-4 py-10">
           <nav className="text-xs text-gray-500 mb-4">
             <a href="/" className="hover:underline">ホーム</a> / <a href="/guides/" className="hover:underline">ガイド</a> / <span className="text-gray-700">お彼岸の花</span>
           </nav>
 
-          <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">お彼岸の花を用意する時期｜2026年秋彼岸の日程とお供えの花・注文時期の目安</h1>
-          <p className="text-sm text-gray-600 mb-6">最終更新日：2026年7月24日 ／ flowerデリ編集部</p>
+          <PageHero bleed path="/guides/ohigan/">
+            <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">お彼岸の花を用意する時期｜2026年秋彼岸の日程とお供えの花・注文時期の目安</h1>
+            <p className="text-sm text-gray-600 mb-6">最終更新日：2026年7月24日 ／ flowerデリ編集部</p>
+          </PageHero>
 
-          <div className="bg-white rounded-2xl border border-[#EADFD3] p-5 mb-8">
-            <p className="font-bold text-[#7a5] mb-1">2026年の秋彼岸の日程とお供えの花の選び方</p>
+          <div className="bg-white rounded-md border border-[#DEDAD2] p-5 mb-8">
+            <p className="font-bold text-[#5E7F66] mb-1">2026年の秋彼岸の日程とお供えの花の選び方</p>
             <p className="text-sm leading-relaxed">2026年の秋彼岸は<strong>9月20日（日）〜26日（土）</strong>、中日は秋分の日の<strong>9月23日（水・祝）</strong>です。お供えの花は<strong>白を基調とし、菊やトルコギキョウなど日持ちする花</strong>が適しており、トゲ・毒・強い香りのある花は避けます。花のサブスクは専用の仏花ではありませんが、落ち着いた色合いのコースを選び、<strong>配送方式に合わせて注文・スキップの時期を調整</strong>することで、お彼岸に新鮮な花を用意できます。お彼岸・連休の時期は配送が混み合うため、<strong>1週間前までの手配</strong>をおすすめします。</p>
           </div>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">2026年のお彼岸の日程</h2>
+            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#D6D2C8] pl-3">2026年のお彼岸の日程</h2>
             <p className="text-sm leading-relaxed text-gray-700 mb-4">お彼岸は「春分の日・秋分の日」を<strong>中日（ちゅうにち）</strong>として、その前後3日ずつを合わせた<strong>7日間</strong>です。彼岸入り・中日・彼岸明けは次のとおりです。</p>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm border border-[#EADFD3] bg-white rounded-xl overflow-hidden">
+              <table className="w-full text-sm border border-[#DEDAD2] bg-white rounded-md overflow-hidden">
                 <thead className="bg-[#F3EDE4]">
                   <tr>
                     <th className="text-left p-3 font-bold">2026年</th>
@@ -45,13 +48,13 @@ export default function OhiganPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-t border-[#EADFD3]">
+                  <tr className="border-t border-[#DEDAD2]">
                     <td className="p-3 font-bold">春彼岸</td>
                     <td className="p-3">3月17日（火）</td>
                     <td className="p-3">3月20日（金）春分の日</td>
                     <td className="p-3">3月23日（月）</td>
                   </tr>
-                  <tr className="border-t border-[#EADFD3] bg-[#FCFAF7]">
+                  <tr className="border-t border-[#DEDAD2] bg-[#FCFAF7]">
                     <td className="p-3 font-bold">秋彼岸</td>
                     <td className="p-3">9月20日（日）</td>
                     <td className="p-3">9月23日（水）秋分の日</td>
@@ -64,13 +67,13 @@ export default function OhiganPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">お彼岸のお供えに向く花・避ける花</h2>
+            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#D6D2C8] pl-3">お彼岸のお供えに向く花・避ける花</h2>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
-              <div className="bg-white rounded-xl border border-[#EADFD3] p-4">
-                <p className="font-bold text-[#7a5] mb-2">向く花</p>
+              <div className="bg-white rounded-md border border-[#DEDAD2] p-4">
+                <p className="font-bold text-[#5E7F66] mb-2">向く花</p>
                 <p className="text-gray-700 leading-relaxed">菊、トルコギキョウ、カーネーション、スターチス、リンドウなどです。白を基調に、日持ちする花が適しています。故人が好きだった花を加えても問題ありません。</p>
               </div>
-              <div className="bg-white rounded-xl border border-[#EADFD3] p-4">
+              <div className="bg-white rounded-md border border-[#DEDAD2] p-4">
                 <p className="font-bold text-rose-700 mb-2">避ける花</p>
                 <p className="text-gray-700 leading-relaxed">バラなどトゲのある花、彼岸花・スズランなど毒のある花、香りが強すぎる花は避けるのが一般的です（宗派・地域により異なります）。</p>
               </div>
@@ -78,10 +81,10 @@ export default function OhiganPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">お彼岸に間に合わせるための注文時期</h2>
+            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#D6D2C8] pl-3">お彼岸に間に合わせるための注文時期</h2>
             <p className="text-sm leading-relaxed text-gray-700 mb-4">お彼岸の時期は配送が混み合うため、<strong>彼岸入り（9月20日）に間に合うよう逆算</strong>して手配します。花のサブスクは配送方式によって日付指定の可否が異なるため、方式ごとに手配の方法が異なります。</p>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm border border-[#EADFD3] bg-white rounded-xl overflow-hidden">
+              <table className="w-full text-sm border border-[#DEDAD2] bg-white rounded-md overflow-hidden">
                 <thead className="bg-[#F3EDE4]">
                   <tr>
                     <th className="text-left p-3 font-bold">配送方式</th>
@@ -90,12 +93,12 @@ export default function OhiganPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-t border-[#EADFD3]">
+                  <tr className="border-t border-[#DEDAD2]">
                     <td className="p-3 font-bold">ポスト投函型<br /><span className="font-normal text-xs text-gray-500">（多くの最安プラン）</span></td>
                     <td className="p-3">不可のことが多い</td>
                     <td className="p-3">彼岸入り前に届く配送回に合わせ、スキップ機能でお届けを前倒しします。到着日を指定できないため、<strong>数日の余裕</strong>をもって手配します。</td>
                   </tr>
-                  <tr className="border-t border-[#EADFD3] bg-[#FCFAF7]">
+                  <tr className="border-t border-[#DEDAD2] bg-[#FCFAF7]">
                     <td className="p-3 font-bold">宅配（手渡し）型</td>
                     <td className="p-3">可のことが多い</td>
                     <td className="p-3">お届け日を<strong>彼岸入り前後で指定</strong>します。連休で希望日が埋まる前に、早めに確定させます。</td>
@@ -103,24 +106,24 @@ export default function OhiganPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-gray-500 mt-2">※配送方式・日付指定の可否・注文締切はサービス・プランごとに異なります。正確な締切は各公式サイトにてご確認ください。当サイトの<a href="/compare/ryokin/" className="text-[#7a5] underline">料金比較</a>や<a href="/compare/post-delivery/" className="text-[#7a5] underline">ポスト投函の比較</a>で配送方式の違いを確認できます。</p>
+            <p className="text-xs text-gray-500 mt-2">※配送方式・日付指定の可否・注文締切はサービス・プランごとに異なります。正確な締切は各公式サイトにてご確認ください。当サイトの<a href="/compare/ryokin/" className="text-[#5E7F66] underline">料金比較</a>や<a href="/compare/post-delivery/" className="text-[#5E7F66] underline">ポスト投函の比較</a>で配送方式の違いを確認できます。</p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">花のサブスクをお彼岸のお供えに活用する手順</h2>
+            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#D6D2C8] pl-3">花のサブスクをお彼岸のお供えに活用する手順</h2>
             <ol className="space-y-3 text-sm text-gray-700">
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>1. 落ち着いた色のコースを選ぶ</strong>：白・グリーン基調の落ち着いたコースは、お供え用にアレンジしやすくなります。白で確実にそろえたい弔事では、専用の仏花もご検討ください。</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>2. 配送方式に合わせて逆算する</strong>：日付指定ができない方式はスキップ機能で前倒しし、指定できる方式は彼岸入り前後の日付を指定します。連休前に確定させてください。</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>3. 届いた花からお供え用を整える</strong>：お供えに向く花を選び、仏壇の花立に合わせて茎を切りそろえます。のし・立て札が必要な弔事では、別途専用の花をご用意ください。</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><strong>1. 落ち着いた色のコースを選ぶ</strong>：白・グリーン基調の落ち着いたコースは、お供え用にアレンジしやすくなります。白で確実にそろえたい弔事では、専用の仏花もご検討ください。</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><strong>2. 配送方式に合わせて逆算する</strong>：日付指定ができない方式はスキップ機能で前倒しし、指定できる方式は彼岸入り前後の日付を指定します。連休前に確定させてください。</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><strong>3. 届いた花からお供え用を整える</strong>：お供えに向く花を選び、仏壇の花立に合わせて茎を切りそろえます。のし・立て札が必要な弔事では、別途専用の花をご用意ください。</li>
             </ol>
-            <p className="text-sm mt-4"><a href="/guides/butsudan/" className="text-[#7a5] underline">→ 仏壇・仏花の選び方の詳細</a></p>
+            <p className="text-sm mt-4"><a href="/guides/butsudan/" className="text-[#5E7F66] underline">→ 仏壇・仏花の選び方の詳細</a></p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-4 border-l-4 border-[#cDB] pl-3">よくある質問</h2>
+            <h2 className="text-xl font-bold mb-4 border-l-4 border-[#D6D2C8] pl-3">よくある質問</h2>
             <div className="space-y-3">
               {faqs.map((f, i) => (
-                <details key={i} className="bg-white rounded-xl border border-[#EADFD3] p-4">
+                <details key={i} className="bg-white rounded-md border border-[#DEDAD2] p-4">
                   <summary className="font-bold cursor-pointer text-sm">{f.q}</summary>
                   <p className="text-sm text-gray-700 mt-2 leading-relaxed">{f.a}</p>
                 </details>
@@ -128,17 +131,17 @@ export default function OhiganPage() {
             </div>
           </section>
 
-          <section className="mb-4 bg-white rounded-2xl border border-[#EADFD3] p-5">
+          <section className="mb-4 bg-white rounded-md border border-[#DEDAD2] p-5">
             <h2 className="text-lg font-bold mb-3">関連ガイド</h2>
             <ul className="space-y-2 text-sm">
-              <li><a href="/guides/butsudan/" className="text-[#7a5] underline">仏壇・仏花に向く花のサブスクと選び方</a></li>
-              <li><a href="/guides/obon/" className="text-[#7a5] underline">お盆・新盆（初盆）の花を花のサブスクで用意する方法</a></li>
-              <li><a href="/guides/flower-care/" className="text-[#7a5] underline">花を長持ちさせるお手入れ方法</a></li>
+              <li><a href="/guides/butsudan/" className="text-[#5E7F66] underline">仏壇・仏花に向く花のサブスクと選び方</a></li>
+              <li><a href="/guides/obon/" className="text-[#5E7F66] underline">お盆・新盆（初盆）の花を花のサブスクで用意する方法</a></li>
+              <li><a href="/guides/flower-care/" className="text-[#5E7F66] underline">花を長持ちさせるお手入れ方法</a></li>
             </ul>
           </section>
         </main>
 
-        <footer className="bg-[#333] text-white py-10">
+        <footer className="bg-[#1F2420] text-white py-10">
           <div className="max-w-5xl mx-auto px-4">
             <div className="border-t border-gray-600 pt-6 text-center">
               <p className="text-xs text-gray-500">当サイトはアフィリエイトプログラムに参加しています。リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。</p>

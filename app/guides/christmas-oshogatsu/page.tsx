@@ -1,3 +1,4 @@
+import PageHero from "@/app/components/PageHero";
 import Header from "@/app/components/Header";
 
 const faqs = [
@@ -15,51 +16,53 @@ export default function ChristmasOshogatsuPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"クリスマス・お正月に飾る花のサブスク・花ギフトおすすめ\",\"description\":\"クリスマス・お正月に飾る花のサブスクのおすすめと選び方を解説しています。\",\"datePublished\":\"2026-07-10T00:00:00+09:00\",\"dateModified\":\"2026-07-10T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/christmas-oshogatsu/\"}}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
 
-      <div className="min-h-screen bg-[#FAF8F5] text-[#333]">
+      <div className="min-h-screen bg-[#FAF8F5] text-[#1F2420]">
         <Header />
         <main className="max-w-3xl mx-auto px-4 py-10">
           <nav className="text-xs text-gray-500 mb-4">
             <a href="/" className="hover:underline">ホーム</a> / <a href="/guides/" className="hover:underline">ガイド</a> / <span className="text-gray-700">クリスマス・お正月に飾る花のサブスク</span>
           </nav>
 
-          <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">クリスマス・お正月に飾る花のサブスク・花ギフトおすすめ【2026年】</h1>
-          <p className="text-sm text-gray-600 mb-6">最終更新日：2026年7月10日 ／ flowerデリ編集部</p>
+          <PageHero bleed path="/guides/christmas-oshogatsu/">
+            <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">クリスマス・お正月に飾る花のサブスク・花ギフトおすすめ【2026年】</h1>
+            <p className="text-sm text-gray-600 mb-6">最終更新日：2026年7月10日 ／ flowerデリ編集部</p>
+          </PageHero>
 
-          <div className="bg-white rounded-2xl border border-[#EADFD3] p-5 mb-8">
-            <p className="font-bold text-[#7a5] mb-1">クリスマスからお正月にかけて花のサブスクを利用する際の要点</p>
+          <div className="bg-white rounded-md border border-[#DEDAD2] p-5 mb-8">
+            <p className="font-bold text-[#5E7F66] mb-1">クリスマスからお正月にかけて花のサブスクを利用する際の要点</p>
             <p className="text-sm leading-relaxed">冬は切り花が長持ちしやすく、<strong>クリスマスからお正月にかけては花を飾るのに適した季節</strong>です。毎回新しい花が届く<strong>花のサブスク</strong>であれば、クリスマスの華やかなアレンジから、松・千両・葉牡丹などの<strong>お正月アレンジ（しめ飾りの代わり）</strong>まで、年末年始を通して手軽に楽しめます。12月は配送が最も混み合うため、<strong>早めのお申し込み</strong>をおすすめします。「プレゼントとして送る」で申し込めるbloomee、お届け日を選べるHitoHana、配送先を相手の住所にして注文できるAND PLANTSが適しています。</p>
           </div>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">クリスマス・お正月に花のサブスクが向く理由</h2>
+            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#D6D2C8] pl-3">クリスマス・お正月に花のサブスクが向く理由</h2>
             <p className="text-sm leading-relaxed text-gray-700">冬は気温が低く、切り花が夏より長持ちします。クリスマスは赤・白・グリーンの華やかなアレンジ、年末年始は松・千両・菊・葉牡丹などの和の花材で、新年らしい華やかさを演出できます。しめ飾りや門松の代わりに『お正月アレンジ』を飾る家庭も増えており、花のサブスクを利用すると手間をかけずに季節の花材が届きます。</p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">クリスマス・お正月に花のサブスクを使う3つのメリット</h2>
+            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#D6D2C8] pl-3">クリスマス・お正月に花のサブスクを使う3つのメリット</h2>
             <ul className="space-y-3 text-sm text-gray-700">
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>① 冬は花が長持ちします</strong>：気温が低く切り花が傷みにくいため、クリスマスからお正月まで長く飾れます。</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>② 季節の花材が手間なく届きます</strong>：クリスマスのアレンジも、松・千両などのお正月アレンジも、ご自身で選ばなくても旬の花材が届きます。しめ飾りの代わりにも利用できます。</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>③ ギフトにも自宅用にも利用できます</strong>：届け先を相手の住所にして申し込めば贈り物にでき、ご自宅の年末年始の彩りにも使えます。</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><strong>① 冬は花が長持ちします</strong>：気温が低く切り花が傷みにくいため、クリスマスからお正月まで長く飾れます。</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><strong>② 季節の花材が手間なく届きます</strong>：クリスマスのアレンジも、松・千両などのお正月アレンジも、ご自身で選ばなくても旬の花材が届きます。しめ飾りの代わりにも利用できます。</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><strong>③ ギフトにも自宅用にも利用できます</strong>：届け先を相手の住所にして申し込めば贈り物にでき、ご自宅の年末年始の彩りにも使えます。</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">クリスマス・お正月に向いているサービス</h2>
+            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#D6D2C8] pl-3">クリスマス・お正月に向いているサービス</h2>
             <p className="text-sm leading-relaxed text-gray-700 mb-3">ボリュームと、ギフトとしての贈りやすさ（申し込み方法・お届け日の指定）で選ぶことをおすすめします。各サービスの料金・回数の条件・配送の詳細は、比較ページにてご確認ください。12月は配送が混み合うため、早めのお申し込みをおすすめします。</p>
             <ul className="space-y-2 text-sm">
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/bloomee/" className="text-[#7a5] font-bold underline">bloomee（ブルーミー）</a>：お届け先の入力画面で「プレゼントとして送る」を選ぶと、送り主の名前を登録できます（2026年10月20日公式確認）</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/hitohana/" className="text-[#7a5] font-bold underline">HitoHana（ヒトハナ）</a>：定期便はお届け日を選んで申し込めます（選べない日もあります）</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><a href="/services/and-plants/" className="text-[#7a5] font-bold underline">AND PLANTS</a>：配送先を相手の住所、請求先をご自身の住所にして注文します。定期便はラッピングとメッセージカードに対応していません（2026年10月20日公式確認）</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><a href="/services/bloomee/" className="text-[#5E7F66] font-bold underline">bloomee（ブルーミー）</a>：お届け先の入力画面で「プレゼントとして送る」を選ぶと、送り主の名前を登録できます（2026年10月20日公式確認）</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><a href="/services/hitohana/" className="text-[#5E7F66] font-bold underline">HitoHana（ヒトハナ）</a>：定期便はお届け日を選んで申し込めます（選べない日もあります）</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><a href="/services/and-plants/" className="text-[#5E7F66] font-bold underline">AND PLANTS</a>：配送先を相手の住所、請求先をご自身の住所にして注文します。定期便はラッピングとメッセージカードに対応していません（2026年10月20日公式確認）</li>
             </ul>
-            <p className="text-sm mt-4"><a href="/compare/cheap/" className="text-[#7a5] underline">→ 料金で選ぶ場合：安い花のサブスクの比較</a></p>
+            <p className="text-sm mt-4"><a href="/compare/cheap/" className="text-[#5E7F66] underline">→ 料金で選ぶ場合：安い花のサブスクの比較</a></p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-4 border-l-4 border-[#cDB] pl-3">よくある質問</h2>
+            <h2 className="text-xl font-bold mb-4 border-l-4 border-[#D6D2C8] pl-3">よくある質問</h2>
             <div className="space-y-3">
               {faqs.map((f, i) => (
-                <details key={i} className="bg-white rounded-xl border border-[#EADFD3] p-4">
+                <details key={i} className="bg-white rounded-md border border-[#DEDAD2] p-4">
                   <summary className="font-bold cursor-pointer text-sm">{f.q}</summary>
                   <p className="text-sm text-gray-700 mt-2 leading-relaxed">{f.a}</p>
                 </details>
@@ -67,18 +70,18 @@ export default function ChristmasOshogatsuPage() {
             </div>
           </section>
 
-          <section className="mb-4 bg-white rounded-2xl border border-[#EADFD3] p-5">
+          <section className="mb-4 bg-white rounded-md border border-[#DEDAD2] p-5">
             <h2 className="text-lg font-bold mb-3">関連ガイド</h2>
             <ul className="space-y-2 text-sm">
-              <li><a href="/guides/present/" className="text-[#7a5] underline">花のサブスクをプレゼントに贈る方法</a></li>
-              <li><a href="/guides/keirou-no-hi/" className="text-[#7a5] underline">敬老の日に贈る花のサブスクおすすめ</a></li>
-              <li><a href="/guides/seasonal-flowers/" className="text-[#7a5] underline">季節の花で選ぶ花のサブスク</a></li>
-              <li><a href="/compare/cheap/" className="text-[#7a5] underline">安い花のサブスクの比較</a></li>
+              <li><a href="/guides/present/" className="text-[#5E7F66] underline">花のサブスクをプレゼントに贈る方法</a></li>
+              <li><a href="/guides/keirou-no-hi/" className="text-[#5E7F66] underline">敬老の日に贈る花のサブスクおすすめ</a></li>
+              <li><a href="/guides/seasonal-flowers/" className="text-[#5E7F66] underline">季節の花で選ぶ花のサブスク</a></li>
+              <li><a href="/compare/cheap/" className="text-[#5E7F66] underline">安い花のサブスクの比較</a></li>
             </ul>
           </section>
         </main>
 
-        <footer className="bg-[#333] text-white py-10">
+        <footer className="bg-[#1F2420] text-white py-10">
           <div className="max-w-5xl mx-auto px-4">
             <div className="border-t border-gray-600 pt-6 text-center">
               <p className="text-xs text-gray-500">当サイトはアフィリエイトプログラムに参加しています。リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。</p>

@@ -54,7 +54,7 @@ const clusters = [
 function Col({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <p className="text-xs font-bold text-[#C4877A] tracking-wider mb-2">{title}</p>
+      <p className="text-xs font-bold text-[#B0694F] tracking-wider mb-2">{title}</p>
       <ul className="space-y-1.5">{children}</ul>
     </div>
   );
@@ -62,36 +62,36 @@ function Col({ title, children }: { title: string; children: React.ReactNode }) 
 
 export default function SiteFooter() {
   return (
-    <nav aria-label="サイト内リンク" className="bg-[#FBF8F4] border-t border-[#E8E0D8] mt-16">
-      <div className="max-w-6xl mx-auto px-4 py-10 text-sm text-[#6B5F57]">
+    <nav aria-label="サイト内リンク" className="bg-[#F6F4EF] border-t border-[#DEDAD2] mt-16">
+      <div className="max-w-6xl mx-auto px-4 py-10 text-sm text-[#4A4F49]">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-8">
           <Col title="サービス詳細">
             {services.map(([s, l]) => (
-              <li key={s}><a href={`/services/${s}/`} className="hover:text-[#C4877A]">{l}</a></li>
+              <li key={s}><a href={`/services/${s}/`} className="hover:text-[#B0694F]">{l}</a></li>
             ))}
           </Col>
           <Col title="比較で選ぶ">
             {compares.map(([s, l]) => (
-              <li key={s}><a href={`/compare/${s}/`} className="hover:text-[#C4877A]">{l}</a></li>
+              <li key={s}><a href={`/compare/${s}/`} className="hover:text-[#B0694F]">{l}</a></li>
             ))}
           </Col>
           <Col title="目的・地域・診断">
             {clusters.map(([href, l]) => (
-              <li key={href}><a href={href} className="hover:text-[#C4877A]">{l}</a></li>
+              <li key={href}><a href={href} className="hover:text-[#B0694F]">{l}</a></li>
             ))}
           </Col>
           <Col title="ガイド・コラム">
             {guides.map(([s, l]) => (
-              <li key={s}><a href={`/guides/${s}/`} className="hover:text-[#C4877A]">{l}</a></li>
+              <li key={s}><a href={`/guides/${s}/`} className="hover:text-[#B0694F]">{l}</a></li>
             ))}
           </Col>
         </div>
-        <div className="mt-8 pt-6 border-t border-[#E8E0D8] flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-[#9B8F87]">
-          <a href="/" className="hover:text-[#C4877A]">トップ</a>
-          <a href="/about/" className="hover:text-[#C4877A]">運営者情報</a>
-          <a href="/privacy-policy/" className="hover:text-[#C4877A]">プライバシーポリシー</a>
-          <a href="/terms-of-service/" className="hover:text-[#C4877A]">利用規約</a>
-          <a href="/content-policy/" className="hover:text-[#C4877A]">コンテンツ制作方針</a>
+        <div className="mt-8 pt-6 border-t border-[#DEDAD2] flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-[#6B6F6A]">
+          <a href="/" className="hover:text-[#B0694F]">トップ</a>
+          <a href="/about/" className="hover:text-[#B0694F]">運営者情報</a>
+          <a href="/privacy-policy/" className="hover:text-[#B0694F]">プライバシーポリシー</a>
+          <a href="/terms-of-service/" className="hover:text-[#B0694F]">利用規約</a>
+          <a href="/content-policy/" className="hover:text-[#B0694F]">コンテンツ制作方針</a>
           <span className="ml-auto">© flowerデリ</span>
         </div>
       </div>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "@/app/components/Header";
 import { SERVICES } from "@/data/services";
+import PageHero from "@/app/components/PageHero";
 
 /* 料金は単一データソース(services.ts・公式確認値)から生成 */
 const planRows = (id: string) =>
@@ -43,7 +44,7 @@ const comparisonData = [
     plans: planRows("medelu"),
     highlight: "全プランが送料込みです（北海道・東北へのLite以上は遠隔地送料140〜240円が加算（2026年10月17日公式確認））。生産者と市場から直接仕入れた花を届けるサービスで（2026年10月21日公式確認）、748円/回から始められます。",
     url: "/services/medelu",
-    color: "#4A7C59",
+    color: "#2F5B43",
   },
   {
     name: "AND PLANTS",
@@ -85,58 +86,58 @@ export default function SouryouMuryouPage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
-                <li><a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a></li>
+                <li><a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#666]">比較</span></li>
+                <li><span className="text-[#4A4F49]">比較</span></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#333] font-medium">送料無料のお花の定期便</span></li>
+                <li><span className="text-[#1F2420] font-medium">送料無料のお花の定期便</span></li>
               </ol>
             </nav>
           </div>
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
+        <PageHero path="/compare/souryou-muryou/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">比較ガイド</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">比較ガイド</p>
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               送料無料のお花の定期便3選<br className="hidden md:block" />
               総額で比較【2026年】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               花のサブスクは送料によって、年間で1万円以上の差が生じる場合があります。
               当サイトでは、送料無料で利用できるサービスを総額で比較しています。
             </p>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Why Shipping Matters ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               送料無料が重要な理由
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
               花のサブスクを選ぶ際は花代に注目しがちですが、<strong>送料を含めた総額</strong>で比較することが重要です。送料は1回あたり300〜500円が相場で、隔週配送の場合は月600〜1,000円、年間では7,200〜12,000円の差になります。
             </p>
-            <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C8D8CB]">
-              <h3 className="text-sm font-bold text-[#333] mb-3">年間送料シミュレーション（隔週配送の場合）</h3>
+            <div className="bg-[#EDF1EC] rounded-md p-5 border border-[#C8D8CB]">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-3">年間送料シミュレーション（隔週配送の場合）</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between py-2 border-b border-[#C8D8CB]">
-                  <span className="text-[#666]">送料385円のサービス（bloomee等）</span>
-                  <span className="font-bold text-[#C4877A]">年間 9,240円</span>
+                  <span className="text-[#4A4F49]">送料385円のサービス（bloomee等）</span>
+                  <span className="font-bold text-[#B0694F]">年間 9,240円</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-[#C8D8CB]">
-                  <span className="text-[#666]">送料330円のサービス（タスハナ等）</span>
-                  <span className="font-bold text-[#C4877A]">年間 7,920円</span>
+                  <span className="text-[#4A4F49]">送料330円のサービス（タスハナ等）</span>
+                  <span className="font-bold text-[#B0694F]">年間 7,920円</span>
                 </div>
                 <div className="flex justify-between py-2">
-                  <span className="text-[#666]">送料無料のサービス（medelu等）</span>
-                  <span className="font-bold text-[#4A7C59]">年間 0円</span>
+                  <span className="text-[#4A4F49]">送料無料のサービス（medelu等）</span>
+                  <span className="font-bold text-[#2F5B43]">年間 0円</span>
                 </div>
               </div>
             </div>
@@ -144,57 +145,57 @@ export default function SouryouMuryouPage() {
         </section>
 
         {/* ─── Comparison Detail ─── */}
-        <section className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               送料無料サービス3選の詳細比較
             </h2>
 
             <div className="space-y-6">
               {comparisonData.map((service, idx) => (
-                <div key={idx} className={`bg-white rounded-xl overflow-hidden ${idx === 0 ? "border-2 border-[#4A7C59]" : "border border-[#E5E5E5]"}`}>
+                <div key={idx} className={`bg-white rounded-md overflow-hidden ${idx === 0 ? "border-2 border-[#2F5B43]" : "border border-[#DEDAD2]"}`}>
                   {idx === 0 && (
-                    <div className="bg-[#4A7C59] text-white text-xs text-center py-1.5 font-bold">
+                    <div className="bg-[#2F5B43] text-white text-xs text-center py-1.5 font-bold">
                       送料無料のサービスで最安・おすすめ第1位
                     </div>
                   )}
                   <div className="p-5">
-                    <h3 className="text-lg font-bold text-[#333] mb-2">{service.name}（{service.nameJa}）</h3>
-                    <p className="text-sm text-[#666] leading-relaxed mb-4">{service.highlight}</p>
+                    <h3 className="text-lg font-bold text-[#1F2420] mb-2">{service.name}（{service.nameJa}）</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">{service.highlight}</p>
 
                     <div className="overflow-x-auto mb-4">
                       <table className="w-full text-sm">
                         <thead>
-                          <tr className="bg-[#F8F8F8]">
-                            <th className="text-left px-3 py-2 text-xs text-[#999]">プラン</th>
-                            <th className="text-center px-3 py-2 text-xs text-[#999]">花代</th>
-                            <th className="text-center px-3 py-2 text-xs text-[#999]">送料</th>
-                            <th className="text-center px-3 py-2 text-xs text-[#999]">総額/回</th>
-                            <th className="text-center px-3 py-2 text-xs text-[#999]">本数</th>
+                          <tr className="bg-[#F6F4EF]">
+                            <th className="text-left px-3 py-2 text-xs text-[#6B6F6A]">プラン</th>
+                            <th className="text-center px-3 py-2 text-xs text-[#6B6F6A]">花代</th>
+                            <th className="text-center px-3 py-2 text-xs text-[#6B6F6A]">送料</th>
+                            <th className="text-center px-3 py-2 text-xs text-[#6B6F6A]">総額/回</th>
+                            <th className="text-center px-3 py-2 text-xs text-[#6B6F6A]">本数</th>
                           </tr>
                         </thead>
                         <tbody>
                           {service.plans.map((plan, pi) => (
-                            <tr key={pi} className="border-t border-[#E5E5E5]">
-                              <td className="px-3 py-2 text-[#333] font-medium">{plan.plan}</td>
-                              <td className="px-3 py-2 text-center text-[#666]">{plan.price.toLocaleString()}円</td>
-                              <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">無料</td>
-                              <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">{plan.total.toLocaleString()}円</td>
-                              <td className="px-3 py-2 text-center text-[#666]">{plan.flowers}</td>
+                            <tr key={pi} className="border-t border-[#DEDAD2]">
+                              <td className="px-3 py-2 text-[#1F2420] font-medium">{plan.plan}</td>
+                              <td className="px-3 py-2 text-center text-[#4A4F49]">{plan.price.toLocaleString()}円</td>
+                              <td className="px-3 py-2 text-center text-[#2F5B43] font-bold">無料</td>
+                              <td className="px-3 py-2 text-center text-[#2F5B43] font-bold">{plan.total.toLocaleString()}円</td>
+                              <td className="px-3 py-2 text-center text-[#4A4F49]">{plan.flowers}</td>
                             </tr>
                           ))}
                         </tbody>
                       </table>
                     </div>
 
-                    <a href={service.url} className="inline-block text-sm text-[#4A7C59] font-medium hover:underline">
+                    <a href={service.url} className="inline-block text-sm text-[#2F5B43] font-medium hover:underline">
                       {service.name}の詳細レビューを見る →
                     </a>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="text-xs text-[#999] mt-3">
+            <p className="text-xs text-[#6B6F6A] mt-3">
               ※ 価格はすべて税込です。2026年4月時点の情報です。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
           </div>
@@ -203,77 +204,77 @@ export default function SouryouMuryouPage() {
         {/* ─── Total Cost Table ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               送料込みの総額比較表（送料有料のサービスとの比較）
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
-                  <tr className="bg-[#F8F8F8]">
-                    <th className="text-left px-3 py-2 text-xs text-[#999] border-b border-[#E5E5E5]">サービス</th>
-                    <th className="text-center px-3 py-2 text-xs text-[#999] border-b border-[#E5E5E5]">花代</th>
-                    <th className="text-center px-3 py-2 text-xs text-[#999] border-b border-[#E5E5E5]">送料</th>
-                    <th className="text-center px-3 py-2 text-xs text-[#999] border-b border-[#E5E5E5]">総額/回</th>
-                    <th className="text-center px-3 py-2 text-xs text-[#999] border-b border-[#E5E5E5]">年間送料</th>
+                  <tr className="bg-[#F6F4EF]">
+                    <th className="text-left px-3 py-2 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">サービス</th>
+                    <th className="text-center px-3 py-2 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">花代</th>
+                    <th className="text-center px-3 py-2 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">送料</th>
+                    <th className="text-center px-3 py-2 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">総額/回</th>
+                    <th className="text-center px-3 py-2 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">年間送料</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="bg-[#E8F0EB]">
-                    <td className="px-3 py-2 font-bold text-[#4A7C59]">medelu Mini</td>
+                  <tr className="bg-[#EDF1EC]">
+                    <td className="px-3 py-2 font-bold text-[#2F5B43]">medelu Mini</td>
                     <td className="px-3 py-2 text-center">748円</td>
-                    <td className="px-3 py-2 text-center font-bold text-[#4A7C59]">無料</td>
-                    <td className="px-3 py-2 text-center font-bold text-[#4A7C59]">748円</td>
-                    <td className="px-3 py-2 text-center font-bold text-[#4A7C59]">0円</td>
+                    <td className="px-3 py-2 text-center font-bold text-[#2F5B43]">無料</td>
+                    <td className="px-3 py-2 text-center font-bold text-[#2F5B43]">748円</td>
+                    <td className="px-3 py-2 text-center font-bold text-[#2F5B43]">0円</td>
                   </tr>
-                  <tr className="border-b border-[#E5E5E5]">
-                    <td className="px-3 py-2 text-[#333]">タスハナ</td>
+                  <tr className="border-b border-[#DEDAD2]">
+                    <td className="px-3 py-2 text-[#1F2420]">タスハナ</td>
                     <td className="px-3 py-2 text-center">660円</td>
-                    <td className="px-3 py-2 text-center text-[#C4877A]">330円</td>
+                    <td className="px-3 py-2 text-center text-[#B0694F]">330円</td>
                     <td className="px-3 py-2 text-center">990円</td>
-                    <td className="px-3 py-2 text-center text-[#C4877A]">7,920円</td>
+                    <td className="px-3 py-2 text-center text-[#B0694F]">7,920円</td>
                   </tr>
-                  <tr className="border-b border-[#E5E5E5]">
-                    <td className="px-3 py-2 text-[#333]">bloomee お試し</td>
+                  <tr className="border-b border-[#DEDAD2]">
+                    <td className="px-3 py-2 text-[#1F2420]">bloomee お試し</td>
                     <td className="px-3 py-2 text-center">980円</td>
-                    <td className="px-3 py-2 text-center text-[#C4877A]">385円</td>
+                    <td className="px-3 py-2 text-center text-[#B0694F]">385円</td>
                     <td className="px-3 py-2 text-center">1,365円</td>
-                    <td className="px-3 py-2 text-center text-[#C4877A]">9,240円</td>
+                    <td className="px-3 py-2 text-center text-[#B0694F]">9,240円</td>
                   </tr>
-                  <tr className="bg-[#E8F0EB]">
-                    <td className="px-3 py-2 font-bold text-[#4A7C59]">AND PLANTS</td>
+                  <tr className="bg-[#EDF1EC]">
+                    <td className="px-3 py-2 font-bold text-[#2F5B43]">AND PLANTS</td>
                     <td className="px-3 py-2 text-center">1,980円</td>
-                    <td className="px-3 py-2 text-center font-bold text-[#4A7C59]">無料</td>
-                    <td className="px-3 py-2 text-center font-bold text-[#4A7C59]">1,980円</td>
-                    <td className="px-3 py-2 text-center font-bold text-[#4A7C59]">0円</td>
+                    <td className="px-3 py-2 text-center font-bold text-[#2F5B43]">無料</td>
+                    <td className="px-3 py-2 text-center font-bold text-[#2F5B43]">1,980円</td>
+                    <td className="px-3 py-2 text-center font-bold text-[#2F5B43]">0円</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#999] mt-3">※ 年間送料は、隔週（月2回・年24回）配送の場合で計算しています。</p>
+            <p className="text-xs text-[#6B6F6A] mt-3">※ 年間送料は、隔週（月2回・年24回）配送の場合で計算しています。</p>
           </div>
         </section>
 
         {/* ─── FAQ ─── */}
-        <section id="faq" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="faq" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               送料無料の花のサブスクに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">Q. {item.q}</span>
-                    <svg className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">Q. {item.q}</span>
+                    <svg className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
                   {openFaq === i && (
-                    <div className="px-5 py-4 bg-white border-t border-[#E5E5E5]">
-                      <p className="text-sm text-[#666] leading-relaxed">A. {item.a}</p>
+                    <div className="px-5 py-4 bg-white border-t border-[#DEDAD2]">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">A. {item.a}</p>
                     </div>
                   )}
                 </div>
@@ -283,26 +284,26 @@ export default function SouryouMuryouPage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section className="py-12 md:py-16 bg-[#E8F0EB]">
+        <section className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               送料無料のサービスではmedeluが最安です
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               送料無料のお花の定期便3サービスを比較した結果、<strong>総額が最も安いのはmedelu Miniコース（748円/回）</strong>です。回数の条件がなく、ポスト投函で手軽に受け取れるため、初めての方にもおすすめします。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               ボリュームとデザイン性を重視する場合は<strong>AND PLANTS（1,980円/回）</strong>、本数を重視する場合は<strong>hanamekuのセルフアレンジプラン（1,958円/回）</strong>をおすすめします。なお、hanamekuのセルフアレンジプランは、北海道・北東北・関西・中国・四国・九州へのお届けでは220〜550円の追加送料がかかります。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
-              <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
+              <a href="/services/medelu" className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors">
                 medeluの詳細を見る
               </a>
-              <a href="/services/and-plants" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
+              <a href="/services/and-plants" className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
                 AND PLANTSの詳細を見る
               </a>
             </div>
-            <a href="/compare/cheap" className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline">
+            <a href="/compare/cheap" className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline">
               安い花のサブスクの総合比較を見る
             </a>
           </div>
@@ -310,11 +311,11 @@ export default function SouryouMuryouPage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400">花のサブスクを比較し、ご自身に合ったサービス選びを支援します。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">

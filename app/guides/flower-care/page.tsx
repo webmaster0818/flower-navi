@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -189,20 +190,20 @@ export default function FlowerCarePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">お役立ちガイド</span>
+                  <span className="text-[#4A4F49]">お役立ちガイド</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">届いた花を長持ちさせる方法</span>
+                  <span className="text-[#1F2420] font-medium">届いた花を長持ちさせる方法</span>
                 </li>
               </ol>
             </nav>
@@ -210,56 +211,56 @@ export default function FlowerCarePage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#E8F0EB] py-12 md:py-20">
+        <PageHero path="/guides/flower-care/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
               花のお手入れガイド
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               届いた花を長持ちさせる7つの方法<br className="hidden md:block" />
               花瓶の選び方からお手入れまで
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               花のサブスクで届いた花を長く楽しむための方法をご説明します。
               当サイトでは、切り花を長持ちさせる7つの方法と、花瓶の選び方、季節ごとの注意点、
               ドライフラワーの作り方までをまとめています。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">長持ちさせる方法</p>
-                <p className="text-xl font-bold text-[#4A7C59]">7項目</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">長持ちさせる方法</p>
+                <p className="text-xl font-bold text-[#2F5B43]">7項目</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">花の寿命の延長目安</p>
-                <p className="text-xl font-bold text-[#4A7C59]">+3〜5日</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">花の寿命の延長目安</p>
+                <p className="text-xl font-bold text-[#2F5B43]">+3〜5日</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">花瓶の選び方</p>
-                <p className="text-xl font-bold text-[#4A7C59]">サイズ別解説</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">花瓶の選び方</p>
+                <p className="text-xl font-bold text-[#2F5B43]">サイズ別解説</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">ドライフラワー</p>
-                <p className="text-xl font-bold text-[#4A7C59]">作り方を解説</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">ドライフラワー</p>
+                <p className="text-xl font-bold text-[#2F5B43]">作り方を解説</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">本ページの内容</p>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">本ページの内容</p>
               <nav>
-                <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">1. 切り花を長持ちさせる7つの方法</a></li>
-                  <li><a href="#vase-guide" className="hover:text-[#4A7C59] transition-colors">2. 花瓶の選び方ガイド（サイズ別・素材別）</a></li>
-                  <li><a href="#vase-subsc" className="hover:text-[#4A7C59] transition-colors">3. サブスクの花に合う花瓶の選び方</a></li>
-                  <li><a href="#100yen" className="hover:text-[#4A7C59] transition-colors">4. 100円ショップでそろえる花瓶セット</a></li>
-                  <li><a href="#seasonal" className="hover:text-[#4A7C59] transition-colors">5. 季節ごとのお手入れ注意点</a></li>
-                  <li><a href="#dried" className="hover:text-[#4A7C59] transition-colors">6. ドライフラワーの作り方</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">7. 花のお手入れに関するよくある質問</a></li>
-                  <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">8. まとめ</a></li>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
+                  <li><a href="#tips" className="hover:text-[#2F5B43] transition-colors">1. 切り花を長持ちさせる7つの方法</a></li>
+                  <li><a href="#vase-guide" className="hover:text-[#2F5B43] transition-colors">2. 花瓶の選び方ガイド（サイズ別・素材別）</a></li>
+                  <li><a href="#vase-subsc" className="hover:text-[#2F5B43] transition-colors">3. サブスクの花に合う花瓶の選び方</a></li>
+                  <li><a href="#100yen" className="hover:text-[#2F5B43] transition-colors">4. 100円ショップでそろえる花瓶セット</a></li>
+                  <li><a href="#seasonal" className="hover:text-[#2F5B43] transition-colors">5. 季節ごとのお手入れ注意点</a></li>
+                  <li><a href="#dried" className="hover:text-[#2F5B43] transition-colors">6. ドライフラワーの作り方</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">7. 花のお手入れに関するよくある質問</a></li>
+                  <li><a href="#summary" className="hover:text-[#2F5B43] transition-colors">8. まとめ</a></li>
                 </ol>
               </nav>
             </div>
@@ -269,32 +270,32 @@ export default function FlowerCarePage() {
         {/* ─── 7 Tips Section ─── */}
         <section id="tips" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               切り花を長持ちさせる7つの方法
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花のサブスクで届いた花を長持ちさせるには、日々のお手入れが大切です。
               以下の7つの方法を実践することで、花の寿命を3〜5日延ばすことができます。
             </p>
 
             <div className="space-y-8">
               {tipsData.map((tip) => (
-                <div key={tip.number} className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] overflow-hidden">
-                  <div className="bg-[#E8F0EB] border-b border-[#C5D9CB] px-5 py-4 flex items-center gap-3">
-                    <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#4A7C59] text-white text-sm font-bold shrink-0">
+                <div key={tip.number} className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] overflow-hidden">
+                  <div className="bg-[#EDF1EC] border-b border-[#C9D6CB] px-5 py-4 flex items-center gap-3">
+                    <span className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-[#2F5B43] text-white text-sm font-bold shrink-0">
                       {tip.number}
                     </span>
-                    <h3 className="text-base md:text-lg font-bold text-[#333]">
+                    <h3 className="text-base md:text-lg font-bold text-[#1F2420]">
                       {tip.title}
                     </h3>
                   </div>
                   <div className="p-5">
-                    <p className="text-sm text-[#666] leading-relaxed mb-4">
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                       {tip.description}
                     </p>
-                    <div className="bg-white rounded-lg border border-[#E5E5E5] p-4">
-                      <p className="text-xs font-bold text-[#4A7C59] mb-2">実践のポイント</p>
-                      <ul className="text-sm text-[#666] space-y-1.5">
+                    <div className="bg-white rounded-lg border border-[#DEDAD2] p-4">
+                      <p className="text-xs font-bold text-[#2F5B43] mb-2">実践のポイント</p>
+                      <ul className="text-sm text-[#4A4F49] space-y-1.5">
                         {tip.points.map((point, j) => (
                           <li key={j}>・ {point}</li>
                         ))}
@@ -305,9 +306,9 @@ export default function FlowerCarePage() {
               ))}
             </div>
 
-            <div className="mt-8 bg-[#E8F0EB] rounded-xl p-5 md:p-6">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">7つの方法の要点</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
+            <div className="mt-8 bg-[#EDF1EC] rounded-md p-5 md:p-6">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-3">7つの方法の要点</h3>
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 すべてを毎日行う必要はありません。まずは「水切り」と「毎日の水替え」の2つを習慣にすることで、
                 花の持ちが変わります。慣れてきた段階で、延命剤の活用や置き場所の工夫も取り入れてください。
               </p>
@@ -316,34 +317,34 @@ export default function FlowerCarePage() {
         </section>
 
         {/* ─── Vase Guide ─── */}
-        <section id="vase-guide" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="vase-guide" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花瓶の選び方ガイド（サイズ別・素材別）
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花をきれいに飾るには、花に合った花瓶を選ぶことが大切です。
               当サイトでは、サイズと素材の2つの観点から花瓶の選び方をご説明します。
             </p>
 
             {/* Size Guide */}
-            <h3 className="text-lg font-bold text-[#333] mb-4">サイズ別ガイド</h3>
+            <h3 className="text-lg font-bold text-[#1F2420] mb-4">サイズ別ガイド</h3>
             <div className="space-y-4 mb-8">
               {vaseSizeData.map((item, i) => (
-                <div key={i} className="bg-white rounded-xl border border-[#E5E5E5] p-5">
-                  <h4 className="text-base font-bold text-[#333] mb-3">{item.size}</h4>
+                <div key={i} className="bg-white rounded-md border border-[#DEDAD2] p-5">
+                  <h4 className="text-base font-bold text-[#1F2420] mb-3">{item.size}</h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
                     <div>
-                      <span className="text-[#999] block mb-1">向いている花</span>
-                      <span className="text-[#666]">{item.bestFor}</span>
+                      <span className="text-[#6B6F6A] block mb-1">向いている花</span>
+                      <span className="text-[#4A4F49]">{item.bestFor}</span>
                     </div>
                     <div>
-                      <span className="text-[#999] block mb-1">おすすめの置き場所</span>
-                      <span className="text-[#666]">{item.scene}</span>
+                      <span className="text-[#6B6F6A] block mb-1">おすすめの置き場所</span>
+                      <span className="text-[#4A4F49]">{item.scene}</span>
                     </div>
                     <div>
-                      <span className="text-[#999] block mb-1">サブスクとの相性</span>
-                      <span className="text-[#666]">{item.subsc}</span>
+                      <span className="text-[#6B6F6A] block mb-1">サブスクとの相性</span>
+                      <span className="text-[#4A4F49]">{item.subsc}</span>
                     </div>
                   </div>
                 </div>
@@ -351,11 +352,11 @@ export default function FlowerCarePage() {
             </div>
 
             {/* Material Guide */}
-            <h3 className="text-lg font-bold text-[#333] mb-4">素材別ガイド</h3>
+            <h3 className="text-lg font-bold text-[#1F2420] mb-4">素材別ガイド</h3>
             <div className="overflow-x-auto -mx-4 px-4">
-              <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden shadow-sm" style={{ minWidth: "560px" }}>
+              <table className="w-full text-sm border-collapse bg-white rounded-md overflow-hidden" style={{ minWidth: "560px" }}>
                 <thead>
-                  <tr className="bg-[#4A7C59] text-white">
+                  <tr className="bg-[#2F5B43] text-white">
                     <th className="px-4 py-3 text-left font-medium">素材</th>
                     <th className="px-4 py-3 text-left font-medium">メリット</th>
                     <th className="px-4 py-3 text-left font-medium">デメリット</th>
@@ -364,20 +365,20 @@ export default function FlowerCarePage() {
                 </thead>
                 <tbody>
                   {vaseMaterialData.map((item, i) => (
-                    <tr key={i} className="border-t border-[#E5E5E5]">
-                      <td className="px-4 py-4 font-bold text-[#333] whitespace-nowrap">{item.material}</td>
-                      <td className="px-4 py-4 text-[#666]">{item.merit}</td>
-                      <td className="px-4 py-4 text-[#666]">{item.demerit}</td>
-                      <td className="px-4 py-4 text-[#666] whitespace-nowrap">{item.price}</td>
+                    <tr key={i} className="border-t border-[#DEDAD2]">
+                      <td className="px-4 py-4 font-bold text-[#1F2420] whitespace-nowrap">{item.material}</td>
+                      <td className="px-4 py-4 text-[#4A4F49]">{item.merit}</td>
+                      <td className="px-4 py-4 text-[#4A4F49]">{item.demerit}</td>
+                      <td className="px-4 py-4 text-[#4A4F49] whitespace-nowrap">{item.price}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-6 bg-white rounded-xl border border-[#E5E5E5] p-5">
-              <h4 className="text-sm font-bold text-[#333] mb-2">初めての方へのおすすめ</h4>
-              <p className="text-sm text-[#666] leading-relaxed">
+            <div className="mt-6 bg-white rounded-md border border-[#DEDAD2] p-5">
+              <h4 className="text-sm font-bold text-[#1F2420] mb-2">初めての方へのおすすめ</h4>
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 選択に迷う場合は、まず透明なガラス製の花瓶を1つご用意ください。茎の状態や水の汚れがひと目でわかるため、
                 お手入れの時期を判断しやすく、花のお手入れに慣れるのに適しています。
               </p>
@@ -388,73 +389,73 @@ export default function FlowerCarePage() {
         {/* ─── Vase for Subscription ─── */}
         <section id="vase-subsc" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               サブスクの花に合う花瓶の選び方
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花のサブスクは、サービスやプランによって届く花の本数や丈が異なります。
               利用しているサービスに合った花瓶を選ぶことで、花の見栄えがよくなります。
             </p>
 
             <div className="space-y-4">
               {/* bloomee / medelu mini */}
-              <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5">
+              <div className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] p-5">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     ポスト投函型
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">bloomee・medelu Miniプランなど（3〜4本）</h3>
-                    <p className="text-sm text-[#666] leading-relaxed mb-3">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">bloomee・medelu Miniプランなど（3〜4本）</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                       ポスト投函で届く花は茎が短めにカットされています。高さ10〜15cmのミニ花瓶や一輪挿しが適しています。
                       口径3〜5cmの細めのものを選ぶと、少ない本数でもまとまりよく飾ることができます。
                     </p>
                     <div className="flex items-center gap-4 text-sm">
-                      <span className="text-[#4A7C59] font-bold">高さ10〜15cm</span>
-                      <span className="text-[#999]">口径3〜5cm</span>
-                      <span className="text-[#999]">一輪挿しも可</span>
+                      <span className="text-[#2F5B43] font-bold">高さ10〜15cm</span>
+                      <span className="text-[#6B6F6A]">口径3〜5cm</span>
+                      <span className="text-[#6B6F6A]">一輪挿しも可</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* hanameku / bloomee regular */}
-              <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5">
+              <div className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] p-5">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     中量タイプ
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">medelu Lite・bloomeeお試しプランなど（4〜6本）</h3>
-                    <p className="text-sm text-[#666] leading-relaxed mb-3">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">medelu Lite・bloomeeお試しプランなど（4〜6本）</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                       標準的な花束に合うスタンダードサイズの花瓶をおすすめします。高さ15〜20cmで口径5〜8cm程度のものを選ぶと、
                       花束をそのまま入れても窮屈にならず、バランスよく飾ることができます。
                     </p>
                     <div className="flex items-center gap-4 text-sm">
-                      <span className="text-[#4A7C59] font-bold">高さ15〜20cm</span>
-                      <span className="text-[#999]">口径5〜8cm</span>
-                      <span className="text-[#999]">テーブル向き</span>
+                      <span className="text-[#2F5B43] font-bold">高さ15〜20cm</span>
+                      <span className="text-[#6B6F6A]">口径5〜8cm</span>
+                      <span className="text-[#6B6F6A]">テーブル向き</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* AND PLANTS */}
-              <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5">
+              <div className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] p-5">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     ボリューム型
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">AND PLANTSなど（6〜8本（2026年10月17日公式確認）・茎長め）</h3>
-                    <p className="text-sm text-[#666] leading-relaxed mb-3">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">AND PLANTSなど（6〜8本（2026年10月17日公式確認）・茎長め）</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                       宅配便で届く花は茎が長いまま届くことが多いため、高さ20〜30cmのトールサイズの花瓶が適しています。
                       口径は6〜10cm程度で、底が広く安定したタイプを選ぶと倒れにくくなります。
                     </p>
                     <div className="flex items-center gap-4 text-sm">
-                      <span className="text-[#4A7C59] font-bold">高さ20〜30cm</span>
-                      <span className="text-[#999]">口径6〜10cm</span>
-                      <span className="text-[#999]">安定感重視</span>
+                      <span className="text-[#2F5B43] font-bold">高さ20〜30cm</span>
+                      <span className="text-[#6B6F6A]">口径6〜10cm</span>
+                      <span className="text-[#6B6F6A]">安定感重視</span>
                     </div>
                   </div>
                 </div>
@@ -464,20 +465,20 @@ export default function FlowerCarePage() {
         </section>
 
         {/* ─── 100 Yen Shop Section ─── */}
-        <section id="100yen" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="100yen" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               100円ショップでそろえる花瓶セット
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花瓶に高い費用をかける必要はありません。ダイソーやセリアなどの100円ショップには、
               花を飾るのに十分な商品がそろっています。合計500円程度で基本のセットをそろえられます。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-              <div className="bg-white rounded-xl border border-[#E5E5E5] p-5">
-                <h3 className="text-base font-bold text-[#333] mb-3">基本の花瓶セット（税込550円）</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-white rounded-md border border-[#DEDAD2] p-5">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">基本の花瓶セット（税込550円）</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>・ ガラス製ミニ花瓶（高さ約15cm）... 110円</li>
                   <li>・ 一輪挿し（高さ約10cm）... 110円</li>
                   <li>・ 花ばさみ（園芸用ハサミ）... 110円</li>
@@ -486,9 +487,9 @@ export default function FlowerCarePage() {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-xl border border-[#E5E5E5] p-5">
-                <h3 className="text-base font-bold text-[#333] mb-3">あると便利な追加の道具</h3>
-                <ul className="text-sm text-[#666] space-y-2">
+              <div className="bg-white rounded-md border border-[#DEDAD2] p-5">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">あると便利な追加の道具</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>・ トールグラス（高さ約20cm）... 110円</li>
                   <li>・ 延命剤（切花長もち液）... 110円</li>
                   <li>・ 小さなバケツ（水切り用）... 110円</li>
@@ -498,9 +499,9 @@ export default function FlowerCarePage() {
               </div>
             </div>
 
-            <div className="bg-[#E8F0EB] rounded-xl p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">100円ショップの花瓶の活用方法</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
+            <div className="bg-[#EDF1EC] rounded-md p-5">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-2">100円ショップの花瓶の活用方法</h3>
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 100円ショップの花瓶は小さめのものが多いため、サブスクで届いた花を小分けにして複数の花瓶に飾ることをおすすめします。
                 リビング、玄関、洗面台など、家の複数の場所に1〜2本ずつ飾ると、少ない本数でも部屋全体が華やかになります。
                 ジュースのガラス瓶やマグカップを花瓶の代わりに使うこともできます。
@@ -512,52 +513,52 @@ export default function FlowerCarePage() {
         {/* ─── Seasonal Tips ─── */}
         <section id="seasonal" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               季節ごとのお手入れ注意点
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               切り花の寿命は季節によって大きく変わります。
               特に夏は注意が必要です。季節ごとの対策を把握しておくと、年間を通じて花を長く楽しめます。
             </p>
 
             <div className="space-y-5">
               {/* Spring */}
-              <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5">
+              <div className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] p-5">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     春（3〜5月）
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">花が最も長持ちしやすい季節</h3>
-                    <p className="text-sm text-[#666] leading-relaxed mb-3">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">花が最も長持ちしやすい季節</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                       気温15〜20度前後で、花に適した環境です。基本のお手入れ（水切り・水替え）を行えば、
                       1週間以上楽しめる花が多い季節です。チューリップやスイートピーなど春の花は茎が柔らかいため、
                       水の量をやや少なめ（茎の3〜5cm）にすると茎が傷みにくくなります。
                     </p>
-                    <div className="bg-white rounded-lg border border-[#E5E5E5] p-3">
-                      <p className="text-xs text-[#999]">春の注意点</p>
-                      <p className="text-sm text-[#666]">花粉が多い季節のため、花粉症の方はユリなどの花粉が飛びやすい花には注意してください。</p>
+                    <div className="bg-white rounded-lg border border-[#DEDAD2] p-3">
+                      <p className="text-xs text-[#6B6F6A]">春の注意点</p>
+                      <p className="text-sm text-[#4A4F49]">花粉が多い季節のため、花粉症の方はユリなどの花粉が飛びやすい花には注意してください。</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Summer */}
-              <div className="bg-[#FDF5F5] rounded-xl border-2 border-[#F0D0D0] p-5">
+              <div className="bg-[#F7F1EC] rounded-md border-2 border-[#E3D3C8] p-5">
                 <div className="flex items-start gap-3">
                   <span className="bg-[#DC2626] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     夏（6〜8月） 注意
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">花が最も傷みやすく、対策が必要な季節</h3>
-                    <p className="text-sm text-[#666] leading-relaxed mb-3">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">花が最も傷みやすく、対策が必要な季節</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                       気温30度を超える夏場は、花の寿命が通常の半分以下になることもあります。
                       水温が上がるとバクテリアが急速に増殖し、茎の導管を詰まらせます。
                       夏は他の季節以上にこまめなケアが必要です。
                     </p>
-                    <div className="bg-white rounded-lg border border-[#F0D0D0] p-4">
+                    <div className="bg-white rounded-lg border border-[#E3D3C8] p-4">
                       <p className="text-xs font-bold text-[#DC2626] mb-2">夏に必要な対策</p>
-                      <ul className="text-sm text-[#666] space-y-1.5">
+                      <ul className="text-sm text-[#4A4F49] space-y-1.5">
                         <li>・ 水替えは1日2回（朝・夜）に増やす</li>
                         <li>・ 氷を2〜3個入れて水温を下げる</li>
                         <li>・ 水の量は少なめ（茎の3cm程度）にする</li>
@@ -572,42 +573,42 @@ export default function FlowerCarePage() {
               </div>
 
               {/* Autumn */}
-              <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5">
+              <div className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] p-5">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     秋（9〜11月）
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">花持ちが回復する過ごしやすい季節</h3>
-                    <p className="text-sm text-[#666] leading-relaxed mb-3">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">花持ちが回復する過ごしやすい季節</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                       気温が下がり始め、花にとっても過ごしやすい季節です。春と同様に、基本のお手入れで十分に長持ちします。
                       9月は残暑が厳しい日もあるため、9月中は夏の対策を続けることをおすすめします。
                       秋の花（コスモス、ダリアなど）はドライフラワーにしやすいものが多いのも特徴です。
                     </p>
-                    <div className="bg-white rounded-lg border border-[#E5E5E5] p-3">
-                      <p className="text-xs text-[#999]">秋の注意点</p>
-                      <p className="text-sm text-[#666]">暖房を使い始める時期は、暖房の風が花に直接当たらないようご注意ください。</p>
+                    <div className="bg-white rounded-lg border border-[#DEDAD2] p-3">
+                      <p className="text-xs text-[#6B6F6A]">秋の注意点</p>
+                      <p className="text-sm text-[#4A4F49]">暖房を使い始める時期は、暖房の風が花に直接当たらないようご注意ください。</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Winter */}
-              <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5">
+              <div className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] p-5">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     冬（12〜2月）
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">花が最も長持ちする季節</h3>
-                    <p className="text-sm text-[#666] leading-relaxed mb-3">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">花が最も長持ちする季節</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                       気温が低いため花の代謝が遅くなり、最も長持ちする季節です。
                       2週間以上持つ花も珍しくありません。ただし、暖房の効いた部屋は乾燥しやすいため、
                       暖房器具の近くには置かないでください。
                     </p>
-                    <div className="bg-white rounded-lg border border-[#E5E5E5] p-3">
-                      <p className="text-xs text-[#999]">冬の注意点</p>
-                      <p className="text-sm text-[#666]">暖房の風が当たる場所は避けてください。また、窓際は夜間に冷えすぎる場合があるため、凍結にご注意ください。</p>
+                    <div className="bg-white rounded-lg border border-[#DEDAD2] p-3">
+                      <p className="text-xs text-[#6B6F6A]">冬の注意点</p>
+                      <p className="text-sm text-[#4A4F49]">暖房の風が当たる場所は避けてください。また、窓際は夜間に冷えすぎる場合があるため、凍結にご注意ください。</p>
                     </div>
                   </div>
                 </div>
@@ -617,57 +618,57 @@ export default function FlowerCarePage() {
         </section>
 
         {/* ─── Dried Flowers ─── */}
-        <section id="dried" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="dried" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               ドライフラワーの作り方
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               サブスクで届いた花は、しおれる前にドライフラワーにすることで長期間楽しめます。
               生花として1週間、ドライフラワーとして数か月楽しめるため、1回の配送で2通りの楽しみ方ができます。
             </p>
 
             {/* Method */}
-            <h3 className="text-lg font-bold text-[#333] mb-4">ハンギング法（逆さ吊り）：最も簡単な方法</h3>
-            <div className="bg-white rounded-xl border border-[#E5E5E5] p-5 mb-6">
+            <h3 className="text-lg font-bold text-[#1F2420] mb-4">ハンギング法（逆さ吊り）：最も簡単な方法</h3>
+            <div className="bg-white rounded-md border border-[#DEDAD2] p-5 mb-6">
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#4A7C59] text-white text-xs font-bold shrink-0 mt-0.5">1</span>
+                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-[#2F5B43] text-white text-xs font-bold shrink-0 mt-0.5">1</span>
                   <div>
-                    <p className="text-sm font-bold text-[#333]">花が傷む前に取り出す</p>
-                    <p className="text-sm text-[#666]">完全にしおれてからでは、きれいに仕上がりません。花が7〜8分咲きの状態のときが適しています。</p>
+                    <p className="text-sm font-bold text-[#1F2420]">花が傷む前に取り出す</p>
+                    <p className="text-sm text-[#4A4F49]">完全にしおれてからでは、きれいに仕上がりません。花が7〜8分咲きの状態のときが適しています。</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#4A7C59] text-white text-xs font-bold shrink-0 mt-0.5">2</span>
+                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-[#2F5B43] text-white text-xs font-bold shrink-0 mt-0.5">2</span>
                   <div>
-                    <p className="text-sm font-bold text-[#333]">余分な葉を取り除く</p>
-                    <p className="text-sm text-[#666]">葉が多いと乾燥に時間がかかり、カビの原因になります。必要最低限の葉だけを残してください。</p>
+                    <p className="text-sm font-bold text-[#1F2420]">余分な葉を取り除く</p>
+                    <p className="text-sm text-[#4A4F49]">葉が多いと乾燥に時間がかかり、カビの原因になります。必要最低限の葉だけを残してください。</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#4A7C59] text-white text-xs font-bold shrink-0 mt-0.5">3</span>
+                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-[#2F5B43] text-white text-xs font-bold shrink-0 mt-0.5">3</span>
                   <div>
-                    <p className="text-sm font-bold text-[#333]">1本ずつ逆さに吊るす</p>
-                    <p className="text-sm text-[#666]">麻ひもや輪ゴムで茎を留め、風通しのよい日陰に逆さに吊るします。複数本を束ねて吊るすと内部が乾きにくいため、1本ずつ吊るすことをおすすめします。</p>
+                    <p className="text-sm font-bold text-[#1F2420]">1本ずつ逆さに吊るす</p>
+                    <p className="text-sm text-[#4A4F49]">麻ひもや輪ゴムで茎を留め、風通しのよい日陰に逆さに吊るします。複数本を束ねて吊るすと内部が乾きにくいため、1本ずつ吊るすことをおすすめします。</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#4A7C59] text-white text-xs font-bold shrink-0 mt-0.5">4</span>
+                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-[#2F5B43] text-white text-xs font-bold shrink-0 mt-0.5">4</span>
                   <div>
-                    <p className="text-sm font-bold text-[#333]">1〜2週間で完成</p>
-                    <p className="text-sm text-[#666]">花の種類や湿度によって異なりますが、1〜2週間で完全に乾燥します。触って乾いた手触りになっていれば完成です。</p>
+                    <p className="text-sm font-bold text-[#1F2420]">1〜2週間で完成</p>
+                    <p className="text-sm text-[#4A4F49]">花の種類や湿度によって異なりますが、1〜2週間で完全に乾燥します。触って乾いた手触りになっていれば完成です。</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Suitable flowers */}
-            <h3 className="text-lg font-bold text-[#333] mb-4">ドライフラワーに向く花・向かない花</h3>
+            <h3 className="text-lg font-bold text-[#1F2420] mb-4">ドライフラワーに向く花・向かない花</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-              <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C5D9CB]">
-                <h4 className="text-sm font-bold text-[#4A7C59] mb-3">向いている花</h4>
-                <ul className="text-sm text-[#666] space-y-1.5">
+              <div className="bg-[#EDF1EC] rounded-md p-5 border border-[#C9D6CB]">
+                <h4 className="text-sm font-bold text-[#2F5B43] mb-3">向いている花</h4>
+                <ul className="text-sm text-[#4A4F49] space-y-1.5">
                   <li>・ バラ（特に濃い色のもの）</li>
                   <li>・ かすみ草</li>
                   <li>・ スターチス</li>
@@ -678,9 +679,9 @@ export default function FlowerCarePage() {
                   <li>・ ミモザ</li>
                 </ul>
               </div>
-              <div className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
-                <h4 className="text-sm font-bold text-[#333] mb-3">向かない花</h4>
-                <ul className="text-sm text-[#666] space-y-1.5">
+              <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#E3D3C8]">
+                <h4 className="text-sm font-bold text-[#1F2420] mb-3">向かない花</h4>
+                <ul className="text-sm text-[#4A4F49] space-y-1.5">
                   <li>・ ガーベラ（水分が多く縮む）</li>
                   <li>・ チューリップ（花びらが落ちやすい）</li>
                   <li>・ スイートピー（薄く崩れやすい）</li>
@@ -691,9 +692,9 @@ export default function FlowerCarePage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl border border-[#E5E5E5] p-5">
-              <h4 className="text-sm font-bold text-[#333] mb-2">ドライフラワーの飾り方と保存方法</h4>
-              <p className="text-sm text-[#666] leading-relaxed">
+            <div className="bg-white rounded-md border border-[#DEDAD2] p-5">
+              <h4 className="text-sm font-bold text-[#1F2420] mb-2">ドライフラワーの飾り方と保存方法</h4>
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 完成したドライフラワーは、直射日光を避け、湿気の少ない場所に飾ってください。
                 花瓶に挿す、壁に吊るす、リースにアレンジするなど、さまざまな飾り方ができます。
                 ヘアスプレーを軽く吹きかけておくと、花びらの落下を防げます。
@@ -706,21 +707,21 @@ export default function FlowerCarePage() {
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のお手入れに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -731,7 +732,7 @@ export default function FlowerCarePage() {
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -743,42 +744,42 @@ export default function FlowerCarePage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
+        <section id="summary" className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               基本のお手入れで花を長く楽しめます
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花を長持ちさせるために最も大切なのは、「水切り」と「毎日の水替え」です。
               この2つを習慣にすることで、花の寿命は延びます。
               延命剤の活用、置き場所の工夫、季節に合わせたお手入れを加えると、さらに長く楽しめます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花瓶は、利用しているサブスクのプランに合ったサイズをお選びください。
               100円ショップでそろえれば、初期費用はわずかです。
               しおれる前にドライフラワーにすると、1回の配送で生花とドライフラワーの2通りの楽しみ方ができます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               花のサブスクは定期的に新しい花が届くため、お手入れが習慣として定着しやすくなります。
               これからサブスクを始める方には、まず手頃なプランから試すことをおすすめします。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
                 href="/compare/cheap"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 花のサブスクを安い順に比較する
               </a>
               <a
                 href="/guides/beginner"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 初心者向けガイドを見る
               </a>
             </div>
             <a
               href="/"
-              className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+              className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
             >
               トップページに戻る
             </a>
@@ -787,11 +788,11 @@ export default function FlowerCarePage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
 
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。

@@ -6,6 +6,7 @@ import Header from "@/app/components/Header";
 import { SERVICES } from "@/data/services";
 import { findReviewEvidence } from "@/data/reviewEvidence";
 import { CompareSection, OfficialPlans, ReviewEvidence, ReviewVerdict } from "@/app/components/ReviewEvidence";
+import PageHero from "@/app/components/PageHero";
 
 /* 料金は単一データソース(services.ts)を参照（公式確認済み・ページ間のズレ防止） */
 const S = SERVICES.find((s) => s.id === "andplants")!;
@@ -97,20 +98,20 @@ export default function AndPlantsPage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">サービス一覧</span>
+                  <span className="text-[#4A4F49]">サービス一覧</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">AND PLANTS（アンドプランツ）</span>
+                  <span className="text-[#1F2420] font-medium">AND PLANTS（アンドプランツ）</span>
                 </li>
               </ol>
             </nav>
@@ -118,59 +119,59 @@ export default function AndPlantsPage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F0EBE3] py-12 md:py-20">
+        <PageHero path="/services/and-plants/" services={[{ slug: "and-plants", name: "AND PLANTS（アンドプランツ）" }]}>
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
               花のサブスク個別レビュー｜{RE.updatedAt}更新
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               アンドプランツ（AND PLANTS）の口コミ・評判<br className="hidden md:block" />
               観葉植物と花の定期便の良い口コミ・悪い口コミを検証
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               アンドプランツ（AND PLANTS）の口コミは観葉植物の通販についての声が中心で、楽天市場の公式ショップ評価は4.77（756件・2026年10月20日確認）です。当サイトでは、観葉植物の通販と花の定期便（現「AND FLOWER」）を展開するアンドプランツの口コミ・評判を、出典を明記して整理しています。花の定期便の料金・解約・交換条件は、{S.verifiedAt}に公式サイトで確認した値にもとづいてご説明します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">花の定期便</p>
-                <p className="text-xl font-bold text-[#4A7C59]">{S.cheapest.price.toLocaleString()}円/回〜</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">花の定期便</p>
+                <p className="text-xl font-bold text-[#2F5B43]">{S.cheapest.price.toLocaleString()}円/回〜</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">送料</p>
-                <p className="text-xl font-bold text-[#4A7C59]">込み</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">送料</p>
+                <p className="text-xl font-bold text-[#2F5B43]">込み</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">回数の条件</p>
-                <p className="text-xl font-bold text-[#4A7C59]">なし</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">回数の条件</p>
+                <p className="text-xl font-bold text-[#2F5B43]">なし</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">お届け頻度</p>
-                <p className="text-xl font-bold text-[#4A7C59]">1・2・4週ごと</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">お届け頻度</p>
+                <p className="text-xl font-bold text-[#2F5B43]">1・2・4週ごと</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         <ReviewVerdict d={RE} s={S} />
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">本ページの内容</p>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">本ページの内容</p>
               <nav>
-                <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">1. アンドプランツの口コミ・評判（出典付き）</a></li>
-                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">2. AND PLANTSの概要（観葉植物と花の定期便）</a></li>
-                  <li><a href="#pricing" className="hover:text-[#4A7C59] transition-colors">3. 花の定期便の料金（公式確認）</a></li>
-                  <li><a href="#plants" className="hover:text-[#4A7C59] transition-colors">4. 観葉植物の通販としての特徴</a></li>
-                  <li><a href="#pros" className="hover:text-[#4A7C59] transition-colors">5. メリット（良い評判の理由）</a></li>
-                  <li><a href="#cons" className="hover:text-[#4A7C59] transition-colors">6. デメリット（悪い評判の理由）</a></li>
-                  <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">7. おすすめできる方・おすすめできない方</a></li>
-                  <li><a href="#comparison" className="hover:text-[#4A7C59] transition-colors">8. ほかの花のサブスクとの比較</a></li>
-                  <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">9. 花の定期便の始め方</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">10. よくある質問</a></li>
-                  <li><a href="#cancellation" className="hover:text-[#4A7C59] transition-colors">11. 解約手順</a></li>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
+                  <li><a href="#reviews" className="hover:text-[#2F5B43] transition-colors">1. アンドプランツの口コミ・評判（出典付き）</a></li>
+                  <li><a href="#overview" className="hover:text-[#2F5B43] transition-colors">2. AND PLANTSの概要（観葉植物と花の定期便）</a></li>
+                  <li><a href="#pricing" className="hover:text-[#2F5B43] transition-colors">3. 花の定期便の料金（公式確認）</a></li>
+                  <li><a href="#plants" className="hover:text-[#2F5B43] transition-colors">4. 観葉植物の通販としての特徴</a></li>
+                  <li><a href="#pros" className="hover:text-[#2F5B43] transition-colors">5. メリット（良い評判の理由）</a></li>
+                  <li><a href="#cons" className="hover:text-[#2F5B43] transition-colors">6. デメリット（悪い評判の理由）</a></li>
+                  <li><a href="#recommend" className="hover:text-[#2F5B43] transition-colors">7. おすすめできる方・おすすめできない方</a></li>
+                  <li><a href="#comparison" className="hover:text-[#2F5B43] transition-colors">8. ほかの花のサブスクとの比較</a></li>
+                  <li><a href="#how-to-start" className="hover:text-[#2F5B43] transition-colors">9. 花の定期便の始め方</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">10. よくある質問</a></li>
+                  <li><a href="#cancellation" className="hover:text-[#2F5B43] transition-colors">11. 解約手順</a></li>
                 </ol>
               </nav>
             </div>
@@ -185,19 +186,19 @@ export default function AndPlantsPage() {
         </section>
 
         {/* ─── Service Overview ─── */}
-        <section id="overview" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="overview" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               AND PLANTS（アンドプランツ）の概要
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               AND PLANTS（アンドプランツ）は、株式会社Domuz（神奈川県川崎市）が運営する観葉植物の通販サイトです。鉢・プランターとセットで届く観葉植物が中心で、花の定期便もそのサービスの一つとして提供されています。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               2026年5月からは花の事業が「AND FLOWER（アンドフラワー）」ブランドとして展開されていますが、花の定期便のページは現在もandplants.jp配下にあります。「アンドプランツ 口コミ」で見つかる声の多くは観葉植物に関するものであるため、当サイトでは観葉植物と花の定期便を分けて整理しています。
             </p>
-            <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">AND PLANTS 基本情報（{S.verifiedAt} 公式確認）</h3>
+            <div className="bg-[#EDF1EC] rounded-md p-5 md:p-6">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-3">AND PLANTS 基本情報（{S.verifiedAt} 公式確認）</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 {[
                   ["運営会社", "株式会社Domuz"],
@@ -210,8 +211,8 @@ export default function AndPlantsPage() {
                   ["観葉植物の交換", "到着後14日以内"],
                 ].map(([k, v]) => (
                   <div key={k} className="flex">
-                    <span className="text-[#999] w-28 shrink-0">{k}</span>
-                    <span className="text-[#333]">{v}</span>
+                    <span className="text-[#6B6F6A] w-28 shrink-0">{k}</span>
+                    <span className="text-[#1F2420]">{v}</span>
                   </div>
                 ))}
               </div>
@@ -222,10 +223,10 @@ export default function AndPlantsPage() {
         {/* ─── Pricing Table ─── */}
         <section id="pricing" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               AND PLANTSの花の定期便の料金・送料
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               花の定期便はスタンダード1,980円（6〜8本）、ミディアム2,980円（8〜10本）、ラージ4,980円（14〜18本）で、いずれも送料込みの表記です（クール便オプションは別料金）。定期便ページには初回500円オフクーポンの案内もあります。
             </p>
             <OfficialPlans s={S} />
@@ -233,21 +234,21 @@ export default function AndPlantsPage() {
         </section>
 
         {/* ─── Plants ─── */}
-        <section id="plants" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="plants" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               観葉植物の通販としての特徴（アンドプランツの口コミが多く寄せられている分野）
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               アンドプランツの口コミの大半は観葉植物の購入者によるものです。公式サイトで確認できる主な特徴は次のとおりです（2026年10月14日確認）。
             </p>
-            <ul className="text-sm md:text-base text-[#555] space-y-2 mb-4">
+            <ul className="text-sm md:text-base text-[#3F443E] space-y-2 mb-4">
               <li>・鉢代・植え替え作業代は観葉植物の代金に含まれています（公式トップ）</li>
               <li>・観葉植物S/M/Lサイズは送料無料（北海道・沖縄は＋2,500円）。テーブル・ハンギングサイズの送料は880円です（特定商取引法に基づく表記）</li>
               <li>・観葉植物・グッズは、到着後14日以内であれば写真を添えて交換を相談できます（返品・交換規定）</li>
             </ul>
-            <p className="text-sm text-[#666] leading-relaxed">
-              観葉植物を選ぶ際は、料金や他社との違いを<a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] underline">観葉植物の通販・レンタルの料金ガイド</a>や<a href="/compare/kanyou-shokubutsu/" className="text-[#4A7C59] underline">観葉植物の比較ページ</a>でもご確認いただけます。
+            <p className="text-sm text-[#4A4F49] leading-relaxed">
+              観葉植物を選ぶ際は、料金や他社との違いを<a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#2F5B43] underline">観葉植物の通販・レンタルの料金ガイド</a>や<a href="/compare/kanyou-shokubutsu/" className="text-[#2F5B43] underline">観葉植物の比較ページ</a>でもご確認いただけます。
             </p>
           </div>
         </section>
@@ -255,7 +256,7 @@ export default function AndPlantsPage() {
         {/* ─── Pros Section ─── */}
         <section id="pros" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               AND PLANTSのメリット（良い評判の理由）
             </h2>
             <div className="space-y-5">
@@ -277,14 +278,14 @@ export default function AndPlantsPage() {
                   text: "最安のスタンダードでも6〜8本と、ポスト投函型の花のサブスク（3〜4本前後）より本数が多めです。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-[#E8F0EB] rounded-xl p-5">
+                <div key={i} className="bg-[#EDF1EC] rounded-md p-5">
                   <div className="flex items-start gap-3">
-                    <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
+                    <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-md w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
                       {i + 1}
                     </span>
                     <div>
-                      <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
-                      <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                      <h3 className="text-base font-bold text-[#1F2420] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                     </div>
                   </div>
                 </div>
@@ -294,9 +295,9 @@ export default function AndPlantsPage() {
         </section>
 
         {/* ─── Cons Section ─── */}
-        <section id="cons" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="cons" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#F0D0D0]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#E3D3C8]">
               AND PLANTSのデメリット（悪い評判の理由）
             </h2>
             <div className="space-y-5">
@@ -318,14 +319,14 @@ export default function AndPlantsPage() {
                   text: "観葉植物では人気品種の品切れや、コバエ・茎折れ・鉢の割れの報告がレビュー記事で挙がっています。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
+                <div key={i} className="bg-[#F7F1EC] rounded-md p-5 border border-[#E3D3C8]">
                   <div className="flex items-start gap-3">
-                    <span className="bg-[#E0B8B8] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
+                    <span className="bg-[#D9BFB1] text-white text-xs font-bold rounded-md w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
                       {i + 1}
                     </span>
                     <div>
-                      <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
-                      <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                      <h3 className="text-base font-bold text-[#1F2420] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                     </div>
                   </div>
                 </div>
@@ -337,25 +338,25 @@ export default function AndPlantsPage() {
         {/* ─── Recommendation Section ─── */}
         <section id="recommend" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               AND PLANTSをおすすめできる方・おすすめできない方
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#4A7C59] mb-4">おすすめできる方</h3>
-                <ul className="text-sm text-[#666] space-y-3">
-                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>回数の条件なしで花の定期便を試したい方</span></li>
-                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>1回あたりの本数が多い花束を飾りたい方</span></li>
-                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>観葉植物と花をまとめて同じサイトで選びたい方</span></li>
-                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] mt-1 shrink-0">--</span><span>届くペースを1〜4週で調整したい方</span></li>
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#2F5B43] mb-4">おすすめできる方</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-3">
+                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] mt-1 shrink-0">--</span><span>回数の条件なしで花の定期便を試したい方</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] mt-1 shrink-0">--</span><span>1回あたりの本数が多い花束を飾りたい方</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] mt-1 shrink-0">--</span><span>観葉植物と花をまとめて同じサイトで選びたい方</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] mt-1 shrink-0">--</span><span>届くペースを1〜4週で調整したい方</span></li>
                 </ul>
               </div>
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <h3 className="text-base font-bold text-[#C08552] mb-4">おすすめできない方</h3>
-                <ul className="text-sm text-[#666] space-y-3">
-                  <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>料金を最優先で抑えたい方（medeluやハナメクの方が安価です）</span></li>
-                  <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>ポスト投函で受け取りたい方</span></li>
-                  <li className="flex items-start gap-2"><span className="text-[#E0B8B8] mt-1 shrink-0">--</span><span>届いた花をすぐ確認できない方（生花の交換申請は1日以内）</span></li>
+                <ul className="text-sm text-[#4A4F49] space-y-3">
+                  <li className="flex items-start gap-2"><span className="text-[#D9BFB1] mt-1 shrink-0">--</span><span>料金を最優先で抑えたい方（medeluやハナメクの方が安価です）</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#D9BFB1] mt-1 shrink-0">--</span><span>ポスト投函で受け取りたい方</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#D9BFB1] mt-1 shrink-0">--</span><span>届いた花をすぐ確認できない方（生花の交換申請は1日以内）</span></li>
                 </ul>
               </div>
             </div>
@@ -366,9 +367,9 @@ export default function AndPlantsPage() {
         <CompareSection s={S} all={SERVICES} note="AND PLANTSの花の定期便は、最安プランの価格が4社で最も高い一方で、本数が多く、回数の条件もありません。料金を重視する場合はmedelu・ハナメク、ポスト投函型の代表的なサービスを選ぶ場合はbloomee、ボリュームと解約のしやすさを重視する場合はAND PLANTSが候補になります。" />
 
         {/* ─── How to Sign Up ─── */}
-        <section id="how-to-start" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="how-to-start" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               AND PLANTSの花の定期便の始め方
             </h2>
             <div className="space-y-4">
@@ -379,13 +380,13 @@ export default function AndPlantsPage() {
                 { step: "STEP 4", title: "クーポンと支払い方法を確認する", text: "初回500円オフクーポンの案内がある場合は適用条件を確認し、支払い方法を登録します。" },
                 { step: "STEP 5", title: "届いたらすぐに状態を確認する", text: "生花の交換申請は到着後1日以内です。届いたら早めに開封してご確認ください。" },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <div className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
+                <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
+                  <div className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
                     {item.step}
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -396,21 +397,21 @@ export default function AndPlantsPage() {
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               AND PLANTSに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -421,7 +422,7 @@ export default function AndPlantsPage() {
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -433,71 +434,71 @@ export default function AndPlantsPage() {
         </section>
 
                 {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
-        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
+        <section id="cancellation" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               AND PLANTS（アンドプランツ）の解約手順
             </h2>
-            <p className="text-sm text-[#666] mb-6">回数の条件はありません（公式に「解約もいつでも可能」と記載）。決済はお届けの約1週間前に行われるため、それより前に手続きしてください。</p>
-            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+            <p className="text-sm text-[#4A4F49] mb-6">回数の条件はありません（公式に「解約もいつでも可能」と記載）。決済はお届けの約1週間前に行われるため、それより前に手続きしてください。</p>
+            <div className="bg-white rounded-md p-6 md:p-8">
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">マイページにログインする</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">AND PLANTS公式サイトのマイページからログインします。</p>
+                  <div className="bg-[#2F5B43] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">マイページにログインする</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">AND PLANTS公式サイトのマイページからログインします。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期便管理」を選択する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">マイページから定期便管理画面に進みます。</p>
+                  <div className="bg-[#2F5B43] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">「定期便管理」を選択する</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">マイページから定期便管理画面に進みます。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期便を解約する」をクリックする</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">画面の指示に従って解約手続きに進みます。</p>
+                  <div className="bg-[#2F5B43] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">「定期便を解約する」をクリックする</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">画面の指示に従って解約手続きに進みます。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">解約理由を選択する（任意）</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">アンケートへの回答は任意です。</p>
+                  <div className="bg-[#2F5B43] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">解約理由を選択する（任意）</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">アンケートへの回答は任意です。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「解約を確定する」をクリック</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">次回分の決済（お届けの約1週間前）より前に手続きを完了してください。</p>
+                  <div className="bg-[#2F5B43] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">「解約を確定する」をクリック</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">次回分の決済（お届けの約1週間前）より前に手続きを完了してください。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#4A7C59] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">確認メールを受信する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">AND PLANTSから解約完了通知メールが届きます。</p>
+                  <div className="bg-[#2F5B43] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">確認メールを受信する</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">AND PLANTSから解約完了通知メールが届きます。</p>
                   </div>
                 </div>
             </div>
-            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。ご利用前に、AND PLANTS（アンドプランツ）公式サイトにて最新情報をご確認ください。</p>
+            <p className="text-xs text-[#6B6F6A] mt-4 text-center">※ 2026年5月時点の手順です。ご利用前に、AND PLANTS（アンドプランツ）公式サイトにて最新情報をご確認ください。</p>
           </div>
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
+        <section id="summary" className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               口コミ・評判からみたアンドプランツが適している方
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               AND PLANTS（アンドプランツ）は観葉植物の通販が中心で、梱包の丁寧さや植物の状態の良さが口コミで評価されています。花の定期便（現AND FLOWER）は送料込み1,980円〜で6〜8本と本数が多めです。
               回数の条件はなく、公式に「解約もいつでも可能」と記載されているほか、初回500円オフクーポンの案内もあります。お届け頻度は1・2・4週ごとから選べます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               一方で、他社と比べて価格がやや高めである点、ポスト投函ではなく宅配で届く点、生花の交換申請の期限が到着後1日以内と短い点にご留意ください。
               費用を重視する場合はmedelu、手軽さを重視する場合はbloomeeもあわせて検討し、ご自身のライフスタイルに合ったサービスをお選びください。
             </p>
@@ -506,13 +507,13 @@ export default function AndPlantsPage() {
                 href="https://t.felmat.net/fmcl?ak=U10465Q.1.G147840L.A135745L"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 AND PLANTS公式サイトはこちら
               </a>
               <a
                 href="/"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 他のサービスと比較する
               </a>
@@ -521,31 +522,31 @@ export default function AndPlantsPage() {
         </section>
 
         {/* 関連リンク（第二弾: 文脈内部リンク） */}
-        <section className="bg-[#FBF8F4] py-10">
+        <section className="bg-[#F6F4EF] py-10">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="heading-serif text-2xl font-bold text-[#3D3632] mb-5">AND PLANTSに関連する比較・ガイド</h2>
+            <h2 className="font-heading text-2xl font-bold text-[#1F2420] mb-5">AND PLANTSに関連する比較・ガイド</h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-              <a href="/service-guides/and-plants-kaiyaku/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">AND PLANTSの解約方法（締切・注意点） →</a>
-              <a href="/vs/and-plants-vs-lifft/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">AND PLANTS vs LIFFT 比較 →</a>
-              <a href="/vs/medelu-vs-and-plants/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">medelu vs AND PLANTS 比較 →</a>
-              <a href="/vs/bloomee-vs-and-plants/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomee vs AND PLANTS 比較 →</a>
-              <a href="/compare/cheap/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">安い花のサブスク比較 →</a>
-              <a href="/compare/souryou-muryou/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">送料無料で比較 →</a>
-              <a href="/guides/beginner/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">花サブスク初心者ガイド →</a>
-              <a href="/guides/oshare/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">おしゃれな花サブスク →</a>
-              <a href="/services/bloomee/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomeeの口コミ・評判 →</a>
-              <a href="/services/medelu/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">medeluの口コミ・評判 →</a>
+              <a href="/service-guides/and-plants-kaiyaku/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">AND PLANTSの解約方法（締切・注意点） →</a>
+              <a href="/vs/and-plants-vs-lifft/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">AND PLANTS vs LIFFT 比較 →</a>
+              <a href="/vs/medelu-vs-and-plants/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">medelu vs AND PLANTS 比較 →</a>
+              <a href="/vs/bloomee-vs-and-plants/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">bloomee vs AND PLANTS 比較 →</a>
+              <a href="/compare/cheap/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">安い花のサブスク比較 →</a>
+              <a href="/compare/souryou-muryou/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">送料無料で比較 →</a>
+              <a href="/guides/beginner/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">花サブスク初心者ガイド →</a>
+              <a href="/guides/oshare/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">おしゃれな花サブスク →</a>
+              <a href="/services/bloomee/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">bloomeeの口コミ・評判 →</a>
+              <a href="/services/medelu/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">medeluの口コミ・評判 →</a>
             </div>
           </div>
         </section>
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
 
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。

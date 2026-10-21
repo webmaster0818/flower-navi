@@ -22,19 +22,20 @@
 }
 
 body {
-  color: var(--color-text-primary);
-  background: var(--color-cream);
+  color: #1F2420;
+  background: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "palt" 1;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Elegant serif headings */
-.heading-serif {
-  font-family: var(--font-heading), "Georgia", serif;
+/* 見出し（2026-10-21 刷新：ゴシック体に統一） */
+.font-heading {
+  font-family: var(--font-heading), "Hiragino Kaku Gothic ProN", sans-serif;
   letter-spacing: 0.02em;
 }
 
@@ -123,3 +124,41 @@ html {
 .service-card:hover .service-card-img {
   transform: scale(1.05);
 }
+
+
+/* ─── 2026-10-21 デザイン刷新 ─── */
+
+/* トップのファーストビュー：写真を約6秒ずつ切り替える（5枚・30秒で一巡） */
+.fv-slide { opacity: 0; animation: fv-fade 30s infinite; }
+.fv-slide:first-child { opacity: 1; }
+@keyframes fv-fade {
+  0% { opacity: 0; transform: scale(1.06); }
+  4% { opacity: 1; }
+  20% { opacity: 1; }
+  24% { opacity: 0; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fv-slide { animation: none; }
+  .fv-slide:not(:first-child) { display: none; }
+}
+.fv-strip { scrollbar-width: thin; scrollbar-color: #C9C4B8 transparent; }
+
+/* セクション見出し：左寄せ＋下線 */
+.sec-head { text-align: left; border-bottom: 1px solid #1F2420; padding-bottom: 14px; }
+.sec-head h2 { margin-bottom: 6px; }
+
+/* 配下ページのファーストビュー：既存の中央寄せの本文を左寄せにそろえる */
+.ph-text, .ph-text > div { text-align: left !important; }
+.ph-text .mx-auto { margin-left: 0 !important; margin-right: 0 !important; }
+.ph-text .justify-center { justify-content: flex-start !important; }
+.ph-text h1 { font-family: var(--font-heading), sans-serif; font-size: clamp(24px, 2.5vw, 33px); line-height: 1.4; letter-spacing: 0.01em; color: #1F2420; }
+.ph-text > div > p:first-child, .ph-text > p:first-child { color: #2F5B43; }
+
+/* スマートフォンで表の行が縦に伸びすぎないよう詰める */
+@media (max-width: 767px) {
+  main table { font-size: 13px; line-height: 1.5; }
+  main th, main td { padding: 6px 8px !important; }
+}
+.ph-text .flex-wrap { gap: 10px !important; }
+.ph-text .flex-wrap > div { padding: 10px 14px; border: 1px solid #DEDAD2; }

@@ -11,35 +11,35 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
+    <div className="flex flex-col min-h-screen bg-[#F6F4EF]">
       <Header />
 
       <main className="flex-1">
         {/* Breadcrumb */}
         <div className="max-w-4xl mx-auto px-4 pt-6">
-          <nav className="text-xs text-[#9B8F87]">
-            <Link href="/" className="hover:text-[#C4877A] transition-colors">
+          <nav className="text-xs text-[#6B6F6A]">
+            <Link href="/" className="hover:text-[#B0694F] transition-colors">
               トップ
             </Link>
             <span className="mx-2">&gt;</span>
-            <span className="text-[#3D3632]">プライバシーポリシー</span>
+            <span className="text-[#1F2420]">プライバシーポリシー</span>
           </nav>
         </div>
 
         {/* Content */}
         <div className="max-w-4xl mx-auto px-4 py-10">
-          <h1 className="heading-serif text-3xl md:text-4xl font-bold text-[#3D3632] mb-8">
+          <h1 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2420] mb-8">
             プライバシーポリシー
           </h1>
 
-          <div className="bg-white rounded-2xl border border-[#E8E0D8] p-6 md:p-10 text-[#3D3632] text-sm leading-relaxed space-y-8">
+          <div className="bg-white rounded-md border border-[#DEDAD2] p-6 md:p-10 text-[#1F2420] text-sm leading-relaxed space-y-8">
             <p>
               株式会社MediaX（以下「当社」といいます。）は、当社が運営するウェブサイト「flowerデリ」（以下「本サイト」といいます。）における利用者の個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。
             </p>
 
             {/* 第1条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第1条（個人情報の定義）
               </h2>
               <p>
@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
 
             {/* 第2条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第2条（個人情報の収集方法）
               </h2>
               <p>
@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
 
             {/* 第3条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第3条（個人情報の利用目的）
               </h2>
               <p className="mb-3">
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
 
             {/* 第4条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第4条（個人情報の第三者提供）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -107,7 +107,7 @@ export default function PrivacyPolicyPage() {
 
             {/* 第5条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第5条（個人情報の管理）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -118,7 +118,7 @@ export default function PrivacyPolicyPage() {
 
             {/* 第6条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第6条（個人情報の開示・訂正・削除）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -136,21 +136,21 @@ export default function PrivacyPolicyPage() {
 
             {/* 第7条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第7条（Cookie（クッキー）およびアクセス解析ツールの使用について）
               </h2>
               <p className="mb-3">
                 本サイトでは、利用者の利便性向上およびサイト改善のため、以下のツールを使用しています。
               </p>
-              <h3 className="font-bold text-[#3D3632] mt-4 mb-2">Google Analytics</h3>
+              <h3 className="font-bold text-[#1F2420] mt-4 mb-2">Google Analytics</h3>
               <p>
-                本サイトでは、Googleが提供するアクセス解析ツール「Google Analytics」を使用しています。Google Analyticsはトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。Cookieを無効にすることでデータの収集を拒否することができますので、お使いのブラウザの設定をご確認ください。Google Analyticsの利用規約については、<a href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank" rel="noopener noreferrer" className="text-[#C4877A] underline hover:text-[#A86B5E]">Google Analytics利用規約</a>をご確認ください。
+                本サイトでは、Googleが提供するアクセス解析ツール「Google Analytics」を使用しています。Google Analyticsはトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。Cookieを無効にすることでデータの収集を拒否することができますので、お使いのブラウザの設定をご確認ください。Google Analyticsの利用規約については、<a href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank" rel="noopener noreferrer" className="text-[#B0694F] underline hover:text-[#8F5440]">Google Analytics利用規約</a>をご確認ください。
               </p>
-              <h3 className="font-bold text-[#3D3632] mt-4 mb-2">アフィリエイト広告について</h3>
+              <h3 className="font-bold text-[#1F2420] mt-4 mb-2">アフィリエイト広告について</h3>
               <p>
                 本サイトは、各種アフィリエイトサービスプロバイダー（ASP）を通じてアフィリエイト広告を掲載しています。これらのASPでは、広告の効果測定のためにCookieを使用する場合があります。利用者がアフィリエイトリンクをクリックした際に、ASPのCookieが利用者のブラウザに保存されることがあります。
               </p>
-              <h3 className="font-bold text-[#3D3632] mt-4 mb-2">Cookieの管理について</h3>
+              <h3 className="font-bold text-[#1F2420] mt-4 mb-2">Cookieの管理について</h3>
               <p>
                 利用者は、ブラウザの設定によりCookieの受け入れを拒否することができます。ただし、Cookieを無効にした場合、本サイトの一部の機能が正常に動作しない可能性があります。
               </p>
@@ -158,7 +158,7 @@ export default function PrivacyPolicyPage() {
 
             {/* 第8条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第8条（免責事項）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -170,7 +170,7 @@ export default function PrivacyPolicyPage() {
 
             {/* 第9条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第9条（プライバシーポリシーの変更）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -181,35 +181,35 @@ export default function PrivacyPolicyPage() {
 
             {/* 第10条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第10条（お問い合わせ窓口）
               </h2>
               <p>
                 本ポリシーに関するお問い合わせは、下記のGoogleフォームよりお願いいたします。
               </p>
-              <div className="mt-3 p-4 bg-[#FAF7F2] rounded-lg border border-[#E8E0D8]">
-                <p className="font-bold text-[#3D3632]">株式会社MediaX</p>
-                <p className="text-[#6B5F57] mt-1">所在地：東京都渋谷区</p>
-                <p className="text-[#6B5F57] mt-1">お問い合わせ：Googleフォームにて受付</p>
+              <div className="mt-3 p-4 bg-[#F6F4EF] rounded-lg border border-[#DEDAD2]">
+                <p className="font-bold text-[#1F2420]">株式会社MediaX</p>
+                <p className="text-[#4A4F49] mt-1">所在地：東京都渋谷区</p>
+                <p className="text-[#4A4F49] mt-1">お問い合わせ：Googleフォームにて受付</p>
               </div>
             </section>
 
             {/* 附則 */}
-            <section className="border-t border-[#E8E0D8] pt-6">
-              <p className="text-[#6B5F57]">2026年4月16日 制定</p>
-              <p className="mt-2 text-[#6B5F57]">株式会社MediaX</p>
-              <p className="text-[#6B5F57]">東京都渋谷区</p>
+            <section className="border-t border-[#DEDAD2] pt-6">
+              <p className="text-[#4A4F49]">2026年4月16日 制定</p>
+              <p className="mt-2 text-[#4A4F49]">株式会社MediaX</p>
+              <p className="text-[#4A4F49]">東京都渋谷区</p>
             </section>
           </div>
         </div>
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#3D3632] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400 mt-1">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>

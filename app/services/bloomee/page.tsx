@@ -6,6 +6,7 @@ import Header from "@/app/components/Header";
 import { SERVICES } from "@/data/services";
 import { findReviewEvidence } from "@/data/reviewEvidence";
 import { CompareSection, OfficialPlans, ReviewEvidence, ReviewVerdict } from "@/app/components/ReviewEvidence";
+import PageHero from "@/app/components/PageHero";
 
 /* 料金は単一データソース(services.ts)を参照（公式確認済み・ページ間のズレ防止） */
 const S = SERVICES.find((s) => s.id === "bloomee")!;
@@ -93,20 +94,20 @@ export default function BloomeePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">サービス一覧</span>
+                  <span className="text-[#4A4F49]">サービス一覧</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">bloomee（ブルーミー）</span>
+                  <span className="text-[#1F2420] font-medium">bloomee（ブルーミー）</span>
                 </li>
               </ol>
             </nav>
@@ -114,61 +115,61 @@ export default function BloomeePage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F9E8E8] py-12 md:py-20">
+        <PageHero path="/services/bloomee/" services={[{ slug: "bloomee", name: "bloomee（ブルーミー）" }]}>
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
               花のサブスク個別レビュー｜{RE.updatedAt}更新
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               bloomee（ブルーミー）の口コミ・評判<br className="hidden md:block" />
               良い口コミ・悪い口コミと料金・最初の4回の受け取り条件を検証
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               当サイトでは、ポストに届く花の定期便「bloomee（ブルーミー）」の口コミ・評判を、みん評やレビュー記事などの出典を明記して整理しています。
               料金（花代＋送料）・最初の4回の途中解約料・品質保証は、{S.verifiedAt}に公式サイトで確認した値にもとづいてご説明します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">最安プラン（花代）</p>
-                <p className="text-xl font-bold text-[#4A7C59]">{S.cheapest.price.toLocaleString()}円/回〜</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">最安プラン（花代）</p>
+                <p className="text-xl font-bold text-[#2F5B43]">{S.cheapest.price.toLocaleString()}円/回〜</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">送料</p>
-                <p className="text-xl font-bold text-[#4A7C59]">385円〜/回</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">送料</p>
+                <p className="text-xl font-bold text-[#2F5B43]">385円〜/回</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">最低受取回数</p>
-                <p className="text-xl font-bold text-[#4A7C59]">{S.minDeliveries}回</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">最低受取回数</p>
+                <p className="text-xl font-bold text-[#2F5B43]">{S.minDeliveries}回</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">届き方</p>
-                <p className="text-xl font-bold text-[#4A7C59]">ポスト投函</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">届き方</p>
+                <p className="text-xl font-bold text-[#2F5B43]">ポスト投函</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         <ReviewVerdict d={RE} s={S} />
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">本ページの内容</p>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">本ページの内容</p>
               <nav>
-                <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#reviews" className="hover:text-[#4A7C59] transition-colors">1. ブルーミーの口コミ・評判（出典付き）</a></li>
-                  <li><a href="#flower-reviews" className="hover:text-[#4A7C59] transition-colors">2. ブルーミーの花の口コミ（品質・ボリュームの記録と掲載先）</a></li>
-                  <li><a href="#overview" className="hover:text-[#4A7C59] transition-colors">3. bloomeeのサービス概要</a></li>
-                  <li><a href="#pricing" className="hover:text-[#4A7C59] transition-colors">4. 料金プラン・送料（公式確認）</a></li>
-                  <li><a href="#merit-demerit" className="hover:text-[#4A7C59] transition-colors">5. ブルーミーライフ（bloomee）のメリット・デメリット（公式情報で整理）</a></li>
-                  <li><a href="#pros" className="hover:text-[#4A7C59] transition-colors">6. メリット（良い評判の理由）</a></li>
-                  <li><a href="#cons" className="hover:text-[#4A7C59] transition-colors">7. デメリット（悪い評判の理由）</a></li>
-                  <li><a href="#recommend" className="hover:text-[#4A7C59] transition-colors">8. おすすめできる方・おすすめできない方</a></li>
-                  <li><a href="#comparison" className="hover:text-[#4A7C59] transition-colors">9. 競合サービスとの比較</a></li>
-                  <li><a href="#how-to-start" className="hover:text-[#4A7C59] transition-colors">10. bloomeeの始め方</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">11. よくある質問</a></li>
-                  <li><a href="#cancellation" className="hover:text-[#4A7C59] transition-colors">12. 解約手順</a></li>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
+                  <li><a href="#reviews" className="hover:text-[#2F5B43] transition-colors">1. ブルーミーの口コミ・評判（出典付き）</a></li>
+                  <li><a href="#flower-reviews" className="hover:text-[#2F5B43] transition-colors">2. ブルーミーの花の口コミ（品質・ボリュームの記録と掲載先）</a></li>
+                  <li><a href="#overview" className="hover:text-[#2F5B43] transition-colors">3. bloomeeのサービス概要</a></li>
+                  <li><a href="#pricing" className="hover:text-[#2F5B43] transition-colors">4. 料金プラン・送料（公式確認）</a></li>
+                  <li><a href="#merit-demerit" className="hover:text-[#2F5B43] transition-colors">5. ブルーミーライフ（bloomee）のメリット・デメリット（公式情報で整理）</a></li>
+                  <li><a href="#pros" className="hover:text-[#2F5B43] transition-colors">6. メリット（良い評判の理由）</a></li>
+                  <li><a href="#cons" className="hover:text-[#2F5B43] transition-colors">7. デメリット（悪い評判の理由）</a></li>
+                  <li><a href="#recommend" className="hover:text-[#2F5B43] transition-colors">8. おすすめできる方・おすすめできない方</a></li>
+                  <li><a href="#comparison" className="hover:text-[#2F5B43] transition-colors">9. 競合サービスとの比較</a></li>
+                  <li><a href="#how-to-start" className="hover:text-[#2F5B43] transition-colors">10. bloomeeの始め方</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">11. よくある質問</a></li>
+                  <li><a href="#cancellation" className="hover:text-[#2F5B43] transition-colors">12. 解約手順</a></li>
                 </ol>
               </nav>
             </div>
@@ -184,18 +185,18 @@ export default function BloomeePage() {
 
 
         {/* ─── Flower quality reviews (2026-10-20) ─── */}
-        <section id="flower-reviews" className="py-12 md:py-16 bg-[#FBF7F2]">
+        <section id="flower-reviews" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               ブルーミーの花の口コミ｜届く花の品質・ボリュームの記録と掲載先
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
               ブルーミーの花そのもの（鮮度・花持ち・本数）についての口コミは、件数の多い口コミサイトでは厳しい声が目立ち、複数回受け取った方のレビュー記事では「花持ちは1〜2週間程度、回や季節によって差がある」という記録が中心です。
               お試しプランの公式のサイズ目安は約18〜25cm（ベーシックは約25〜30cm）で、花の組み合わせ・色味はおまかせです（2026年10月20日 公式FAQで確認）。
             </p>
-            <div className="table-wrapper overflow-x-auto rounded-xl border border-[#E8DFD5] bg-white mb-4">
-              <table className="w-full text-sm text-[#555]">
-                <thead className="bg-[#F8F8F8] text-[#333]">
+            <div className="table-wrapper overflow-x-auto rounded-md border border-[#E8DFD5] bg-white mb-4">
+              <table className="w-full text-sm text-[#3F443E]">
+                <thead className="bg-[#F6F4EF] text-[#1F2420]">
                   <tr>
                     <th className="px-3 py-2 text-left font-bold">掲載先</th>
                     <th className="px-3 py-2 text-left font-bold">件数・利用期間</th>
@@ -212,7 +213,7 @@ export default function BloomeePage() {
                     { name: "GFGreen お花", url: "https://gfgreenblog.com/bloomee/bloomee-review/", count: "約3年半（お試しプラン）", body: "花の長さは20〜25cmほど、花持ちはおおむね2週間。利用開始から1年半ほどは鮮度・ボリュームにばらつきがあった。" },
                   ].map((r) => (
                     <tr key={r.name} className="border-t border-[#EEE] align-top">
-                      <td className="px-3 py-2 whitespace-nowrap"><a href={r.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">{r.name}</a></td>
+                      <td className="px-3 py-2 whitespace-nowrap"><a href={r.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">{r.name}</a></td>
                       <td className="px-3 py-2">{r.count}</td>
                       <td className="px-3 py-2">{r.body}</td>
                     </tr>
@@ -220,28 +221,28 @@ export default function BloomeePage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#999] leading-relaxed">
+            <p className="text-xs text-[#6B6F6A] leading-relaxed">
               ※ レビュー記事は各筆者個人の記録の要約で、時期・地域・季節によって変わります（各記事は2026年10月14日〜20日に確認）。口コミサイトの件数は確認日時点の表示です。公式サイトにも「ご利用者様の声」が掲載されていますが、事業者が選んで掲載したものです。当サイトでは、体験談の創作や独自の星評価の掲載は行っていません。
             </p>
           </div>
         </section>
 
         {/* ─── Service Overview ─── */}
-        <section id="overview" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="overview" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               bloomee（ブルーミー）のサービス概要
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               bloomee（ブルーミー）は、ユーザーライク株式会社（旧社名：株式会社Crunch Style）が運営するお花の定期便（花のサブスク）です。
               旧サービス名は「Bloomee LIFE（ブルーミーライフ）」です。公式サイトでは「お花のお届け実績3,000万本以上（自社調べ）」と表記されています。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               市場で仕入れた季節の花を小ぶりの花束にして届けるのが特徴です。お試しプラン・グリーンプランはポストに半投函の形で届くため、不在が多い方でも受け取れます。
               一方で、最初の4回は受け取りが必要であること、送料が毎回別にかかることは、お申し込み前にご確認ください。
             </p>
-            <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">bloomee 基本情報（{S.verifiedAt} 公式確認）</h3>
+            <div className="bg-[#EDF1EC] rounded-md p-5 md:p-6">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-3">bloomee 基本情報（{S.verifiedAt} 公式確認）</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 {[
                   ["運営会社", "ユーザーライク株式会社"],
@@ -254,8 +255,8 @@ export default function BloomeePage() {
                   ["品質保証", "定期便は2週間以内の連絡で返金・交換（特商法）"],
                 ].map(([k, v]) => (
                   <div key={k} className="flex">
-                    <span className="text-[#999] w-28 shrink-0">{k}</span>
-                    <span className="text-[#333]">{v}</span>
+                    <span className="text-[#6B6F6A] w-28 shrink-0">{k}</span>
+                    <span className="text-[#1F2420]">{v}</span>
                   </div>
                 ))}
               </div>
@@ -266,17 +267,17 @@ export default function BloomeePage() {
         {/* ─── Pricing Table ─── */}
         <section id="pricing" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               bloomeeの料金プランと送料
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               公式サイトの料金表（継続コース）は、お試しプラン・グリーンプランが花代980円＋送料385円、ベーシックプランが花代2,180円＋送料550円です。
               「980円」は花代のみの表記であるため、送料を含めた金額で比較することが重要です。
             </p>
             <OfficialPlans s={S} />
-            <div className="bg-[#FBF7F2] rounded-xl border border-[#E8DFD5] p-5 mt-6">
-              <h3 className="text-sm font-bold text-[#333] mb-3">送料込みの金額と最初の4回の総額</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+            <div className="bg-[#F6F4EF] rounded-md border border-[#E8DFD5] p-5 mt-6">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-3">送料込みの金額と最初の4回の総額</h3>
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・お試し／グリーン：980円＋送料385円＝<strong>1,365円/回</strong>（4回で5,460円）</li>
                 <li>・ベーシック：2,180円＋送料550円＝<strong>2,730円/回</strong>（4回で10,920円）</li>
                 <li>・4回未満で解約すると「4回分のうち残回数分の商品代金（税込）」が途中解約料になります（公式・特定商取引法に基づく表記）。</li>
@@ -287,19 +288,19 @@ export default function BloomeePage() {
 
 
         {/* ─── Merit / Demerit from official info (2026-10-20) ─── */}
-        <section id="merit-demerit" className="py-12 md:py-16 bg-[#FBF7F2]">
+        <section id="merit-demerit" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               ブルーミーライフ（bloomee）のメリット・デメリット｜公式情報で整理
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               ブルーミー（旧ブルーミーライフ）のメリットは、ポストに届く受け取りやすさ、花代980円からの始めやすさ、4回目以降は週単位で停止・再開できる柔軟さです。
               デメリットは、送料が毎回別にかかること、最初の4回の受け取りが必要なこと、お試し・グリーンは日時指定ができず花も選べないことです。
               以下は、2026年10月20日に公式サイト（トップページのよくある質問・特定商取引法に基づく表記）で確認した内容だけを項目ごとに整理したものです。
             </p>
-            <div className="table-wrapper overflow-x-auto rounded-xl border border-[#E5E5E5] bg-white mb-4">
-              <table className="w-full text-sm text-[#555]">
-                <thead className="bg-[#E8F0EB] text-[#333]">
+            <div className="table-wrapper overflow-x-auto rounded-md border border-[#DEDAD2] bg-white mb-4">
+              <table className="w-full text-sm text-[#3F443E]">
+                <thead className="bg-[#EDF1EC] text-[#1F2420]">
                   <tr>
                     <th className="px-3 py-2 text-left font-bold">項目</th>
                     <th className="px-3 py-2 text-left font-bold">メリット</th>
@@ -318,7 +319,7 @@ export default function BloomeePage() {
                     ["プレゼント", "「プレゼントとして送る」を選ぶと自分以外の住所に届け、送り主の名前を登録できる", "2か所以上に届ける場合は、別のメールアドレスでそれぞれ登録が必要"],
                   ].map(([k, m, d]) => (
                     <tr key={k} className="border-t border-[#EEE] align-top">
-                      <td className="px-3 py-2 font-medium text-[#333] whitespace-nowrap">{k}</td>
+                      <td className="px-3 py-2 font-medium text-[#1F2420] whitespace-nowrap">{k}</td>
                       <td className="px-3 py-2">{m}</td>
                       <td className="px-3 py-2">{d}</td>
                     </tr>
@@ -326,16 +327,16 @@ export default function BloomeePage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#999] leading-relaxed">
+            <p className="text-xs text-[#6B6F6A] leading-relaxed">
               出典：<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="underline">bloomee公式サイト（よくある質問）</a>・<a href="https://bloomeelife.com/contacts/law" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（いずれも2026年10月20日確認）。料金は公式の料金表（継続コース）の値です。口コミで多い評価・不満は、次の「メリット（良い評判の理由）」「デメリット（悪い評判の理由）」でご説明します。
             </p>
           </div>
         </section>
 
         {/* ─── Pros Section ─── */}
-        <section id="pros" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="pros" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               bloomeeのメリット（良い評判の理由）
             </h2>
             <div className="space-y-5">
@@ -357,14 +358,14 @@ export default function BloomeePage() {
                   text: "公式の特定商取引法に基づく表記では、定期便は2週間以内に連絡すれば不良品の返金または交換の対象になります。届いた時点で写真を撮影しておくことをおすすめします。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-[#E8F0EB] rounded-xl p-5">
+                <div key={i} className="bg-[#EDF1EC] rounded-md p-5">
                   <div className="flex items-start gap-3">
-                    <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
+                    <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-md w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
                       {i + 1}
                     </span>
                     <div>
-                      <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
-                      <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                      <h3 className="text-base font-bold text-[#1F2420] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                     </div>
                   </div>
                 </div>
@@ -376,7 +377,7 @@ export default function BloomeePage() {
         {/* ─── Cons Section ─── */}
         <section id="cons" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#F0D0D0]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#E3D3C8]">
               bloomeeのデメリット（悪い評判の理由）
             </h2>
             <div className="space-y-5">
@@ -398,14 +399,14 @@ export default function BloomeePage() {
                   text: "お試しプランは4本以上・約18〜25cmの小ぶりの花束です。テーブルを華やかに飾りたい方は、8本以上のベーシックプランや、ボリュームのある他社サービスもあわせてご検討ください。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
+                <div key={i} className="bg-[#F7F1EC] rounded-md p-5 border border-[#E3D3C8]">
                   <div className="flex items-start gap-3">
-                    <span className="bg-[#E0B8B8] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
+                    <span className="bg-[#D9BFB1] text-white text-xs font-bold rounded-md w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
                       {i + 1}
                     </span>
                     <div>
-                      <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
-                      <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                      <h3 className="text-base font-bold text-[#1F2420] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                     </div>
                   </div>
                 </div>
@@ -415,67 +416,67 @@ export default function BloomeePage() {
         </section>
 
         {/* ─── Recommendation Section ─── */}
-        <section id="recommend" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="recommend" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               bloomeeをおすすめできる方・おすすめできない方
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {/* おすすめの人 */}
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#4A7C59] mb-4 flex items-center gap-2">
-                  <span className="w-7 h-7 rounded-full bg-[#E8F0EB] flex items-center justify-center text-sm">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#2F5B43] mb-4 flex items-center gap-2">
+                  <span className="w-7 h-7 rounded-md bg-[#EDF1EC] flex items-center justify-center text-sm">
                     ○
                   </span>
                   おすすめできる方
                 </h3>
-                <ul className="text-sm text-[#666] space-y-3">
+                <ul className="text-sm text-[#4A4F49] space-y-3">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-1 shrink-0">--</span>
+                    <span className="text-[#2F5B43] mt-1 shrink-0">--</span>
                     <span>お花のサブスクを初めて利用する方</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-1 shrink-0">--</span>
+                    <span className="text-[#2F5B43] mt-1 shrink-0">--</span>
                     <span>日中不在が多く、ポスト投函で受け取りたい方</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-1 shrink-0">--</span>
+                    <span className="text-[#2F5B43] mt-1 shrink-0">--</span>
                     <span>手軽に少額からお花を楽しみたい方</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-1 shrink-0">--</span>
+                    <span className="text-[#2F5B43] mt-1 shrink-0">--</span>
                     <span>品質保証のある安心なサービスを選びたい方</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#4A7C59] mt-1 shrink-0">--</span>
+                    <span className="text-[#2F5B43] mt-1 shrink-0">--</span>
                     <span>SNSにお花の写真を投稿したい方</span>
                   </li>
                 </ul>
               </div>
 
               {/* おすすめしない人 */}
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#E0B8B8] mb-4 flex items-center gap-2">
-                  <span className="w-7 h-7 rounded-full bg-[#FDF5F5] flex items-center justify-center text-sm">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#D9BFB1] mb-4 flex items-center gap-2">
+                  <span className="w-7 h-7 rounded-md bg-[#F7F1EC] flex items-center justify-center text-sm">
                     x
                   </span>
                   おすすめできない方
                 </h3>
-                <ul className="text-sm text-[#666] space-y-3">
+                <ul className="text-sm text-[#4A4F49] space-y-3">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-1 shrink-0">--</span>
+                    <span className="text-[#D9BFB1] mt-1 shrink-0">--</span>
                     <span>ボリュームのある豪華なお花が欲しい方</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-1 shrink-0">--</span>
+                    <span className="text-[#D9BFB1] mt-1 shrink-0">--</span>
                     <span>送料を含めた費用対効果を最も重視する方</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-1 shrink-0">--</span>
+                    <span className="text-[#D9BFB1] mt-1 shrink-0">--</span>
                     <span>継続回数の条件なしで気軽に試したい方</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#E0B8B8] mt-1 shrink-0">--</span>
+                    <span className="text-[#D9BFB1] mt-1 shrink-0">--</span>
                     <span>お花の種類やスタイルを自分で選びたい方</span>
                   </li>
                 </ul>
@@ -488,9 +489,9 @@ export default function BloomeePage() {
         <CompareSection s={S} all={SERVICES} note="ブルーミーは「花代＋送料」の料金体系で、最初の4回の受け取りが条件です。送料込みで最低回数の記載がないサービスと比較する場合はmedelu（748円〜）やハナメク（1,210円〜）、本数と宅配を重視する場合はAND PLANTS（1,980円〜）も候補になります。ブルーミーはポスト投函型の代表的なサービスで、届いた花の実例をSNSやレビューで事前に確認しやすい点が強みです。" />
 
         {/* ─── How to Sign Up ─── */}
-        <section id="how-to-start" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="how-to-start" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               bloomeeの始め方（申し込み手順）
             </h2>
             <div className="space-y-4">
@@ -526,13 +527,13 @@ export default function BloomeePage() {
                   text: "申し込みが完了すると、お届け予定日が案内されます。届いたお花は早めに取り出し、水切りをしてから花瓶に飾ってください。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <div className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
+                <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
+                  <div className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
                     {item.step}
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -543,21 +544,21 @@ export default function BloomeePage() {
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               bloomeeに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -568,7 +569,7 @@ export default function BloomeePage() {
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -580,71 +581,71 @@ export default function BloomeePage() {
         </section>
 
                 {/* CANCEL_FLOW_v1: 解約手順 step-by-step */}
-        <section id="cancellation" className="py-12 md:py-16 bg-[#F9F7F3]">
+        <section id="cancellation" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#F0D0D0]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#E3D3C8]">
               bloomee（ブルーミー）の解約手順
             </h2>
-            <p className="text-sm text-[#666] mb-6">初回契約時には最低受取回数（4回）が設定されています。4回未満で解約すると、残回数分の料金が発生しますのでご注意ください。</p>
-            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+            <p className="text-sm text-[#4A4F49] mb-6">初回契約時には最低受取回数（4回）が設定されています。4回未満で解約すると、残回数分の料金が発生しますのでご注意ください。</p>
+            <div className="bg-white rounded-md p-6 md:p-8">
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">マイページにログインする</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">bloomee公式サイトの右上「マイページ」から、登録メールアドレスとパスワードを入力してログインします。</p>
+                  <div className="bg-[#E3D3C8] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">マイページにログインする</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">bloomee公式サイトの右上「マイページ」から、登録メールアドレスとパスワードを入力してログインします。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「お届け情報」→「定期コース管理」を選択する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">マイページのメニューから「お届け情報」→「定期コース管理」へ進みます。</p>
+                  <div className="bg-[#E3D3C8] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">2</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">「お届け情報」→「定期コース管理」を選択する</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">マイページのメニューから「お届け情報」→「定期コース管理」へ進みます。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「定期コースを解約する」をクリックする</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">ページ下部にある「定期コースを解約する」リンクをクリックし、解約手続きに進みます。</p>
+                  <div className="bg-[#E3D3C8] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">3</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">「定期コースを解約する」をクリックする</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">ページ下部にある「定期コースを解約する」リンクをクリックし、解約手続きに進みます。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">解約理由を選択する（任意）</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">アンケートが表示されますが、回答は任意です。回答せずに進むことも可能です。</p>
+                  <div className="bg-[#E3D3C8] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">4</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">解約理由を選択する（任意）</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">アンケートが表示されますが、回答は任意です。回答せずに進むことも可能です。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">「解約する」で最終確定する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">最終確認画面で「解約する」ボタンをクリックします。マイページに表示される次回分の締切までに手続きを完了してください（規約上の締切は「当社が定める時点」です）。</p>
+                  <div className="bg-[#E3D3C8] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">「解約する」で最終確定する</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">最終確認画面で「解約する」ボタンをクリックします。マイページに表示される次回分の締切までに手続きを完了してください（規約上の締切は「当社が定める時点」です）。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
-                  <div className="bg-[#F0D0D0] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
-                  <div className="flex-1 bg-white border border-[#E0D5C8] rounded-xl p-4">
-                    <h3 className="font-bold text-[#333] mb-1">解約完了メールを受信する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">登録メールアドレスに解約完了通知が届きます。手続きの記録として、メールを保管しておくことをおすすめします。</p>
+                  <div className="bg-[#E3D3C8] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">6</div>
+                  <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
+                    <h3 className="font-bold text-[#1F2420] mb-1">解約完了メールを受信する</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">登録メールアドレスに解約完了通知が届きます。手続きの記録として、メールを保管しておくことをおすすめします。</p>
                   </div>
                 </div>
             </div>
-            <p className="text-xs text-[#888] mt-4 text-center">※ 2026年5月時点の手順です。ご利用前に、bloomee（ブルーミー）公式サイトにて最新情報をご確認ください。</p>
+            <p className="text-xs text-[#6B6F6A] mt-4 text-center">※ 2026年5月時点の手順です。ご利用前に、bloomee（ブルーミー）公式サイトにて最新情報をご確認ください。</p>
           </div>
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#F9E8E8]">
+        <section id="summary" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               口コミ・評判からみたブルーミーが適している方
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               bloomee（ブルーミー）は、ポスト投函で手軽に受け取れる点と、花代980円/回からの始めやすさが口コミで評価されている花のサブスクです。
               不良品は、定期便であれば2週間以内の連絡で返金・交換の対象になります（特商法）。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               一方で、送料が毎回別にかかる点、最初の4回は受け取りが必要な点（お試しプランの場合は総額5,460円）、花の状態にばらつきがあるという口コミがある点にご留意ください。
               費用を重視する場合はmedelu、デザイン性を重視する場合はAND PLANTSもあわせて検討し、ご自身に合ったサービスをお選びください。
             </p>
@@ -653,13 +654,13 @@ export default function BloomeePage() {
                 href="https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 bloomee公式サイトはこちら
               </a>
               <a
                 href="/"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 他のサービスと比較する
               </a>
@@ -668,31 +669,31 @@ export default function BloomeePage() {
         </section>
 
         {/* 関連リンク（第二弾: 文脈内部リンク） */}
-        <section className="bg-[#FBF8F4] py-10">
+        <section className="bg-[#F6F4EF] py-10">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="heading-serif text-2xl font-bold text-[#3D3632] mb-5">bloomeeに関連する比較・ガイド</h2>
+            <h2 className="font-heading text-2xl font-bold text-[#1F2420] mb-5">bloomeeに関連する比較・ガイド</h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-              <a href="/service-guides/bloomee-kaiyaku/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomeeの解約方法（締切・注意点） →</a>
-              <a href="/vs/bloomee-vs-and-plants/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomee vs AND PLANTS 比較 →</a>
-              <a href="/compare/bloomee-vs-medelu/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomee vs medelu 比較 →</a>
-              <a href="/compare/bloomee-vs-hitohana/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">bloomee vs HitoHana 比較 →</a>
-              <a href="/compare/cheap/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">安い花のサブスク比較 →</a>
-              <a href="/compare/souryou-muryou/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">送料無料で比較 →</a>
-              <a href="/guides/beginner/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">花サブスク初心者ガイド →</a>
-              <a href="/guides/oshare/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">おしゃれな花サブスク →</a>
-              <a href="/services/medelu/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">medeluの口コミ・評判 →</a>
-              <a href="/services/and-plants/" className="block bg-white border border-[#E8E0D8] rounded-xl p-3 hover:border-[#C4877A] hover:text-[#C4877A] transition text-sm font-medium text-[#6B5F57]">AND PLANTSの口コミ・評判 →</a>
+              <a href="/service-guides/bloomee-kaiyaku/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">bloomeeの解約方法（締切・注意点） →</a>
+              <a href="/vs/bloomee-vs-and-plants/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">bloomee vs AND PLANTS 比較 →</a>
+              <a href="/compare/bloomee-vs-medelu/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">bloomee vs medelu 比較 →</a>
+              <a href="/compare/bloomee-vs-hitohana/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">bloomee vs HitoHana 比較 →</a>
+              <a href="/compare/cheap/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">安い花のサブスク比較 →</a>
+              <a href="/compare/souryou-muryou/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">送料無料で比較 →</a>
+              <a href="/guides/beginner/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">花サブスク初心者ガイド →</a>
+              <a href="/guides/oshare/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">おしゃれな花サブスク →</a>
+              <a href="/services/medelu/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">medeluの口コミ・評判 →</a>
+              <a href="/services/and-plants/" className="block bg-white border border-[#DEDAD2] rounded-md p-3 hover:border-[#B0694F] hover:text-[#B0694F] transition text-sm font-medium text-[#4A4F49]">AND PLANTSの口コミ・評判 →</a>
             </div>
           </div>
         </section>
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
 
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。

@@ -11,35 +11,35 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
+    <div className="flex flex-col min-h-screen bg-[#F6F4EF]">
       <Header />
 
       <main className="flex-1">
         {/* Breadcrumb */}
         <div className="max-w-4xl mx-auto px-4 pt-6">
-          <nav className="text-xs text-[#9B8F87]">
-            <Link href="/" className="hover:text-[#C4877A] transition-colors">
+          <nav className="text-xs text-[#6B6F6A]">
+            <Link href="/" className="hover:text-[#B0694F] transition-colors">
               トップ
             </Link>
             <span className="mx-2">&gt;</span>
-            <span className="text-[#3D3632]">利用規約</span>
+            <span className="text-[#1F2420]">利用規約</span>
           </nav>
         </div>
 
         {/* Content */}
         <div className="max-w-4xl mx-auto px-4 py-10">
-          <h1 className="heading-serif text-3xl md:text-4xl font-bold text-[#3D3632] mb-8">
+          <h1 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2420] mb-8">
             利用規約
           </h1>
 
-          <div className="bg-white rounded-2xl border border-[#E8E0D8] p-6 md:p-10 text-[#3D3632] text-sm leading-relaxed space-y-8">
+          <div className="bg-white rounded-md border border-[#DEDAD2] p-6 md:p-10 text-[#1F2420] text-sm leading-relaxed space-y-8">
             <p>
               この利用規約（以下「本規約」といいます。）は、株式会社MediaX（以下「当社」といいます。）が運営するウェブサイト「flowerデリ」（以下「本サイト」といいます。）の利用条件を定めるものです。本サイトをご利用いただくすべての方（以下「利用者」といいます。）は、本規約に同意の上、本サイトをご利用ください。
             </p>
 
             {/* 第1条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第1条（本サイトの目的）
               </h2>
               <p>
@@ -49,7 +49,7 @@ export default function TermsOfServicePage() {
 
             {/* 第2条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第2条（定義）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -61,7 +61,7 @@ export default function TermsOfServicePage() {
 
             {/* 第3条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第3条（本規約への同意）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -72,7 +72,7 @@ export default function TermsOfServicePage() {
 
             {/* 第4条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第4条（本規約の変更）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -84,7 +84,7 @@ export default function TermsOfServicePage() {
 
             {/* 第5条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第5条（利用登録）
               </h2>
               <p>
@@ -94,7 +94,7 @@ export default function TermsOfServicePage() {
 
             {/* 第6条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第6条（禁止事項）
               </h2>
               <p className="mb-3">
@@ -121,7 +121,7 @@ export default function TermsOfServicePage() {
 
             {/* 第7条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第7条（本サービスの提供の停止等）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -139,7 +139,7 @@ export default function TermsOfServicePage() {
 
             {/* 第8条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第8条（知的財産権）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -151,7 +151,7 @@ export default function TermsOfServicePage() {
 
             {/* 第9条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第9条（アフィリエイトプログラムについて）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -163,7 +163,7 @@ export default function TermsOfServicePage() {
 
             {/* 第10条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第10条（免責事項）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -177,7 +177,7 @@ export default function TermsOfServicePage() {
 
             {/* 第11条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第11条（掲載情報について）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -189,17 +189,17 @@ export default function TermsOfServicePage() {
 
             {/* 第12条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第12条（個人情報の取扱い）
               </h2>
               <p>
-                利用者の個人情報の取扱いについては、別途定める「<Link href="/privacy-policy" className="text-[#C4877A] underline hover:text-[#A86B5E]">プライバシーポリシー</Link>」に従います。利用者は、当社のプライバシーポリシーに同意の上、本サイトをご利用ください。
+                利用者の個人情報の取扱いについては、別途定める「<Link href="/privacy-policy" className="text-[#B0694F] underline hover:text-[#8F5440]">プライバシーポリシー</Link>」に従います。利用者は、当社のプライバシーポリシーに同意の上、本サイトをご利用ください。
               </p>
             </section>
 
             {/* 第13条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第13条（秘密保持）
               </h2>
               <p>
@@ -209,7 +209,7 @@ export default function TermsOfServicePage() {
 
             {/* 第14条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第14条（利用制限および登録抹消）
               </h2>
               <p>
@@ -224,7 +224,7 @@ export default function TermsOfServicePage() {
 
             {/* 第15条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第15条（損害賠償）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -235,7 +235,7 @@ export default function TermsOfServicePage() {
 
             {/* 第16条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第16条（反社会的勢力の排除）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -246,7 +246,7 @@ export default function TermsOfServicePage() {
 
             {/* 第17条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第17条（不可抗力）
               </h2>
               <p>
@@ -256,7 +256,7 @@ export default function TermsOfServicePage() {
 
             {/* 第18条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第18条（権利義務の譲渡の禁止）
               </h2>
               <p>
@@ -266,7 +266,7 @@ export default function TermsOfServicePage() {
 
             {/* 第19条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第19条（分離可能性）
               </h2>
               <p>
@@ -276,7 +276,7 @@ export default function TermsOfServicePage() {
 
             {/* 第20条 */}
             <section>
-              <h2 className="text-lg font-bold text-[#3D3632] mb-3 border-l-4 border-[#C4877A] pl-4">
+              <h2 className="text-lg font-bold text-[#1F2420] mb-3 border-l-4 border-[#B0694F] pl-4">
                 第20条（準拠法・管轄裁判所）
               </h2>
               <ol className="list-decimal pl-6 space-y-2">
@@ -286,21 +286,21 @@ export default function TermsOfServicePage() {
             </section>
 
             {/* 附則 */}
-            <section className="border-t border-[#E8E0D8] pt-6">
-              <p className="text-[#6B5F57]">2026年4月16日 制定</p>
-              <p className="mt-2 text-[#6B5F57]">株式会社MediaX</p>
-              <p className="text-[#6B5F57]">東京都渋谷区</p>
+            <section className="border-t border-[#DEDAD2] pt-6">
+              <p className="text-[#4A4F49]">2026年4月16日 制定</p>
+              <p className="mt-2 text-[#4A4F49]">株式会社MediaX</p>
+              <p className="text-[#4A4F49]">東京都渋谷区</p>
             </section>
           </div>
         </div>
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#3D3632] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400 mt-1">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>

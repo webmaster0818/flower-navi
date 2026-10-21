@@ -1,3 +1,4 @@
+import PageHero from "@/app/components/PageHero";
 import Header from "@/app/components/Header";
 
 const faqs = [
@@ -16,34 +17,36 @@ export default function ObonPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"お盆・新盆（初盆）の花を花のサブスクで用意する方法\",\"description\":\"お盆・新盆のお供えの花を花のサブスクで用意する方法を解説しています。\",\"datePublished\":\"2026-06-23T00:00:00+09:00\",\"dateModified\":\"2026-06-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/obon/\"}}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
 
-      <div className="min-h-screen bg-[#FAF8F5] text-[#333]">
+      <div className="min-h-screen bg-[#FAF8F5] text-[#1F2420]">
         <Header />
         <main className="max-w-3xl mx-auto px-4 py-10">
           <nav className="text-xs text-gray-500 mb-4">
             <a href="/" className="hover:underline">ホーム</a> / <a href="/guides/" className="hover:underline">ガイド</a> / <span className="text-gray-700">お盆・新盆の花</span>
           </nav>
 
-          <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">お盆・新盆（初盆）の花を花のサブスクで用意する方法【2026年】</h1>
-          <p className="text-sm text-gray-600 mb-6">最終更新日：2026年6月23日 ／ flowerデリ編集部</p>
+          <PageHero bleed path="/guides/obon/">
+            <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">お盆・新盆（初盆）の花を花のサブスクで用意する方法【2026年】</h1>
+            <p className="text-sm text-gray-600 mb-6">最終更新日：2026年6月23日 ／ flowerデリ編集部</p>
+          </PageHero>
 
-          <div className="bg-white rounded-2xl border border-[#EADFD3] p-5 mb-8">
-            <p className="font-bold text-[#7a5] mb-1">2026年のお盆の日程とお供えの花の選び方</p>
+          <div className="bg-white rounded-md border border-[#DEDAD2] p-5 mb-8">
+            <p className="font-bold text-[#5E7F66] mb-1">2026年のお盆の日程とお供えの花の選び方</p>
             <p className="text-sm leading-relaxed">2026年のお盆は<strong>8月13〜16日（月遅れ盆）</strong>です。お供えの花は<strong>白を基調とし、菊やトルコギキョウなど日持ちする花</strong>が適しており、トゲ・毒・強い香りのある花は避けます。花のサブスクは専用の仏花ではありませんが、落ち着いた色合いのコース（medeluのNATURAL系など）を選び、<strong>スキップ機能で配送をお盆前に調整</strong>することで、新鮮なお供えの花を用意できます。新盆（初盆）では、特に丁寧に整えることをおすすめします。</p>
           </div>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">2026年のお盆・新盆の日程</h2>
+            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#D6D2C8] pl-3">2026年のお盆・新盆の日程</h2>
             <p className="text-sm leading-relaxed text-gray-700">全国的に多い月遅れ盆では、2026年は<strong>8月13日（木）〜16日（日）</strong>です。地域によっては、7月13〜16日の「七月盆」の地域もあります。<strong>新盆（初盆）</strong>は、故人が四十九日の忌明け後に初めて迎えるお盆で、通常より丁寧に供養し、お供えの花も白を基調に整えるのが一般的です。</p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">お盆のお供えに向く花・避ける花</h2>
+            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#D6D2C8] pl-3">お盆のお供えに向く花・避ける花</h2>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
-              <div className="bg-white rounded-xl border border-[#EADFD3] p-4">
-                <p className="font-bold text-[#7a5] mb-2">向く花</p>
+              <div className="bg-white rounded-md border border-[#DEDAD2] p-4">
+                <p className="font-bold text-[#5E7F66] mb-2">向く花</p>
                 <p className="text-gray-700 leading-relaxed">菊、トルコギキョウ、スターチス、カーネーション、リンドウなどです。白を基調に、日持ちする花が適しています。新盆では、特に白で整えるのが一般的です。</p>
               </div>
-              <div className="bg-white rounded-xl border border-[#EADFD3] p-4">
+              <div className="bg-white rounded-md border border-[#DEDAD2] p-4">
                 <p className="font-bold text-rose-700 mb-2">避ける花</p>
                 <p className="text-gray-700 leading-relaxed">バラなどトゲのある花、彼岸花・スズランなど毒のある花、香りが強すぎる花は避けるのが一般的です（宗派・地域により異なります）。</p>
               </div>
@@ -51,20 +54,20 @@ export default function ObonPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#cDB] pl-3">花のサブスクをお盆のお供えに活用する手順</h2>
+            <h2 className="text-xl font-bold mb-3 border-l-4 border-[#D6D2C8] pl-3">花のサブスクをお盆のお供えに活用する手順</h2>
             <ol className="space-y-3 text-sm text-gray-700">
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>1. 落ち着いた色のコースを選ぶ</strong>：medeluのNATURAL系など白・グリーン基調のコースは、お供え用にアレンジしやすくなります。</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>2. スキップ機能で配送を調整する</strong>：medeluやbloomeeのスキップ機能で、お盆前に新しい花が届くよう時期を合わせます（お盆の時期は配送が混み合うため、早めの調整をおすすめします）。</li>
-              <li className="bg-white rounded-xl border border-[#EADFD3] p-4"><strong>3. 届いた花からお供え用を整える</strong>：お供えに向く花を選び、仏壇の花立に合わせて茎を切りそろえます。専用の仏花が必要な場合は、定期便に加えて別途ご用意ください。</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><strong>1. 落ち着いた色のコースを選ぶ</strong>：medeluのNATURAL系など白・グリーン基調のコースは、お供え用にアレンジしやすくなります。</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><strong>2. スキップ機能で配送を調整する</strong>：medeluやbloomeeのスキップ機能で、お盆前に新しい花が届くよう時期を合わせます（お盆の時期は配送が混み合うため、早めの調整をおすすめします）。</li>
+              <li className="bg-white rounded-md border border-[#DEDAD2] p-4"><strong>3. 届いた花からお供え用を整える</strong>：お供えに向く花を選び、仏壇の花立に合わせて茎を切りそろえます。専用の仏花が必要な場合は、定期便に加えて別途ご用意ください。</li>
             </ol>
-            <p className="text-sm mt-4"><a href="/guides/butsudan/" className="text-[#7a5] underline">→ 仏壇・仏花の選び方の詳細</a></p>
+            <p className="text-sm mt-4"><a href="/guides/butsudan/" className="text-[#5E7F66] underline">→ 仏壇・仏花の選び方の詳細</a></p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-bold mb-4 border-l-4 border-[#cDB] pl-3">よくある質問</h2>
+            <h2 className="text-xl font-bold mb-4 border-l-4 border-[#D6D2C8] pl-3">よくある質問</h2>
             <div className="space-y-3">
               {faqs.map((f, i) => (
-                <details key={i} className="bg-white rounded-xl border border-[#EADFD3] p-4">
+                <details key={i} className="bg-white rounded-md border border-[#DEDAD2] p-4">
                   <summary className="font-bold cursor-pointer text-sm">{f.q}</summary>
                   <p className="text-sm text-gray-700 mt-2 leading-relaxed">{f.a}</p>
                 </details>
@@ -72,18 +75,18 @@ export default function ObonPage() {
             </div>
           </section>
 
-          <section className="mb-4 bg-white rounded-2xl border border-[#EADFD3] p-5">
+          <section className="mb-4 bg-white rounded-md border border-[#DEDAD2] p-5">
             <h2 className="text-lg font-bold mb-3">関連ガイド</h2>
             <ul className="space-y-2 text-sm">
-              <li><a href="/compare/osonae/" className="text-[#7a5] underline">仏花・お供えの花の定期便・通販の比較（8社の公式情報を確認）</a></li>
-              <li><a href="/guides/butsudan/" className="text-[#7a5] underline">仏壇・仏花に向く花のサブスクと選び方</a></li>
-              <li><a href="/guides/flower-care/" className="text-[#7a5] underline">花を長持ちさせるお手入れ方法</a></li>
-              <li><a href="/compare/cheap/" className="text-[#7a5] underline">安い花のサブスクの比較</a></li>
+              <li><a href="/compare/osonae/" className="text-[#5E7F66] underline">仏花・お供えの花の定期便・通販の比較（8社の公式情報を確認）</a></li>
+              <li><a href="/guides/butsudan/" className="text-[#5E7F66] underline">仏壇・仏花に向く花のサブスクと選び方</a></li>
+              <li><a href="/guides/flower-care/" className="text-[#5E7F66] underline">花を長持ちさせるお手入れ方法</a></li>
+              <li><a href="/compare/cheap/" className="text-[#5E7F66] underline">安い花のサブスクの比較</a></li>
             </ul>
           </section>
         </main>
 
-        <footer className="bg-[#333] text-white py-10">
+        <footer className="bg-[#1F2420] text-white py-10">
           <div className="max-w-5xl mx-auto px-4">
             <div className="border-t border-gray-600 pt-6 text-center">
               <p className="text-xs text-gray-500">当サイトはアフィリエイトプログラムに参加しています。リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。</p>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -44,46 +45,46 @@ export default function YametaGuidePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
-                <li><a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a></li>
+                <li><a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#666]">ガイド</span></li>
+                <li><span className="text-[#4A4F49]">ガイド</span></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#333] font-medium">花のサブスクをやめた理由</span></li>
+                <li><span className="text-[#1F2420] font-medium">花のサブスクをやめた理由</span></li>
               </ol>
             </nav>
           </div>
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
+        <PageHero path="/guides/yameta/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">お花の定期便ガイド</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">お花の定期便ガイド</p>
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               花のサブスクをやめた理由5選<br className="hidden md:block" />
               続けるかどうかの判断基準【2026年】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               「花のサブスク やめた」「お花の定期便 やめた理由」で検索された方に向けて、
               当サイトではよくあるやめた理由を分析し、継続するか解約するかの判断基準を解説します。
             </p>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
-              <ol className="text-sm text-[#666] space-y-2">
-                <li><a href="#reasons" className="hover:text-[#4A7C59] transition-colors">1. よくあるやめた理由5選</a></li>
-                <li><a href="#continue" className="hover:text-[#4A7C59] transition-colors">2. 継続をおすすめする方の特徴</a></li>
-                <li><a href="#quit" className="hover:text-[#4A7C59] transition-colors">3. 解約を検討すべき方の特徴</a></li>
-                <li><a href="#alternatives" className="hover:text-[#4A7C59] transition-colors">4. やめた後の代替案</a></li>
-                <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">5. よくある質問</a></li>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">目次</p>
+              <ol className="text-sm text-[#4A4F49] space-y-2">
+                <li><a href="#reasons" className="hover:text-[#2F5B43] transition-colors">1. よくあるやめた理由5選</a></li>
+                <li><a href="#continue" className="hover:text-[#2F5B43] transition-colors">2. 継続をおすすめする方の特徴</a></li>
+                <li><a href="#quit" className="hover:text-[#2F5B43] transition-colors">3. 解約を検討すべき方の特徴</a></li>
+                <li><a href="#alternatives" className="hover:text-[#2F5B43] transition-colors">4. やめた後の代替案</a></li>
+                <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">5. よくある質問</a></li>
               </ol>
             </div>
           </div>
@@ -92,10 +93,10 @@ export default function YametaGuidePage() {
         {/* ─── Reasons ─── */}
         <section id="reasons" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のサブスクをやめた理由5選
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               SNSや口コミサイトに寄せられた「やめた理由」を分析すると、大きく5つのパターンに分けられます。いずれも、<strong>期待と実際の内容との差</strong>が原因であることが多いのが共通点です。
             </p>
 
@@ -127,14 +128,14 @@ export default function YametaGuidePage() {
                   text: "花の水替えや花瓶の洗浄など、日々のお手入れを負担に感じる方もいます。仕事や育児で忙しい場合、届いた花を飾る時間を確保できないこともあります。配送頻度を隔週や月1回に変更する、お手入れが容易な茎の強い花が届くサービスを選ぶ、ドライフラワーに切り替えるなどの方法で解決できる場合があります。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-[#FFF8F0] rounded-xl p-5 border border-[#F0E0D0]">
+                <div key={i} className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0]">
                   <div className="flex items-start gap-3">
-                    <span className="bg-[#C4877A] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                    <span className="bg-[#B0694F] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                       理由{item.num}
                     </span>
                     <div>
-                      <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
-                      <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                      <h3 className="text-base font-bold text-[#1F2420] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                     </div>
                   </div>
                 </div>
@@ -144,9 +145,9 @@ export default function YametaGuidePage() {
         </section>
 
         {/* ─── Continue ─── */}
-        <section id="continue" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="continue" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のサブスクの継続をおすすめする方の特徴
             </h2>
             <div className="space-y-3">
@@ -157,9 +158,9 @@ export default function YametaGuidePage() {
                 "プランやサービスの変更で不満を解消できる見込みがある方",
                 "品質保証制度を活用して、傷んだ花の再送を受けられることを把握している方",
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-4 border border-[#E5E5E5] flex items-start gap-3">
-                  <span className="text-[#4A7C59] text-lg shrink-0">&#10003;</span>
-                  <p className="text-sm text-[#666] leading-relaxed">{item}</p>
+                <div key={i} className="bg-white rounded-md p-4 border border-[#DEDAD2] flex items-start gap-3">
+                  <span className="text-[#2F5B43] text-lg shrink-0">・</span>
+                  <p className="text-sm text-[#4A4F49] leading-relaxed">{item}</p>
                 </div>
               ))}
             </div>
@@ -169,7 +170,7 @@ export default function YametaGuidePage() {
         {/* ─── Quit ─── */}
         <section id="quit" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のサブスクの解約を検討すべき方の特徴
             </h2>
             <div className="space-y-3">
@@ -180,9 +181,9 @@ export default function YametaGuidePage() {
                 "不在が多く、届いた花がポストに長時間置かれたままになる方",
                 "複数のサービスを試しても満足できなかった方",
               ].map((item, i) => (
-                <div key={i} className="bg-[#FDF5F5] rounded-xl p-4 border border-[#E0B8B8] flex items-start gap-3">
-                  <span className="text-[#C4877A] text-lg shrink-0">&#10005;</span>
-                  <p className="text-sm text-[#666] leading-relaxed">{item}</p>
+                <div key={i} className="bg-[#F7F1EC] rounded-md p-4 border border-[#D9BFB1] flex items-start gap-3">
+                  <span className="text-[#B0694F] text-lg shrink-0">&#10005;</span>
+                  <p className="text-sm text-[#4A4F49] leading-relaxed">{item}</p>
                 </div>
               ))}
             </div>
@@ -190,9 +191,9 @@ export default function YametaGuidePage() {
         </section>
 
         {/* ─── Alternatives ─── */}
-        <section id="alternatives" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="alternatives" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               解約後の代替案3選
             </h2>
             <div className="space-y-4">
@@ -213,14 +214,14 @@ export default function YametaGuidePage() {
                   text: "お手入れが不要で長期間楽しめるドライフラワーや、高品質な造花（アーティフィシャルフラワー）も選択肢の一つです。初期費用はかかりますが、継続的な費用がかからない点が利点です。季節ごとに入れ替えることで、変化も楽しめます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+                <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                   <div className="flex items-start gap-3">
-                    <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                    <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                       {item.num}
                     </span>
                     <div>
-                      <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
-                      <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                      <h3 className="text-base font-bold text-[#1F2420] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                     </div>
                   </div>
                 </div>
@@ -232,19 +233,19 @@ export default function YametaGuidePage() {
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のサブスクをやめる前に確認したいQ&A
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">Q. {item.q}</span>
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">Q. {item.q}</span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -252,7 +253,7 @@ export default function YametaGuidePage() {
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">A. {item.a}</p>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">A. {item.a}</p>
                     </div>
                   )}
                 </div>
@@ -264,15 +265,15 @@ export default function YametaGuidePage() {
         {/* サービス別 解約難易度比較表 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               サービス別 解約のしやすさ一覧
             </h2>
-            <p className="text-sm text-[#666] mb-6">
+            <p className="text-sm text-[#4A4F49] mb-6">
               解約したいと考えた際にすぐ解約できるかどうかは、申し込み前に確認しておくべき点です。当サイトでは、回数の条件・違約金・解約方法をサービス別にまとめています。
             </p>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
-                <thead className="bg-[#4A7C59] text-white">
+              <table className="w-full text-sm border-collapse bg-white border border-[#DEDAD2]">
+                <thead className="bg-[#2F5B43] text-white">
                   <tr>
                     <th className="px-3 py-2 text-left">サービス</th>
                     <th className="px-3 py-2 text-left">回数の条件</th>
@@ -282,45 +283,45 @@ export default function YametaGuidePage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">bloomee</td><td className="px-3 py-2">4回</td><td className="px-3 py-2 text-[#C56565]">あり (残回数分)</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#C56565]">やや難しい</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">medelu</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから即解約</td><td className="px-3 py-2 text-[#4A7C59]">非常に簡単</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">HitoHana</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">AND PLANTS</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">LIFFT</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">毎月19日までにメール（info@lifft.jp）で連絡（2026年10月17日公式確認）</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
-                  <tr><td className="px-3 py-2 font-bold">タスハナ</td><td className="px-3 py-2">5回（出荷が前提）（2026年10月17日公式確認）</td><td className="px-3 py-2 text-[#4A7C59]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#4A7C59]">簡単</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">bloomee</td><td className="px-3 py-2">4回</td><td className="px-3 py-2 text-[#C56565]">あり (残回数分)</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#C56565]">やや難しい</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">medelu</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから即解約</td><td className="px-3 py-2 text-[#2F5B43]">非常に簡単</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">HitoHana</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#2F5B43]">簡単</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">AND PLANTS</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#2F5B43]">簡単</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">LIFFT</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">毎月19日までにメール（info@lifft.jp）で連絡（2026年10月17日公式確認）</td><td className="px-3 py-2 text-[#2F5B43]">簡単</td></tr>
+                  <tr><td className="px-3 py-2 font-bold">タスハナ</td><td className="px-3 py-2">5回（出荷が前提）（2026年10月17日公式確認）</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#2F5B43]">簡単</td></tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#888] mt-4">
+            <p className="text-xs text-[#6B6F6A] mt-4">
               ※ 2026年5月時点の各社公式情報にもとづいています。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
-            <p className="text-sm text-[#666] mt-6 leading-relaxed">
-              表のとおり、いつでも解約できることを重視する場合は、<a href="/services/medelu" className="text-[#4A7C59] underline">medelu</a>が適しています。bloomeeには初回4回の最低受け取り回数があるため、試しに始める場合はまずmedeluを利用し、継続を決めた段階でbloomeeに乗り換える方法をおすすめします。
+            <p className="text-sm text-[#4A4F49] mt-6 leading-relaxed">
+              表のとおり、いつでも解約できることを重視する場合は、<a href="/services/medelu" className="text-[#2F5B43] underline">medelu</a>が適しています。bloomeeには初回4回の最低受け取り回数があるため、試しに始める場合はまずmedeluを利用し、継続を決めた段階でbloomeeに乗り換える方法をおすすめします。
             </p>
           </div>
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section className="py-12 md:py-16 bg-[#F3EDE6]">
+        <section className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               解約の前にサービスの見直しをご検討ください
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクをやめたいと感じる理由の多くは、<strong>プランやサービスの選び直し</strong>で解決できる可能性があります。飽きた場合は別のサービスへの乗り換え、費用に不満がある場合はmedeluのような送料無料のサービス、花が好みに合わない場合はHitoHanaのような色を選べるサービスをご検討ください。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               それでも満足できない場合は、無理に続ける必要はありません。スーパーで花を選ぶ、観葉植物に切り替えるなど、ご自身に合った方法で花のある暮らしをお楽しみください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
-              <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
+              <a href="/services/medelu" className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors">
                 費用を抑えたい方向け medeluを見る
               </a>
-              <a href="/services/hitohana" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
+              <a href="/services/hitohana" className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
                 色を選べる HitoHanaを見る
               </a>
             </div>
-            <a href="/" className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline">
+            <a href="/" className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline">
               トップページに戻る
             </a>
           </div>
@@ -328,11 +329,11 @@ export default function YametaGuidePage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400">花のサブスクを比較し、ご自身に合ったサービス選びを支援します。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">

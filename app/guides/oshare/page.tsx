@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -141,20 +142,20 @@ export default function OshareGuidePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">ガイド記事</span>
+                  <span className="text-[#4A4F49]">ガイド記事</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">おしゃれな花のサブスクおすすめ</span>
+                  <span className="text-[#1F2420] font-medium">おしゃれな花のサブスクおすすめ</span>
                 </li>
               </ol>
             </nav>
@@ -162,54 +163,54 @@ export default function OshareGuidePage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-gradient-to-b from-[#FDF2F8] to-[#E8F0EB] py-12 md:py-20">
+        <PageHero path="/guides/oshare/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#C2567E] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#9A5C45] font-medium mb-3 tracking-wide">
               おしゃれな花のサブスク特集
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               おしゃれな花のサブスクおすすめ3選<br className="hidden md:block" />
               デザイン性の高いサービスを比較
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               花のサブスクを始めるにあたり、おしゃれなサービスを選びたいと考える方は少なくありません。
               当サイトでは、デザイン性・アレンジのセンス・SNSでの見栄えの観点から、スタイルを重視する方におすすめの3サービスを選定してご紹介します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">掲載サービス</p>
-                <p className="text-xl font-bold text-[#4A7C59]">3サービス</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">掲載サービス</p>
+                <p className="text-xl font-bold text-[#2F5B43]">3サービス</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">最安価格帯</p>
-                <p className="text-xl font-bold text-[#4A7C59]">980円〜</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">最安価格帯</p>
+                <p className="text-xl font-bold text-[#2F5B43]">980円〜</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">送料無料</p>
-                <p className="text-xl font-bold text-[#4A7C59]">1サービス</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">送料無料</p>
+                <p className="text-xl font-bold text-[#2F5B43]">1サービス</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">SNS人気</p>
-                <p className="text-xl font-bold text-[#C2567E]">No.1掲載</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">SNS人気</p>
+                <p className="text-xl font-bold text-[#9A5C45]">No.1掲載</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">目次</p>
               <nav>
-                <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#what-is-stylish" className="hover:text-[#4A7C59] transition-colors">1. おしゃれな花のサブスクを選ぶ基準</a></li>
-                  <li><a href="#ranking-table" className="hover:text-[#4A7C59] transition-colors">2. おしゃれな花のサブスク3選の比較表</a></li>
-                  <li><a href="#ranking-detail" className="hover:text-[#4A7C59] transition-colors">3. 各サービスの詳細レビュー</a></li>
-                  <li><a href="#instagram-tips" className="hover:text-[#4A7C59] transition-colors">4. 届いた花を美しく見せる撮影・飾り方のポイント</a></li>
-                  <li><a href="#room-coordination" className="hover:text-[#4A7C59] transition-colors">5. 部屋のテイスト別のコーディネート方法</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">6. おしゃれな花のサブスクに関するよくある質問</a></li>
-                  <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">7. まとめ</a></li>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
+                  <li><a href="#what-is-stylish" className="hover:text-[#2F5B43] transition-colors">1. おしゃれな花のサブスクを選ぶ基準</a></li>
+                  <li><a href="#ranking-table" className="hover:text-[#2F5B43] transition-colors">2. おしゃれな花のサブスク3選の比較表</a></li>
+                  <li><a href="#ranking-detail" className="hover:text-[#2F5B43] transition-colors">3. 各サービスの詳細レビュー</a></li>
+                  <li><a href="#instagram-tips" className="hover:text-[#2F5B43] transition-colors">4. 届いた花を美しく見せる撮影・飾り方のポイント</a></li>
+                  <li><a href="#room-coordination" className="hover:text-[#2F5B43] transition-colors">5. 部屋のテイスト別のコーディネート方法</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">6. おしゃれな花のサブスクに関するよくある質問</a></li>
+                  <li><a href="#summary" className="hover:text-[#2F5B43] transition-colors">7. まとめ</a></li>
                 </ol>
               </nav>
             </div>
@@ -219,49 +220,49 @@ export default function OshareGuidePage() {
         {/* ─── What Makes It Stylish ─── */}
         <section id="what-is-stylish" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               おしゃれな花のサブスクを選ぶ基準
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               花のサブスクは数多くありますが、「おしゃれ」と感じるかどうかはサービスによって大きく異なります。
               花が届くことだけでなく、色合いの組み立て、花材の組み合わせ、梱包のデザインまで含めて総合的に評価することが重要です。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               当サイトでは、おしゃれな花のサブスクを見極めるための5つの確認項目を以下のとおりご説明します。
             </p>
 
             <div className="space-y-4">
-              <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
-                <h3 className="text-sm font-bold text-[#C2567E] mb-2">1. アレンジのセンス・色合い</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#E3D3C8]">
+                <h3 className="text-sm font-bold text-[#9A5C45] mb-2">1. アレンジのセンス・色合い</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   プロのフローリストがアレンジを手がけているか、色のトーンに統一感があるかが重要です。
                   くすみカラーやニュアンスカラーを取り入れたアレンジは、近年のインテリアの傾向とも相性が良く、写真でも見栄えがします。
                 </p>
               </div>
-              <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
-                <h3 className="text-sm font-bold text-[#C2567E] mb-2">2. パッケージ・梱包のデザイン</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#E3D3C8]">
+                <h3 className="text-sm font-bold text-[#9A5C45] mb-2">2. パッケージ・梱包のデザイン</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   開封時の印象も、おしゃれさを構成する要素の一つです。
                   オリジナルデザインのボックスやペーパー、ブランドロゴ入りのラッピングなど、細部まで配慮されたサービスは満足度が高い傾向にあります。
                 </p>
               </div>
-              <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
-                <h3 className="text-sm font-bold text-[#C2567E] mb-2">3. SNSでの評判・投稿の雰囲気</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#E3D3C8]">
+                <h3 className="text-sm font-bold text-[#9A5C45] mb-2">3. SNSでの評判・投稿の雰囲気</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   InstagramやXの投稿を見ると、実際に届く花の雰囲気を把握できます。
                   投稿数が多いサービスほど飾り方の参考例も多く、理想のスタイルを具体的に想像しやすくなります。
                 </p>
               </div>
-              <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
-                <h3 className="text-sm font-bold text-[#C2567E] mb-2">4. 花瓶・インテリアとの相性</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#E3D3C8]">
+                <h3 className="text-sm font-bold text-[#9A5C45] mb-2">4. 花瓶・インテリアとの相性</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花がきれいであっても、部屋のインテリアと合わなければおしゃれには見えません。
                   届く花のボリュームやスタイルが、手持ちの花瓶や部屋のテイストに合うかを事前にご確認ください。
                 </p>
               </div>
-              <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
-                <h3 className="text-sm font-bold text-[#C2567E] mb-2">5. 花以外のトータル提案力</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#E3D3C8]">
+                <h3 className="text-sm font-bold text-[#9A5C45] mb-2">5. 花以外のトータル提案力</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花だけでなく、観葉植物やドライフラワー、花瓶のセット販売など、暮らし全体のスタイリングを提案するサービスは、
                   おしゃれな空間づくりに役立ちます。
                 </p>
@@ -271,19 +272,19 @@ export default function OshareGuidePage() {
         </section>
 
         {/* ─── Ranking Table ─── */}
-        <section id="ranking-table" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="ranking-table" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               おしゃれな花のサブスク3選の比較表
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               当サイトでは、デザイン性・アレンジのセンス・SNSでの評判を総合的に評価し、おしゃれさを重視する方におすすめの3サービスを比較しています。
             </p>
 
             <div className="overflow-x-auto -mx-4 px-4">
-              <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden shadow-sm" style={{ minWidth: "700px" }}>
+              <table className="w-full text-sm border-collapse bg-white rounded-md overflow-hidden" style={{ minWidth: "700px" }}>
                 <thead>
-                  <tr className="bg-[#4A7C59] text-white">
+                  <tr className="bg-[#2F5B43] text-white">
                     <th className="px-4 py-3 text-left font-medium">順位</th>
                     <th className="px-4 py-3 text-left font-medium">サービス名</th>
                     <th className="px-4 py-3 text-left font-medium">プラン</th>
@@ -296,10 +297,10 @@ export default function OshareGuidePage() {
                 </thead>
                 <tbody>
                   {rankingData.map((item, i) => (
-                    <tr key={i} className={`border-t border-[#E5E5E5] ${i === 0 ? "bg-[#FDF2F8]" : ""}`}>
+                    <tr key={i} className={`border-t border-[#DEDAD2] ${i === 0 ? "bg-[#F6F4EF]" : ""}`}>
                       <td className="px-4 py-4">
-                        <span className={`inline-flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold ${
-                          i === 0 ? "bg-[#C2567E] text-white" :
+                        <span className={`inline-flex items-center justify-center w-7 h-7 rounded-md text-xs font-bold ${
+                          i === 0 ? "bg-[#9A5C45] text-white" :
                           i === 1 ? "bg-[#9CA3AF] text-white" :
                           "bg-[#B45309] text-white"
                         }`}>
@@ -307,38 +308,38 @@ export default function OshareGuidePage() {
                         </span>
                       </td>
                       <td className="px-4 py-4">
-                        <a href={item.url} className="font-bold text-[#4A7C59] hover:underline">
+                        <a href={item.url} className="font-bold text-[#2F5B43] hover:underline">
                           {item.name}
                         </a>
-                        <p className="text-xs text-[#999]">{item.nameJa}</p>
+                        <p className="text-xs text-[#6B6F6A]">{item.nameJa}</p>
                       </td>
-                      <td className="px-4 py-4 text-[#666]">{item.plan}</td>
-                      <td className="px-4 py-4 text-right text-[#333]">{item.price.toLocaleString()}円</td>
+                      <td className="px-4 py-4 text-[#4A4F49]">{item.plan}</td>
+                      <td className="px-4 py-4 text-right text-[#1F2420]">{item.price.toLocaleString()}円</td>
                       <td className="px-4 py-4 text-right">
                         {item.shipping === 0 ? (
-                          <span className="text-[#4A7C59] font-medium">無料</span>
+                          <span className="text-[#2F5B43] font-medium">無料</span>
                         ) : item.shipping ? (
-                          <span className="text-[#666]">{item.shipping}円</span>
+                          <span className="text-[#4A4F49]">{item.shipping}円</span>
                         ) : (
-                          <span className="text-xs text-[#999]">別途</span>
+                          <span className="text-xs text-[#6B6F6A]">別途</span>
                         )}
                       </td>
-                      <td className="px-4 py-4 text-center text-[#666]">{item.flowers}</td>
+                      <td className="px-4 py-4 text-center text-[#4A4F49]">{item.flowers}</td>
                       <td className="px-4 py-4 text-center">
-                        <span className="inline-block bg-[#FDF2F8] text-[#C2567E] text-xs font-medium px-2 py-0.5 rounded">
+                        <span className="inline-block bg-[#F6F4EF] text-[#9A5C45] text-xs font-medium px-2 py-0.5 rounded">
                           {item.style}
                         </span>
                       </td>
-                      <td className="px-4 py-4 text-center text-[#666] text-xs">{item.delivery}</td>
+                      <td className="px-4 py-4 text-center text-[#4A4F49] text-xs">{item.delivery}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-6 bg-white rounded-xl border border-[#E5E5E5] p-5">
-              <h3 className="text-sm font-bold text-[#333] mb-3">表の補足</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+            <div className="mt-6 bg-white rounded-md border border-[#DEDAD2] p-5">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-3">表の補足</h3>
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ 表示価格はすべて税込です</li>
                 <li>・ bloomeeはお試しプラン（980円＋送料385円）から始めることもできますが、ボリュームを重視する場合はベーシックプラン（2,180円＋送料550円・8本以上）をおすすめします</li>
                 <li>・ 日本総合園芸はお届け方法（自社配達便・宅配便）とコースによって料金が異なります（2026年10月17日公式確認）</li>
@@ -351,30 +352,30 @@ export default function OshareGuidePage() {
         {/* ─── Ranking Detail ─── */}
         <section id="ranking-detail" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               各サービスの詳細レビュー
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               おしゃれさを重視して選ぶ3サービスについて、デザインの特徴・届く内容・おすすめの利用者をご説明します。
             </p>
 
             <div className="space-y-8">
               {rankingData.map((item) => (
-                <div key={item.rank} className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] overflow-hidden">
+                <div key={item.rank} className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] overflow-hidden">
                   {/* Service Header */}
-                  <div className={`px-5 py-4 flex items-center gap-3 ${item.rank === 1 ? "bg-[#FDF2F8] border-b border-[#F5D0E0]" : "bg-[#E8F0EB] border-b border-[#C5D9CB]"}`}>
-                    <span className={`inline-flex items-center justify-center w-9 h-9 rounded-full text-sm font-bold ${
-                      item.rank === 1 ? "bg-[#C2567E] text-white" :
+                  <div className={`px-5 py-4 flex items-center gap-3 ${item.rank === 1 ? "bg-[#F6F4EF] border-b border-[#E3D3C8]" : "bg-[#EDF1EC] border-b border-[#C9D6CB]"}`}>
+                    <span className={`inline-flex items-center justify-center w-9 h-9 rounded-md text-sm font-bold ${
+                      item.rank === 1 ? "bg-[#9A5C45] text-white" :
                       item.rank === 2 ? "bg-[#9CA3AF] text-white" :
                       "bg-[#B45309] text-white"
                     }`}>
                       {item.rank}位
                     </span>
                     <div>
-                      <h3 className="text-lg font-bold text-[#333]">
+                      <h3 className="text-lg font-bold text-[#1F2420]">
                         {item.name}（{item.nameJa}）{item.plan}
                       </h3>
-                      <p className="text-sm text-[#666]">{item.highlight}</p>
+                      <p className="text-sm text-[#4A4F49]">{item.highlight}</p>
                     </div>
                   </div>
 
@@ -382,15 +383,15 @@ export default function OshareGuidePage() {
                   <div className="p-5">
                     {/* Price Breakdown */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
-                      <div className="bg-white rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">料金</p>
-                        <p className="text-lg font-bold text-[#333]">{item.price.toLocaleString()}<span className="text-xs font-normal">円</span></p>
+                      <div className="bg-white rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">料金</p>
+                        <p className="text-lg font-bold text-[#1F2420]">{item.price.toLocaleString()}<span className="text-xs font-normal">円</span></p>
                       </div>
-                      <div className="bg-white rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">送料</p>
-                        <p className="text-lg font-bold text-[#333]">
+                      <div className="bg-white rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">送料</p>
+                        <p className="text-lg font-bold text-[#1F2420]">
                           {item.shipping === 0 ? (
-                            <span className="text-[#4A7C59]">無料</span>
+                            <span className="text-[#2F5B43]">無料</span>
                           ) : item.shipping ? (
                             <>{item.shipping}<span className="text-xs font-normal">円</span></>
                           ) : (
@@ -398,9 +399,9 @@ export default function OshareGuidePage() {
                           )}
                         </p>
                       </div>
-                      <div className="bg-white rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">1回あたり総額</p>
-                        <p className="text-lg font-bold text-[#4A7C59]">
+                      <div className="bg-white rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">1回あたり総額</p>
+                        <p className="text-lg font-bold text-[#2F5B43]">
                           {item.total ? (
                             <>{item.total.toLocaleString()}<span className="text-xs font-normal">円</span></>
                           ) : (
@@ -408,41 +409,41 @@ export default function OshareGuidePage() {
                           )}
                         </p>
                       </div>
-                      <div className="bg-white rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">花の本数</p>
-                        <p className="text-lg font-bold text-[#333]">{item.flowers}</p>
+                      <div className="bg-white rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">花の本数</p>
+                        <p className="text-lg font-bold text-[#1F2420]">{item.flowers}</p>
                       </div>
                     </div>
 
                     {/* Info Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5 text-sm">
                       <div className="flex">
-                        <span className="text-[#999] w-28 shrink-0">届き方</span>
-                        <span className="text-[#333]">{item.delivery}</span>
+                        <span className="text-[#6B6F6A] w-28 shrink-0">届き方</span>
+                        <span className="text-[#1F2420]">{item.delivery}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-28 shrink-0">配送頻度</span>
-                        <span className="text-[#333]">{item.frequency}</span>
+                        <span className="text-[#6B6F6A] w-28 shrink-0">配送頻度</span>
+                        <span className="text-[#1F2420]">{item.frequency}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-28 shrink-0">回数の条件</span>
-                        <span className="text-[#333]">{item.minOrders}</span>
+                        <span className="text-[#6B6F6A] w-28 shrink-0">回数の条件</span>
+                        <span className="text-[#1F2420]">{item.minOrders}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-28 shrink-0">品質保証</span>
-                        <span className="text-[#333]">{item.quality}</span>
+                        <span className="text-[#6B6F6A] w-28 shrink-0">品質保証</span>
+                        <span className="text-[#1F2420]">{item.quality}</span>
                       </div>
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm text-[#666] leading-relaxed mb-5">
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-5">
                       {item.detail}
                     </p>
 
                     {/* Style Points */}
-                    <div className="bg-[#FDF2F8] rounded-lg p-4 mb-5 border border-[#F5D0E0]">
-                      <p className="text-sm font-bold text-[#C2567E] mb-3">デザイン面の特徴</p>
-                      <ul className="text-sm text-[#666] space-y-2">
+                    <div className="bg-[#F6F4EF] rounded-lg p-4 mb-5 border border-[#E3D3C8]">
+                      <p className="text-sm font-bold text-[#9A5C45] mb-3">デザイン面の特徴</p>
+                      <ul className="text-sm text-[#4A4F49] space-y-2">
                         {item.stylePoints.map((point, idx) => (
                           <li key={idx}>・ {point}</li>
                         ))}
@@ -450,10 +451,10 @@ export default function OshareGuidePage() {
                     </div>
 
                     {/* Best For */}
-                    <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
+                    <div className="bg-[#EDF1EC] rounded-lg p-4 mb-5">
                       <p className="text-sm">
-                        <span className="font-bold text-[#4A7C59]">おすすめの利用者：</span>
-                        <span className="text-[#666]">{item.bestFor}</span>
+                        <span className="font-bold text-[#2F5B43]">おすすめの利用者：</span>
+                        <span className="text-[#4A4F49]">{item.bestFor}</span>
                       </p>
                     </div>
 
@@ -461,7 +462,7 @@ export default function OshareGuidePage() {
                     <div className="flex flex-col sm:flex-row gap-3">
                       <a
                         href={item.url}
-                        className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                        className="inline-block text-center bg-white text-[#2F5B43] font-bold text-sm px-6 py-3 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
                       >
                         {item.name}の詳細レビューを見る
                       </a>
@@ -469,7 +470,7 @@ export default function OshareGuidePage() {
                         href={item.officialUrl}
                         target="_blank"
                         rel="noopener noreferrer nofollow"
-                        className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"
+                        className="inline-block text-center bg-[#2F5B43] text-white font-bold text-sm px-6 py-3 rounded-md hover:bg-[#234534] transition-colors"
                       >
                         {item.name}公式サイトはこちら
                       </a>
@@ -482,21 +483,21 @@ export default function OshareGuidePage() {
         </section>
 
         {/* ─── Instagram Tips ─── */}
-        <section id="instagram-tips" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="instagram-tips" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#C2567E]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#9A5C45]">
               届いた花を美しく見せる撮影・飾り方のポイント
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               届いた花の印象は、飾り方や撮影方法によって大きく変わります。
               当サイトでは、花のサブスクで届いた花をより魅力的に見せる方法をご説明します。
             </p>
 
             <div className="space-y-6">
               {/* Tip 1 */}
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">自然光を活かして撮影する</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">自然光を活かして撮影する</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花の写真は、自然光で撮影すると最も美しく仕上がります。窓辺に花を置き、午前中の柔らかい光で撮影する方法が適しています。
                   直射日光では影が強くなりすぎるため、レースカーテン越しの光をおすすめします。
                   蛍光灯やLEDライトの下では花の色味が変わるため、できるだけ自然光のある時間帯に撮影してください。
@@ -504,9 +505,9 @@ export default function OshareGuidePage() {
               </div>
 
               {/* Tip 2 */}
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">背景をシンプルに統一する</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">背景をシンプルに統一する</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花を主役にするには、背景を整理することが重要です。
                   白い壁、木目のテーブル、大理石調のプレートなど、シンプルな背景を選んでください。
                   リネンやコットンの布を敷くだけでも、写真の雰囲気が向上します。
@@ -515,9 +516,9 @@ export default function OshareGuidePage() {
               </div>
 
               {/* Tip 3 */}
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">花瓶の選び方で印象が変わる</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">花瓶の選び方で印象が変わる</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   透明なガラス花瓶はどの花にも合わせやすい一方、花の色に合わせて花瓶を選ぶと、さらに統一感が出ます。
                   パステルカラーの花にはマットな白い陶器、鮮やかな色の花にはシンプルなクリアガラス、
                   グリーン系の花にはブラウンやテラコッタの素材がよく合います。
@@ -526,9 +527,9 @@ export default function OshareGuidePage() {
               </div>
 
               {/* Tip 4 */}
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">小物を添えて雰囲気をつくる</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">小物を添えて雰囲気をつくる</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花だけでなく、本・キャンドル・コーヒーカップなどの小物を一緒に配置すると、
                   暮らしの一場面を切り取ったような写真になります。
                   ただし、小物は1〜2点に抑え、花を主役にすることが大切です。
@@ -537,9 +538,9 @@ export default function OshareGuidePage() {
               </div>
 
               {/* Tip 5 */}
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">真上からの撮影も活用する</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">真上からの撮影も活用する</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花を真上から撮影する（フラットレイ）と、花びらの美しさが際立ちます。
                   特にバラやラナンキュラスなど、花びらが幾重にも重なる花は真上からの撮影に適しています。
                   花束全体のボリューム感を伝えたい場合は、斜め45度の角度が適しています。
@@ -553,86 +554,86 @@ export default function OshareGuidePage() {
         {/* ─── Room Coordination ─── */}
         <section id="room-coordination" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               部屋のテイスト別のコーディネート方法
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花のサブスクで届いた花を、部屋のインテリアに合わせて飾る方法をテイスト別にご説明します。
             </p>
 
             <div className="space-y-6">
               {/* Natural */}
-              <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C5D9CB]">
+              <div className="bg-[#EDF1EC] rounded-md p-5 border border-[#C9D6CB]">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold px-2 py-1 rounded">ナチュラル</span>
-                  <h3 className="text-base font-bold text-[#333]">木目調・北欧風の部屋に合わせる場合</h3>
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold px-2 py-1 rounded">ナチュラル</span>
+                  <h3 className="text-base font-bold text-[#1F2420]">木目調・北欧風の部屋に合わせる場合</h3>
                 </div>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                   白やグリーンを基調としたナチュラルカラーの花が最も合います。
                   ユーカリやかすみ草などのグリーン系を中心に、差し色として淡いピンクやイエローを加えると、
                   北欧風のインテリアに自然になじみます。
                 </p>
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-xs text-[#999] mb-1">おすすめサービス</p>
-                  <p className="text-sm text-[#666]">
-                    <span className="font-bold text-[#4A7C59]">AND PLANTS</span> -- ニュアンスカラーのアレンジと観葉植物の組み合わせが得意
+                  <p className="text-xs text-[#6B6F6A] mb-1">おすすめサービス</p>
+                  <p className="text-sm text-[#4A4F49]">
+                    <span className="font-bold text-[#2F5B43]">AND PLANTS</span> -- ニュアンスカラーのアレンジと観葉植物の組み合わせが得意
                   </p>
                 </div>
               </div>
 
               {/* Modern */}
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#333] text-white text-xs font-bold px-2 py-1 rounded">モダン</span>
-                  <h3 className="text-base font-bold text-[#333]">モノトーン・シンプルな部屋に合わせる場合</h3>
+                  <span className="bg-[#1F2420] text-white text-xs font-bold px-2 py-1 rounded">モダン</span>
+                  <h3 className="text-base font-bold text-[#1F2420]">モノトーン・シンプルな部屋に合わせる場合</h3>
                 </div>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                   白やグレーを基調としたモダンな空間では、鮮やかな赤やオレンジの花がアクセントになります。
                   反対に、白い花だけでまとめると、洗練された印象になります。
                   花瓶はガラスやステンレスなど無機質な素材を選ぶと統一感が出ます。
                 </p>
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-xs text-[#999] mb-1">おすすめサービス</p>
-                  <p className="text-sm text-[#666]">
-                    <span className="font-bold text-[#4A7C59]">AND PLANTS</span> -- 洗練されたセレクトで、モダンな空間と相性が良い
+                  <p className="text-xs text-[#6B6F6A] mb-1">おすすめサービス</p>
+                  <p className="text-sm text-[#4A4F49]">
+                    <span className="font-bold text-[#2F5B43]">AND PLANTS</span> -- 洗練されたセレクトで、モダンな空間と相性が良い
                   </p>
                 </div>
               </div>
 
               {/* Feminine */}
-              <div className="bg-[#FDF2F8] rounded-xl p-5 border border-[#F5D0E0]">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#E3D3C8]">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#C2567E] text-white text-xs font-bold px-2 py-1 rounded">フェミニン</span>
-                  <h3 className="text-base font-bold text-[#333]">ピンク・ホワイト基調の部屋に合わせる場合</h3>
+                  <span className="bg-[#9A5C45] text-white text-xs font-bold px-2 py-1 rounded">フェミニン</span>
+                  <h3 className="text-base font-bold text-[#1F2420]">ピンク・ホワイト基調の部屋に合わせる場合</h3>
                 </div>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                   ピンクのバラ、ラナンキュラス、トルコキキョウなど、華やかな花がよく合います。
                   花びらにボリュームのある花を選ぶと、フェミニンなインテリアがより華やかになります。
                   パールホワイトやゴールドの花瓶を合わせると、上品な空間に仕上がります。
                 </p>
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-xs text-[#999] mb-1">おすすめサービス</p>
-                  <p className="text-sm text-[#666]">
-                    <span className="font-bold text-[#4A7C59]">bloomee</span> -- 多彩な花屋によるアレンジで、華やかなスタイルが豊富
+                  <p className="text-xs text-[#6B6F6A] mb-1">おすすめサービス</p>
+                  <p className="text-sm text-[#4A4F49]">
+                    <span className="font-bold text-[#2F5B43]">bloomee</span> -- 多彩な花屋によるアレンジで、華やかなスタイルが豊富
                   </p>
                 </div>
               </div>
 
               {/* Classic */}
-              <div className="bg-[#F8F5F0] rounded-xl p-5 border border-[#E5DDD0]">
+              <div className="bg-[#F8F5F0] rounded-md p-5 border border-[#E5DDD0]">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="bg-[#8B6914] text-white text-xs font-bold px-2 py-1 rounded">クラシック</span>
-                  <h3 className="text-base font-bold text-[#333]">格式のある上品な部屋に合わせる場合</h3>
+                  <h3 className="text-base font-bold text-[#1F2420]">格式のある上品な部屋に合わせる場合</h3>
                 </div>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                   深い赤のバラ、白いカサブランカ、紫のトルコキキョウなど、格式のある花材が適しています。
                   ボリュームのある花束をリビングや玄関に飾ると、ホテルのロビーのような上質な空間を演出できます。
                   陶器や真鍮の花器と合わせると、クラシカルな雰囲気が引き立ちます。
                 </p>
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-xs text-[#999] mb-1">おすすめサービス</p>
-                  <p className="text-sm text-[#666]">
-                    <span className="font-bold text-[#4A7C59]">日本総合園芸</span> -- プロのアレンジとボリュームで、格式のある空間を演出
+                  <p className="text-xs text-[#6B6F6A] mb-1">おすすめサービス</p>
+                  <p className="text-sm text-[#4A4F49]">
+                    <span className="font-bold text-[#2F5B43]">日本総合園芸</span> -- プロのアレンジとボリュームで、格式のある空間を演出
                   </p>
                 </div>
               </div>
@@ -641,23 +642,23 @@ export default function OshareGuidePage() {
         </section>
 
         {/* ─── FAQ ─── */}
-        <section id="faq" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="faq" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               おしゃれな花のサブスクに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#FDF2F8] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#F6F4EF] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -667,8 +668,8 @@ export default function OshareGuidePage() {
                     </svg>
                   </button>
                   {openFaq === i && (
-                    <div className="px-5 py-4 bg-white border-t border-[#E5E5E5]">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                    <div className="px-5 py-4 bg-white border-t border-[#DEDAD2]">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -680,21 +681,21 @@ export default function OshareGuidePage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-gradient-to-b from-[#E8F0EB] to-[#FDF2F8]">
+        <section id="summary" className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               おしゃれさを重視する場合はAND PLANTSをおすすめします
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               当サイトでは、おしゃれな花のサブスクを比較した結果、デザイン性・アレンジのセンス・総合的な提案力の面から、AND PLANTS（アンドプランツ）を最もおすすめします。
               プロのフローリストによる洗練されたセレクト、独自デザインの梱包、観葉植物まで含めたコーディネートが可能な点は、他サービスにない強みです。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               SNSへの投稿を楽しみたい方には、bloomee（ブルーミー）をおすすめします。
               季節の花が届くため、毎回異なる写真を撮影できます。
               InstagramやXでの投稿事例も多く、飾り方の参考にしやすい点も利点です。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               本格的な花の美しさとボリュームを求める場合は、日本総合園芸の花瓶プレミアムコースが適しています。
               自社配達便または宅配便で届く花束は、来客時やパーティーの場にもふさわしい格式を備えています。
               ライフスタイルやインテリアのテイストに合わせて、適したサービスをお選びください。
@@ -702,26 +703,26 @@ export default function OshareGuidePage() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
                 href="/services/and-plants"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 1位 AND PLANTSの詳細を見る
               </a>
               <a
                 href="/services/bloomee"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 2位 bloomeeの詳細を見る
               </a>
               <a
                 href="/services/nihon-sogo-engei"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 3位 日本総合園芸の詳細を見る
               </a>
             </div>
             <a
               href="/"
-              className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+              className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
             >
               トップページに戻る
             </a>
@@ -730,11 +731,11 @@ export default function OshareGuidePage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
 
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。

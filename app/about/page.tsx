@@ -1,3 +1,4 @@
+import PageHero from "@/app/components/PageHero";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/app/components/Header";
@@ -21,7 +22,9 @@ export default function AboutPage() {
           <span className="mx-2">&gt;</span>
           <span>運営者情報</span>
         </nav>
-        <h1 className="text-3xl md:text-4xl font-bold mb-8">運営者情報・サイトについて</h1>
+        <PageHero bleed path="/about/">
+          <h1 className="text-3xl md:text-4xl font-bold  mb-4">運営者情報・サイトについて</h1>
+        </PageHero>
 
         <section className="mb-10 prose prose-gray max-w-none text-sm leading-relaxed space-y-4">
           <h2 className="text-xl font-bold mt-2 mb-3">{SITE_NAME} について</h2>

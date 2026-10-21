@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP, Cormorant_Garamond } from "next/font/google";
+import { Noto_Sans_JP, Zen_Kaku_Gothic_New, Outfit } from "next/font/google";
 import "./globals.css";
 import SiteFooter from "@/app/components/SiteFooter";
 
@@ -11,11 +11,18 @@ const notoSansJP = Noto_Sans_JP({
   variable: "--font-body",
 });
 
-const cormorant = Cormorant_Garamond({
+const zenKaku = Zen_Kaku_Gothic_New({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["500", "700"],
   display: "swap",
   variable: "--font-heading",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  display: "swap",
+  variable: "--font-logo",
 });
 
 export const metadata: Metadata = {
@@ -61,7 +68,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${notoSansJP.variable} ${cormorant.variable} ${notoSansJP.className} h-full antialiased`}>
+    <html lang="ja" className={`${notoSansJP.variable} ${zenKaku.variable} ${outfit.variable} ${notoSansJP.className} h-full antialiased`}>
       <head>
         <meta
           httpEquiv="Cache-Control"
@@ -70,7 +77,7 @@ export default function RootLayout({
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
       </head>
-      <body className="min-h-full flex flex-col"><div style={{background:'#f4f4f4',borderBottom:'1px solid #e2e2e2',fontSize:'11px',lineHeight:1.6,color:'#666',textAlign:'center',padding:'3px 8px'}}>本サイトはプロモーション(PR)を含みます。</div>{children}
+      <body className="min-h-full flex flex-col"><div style={{background:'#f4f4f4',borderBottom:'1px solid #e2e2e2',fontSize:'11px',lineHeight:1.6,color:'#4A4F49',textAlign:'center',padding:'3px 8px'}}>本サイトはプロモーション(PR)を含みます。</div>{children}
         <SiteFooter />
         <script
           type="application/ld+json"

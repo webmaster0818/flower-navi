@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 const TITLE = "花のサブスク・定期便のガイド一覧【2026年】始め方・お手入れ・行事・観葉植物｜flowerデリ";
 const DESC = "当サイトでは、花のサブスク（定期便）の使い方をテーマ別のガイドとして掲載しています。始める前の判断材料、届いた花を長持ちさせる手入れ、贈り物や行事の準備、観葉植物と法人での利用について、23本のガイドから目的に合うものをお選びいただけます。数値は公式サイトで確認した値のみを掲載しています。";
@@ -88,30 +89,30 @@ export default function GuidesIndexPage() {
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
       <main>
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
+        <PageHero path="/guides/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">ガイド一覧</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">ガイド一覧</p>
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               花のサブスク・定期便のガイド【2026年】<br className="hidden md:block" />
               始め方・お手入れ・行事・観葉植物
             </h1>
-            <p className="text-sm md:text-base text-[#666] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] max-w-2xl mx-auto leading-relaxed">
               当サイトのガイドでは、サービスの比較ではなく、<strong>使い方と判断の方法</strong>をまとめています。
               始める前の検討事項、届いた花の手入れ、行事の準備、観葉植物と法人での利用について、目的に合うものからお読みください。
             </p>
           </div>
-        </section>
+        </PageHero>
 
         {groups.map((g, gi) => (
-          <section key={gi} className={gi % 2 === 0 ? "py-12 md:py-16 bg-white" : "py-12 md:py-16 bg-[#FAF7F2]"}>
+          <section key={gi} className={gi % 2 === 0 ? "py-12 md:py-16 bg-white" : "py-12 md:py-16 bg-[#F6F4EF]"}>
             <div className="max-w-3xl mx-auto px-4">
-              <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">{g.heading}</h2>
-              <p className="text-sm text-[#666] leading-relaxed mb-6">{g.note}</p>
+              <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-2 pb-3 border-b-2 border-[#2F5B43]">{g.heading}</h2>
+              <p className="text-sm text-[#4A4F49] leading-relaxed mb-6">{g.note}</p>
               <div className="grid gap-4">
                 {g.items.map((it) => (
-                  <Link key={it.href} href={it.href} className="block bg-white rounded-xl border border-[#E8E0D5] p-5 hover:border-[#4A7C59] hover:shadow-sm transition">
-                    <p className="font-bold text-[#4A7C59] mb-1">{it.label}</p>
-                    <p className="text-sm text-[#666] leading-relaxed">{it.desc}</p>
+                  <Link key={it.href} href={it.href} className="block bg-white rounded-md border border-[#DEDAD2] p-5 hover:border-[#2F5B43] transition">
+                    <p className="font-bold text-[#2F5B43] mb-1">{it.label}</p>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{it.desc}</p>
                   </Link>
                 ))}
               </div>
@@ -121,13 +122,13 @@ export default function GuidesIndexPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-lg md:text-xl font-bold text-[#333] mb-4">各サービスを比較する</h2>
-            <p className="text-sm text-[#666] leading-relaxed mb-5">
+            <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-4">各サービスを比較する</h2>
+            <p className="text-sm text-[#4A4F49] leading-relaxed mb-5">
               料金と送料を合わせた総額で、各社を比較いただけます。
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              <Link href="/compare/" className="bg-[#4A7C59] text-white font-bold px-6 py-3 rounded-lg text-sm hover:opacity-90 transition">比較ガイド一覧を見る</Link>
-              <Link href="/compare/ryokin/" className="bg-white border border-[#4A7C59] text-[#4A7C59] font-bold px-6 py-3 rounded-lg text-sm hover:bg-[#F3EDE6] transition">料金比較表を見る</Link>
+              <Link href="/compare/" className="bg-[#2F5B43] text-white font-bold px-6 py-3 rounded-lg text-sm hover:opacity-90 transition">比較ガイド一覧を見る</Link>
+              <Link href="/compare/ryokin/" className="bg-white border border-[#2F5B43] text-[#2F5B43] font-bold px-6 py-3 rounded-lg text-sm hover:bg-[#F6F4EF] transition">料金比較表を見る</Link>
             </div>
           </div>
         </section>

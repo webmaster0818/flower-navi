@@ -40,7 +40,7 @@ const p: ServiceProfile = {
   ],
   basicInfo: [
     ["運営", "BOTANIC Inc."],
-    ["公式サイト", <a key="o" href="https://lifft.jp/pages/flowersubscription" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] hover:underline">lifft.jp（お花の定期便）</a>],
+    ["公式サイト", <a key="o" href="https://lifft.jp/pages/flowersubscription" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] hover:underline">lifft.jp（お花の定期便）</a>],
     ["届き方", "ヤマト宅急便（ポスト投函なし。置き配・宅配ボックスは可）"],
     ["お届けできない地域", "沖縄・離島エリア（ライトは本州（山口県・広島県・島根県・鳥取県・岡山県を除く）のみ（2026年10月21日公式確認））"],
     ["申込締切", "毎月20日までの申込で翌月号から（決済は21日）"],

@@ -1,0 +1,83 @@
+{
+ "medelu": {
+  "src": "/images/screenshots/medelu-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "spSrc": "/images/screenshots/medelu-sp.webp",
+  "spWidth": 600,
+  "spHeight": 1000,
+  "pageUrl": "https://medelu.flowers/",
+  "capturedOn": "2026-10-21"
+ },
+ "hanameku": {
+  "src": "/images/screenshots/hanameku-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "spSrc": "/images/screenshots/hanameku-sp.webp",
+  "spWidth": 600,
+  "spHeight": 1000,
+  "pageUrl": "https://hanameku.jp/",
+  "capturedOn": "2026-10-21"
+ },
+ "bloomee": {
+  "src": "/images/screenshots/bloomee-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "spSrc": "/images/screenshots/bloomee-sp.webp",
+  "spWidth": 600,
+  "spHeight": 1000,
+  "pageUrl": "https://bloomeelife.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "andplants": {
+  "src": "/images/screenshots/andplants-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "spSrc": "/images/screenshots/andplants-sp.webp",
+  "spWidth": 600,
+  "spHeight": 1000,
+  "pageUrl": "https://andplants.jp/",
+  "capturedOn": "2026-10-21"
+ },
+ "hitohana": {
+  "src": "/images/screenshots/hitohana-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "spSrc": "/images/screenshots/hitohana-sp.webp",
+  "spWidth": 600,
+  "spHeight": 1000,
+  "pageUrl": "https://hitohana.tokyo/flower-subscription",
+  "capturedOn": "2026-10-21",
+  "label": "お花の定期便のページ"
+ },
+ "lifft": {
+  "src": "/images/screenshots/lifft-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "spSrc": "/images/screenshots/lifft-sp.webp",
+  "spWidth": 600,
+  "spHeight": 1000,
+  "pageUrl": "https://lifft.jp/pages/flowersubscription",
+  "capturedOn": "2026-10-21"
+ },
+ "nihon-sogo-engei": {
+  "src": "/images/screenshots/nihon-sogo-engei-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "spSrc": "/images/screenshots/nihon-sogo-engei-sp.webp",
+  "spWidth": 600,
+  "spHeight": 1000,
+  "pageUrl": "https://nihon-sogo-engei.com/teikibin/",
+  "capturedOn": "2026-10-21"
+ },
+ "tasuhana": {
+  "src": "/images/screenshots/tasuhana-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "spSrc": "/images/screenshots/tasuhana-sp.webp",
+  "spWidth": 600,
+  "spHeight": 1000,
+  "pageUrl": "https://tasuhana.com/",
+  "capturedOn": "2026-10-21"
+ }
+}

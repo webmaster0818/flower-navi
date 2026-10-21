@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -47,42 +48,42 @@ export default function FurusatoNouzeiGuidePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
-                <li><a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a></li>
+                <li><a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#666]">ガイド</span></li>
+                <li><span className="text-[#4A4F49]">ガイド</span></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#333] font-medium">ふるさと納税で花の定期便</span></li>
+                <li><span className="text-[#1F2420] font-medium">ふるさと納税で花の定期便</span></li>
               </ol>
             </nav>
           </div>
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
+        <PageHero path="/guides/furusato-nouzei/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">お得ガイド</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">お得ガイド</p>
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               お花の定期便をふるさと納税で受け取る方法<br className="hidden md:block" />
               花のある暮らしをお得に始める【2026年】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               ふるさと納税の返礼品として花の定期便を選ぶと、実質2,000円の自己負担で数か月間お花が届きます。
               当サイトでは、その仕組みとおすすめの自治体を解説しています。
             </p>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── How it works ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               ふるさと納税で花の定期便を受け取る仕組み
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               ふるさと納税は、任意の自治体に寄付をすると、寄付額から2,000円を差し引いた金額が翌年の住民税・所得税から控除される制度です。返礼品として花の定期便を選ぶと、<strong>実質2,000円の自己負担</strong>で数か月間、定期的にお花が届きます。
             </p>
             <div className="space-y-4">
@@ -91,11 +92,11 @@ export default function FurusatoNouzeiGuidePage() {
                 { step: "STEP 2", title: "花の定期便の返礼品を選ぶ", text: "ポータルサイトで「花 定期便」「お花 サブスク」などのキーワードで検索します。寄付金額は10,000〜30,000円程度が多く、届く回数は3〜6回が一般的です。配送時期や花の種類もあわせてご確認ください。" },
                 { step: "STEP 3", title: "寄付を申し込む", text: "通常のネットショッピングと同様の手順で申し込めます。ワンストップ特例制度を利用する場合は、申請書を忘れずに提出してください。寄付後1〜2か月で初回のお花が届きます。" },
               ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <div className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.step}</div>
+                <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
+                  <div className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.step}</div>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -104,9 +105,9 @@ export default function FurusatoNouzeiGuidePage() {
         </section>
 
         {/* ─── Popular Municipalities ─── */}
-        <section className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花の定期便を受け取れるおすすめの自治体
             </h2>
             <div className="space-y-4">
@@ -116,43 +117,43 @@ export default function FurusatoNouzeiGuidePage() {
                 { name: "愛知県 田原市", amount: "10,000円〜", detail: "花き生産量日本一の田原市から届く花の定期便です。バラ、菊、カーネーションなど種類が豊富で、市場へ出荷される前の新鮮な花が届きます。", flowers: "季節の花束 1束" },
                 { name: "長崎県 大村市", amount: "20,000円〜", detail: "長崎の温暖な気候で育った花が年4回届く季節便です。春はチューリップ、夏はひまわり、秋はダリア、冬はスイートピーなど、四季折々の花を楽しめます。", flowers: "季節の花 年4回" },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+                <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                   <div className="flex items-center gap-3 mb-3">
-                    <h3 className="text-base font-bold text-[#333]">{item.name}</h3>
-                    <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-2 py-0.5 rounded-full font-medium">{item.amount}</span>
+                    <h3 className="text-base font-bold text-[#1F2420]">{item.name}</h3>
+                    <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-2 py-0.5 rounded-md font-medium">{item.amount}</span>
                   </div>
-                  <p className="text-sm text-[#666] leading-relaxed mb-2">{item.detail}</p>
-                  <p className="text-xs text-[#999]">届く花の目安：{item.flowers}</p>
+                  <p className="text-sm text-[#4A4F49] leading-relaxed mb-2">{item.detail}</p>
+                  <p className="text-xs text-[#6B6F6A]">届く花の目安：{item.flowers}</p>
                 </div>
               ))}
             </div>
-            <p className="text-xs text-[#999] mt-3">※ 返礼品の内容・寄付金額は変更となる場合があります。ご利用前に、各ポータルサイトにて最新情報をご確認ください。</p>
+            <p className="text-xs text-[#6B6F6A] mt-3">※ 返礼品の内容・寄付金額は変更となる場合があります。ご利用前に、各ポータルサイトにて最新情報をご確認ください。</p>
           </div>
         </section>
 
         {/* ─── Merits & Demerits ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               ふるさと納税で花の定期便を選ぶメリット・デメリット
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-[#E8F0EB] rounded-xl p-5 border border-[#C8D8CB]">
-                <h3 className="text-base font-bold text-[#333] mb-3">メリット</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] shrink-0">&#10003;</span>実質2,000円で数か月間花が届く</li>
-                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] shrink-0">&#10003;</span>産地直送で鮮度が高い</li>
-                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] shrink-0">&#10003;</span>地域の花き農家を応援できる</li>
-                  <li className="flex items-start gap-2"><span className="text-[#4A7C59] shrink-0">&#10003;</span>通常のサブスクと併用可能</li>
+              <div className="bg-[#EDF1EC] rounded-md p-5 border border-[#C8D8CB]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">メリット</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
+                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">・</span>実質2,000円で数か月間花が届く</li>
+                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">・</span>産地直送で鮮度が高い</li>
+                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">・</span>地域の花き農家を応援できる</li>
+                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">・</span>通常のサブスクと併用可能</li>
                 </ul>
               </div>
-              <div className="bg-[#FDF5F5] rounded-xl p-5 border border-[#E0B8B8]">
-                <h3 className="text-base font-bold text-[#333] mb-3">デメリット</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li className="flex items-start gap-2"><span className="text-[#C4877A] shrink-0">&#10005;</span>花の種類や色を選べない</li>
-                  <li className="flex items-start gap-2"><span className="text-[#C4877A] shrink-0">&#10005;</span>配送タイミングを自由に変更できない</li>
-                  <li className="flex items-start gap-2"><span className="text-[#C4877A] shrink-0">&#10005;</span>控除上限額を超えると自己負担が増える</li>
-                  <li className="flex items-start gap-2"><span className="text-[#C4877A] shrink-0">&#10005;</span>届くまで1〜2か月かかる場合がある</li>
+              <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#D9BFB1]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">デメリット</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
+                  <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>花の種類や色を選べない</li>
+                  <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>配送タイミングを自由に変更できない</li>
+                  <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>控除上限額を超えると自己負担が増える</li>
+                  <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>届くまで1〜2か月かかる場合がある</li>
                 </ul>
               </div>
             </div>
@@ -160,26 +161,26 @@ export default function FurusatoNouzeiGuidePage() {
         </section>
 
         {/* ─── FAQ ─── */}
-        <section id="faq" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="faq" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               ふるさと納税の花の定期便に関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">Q. {item.q}</span>
-                    <svg className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">Q. {item.q}</span>
+                    <svg className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
                   {openFaq === i && (
-                    <div className="px-5 py-4 bg-white border-t border-[#E5E5E5]">
-                      <p className="text-sm text-[#666] leading-relaxed">A. {item.a}</p>
+                    <div className="px-5 py-4 bg-white border-t border-[#DEDAD2]">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">A. {item.a}</p>
                     </div>
                   )}
                 </div>
@@ -189,26 +190,26 @@ export default function FurusatoNouzeiGuidePage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section className="py-12 md:py-16 bg-[#F3EDE6]">
+        <section className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               ふるさと納税で花のある暮らしをお得に始められます
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               ふるさと納税の花の定期便は、<strong>実質2,000円で数か月間お花が届く</strong>方法です。産地直送の新鮮な花を楽しみながら、地域の花き農家を応援できる点も利点です。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               ふるさと納税の花は届く時期や種類を選べないため、自由度の高い花のサブスクとの併用もおすすめします。まずはふるさと納税で花のある暮らしを体験し、継続したい場合は通常のサブスクもご検討ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
-              <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
+              <a href="/services/medelu" className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors">
                 併用におすすめのmedeluを見る
               </a>
-              <a href="/services/hitohana" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
+              <a href="/services/hitohana" className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
                 色を選べるHitoHanaを見る
               </a>
             </div>
-            <a href="/" className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline">
+            <a href="/" className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline">
               トップページに戻る
             </a>
           </div>
@@ -216,11 +217,11 @@ export default function FurusatoNouzeiGuidePage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400">花のサブスクを比較し、ご自身に合ったサービス選びを支援します。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 const TITLE = "花のサブスク・定期便の比較【2026年】料金・送料・目的別のおすすめ比較ガイド一覧｜flowerデリ";
 const DESC = "花のサブスク（定期便）の比較ガイド一覧です。当サイトでは、料金を「総額（花代＋送料）」で比較することを基本としています。料金・送料無料・ポスト投函・一輪挿し・観葉植物・2社の直接比較など、目的別の比較ガイドを掲載しています。数値は公式サイトで確認した値のみを掲載しています。";
@@ -63,30 +64,30 @@ export default function CompareIndexPage() {
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
       <main>
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
+        <PageHero path="/compare/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">比較ガイド一覧</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">比較ガイド一覧</p>
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               花のサブスク・定期便の比較【2026年】<br className="hidden md:block" />
               料金・送料・目的別に選ぶ
             </h1>
-            <p className="text-sm md:text-base text-[#666] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] max-w-2xl mx-auto leading-relaxed">
               当サイトでは、花のサブスク（定期便）を月額料金だけでなく<strong>総額（花代＋送料）</strong>で比較しています。
               目的別の比較ガイドから、ご自身に合うサービスをお選びください。数値は公式サイトで確認した値のみを掲載しています。
             </p>
           </div>
-        </section>
+        </PageHero>
 
         {groups.map((g, gi) => (
-          <section key={gi} className={gi % 2 === 0 ? "py-12 md:py-16 bg-white" : "py-12 md:py-16 bg-[#FAF7F2]"}>
+          <section key={gi} className={gi % 2 === 0 ? "py-12 md:py-16 bg-white" : "py-12 md:py-16 bg-[#F6F4EF]"}>
             <div className="max-w-3xl mx-auto px-4">
-              <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-2 pb-3 border-b-2 border-[#4A7C59]">{g.heading}</h2>
-              <p className="text-sm text-[#666] leading-relaxed mb-6">{g.note}</p>
+              <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-2 pb-3 border-b-2 border-[#2F5B43]">{g.heading}</h2>
+              <p className="text-sm text-[#4A4F49] leading-relaxed mb-6">{g.note}</p>
               <div className="grid gap-4">
                 {g.items.map((it) => (
-                  <Link key={it.href} href={it.href} className="block bg-white rounded-xl border border-[#E8E0D5] p-5 hover:border-[#4A7C59] hover:shadow-sm transition">
-                    <p className="font-bold text-[#4A7C59] mb-1">{it.label}</p>
-                    <p className="text-sm text-[#666] leading-relaxed" dangerouslySetInnerHTML={{ __html: it.desc.replace("<ガイド>", '<span class="underline">選び方ガイド</span>') }} />
+                  <Link key={it.href} href={it.href} className="block bg-white rounded-md border border-[#DEDAD2] p-5 hover:border-[#2F5B43] transition">
+                    <p className="font-bold text-[#2F5B43] mb-1">{it.label}</p>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed" dangerouslySetInnerHTML={{ __html: it.desc.replace("<ガイド>", '<span class="underline">選び方ガイド</span>') }} />
                   </Link>
                 ))}
               </div>
@@ -96,11 +97,11 @@ export default function CompareIndexPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-lg md:text-xl font-bold text-[#333] mb-4">人気のサービスから選ぶ</h2>
+            <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-4">人気のサービスから選ぶ</h2>
             <div className="flex flex-wrap justify-center gap-3">
-              <Link href="/services/medelu" className="bg-[#4A7C59] text-white font-bold px-6 py-3 rounded-lg text-sm hover:opacity-90 transition">medelu（748円・送料無料）</Link>
-              <Link href="/services/bloomee" className="bg-white border border-[#4A7C59] text-[#4A7C59] font-bold px-6 py-3 rounded-lg text-sm hover:bg-[#F3EDE6] transition">bloomee</Link>
-              <Link href="/compare/ryokin/" className="bg-white border border-[#4A7C59] text-[#4A7C59] font-bold px-6 py-3 rounded-lg text-sm hover:bg-[#F3EDE6] transition">料金比較表を見る</Link>
+              <Link href="/services/medelu" className="bg-[#2F5B43] text-white font-bold px-6 py-3 rounded-lg text-sm hover:opacity-90 transition">medelu（748円・送料無料）</Link>
+              <Link href="/services/bloomee" className="bg-white border border-[#2F5B43] text-[#2F5B43] font-bold px-6 py-3 rounded-lg text-sm hover:bg-[#F6F4EF] transition">bloomee</Link>
+              <Link href="/compare/ryokin/" className="bg-white border border-[#2F5B43] text-[#2F5B43] font-bold px-6 py-3 rounded-lg text-sm hover:bg-[#F6F4EF] transition">料金比較表を見る</Link>
             </div>
           </div>
         </section>

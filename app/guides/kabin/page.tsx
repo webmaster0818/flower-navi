@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -88,44 +89,44 @@ export default function KabinGuidePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
-                <li><a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a></li>
+                <li><a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#666]">ガイド</span></li>
+                <li><span className="text-[#4A4F49]">ガイド</span></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#333] font-medium">花瓶・一輪挿しのおすすめ</span></li>
+                <li><span className="text-[#1F2420] font-medium">花瓶・一輪挿しのおすすめ</span></li>
               </ol>
             </nav>
           </div>
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
+        <PageHero path="/guides/kabin/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">花瓶ガイド</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">花瓶ガイド</p>
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               花のサブスクに合う花瓶の選び方<br className="hidden md:block" />
               おすすめ15選【2026年・素材／サイズ／予算別】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-4 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-4 max-w-2xl mx-auto leading-relaxed">
               花のサブスクで届いた花をきれいに飾るには、花瓶選びが重要です。
               当サイトでは、素材別・サイズ別・予算別のおすすめの花瓶15点と、選び方のポイントをご説明します。
             </p>
-            <p className="text-sm text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               少量の花を一輪挿しで楽しみたい方は、
-              <a href="/compare/ichirinzashi/" className="text-[#4A7C59] font-medium underline">一輪挿しに合う花のサブスク比較（748円〜）</a>
+              <a href="/compare/ichirinzashi/" className="text-[#2F5B43] font-medium underline">一輪挿しに合う花のサブスク比較（748円〜）</a>
               もあわせてご覧ください。
             </p>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── How to Choose ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花瓶選びの4つのポイント
             </h2>
             <div className="space-y-4">
@@ -135,11 +136,11 @@ export default function KabinGuidePage() {
                 { num: "3", title: "インテリアとの調和を考える", text: "ナチュラルな部屋にはガラスや陶器、モダンな部屋には金属やマットな質感の花瓶、和風の部屋には焼き物や竹製の花瓶が合います。部屋のテイストに合った素材・色を選ぶことで、花がインテリアの一部として自然になじみます。" },
                 { num: "4", title: "洗いやすさを確認する", text: "口が狭すぎる花瓶は内側を洗いにくく、ぬめりや細菌が発生しやすくなります。定期的に洗うことを考慮し、手が入るサイズか、ボトルブラシで洗えるサイズを選ぶことをおすすめします。" },
               ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.num}</span>
+                <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.num}</span>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -150,10 +151,10 @@ export default function KabinGuidePage() {
         {/* ─── Ichirinzashi Vase Guide ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               一輪挿し向きの花瓶の選び方
             </h2>
-            <p className="text-sm text-[#666] leading-relaxed mb-4">
+            <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
               花を1〜2本だけ飾る一輪挿しは、通常の花瓶と選び方の基準が一部異なります。選ぶ際は、次の4点を確認してください。
             </p>
             <div className="space-y-3">
@@ -163,34 +164,34 @@ export default function KabinGuidePage() {
                 { title: "ガラス製なら水の状態が見える", text: "一輪挿しは水量が少なく雑菌が繁殖しやすいため、水の残量と濁りをひと目で確認できるガラス製が初心者に適しています。水を替える時期を判断しやすくなります。" },
                 { title: "複数個そろえて「分けて飾る」", text: "サブスクで届く3〜4本を1本ずつ分けて飾るのが、一輪挿しの一般的な楽しみ方です。100円ショップの一輪挿しでも十分なため、サイズの異なるものを複数そろえておくと飾り分けがしやすくなります。" },
               ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                  <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                  <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                  <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                  <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                 </div>
               ))}
             </div>
-            <p className="text-sm text-[#666] leading-relaxed mt-6">
-              一輪挿しに向く3〜4本の少量プランは、<a href="/compare/ichirinzashi/" className="text-[#4A7C59] underline">一輪挿しに合う花のサブスク比較（748円〜）</a>で送料込みの実価格を比較しています。
+            <p className="text-sm text-[#4A4F49] leading-relaxed mt-6">
+              一輪挿しに向く3〜4本の少量プランは、<a href="/compare/ichirinzashi/" className="text-[#2F5B43] underline">一輪挿しに合う花のサブスク比較（748円〜）</a>で送料込みの実価格を比較しています。
             </p>
           </div>
         </section>
 
         {/* ─── Vase Recommendations ─── */}
         {vaseCategories.map((category, ci) => (
-          <section key={ci} className={`py-12 md:py-16 ${ci % 2 === 0 ? "bg-[#F8F8F8]" : "bg-white"}`}>
+          <section key={ci} className={`py-12 md:py-16 ${ci % 2 === 0 ? "bg-[#F6F4EF]" : "bg-white"}`}>
             <div className="max-w-3xl mx-auto px-4">
-              <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+              <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
                 {category.title}
               </h2>
               <div className="space-y-4">
                 {category.items.map((item, i) => (
-                  <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+                  <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                     <div className="flex items-center gap-3 mb-2 flex-wrap">
-                      <h3 className="text-sm font-bold text-[#333]">{item.name}</h3>
-                      <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-2 py-0.5 rounded-full font-medium">{item.price}</span>
-                      <span className="text-xs bg-[#F8F8F8] text-[#666] px-2 py-0.5 rounded-full">高さ {item.size}</span>
+                      <h3 className="text-sm font-bold text-[#1F2420]">{item.name}</h3>
+                      <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-2 py-0.5 rounded-md font-medium">{item.price}</span>
+                      <span className="text-xs bg-[#F6F4EF] text-[#4A4F49] px-2 py-0.5 rounded-md">高さ {item.size}</span>
                     </div>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.desc}</p>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -201,7 +202,7 @@ export default function KabinGuidePage() {
         {/* ─── Budget Guide ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               予算別のおすすめ花瓶
             </h2>
             <div className="space-y-4">
@@ -211,9 +212,9 @@ export default function KabinGuidePage() {
                 { budget: "3,000〜5,000円", desc: "ホルムガード、HAY、能作など。ブランドの花瓶ならではのデザイン性があり、花を生けていないときもインテリアとして飾れます。" },
                 { budget: "5,000円以上", desc: "KAHLER、スガハラガラスなど。長く愛用できる上質な花瓶で、ギフトにも適しています。" },
               ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                  <h3 className="text-sm font-bold text-[#4A7C59] mb-2">{item.budget}</h3>
-                  <p className="text-sm text-[#666] leading-relaxed">{item.desc}</p>
+                <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                  <h3 className="text-sm font-bold text-[#2F5B43] mb-2">{item.budget}</h3>
+                  <p className="text-sm text-[#4A4F49] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -221,26 +222,26 @@ export default function KabinGuidePage() {
         </section>
 
         {/* ─── FAQ ─── */}
-        <section id="faq" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="faq" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花瓶選びに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">Q. {item.q}</span>
-                    <svg className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">Q. {item.q}</span>
+                    <svg className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
                   {openFaq === i && (
-                    <div className="px-5 py-4 bg-white border-t border-[#E5E5E5]">
-                      <p className="text-sm text-[#666] leading-relaxed">A. {item.a}</p>
+                    <div className="px-5 py-4 bg-white border-t border-[#DEDAD2]">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">A. {item.a}</p>
                     </div>
                   )}
                 </div>
@@ -250,26 +251,26 @@ export default function KabinGuidePage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section className="py-12 md:py-16 bg-[#F3EDE6]">
+        <section className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               花瓶を選ぶことで花のある暮らしを楽しめます
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクで届いた花を楽しむには、<strong>花瓶選び</strong>が重要です。まずは100円ショップやIKEAの手頃な花瓶から始め、適したサイズや好みを把握したうえで、好みの花瓶に買い替えることをおすすめします。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               サイズの異なる花瓶を2〜3個用意しておくと、届いた花の量に合わせて使い分けたり、花を分けて複数の場所に飾ったりでき、楽しみ方の幅が広がります。花のサブスクを始める際は、あわせて花瓶もご用意ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
-              <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
+              <a href="/services/medelu" className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors">
                 medeluの詳細を見る
               </a>
-              <a href="/services/and-plants" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
+              <a href="/services/and-plants" className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
                 AND PLANTSの詳細を見る
               </a>
             </div>
-            <a href="/" className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline">
+            <a href="/" className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline">
               トップページに戻る
             </a>
           </div>
@@ -277,11 +278,11 @@ export default function KabinGuidePage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400">花のサブスクの料金・サービス内容を、公式情報にもとづいて比較する専門ガイドです。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">

@@ -1,0 +1,112 @@
+[
+  {
+    "src": "/images/hero/hero-01.jpg",
+    "width": 2400,
+    "height": 1800,
+    "orientation": "landscape",
+    "alt": "出窓にハンギングプランツを吊るした明るいリビング",
+    "sourceUrl": "https://unsplash.com/photos/blue-and-white-sofa-set-Y3sSlsS9zlI",
+    "photographer": "Kate Darmody",
+    "license": "Unsplash License",
+    "note": "Bay-window living room with many hanging plants, shelves of pots, grey sofa"
+  },
+  {
+    "src": "/images/hero/hero-02.jpg",
+    "width": 2400,
+    "height": 1800,
+    "orientation": "landscape",
+    "alt": "窓辺に吊るした鉢植えと観葉植物が並ぶ日当たりのよいリビング",
+    "sourceUrl": "https://unsplash.com/photos/brown-wooden-coffee-table-near-gray-sofa-WWMzKq_80CI",
+    "photographer": "Kate Darmody",
+    "license": "Unsplash License",
+    "note": "Sunlit living room, hanging pots in the window, plant-covered console, grey sofa"
+  },
+  {
+    "src": "/images/hero/hero-03.jpg",
+    "width": 2400,
+    "height": 1600,
+    "orientation": "landscape",
+    "alt": "大きな窓のそばに吊り鉢と観葉植物、黄色いアームチェアのある部屋",
+    "sourceUrl": "https://unsplash.com/photos/assorted-green-leafed-plants-fSuVFIDJwX4",
+    "photographer": "Croissant",
+    "license": "Unsplash License",
+    "note": "Big black-framed windows, hanging pothos, palms and yellow armchair"
+  },
+  {
+    "src": "/images/hero/hero-04.jpg",
+    "width": 2400,
+    "height": 1600,
+    "orientation": "landscape",
+    "alt": "観葉植物に囲まれた木のダイニングテーブル",
+    "sourceUrl": "https://unsplash.com/photos/fruits-in-bowls-on-table-near-green-leaf-plant-RNBxppNpAPc",
+    "photographer": "Brina Blum",
+    "license": "Unsplash License",
+    "note": "Wooden dining table under shelves overflowing with plants, monstera, trailing vines"
+  },
+  {
+    "src": "/images/hero/hero-05.jpg",
+    "width": 2400,
+    "height": 1600,
+    "orientation": "landscape",
+    "alt": "白い壁の木製シェルフに並ぶ観葉植物",
+    "sourceUrl": "https://unsplash.com/photos/silver-planters-on-wooden-wall-shelf-near-weeping-fig-tree-and-spiders-plant-0P1lZOfI2CQ",
+    "photographer": "Brina Blum",
+    "license": "Unsplash License",
+    "note": "White wall, wooden shelves with tin planters, ficus and spider plants; airy, lots of negative space"
+  },
+  {
+    "src": "/images/hero/hero-06.jpg",
+    "width": 2400,
+    "height": 1600,
+    "orientation": "landscape",
+    "alt": "ソファ横に置かれたモンステラやポトスと吊り下げチェア",
+    "sourceUrl": "https://unsplash.com/photos/brown-leather-sofa-beside-green-leaf-plant-U9xkK8JdBGg",
+    "photographer": "Sven Brandsma",
+    "license": "Unsplash License",
+    "note": "Leather sofa, monstera and pothos on a trunk, macrame hanging chair, bright window"
+  },
+  {
+    "src": "/images/hero/hero-07.jpg",
+    "width": 2400,
+    "height": 1600,
+    "orientation": "landscape",
+    "alt": "白い花瓶に生けたひまわりなどのカラフルな花束",
+    "sourceUrl": "https://unsplash.com/photos/a-vase-filled-with-lots-of-different-colored-flowers-Ntq6wNr3FOA",
+    "photographer": "Natalie Kinnear",
+    "license": "Unsplash License",
+    "note": "Mixed bouquet (sunflower, asters) in white vase on a sideboard, soft bright background"
+  },
+  {
+    "src": "/images/hero/hero-08.jpg",
+    "width": 2400,
+    "height": 1599,
+    "orientation": "landscape",
+    "alt": "ガラスの花瓶に生けたピンクのユリが窓辺のテーブルに飾られた部屋",
+    "sourceUrl": "https://unsplash.com/photos/a-vase-filled-with-pink-flowers-sitting-on-top-of-a-table--spvZn1eGX0",
+    "photographer": "Valeriia Miller",
+    "license": "Unsplash License",
+    "note": "Pink lilies in glass vase on a table by a bright glass door"
+  },
+  {
+    "src": "/images/hero/hero-09.jpg",
+    "width": 1400,
+    "height": 2100,
+    "orientation": "portrait",
+    "alt": "明るい窓辺にマクラメで吊るした鉢植え",
+    "sourceUrl": "https://unsplash.com/photos/green-hanging-potted-plant-near-glass-window-at-daytime-9GpqKTaw4Y4",
+    "photographer": "Paul Hanaoka",
+    "license": "Unsplash License",
+    "note": "Portrait: macrame-hung plant beside a bright window, white room"
+  },
+  {
+    "src": "/images/hero/hero-10.jpg",
+    "width": 1400,
+    "height": 1867,
+    "orientation": "portrait",
+    "alt": "白い壁の棚に並ぶ観葉植物と垂れ下がるグリーン",
+    "sourceUrl": "https://unsplash.com/photos/plants-in-pots-on-floating-shelves-umYxSxMncT4",
+    "photographer": "Tania Mirón",
+    "license": "Unsplash License",
+    "note": "Portrait: white wall with floating shelves full of pots and trailing plants"
+  }
+]

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -140,20 +141,20 @@ export default function PresentGuidePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">ガイド記事</span>
+                  <span className="text-[#4A4F49]">ガイド記事</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">花の定期便をプレゼントに贈る方法</span>
+                  <span className="text-[#1F2420] font-medium">花の定期便をプレゼントに贈る方法</span>
                 </li>
               </ol>
             </nav>
@@ -161,55 +162,55 @@ export default function PresentGuidePage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#E8F0EB] py-12 md:py-20">
+        <PageHero path="/guides/present/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
               花の定期便ギフトガイド
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               花の定期便をプレゼントに贈る方法<br className="hidden md:block" />
               母の日・誕生日におすすめのギフト対応サービス
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               花のサブスクは、プレゼントとしても選ばれる機会が増えています。
               当サイトでは、ギフトに対応している花の定期便サービスの比較、贈り方の手順、シーン別のおすすめをご説明します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">ギフト対応</p>
-                <p className="text-xl font-bold text-[#4A7C59]">3サービス</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">ギフト対応</p>
+                <p className="text-xl font-bold text-[#2F5B43]">3サービス</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">贈り方</p>
-                <p className="text-xl font-bold text-[#4A7C59]">届け先を相手の住所に</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">贈り方</p>
+                <p className="text-xl font-bold text-[#2F5B43]">届け先を相手の住所に</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">ギフト予算</p>
-                <p className="text-xl font-bold text-[#4A7C59]">3,000円〜</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">ギフト予算</p>
+                <p className="text-xl font-bold text-[#2F5B43]">3,000円〜</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">人気のシーン</p>
-                <p className="text-xl font-bold text-[#4A7C59]">母の日・誕生日</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">人気のシーン</p>
+                <p className="text-xl font-bold text-[#2F5B43]">母の日・誕生日</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">目次</p>
               <nav>
-                <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#intro" className="hover:text-[#4A7C59] transition-colors">1. 花の定期便がプレゼントに選ばれる理由</a></li>
-                  <li><a href="#comparison-table" className="hover:text-[#4A7C59] transition-colors">2. ギフト対応サービスの比較表</a></li>
-                  <li><a href="#service-detail" className="hover:text-[#4A7C59] transition-colors">3. おすすめギフト対応サービスの詳細</a></li>
-                  <li><a href="#occasions" className="hover:text-[#4A7C59] transition-colors">4. シーン別のおすすめ（母の日・誕生日・結婚祝い・退職祝い）</a></li>
-                  <li><a href="#how-to-gift" className="hover:text-[#4A7C59] transition-colors">5. 花の定期便をプレゼントする手順</a></li>
-                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">6. ギフトを贈る際の注意点</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">7. 花の定期便ギフトに関するよくある質問</a></li>
-                  <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">8. まとめ</a></li>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
+                  <li><a href="#intro" className="hover:text-[#2F5B43] transition-colors">1. 花の定期便がプレゼントに選ばれる理由</a></li>
+                  <li><a href="#comparison-table" className="hover:text-[#2F5B43] transition-colors">2. ギフト対応サービスの比較表</a></li>
+                  <li><a href="#service-detail" className="hover:text-[#2F5B43] transition-colors">3. おすすめギフト対応サービスの詳細</a></li>
+                  <li><a href="#occasions" className="hover:text-[#2F5B43] transition-colors">4. シーン別のおすすめ（母の日・誕生日・結婚祝い・退職祝い）</a></li>
+                  <li><a href="#how-to-gift" className="hover:text-[#2F5B43] transition-colors">5. 花の定期便をプレゼントする手順</a></li>
+                  <li><a href="#tips" className="hover:text-[#2F5B43] transition-colors">6. ギフトを贈る際の注意点</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">7. 花の定期便ギフトに関するよくある質問</a></li>
+                  <li><a href="#summary" className="hover:text-[#2F5B43] transition-colors">8. まとめ</a></li>
                 </ol>
               </nav>
             </div>
@@ -219,36 +220,36 @@ export default function PresentGuidePage() {
         {/* ─── Introduction ─── */}
         <section id="intro" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花の定期便がプレゼントに選ばれる理由
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               花の定期便（花のサブスク）をプレゼントに選ぶ方が増えています。
               一度きりの花束と異なり、毎月届く花のサブスクは、長く楽しめる体験を贈れる点が大きな魅力です。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               特に母の日のギフトとして注目されており、遠方に住むお母様へ毎月花を届ける手段として選ばれています。
               誕生日や結婚祝い、退職祝いなど、さまざまなお祝いの場面に利用できるギフトです。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
-                <p className="text-2xl font-bold text-[#4A7C59] mb-2">毎月届く</p>
-                <p className="text-sm text-[#666]">一度きりではなく、数か月にわたって花が届く体験型のギフト</p>
+              <div className="bg-[#EDF1EC] rounded-md p-5 text-center">
+                <p className="text-2xl font-bold text-[#2F5B43] mb-2">毎月届く</p>
+                <p className="text-sm text-[#4A4F49]">一度きりではなく、数か月にわたって花が届く体験型のギフト</p>
               </div>
-              <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
-                <p className="text-2xl font-bold text-[#4A7C59] mb-2">手間がかからない</p>
-                <p className="text-sm text-[#666]">申し込み後は自動で配送。花屋に行く手間も不要</p>
+              <div className="bg-[#EDF1EC] rounded-md p-5 text-center">
+                <p className="text-2xl font-bold text-[#2F5B43] mb-2">手間がかからない</p>
+                <p className="text-sm text-[#4A4F49]">申し込み後は自動で配送。花屋に行く手間も不要</p>
               </div>
-              <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
-                <p className="text-2xl font-bold text-[#4A7C59] mb-2">遠方にも配送可能</p>
-                <p className="text-sm text-[#666]">離れて暮らす相手にも全国配送で届けられる</p>
+              <div className="bg-[#EDF1EC] rounded-md p-5 text-center">
+                <p className="text-2xl font-bold text-[#2F5B43] mb-2">遠方にも配送可能</p>
+                <p className="text-sm text-[#4A4F49]">離れて暮らす相手にも全国配送で届けられる</p>
               </div>
             </div>
 
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6 border border-[#E5E5E5]">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">当ページの要点</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6 border border-[#DEDAD2]">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-3">当ページの要点</h3>
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ ギフトに対応している花の定期便サービス3社を比較</li>
                 <li>・ 母の日・誕生日・結婚祝い・退職祝いなどシーン別のおすすめ</li>
                 <li>・ 花の定期便をプレゼントする手順を解説</li>
@@ -260,19 +261,19 @@ export default function PresentGuidePage() {
         </section>
 
         {/* ─── Comparison Table ─── */}
-        <section id="comparison-table" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="comparison-table" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               ギフト対応サービスの比較表
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               当サイトでは、花の定期便をプレゼントとして贈れる3つのサービスを、ギフト対応の仕組み・料金・特徴の観点から比較しています。
             </p>
 
             <div className="overflow-x-auto -mx-4 px-4">
-              <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden shadow-sm" style={{ minWidth: "700px" }}>
+              <table className="w-full text-sm border-collapse bg-white rounded-md overflow-hidden" style={{ minWidth: "700px" }}>
                 <thead>
-                  <tr className="bg-[#4A7C59] text-white">
+                  <tr className="bg-[#2F5B43] text-white">
                     <th className="px-4 py-3 text-left font-medium">サービス名</th>
                     <th className="px-4 py-3 text-left font-medium">ギフト方式</th>
                     <th className="px-4 py-3 text-right font-medium">料金（1回）</th>
@@ -283,39 +284,39 @@ export default function PresentGuidePage() {
                 </thead>
                 <tbody>
                   {giftServices.map((item, i) => (
-                    <tr key={i} className={`border-t border-[#E5E5E5] ${i === 0 ? "bg-[#FFFBEB]" : ""}`}>
+                    <tr key={i} className={`border-t border-[#DEDAD2] ${i === 0 ? "bg-[#FFFBEB]" : ""}`}>
                       <td className="px-4 py-4">
-                        <a href={item.url} className="font-bold text-[#4A7C59] hover:underline">
+                        <a href={item.url} className="font-bold text-[#2F5B43] hover:underline">
                           {item.name}
                         </a>
-                        <p className="text-xs text-[#999]">{item.nameJa}</p>
+                        <p className="text-xs text-[#6B6F6A]">{item.nameJa}</p>
                       </td>
-                      <td className="px-4 py-4 text-[#666]">{item.giftType}</td>
-                      <td className="px-4 py-4 text-right text-[#333]">{item.price}</td>
+                      <td className="px-4 py-4 text-[#4A4F49]">{item.giftType}</td>
+                      <td className="px-4 py-4 text-right text-[#1F2420]">{item.price}</td>
                       <td className="px-4 py-4 text-right">
                         {item.shipping === "無料" ? (
-                          <span className="text-[#4A7C59] font-medium">無料</span>
+                          <span className="text-[#2F5B43] font-medium">無料</span>
                         ) : (
-                          <span className="text-[#666]">{item.shipping}</span>
+                          <span className="text-[#4A4F49]">{item.shipping}</span>
                         )}
                       </td>
                       <td className="px-4 py-4 text-center">
                         {item.addressRequired === "不要（相手が入力）" ? (
-                          <span className="inline-block bg-[#4A7C59] text-white text-xs px-2 py-0.5 rounded">不要</span>
+                          <span className="inline-block bg-[#2F5B43] text-white text-xs px-2 py-0.5 rounded">不要</span>
                         ) : (
-                          <span className="text-xs text-[#999]">必要</span>
+                          <span className="text-xs text-[#6B6F6A]">必要</span>
                         )}
                       </td>
-                      <td className="px-4 py-4 text-center text-xs text-[#666]">{item.messageCard}</td>
+                      <td className="px-4 py-4 text-center text-xs text-[#4A4F49]">{item.messageCard}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-6 bg-white rounded-xl border border-[#E5E5E5] p-5">
-              <h3 className="text-sm font-bold text-[#333] mb-3">表の補足</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+            <div className="mt-6 bg-white rounded-md border border-[#DEDAD2] p-5">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-3">表の補足</h3>
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、送り主の名前を登録できます（2026年10月20日公式確認）</li>
                 <li>・ AND PLANTSは注文時に届け先を贈り先の住所に設定することで、ギフトとして利用できます</li>
                 <li>・ 日本総合園芸はお届け方法（自社配達便・宅配便）とコースによって料金が異なります（2026年10月17日公式確認）</li>
@@ -329,19 +330,19 @@ export default function PresentGuidePage() {
         {/* ─── Service Detail ─── */}
         <section id="service-detail" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               おすすめギフト対応サービスの詳細
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花の定期便をギフトとして贈る際におすすめの3サービスについて、ギフト対応の仕組み・料金・適した利用場面をご説明します。
             </p>
 
             <div className="space-y-8">
               {giftServices.map((item) => (
-                <div key={item.rank} className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] overflow-hidden">
+                <div key={item.rank} className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] overflow-hidden">
                   {/* Service Header */}
-                  <div className={`px-5 py-4 flex items-center gap-3 ${item.rank === 1 ? "bg-[#FFFBEB] border-b border-[#F59E0B]" : "bg-[#E8F0EB] border-b border-[#C5D9CB]"}`}>
-                    <span className={`inline-flex items-center justify-center w-9 h-9 rounded-full text-sm font-bold ${
+                  <div className={`px-5 py-4 flex items-center gap-3 ${item.rank === 1 ? "bg-[#FFFBEB] border-b border-[#F59E0B]" : "bg-[#EDF1EC] border-b border-[#C9D6CB]"}`}>
+                    <span className={`inline-flex items-center justify-center w-9 h-9 rounded-md text-sm font-bold ${
                       item.rank === 1 ? "bg-[#F59E0B] text-white" :
                       item.rank === 2 ? "bg-[#9CA3AF] text-white" :
                       "bg-[#B45309] text-white"
@@ -349,10 +350,10 @@ export default function PresentGuidePage() {
                       {item.rank}位
                     </span>
                     <div>
-                      <h3 className="text-lg font-bold text-[#333]">
+                      <h3 className="text-lg font-bold text-[#1F2420]">
                         {item.name}（{item.nameJa}）
                       </h3>
-                      <p className="text-sm text-[#666]">{item.highlight}</p>
+                      <p className="text-sm text-[#4A4F49]">{item.highlight}</p>
                     </div>
                   </div>
 
@@ -360,19 +361,19 @@ export default function PresentGuidePage() {
                   <div className="p-5">
                     {/* Info Grid */}
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-5">
-                      <div className="bg-white rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">ギフト方式</p>
-                        <p className="text-sm font-bold text-[#333]">{item.giftType}</p>
+                      <div className="bg-white rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">ギフト方式</p>
+                        <p className="text-sm font-bold text-[#1F2420]">{item.giftType}</p>
                       </div>
-                      <div className="bg-white rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">料金（1回）</p>
-                        <p className="text-sm font-bold text-[#4A7C59]">{item.price}</p>
+                      <div className="bg-white rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">料金（1回）</p>
+                        <p className="text-sm font-bold text-[#2F5B43]">{item.price}</p>
                       </div>
-                      <div className="bg-white rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">送料</p>
-                        <p className="text-sm font-bold text-[#333]">
+                      <div className="bg-white rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">送料</p>
+                        <p className="text-sm font-bold text-[#1F2420]">
                           {item.shipping === "無料" ? (
-                            <span className="text-[#4A7C59]">無料</span>
+                            <span className="text-[#2F5B43]">無料</span>
                           ) : (
                             item.shipping
                           )}
@@ -382,29 +383,29 @@ export default function PresentGuidePage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5 text-sm">
                       <div className="flex">
-                        <span className="text-[#999] w-32 shrink-0">ギフトプラン</span>
-                        <span className="text-[#333]">{item.giftPlan}</span>
+                        <span className="text-[#6B6F6A] w-32 shrink-0">ギフトプラン</span>
+                        <span className="text-[#1F2420]">{item.giftPlan}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-32 shrink-0">相手の住所</span>
-                        <span className="text-[#333]">{item.addressRequired}</span>
+                        <span className="text-[#6B6F6A] w-32 shrink-0">相手の住所</span>
+                        <span className="text-[#1F2420]">{item.addressRequired}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-32 shrink-0">メッセージ</span>
-                        <span className="text-[#333]">{item.messageCard}</span>
+                        <span className="text-[#6B6F6A] w-32 shrink-0">メッセージ</span>
+                        <span className="text-[#1F2420]">{item.messageCard}</span>
                       </div>
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm text-[#666] leading-relaxed mb-5">
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-5">
                       {item.detail}
                     </p>
 
                     {/* Best For */}
-                    <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
+                    <div className="bg-[#EDF1EC] rounded-lg p-4 mb-5">
                       <p className="text-sm">
-                        <span className="font-bold text-[#4A7C59]">おすすめの利用場面：</span>
-                        <span className="text-[#666]">{item.bestFor}</span>
+                        <span className="font-bold text-[#2F5B43]">おすすめの利用場面：</span>
+                        <span className="text-[#4A4F49]">{item.bestFor}</span>
                       </p>
                     </div>
 
@@ -412,7 +413,7 @@ export default function PresentGuidePage() {
                     <div className="flex flex-col sm:flex-row gap-3">
                       <a
                         href={item.url}
-                        className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                        className="inline-block text-center bg-white text-[#2F5B43] font-bold text-sm px-6 py-3 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
                       >
                         {item.name}の詳細レビューを見る
                       </a>
@@ -420,7 +421,7 @@ export default function PresentGuidePage() {
                         href={item.officialUrl}
                         target="_blank"
                         rel="noopener noreferrer nofollow"
-                        className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"
+                        className="inline-block text-center bg-[#2F5B43] text-white font-bold text-sm px-6 py-3 rounded-md hover:bg-[#234534] transition-colors"
                       >
                         {item.name}公式サイトはこちら
                       </a>
@@ -433,37 +434,37 @@ export default function PresentGuidePage() {
         </section>
 
         {/* ─── Occasions ─── */}
-        <section id="occasions" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="occasions" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               母の日・誕生日・結婚祝い・退職祝いのシーン別のおすすめ
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花の定期便をプレゼントする際は、贈る場面に合わせてサービスを選ぶと、より喜ばれるギフトになります。
               当サイトでは、代表的な4つの場面ごとに、おすすめのサービスと予算の目安を以下のとおりまとめています。
             </p>
 
             <div className="space-y-6">
               {occasions.map((occasion, i) => (
-                <div key={i} className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
-                  <div className="bg-[#E8F0EB] px-5 py-3 border-b border-[#C5D9CB]">
+                <div key={i} className="bg-white rounded-md border border-[#DEDAD2] overflow-hidden">
+                  <div className="bg-[#EDF1EC] px-5 py-3 border-b border-[#C9D6CB]">
                     <div className="flex items-center justify-between">
-                      <h3 className="text-base font-bold text-[#333]">{occasion.name}</h3>
-                      <span className="text-xs text-[#4A7C59] font-medium">{occasion.timing}</span>
+                      <h3 className="text-base font-bold text-[#1F2420]">{occasion.name}</h3>
+                      <span className="text-xs text-[#2F5B43] font-medium">{occasion.timing}</span>
                     </div>
                   </div>
                   <div className="p-5">
-                    <p className="text-sm text-[#666] leading-relaxed mb-4">
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                       {occasion.description}
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      <div className="bg-[#F8F8F8] rounded-lg p-3">
-                        <p className="text-xs text-[#999] mb-1">おすすめサービス</p>
-                        <p className="text-sm text-[#333] font-medium">{occasion.recommend}</p>
+                      <div className="bg-[#F6F4EF] rounded-lg p-3">
+                        <p className="text-xs text-[#6B6F6A] mb-1">おすすめサービス</p>
+                        <p className="text-sm text-[#1F2420] font-medium">{occasion.recommend}</p>
                       </div>
-                      <div className="bg-[#F8F8F8] rounded-lg p-3">
-                        <p className="text-xs text-[#999] mb-1">予算の目安</p>
-                        <p className="text-sm text-[#333] font-medium">{occasion.budget}</p>
+                      <div className="bg-[#F6F4EF] rounded-lg p-3">
+                        <p className="text-xs text-[#6B6F6A] mb-1">予算の目安</p>
+                        <p className="text-sm text-[#1F2420] font-medium">{occasion.budget}</p>
                       </div>
                     </div>
                   </div>
@@ -476,55 +477,55 @@ export default function PresentGuidePage() {
         {/* ─── How to Gift ─── */}
         <section id="how-to-gift" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花の定期便をプレゼントする手順
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花の定期便をギフトとして贈る方法は、サービスによって異なります。
               当サイトでは、bloomeeと、AND PLANTS・日本総合園芸の手順をご説明します。どちらも、届け先に贈り先の住所を入力する方法です。
             </p>
 
             {/* Method 1: Present (bloomee) */}
             <div className="mb-8">
-              <h3 className="text-base md:text-lg font-bold text-[#333] mb-4 flex items-center gap-2">
-                <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#4A7C59] text-white text-xs font-bold">A</span>
+              <h3 className="text-base md:text-lg font-bold text-[#1F2420] mb-4 flex items-center gap-2">
+                <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-[#2F5B43] text-white text-xs font-bold">A</span>
                 「プレゼントとして送る」で申し込む（bloomee）
               </h3>
               <div className="space-y-4">
                 <div className="flex gap-4">
                   <div className="shrink-0">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">1</span>
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[#EDF1EC] text-[#2F5B43] text-sm font-bold">1</span>
                   </div>
-                  <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">bloomee公式サイトでメールアドレスを登録し、プランを選ぶ</p>
-                    <p className="text-sm text-[#666]">現行の定期便のプランは、お試し・グリーン・ベーシックです（2026年10月15日確認）。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="shrink-0">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">2</span>
-                  </div>
-                  <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">お届け先の入力画面で「プレゼントとして送る」を選ぶ</p>
-                    <p className="text-sm text-[#666]">贈り先の住所を入力し、「プレゼントとして送る」を選ぶと、送り主の名前を登録できます（2026年10月20日公式確認）。</p>
+                  <div className="flex-1 bg-[#F6F4EF] rounded-md p-4 border border-[#DEDAD2]">
+                    <p className="text-sm font-bold text-[#1F2420] mb-1">bloomee公式サイトでメールアドレスを登録し、プランを選ぶ</p>
+                    <p className="text-sm text-[#4A4F49]">現行の定期便のプランは、お試し・グリーン・ベーシックです（2026年10月15日確認）。</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="shrink-0">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">3</span>
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[#EDF1EC] text-[#2F5B43] text-sm font-bold">2</span>
                   </div>
-                  <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">支払い方法を入力して申し込みを完了する</p>
-                    <p className="text-sm text-[#666]">支払いは贈り主が行い、花は贈り先の住所に届きます。2か所以上に届けたい場合は、届け先ごとに異なるメールアドレスで登録します。</p>
+                  <div className="flex-1 bg-[#F6F4EF] rounded-md p-4 border border-[#DEDAD2]">
+                    <p className="text-sm font-bold text-[#1F2420] mb-1">お届け先の入力画面で「プレゼントとして送る」を選ぶ</p>
+                    <p className="text-sm text-[#4A4F49]">贈り先の住所を入力し、「プレゼントとして送る」を選ぶと、送り主の名前を登録できます（2026年10月20日公式確認）。</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="shrink-0">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">4</span>
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[#EDF1EC] text-[#2F5B43] text-sm font-bold">3</span>
                   </div>
-                  <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">贈る期間が終わったら停止・解約する</p>
-                    <p className="text-sm text-[#666]">最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます（2026年10月20日公式確認）。</p>
+                  <div className="flex-1 bg-[#F6F4EF] rounded-md p-4 border border-[#DEDAD2]">
+                    <p className="text-sm font-bold text-[#1F2420] mb-1">支払い方法を入力して申し込みを完了する</p>
+                    <p className="text-sm text-[#4A4F49]">支払いは贈り主が行い、花は贈り先の住所に届きます。2か所以上に届けたい場合は、届け先ごとに異なるメールアドレスで登録します。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="shrink-0">
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[#EDF1EC] text-[#2F5B43] text-sm font-bold">4</span>
+                  </div>
+                  <div className="flex-1 bg-[#F6F4EF] rounded-md p-4 border border-[#DEDAD2]">
+                    <p className="text-sm font-bold text-[#1F2420] mb-1">贈る期間が終わったら停止・解約する</p>
+                    <p className="text-sm text-[#4A4F49]">最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます（2026年10月20日公式確認）。</p>
                   </div>
                 </div>
               </div>
@@ -532,44 +533,44 @@ export default function PresentGuidePage() {
 
             {/* Method 2: Direct Delivery */}
             <div className="mb-8">
-              <h3 className="text-base md:text-lg font-bold text-[#333] mb-4 flex items-center gap-2">
-                <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#4A7C59] text-white text-xs font-bold">B</span>
+              <h3 className="text-base md:text-lg font-bold text-[#1F2420] mb-4 flex items-center gap-2">
+                <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-[#2F5B43] text-white text-xs font-bold">B</span>
                 届け先指定方式（AND PLANTS / 日本総合園芸）
               </h3>
               <div className="space-y-4">
                 <div className="flex gap-4">
                   <div className="shrink-0">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">1</span>
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[#EDF1EC] text-[#2F5B43] text-sm font-bold">1</span>
                   </div>
-                  <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">公式サイトでプランを選んで申し込む</p>
-                    <p className="text-sm text-[#666]">AND PLANTSまたは日本総合園芸の公式サイトから、贈りたいプランと配送頻度を選択します。</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="shrink-0">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">2</span>
-                  </div>
-                  <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">届け先に贈り先の住所を入力</p>
-                    <p className="text-sm text-[#666]">注文フォームの届け先欄に、ご自身の住所ではなく贈り先の住所を入力します。</p>
+                  <div className="flex-1 bg-[#F6F4EF] rounded-md p-4 border border-[#DEDAD2]">
+                    <p className="text-sm font-bold text-[#1F2420] mb-1">公式サイトでプランを選んで申し込む</p>
+                    <p className="text-sm text-[#4A4F49]">AND PLANTSまたは日本総合園芸の公式サイトから、贈りたいプランと配送頻度を選択します。</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="shrink-0">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F0EB] text-[#4A7C59] text-sm font-bold">3</span>
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[#EDF1EC] text-[#2F5B43] text-sm font-bold">2</span>
                   </div>
-                  <div className="flex-1 bg-[#F8F8F8] rounded-xl p-4 border border-[#E5E5E5]">
-                    <p className="text-sm font-bold text-[#333] mb-1">支払い完了後、花が贈り先に届く</p>
-                    <p className="text-sm text-[#666]">支払いは贈り主のクレジットカード等で行い、花は贈り先の住所に届きます。贈りたい期間が終了したら解約します。</p>
+                  <div className="flex-1 bg-[#F6F4EF] rounded-md p-4 border border-[#DEDAD2]">
+                    <p className="text-sm font-bold text-[#1F2420] mb-1">届け先に贈り先の住所を入力</p>
+                    <p className="text-sm text-[#4A4F49]">注文フォームの届け先欄に、ご自身の住所ではなく贈り先の住所を入力します。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="shrink-0">
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[#EDF1EC] text-[#2F5B43] text-sm font-bold">3</span>
+                  </div>
+                  <div className="flex-1 bg-[#F6F4EF] rounded-md p-4 border border-[#DEDAD2]">
+                    <p className="text-sm font-bold text-[#1F2420] mb-1">支払い完了後、花が贈り先に届く</p>
+                    <p className="text-sm text-[#4A4F49]">支払いは贈り主のクレジットカード等で行い、花は贈り先の住所に届きます。贈りたい期間が終了したら解約します。</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#E8F0EB] rounded-xl p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">方式の選び方</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
+            <div className="bg-[#EDF1EC] rounded-md p-5">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-2">方式の選び方</h3>
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 どちらの方法も、申し込み時に贈り先の住所が必要です。
                 手軽な価格で始めたい場合はbloomee、花のテイストやコースの選択肢を重視する場合はAND PLANTSや日本総合園芸をおすすめします。
               </p>
@@ -578,52 +579,52 @@ export default function PresentGuidePage() {
         </section>
 
         {/* ─── Tips ─── */}
-        <section id="tips" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="tips" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               ギフトを贈る際の注意点
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花の定期便をプレゼントする際に、事前に確認しておきたい点を以下にまとめています。
               贈った後に想定と異なる事態が生じないよう、ご確認ください。
             </p>
 
             <div className="space-y-4">
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-2">相手の生活スタイルを考慮する</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-2">相手の生活スタイルを考慮する</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   不在が多い方には、ポスト投函に対応したサービス（bloomee）が適しています。在宅時間を確保できる方であれば、宅配便（AND PLANTS、日本総合園芸）でも問題ありません。
                   また、花の手入れに慣れていない方には、本数が少なく管理しやすいプランから始めることをおすすめします。
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-2">配送頻度と期間を慎重に決める</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-2">配送頻度と期間を慎重に決める</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   毎週届くと、花の管理が負担になる場合があります。初めてのギフトであれば、隔週または月1回をおすすめします。
                   期間も最初は3か月程度とし、贈り先が気に入った場合に延長する方法が確実です。長期間のギフトを負担に感じる方もいるため、贈り先の反応を確認しながら調整してください。
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-2">花のアレルギーやペットの有無を確認する</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-2">花のアレルギーやペットの有無を確認する</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花粉アレルギーをお持ちの方には配慮が必要です。また、猫を飼っている家庭では、ユリ科の花が危険なため注意が必要です。
                   事前にアレルギーやペットの有無を確認しておくと安心です。懸念がある場合は、花の種類を選べるサービスや、届く花の品種が事前にわかるサービスをお選びください。
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-2">事前に一言伝えておく</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-2">事前に一言伝えておく</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   サプライズで贈る方法もありますが、突然花が届いて贈り先が戸惑う可能性があります。
                   花の定期便を贈ることを事前に伝えておくと、贈り先も受け取りの準備ができます。
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-2">解約のタイミングを把握しておく</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-2">解約のタイミングを把握しておく</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   ギフトを贈る場合は、贈りたい期間が終了した後の解約手続きを忘れないようご注意ください。
                   bloomee・AND PLANTS・日本総合園芸のいずれも、贈り主が停止・解約の手続きを行います。bloomeeは最初の4回分のお届けが約束されており、それ以降は週単位で停止できます（2026年10月20日公式確認）。
                   カレンダーにリマインダーを設定しておくと確実です。
@@ -636,21 +637,21 @@ export default function PresentGuidePage() {
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花の定期便ギフトに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -661,7 +662,7 @@ export default function PresentGuidePage() {
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -673,58 +674,58 @@ export default function PresentGuidePage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
+        <section id="summary" className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               花の定期便は継続して花が届くプレゼントです
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花の定期便は、一度きりの花束では実現できない、毎月花が届く喜びを贈れるギフトです。
               母の日、誕生日、結婚祝い、退職祝いなど、さまざまなシーンで活用できます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               手軽な価格で贈りたい場合は、お届け先の入力画面で「プレゼントとして送る」を選べるbloomeeをおすすめします。
               おしゃれなブーケを重視する場合はAND PLANTS、花材やコースを細かく選びたい場合は日本総合園芸が適しています。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               贈る場面や贈り先の生活スタイルに合わせて、サービスをお選びください。
               ギフト対応の詳細は、ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
                 href="/services/bloomee"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 1位 bloomeeの詳細を見る
               </a>
               <a
                 href="/services/and-plants"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 2位 AND PLANTSの詳細を見る
               </a>
               <a
                 href="/services/nihon-sogo-engei"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 3位 日本総合園芸の詳細を見る
               </a>
               <a
                 href="/guides/keirou-no-hi/"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 敬老の日の花ギフト特集を見る
               </a>
               <a
                 href="/guides/christmas-oshogatsu/"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 クリスマス・お正月の花ギフト特集を見る
               </a>
             </div>
             <a
               href="/"
-              className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+              className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
             >
               トップページに戻る
             </a>
@@ -733,11 +734,11 @@ export default function PresentGuidePage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
 
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。

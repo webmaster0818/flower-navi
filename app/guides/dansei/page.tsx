@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "@/app/components/Header";
 import { SERVICES } from "@/data/services";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -41,61 +42,61 @@ export default function DanseiGuidePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
-                <li><a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a></li>
+                <li><a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#666]">ガイド</span></li>
+                <li><span className="text-[#4A4F49]">ガイド</span></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#333] font-medium">男性向け花のサブスク</span></li>
+                <li><span className="text-[#1F2420] font-medium">男性向け花のサブスク</span></li>
               </ol>
             </nav>
           </div>
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
+        <PageHero path="/guides/dansei/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">男性向けガイド</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">男性向けガイド</p>
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               一人暮らしの男性が花を飾る方法<br className="hidden md:block" />
               男性向け花のサブスクの選び方と飾り方【2026年】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               一人暮らしの男性にも、花を飾ることをおすすめします。花のサブスクに性別は関係なく、一人暮らしの場合は「ポスト投函で受け取れるか」「回数の条件」「1回あたりの費用」で選ぶと、ご自身に合ったサービスを選びやすくなります。
               当サイトでは、5社の条件を公式サイトで確認し、表に掲載しています（2026年10月14日確認）。
             </p>
           </div>
-        </section>
+        </PageHero>
 
 
         {/* ─── 一人暮らし向け 条件比較（公式確認値）─── */}
         <section id="hikaku" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-4 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-4 pb-3 border-b-2 border-[#2F5B43]">
               一人暮らしの男性が確認すべき点：受け取り方法・回数の条件・1回あたりの費用
             </h2>
-            <p className="text-sm text-[#666] leading-relaxed mb-4">
+            <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
               一人暮らしの方が継続できなくなる理由は「再配達の手間」と「やめたい時にやめられない」が多いため、まずこの2点で絞り込みます。以下は各社の最安プランの条件です。
             </p>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm border border-[#E5E5E5]">
-                <thead className="bg-[#E8F0EB] text-[#333]">
+              <table className="w-full text-sm border border-[#DEDAD2]">
+                <thead className="bg-[#EDF1EC] text-[#1F2420]">
                   <tr><th className="p-2 text-left">サービス</th><th className="p-2 text-left">最安プラン（1回）</th><th className="p-2 text-left">受け取り</th><th className="p-2 text-left">回数の条件</th></tr>
                 </thead>
                 <tbody>
                   {SERVICES.map((s) => (
-                    <tr key={s.id} className="border-t border-[#E5E5E5]">
-                      <td className="p-2"><a href={s.servicePath} className="text-[#4A7C59] underline">{s.name}</a></td>
+                    <tr key={s.id} className="border-t border-[#DEDAD2]">
+                      <td className="p-2"><a href={s.servicePath} className="text-[#2F5B43] underline">{s.name}</a></td>
                       <td className="p-2">{s.cheapest.name} {s.cheapest.price.toLocaleString()}円（{s.shippingIncluded ? "送料込み" : "送料別"}・{s.cheapest.flowers}）</td>
                       <td className="p-2">{s.cheapest.postDelivery ? "ポスト投函（不在時も受け取り可能）" : "対面（宅配便）"}</td>
                       <td className="p-2">{s.commitmentLabel}</td>
                     </tr>
                   ))}
-                  <tr className="border-t border-[#E5E5E5]">
-                    <td className="p-2"><a href="/services/hitohana/" className="text-[#4A7C59] underline">HitoHana（ひとはな）</a></td>
+                  <tr className="border-t border-[#DEDAD2]">
+                    <td className="p-2"><a href="/services/hitohana/" className="text-[#2F5B43] underline">HitoHana（ひとはな）</a></td>
                     <td className="p-2">Lite 1,320円（特商法の1回あたり金額・4〜6本）</td>
                     <td className="p-2">対面（宅急便）</td>
                     <td className="p-2">なし</td>
@@ -103,7 +104,7 @@ export default function DanseiGuidePage() {
                 </tbody>
               </table>
             </div>
-            <ul className="text-xs text-[#666] leading-relaxed mt-3 space-y-1">
+            <ul className="text-xs text-[#4A4F49] leading-relaxed mt-3 space-y-1">
               <li>・不在が多い方：ポスト投函のmedelu Mini（748円・送料込み）またはhanamekuライト（1,210円・送料込み）をおすすめします。bloomeeのお試しプランもポスト投函ですが、送料385円が別途かかり、最初の4回は受け取りが必要です。</li>
               <li>・色を部屋に合わせたい方：HitoHana（6色とおまかせから毎回指定）またはmedeluのMODERNコースをおすすめします。</li>
               <li>・出典：各社公式サイト（料金表・特定商取引法に基づく表記・FAQ）、2026年10月14日確認。ご利用前に、公式サイトにて最新情報をご確認ください。</li>
@@ -113,7 +114,7 @@ export default function DanseiGuidePage() {
         {/* ─── Benefits ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               男性が花のサブスクを始める5つのメリット
             </h2>
             <div className="space-y-4">
@@ -124,11 +125,11 @@ export default function DanseiGuidePage() {
                 { num: "4", title: "自分で選ぶ手間がない", text: "花屋に入ること自体に抵抗がある男性も少なくありません。サブスクでは専門スタッフが選んだ花が自宅に届くため、「何を買えばよいかわからない」「花屋に入りにくい」という悩みを解消できます。medeluのMini・Lite、hanamekuのライト、bloomeeのお試し・グリーンはポスト投函のため、不在時でも受け取れます。" },
                 { num: "5", title: "会話のきっかけになる", text: "部屋に花を飾っていると、友人やパートナーとの会話のきっかけになります。花のサブスクの話題から交友関係が広がることもあります。SNSに投稿すれば、暮らしぶりを紹介する機会にもなります。" },
               ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.num}</span>
+                <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.num}</span>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -137,9 +138,9 @@ export default function DanseiGuidePage() {
         </section>
 
         {/* ─── Recommended Services ─── */}
-        <section className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               男性におすすめの花のサブスク3選
             </h2>
             <div className="space-y-4">
@@ -148,13 +149,13 @@ export default function DanseiGuidePage() {
                 { name: "HitoHana", nameJa: "ひとはな", price: "1,320円〜", reason: "6色とおまかせから毎回色を指定でき、部屋に合わせやすいサービスです。Lite 1,320円/回（特商法の1回あたり金額）で、回数の条件はありません。受け取りは宅急便です（ポスト投函ではありません）。", url: "/services/hitohana" },
                 { name: "AND PLANTS", nameJa: "アンドプランツ", price: "1,980円〜", reason: "Standard 1,980円（送料込み・6〜8本）で、解約はいつでも可能です。観葉植物も扱っており、植物と組み合わせやすいサービスです。受け取りは対面です（ポスト投函はありません）。", url: "/services/and-plants" },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+                <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                   <div className="flex items-center gap-3 mb-3">
-                    <h3 className="text-base font-bold text-[#333]">{item.name}（{item.nameJa}）</h3>
-                    <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-2 py-0.5 rounded-full font-medium">{item.price}</span>
+                    <h3 className="text-base font-bold text-[#1F2420]">{item.name}（{item.nameJa}）</h3>
+                    <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-2 py-0.5 rounded-md font-medium">{item.price}</span>
                   </div>
-                  <p className="text-sm text-[#666] leading-relaxed mb-3">{item.reason}</p>
-                  <a href={item.url} className="inline-block text-sm text-[#4A7C59] font-medium hover:underline">
+                  <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">{item.reason}</p>
+                  <a href={item.url} className="inline-block text-sm text-[#2F5B43] font-medium hover:underline">
                     {item.name}の詳細を見る →
                   </a>
                 </div>
@@ -166,7 +167,7 @@ export default function DanseiGuidePage() {
         {/* ─── Display Tips ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               男性の部屋に花を見栄えよく飾る3つの方法
             </h2>
             <div className="space-y-4">
@@ -175,11 +176,11 @@ export default function DanseiGuidePage() {
                 { num: "2", title: "飾る場所を決めておく", text: "デスクの隅、テレビボードの上、洗面台など、花を飾る定位置を決めておくと習慣にしやすくなります。目に入りやすい場所に飾ることで、リラックス効果も高まります。窓際は直射日光で花が傷みやすいため、避けてください。" },
                 { num: "3", title: "グリーン系・ホワイト系を基調にする", text: "男性の部屋に合わせやすい色は、グリーン・ホワイト・ブラウン系です。派手なピンクや赤が好みでない方は、HitoHanaで色を指定するか、medeluのMODERNコースを選ぶと、落ち着いた色合いの花が届きます。" },
               ].map((item, i) => (
-                <div key={i} className="bg-[#FFF8F0] rounded-xl p-5 border border-[#F0E0D0] flex items-start gap-4">
+                <div key={i} className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0] flex items-start gap-4">
                   <span className="bg-[#8B6F5C] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.num}</span>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -188,26 +189,26 @@ export default function DanseiGuidePage() {
         </section>
 
         {/* ─── FAQ ─── */}
-        <section id="faq" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="faq" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               男性の花のサブスク利用に関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">Q. {item.q}</span>
-                    <svg className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">Q. {item.q}</span>
+                    <svg className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
                   {openFaq === i && (
-                    <div className="px-5 py-4 bg-white border-t border-[#E5E5E5]">
-                      <p className="text-sm text-[#666] leading-relaxed">A. {item.a}</p>
+                    <div className="px-5 py-4 bg-white border-t border-[#DEDAD2]">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">A. {item.a}</p>
                     </div>
                   )}
                 </div>
@@ -217,26 +218,26 @@ export default function DanseiGuidePage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section className="py-12 md:py-16 bg-[#F3EDE6]">
+        <section className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               男性にも花のある暮らしをおすすめします
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクは、男性にもおすすめできるサービスです。部屋の雰囲気が良くなるだけでなく、リラックス効果や季節感を得られるメリットがあります。「花屋に入りにくい」「何を選べばよいかわからない」という悩みも、サブスクで解消できます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               まずは<strong>medelu</strong>の748円プランから始めるか、色を選べる<strong>HitoHana</strong>で好みの花をお試しください。花1本でも、部屋の印象は大きく変わります。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
-              <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
+              <a href="/services/medelu" className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors">
                 748円から始める medeluを見る
               </a>
-              <a href="/services/hitohana" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
+              <a href="/services/hitohana" className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
                 色が選べる HitoHanaを見る
               </a>
             </div>
-            <a href="/" className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline">
+            <a href="/" className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline">
               トップページに戻る
             </a>
           </div>
@@ -244,11 +245,11 @@ export default function DanseiGuidePage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400">花のサブスクを比較し、ご自身に合ったサービス選びを支援します。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">

@@ -39,7 +39,7 @@ const p: ServiceProfile = {
   ],
   basicInfo: [
     ["運営会社", "株式会社It（イット）"],
-    ["公式サイト", <a key="o" href="https://tasuhana.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] hover:underline">tasuhana.com</a>],
+    ["公式サイト", <a key="o" href="https://tasuhana.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] hover:underline">tasuhana.com</a>],
     ["届き方", "ゆうパケット（日本郵便）でポスト投函。箱は横20×縦30×厚さ2.8cm"],
     ["お届け間隔", "14日（原則隔週・月2回）または28日（月1回）"],
     ["支払い方法", "クレジットカード（VISA・Mastercard・ダイナース・JCB）"],

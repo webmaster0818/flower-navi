@@ -1,3 +1,4 @@
+import PageHero from "@/app/components/PageHero";
 import Header from "@/app/components/Header";
 
 /* ─── FAQ Data ─── */
@@ -82,92 +83,92 @@ export default function KanyouShokubutsuPage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
-                <li><a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a></li>
+                <li><a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#666]">比較</span></li>
+                <li><span className="text-[#4A4F49]">比較</span></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#333] font-medium">観葉植物のサブスク</span></li>
+                <li><span className="text-[#1F2420] font-medium">観葉植物のサブスク</span></li>
               </ol>
             </nav>
           </div>
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
+        <PageHero path="/compare/kanyou-shokubutsu/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">観葉植物サブスク・レンタルの比較</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">観葉植物サブスク・レンタルの比較</p>
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               観葉植物のサブスク・レンタル比較【2026年】<br className="hidden md:block" />
               季節の入れ替え・メンテナンス込みで選ぶ
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-6 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-6 max-w-2xl mx-auto leading-relaxed">
               当サイトでは、<strong>観葉植物を「買って育てる」か「借りて任せる」かを判断するための情報</strong>をまとめています。
               植物の入れ替え頻度・訪問メンテナンスの回数・月額・契約条件を各社の公式サイトで確認し、確認日を付けて比較しています（最終更新：2026年10月21日）。
             </p>
-            <p className="text-xs md:text-sm text-[#666] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xs md:text-sm text-[#4A4F49] max-w-2xl mx-auto leading-relaxed">
               置き場所・日当たり・水やりなど<strong>育て方</strong>を知りたい方は
-              <a href="/guides/kanyou-shokubutsu/" className="text-[#4A7C59] font-medium underline mx-1">観葉植物の育て方・置き場所ガイド</a>
+              <a href="/guides/kanyou-shokubutsu/" className="text-[#2F5B43] font-medium underline mx-1">観葉植物の育て方・置き場所ガイド</a>
               、<strong>料金の決まり方・予算の立て方</strong>を知りたい方は
-              <a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] font-medium underline mx-1">観葉植物の料金の考え方</a>
+              <a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#2F5B43] font-medium underline mx-1">観葉植物の料金の考え方</a>
               をご覧ください。
             </p>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Direct answers: seasonal swap / maintenance-free ─── */}
         <section id="nyuretae-kanri-fuyou" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               季節ごとに植物を入れ替えられる観葉植物サブスクはありますか
             </h2>
-            <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F8F8F8] p-6 mb-6">
-              <p className="text-sm text-[#555] leading-relaxed">
+            <div className="rounded-md border-2 border-[#2F5B43] bg-[#F6F4EF] p-6 mb-6">
+              <p className="text-sm text-[#3F443E] leading-relaxed">
                 <strong>あります。ただし、植物の定期的な入れ替えに対応しているのは主に法人向けのレンタルです。</strong>
                 当サイトが公式サイトで確認できた範囲では、GOOD GREENが3か月に1回（スタートアッププランは6か月に1回）の植物交換に対応し、枯れた場合は回数の制限なく無料で交換されます。
                 HitoHana Rental Greenは月2回の訪問メンテナンスの中で傷んだ植物を交換しますが、季節ごとの定期的な入れ替えについては公式サイトに記載がありません。
                 個人向けの購入型（AND PLANTS・HitoHanaの単品購入）には、定期的に入れ替える仕組みはありません。
               </p>
             </div>
-            <p className="text-sm text-[#666] leading-relaxed mb-10">
+            <p className="text-sm text-[#4A4F49] leading-relaxed mb-10">
               個人宅で模様替えに合わせて替えたい場合は、CLASのフェイクグリーン（人工の観葉植物）のレンタルが、いつでも交換・返却できる仕組みです。
               観葉植物は常緑の種類が中心で、季節によって見た目が大きく変わるわけではありません。季節感を出したい場合は、ベースのグリーンを据え置き、
-              <a href="/compare/ryokin/" className="text-[#4A7C59] underline mx-1">切り花の定期便</a>
+              <a href="/compare/ryokin/" className="text-[#2F5B43] underline mx-1">切り花の定期便</a>
               を組み合わせる方法もあります。
             </p>
 
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               忙しい会社でも管理不要で使える観葉植物サブスクはありますか
             </h2>
-            <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F8F8F8] p-6 mb-6">
-              <p className="text-sm text-[#555] leading-relaxed">
+            <div className="rounded-md border-2 border-[#2F5B43] bg-[#F6F4EF] p-6 mb-6">
+              <p className="text-sm text-[#3F443E] leading-relaxed">
                 <strong>あります。水やり・剪定・病害虫の対応まで事業者が行う、訪問メンテナンス付きの法人向けレンタルを選んでください。</strong>
                 HitoHana Rental Greenは専門スタッフが月2回訪問し、社内での作業は発生しないと案内しています（法人専用・最低契約期間1年・訪問1拠点あたりの植物レンタル代7,800円以上）。
                 GOOD GREENのメンテナンスプランも月2回の訪問で、M・Lサイズ5鉢以上が条件です。
               </p>
             </div>
-            <p className="text-sm text-[#666] leading-relaxed mb-8">
+            <p className="text-sm text-[#4A4F49] leading-relaxed mb-8">
               生きた植物にこだわらない場合は、水やりが不要なフェイクグリーン（CLASのレンタル、HitoHanaの買い切り）も選択肢になります。
               一方、AND PLANTSやHitoHanaの観葉植物を購入する場合は、水やりなどの管理を社内で担う必要があります。
               導入の手順や見積もりの取り方は
-              <a href="/guides/houjin-office/" className="text-[#4A7C59] underline mx-1">法人・オフィス向けガイド</a>
+              <a href="/guides/houjin-office/" className="text-[#2F5B43] underline mx-1">法人・オフィス向けガイド</a>
               にまとめています。
             </p>
 
-            <h3 id="hikaku-hyou" className="text-base md:text-lg font-bold text-[#333] mb-3 scroll-mt-20">観葉植物サブスク・レンタル比較表｜公式サイトで確認した入れ替え・メンテナンスの条件（2026年10月19日確認）</h3>
+            <h3 id="hikaku-hyou" className="text-base md:text-lg font-bold text-[#1F2420] mb-3 scroll-mt-20">観葉植物サブスク・レンタル比較表｜公式サイトで確認した入れ替え・メンテナンスの条件（2026年10月19日確認）</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse min-w-[760px]">
                 <thead>
-                  <tr className="bg-[#F8F8F8]">
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5] w-36">サービス</th>
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">対象・形態</th>
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">料金（公式表示）</th>
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">入れ替え・交換</th>
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">訪問メンテナンス</th>
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">契約条件・エリア</th>
+                  <tr className="bg-[#F6F4EF]">
+                    <th className="text-left px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2] w-36">サービス</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">対象・形態</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">料金（公式表示）</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">入れ替え・交換</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">訪問メンテナンス</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">契約条件・エリア</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -213,39 +214,39 @@ export default function KanyouShokubutsuPage() {
                       terms: "宅配便",
                     },
                   ].map((r, i) => (
-                    <tr key={i} className="border-b border-[#E5E5E5] align-top">
-                      <td className="px-3 py-3 font-medium text-[#333]">{r.name}</td>
-                      <td className="px-3 py-3 text-[#666] leading-relaxed">{r.who}</td>
-                      <td className="px-3 py-3 text-[#666] leading-relaxed">{r.price}</td>
-                      <td className="px-3 py-3 text-[#666] leading-relaxed">{r.swap}</td>
-                      <td className="px-3 py-3 text-[#666] leading-relaxed">{r.maint}</td>
-                      <td className="px-3 py-3 text-[#666] leading-relaxed">{r.terms}</td>
+                    <tr key={i} className="border-b border-[#DEDAD2] align-top">
+                      <td className="px-3 py-3 font-medium text-[#1F2420]">{r.name}</td>
+                      <td className="px-3 py-3 text-[#4A4F49] leading-relaxed">{r.who}</td>
+                      <td className="px-3 py-3 text-[#4A4F49] leading-relaxed">{r.price}</td>
+                      <td className="px-3 py-3 text-[#4A4F49] leading-relaxed">{r.swap}</td>
+                      <td className="px-3 py-3 text-[#4A4F49] leading-relaxed">{r.maint}</td>
+                      <td className="px-3 py-3 text-[#4A4F49] leading-relaxed">{r.terms}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#999] leading-relaxed mt-4">
+            <p className="text-xs text-[#6B6F6A] leading-relaxed mt-4">
               出典（2026年10月19日に各公式サイトで確認）：
-              <a href="https://hitohana-collect.hitohana.tokyo/pages/rental-green" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">HitoHana Rental Green</a>、
-              <a href="https://goodgreen.jp/price/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">GOOD GREEN 料金プラン</a>、
-              <a href="https://clas.style/furniture/interior_green/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">CLAS 観葉植物</a>、
-              <a href="https://andplants.jp/pages/returned" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">AND PLANTS 返品・交換規定</a>、
-              <a href="https://andplants.jp/products/pachira-m" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">AND PLANTS パキラ M</a>、
-              <a href="https://hitohana.tokyo/indoor-plants" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">HitoHana 観葉植物</a>。
+              <a href="https://hitohana-collect.hitohana.tokyo/pages/rental-green" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">HitoHana Rental Green</a>、
+              <a href="https://goodgreen.jp/price/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">GOOD GREEN 料金プラン</a>、
+              <a href="https://clas.style/furniture/interior_green/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">CLAS 観葉植物</a>、
+              <a href="https://andplants.jp/pages/returned" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">AND PLANTS 返品・交換規定</a>、
+              <a href="https://andplants.jp/products/pachira-m" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">AND PLANTS パキラ M</a>、
+              <a href="https://hitohana.tokyo/indoor-plants" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">HitoHana 観葉植物</a>。
               料金・条件は改定されることがあるため、申し込み前に各公式サイトでご確認ください。GOOD GREENのサイズ区分はS（〜40cm）・M（50〜130cm）・L（140〜200cm）で、HitoHanaとは異なります。
             </p>
 
-            <h3 id="mitsumori-jouken" className="text-base md:text-lg font-bold text-[#333] mt-10 mb-3 scroll-mt-20">会社で季節ごとの入れ替えを依頼するときに見積もりへ書く条件</h3>
-            <p className="text-sm text-[#666] leading-relaxed mb-4">
+            <h3 id="mitsumori-jouken" className="text-base md:text-lg font-bold text-[#1F2420] mt-10 mb-3 scroll-mt-20">会社で季節ごとの入れ替えを依頼するときに見積もりへ書く条件</h3>
+            <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
               法人向けレンタルは、公開プランのほかに見積もりで条件を決める契約が多くあります。季節ごとの入れ替えと管理不要を両立させたい場合は、次の項目を依頼文に明記すると、各社の回答を同じ条件で比べられます。公的な契約の例として、那覇市役所本庁舎の観葉植物等賃貸借仕様書（令和8年度）は、これらを契約条件として定めています（2026年10月21日確認）。
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse min-w-[560px]">
                 <thead>
-                  <tr className="bg-[#F8F8F8]">
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5] w-40">見積もりで指定する項目</th>
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">那覇市の仕様書での定め方</th>
+                  <tr className="bg-[#F6F4EF]">
+                    <th className="text-left px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2] w-40">見積もりで指定する項目</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">那覇市の仕様書での定め方</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -258,14 +259,14 @@ export default function KanyouShokubutsuPage() {
                     { k: "報告", v: "年間の予定樹種表を提出し、入れ替え後は作業写真付きの報告書を提出する" },
                   ].map((r, i) => (
                     <tr key={i} className="border-b border-[#F0F0F0] align-top">
-                      <td className="px-3 py-3 font-bold text-[#333]">{r.k}</td>
-                      <td className="px-3 py-3 text-[#555] leading-relaxed">{r.v}</td>
+                      <td className="px-3 py-3 font-bold text-[#1F2420]">{r.k}</td>
+                      <td className="px-3 py-3 text-[#3F443E] leading-relaxed">{r.v}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#999] leading-relaxed mt-3">
+            <p className="text-xs text-[#6B6F6A] leading-relaxed mt-3">
               出典：<a href="https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/011/330/r8kanyousyokubutsu_shiyousyo.pdf" target="_blank" rel="noopener noreferrer nofollow" className="underline">那覇市役所本庁舎観葉植物等賃貸借仕様書</a>（2026年10月21日確認）。自治体の契約条件の一例であり、民間の各社のプランの内容を示すものではありません。公開プランでは、GOOD GREENが3か月に1回の交換（上の比較表）を定めています。
             </p>
           </div>
@@ -274,37 +275,37 @@ export default function KanyouShokubutsuPage() {
         {/* ─── Quick Answer: Rental vs Subscription / Personal vs Corporate ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               月額制の観葉植物サブスクと購入の費用比較
             </h2>
-            <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F8F8F8] p-6 mb-6">
-              <p className="text-sm text-[#555] leading-relaxed">
+            <div className="rounded-md border-2 border-[#2F5B43] bg-[#F6F4EF] p-6 mb-6">
+              <p className="text-sm text-[#3F443E] leading-relaxed">
                 <strong>同じ鉢を数年そのまま置き続けるなら購入、入れ替えや枯れたときの手当・日々の管理まで任せたいならサブスク（レンタル）が有利です。</strong>
                 購入は最初に植物代・鉢代・送料がかかる代わりに以降の固定費が下がり、月額制は初期費用を抑えられる代わりに使っている間ずっと支払いが続きます。
                 損益が入れ替わる時期は鉢のサイズ・月額・入れ替え頻度で変わるため一律には示せません。判断に迷う場合は<strong>「購入価格 ÷ 月額」で何か月分に相当するか</strong>を出し、その月数より長く置く見込みがあるかで決めてください。
               </p>
             </div>
-            <p className="text-sm text-[#666] leading-relaxed mb-6">
-              当サイトでの用語の使い分けは次のとおりです。植物を購入して自分のものにし、自分で育てる形態を「購入型」、月額で借りる形態を「レンタル型」と呼びます。レンタル型には交換・返却があり、訪問メンテナンス込みのプランもあります。支払いを終えた後に植物が手元に残るかどうかが大きく異なります。公式価格を使った試算は<a href="/guides/kanyou-shokubutsu-ryokin/#shisan" className="text-[#4A7C59] underline mx-1">観葉植物の料金の考え方</a>に掲載しています。
+            <p className="text-sm text-[#4A4F49] leading-relaxed mb-6">
+              当サイトでの用語の使い分けは次のとおりです。植物を購入して自分のものにし、自分で育てる形態を「購入型」、月額で借りる形態を「レンタル型」と呼びます。レンタル型には交換・返却があり、訪問メンテナンス込みのプランもあります。支払いを終えた後に植物が手元に残るかどうかが大きく異なります。公式価格を使った試算は<a href="/guides/kanyou-shokubutsu-ryokin/#shisan" className="text-[#2F5B43] underline mx-1">観葉植物の料金の考え方</a>に掲載しています。
             </p>
             <div className="grid md:grid-cols-2 gap-5">
-              <div className="rounded-xl border-2 border-[#4A7C59] p-6 bg-[#F8F8F8]">
-                <p className="text-xs font-bold text-[#4A7C59] mb-2">買って育てたい方（購入型）</p>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
+              <div className="rounded-md border-2 border-[#2F5B43] p-6 bg-[#F6F4EF]">
+                <p className="text-xs font-bold text-[#2F5B43] mb-2">買って育てたい方（購入型）</p>
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                   <strong>単品購入が基本の選択肢</strong>です。AND PLANTSではパキラ M（高さ目安75〜110cm）が13,980円（税込・送料無料）で、到着後2週間以内の初期不良等には交換・返金の対応があります（2026年10月19日公式確認）。届いた植物は自分のものになるため、長く置くほど1か月あたりの負担は下がります。
                 </p>
-                <a href="#osusume-3sen" className="text-sm text-[#4A7C59] font-medium underline">→ 購入型・レンタル型のおすすめ3選を見る</a>
+                <a href="#osusume-3sen" className="text-sm text-[#2F5B43] font-medium underline">→ 購入型・レンタル型のおすすめ3選を見る</a>
               </div>
-              <div className="rounded-xl border border-[#E5E5E5] p-6 bg-[#F8F8F8]">
-                <p className="text-xs font-bold text-[#4A7C59] mb-2">借りて任せたい方（レンタル型）</p>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
+              <div className="rounded-md border border-[#DEDAD2] p-6 bg-[#F6F4EF]">
+                <p className="text-xs font-bold text-[#2F5B43] mb-2">借りて任せたい方（レンタル型）</p>
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                   大型グリーンを手間をかけずに維持したい場合や、入れ替えを前提にする場合は、<strong>レンタルが有力な選択肢</strong>です。生きた植物の訪問メンテナンス付きレンタルは法人向けが中心で、HitoHana Rental Green（月2回訪問・法人専用）やGOOD GREEN（3か月に1回交換可）があります。個人宅ではCLASのフェイクグリーンのレンタルが利用できます。
                 </p>
-                <p className="text-xs text-[#999] leading-relaxed">
+                <p className="text-xs text-[#6B6F6A] leading-relaxed">
                   オフィス・店舗での導入（管理担当を置けない、メンテナンス込みにしたい、対応エリアを確認したい）は
-                  <a href="/guides/houjin-office/" className="text-[#4A7C59] underline mx-1">法人・オフィス向けガイド</a>
+                  <a href="/guides/houjin-office/" className="text-[#2F5B43] underline mx-1">法人・オフィス向けガイド</a>
                   、料金の決まり方や予算の立て方は
-                  <a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] underline mx-1">観葉植物の料金の考え方</a>
+                  <a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#2F5B43] underline mx-1">観葉植物の料金の考え方</a>
                   にまとめています。
                 </p>
               </div>
@@ -315,16 +316,16 @@ export default function KanyouShokubutsuPage() {
         {/* ─── Difference ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のサブスクと観葉植物サブスクの違い
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
-                  <tr className="bg-[#F8F8F8]">
-                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">比較項目</th>
-                    <th className="text-center px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">花のサブスク</th>
-                    <th className="text-center px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">観葉植物サブスク</th>
+                  <tr className="bg-[#F6F4EF]">
+                    <th className="text-left px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">比較項目</th>
+                    <th className="text-center px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">花のサブスク</th>
+                    <th className="text-center px-3 py-3 text-xs text-[#6B6F6A] border-b border-[#DEDAD2]">観葉植物サブスク</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -335,10 +336,10 @@ export default function KanyouShokubutsuPage() {
                     { item: "入れ替え", flower: "届くたびに新しい花", plant: "購入は入れ替えなし／レンタルは3か月ごと等の交換あり" },
                     { item: "インテリア効果", flower: "華やかさ・季節の彩り", plant: "通年で落ち着いた緑" },
                   ].map((row, i) => (
-                    <tr key={i} className="border-b border-[#E5E5E5]">
-                      <td className="px-3 py-3 font-medium text-[#333]">{row.item}</td>
-                      <td className="px-3 py-3 text-center text-[#666]">{row.flower}</td>
-                      <td className="px-3 py-3 text-center text-[#666]">{row.plant}</td>
+                    <tr key={i} className="border-b border-[#DEDAD2]">
+                      <td className="px-3 py-3 font-medium text-[#1F2420]">{row.item}</td>
+                      <td className="px-3 py-3 text-center text-[#4A4F49]">{row.flower}</td>
+                      <td className="px-3 py-3 text-center text-[#4A4F49]">{row.plant}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -348,9 +349,9 @@ export default function KanyouShokubutsuPage() {
         </section>
 
         {/* ─── Recommendations ─── */}
-        <section id="osusume-3sen" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="osusume-3sen" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               観葉植物サブスクおすすめ3選
             </h2>
             <div className="space-y-6">
@@ -362,7 +363,7 @@ export default function KanyouShokubutsuPage() {
                   price: "観葉植物は単品購入（例：パキラ M 13,980円・税込・送料無料）",
                   highlight: "観葉植物と切り花の両方を扱うサービスです。観葉植物は定期便ではなく単品購入で、置き場所の日当たりなどから植物を絞り込める「パーソナル植物診断」と、育て方を記したケアカードがあります。到着後2週間以内であれば、初期不良による傷みや、ケアカードに従って管理したのに枯れた場合などに交換・返金の対象となります（2026年10月19日公式確認）。",
                   features: ["パーソナル植物診断", "到着後2週間以内の交換・返金対応", "ケアカード付き", "切り花の定期便も提供"],
-                  color: "#4A7C59",
+                  color: "#2F5B43",
                   url: "/services/and-plants",
                 },
                 {
@@ -386,28 +387,28 @@ export default function KanyouShokubutsuPage() {
                   url: "/services/hitohana",
                 },
               ].map((item) => (
-                <div key={item.rank} className={`bg-white rounded-xl overflow-hidden ${item.rank === 1 ? "border-2 border-[#4A7C59]" : "border border-[#E5E5E5]"}`}>
+                <div key={item.rank} className={`bg-white rounded-md overflow-hidden ${item.rank === 1 ? "border-2 border-[#2F5B43]" : "border border-[#DEDAD2]"}`}>
                   {item.rank === 1 && (
-                    <div className="bg-[#4A7C59] text-white text-xs text-center py-1.5 font-bold">おすすめ第1位</div>
+                    <div className="bg-[#2F5B43] text-white text-xs text-center py-1.5 font-bold">おすすめ第1位</div>
                   )}
                   <div className="p-5">
                     <div className="flex items-start gap-4 mb-4">
-                      <span className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white text-sm font-bold shrink-0" style={{ backgroundColor: item.color }}>
+                      <span className="inline-flex items-center justify-center w-10 h-10 rounded-md text-white text-sm font-bold shrink-0" style={{ backgroundColor: item.color }}>
                         {item.rank}位
                       </span>
                       <div className="flex-1">
-                        <h3 className="text-lg font-bold text-[#333] mb-1">{item.name}（{item.nameJa}）</h3>
-                        <p className="text-sm text-[#4A7C59] font-medium">{item.price}</p>
+                        <h3 className="text-lg font-bold text-[#1F2420] mb-1">{item.name}（{item.nameJa}）</h3>
+                        <p className="text-sm text-[#2F5B43] font-medium">{item.price}</p>
                       </div>
                     </div>
-                    <p className="text-sm text-[#666] leading-relaxed mb-4">{item.highlight}</p>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">{item.highlight}</p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {item.features.map((f, fi) => (
-                        <span key={fi} className="bg-[#F8F8F8] text-[#666] text-xs px-3 py-1 rounded-full">{f}</span>
+                        <span key={fi} className="bg-[#F6F4EF] text-[#4A4F49] text-xs px-3 py-1 rounded-md">{f}</span>
                       ))}
                     </div>
                     {item.url !== "#" && (
-                      <a href={item.url} className="inline-block text-sm text-[#4A7C59] font-medium hover:underline">
+                      <a href={item.url} className="inline-block text-sm text-[#2F5B43] font-medium hover:underline">
                         {item.name}の詳細を見る →
                       </a>
                     )}
@@ -419,12 +420,12 @@ export default function KanyouShokubutsuPage() {
         </section>
 
         {/* ─── Head-to-head comparison ─── */}
-        <section id="vs" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="vs" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-4 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-4 pb-3 border-b-2 border-[#2F5B43]">
               サービス同士の直接比較と選び分け
             </h2>
-            <p className="text-sm text-[#666] leading-relaxed mb-6">
+            <p className="text-sm text-[#4A4F49] leading-relaxed mb-6">
               各社は仕組みが異なるため、当サイトでは優劣ではなく、利用者に合う仕組みかどうかを基準に比較しています。上の比較表の項目にもとづき、2社ずつ対比します（2026年10月19日公式確認）。
             </p>
             <div className="space-y-5">
@@ -496,27 +497,27 @@ export default function KanyouShokubutsuPage() {
                   verdict: "日当たりが確保できない場所や、模様替えのたびに替えたい場合はCLASのフェイクグリーン、生きた植物を長く育てたい場合はHitoHanaが適しています。",
                 },
               ].map((v, i) => (
-                <div key={i} className="bg-white rounded-xl border border-[#E5E5E5] p-5">
-                  <h3 className="text-base font-bold text-[#333] mb-4">{v.title}</h3>
+                <div key={i} className="bg-white rounded-md border border-[#DEDAD2] p-5">
+                  <h3 className="text-base font-bold text-[#1F2420] mb-4">{v.title}</h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     {[v.left, v.right].map((s, si) => (
-                      <div key={si} className="rounded-lg bg-[#F8F8F8] p-4 border border-[#E5E5E5]">
-                        <p className="text-sm font-bold text-[#4A7C59] mb-2">{s.name}</p>
+                      <div key={si} className="rounded-lg bg-[#F6F4EF] p-4 border border-[#DEDAD2]">
+                        <p className="text-sm font-bold text-[#2F5B43] mb-2">{s.name}</p>
                         <ul className="space-y-1.5">
                           {s.points.map((p, pi) => (
-                            <li key={pi} className="text-xs text-[#666] leading-relaxed">・{p}</li>
+                            <li key={pi} className="text-xs text-[#4A4F49] leading-relaxed">・{p}</li>
                           ))}
                         </ul>
                       </div>
                     ))}
                   </div>
-                  <p className="text-sm text-[#666] leading-relaxed mt-4 pt-4 border-t border-[#E5E5E5]">
-                    <strong className="text-[#333]">選び分け：</strong>{v.verdict}
+                  <p className="text-sm text-[#4A4F49] leading-relaxed mt-4 pt-4 border-t border-[#DEDAD2]">
+                    <strong className="text-[#1F2420]">選び分け：</strong>{v.verdict}
                   </p>
                 </div>
               ))}
             </div>
-            <p className="text-xs text-[#999] leading-relaxed mt-5">
+            <p className="text-xs text-[#6B6F6A] leading-relaxed mt-5">
               ※ 対比に使用した項目は、上の比較表と同じく当サイトが公式サイトで確認できた情報に限っています。記載のない項目は推測で補っていません。
             </p>
           </div>
@@ -525,7 +526,7 @@ export default function KanyouShokubutsuPage() {
         {/* ─── How to Choose ─── */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               観葉植物サブスク・レンタルを選ぶ際の3つのポイント
             </h2>
             <div className="space-y-4">
@@ -534,72 +535,72 @@ export default function KanyouShokubutsuPage() {
                 { num: "2", title: "日当たりの条件を確認する", text: "窓際で日光が入る部屋なら選択肢は豊富ですが、日当たりの悪い部屋でも育つ耐陰性の強い植物（ポトス、サンスベリア、モンステラなど）もあります。日照が確保できない場所には、水やりも不要なフェイクグリーンという選択肢もあります。" },
                 { num: "3", title: "交換の条件と期限を確認する", text: "購入型の交換は到着時の不具合などが対象で、期限があります（AND PLANTSの観葉植物は到着後2週間以内、HitoHanaは到着から7日以内）。期限後に枯れた場合も交換してほしいときは、GOOD GREEN（枯れた場合は回数の制限なく無料交換）のようなレンタルが該当します（2026年10月19日公式確認）。" },
               ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.num}</span>
+                <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.num}</span>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="text-sm text-[#666] leading-relaxed mt-5">
+            <p className="text-sm text-[#4A4F49] leading-relaxed mt-5">
               置き場所の明るさの見極め方、水やりの頻度、季節ごとの管理、枯らさないための確認事項は
-              <a href="/guides/kanyou-shokubutsu/" className="text-[#4A7C59] font-medium underline mx-1">観葉植物の育て方・置き場所ガイド</a>
+              <a href="/guides/kanyou-shokubutsu/" className="text-[#2F5B43] font-medium underline mx-1">観葉植物の育て方・置き場所ガイド</a>
               で解説しています。育て方の条件が決まると、選ぶべきサービスも絞り込みやすくなります。
             </p>
           </div>
         </section>
 
         {/* ─── FAQ ─── */}
-        <section id="faq" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="faq" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               観葉植物サブスクに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <details key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden bg-white">
-                  <summary className="px-5 py-4 cursor-pointer hover:bg-[#E8F0EB] transition-colors text-sm font-medium text-[#333]">Q. {item.q}</summary>
-                  <div className="px-5 py-4 border-t border-[#E5E5E5]">
-                    <p className="text-sm text-[#666] leading-relaxed">A. {item.a}</p>
+                <details key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden bg-white">
+                  <summary className="px-5 py-4 cursor-pointer hover:bg-[#EDF1EC] transition-colors text-sm font-medium text-[#1F2420]">Q. {item.q}</summary>
+                  <div className="px-5 py-4 border-t border-[#DEDAD2]">
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">A. {item.a}</p>
                   </div>
                 </details>
               ))}
             </div>
-            <div className="mt-6 rounded-xl border border-[#E5E5E5] bg-white p-5">
-              <p className="text-sm font-bold text-[#333] mb-2">目的別の関連ページ</p>
-              <ul className="space-y-2 text-sm text-[#666] leading-relaxed">
-                <li>・置き場所・日当たり・水やりなど<strong>育て方</strong>を知りたい：<a href="/guides/kanyou-shokubutsu/" className="text-[#4A7C59] underline">観葉植物の育て方・置き場所ガイド</a></li>
-                <li>・<strong>料金の決まり方・予算の立て方</strong>を知りたい：<a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#4A7C59] underline">観葉植物のサブスク・レンタル料金の考え方</a></li>
-                <li>・オフィス・店舗への<strong>導入手順</strong>を知りたい：<a href="/guides/houjin-office/" className="text-[#4A7C59] underline">法人・オフィス向けガイド</a></li>
-                <li>・切り花の<strong>定期便の料金</strong>を比べたい：<a href="/compare/ryokin/" className="text-[#4A7C59] underline">花のサブスク料金比較</a></li>
+            <div className="mt-6 rounded-md border border-[#DEDAD2] bg-white p-5">
+              <p className="text-sm font-bold text-[#1F2420] mb-2">目的別の関連ページ</p>
+              <ul className="space-y-2 text-sm text-[#4A4F49] leading-relaxed">
+                <li>・置き場所・日当たり・水やりなど<strong>育て方</strong>を知りたい：<a href="/guides/kanyou-shokubutsu/" className="text-[#2F5B43] underline">観葉植物の育て方・置き場所ガイド</a></li>
+                <li>・<strong>料金の決まり方・予算の立て方</strong>を知りたい：<a href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#2F5B43] underline">観葉植物のサブスク・レンタル料金の考え方</a></li>
+                <li>・オフィス・店舗への<strong>導入手順</strong>を知りたい：<a href="/guides/houjin-office/" className="text-[#2F5B43] underline">法人・オフィス向けガイド</a></li>
+                <li>・切り花の<strong>定期便の料金</strong>を比べたい：<a href="/compare/ryokin/" className="text-[#2F5B43] underline">花のサブスク料金比較</a></li>
               </ul>
             </div>
           </div>
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section className="py-12 md:py-16 bg-[#E8F0EB]">
+        <section className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               個人は購入、法人はメンテナンス込みのレンタルから選びます
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               自宅に置く場合は、生きた観葉植物の訪問メンテナンス付きレンタルは個人宅を対象外とするサービスもあるため、購入が基本になります。初心者の方には、当サイトでは<strong>AND PLANTS</strong>をおすすめしています。パーソナル植物診断で置き場所に合う植物を絞り込め、到着後2週間以内の初期不良等には交換・返金の対応があります。会社で管理の手間をなくしたい場合は、月2回の訪問メンテナンスが付くHitoHana Rental Greenや、3か月ごとに入れ替えられるGOOD GREENをご検討ください。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               花のサブスクと観葉植物サブスクを併用すると、グリーンの落ち着いた雰囲気と花の華やかさの両方を楽しめます。まずは一つのサービスから試し、植物のある暮らしをご検討ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
-              <a href="/services/and-plants" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
+              <a href="/services/and-plants" className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors">
                 AND PLANTSの詳細を見る
               </a>
-              <a href="/services/medelu" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
+              <a href="/services/medelu" className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
                 花のサブスク medeluを見る
               </a>
             </div>
-            <a href="/" className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline">
+            <a href="/" className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline">
               トップページに戻る
             </a>
           </div>
@@ -607,11 +608,11 @@ export default function KanyouShokubutsuPage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400">花のサブスクを比較し、ご自身に合ったサービス選びを支援します。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">

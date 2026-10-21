@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -47,63 +48,63 @@ export default function MothersDayGuidePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
-                <li><a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a></li>
+                <li><a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#666]">ガイド</span></li>
+                <li><span className="text-[#4A4F49]">ガイド</span></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#333] font-medium">母の日ギフト</span></li>
+                <li><span className="text-[#1F2420] font-medium">母の日ギフト</span></li>
               </ol>
             </nav>
           </div>
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F9E8E8] py-12 md:py-20">
+        <PageHero path="/guides/mothers-day/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#C4877A] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#B0694F] font-medium mb-3 tracking-wide">
               母の日ギフトガイド
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               花のサブスクを母の日のプレゼントに<br className="hidden md:block" />
               おすすめギフト3選【2026年】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               2026年の母の日は5月10日（日）です。一度きりの花束に代えて、
               毎月花が届く花のサブスクを贈る方法があります。
               当サイトでは、長く楽しめるギフトとして、おすすめの花の定期便3選をご紹介します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">2026年の母の日</p>
-                <p className="text-xl font-bold text-[#C4877A]">5月10日（日）</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">2026年の母の日</p>
+                <p className="text-xl font-bold text-[#B0694F]">5月10日（日）</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">ギフト予算</p>
-                <p className="text-xl font-bold text-[#C4877A]">3,000円〜</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">ギフト予算</p>
+                <p className="text-xl font-bold text-[#B0694F]">3,000円〜</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">おすすめ</p>
-                <p className="text-xl font-bold text-[#C4877A]">3サービス</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">おすすめ</p>
+                <p className="text-xl font-bold text-[#B0694F]">3サービス</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
-              <ol className="text-sm text-[#666] space-y-2">
-                <li><a href="#why-subscription" className="hover:text-[#4A7C59] transition-colors">1. 花のサブスクが母の日のギフトに適している理由</a></li>
-                <li><a href="#recommend-3" className="hover:text-[#4A7C59] transition-colors">2. おすすめサービス3選</a></li>
-                <li><a href="#budget" className="hover:text-[#4A7C59] transition-colors">3. 予算別のおすすめプラン</a></li>
-                <li><a href="#cautions" className="hover:text-[#4A7C59] transition-colors">4. 贈る際の注意点</a></li>
-                <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">5. よくある質問</a></li>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">目次</p>
+              <ol className="text-sm text-[#4A4F49] space-y-2">
+                <li><a href="#why-subscription" className="hover:text-[#2F5B43] transition-colors">1. 花のサブスクが母の日のギフトに適している理由</a></li>
+                <li><a href="#recommend-3" className="hover:text-[#2F5B43] transition-colors">2. おすすめサービス3選</a></li>
+                <li><a href="#budget" className="hover:text-[#2F5B43] transition-colors">3. 予算別のおすすめプラン</a></li>
+                <li><a href="#cautions" className="hover:text-[#2F5B43] transition-colors">4. 贈る際の注意点</a></li>
+                <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">5. よくある質問</a></li>
               </ol>
             </div>
           </div>
@@ -112,29 +113,29 @@ export default function MothersDayGuidePage() {
         {/* ─── Why Subscription for Mother's Day ─── */}
         <section id="why-subscription" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#C4877A]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#B0694F]">
               花のサブスクが母の日のギフトに適している理由
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               母の日にカーネーションの花束を贈ることは一般的ですが、花束は1〜2週間で枯れてしまいます。花のサブスクであれば毎月新しい花が届くため、感謝の気持ちを長く伝え続けることができます。
             </p>
 
             <div className="space-y-4">
-              <div className="bg-[#FFF5F5] rounded-xl p-5 border border-[#F0D8D8]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">毎回異なる花が届く</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#F0D8D8]">
+                <h3 className="text-sm font-bold text-[#1F2420] mb-2">毎回異なる花が届く</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花のサブスクでは、毎回異なる種類の花が届きます。次にどの花が届くかを楽しみに待てる点は、一度きりのプレゼントにはない魅力です。季節の花が届くたびに、お子さんからの贈り物であることを思い出していただけます。
                 </p>
               </div>
-              <div className="bg-[#FFF5F5] rounded-xl p-5 border border-[#F0D8D8]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">数か月にわたって楽しめる</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#F0D8D8]">
+                <h3 className="text-sm font-bold text-[#1F2420] mb-2">数か月にわたって楽しめる</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   3か月分のギフトであれば、母の日の5月から7月まで花が届きます。花束が1〜2週間で終わるのに対し、サブスクのギフトは長期間にわたって花のある暮らしを楽しんでいただけます。6か月分や1年分のギフトであれば、さらに長く楽しんでいただけます。
                 </p>
               </div>
-              <div className="bg-[#FFF5F5] rounded-xl p-5 border border-[#F0D8D8]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">受け取りの負担が少ない</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#F0D8D8]">
+                <h3 className="text-sm font-bold text-[#1F2420] mb-2">受け取りの負担が少ない</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   ポスト投函に対応したサービスであれば、お母さんが不在でも受け取れます。重い花瓶付きのフラワーアレンジメントと異なり、コンパクトなパッケージで届くため、受け取りの負担もありません。届いた後は、水切りをして花瓶に生けるだけで飾れます。
                 </p>
               </div>
@@ -143,94 +144,94 @@ export default function MothersDayGuidePage() {
         </section>
 
         {/* ─── Recommended 3 Services ─── */}
-        <section id="recommend-3" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="recommend-3" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#C4877A]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#B0694F]">
               母の日ギフトにおすすめの花のサブスク3選
             </h2>
 
             <div className="space-y-6">
               {/* bloomee */}
-              <div className="bg-white rounded-xl p-5 md:p-6 border-2 border-[#C4877A]">
+              <div className="bg-white rounded-md p-5 md:p-6 border-2 border-[#B0694F]">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#C4877A] text-white text-xs font-bold rounded-lg px-2.5 py-1">おすすめ1</span>
-                  <h3 className="text-base font-bold text-[#333]">bloomee（ブルーミー）</h3>
+                  <span className="bg-[#B0694F] text-white text-xs font-bold rounded-lg px-2.5 py-1">おすすめ1</span>
+                  <h3 className="text-base font-bold text-[#1F2420]">bloomee（ブルーミー）</h3>
                 </div>
-                <p className="text-sm text-[#666] leading-relaxed mb-4">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                   bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、お母さんの住所に花を届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。お試しプランは1回1,365円（花代980円＋送料385円）です。
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">ギフト形式</p>
-                    <p className="text-sm font-bold text-[#333]">プレゼントとして送る</p>
+                  <div className="text-center bg-[#F6F4EF] rounded-lg p-3">
+                    <p className="text-xs text-[#6B6F6A]">ギフト形式</p>
+                    <p className="text-sm font-bold text-[#1F2420]">プレゼントとして送る</p>
                   </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">料金</p>
-                    <p className="text-sm font-bold text-[#4A7C59]">980円/回〜（送料別）</p>
+                  <div className="text-center bg-[#F6F4EF] rounded-lg p-3">
+                    <p className="text-xs text-[#6B6F6A]">料金</p>
+                    <p className="text-sm font-bold text-[#2F5B43]">980円/回〜（送料別）</p>
                   </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">受け取り</p>
-                    <p className="text-sm font-bold text-[#333]">ポスト投函</p>
+                  <div className="text-center bg-[#F6F4EF] rounded-lg p-3">
+                    <p className="text-xs text-[#6B6F6A]">受け取り</p>
+                    <p className="text-sm font-bold text-[#1F2420]">ポスト投函</p>
                   </div>
                 </div>
-                <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます。贈る期間が終わったら、贈り主が停止の手続きを行います（2026年10月20日公式確認）。</p>
+                <div className="bg-[#EDF1EC] rounded-lg p-3">
+                  <p className="text-xs text-[#2F5B43] font-medium">最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます。贈る期間が終わったら、贈り主が停止の手続きを行います（2026年10月20日公式確認）。</p>
                 </div>
               </div>
 
               {/* AND PLANTS */}
-              <div className="bg-white rounded-xl p-5 md:p-6 border border-[#E5E5E5]">
+              <div className="bg-white rounded-md p-5 md:p-6 border border-[#DEDAD2]">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1">おすすめ2</span>
-                  <h3 className="text-base font-bold text-[#333]">AND PLANTS（アンドプランツ）</h3>
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1">おすすめ2</span>
+                  <h3 className="text-base font-bold text-[#1F2420]">AND PLANTS（アンドプランツ）</h3>
                 </div>
-                <p className="text-sm text-[#666] leading-relaxed mb-4">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                   AND PLANTSは、プロのフローリストによるおしゃれなアレンジが特徴です。ボリュームのある花束が送料無料で届きます。注文時の配送先をお母さんの住所、請求先をご自身の住所にすると、お母さんのもとへ直接お届けできます。定期便はラッピングとメッセージカードに対応していません（2026年10月20日公式確認）。見栄えが良く、花がお好きなお母さんへのプレゼントに適しています。
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">ギフト形式</p>
-                    <p className="text-sm font-bold text-[#333]">届け先指定</p>
+                  <div className="text-center bg-[#F6F4EF] rounded-lg p-3">
+                    <p className="text-xs text-[#6B6F6A]">ギフト形式</p>
+                    <p className="text-sm font-bold text-[#1F2420]">届け先指定</p>
                   </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">料金</p>
-                    <p className="text-sm font-bold text-[#4A7C59]">1,980円/回〜</p>
+                  <div className="text-center bg-[#F6F4EF] rounded-lg p-3">
+                    <p className="text-xs text-[#6B6F6A]">料金</p>
+                    <p className="text-sm font-bold text-[#2F5B43]">1,980円/回〜</p>
                   </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">花の本数</p>
-                    <p className="text-sm font-bold text-[#333]">6〜8本（Standard）</p>
+                  <div className="text-center bg-[#F6F4EF] rounded-lg p-3">
+                    <p className="text-xs text-[#6B6F6A]">花の本数</p>
+                    <p className="text-sm font-bold text-[#1F2420]">6〜8本（Standard）</p>
                   </div>
                 </div>
-                <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">ボリュームのあるおしゃれなアレンジが届くため、見栄えのするプレゼントを贈りたい方におすすめです。送料無料で、回数の条件がない点も利点です。</p>
+                <div className="bg-[#EDF1EC] rounded-lg p-3">
+                  <p className="text-xs text-[#2F5B43] font-medium">ボリュームのあるおしゃれなアレンジが届くため、見栄えのするプレゼントを贈りたい方におすすめです。送料無料で、回数の条件がない点も利点です。</p>
                 </div>
               </div>
 
               {/* HitoHana */}
-              <div className="bg-white rounded-xl p-5 md:p-6 border border-[#E5E5E5]">
+              <div className="bg-white rounded-md p-5 md:p-6 border border-[#DEDAD2]">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1">おすすめ3</span>
-                  <h3 className="text-base font-bold text-[#333]">HitoHana（ひとはな）</h3>
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1">おすすめ3</span>
+                  <h3 className="text-base font-bold text-[#1F2420]">HitoHana（ひとはな）</h3>
                 </div>
-                <p className="text-sm text-[#666] leading-relaxed mb-4">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                   HitoHanaは、花の色を6色とおまかせから、ボリュームをLite〜LLの5サイズから選べます。公式の「お花のサブスクギフト（定期便）」ページから申し込め、メッセージカードを有料オプションで添えられます。S〜LLは透明な蓋の専用ボックスに入り、宅配業者が手渡しで届けます（2026年10月21日公式確認）。
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">ギフト対応</p>
-                    <p className="text-sm font-bold text-[#333]">メッセージカード（有料オプション）</p>
+                  <div className="text-center bg-[#F6F4EF] rounded-lg p-3">
+                    <p className="text-xs text-[#6B6F6A]">ギフト対応</p>
+                    <p className="text-sm font-bold text-[#1F2420]">メッセージカード（有料オプション）</p>
                   </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">料金</p>
-                    <p className="text-sm font-bold text-[#4A7C59]">1,320円/回〜</p>
+                  <div className="text-center bg-[#F6F4EF] rounded-lg p-3">
+                    <p className="text-xs text-[#6B6F6A]">料金</p>
+                    <p className="text-sm font-bold text-[#2F5B43]">1,320円/回〜</p>
                   </div>
-                  <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
-                    <p className="text-xs text-[#999]">特徴</p>
-                    <p className="text-sm font-bold text-[#333]">色指定が可能</p>
+                  <div className="text-center bg-[#F6F4EF] rounded-lg p-3">
+                    <p className="text-xs text-[#6B6F6A]">特徴</p>
+                    <p className="text-sm font-bold text-[#1F2420]">色指定が可能</p>
                   </div>
                 </div>
-                <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">花の色やボリュームを選べるため、お母さんの好みに合わせて贈ることができます。メッセージカードには、感謝の言葉を自由に記入できます。</p>
+                <div className="bg-[#EDF1EC] rounded-lg p-3">
+                  <p className="text-xs text-[#2F5B43] font-medium">花の色やボリュームを選べるため、お母さんの好みに合わせて贈ることができます。メッセージカードには、感謝の言葉を自由に記入できます。</p>
                 </div>
               </div>
             </div>
@@ -240,41 +241,41 @@ export default function MothersDayGuidePage() {
         {/* ─── Budget Guide ─── */}
         <section id="budget" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#C4877A]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#B0694F]">
               予算別のおすすめプラン
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               母の日のギフトの予算に合わせて、適したプランをお選びください。花のサブスクは1回分だけでなく、複数回分をまとめてギフトにすることもできます。
             </p>
 
             <div className="space-y-4">
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">3,000円以下のギフト</h3>
-                <p className="text-sm text-[#666] leading-relaxed mb-2">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-sm font-bold text-[#1F2420] mb-2">3,000円以下のギフト</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-2">
                   気軽に贈りたい方に適しています。AND PLANTSは1回1,980円（送料込み）で、解約はいつでも可能なため、1回分から贈れます（2026年10月20日公式確認）。なお、bloomeeは最初の4回分のお届けが約束されているため、お試しプランでも4回分の5,460円が目安です。
                 </p>
-                <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
-                  <p className="text-xs text-[#4A7C59] font-medium">おすすめ：AND PLANTS（1回分 1,980円）</p>
+                <div className="bg-white rounded-lg p-3 border border-[#DEDAD2]">
+                  <p className="text-xs text-[#2F5B43] font-medium">おすすめ：AND PLANTS（1回分 1,980円）</p>
                 </div>
               </div>
 
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">3,000〜5,000円のギフト</h3>
-                <p className="text-sm text-[#666] leading-relaxed mb-2">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-sm font-bold text-[#1F2420] mb-2">3,000〜5,000円のギフト</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-2">
                   最も人気の価格帯です。AND PLANTSの1〜2回分（1,980〜3,960円）や、HitoHanaの2回分から選べます。ボリュームのある華やかなアレンジが届くため、お母さんの満足度も高い傾向があります。
                 </p>
-                <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
-                  <p className="text-xs text-[#4A7C59] font-medium">おすすめ：AND PLANTS 2回分 または HitoHana 2回分（色指定付き）</p>
+                <div className="bg-white rounded-lg p-3 border border-[#DEDAD2]">
+                  <p className="text-xs text-[#2F5B43] font-medium">おすすめ：AND PLANTS 2回分 または HitoHana 2回分（色指定付き）</p>
                 </div>
               </div>
 
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">5,000円以上のギフト</h3>
-                <p className="text-sm text-[#666] leading-relaxed mb-2">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-sm font-bold text-[#1F2420] mb-2">5,000円以上のギフト</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-2">
                   しっかりと感謝を伝えたい方に適しています。HitoHanaの上位プラン3回分や、bloomeeのベーシックプラン4回分（花代2,180円＋送料550円×4回＝10,920円。最初の4回分のお届けが約束されています（2026年10月20日公式確認））をおすすめします。3か月にわたって花が届くため、母の日以降も楽しんでいただけます。LIFFTのスタンダード（3,300円/月）2〜3か月分も選択肢です。期間を決めて贈る場合は、定期便のギフトチケット（3か月10,450円・税込）があります（2026年10月21日公式確認）。
                 </p>
-                <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
-                  <p className="text-xs text-[#4A7C59] font-medium">おすすめ：HitoHana 上位プラン3回分 または LIFFT 花束プラン2回分</p>
+                <div className="bg-white rounded-lg p-3 border border-[#DEDAD2]">
+                  <p className="text-xs text-[#2F5B43] font-medium">おすすめ：HitoHana 上位プラン3回分 または LIFFT 花束プラン2回分</p>
                 </div>
               </div>
             </div>
@@ -282,9 +283,9 @@ export default function MothersDayGuidePage() {
         </section>
 
         {/* ─── Cautions ─── */}
-        <section id="cautions" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="cautions" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#C4877A]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#B0694F]">
               花のサブスクを母の日に贈る際の注意点
             </h2>
 
@@ -311,13 +312,13 @@ export default function MothersDayGuidePage() {
                   text: "ギフトとして贈る場合は、定期便が継続する点にご注意ください。贈り主が申し込んだ定期便は、停止・解約の手続きを行うまで続きます。bloomeeは最初の4回分のお届けが約束されており、それ以降は週単位で停止できます（2026年10月20日公式確認）。お母さんご自身の名義で申し込む場合は、解約方法もあわせてお伝えしておくことをおすすめします。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <div className="bg-[#C4877A] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
+                <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
+                  <div className="bg-[#B0694F] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
                     {item.step}
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -328,21 +329,21 @@ export default function MothersDayGuidePage() {
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#C4877A]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#B0694F]">
               母の日の花のサブスクに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#FFF0F0] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#FFF0F0] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -353,7 +354,7 @@ export default function MothersDayGuidePage() {
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -367,15 +368,15 @@ export default function MothersDayGuidePage() {
         {/* 年間の花のギフトイベントカレンダー (Phase D) */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#F0D0D0]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#E3D3C8]">
               年間の花のギフトイベントカレンダー
             </h2>
-            <p className="text-sm text-[#666] mb-6">
+            <p className="text-sm text-[#4A4F49] mb-6">
               母の日以外にも、花のサブスクをギフトとして贈れるイベントは年間を通じて多数あります。翌年以降も活用できるよう、年間の主なイベントを以下にまとめました。
             </p>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
-                <thead className="bg-[#F0D0D0] text-[#333]">
+              <table className="w-full text-sm border-collapse bg-white border border-[#DEDAD2]">
+                <thead className="bg-[#E3D3C8] text-[#1F2420]">
                   <tr>
                     <th className="px-3 py-2 text-left">月</th>
                     <th className="px-3 py-2 text-left">イベント</th>
@@ -384,64 +385,64 @@ export default function MothersDayGuidePage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">1月</td><td className="px-3 py-2">お正月・新年祝い</td><td className="px-3 py-2">和風アレンジ・松竹梅</td><td className="px-3 py-2">2,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">2月</td><td className="px-3 py-2">バレンタイン・結婚記念日</td><td className="px-3 py-2">赤バラ系・チューリップ</td><td className="px-3 py-2">3,000〜8,000円</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">3月</td><td className="px-3 py-2">卒業・退職祝い・ホワイトデー</td><td className="px-3 py-2">スプリングフラワー</td><td className="px-3 py-2">3,000〜10,000円</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">4月</td><td className="px-3 py-2">入学・入社祝い・新生活応援</td><td className="px-3 py-2">桜・パステル系</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#E0D5C8] bg-[#FFF5F5]"><td className="px-3 py-2 font-bold">5月</td><td className="px-3 py-2"><strong>母の日</strong> (第2日曜)</td><td className="px-3 py-2">カーネーション・あじさい</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">6月</td><td className="px-3 py-2"><strong>父の日</strong> (第3日曜)・ジューンブライド</td><td className="px-3 py-2">向日葵・グリーン系</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">7-8月</td><td className="px-3 py-2">お中元・夏休み</td><td className="px-3 py-2">向日葵・トロピカル</td><td className="px-3 py-2">3,000〜8,000円</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">9月</td><td className="px-3 py-2"><strong>敬老の日</strong> (第3月曜)</td><td className="px-3 py-2">和風・落ち着いた色合い</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">10月</td><td className="px-3 py-2">ハロウィン・誕生日</td><td className="px-3 py-2">秋色・オレンジ系</td><td className="px-3 py-2">2,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-2 font-bold">11月</td><td className="px-3 py-2">七五三・お歳暮準備</td><td className="px-3 py-2">紅葉系アレンジ</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">1月</td><td className="px-3 py-2">お正月・新年祝い</td><td className="px-3 py-2">和風アレンジ・松竹梅</td><td className="px-3 py-2">2,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">2月</td><td className="px-3 py-2">バレンタイン・結婚記念日</td><td className="px-3 py-2">赤バラ系・チューリップ</td><td className="px-3 py-2">3,000〜8,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">3月</td><td className="px-3 py-2">卒業・退職祝い・ホワイトデー</td><td className="px-3 py-2">スプリングフラワー</td><td className="px-3 py-2">3,000〜10,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">4月</td><td className="px-3 py-2">入学・入社祝い・新生活応援</td><td className="px-3 py-2">桜・パステル系</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2] bg-[#F7F1EC]"><td className="px-3 py-2 font-bold">5月</td><td className="px-3 py-2"><strong>母の日</strong> (第2日曜)</td><td className="px-3 py-2">カーネーション・あじさい</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">6月</td><td className="px-3 py-2"><strong>父の日</strong> (第3日曜)・ジューンブライド</td><td className="px-3 py-2">向日葵・グリーン系</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">7-8月</td><td className="px-3 py-2">お中元・夏休み</td><td className="px-3 py-2">向日葵・トロピカル</td><td className="px-3 py-2">3,000〜8,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">9月</td><td className="px-3 py-2"><strong>敬老の日</strong> (第3月曜)</td><td className="px-3 py-2">和風・落ち着いた色合い</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">10月</td><td className="px-3 py-2">ハロウィン・誕生日</td><td className="px-3 py-2">秋色・オレンジ系</td><td className="px-3 py-2">2,000〜5,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">11月</td><td className="px-3 py-2">七五三・お歳暮準備</td><td className="px-3 py-2">紅葉系アレンジ</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
                   <tr><td className="px-3 py-2 font-bold">12月</td><td className="px-3 py-2">クリスマス・年末感謝</td><td className="px-3 py-2">クリスマスリース・赤系</td><td className="px-3 py-2">3,000〜10,000円</td></tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#888] mt-4">
+            <p className="text-xs text-[#6B6F6A] mt-4">
               ※ 2026年の日程は、母の日が5月10日、父の日が6月21日、敬老の日が9月21日です。日程は毎年変動するため、最新情報をご確認ください。
             </p>
-            <p className="text-sm text-[#666] mt-6 leading-relaxed">
+            <p className="text-sm text-[#4A4F49] mt-6 leading-relaxed">
               <strong>年間を通じた贈り方：</strong>花のサブスクをギフトとして年に複数回贈る「<strong>季節ギフトプラン</strong>」も人気があります。HitoHana・bloomee・LIFFTでは、継続的な贈呈について相談できます。
             </p>
           </div>
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#F9E8E8]">
+        <section id="summary" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               花のサブスクで母の日の感謝を長く届けられます
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               母の日に花を贈ることは一般的ですが、花のサブスクを贈ることで、<strong>毎月花が届く</strong>という新しい体験をプレゼントできます。一度きりの花束ではなく、数か月にわたって花が届く楽しみを、お母さんに味わっていただけます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               手軽な価格で贈る場合は<strong>bloomee</strong>（「プレゼントとして送る」で申し込み）、見栄えを重視する場合は<strong>AND PLANTS</strong>、お母さんの好みに合わせたい場合は<strong>HitoHana</strong>をおすすめします。2026年の母の日は5月10日です。余裕をもって準備することをおすすめします。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
                 href="/services/bloomee"
-                className="inline-block bg-[#C4877A] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#B07068] transition-colors shadow-md"
+                className="inline-block bg-[#B0694F] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#B07068] transition-colors"
               >
                 bloomeeの詳細を見る
               </a>
               <a
                 href="/services/and-plants"
-                className="inline-block bg-white text-[#C4877A] font-bold text-base px-8 py-4 rounded-full border-2 border-[#C4877A] hover:bg-[#FFF5F5] transition-colors"
+                className="inline-block bg-white text-[#B0694F] font-bold text-base px-8 py-4 rounded-md border-2 border-[#B0694F] hover:bg-[#F7F1EC] transition-colors"
               >
                 AND PLANTSの詳細を見る
               </a>
               <a
                 href="/services/hitohana"
-                className="inline-block bg-white text-[#C4877A] font-bold text-base px-8 py-4 rounded-full border-2 border-[#C4877A] hover:bg-[#FFF5F5] transition-colors"
+                className="inline-block bg-white text-[#B0694F] font-bold text-base px-8 py-4 rounded-md border-2 border-[#B0694F] hover:bg-[#F7F1EC] transition-colors"
               >
                 HitoHanaの詳細を見る
               </a>
             </div>
             <a
               href="/"
-              className="inline-block mt-4 text-sm text-[#666] hover:text-[#C4877A] transition-colors underline"
+              className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#B0694F] transition-colors underline"
             >
               トップページに戻る
             </a>
@@ -450,11 +451,11 @@ export default function MothersDayGuidePage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>

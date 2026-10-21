@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── SEO Metadata (exported from layout or head) ─── */
 // Note: metadata export is not available in "use client" components.
@@ -52,20 +53,20 @@ export default function ShoboboiGuidePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">ガイド</span>
+                  <span className="text-[#4A4F49]">ガイド</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">花のサブスクが「しょぼい」と言われる理由</span>
+                  <span className="text-[#1F2420] font-medium">花のサブスクが「しょぼい」と言われる理由</span>
                 </li>
               </ol>
             </nav>
@@ -73,34 +74,34 @@ export default function ShoboboiGuidePage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
+        <PageHero path="/guides/shoboi/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
               実態検証ガイド
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               花のサブスクは「しょぼい」「ひどい」のか<br className="hidden md:block" />
               実際に届く花の内容を検証【2026年】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               当サイトでは、花のサブスク（お花の定期便）が「しょぼい」「ひどい」と評価される背景を整理し、
               満足度の高いサービスを選ぶためのポイントを解説します。
             </p>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
-              <ol className="text-sm text-[#666] space-y-2">
-                <li><a href="#why-shoboi" className="hover:text-[#4A7C59] transition-colors">1. 「しょぼい」と言われる3つの理由</a></li>
-                <li><a href="#complaints" className="hover:text-[#4A7C59] transition-colors">2. よくある不満とその原因</a></li>
-                <li><a href="#good-value" className="hover:text-[#4A7C59] transition-colors">3. 費用対効果の高いプラン</a></li>
-                <li><a href="#avoid-disappointment" className="hover:text-[#4A7C59] transition-colors">4. 期待とのギャップを避けるための選び方</a></li>
-                <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">5. 満足度を高める5つのポイント</a></li>
-                <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">6. よくある質問</a></li>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">目次</p>
+              <ol className="text-sm text-[#4A4F49] space-y-2">
+                <li><a href="#why-shoboi" className="hover:text-[#2F5B43] transition-colors">1. 「しょぼい」と言われる3つの理由</a></li>
+                <li><a href="#complaints" className="hover:text-[#2F5B43] transition-colors">2. よくある不満とその原因</a></li>
+                <li><a href="#good-value" className="hover:text-[#2F5B43] transition-colors">3. 費用対効果の高いプラン</a></li>
+                <li><a href="#avoid-disappointment" className="hover:text-[#2F5B43] transition-colors">4. 期待とのギャップを避けるための選び方</a></li>
+                <li><a href="#tips" className="hover:text-[#2F5B43] transition-colors">5. 満足度を高める5つのポイント</a></li>
+                <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">6. よくある質問</a></li>
               </ol>
             </div>
           </div>
@@ -109,29 +110,29 @@ export default function ShoboboiGuidePage() {
         {/* ─── Why "しょぼい" ─── */}
         <section id="why-shoboi" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               「しょぼい」と言われる3つの理由
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               花のサブスクを「しょぼい」「ひどい」と感じる方には、共通する傾向があります。多くの場合、原因はサービスの品質そのものではなく、<strong>事前の期待とのギャップ</strong>にあります。
             </p>
 
             <div className="space-y-4">
-              <div className="bg-[#FFF8F0] rounded-xl p-5 border border-[#F0E0D0]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">理由1：花屋の花束を想定している</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0]">
+                <h3 className="text-sm font-bold text-[#1F2420] mb-2">理由1：花屋の花束を想定している</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花屋で2,000〜3,000円の花束を購入すると、相応のボリュームがあります。一方、花のサブスクの最安プラン（500〜1,000円）で届くのは3〜4本程度です。花屋の花束と同等のボリュームを想定していると、「しょぼい」と感じやすくなります。ポスト投函に対応したサービスは箱のサイズに制限があるため、本数が限られるのは構造上の制約によるものです。
                 </p>
               </div>
-              <div className="bg-[#FFF8F0] rounded-xl p-5 border border-[#F0E0D0]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">理由2：SNSに投稿された写真との差</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0]">
+                <h3 className="text-sm font-bold text-[#1F2420] mb-2">理由2：SNSに投稿された写真との差</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   InstagramやXで見かける花のサブスクの写真は、上位プランのものや、プロが撮影したものであることが多くあります。そのため、最安プランで届く花と比較するとギャップが生じます。また、写真では花瓶やテーブルコーディネートも見栄えに影響しています。実際に届く花の雰囲気を確認したい場合は、一般利用者の投稿を参考にすることをおすすめします。
                 </p>
               </div>
-              <div className="bg-[#FFF8F0] rounded-xl p-5 border border-[#F0E0D0]">
-                <h3 className="text-sm font-bold text-[#333] mb-2">理由3：季節や時期による品質の差</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0]">
+                <h3 className="text-sm font-bold text-[#1F2420] mb-2">理由3：季節や時期による品質の差</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   生花は季節の影響を受けます。特に夏場（7〜8月）は輸送中の温度上昇により花が傷みやすく、「届いた時点でしおれていた」という不満が増える時期です。一方、春（3〜5月）や秋（9〜11月）は花の種類が豊富で、品質も安定しています。季節によって届く花の印象が大きく変わることを事前に理解しておくと、期待とのギャップを抑えられます。
                 </p>
               </div>
@@ -140,49 +141,49 @@ export default function ShoboboiGuidePage() {
         </section>
 
         {/* ─── Common Complaints ─── */}
-        <section id="complaints" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="complaints" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               よくある不満とその原因
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#E0B8B8] text-white text-xs font-bold rounded-lg px-2.5 py-1">不満1</span>
-                  <h3 className="text-sm font-bold text-[#333]">「花が少ない・しょぼい」</h3>
+                  <span className="bg-[#D9BFB1] text-white text-xs font-bold rounded-lg px-2.5 py-1">不満1</span>
+                  <h3 className="text-sm font-bold text-[#1F2420]">「花が少ない・しょぼい」</h3>
                 </div>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                   <strong>原因：</strong>最安プランを選んでいるケースがほとんどです。最安クラスのプラン（1,000円前後）は3〜4本程度で、お試しの位置付けです。1,500円以上のプランを選ぶと、花の本数とバリエーションが大きく増え、満足度も高まります。
                 </p>
-                <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">解決策：medelu Lite（1,330円/回・5〜6本）やAND PLANTS（1,980円/回・6〜8本（2026年10月17日公式確認））など、中価格帯のプランをおすすめします。いずれも送料無料のため、総額でも割安です。</p>
+                <div className="bg-[#EDF1EC] rounded-lg p-3">
+                  <p className="text-xs text-[#2F5B43] font-medium">解決策：medelu Lite（1,330円/回・5〜6本）やAND PLANTS（1,980円/回・6〜8本（2026年10月17日公式確認））など、中価格帯のプランをおすすめします。いずれも送料無料のため、総額でも割安です。</p>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#E0B8B8] text-white text-xs font-bold rounded-lg px-2.5 py-1">不満2</span>
-                  <h3 className="text-sm font-bold text-[#333]">「届いた花がすぐ枯れる」</h3>
+                  <span className="bg-[#D9BFB1] text-white text-xs font-bold rounded-lg px-2.5 py-1">不満2</span>
+                  <h3 className="text-sm font-bold text-[#1F2420]">「届いた花がすぐ枯れる」</h3>
                 </div>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                   <strong>原因：</strong>輸送中の環境（特に夏場の高温）と、到着後のお手入れ不足が主な原因です。ポスト投函の場合、ポスト内の温度が40度以上になることもあり、花が傷む要因となります。
                 </p>
-                <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">解決策：夏場はクール便に対応したサービス（LIFFTなど）を選ぶか、在宅時に受け取れる宅配便プランを選択してください。到着後はすぐに水切りを行い、延命剤を入れた水に生けてください。</p>
+                <div className="bg-[#EDF1EC] rounded-lg p-3">
+                  <p className="text-xs text-[#2F5B43] font-medium">解決策：夏場はクール便に対応したサービス（LIFFTなど）を選ぶか、在宅時に受け取れる宅配便プランを選択してください。到着後はすぐに水切りを行い、延命剤を入れた水に生けてください。</p>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#E0B8B8] text-white text-xs font-bold rounded-lg px-2.5 py-1">不満3</span>
-                  <h3 className="text-sm font-bold text-[#333]">「花の種類が選べない」</h3>
+                  <span className="bg-[#D9BFB1] text-white text-xs font-bold rounded-lg px-2.5 py-1">不満3</span>
+                  <h3 className="text-sm font-bold text-[#1F2420]">「花の種類が選べない」</h3>
                 </div>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                   <strong>原因：</strong>花のサブスクの多くは、プロが旬の花を選ぶ形式です。自分で花を選べない点をデメリットと感じる方もいますが、自分では購入しない花に出会えるというメリットもあります。
                 </p>
-                <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">解決策：色やスタイルを選びたい方には、色指定が可能なHitoHanaをおすすめします。花を自由に選びたい場合は、花屋のオンラインショップで都度購入する方法が適しています。</p>
+                <div className="bg-[#EDF1EC] rounded-lg p-3">
+                  <p className="text-xs text-[#2F5B43] font-medium">解決策：色やスタイルを選びたい方には、色指定が可能なHitoHanaをおすすめします。花を自由に選びたい場合は、花屋のオンラインショップで都度購入する方法が適しています。</p>
                 </div>
               </div>
             </div>
@@ -192,10 +193,10 @@ export default function ShoboboiGuidePage() {
         {/* ─── Good Value Plans ─── */}
         <section id="good-value" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               費用対効果の高いプラン
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               当サイトでは、本数・品質・価格のバランスが取れたプランを選定しました。1本あたりの単価で比較すると、サブスクの価格面での利点がわかります。
             </p>
 
@@ -212,47 +213,47 @@ export default function ShoboboiGuidePage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="font-medium text-[#333]">タスハナ</td>
+                    <td className="font-medium text-[#1F2420]">タスハナ</td>
                     <td>+act 660円/回</td>
                     <td>3本以上</td>
                     <td>330円</td>
-                    <td className="font-bold text-[#4A7C59]">約330円</td>
+                    <td className="font-bold text-[#2F5B43]">約330円</td>
                   </tr>
                   <tr>
-                    <td className="font-medium text-[#333]">medelu</td>
+                    <td className="font-medium text-[#1F2420]">medelu</td>
                     <td>Mini 748円/回</td>
                     <td>3〜4本（2026年10月17日公式確認）</td>
                     <td>無料</td>
-                    <td className="font-bold text-[#4A7C59]">約187〜249円</td>
+                    <td className="font-bold text-[#2F5B43]">約187〜249円</td>
                   </tr>
                   <tr>
-                    <td className="font-medium text-[#333]">medelu</td>
+                    <td className="font-medium text-[#1F2420]">medelu</td>
                     <td>Lite 1,330円/回</td>
                     <td>5〜6本</td>
                     <td>無料</td>
-                    <td className="font-bold text-[#4A7C59]">約266円</td>
+                    <td className="font-bold text-[#2F5B43]">約266円</td>
                   </tr>
                   <tr>
-                    <td className="font-medium text-[#333]">AND PLANTS</td>
+                    <td className="font-medium text-[#1F2420]">AND PLANTS</td>
                     <td>1,980円/回</td>
                     <td>6〜8本（2026年10月17日公式確認）</td>
                     <td>無料</td>
-                    <td className="font-bold text-[#4A7C59]">約248〜330円</td>
+                    <td className="font-bold text-[#2F5B43]">約248〜330円</td>
                   </tr>
                   <tr>
-                    <td className="font-medium text-[#333]">LIFFT</td>
+                    <td className="font-medium text-[#1F2420]">LIFFT</td>
                     <td>スタンダードプラン 3,300円/月（月1回）（2026年10月17日公式確認）。ライト1,480円/回（送料込み・2週間または4週間に1回・5本以上・本州の一部地域のみ）（2026年10月21日公式確認）</td>
                     <td>9本前後（2026年10月17日公式確認）</td>
                     <td>無料</td>
-                    <td className="font-bold text-[#4A7C59]">約367円</td>
+                    <td className="font-bold text-[#2F5B43]">約367円</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-6 bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-              <h3 className="text-sm font-bold text-[#333] mb-2">花屋で購入する場合の価格</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
+            <div className="mt-6 bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-2">花屋で購入する場合の価格</h3>
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 一般的な花屋でミニブーケを購入すると、3〜5本で800〜1,500円程度、1本あたり300〜500円が相場です。medeluやタスハナは1本あたり200円台で、花屋で購入する場合より30〜50%安い計算になります。
               </p>
             </div>
@@ -260,12 +261,12 @@ export default function ShoboboiGuidePage() {
         </section>
 
         {/* ─── Avoid Disappointment ─── */}
-        <section id="avoid-disappointment" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="avoid-disappointment" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               期待とのギャップを避けるためのサービスの選び方
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               花のサブスクを満足して利用するためには、ご自身のニーズに合ったサービスとプランを選ぶことが重要です。以下のポイントを確認したうえで選ぶことをおすすめします。
             </p>
 
@@ -292,13 +293,13 @@ export default function ShoboboiGuidePage() {
                   text: "bloomeeには4回の最低受け取り回数がありますが、medelu、AND PLANTS、LIFFTには回数の条件がなく、いつでも解約できます。タスハナは5回以上の出荷が前提で、5回未満の解約は原則としてできません（2026年10月17日公式確認）。初めて利用する場合は、回数の条件がないサービスから始めることをおすすめします。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <div className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
+                <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
+                  <div className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
                     {item.step}
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -309,7 +310,7 @@ export default function ShoboboiGuidePage() {
         {/* ─── Tips ─── */}
         <section id="tips" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               満足度を高める5つのポイント
             </h2>
 
@@ -341,13 +342,13 @@ export default function ShoboboiGuidePage() {
                   text: "回数の条件がないサービス（medelu、LIFFTなど。タスハナは5回以上の出荷が前提（2026年10月17日公式確認））を順番に利用し、好みに合うサービスを見つける方法もおすすめです。同じ価格帯でもサービスによって花のテイストやアレンジのスタイルが異なり、実際に利用して初めてわかる違いもあります。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <div className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
+                <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
+                  <div className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
                     {item.step}
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -356,23 +357,23 @@ export default function ShoboboiGuidePage() {
         </section>
 
         {/* ─── FAQ ─── */}
-        <section id="faq" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="faq" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のサブスクに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -382,8 +383,8 @@ export default function ShoboboiGuidePage() {
                     </svg>
                   </button>
                   {openFaq === i && (
-                    <div className="px-5 py-4 bg-white border-t border-[#E5E5E5]">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                    <div className="px-5 py-4 bg-white border-t border-[#DEDAD2]">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -397,40 +398,40 @@ export default function ShoboboiGuidePage() {
         {/* 口コミの見方・写真確認のポイント */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               「しょぼい」と感じないための口コミ・写真の確認方法
             </h2>
-            <p className="text-sm text-[#666] mb-6">
+            <p className="text-sm text-[#4A4F49] mb-6">
               SNSやレビューには「しょぼい」「思ったより少ない」という声が見られますが、多くの場合、原因は<strong>プラン選びのミスマッチ</strong>です。契約前に、以下の5つのポイントで実際の内容を確認することをおすすめします。
             </p>
             <div className="space-y-4">
-              <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
-                <h3 className="font-bold text-[#333] mb-2">① Instagramの利用者投稿を時系列で確認する</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="border-l-4 border-[#2F5B43] bg-[#F6F4EF] p-5">
+                <h3 className="font-bold text-[#1F2420] mb-2">① Instagramの利用者投稿を時系列で確認する</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   「#bloomee」「#medelu」「#anddplants」などのハッシュタグで検索し、<strong>直近3か月以内の投稿を10件以上</strong>確認してください。プロモーション投稿ではなく一般利用者の投稿に絞ると、実際の花のボリュームがわかります。
                 </p>
               </div>
-              <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
-                <h3 className="font-bold text-[#333] mb-2">② 同じプランの写真を複数比較する</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="border-l-4 border-[#2F5B43] bg-[#F6F4EF] p-5">
+                <h3 className="font-bold text-[#1F2420] mb-2">② 同じプランの写真を複数比較する</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   季節によって、届く花は変わります。<strong>同じプランの実物写真を最低5パターン</strong>確認し、平均的なボリュームを把握してください。最も良い事例だけを基準にすると、「しょぼい」と感じやすくなります。
                 </p>
               </div>
-              <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
-                <h3 className="font-bold text-[#333] mb-2">③ 「やめた」「解約」に関するレビューを確認する</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="border-l-4 border-[#2F5B43] bg-[#F6F4EF] p-5">
+                <h3 className="font-bold text-[#1F2420] mb-2">③ 「やめた」「解約」に関するレビューを確認する</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   肯定的なレビューだけでなく、<strong>解約した人の理由</strong>も確認してください。「花の本数が思ったより少ない」「届くまで何が来るかわからない」などの不満を事前に把握しておくと、期待値を調整できます。
                 </p>
               </div>
-              <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
-                <h3 className="font-bold text-[#333] mb-2">④ 写真の印象と実物のサイズを比較する</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="border-l-4 border-[#2F5B43] bg-[#F6F4EF] p-5">
+                <h3 className="font-bold text-[#1F2420] mb-2">④ 写真の印象と実物のサイズを比較する</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   公式サイトの花の写真はスタジオで撮影されており、<strong>実物より大きく華やかに見える傾向</strong>があります。一般利用者が自宅の食卓やキッチンで撮影した写真のほうが、実物に近いボリューム感を確認できます。
                 </p>
               </div>
-              <div className="border-l-4 border-[#4A7C59] bg-[#F9F7F3] p-5">
-                <h3 className="font-bold text-[#333] mb-2">⑤ 価格帯と花の本数の相場を把握する</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="border-l-4 border-[#2F5B43] bg-[#F6F4EF] p-5">
+                <h3 className="font-bold text-[#1F2420] mb-2">⑤ 価格帯と花の本数の相場を把握する</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花のサブスクは<strong>1,000円台で3〜4本、2,000円台で5〜8本、3,000円以上で8本以上</strong>が相場です。これを下回る本数の場合は、「しょぼい」と感じる可能性が高くなります。価格帯に合わせて期待値を設定することをおすすめします。
                 </p>
               </div>
@@ -439,40 +440,40 @@ export default function ShoboboiGuidePage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#F3EDE6]">
+        <section id="summary" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               プランを適切に選ぶことで花のサブスクの満足度は高まります
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクが「しょぼい」と感じられる主な原因は、<strong>プラン選びのミスマッチ</strong>です。最安プランはお試し用の位置付けであり、満足度を重視する場合は1,500円以上のプランを選ぶことで、花のボリュームと品質が大きく向上します。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               価格を重視する場合は<strong>medelu</strong>（748円〜・送料無料）、ボリュームとデザインを重視する場合は<strong>AND PLANTS</strong>（1,980円〜・送料無料）、鮮度と品質を重視する場合は<strong>LIFFT</strong>（スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認）、提携農園から直送（2026年10月17日公式確認））をおすすめします。品質保証制度を活用し、季節ごとの花の変化を楽しむことで、花のサブスクを日々の暮らしに取り入れやすくなります。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
                 href="/services/medelu"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 medeluの詳細を見る
               </a>
               <a
                 href="/services/and-plants"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 AND PLANTSの詳細を見る
               </a>
               <a
                 href="/services/lifft"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 LIFFTの詳細を見る
               </a>
             </div>
             <a
               href="/"
-              className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+              className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
             >
               トップページに戻る
             </a>
@@ -480,19 +481,19 @@ export default function ShoboboiGuidePage() {
         </section>
               <section className="py-8">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] border border-[#E5E5E5] rounded-xl p-4 text-sm">
-              <a href="/services/bloomee/" className="text-[#4A7C59] font-bold underline">ブルーミーの値段・料金プランと口コミ・評判の詳細を見る →</a>
+            <div className="bg-[#F6F4EF] border border-[#DEDAD2] rounded-md p-4 text-sm">
+              <a href="/services/bloomee/" className="text-[#2F5B43] font-bold underline">ブルーミーの値段・料金プランと口コミ・評判の詳細を見る →</a>
             </div>
           </div>
         </section>
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>

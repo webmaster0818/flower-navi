@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* --- FAQ Data --- */
 const faqItems = [
@@ -132,20 +133,20 @@ export default function BeginnerGuidePage() {
 
       <main className="flex-1">
         {/* --- Breadcrumbs --- */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">ガイド</span>
+                  <span className="text-[#4A4F49]">ガイド</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">花サブスク初心者ガイド</span>
+                  <span className="text-[#1F2420] font-medium">花サブスク初心者ガイド</span>
                 </li>
               </ol>
             </nav>
@@ -153,55 +154,55 @@ export default function BeginnerGuidePage() {
         </div>
 
         {/* --- Hero Section --- */}
-        <section className="bg-[#E8F0EB] py-12 md:py-20">
+        <PageHero path="/guides/beginner/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
               花サブスク初心者向けガイド
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               花サブスク初心者ガイド｜<br className="hidden md:block" />
               選び方と始め方を解説
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               花のサブスク（定期便）を初めて利用する方に向けて、サービスの選び方と届いたお花の扱い方をご説明します。
               当サイトでは、サービスの選び方・申し込みの流れ・お花の飾り方までを順に解説しています。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">最安プラン</p>
-                <p className="text-xl font-bold text-[#4A7C59]">748円/回〜</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">最安プラン</p>
+                <p className="text-xl font-bold text-[#2F5B43]">748円/回〜</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">申し込み時間</p>
-                <p className="text-xl font-bold text-[#4A7C59]">約5分</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">申し込み時間</p>
+                <p className="text-xl font-bold text-[#2F5B43]">約5分</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">お花の日持ち</p>
-                <p className="text-xl font-bold text-[#4A7C59]">5〜10日</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">お花の日持ち</p>
+                <p className="text-xl font-bold text-[#2F5B43]">5〜10日</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">最低受取回数の設定なし</p>
-                <p className="text-xl font-bold text-[#4A7C59]">複数のサービス</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">最低受取回数の設定なし</p>
+                <p className="text-xl font-bold text-[#2F5B43]">複数のサービス</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         {/* --- Table of Contents --- */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">本ページの内容</p>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">本ページの内容</p>
               <nav>
-                <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#what-is" className="hover:text-[#4A7C59] transition-colors">1. 花のサブスク（定期便）とは</a></li>
-                  <li><a href="#how-it-works" className="hover:text-[#4A7C59] transition-colors">2. 花のサブスクの仕組み（申込から届くまで）</a></li>
-                  <li><a href="#check-points" className="hover:text-[#4A7C59] transition-colors">3. 申し込み前に確認すべき5つの項目</a></li>
-                  <li><a href="#recommended" className="hover:text-[#4A7C59] transition-colors">4. 初心者におすすめのサービス</a></li>
-                  <li><a href="#display-tips" className="hover:text-[#4A7C59] transition-colors">5. 届いたお花の飾り方ガイド</a></li>
-                  <li><a href="#mistakes" className="hover:text-[#4A7C59] transition-colors">6. 初めての方に多い失敗と対策</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">7. 花のサブスク初心者のよくある質問</a></li>
-                  <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">8. まとめ</a></li>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
+                  <li><a href="#what-is" className="hover:text-[#2F5B43] transition-colors">1. 花のサブスク（定期便）とは</a></li>
+                  <li><a href="#how-it-works" className="hover:text-[#2F5B43] transition-colors">2. 花のサブスクの仕組み（申込から届くまで）</a></li>
+                  <li><a href="#check-points" className="hover:text-[#2F5B43] transition-colors">3. 申し込み前に確認すべき5つの項目</a></li>
+                  <li><a href="#recommended" className="hover:text-[#2F5B43] transition-colors">4. 初心者におすすめのサービス</a></li>
+                  <li><a href="#display-tips" className="hover:text-[#2F5B43] transition-colors">5. 届いたお花の飾り方ガイド</a></li>
+                  <li><a href="#mistakes" className="hover:text-[#2F5B43] transition-colors">6. 初めての方に多い失敗と対策</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">7. 花のサブスク初心者のよくある質問</a></li>
+                  <li><a href="#summary" className="hover:text-[#2F5B43] transition-colors">8. まとめ</a></li>
                 </ol>
               </nav>
             </div>
@@ -211,42 +212,42 @@ export default function BeginnerGuidePage() {
         {/* --- What Is Flower Subscription --- */}
         <section id="what-is" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のサブスク（定期便）とは
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               花のサブスクとは、定期的にお花が自宅に届くサービスです。
               「花の定期便」とも呼ばれ、毎週や隔週など決まった頻度で、花屋が選んだ季節のお花がポスト投函や宅配便で届きます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               自分でお花を買いに行く必要がなく、どのようなお花が届くかを楽しみに待つこともできます。
               花屋を利用した経験が少ない方でも気軽に始められることが、花のサブスクの特長です。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
-                <p className="text-sm font-bold text-[#4A7C59] mb-2">手軽さ</p>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#EDF1EC] rounded-md p-5 text-center">
+                <p className="text-sm font-bold text-[#2F5B43] mb-2">手軽さ</p>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   申し込むだけで定期的にお花が届きます。買いに行く手間がかかりません。
                 </p>
               </div>
-              <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
-                <p className="text-sm font-bold text-[#4A7C59] mb-2">お花との出会い</p>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#EDF1EC] rounded-md p-5 text-center">
+                <p className="text-sm font-bold text-[#2F5B43] mb-2">お花との出会い</p>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花屋が選んだ旬のお花が届きます。ご自身では選ばない花に触れる機会になります。
                 </p>
               </div>
-              <div className="bg-[#E8F0EB] rounded-xl p-5 text-center">
-                <p className="text-sm font-bold text-[#4A7C59] mb-2">手頃な価格</p>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#EDF1EC] rounded-md p-5 text-center">
+                <p className="text-sm font-bold text-[#2F5B43] mb-2">手頃な価格</p>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   1回748円から利用でき、花屋で購入するよりも手頃な価格で始められます。
                 </p>
               </div>
             </div>
 
-            <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5">
-              <h3 className="text-sm font-bold text-[#333] mb-3">花のサブスクが適している方</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+            <div className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] p-5">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-3">花のサブスクが適している方</h3>
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ お花のある暮らしを始めたいものの、何から始めればよいかわからない方</li>
                 <li>・ 仕事が忙しく、花屋に行く時間がない方</li>
                 <li>・ お花の知識がなくても気軽に楽しみたい方</li>
@@ -258,34 +259,34 @@ export default function BeginnerGuidePage() {
         </section>
 
         {/* --- How It Works --- */}
-        <section id="how-it-works" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="how-it-works" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のサブスクの仕組み（申込から届くまで）
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花のサブスクの仕組みは簡単で、次の4つの手順で利用を始められます。
             </p>
 
             <div className="space-y-6">
               {stepData.map((item) => (
-                <div key={item.step} className="bg-white rounded-xl border border-[#E5E5E5] p-5 flex gap-4">
+                <div key={item.step} className="bg-white rounded-md border border-[#DEDAD2] p-5 flex gap-4">
                   <div className="shrink-0">
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#4A7C59] text-white text-sm font-bold">
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-md bg-[#2F5B43] text-white text-sm font-bold">
                       {item.step}
                     </span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.description}</p>
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 bg-[#E8F0EB] rounded-xl p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">配送周期について</h3>
-              <p className="text-sm text-[#666] leading-relaxed">
+            <div className="mt-8 bg-[#EDF1EC] rounded-md p-5">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-2">配送周期について</h3>
+              <p className="text-sm text-[#4A4F49] leading-relaxed">
                 隔週配送の場合、届いたお花を5〜10日ほど楽しめるため、お花が枯れる頃に次のお花が届きます。
                 旅行や出張で受け取れない週は、スキップ機能を使えばお届けを休めます。ご自身の生活に合わせて調整できることも、花のサブスクの利点です。
               </p>
@@ -296,60 +297,60 @@ export default function BeginnerGuidePage() {
         {/* --- 5 Check Points --- */}
         <section id="check-points" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               申し込み前に確認すべき5つの項目
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花のサブスクを選ぶ際に、事前に確認していただきたい5つの項目をまとめています。
               この5項目を確認することで、ご自身に合ったサービスを選びやすくなります。
             </p>
 
             <div className="space-y-5">
               {checkPoints.map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] overflow-hidden">
+                <div key={i} className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] overflow-hidden">
                   <div className="px-5 py-4 flex items-start gap-3">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#4A7C59] text-white text-xs font-bold shrink-0 mt-0.5">
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[#2F5B43] text-white text-xs font-bold shrink-0 mt-0.5">
                       {i + 1}
                     </span>
                     <div className="flex-1">
-                      <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
-                      <p className="text-sm text-[#666] leading-relaxed">{item.detail}</p>
+                      <h3 className="text-base font-bold text-[#1F2420] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">{item.detail}</p>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 bg-white rounded-xl border-2 border-[#4A7C59] p-5">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">初めての方向けの選び方の要点</h3>
+            <div className="mt-8 bg-white rounded-md border-2 border-[#2F5B43] p-5">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-3">初めての方向けの選び方の要点</h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse" style={{ minWidth: "480px" }}>
                   <thead>
-                    <tr className="bg-[#E8F0EB]">
-                      <th className="px-3 py-2 text-left font-medium text-[#333]">項目</th>
-                      <th className="px-3 py-2 text-left font-medium text-[#333]">初めての方へのおすすめ</th>
+                    <tr className="bg-[#EDF1EC]">
+                      <th className="px-3 py-2 text-left font-medium text-[#1F2420]">項目</th>
+                      <th className="px-3 py-2 text-left font-medium text-[#1F2420]">初めての方へのおすすめ</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">料金</td>
-                      <td className="px-3 py-2 text-[#666]">送料込みで1回1,000円前後</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">料金</td>
+                      <td className="px-3 py-2 text-[#4A4F49]">送料込みで1回1,000円前後</td>
                     </tr>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">配送方法</td>
-                      <td className="px-3 py-2 text-[#666]">ポスト投函（不在でも受け取れる）</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">配送方法</td>
+                      <td className="px-3 py-2 text-[#4A4F49]">ポスト投函（不在でも受け取れる）</td>
                     </tr>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">配送頻度</td>
-                      <td className="px-3 py-2 text-[#666]">隔週（2週間に1回）</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">配送頻度</td>
+                      <td className="px-3 py-2 text-[#4A4F49]">隔週（2週間に1回）</td>
                     </tr>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">解約条件</td>
-                      <td className="px-3 py-2 text-[#666]">最低受取回数の設定なし</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">解約条件</td>
+                      <td className="px-3 py-2 text-[#4A4F49]">最低受取回数の設定なし</td>
                     </tr>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">品質保証</td>
-                      <td className="px-3 py-2 text-[#666]">あり（再送・返金対応）</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">品質保証</td>
+                      <td className="px-3 py-2 text-[#4A4F49]">あり（再送・返金対応）</td>
                     </tr>
                   </tbody>
                 </table>
@@ -359,72 +360,72 @@ export default function BeginnerGuidePage() {
         </section>
 
         {/* --- Recommended Services --- */}
-        <section id="recommended" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="recommended" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               初心者におすすめのサービス
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               当サイトでは、初めての方に適したサービスとして、次の2つをご紹介します。
               安心感・費用対効果・始めやすさの観点から選定しています。
             </p>
 
             {/* bloomee - Primary Recommendation */}
-            <div className="bg-white rounded-xl border-2 border-[#4A7C59] overflow-hidden mb-6">
-              <div className="px-5 py-4 bg-[#E8F0EB] border-b border-[#C5D9CB] flex items-center gap-3">
-                <span className="bg-[#4A7C59] text-white text-xs font-bold px-3 py-1 rounded">
+            <div className="bg-white rounded-md border-2 border-[#2F5B43] overflow-hidden mb-6">
+              <div className="px-5 py-4 bg-[#EDF1EC] border-b border-[#C9D6CB] flex items-center gap-3">
+                <span className="bg-[#2F5B43] text-white text-xs font-bold px-3 py-1 rounded">
                   初めての方に特におすすめ
                 </span>
-                <h3 className="text-lg font-bold text-[#333]">bloomee（ブルーミー）</h3>
+                <h3 className="text-lg font-bold text-[#1F2420]">bloomee（ブルーミー）</h3>
               </div>
               <div className="p-5">
-                <p className="text-sm text-[#666] leading-relaxed mb-5">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-5">
                   bloomeeは累計3,000万本以上のお届け実績を持つ、日本最大級の花のサブスクサービスです。
                   利用者のSNS投稿やレビュー記事が多く、飾り方の参考情報を探しやすい点が特長です。
                   季節の花が届くため、届くたびに異なる花を楽しめます。お試し・グリーンプランは、ポストへの半投函の形で届きます。
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
-                  <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                    <p className="text-xs text-[#999] mb-1">お試しプラン</p>
-                    <p className="text-lg font-bold text-[#333]">980<span className="text-xs font-normal">円</span></p>
+                  <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                    <p className="text-xs text-[#6B6F6A] mb-1">お試しプラン</p>
+                    <p className="text-lg font-bold text-[#1F2420]">980<span className="text-xs font-normal">円</span></p>
                   </div>
-                  <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                    <p className="text-xs text-[#999] mb-1">送料</p>
-                    <p className="text-lg font-bold text-[#333]">385<span className="text-xs font-normal">円</span></p>
+                  <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                    <p className="text-xs text-[#6B6F6A] mb-1">送料</p>
+                    <p className="text-lg font-bold text-[#1F2420]">385<span className="text-xs font-normal">円</span></p>
                   </div>
-                  <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                    <p className="text-xs text-[#999] mb-1">1回あたり総額</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">1,365<span className="text-xs font-normal">円</span></p>
+                  <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                    <p className="text-xs text-[#6B6F6A] mb-1">1回あたり総額</p>
+                    <p className="text-lg font-bold text-[#2F5B43]">1,365<span className="text-xs font-normal">円</span></p>
                   </div>
-                  <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                    <p className="text-xs text-[#999] mb-1">花の本数</p>
-                    <p className="text-lg font-bold text-[#333]">4本以上</p>
+                  <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                    <p className="text-xs text-[#6B6F6A] mb-1">花の本数</p>
+                    <p className="text-lg font-bold text-[#1F2420]">4本以上</p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5 text-sm">
                   <div className="flex">
-                    <span className="text-[#999] w-28 shrink-0">届き方</span>
-                    <span className="text-[#333]">ポスト投函</span>
+                    <span className="text-[#6B6F6A] w-28 shrink-0">届き方</span>
+                    <span className="text-[#1F2420]">ポスト投函</span>
                   </div>
                   <div className="flex">
-                    <span className="text-[#999] w-28 shrink-0">配送頻度</span>
-                    <span className="text-[#333]">毎週 / 隔週</span>
+                    <span className="text-[#6B6F6A] w-28 shrink-0">配送頻度</span>
+                    <span className="text-[#1F2420]">毎週 / 隔週</span>
                   </div>
                   <div className="flex">
-                    <span className="text-[#999] w-28 shrink-0">最低受取回数</span>
-                    <span className="text-[#333]">4回</span>
+                    <span className="text-[#6B6F6A] w-28 shrink-0">最低受取回数</span>
+                    <span className="text-[#1F2420]">4回</span>
                   </div>
                   <div className="flex">
-                    <span className="text-[#999] w-28 shrink-0">品質保証</span>
-                    <span className="text-[#333]">あり（定期便は2週間以内の連絡で返金・交換）</span>
+                    <span className="text-[#6B6F6A] w-28 shrink-0">品質保証</span>
+                    <span className="text-[#1F2420]">あり（定期便は2週間以内の連絡で返金・交換）</span>
                   </div>
                 </div>
 
-                <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
-                  <p className="text-sm font-bold text-[#4A7C59] mb-2">初めての方におすすめする理由</p>
-                  <ul className="text-sm text-[#666] space-y-1.5">
+                <div className="bg-[#EDF1EC] rounded-lg p-4 mb-5">
+                  <p className="text-sm font-bold text-[#2F5B43] mb-2">初めての方におすすめする理由</p>
+                  <ul className="text-sm text-[#4A4F49] space-y-1.5">
                     <li>・ 花代980円から始められる</li>
                     <li>・ 定期便は2週間以内の連絡で返金・交換の対象（公式・特定商取引法に基づく表記）</li>
                     <li>・ SNSに口コミが多く、飾り方の参考情報が多い</li>
@@ -433,9 +434,9 @@ export default function BeginnerGuidePage() {
                   </ul>
                 </div>
 
-                <div className="bg-[#FDF5F5] rounded-lg p-4 mb-5 border border-[#F0D0D0]">
-                  <p className="text-sm font-bold text-[#333] mb-1">注意点</p>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                <div className="bg-[#F7F1EC] rounded-lg p-4 mb-5 border border-[#E3D3C8]">
+                  <p className="text-sm font-bold text-[#1F2420] mb-1">注意点</p>
+                  <p className="text-sm text-[#4A4F49] leading-relaxed">
                     最低4回の受け取りが条件です。4回受け取る前に解約すると、残り回数分の料金が発生します。
                     最初の4回は毎週のお届けとなるため、約1か月間は継続する必要があります（隔週への変更は4回目の受け取り後に可能です）。
                   </p>
@@ -444,7 +445,7 @@ export default function BeginnerGuidePage() {
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
                     href="/services/bloomee"
-                    className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                    className="inline-block text-center bg-white text-[#2F5B43] font-bold text-sm px-6 py-3 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
                   >
                     bloomeeの詳細レビューを見る
                   </a>
@@ -452,7 +453,7 @@ export default function BeginnerGuidePage() {
                     href="https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"
+                    className="inline-block text-center bg-[#2F5B43] text-white font-bold text-sm px-6 py-3 rounded-md hover:bg-[#234534] transition-colors"
                   >
                     bloomee公式サイトを見る
                   </a>
@@ -461,61 +462,61 @@ export default function BeginnerGuidePage() {
             </div>
 
             {/* medelu - Runner Up */}
-            <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
+            <div className="bg-white rounded-md border border-[#DEDAD2] overflow-hidden">
               <div className="px-5 py-4 bg-[#FFFBEB] border-b border-[#F59E0B] flex items-center gap-3">
                 <span className="bg-[#F59E0B] text-white text-xs font-bold px-3 py-1 rounded">
                   費用を抑えたい方に
                 </span>
-                <h3 className="text-lg font-bold text-[#333]">medelu（メデル）</h3>
+                <h3 className="text-lg font-bold text-[#1F2420]">medelu（メデル）</h3>
               </div>
               <div className="p-5">
-                <p className="text-sm text-[#666] leading-relaxed mb-5">
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-5">
                   medeluは送料無料で最低受取回数の設定がなく、気軽に始めやすい花のサブスクです。
                   Miniプランは1回748円で、業界でも低い価格水準です。生産者と市場から直接仕入れた花を届けると案内しています（2026年10月21日公式確認）。
                   費用を抑えて試したい方や、合わない場合にすぐ解約したい方に適しています。
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
-                  <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                    <p className="text-xs text-[#999] mb-1">Miniプラン</p>
-                    <p className="text-lg font-bold text-[#333]">748<span className="text-xs font-normal">円</span></p>
+                  <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                    <p className="text-xs text-[#6B6F6A] mb-1">Miniプラン</p>
+                    <p className="text-lg font-bold text-[#1F2420]">748<span className="text-xs font-normal">円</span></p>
                   </div>
-                  <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                    <p className="text-xs text-[#999] mb-1">送料</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">無料</p>
+                  <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                    <p className="text-xs text-[#6B6F6A] mb-1">送料</p>
+                    <p className="text-lg font-bold text-[#2F5B43]">無料</p>
                   </div>
-                  <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                    <p className="text-xs text-[#999] mb-1">1回あたり総額</p>
-                    <p className="text-lg font-bold text-[#4A7C59]">748<span className="text-xs font-normal">円</span></p>
+                  <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                    <p className="text-xs text-[#6B6F6A] mb-1">1回あたり総額</p>
+                    <p className="text-lg font-bold text-[#2F5B43]">748<span className="text-xs font-normal">円</span></p>
                   </div>
-                  <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                    <p className="text-xs text-[#999] mb-1">花の本数</p>
-                    <p className="text-lg font-bold text-[#333]">3〜4本</p>
+                  <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                    <p className="text-xs text-[#6B6F6A] mb-1">花の本数</p>
+                    <p className="text-lg font-bold text-[#1F2420]">3〜4本</p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5 text-sm">
                   <div className="flex">
-                    <span className="text-[#999] w-28 shrink-0">届き方</span>
-                    <span className="text-[#333]">ポスト投函</span>
+                    <span className="text-[#6B6F6A] w-28 shrink-0">届き方</span>
+                    <span className="text-[#1F2420]">ポスト投函</span>
                   </div>
                   <div className="flex">
-                    <span className="text-[#999] w-28 shrink-0">配送頻度</span>
-                    <span className="text-[#333]">毎週 / 隔週</span>
+                    <span className="text-[#6B6F6A] w-28 shrink-0">配送頻度</span>
+                    <span className="text-[#1F2420]">毎週 / 隔週</span>
                   </div>
                   <div className="flex">
-                    <span className="text-[#999] w-28 shrink-0">最低受取回数</span>
-                    <span className="text-[#333]">なし</span>
+                    <span className="text-[#6B6F6A] w-28 shrink-0">最低受取回数</span>
+                    <span className="text-[#1F2420]">なし</span>
                   </div>
                   <div className="flex">
-                    <span className="text-[#999] w-28 shrink-0">品質保証</span>
-                    <span className="text-[#333]">あり</span>
+                    <span className="text-[#6B6F6A] w-28 shrink-0">品質保証</span>
+                    <span className="text-[#1F2420]">あり</span>
                   </div>
                 </div>
 
-                <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
-                  <p className="text-sm font-bold text-[#4A7C59] mb-2">初めての方におすすめする理由</p>
-                  <ul className="text-sm text-[#666] space-y-1.5">
+                <div className="bg-[#EDF1EC] rounded-lg p-4 mb-5">
+                  <p className="text-sm font-bold text-[#2F5B43] mb-2">初めての方におすすめする理由</p>
+                  <ul className="text-sm text-[#4A4F49] space-y-1.5">
                     <li>・ 業界でも低い価格水準の748円/回（送料無料）で始められる</li>
                     <li>・ 最低受取回数の設定がなく、いつでも解約可能</li>
                     <li>・ 送料無料のため、表示価格と支払総額が一致しわかりやすい</li>
@@ -527,7 +528,7 @@ export default function BeginnerGuidePage() {
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
                     href="/services/medelu"
-                    className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                    className="inline-block text-center bg-white text-[#2F5B43] font-bold text-sm px-6 py-3 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
                   >
                     medeluの詳細レビューを見る
                   </a>
@@ -535,7 +536,7 @@ export default function BeginnerGuidePage() {
                     href="https://t.felmat.net/fmcl?ak=Z65995.1.I106600F.A135745L"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"
+                    className="inline-block text-center bg-[#2F5B43] text-white font-bold text-sm px-6 py-3 rounded-md hover:bg-[#234534] transition-colors"
                   >
                     medelu公式サイトを見る
                   </a>
@@ -544,47 +545,47 @@ export default function BeginnerGuidePage() {
             </div>
 
             {/* Comparison Box */}
-            <div className="mt-8 bg-white rounded-xl border border-[#E5E5E5] p-5">
-              <h3 className="text-sm font-bold text-[#333] mb-4">2つのサービスの比較</h3>
+            <div className="mt-8 bg-white rounded-md border border-[#DEDAD2] p-5">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-4">2つのサービスの比較</h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse" style={{ minWidth: "480px" }}>
                   <thead>
-                    <tr className="bg-[#E8F0EB]">
-                      <th className="px-3 py-2 text-left font-medium text-[#333]">項目</th>
-                      <th className="px-3 py-2 text-center font-medium text-[#333]">bloomee</th>
-                      <th className="px-3 py-2 text-center font-medium text-[#333]">medelu</th>
+                    <tr className="bg-[#EDF1EC]">
+                      <th className="px-3 py-2 text-left font-medium text-[#1F2420]">項目</th>
+                      <th className="px-3 py-2 text-center font-medium text-[#1F2420]">bloomee</th>
+                      <th className="px-3 py-2 text-center font-medium text-[#1F2420]">medelu</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">1回あたり総額</td>
-                      <td className="px-3 py-2 text-center text-[#333]">1,365円</td>
-                      <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">748円</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">1回あたり総額</td>
+                      <td className="px-3 py-2 text-center text-[#1F2420]">1,365円</td>
+                      <td className="px-3 py-2 text-center text-[#2F5B43] font-bold">748円</td>
                     </tr>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">送料</td>
-                      <td className="px-3 py-2 text-center text-[#333]">385円</td>
-                      <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">無料</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">送料</td>
+                      <td className="px-3 py-2 text-center text-[#1F2420]">385円</td>
+                      <td className="px-3 py-2 text-center text-[#2F5B43] font-bold">無料</td>
                     </tr>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">最低受取回数</td>
-                      <td className="px-3 py-2 text-center text-[#333]">4回</td>
-                      <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">なし</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">最低受取回数</td>
+                      <td className="px-3 py-2 text-center text-[#1F2420]">4回</td>
+                      <td className="px-3 py-2 text-center text-[#2F5B43] font-bold">なし</td>
                     </tr>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">品質保証</td>
-                      <td className="px-3 py-2 text-center text-[#333]">あり</td>
-                      <td className="px-3 py-2 text-center text-[#333]">あり</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">品質保証</td>
+                      <td className="px-3 py-2 text-center text-[#1F2420]">あり</td>
+                      <td className="px-3 py-2 text-center text-[#1F2420]">あり</td>
                     </tr>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">知名度</td>
-                      <td className="px-3 py-2 text-center text-[#4A7C59] font-bold">高い</td>
-                      <td className="px-3 py-2 text-center text-[#333]">中程度</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">知名度</td>
+                      <td className="px-3 py-2 text-center text-[#2F5B43] font-bold">高い</td>
+                      <td className="px-3 py-2 text-center text-[#1F2420]">中程度</td>
                     </tr>
-                    <tr className="border-t border-[#E5E5E5]">
-                      <td className="px-3 py-2 text-[#666]">おすすめの人</td>
-                      <td className="px-3 py-2 text-center text-[#666]">安心感重視</td>
-                      <td className="px-3 py-2 text-center text-[#666]">費用重視</td>
+                    <tr className="border-t border-[#DEDAD2]">
+                      <td className="px-3 py-2 text-[#4A4F49]">おすすめの人</td>
+                      <td className="px-3 py-2 text-center text-[#4A4F49]">安心感重視</td>
+                      <td className="px-3 py-2 text-center text-[#4A4F49]">費用重視</td>
                     </tr>
                   </tbody>
                 </table>
@@ -596,36 +597,36 @@ export default function BeginnerGuidePage() {
         {/* --- How to Display Flowers --- */}
         <section id="display-tips" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               届いたお花の飾り方ガイド
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               届いたお花を長く楽しむための方法を、花瓶の選び方・水替え・置き場所の3つの観点からご説明します。
             </p>
 
             {/* Vase Selection */}
-            <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5 mb-6">
-              <h3 className="text-base font-bold text-[#333] mb-3 flex items-center gap-2">
-                <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#4A7C59] text-white text-xs font-bold">1</span>
+            <div className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] p-5 mb-6">
+              <h3 className="text-base font-bold text-[#1F2420] mb-3 flex items-center gap-2">
+                <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-[#2F5B43] text-white text-xs font-bold">1</span>
                 花瓶の選び方
               </h3>
-              <p className="text-sm text-[#666] leading-relaxed mb-4">
+              <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                 花のサブスクで届くお花は3〜5本程度の小ぶりなブーケが多いため、大きな花瓶は必要ありません。
                 口径5〜8cm、高さ15〜20cm程度の小さめの花瓶が適しています。
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-white rounded-lg p-4 border border-[#E5E5E5]">
-                  <p className="text-sm font-bold text-[#333] mb-2">初めての方に適した花瓶</p>
-                  <ul className="text-sm text-[#666] space-y-1.5">
+                <div className="bg-white rounded-lg p-4 border border-[#DEDAD2]">
+                  <p className="text-sm font-bold text-[#1F2420] mb-2">初めての方に適した花瓶</p>
+                  <ul className="text-sm text-[#4A4F49] space-y-1.5">
                     <li>・ 口が狭めのもの（花がまとまりやすい）</li>
                     <li>・ 透明なガラス製（水の汚れがわかりやすい）</li>
                     <li>・ 安定感のある底が広いもの</li>
                     <li>・ 100円ショップのもので十分</li>
                   </ul>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-[#E5E5E5]">
-                  <p className="text-sm font-bold text-[#333] mb-2">花瓶の代わりになるもの</p>
-                  <ul className="text-sm text-[#666] space-y-1.5">
+                <div className="bg-white rounded-lg p-4 border border-[#DEDAD2]">
+                  <p className="text-sm font-bold text-[#1F2420] mb-2">花瓶の代わりになるもの</p>
+                  <ul className="text-sm text-[#4A4F49] space-y-1.5">
                     <li>・ グラスやコップ</li>
                     <li>・ 空き瓶（ジャムの瓶など）</li>
                     <li>・ マグカップ</li>
@@ -636,18 +637,18 @@ export default function BeginnerGuidePage() {
             </div>
 
             {/* Water Change */}
-            <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5 mb-6">
-              <h3 className="text-base font-bold text-[#333] mb-3 flex items-center gap-2">
-                <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#4A7C59] text-white text-xs font-bold">2</span>
+            <div className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] p-5 mb-6">
+              <h3 className="text-base font-bold text-[#1F2420] mb-3 flex items-center gap-2">
+                <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-[#2F5B43] text-white text-xs font-bold">2</span>
                 水替えの方法
               </h3>
-              <p className="text-sm text-[#666] leading-relaxed mb-4">
+              <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                 水替えはお花を長持ちさせるために最も重要なお手入れです。
                 毎日替えることが望ましく、少なくとも2日に1回は行ってください。
               </p>
-              <div className="bg-white rounded-lg p-4 border border-[#E5E5E5]">
-                <p className="text-sm font-bold text-[#333] mb-3">水替えの手順</p>
-                <ol className="text-sm text-[#666] space-y-2">
+              <div className="bg-white rounded-lg p-4 border border-[#DEDAD2]">
+                <p className="text-sm font-bold text-[#1F2420] mb-3">水替えの手順</p>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
                   <li>1. 花瓶から花を取り出す</li>
                   <li>2. 花瓶の内側をスポンジや指で軽く洗う（ぬめりを取る）</li>
                   <li>3. 茎の先端を1〜2cm斜めにカットする（水切り）</li>
@@ -656,9 +657,9 @@ export default function BeginnerGuidePage() {
                   <li>6. 花を戻す</li>
                 </ol>
               </div>
-              <div className="mt-4 bg-[#E8F0EB] rounded-lg p-4">
-                <p className="text-sm font-bold text-[#4A7C59] mb-1">補足</p>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="mt-4 bg-[#EDF1EC] rounded-lg p-4">
+                <p className="text-sm font-bold text-[#2F5B43] mb-1">補足</p>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   茎を切る際は、よく切れるハサミを使い、水の中で切る「水切り」をおすすめします。
                   切り口を斜めにすることで、水を吸い上げる面積が大きくなり、お花が長持ちします。
                   キッチンバサミでも代用できます。
@@ -667,19 +668,19 @@ export default function BeginnerGuidePage() {
             </div>
 
             {/* Placement */}
-            <div className="bg-[#F8F8F8] rounded-xl border border-[#E5E5E5] p-5">
-              <h3 className="text-base font-bold text-[#333] mb-3 flex items-center gap-2">
-                <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#4A7C59] text-white text-xs font-bold">3</span>
+            <div className="bg-[#F6F4EF] rounded-md border border-[#DEDAD2] p-5">
+              <h3 className="text-base font-bold text-[#1F2420] mb-3 flex items-center gap-2">
+                <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-[#2F5B43] text-white text-xs font-bold">3</span>
                 置き場所の選び方
               </h3>
-              <p className="text-sm text-[#666] leading-relaxed mb-4">
+              <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                 お花を飾る場所によって、見た目の印象も花の持ちも変わります。
                 適切な場所に飾ることで、お花をより長く楽しめます。
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-white rounded-lg p-4 border border-[#E5E5E5]">
-                  <p className="text-sm font-bold text-[#4A7C59] mb-2">おすすめの場所</p>
-                  <ul className="text-sm text-[#666] space-y-1.5">
+                <div className="bg-white rounded-lg p-4 border border-[#DEDAD2]">
+                  <p className="text-sm font-bold text-[#2F5B43] mb-2">おすすめの場所</p>
+                  <ul className="text-sm text-[#4A4F49] space-y-1.5">
                     <li>・ リビングのテーブル</li>
                     <li>・ 玄関（帰宅時に目に入る）</li>
                     <li>・ ダイニングテーブル</li>
@@ -687,9 +688,9 @@ export default function BeginnerGuidePage() {
                     <li>・ デスク周り（仕事中の気分転換に）</li>
                   </ul>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-[#E5E5E5]">
-                  <p className="text-sm font-bold text-[#333] mb-2">避けたい場所</p>
-                  <ul className="text-sm text-[#666] space-y-1.5">
+                <div className="bg-white rounded-lg p-4 border border-[#DEDAD2]">
+                  <p className="text-sm font-bold text-[#1F2420] mb-2">避けたい場所</p>
+                  <ul className="text-sm text-[#4A4F49] space-y-1.5">
                     <li>・ 直射日光が当たる窓際</li>
                     <li>・ エアコンの風が直接当たる場所</li>
                     <li>・ テレビやパソコンなど熱を発する家電の近く</li>
@@ -702,31 +703,31 @@ export default function BeginnerGuidePage() {
         </section>
 
         {/* --- Common Mistakes --- */}
-        <section id="mistakes" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="mistakes" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               初めての方に多い失敗と対策
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花のサブスクを始めたばかりの方に多い失敗例と、その対策をまとめています。
               事前に把握しておくことで、円滑に利用を始められます。
             </p>
 
             <div className="space-y-4">
               {mistakeData.map((item, i) => (
-                <div key={i} className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
+                <div key={i} className="bg-white rounded-md border border-[#DEDAD2] overflow-hidden">
                   <div className="px-5 py-4">
                     <div className="flex items-start gap-3 mb-3">
-                      <span className="bg-[#FDF5F5] text-[#C53030] text-xs font-bold px-2 py-1 rounded border border-[#F0D0D0] shrink-0">
+                      <span className="bg-[#F7F1EC] text-[#C53030] text-xs font-bold px-2 py-1 rounded border border-[#E3D3C8] shrink-0">
                         失敗例
                       </span>
-                      <p className="text-sm font-bold text-[#333]">{item.mistake}</p>
+                      <p className="text-sm font-bold text-[#1F2420]">{item.mistake}</p>
                     </div>
                     <div className="flex items-start gap-3">
-                      <span className="bg-[#E8F0EB] text-[#4A7C59] text-xs font-bold px-2 py-1 rounded border border-[#C5D9CB] shrink-0">
+                      <span className="bg-[#EDF1EC] text-[#2F5B43] text-xs font-bold px-2 py-1 rounded border border-[#C9D6CB] shrink-0">
                         対策
                       </span>
-                      <p className="text-sm text-[#666] leading-relaxed">{item.solution}</p>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">{item.solution}</p>
                     </div>
                   </div>
                 </div>
@@ -738,21 +739,21 @@ export default function BeginnerGuidePage() {
         {/* --- FAQ --- */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               花のサブスク初心者のよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -763,7 +764,7 @@ export default function BeginnerGuidePage() {
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -775,37 +776,37 @@ export default function BeginnerGuidePage() {
         </section>
 
         {/* --- Summary + CTA --- */}
-        <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
+        <section id="summary" className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               初めての方にはbloomeeかmedeluをおすすめします
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花のサブスクは、申し込むだけで花屋が選んだお花が定期的に届くサービスです。
               花屋に行く手間がかからず、季節のお花を楽しめます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               初めてサービスを選ぶ際は、料金（送料込みの総額）・配送方法・配送頻度・解約条件・品質保証の5点をご確認ください。
               選択に迷う場合は、知名度と安心感を重視するならbloomee、費用と始めやすさを重視するならmedeluをおすすめします。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               届いたお花は、こまめな水替えと適切な置き場所を心がけることで、5〜10日ほど楽しめます。
               まずは隔週配送から始めることをおすすめします。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               花のサブスクは、利用を始めた方から満足の声が多く寄せられているサービスです。
               サービス選びの際に、本ページの内容をご活用ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
                 href="/services/bloomee"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 bloomeeの詳細を見る
               </a>
               <a
                 href="/services/medelu"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 medeluの詳細を見る
               </a>
@@ -813,19 +814,19 @@ export default function BeginnerGuidePage() {
             <div className="mt-4 flex justify-center gap-4">
               <a
                 href="/compare/cheap"
-                className="inline-block text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+                className="inline-block text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
               >
                 安い花のサブスクランキングを見る
               </a>
               <a
                 href="/compare/campaign/"
-                className="inline-block text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+                className="inline-block text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
               >
                 初回特典・お試しプランを比較する
               </a>
               <a
                 href="/"
-                className="inline-block text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+                className="inline-block text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
               >
                 トップページに戻る
               </a>
@@ -835,11 +836,11 @@ export default function BeginnerGuidePage() {
       </main>
 
       {/* --- Footer --- */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
 
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。

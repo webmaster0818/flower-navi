@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -123,20 +124,20 @@ export default function HitorigurashiGuidePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">ガイド記事</span>
+                  <span className="text-[#4A4F49]">ガイド記事</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">一人暮らしにおすすめの花サブスク</span>
+                  <span className="text-[#1F2420] font-medium">一人暮らしにおすすめの花サブスク</span>
                 </li>
               </ol>
             </nav>
@@ -144,54 +145,54 @@ export default function HitorigurashiGuidePage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#E8F0EB] py-12 md:py-20">
+        <PageHero path="/guides/hitorigurashi/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
               一人暮らし向けガイド
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               一人暮らしにおすすめの花サブスク3選<br className="hidden md:block" />
               費用と手軽さで比較
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               一人暮らしの部屋に花を飾りたいものの、どのサービスを選べばよいか、継続できるかどうかで迷う方も少なくありません。
               当サイトでは、一人暮らしに適した花のサブスクを3つ選び、費用・手軽さ・受け取りやすさの観点で比較しています。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">最安プラン</p>
-                <p className="text-xl font-bold text-[#4A7C59]">748円/回〜</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">最安プラン</p>
+                <p className="text-xl font-bold text-[#2F5B43]">748円/回〜</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">比較対象</p>
-                <p className="text-xl font-bold text-[#4A7C59]">3サービス</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">比較対象</p>
+                <p className="text-xl font-bold text-[#2F5B43]">3サービス</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">ポスト投函</p>
-                <p className="text-xl font-bold text-[#4A7C59]">全サービス対応</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">ポスト投函</p>
+                <p className="text-xl font-bold text-[#2F5B43]">全サービス対応</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">回数の条件なし</p>
-                <p className="text-xl font-bold text-[#4A7C59]">1サービス</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">回数の条件なし</p>
+                <p className="text-xl font-bold text-[#2F5B43]">1サービス</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">目次</p>
               <nav>
-                <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#why-flowers" className="hover:text-[#4A7C59] transition-colors">1. 一人暮らしに花をおすすめする理由</a></li>
-                  <li><a href="#how-to-choose" className="hover:text-[#4A7C59] transition-colors">2. 一人暮らし向け花サブスクの選び方</a></li>
-                  <li><a href="#ranking-table" className="hover:text-[#4A7C59] transition-colors">3. 一人暮らし向け花サブスク3選 比較表</a></li>
-                  <li><a href="#ranking-detail" className="hover:text-[#4A7C59] transition-colors">4. 各サービスの詳細レビュー</a></li>
-                  <li><a href="#room-tips" className="hover:text-[#4A7C59] transition-colors">5. 一人暮らしの部屋で花を飾る方法</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">6. 一人暮らしの花サブスクに関するよくある質問</a></li>
-                  <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">7. まとめ</a></li>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
+                  <li><a href="#why-flowers" className="hover:text-[#2F5B43] transition-colors">1. 一人暮らしに花をおすすめする理由</a></li>
+                  <li><a href="#how-to-choose" className="hover:text-[#2F5B43] transition-colors">2. 一人暮らし向け花サブスクの選び方</a></li>
+                  <li><a href="#ranking-table" className="hover:text-[#2F5B43] transition-colors">3. 一人暮らし向け花サブスク3選 比較表</a></li>
+                  <li><a href="#ranking-detail" className="hover:text-[#2F5B43] transition-colors">4. 各サービスの詳細レビュー</a></li>
+                  <li><a href="#room-tips" className="hover:text-[#2F5B43] transition-colors">5. 一人暮らしの部屋で花を飾る方法</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">6. 一人暮らしの花サブスクに関するよくある質問</a></li>
+                  <li><a href="#summary" className="hover:text-[#2F5B43] transition-colors">7. まとめ</a></li>
                 </ol>
               </nav>
             </div>
@@ -201,35 +202,35 @@ export default function HitorigurashiGuidePage() {
         {/* ─── Why Flowers for Solo Living ─── */}
         <section id="why-flowers" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               一人暮らしに花をおすすめする理由
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               一人暮らしの部屋に花を飾ることには、次のような利点があります。
             </p>
 
             <div className="space-y-5 mb-8">
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-2">部屋の雰囲気が変わる</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-2">部屋の雰囲気が変わる</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   ワンルームや1Kの部屋でも、テーブルに花が一輪あるだけで空間の印象は大きく変わります。殺風景になりがちな一人暮らしの部屋に、自然の彩りを加えられます。インテリアに費用をかけなくても、数百円の花で部屋の印象を整えられる点は、費用対効果の高い方法といえます。
                 </p>
               </div>
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-2">リラックス効果・ストレス軽減</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-2">リラックス効果・ストレス軽減</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花には視覚的なリラックス効果があるとされています。仕事や学校から帰宅した際、部屋に花があることで気持ちが和らぎます。一人暮らしでは会話の機会が少ない分、花の手入れが日々の楽しみや癒やしになっているという声も多く聞かれます。
                 </p>
               </div>
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-2">季節感を感じられる</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-2">季節感を感じられる</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   花のサブスクでは、季節に合わせた旬の花が届きます。忙しい日々の中でも、季節の移り変わりを感じられます。春はチューリップ、夏はヒマワリ、秋はコスモス、冬はスイートピーなど、季節ごとの花を楽しめます。
                 </p>
               </div>
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-2">生活にリズムが生まれる</h3>
-                <p className="text-sm text-[#666] leading-relaxed">
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-2">生活にリズムが生まれる</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
                   定期的に花が届くことで、水替えや手入れといった習慣が生まれます。一人暮らしは生活が不規則になりがちですが、花の手入れが生活のリズムを整えるきっかけになります。
                 </p>
               </div>
@@ -238,66 +239,66 @@ export default function HitorigurashiGuidePage() {
         </section>
 
         {/* ─── How to Choose ─── */}
-        <section id="how-to-choose" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="how-to-choose" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               一人暮らし向け花サブスクの選び方
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               一人暮らしの方が花のサブスクを選ぶ際に重視すべき点は、次の4つです。
             </p>
 
             <div className="space-y-5">
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     Point 1
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">ポスト投函で受け取れるかを確認する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">ポスト投函で受け取れるかを確認する</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">
                       一人暮らしで最も重要なのは受け取り方法です。仕事や外出で不在が多い場合は、ポスト投函に対応したサービスをおすすめします。宅配便の場合は再配達の手間がかかり、負担になるためです。当サイトで紹介する3サービスは、いずれもポスト投函に対応しています。
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     Point 2
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">送料込みの総額が予算内に収まるかを確認する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">送料込みの総額が予算内に収まるかを確認する</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">
                       花代だけでなく、送料を含めた総額で比較することが大切です。一人暮らしの生活費の中で無理なく続けるには、月1,000〜2,000円程度が目安です。送料無料のサービスであれば、表示価格がそのまま支払額になるため、費用を把握しやすくなります。
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     Point 3
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">回数の条件と解約の自由度を確認する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">回数の条件と解約の自由度を確認する</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">
                       初めて花のサブスクを利用する場合は、回数の条件がないサービスのほうが安心です。イメージと異なった場合や、手入れの時間が取れない場合に、すぐ解約できるかどうかは重要な判断材料です。medeluには回数の条件がありません。hanamekuは最低回数の記載はありませんが、初回（定期1回目）の解約は受け付けていません。bloomeeには4回の最低受け取り回数があります。
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+              <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                     Point 4
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#333] mb-2">スキップ機能の有無を確認する</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">スキップ機能の有無を確認する</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">
                       一人暮らしでは、旅行や帰省で家を空ける機会もあります。その際に配送をスキップできる機能があると便利です。当サイトで紹介する3サービスはいずれもスキップに対応しており、不在時の不要な出費を抑えられます。
                     </p>
                   </div>
@@ -310,17 +311,17 @@ export default function HitorigurashiGuidePage() {
         {/* ─── Ranking Table ─── */}
         <section id="ranking-table" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               一人暮らし向け花サブスク3選 比較表
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               一人暮らしにおすすめの3サービスを、料金・配送方法・回数の条件などの観点で比較しています。
             </p>
 
             <div className="overflow-x-auto -mx-4 px-4">
-              <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden shadow-sm" style={{ minWidth: "640px" }}>
+              <table className="w-full text-sm border-collapse bg-white rounded-md overflow-hidden" style={{ minWidth: "640px" }}>
                 <thead>
-                  <tr className="bg-[#4A7C59] text-white">
+                  <tr className="bg-[#2F5B43] text-white">
                     <th className="px-4 py-3 text-left font-medium">順位</th>
                     <th className="px-4 py-3 text-left font-medium">サービス名</th>
                     <th className="px-4 py-3 text-right font-medium">花代</th>
@@ -332,9 +333,9 @@ export default function HitorigurashiGuidePage() {
                 </thead>
                 <tbody>
                   {rankingData.map((item, i) => (
-                    <tr key={i} className={`border-t border-[#E5E5E5] ${i === 0 ? "bg-[#FFFBEB]" : ""}`}>
+                    <tr key={i} className={`border-t border-[#DEDAD2] ${i === 0 ? "bg-[#FFFBEB]" : ""}`}>
                       <td className="px-4 py-4">
-                        <span className={`inline-flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold ${
+                        <span className={`inline-flex items-center justify-center w-7 h-7 rounded-md text-xs font-bold ${
                           i === 0 ? "bg-[#F59E0B] text-white" :
                           i === 1 ? "bg-[#9CA3AF] text-white" :
                           "bg-[#B45309] text-white"
@@ -343,34 +344,34 @@ export default function HitorigurashiGuidePage() {
                         </span>
                       </td>
                       <td className="px-4 py-4">
-                        <a href={item.url} className="font-bold text-[#4A7C59] hover:underline">
+                        <a href={item.url} className="font-bold text-[#2F5B43] hover:underline">
                           {item.name}
                         </a>
-                        <p className="text-xs text-[#999]">{item.nameJa}</p>
+                        <p className="text-xs text-[#6B6F6A]">{item.nameJa}</p>
                       </td>
-                      <td className="px-4 py-4 text-right text-[#333]">{item.price.toLocaleString()}円</td>
+                      <td className="px-4 py-4 text-right text-[#1F2420]">{item.price.toLocaleString()}円</td>
                       <td className="px-4 py-4 text-right">
                         {item.shipping === 0 ? (
-                          <span className="text-[#4A7C59] font-medium">無料</span>
+                          <span className="text-[#2F5B43] font-medium">無料</span>
                         ) : item.shipping ? (
-                          <span className="text-[#666]">{item.shipping}円</span>
+                          <span className="text-[#4A4F49]">{item.shipping}円</span>
                         ) : (
-                          <span className="text-xs text-[#999]">別途</span>
+                          <span className="text-xs text-[#6B6F6A]">別途</span>
                         )}
                       </td>
                       <td className="px-4 py-4 text-right">
                         {item.total ? (
-                          <span className="font-bold text-[#333]">{item.total.toLocaleString()}円</span>
+                          <span className="font-bold text-[#1F2420]">{item.total.toLocaleString()}円</span>
                         ) : (
-                          <span className="text-xs text-[#999]">{item.price.toLocaleString()}円＋送料</span>
+                          <span className="text-xs text-[#6B6F6A]">{item.price.toLocaleString()}円＋送料</span>
                         )}
                       </td>
-                      <td className="px-4 py-4 text-center text-[#666]">{item.delivery}</td>
+                      <td className="px-4 py-4 text-center text-[#4A4F49]">{item.delivery}</td>
                       <td className="px-4 py-4 text-center">
                         {item.minOrders === "なし" ? (
-                          <span className="text-[#4A7C59] font-medium">なし</span>
+                          <span className="text-[#2F5B43] font-medium">なし</span>
                         ) : (
-                          <span className="text-[#666]">{item.minOrders}</span>
+                          <span className="text-[#4A4F49]">{item.minOrders}</span>
                         )}
                       </td>
                     </tr>
@@ -379,9 +380,9 @@ export default function HitorigurashiGuidePage() {
               </table>
             </div>
 
-            <div className="mt-6 bg-white rounded-xl border border-[#E5E5E5] p-5">
-              <h3 className="text-sm font-bold text-[#333] mb-3">表の補足</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+            <div className="mt-6 bg-white rounded-md border border-[#DEDAD2] p-5">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-3">表の補足</h3>
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ 表示価格はすべて税込です</li>
                 <li>・ hanamekuのライトプランは配送料込みで、追加の送料はかかりません。セルフアレンジプランは地域により220〜550円の追加送料がかかります（2026年10月17日に公式サイトで確認）</li>
                 <li>・ bloomeeは4回の最低受け取り回数があります</li>
@@ -392,21 +393,21 @@ export default function HitorigurashiGuidePage() {
         </section>
 
         {/* ─── Ranking Detail ─── */}
-        <section id="ranking-detail" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="ranking-detail" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               各サービスの詳細レビュー
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               一人暮らしの視点から、3サービスそれぞれの特長と注意点を解説します。
             </p>
 
             <div className="space-y-8">
               {rankingData.map((item) => (
-                <div key={item.rank} className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
+                <div key={item.rank} className="bg-white rounded-md border border-[#DEDAD2] overflow-hidden">
                   {/* Service Header */}
-                  <div className={`px-5 py-4 flex items-center gap-3 ${item.rank === 1 ? "bg-[#FFFBEB] border-b border-[#F59E0B]" : "bg-[#E8F0EB] border-b border-[#C5D9CB]"}`}>
-                    <span className={`inline-flex items-center justify-center w-9 h-9 rounded-full text-sm font-bold ${
+                  <div className={`px-5 py-4 flex items-center gap-3 ${item.rank === 1 ? "bg-[#FFFBEB] border-b border-[#F59E0B]" : "bg-[#EDF1EC] border-b border-[#C9D6CB]"}`}>
+                    <span className={`inline-flex items-center justify-center w-9 h-9 rounded-md text-sm font-bold ${
                       item.rank === 1 ? "bg-[#F59E0B] text-white" :
                       item.rank === 2 ? "bg-[#9CA3AF] text-white" :
                       "bg-[#B45309] text-white"
@@ -414,10 +415,10 @@ export default function HitorigurashiGuidePage() {
                       {item.rank}位
                     </span>
                     <div>
-                      <h3 className="text-lg font-bold text-[#333]">
+                      <h3 className="text-lg font-bold text-[#1F2420]">
                         {item.name}（{item.nameJa}）{item.plan}
                       </h3>
-                      <p className="text-sm text-[#666]">{item.highlight}</p>
+                      <p className="text-sm text-[#4A4F49]">{item.highlight}</p>
                     </div>
                   </div>
 
@@ -425,15 +426,15 @@ export default function HitorigurashiGuidePage() {
                   <div className="p-5">
                     {/* Price Breakdown */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
-                      <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">花代</p>
-                        <p className="text-lg font-bold text-[#333]">{item.price.toLocaleString()}<span className="text-xs font-normal">円</span></p>
+                      <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">花代</p>
+                        <p className="text-lg font-bold text-[#1F2420]">{item.price.toLocaleString()}<span className="text-xs font-normal">円</span></p>
                       </div>
-                      <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">送料</p>
-                        <p className="text-lg font-bold text-[#333]">
+                      <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">送料</p>
+                        <p className="text-lg font-bold text-[#1F2420]">
                           {item.shipping === 0 ? (
-                            <span className="text-[#4A7C59]">無料</span>
+                            <span className="text-[#2F5B43]">無料</span>
                           ) : item.shipping ? (
                             <>{item.shipping}<span className="text-xs font-normal">円</span></>
                           ) : (
@@ -441,9 +442,9 @@ export default function HitorigurashiGuidePage() {
                           )}
                         </p>
                       </div>
-                      <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">1回あたり総額</p>
-                        <p className="text-lg font-bold text-[#4A7C59]">
+                      <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">1回あたり総額</p>
+                        <p className="text-lg font-bold text-[#2F5B43]">
                           {item.total ? (
                             <>{item.total.toLocaleString()}<span className="text-xs font-normal">円</span></>
                           ) : (
@@ -451,42 +452,42 @@ export default function HitorigurashiGuidePage() {
                           )}
                         </p>
                       </div>
-                      <div className="bg-[#F8F8F8] rounded-lg p-3 text-center border border-[#E5E5E5]">
-                        <p className="text-xs text-[#999] mb-1">花の本数</p>
-                        <p className="text-lg font-bold text-[#333]">{item.flowers}</p>
+                      <div className="bg-[#F6F4EF] rounded-lg p-3 text-center border border-[#DEDAD2]">
+                        <p className="text-xs text-[#6B6F6A] mb-1">花の本数</p>
+                        <p className="text-lg font-bold text-[#1F2420]">{item.flowers}</p>
                       </div>
                     </div>
 
                     {/* Info Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5 text-sm">
                       <div className="flex">
-                        <span className="text-[#999] w-28 shrink-0">届き方</span>
-                        <span className="text-[#333]">{item.delivery}</span>
+                        <span className="text-[#6B6F6A] w-28 shrink-0">届き方</span>
+                        <span className="text-[#1F2420]">{item.delivery}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-28 shrink-0">配送頻度</span>
-                        <span className="text-[#333]">{item.frequency}</span>
+                        <span className="text-[#6B6F6A] w-28 shrink-0">配送頻度</span>
+                        <span className="text-[#1F2420]">{item.frequency}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-28 shrink-0">回数の条件</span>
-                        <span className="text-[#333]">{item.minOrders}</span>
+                        <span className="text-[#6B6F6A] w-28 shrink-0">回数の条件</span>
+                        <span className="text-[#1F2420]">{item.minOrders}</span>
                       </div>
                       <div className="flex">
-                        <span className="text-[#999] w-28 shrink-0">品質保証</span>
-                        <span className="text-[#333]">{item.quality}</span>
+                        <span className="text-[#6B6F6A] w-28 shrink-0">品質保証</span>
+                        <span className="text-[#1F2420]">{item.quality}</span>
                       </div>
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm text-[#666] leading-relaxed mb-5">
+                    <p className="text-sm text-[#4A4F49] leading-relaxed mb-5">
                       {item.detail}
                     </p>
 
                     {/* Best For */}
-                    <div className="bg-[#E8F0EB] rounded-lg p-4 mb-5">
+                    <div className="bg-[#EDF1EC] rounded-lg p-4 mb-5">
                       <p className="text-sm">
-                        <span className="font-bold text-[#4A7C59]">おすすめの方：</span>
-                        <span className="text-[#666]">{item.bestFor}</span>
+                        <span className="font-bold text-[#2F5B43]">おすすめの方：</span>
+                        <span className="text-[#4A4F49]">{item.bestFor}</span>
                       </p>
                     </div>
 
@@ -494,7 +495,7 @@ export default function HitorigurashiGuidePage() {
                     <div className="flex flex-col sm:flex-row gap-3">
                       <a
                         href={item.url}
-                        className="inline-block text-center bg-white text-[#4A7C59] font-bold text-sm px-6 py-3 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                        className="inline-block text-center bg-white text-[#2F5B43] font-bold text-sm px-6 py-3 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
                       >
                         {item.name}の詳細レビューを見る
                       </a>
@@ -502,7 +503,7 @@ export default function HitorigurashiGuidePage() {
                         href={item.officialUrl}
                         target="_blank"
                         rel="noopener noreferrer nofollow"
-                        className="inline-block text-center bg-[#4A7C59] text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-[#3A6247] transition-colors shadow-sm"
+                        className="inline-block text-center bg-[#2F5B43] text-white font-bold text-sm px-6 py-3 rounded-md hover:bg-[#234534] transition-colors"
                       >
                         {item.name}公式サイトはこちら
                       </a>
@@ -517,62 +518,62 @@ export default function HitorigurashiGuidePage() {
         {/* ─── Room Decoration Tips ─── */}
         <section id="room-tips" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               一人暮らしの部屋で花を飾る方法
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               ワンルームなどスペースが限られた部屋でも、花を飾ることは可能です。一人暮らしの部屋で花を飾る際のポイントをご紹介します。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">おすすめの飾る場所</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li>・ <span className="font-medium text-[#333]">テーブル・デスクの隅</span> - 食事中やリモートワーク中に目に入り、気分転換になる</li>
-                  <li>・ <span className="font-medium text-[#333]">キッチンカウンター</span> - 料理中に花が目に入り、気分が明るくなる</li>
-                  <li>・ <span className="font-medium text-[#333]">洗面台</span> - 朝の身支度の際に気分を切り替えられる</li>
-                  <li>・ <span className="font-medium text-[#333]">窓際</span> - 自然光で花がきれいに見える（直射日光は避ける）</li>
-                  <li>・ <span className="font-medium text-[#333]">玄関</span> - 帰宅時に最初に目に入り、出迎えられる印象になる</li>
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">おすすめの飾る場所</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
+                  <li>・ <span className="font-medium text-[#1F2420]">テーブル・デスクの隅</span> - 食事中やリモートワーク中に目に入り、気分転換になる</li>
+                  <li>・ <span className="font-medium text-[#1F2420]">キッチンカウンター</span> - 料理中に花が目に入り、気分が明るくなる</li>
+                  <li>・ <span className="font-medium text-[#1F2420]">洗面台</span> - 朝の身支度の際に気分を切り替えられる</li>
+                  <li>・ <span className="font-medium text-[#1F2420]">窓際</span> - 自然光で花がきれいに見える（直射日光は避ける）</li>
+                  <li>・ <span className="font-medium text-[#1F2420]">玄関</span> - 帰宅時に最初に目に入り、出迎えられる印象になる</li>
                 </ul>
               </div>
 
-              <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
-                <h3 className="text-base font-bold text-[#333] mb-3">花瓶がなくても飾れます</h3>
-                <ul className="text-sm text-[#666] space-y-2">
-                  <li>・ <span className="font-medium text-[#333]">100円ショップのガラスコップ</span> - 3本程度であればコップで十分に飾れる</li>
-                  <li>・ <span className="font-medium text-[#333]">ジャムやソースの空き瓶</span> - 洗って再利用でき、ナチュラルな雰囲気になる</li>
-                  <li>・ <span className="font-medium text-[#333]">マグカップ</span> - 使わなくなったカップも花瓶の代わりになる</li>
-                  <li>・ <span className="font-medium text-[#333]">ペットボトルを切ったもの</span> - 一時的な代用として使える</li>
-                  <li>・ <span className="font-medium text-[#333]">100円ショップの一輪挿し</span> - 110円で購入でき、デザインの選択肢も多い</li>
+              <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">花瓶がなくても飾れます</h3>
+                <ul className="text-sm text-[#4A4F49] space-y-2">
+                  <li>・ <span className="font-medium text-[#1F2420]">100円ショップのガラスコップ</span> - 3本程度であればコップで十分に飾れる</li>
+                  <li>・ <span className="font-medium text-[#1F2420]">ジャムやソースの空き瓶</span> - 洗って再利用でき、ナチュラルな雰囲気になる</li>
+                  <li>・ <span className="font-medium text-[#1F2420]">マグカップ</span> - 使わなくなったカップも花瓶の代わりになる</li>
+                  <li>・ <span className="font-medium text-[#1F2420]">ペットボトルを切ったもの</span> - 一時的な代用として使える</li>
+                  <li>・ <span className="font-medium text-[#1F2420]">100円ショップの一輪挿し</span> - 110円で購入でき、デザインの選択肢も多い</li>
                 </ul>
               </div>
             </div>
 
-            <div className="bg-[#E8F0EB] rounded-xl p-5 md:p-6 mb-6">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-3">花を長持ちさせる基本のお手入れ</h3>
-              <div className="space-y-3 text-sm text-[#666]">
+            <div className="bg-[#EDF1EC] rounded-md p-5 md:p-6 mb-6">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-3">花を長持ちさせる基本のお手入れ</h3>
+              <div className="space-y-3 text-sm text-[#4A4F49]">
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0">1</span>
-                  <p><span className="font-medium text-[#333]">水替えは2〜3日に1回</span> - 水が濁ると雑菌が繁殖し、花が傷みやすくなります。こまめな水替えが長持ちの基本です。</p>
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-md w-6 h-6 flex items-center justify-center shrink-0">1</span>
+                  <p><span className="font-medium text-[#1F2420]">水替えは2〜3日に1回</span> - 水が濁ると雑菌が繁殖し、花が傷みやすくなります。こまめな水替えが長持ちの基本です。</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0">2</span>
-                  <p><span className="font-medium text-[#333]">茎を斜めにカット</span> - 水替えのたびに茎を1cmほど斜めに切ると、水の吸い上げが良くなります。キッチンバサミでも問題ありません。</p>
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-md w-6 h-6 flex items-center justify-center shrink-0">2</span>
+                  <p><span className="font-medium text-[#1F2420]">茎を斜めにカット</span> - 水替えのたびに茎を1cmほど斜めに切ると、水の吸い上げが良くなります。キッチンバサミでも問題ありません。</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0">3</span>
-                  <p><span className="font-medium text-[#333]">直射日光・エアコンの風を避ける</span> - 直射日光は花を傷め、エアコンの乾燥した風も花持ちを悪くします。間接光の当たる涼しい場所が最適です。</p>
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-md w-6 h-6 flex items-center justify-center shrink-0">3</span>
+                  <p><span className="font-medium text-[#1F2420]">直射日光・エアコンの風を避ける</span> - 直射日光は花を傷め、エアコンの乾燥した風も花持ちを悪くします。間接光の当たる涼しい場所が最適です。</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0">4</span>
-                  <p><span className="font-medium text-[#333]">付属の栄養剤を使う</span> - 花のサブスクには延命剤が同封されていることが多く、水に混ぜることで花持ちが大きく改善します。</p>
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-md w-6 h-6 flex items-center justify-center shrink-0">4</span>
+                  <p><span className="font-medium text-[#1F2420]">付属の栄養剤を使う</span> - 花のサブスクには延命剤が同封されていることが多く、水に混ぜることで花持ちが大きく改善します。</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
-              <h3 className="text-sm font-bold text-[#333] mb-2">一人暮らしの方へのご注意</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+            <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#E3D3C8]">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-2">一人暮らしの方へのご注意</h3>
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ 長期不在の際は、花を処分してから外出してください（水が腐ると不衛生になるためです）</li>
                 <li>・ 猫を飼っている場合、ユリ科の花は猫に有毒なため注意が必要です</li>
                 <li>・ 夏場は水が傷みやすいため、こまめに水を替えてください</li>
@@ -582,23 +583,23 @@ export default function HitorigurashiGuidePage() {
         </section>
 
         {/* ─── FAQ ─── */}
-        <section id="faq" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="faq" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               一人暮らしの花サブスクに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-white hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -608,8 +609,8 @@ export default function HitorigurashiGuidePage() {
                     </svg>
                   </button>
                   {openFaq === i && (
-                    <div className="px-5 py-4 bg-[#F8F8F8]">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                    <div className="px-5 py-4 bg-[#F6F4EF]">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -621,46 +622,46 @@ export default function HitorigurashiGuidePage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
+        <section id="summary" className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               一人暮らしの方にはmedeluをおすすめします
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               当サイトで一人暮らし向けの花のサブスクを3つ比較した結果、総合的に最もおすすめのサービスはmedelu（メデル）です。
               748円から始められる価格、送料無料、ポスト投函による不在時の受け取り、回数の条件がなくいつでも解約できる点など、一人暮らしの方が求める条件をすべて満たしています。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               知名度と安心感を重視する場合はbloomee（ブルーミー）、鮮度を重視する場合はhanameku（ハナメク）も選択肢になります。
               bloomeeはSNS上の情報が多く、初めての方も利用のイメージをつかみやすいサービスです。hanamekuは市場直送で鮮度が高く、セルフアレンジプランなら月1回から始められる点が特長です。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               一人暮らしの部屋に花を飾ることで、日々の暮らしに彩りが加わります。
               まずは月700〜1,400円程度の予算から、花のある生活を始めることをおすすめします。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
                 href="/services/medelu"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 1位 medeluの詳細を見る
               </a>
               <a
                 href="/services/bloomee"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 2位 bloomeeの詳細を見る
               </a>
               <a
                 href="/services/hanameku"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 3位 hanamekuの詳細を見る
               </a>
             </div>
             <a
               href="/"
-              className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+              className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
             >
               トップページに戻る
             </a>
@@ -669,11 +670,11 @@ export default function HitorigurashiGuidePage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
 
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。

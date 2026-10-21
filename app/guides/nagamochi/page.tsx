@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/app/components/Header";
+import PageHero from "@/app/components/PageHero";
 
 /* ─── FAQ Data ─── */
 const faqItems = [
@@ -49,44 +50,44 @@ export default function NagamochiGuidePage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
-                <li><a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a></li>
+                <li><a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#666]">ガイド</span></li>
+                <li><span className="text-[#4A4F49]">ガイド</span></li>
                 <li aria-hidden="true">/</li>
-                <li><span className="text-[#333] font-medium">切り花を長持ちさせる方法</span></li>
+                <li><span className="text-[#1F2420] font-medium">切り花を長持ちさせる方法</span></li>
               </ol>
             </nav>
           </div>
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#F3EDE6] py-12 md:py-20">
+        <PageHero path="/guides/nagamochi/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">お手入れガイド</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">お手入れガイド</p>
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               切り花を長持ちさせる方法10選<br className="hidden md:block" />
               水切りから温度管理まで【2026年】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               届いた花をより長く楽しみたい方に向けて、
               当サイトでは水切りから温度管理まで、花の寿命を延ばす10の方法を解説します。
             </p>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
-              <ol className="text-sm text-[#666] space-y-2">
-                <li><a href="#techniques" className="hover:text-[#4A7C59] transition-colors">1. 長持ちさせる10の方法</a></li>
-                <li><a href="#ng" className="hover:text-[#4A7C59] transition-colors">2. 避けるべき行為</a></li>
-                <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">3. よくある質問</a></li>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">目次</p>
+              <ol className="text-sm text-[#4A4F49] space-y-2">
+                <li><a href="#techniques" className="hover:text-[#2F5B43] transition-colors">1. 長持ちさせる10の方法</a></li>
+                <li><a href="#ng" className="hover:text-[#2F5B43] transition-colors">2. 避けるべき行為</a></li>
+                <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">3. よくある質問</a></li>
               </ol>
             </div>
           </div>
@@ -95,7 +96,7 @@ export default function NagamochiGuidePage() {
         {/* ─── 10 Techniques ─── */}
         <section id="techniques" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               切り花を長持ちさせる10の方法
             </h2>
             <div className="space-y-4">
@@ -111,11 +112,11 @@ export default function NagamochiGuidePage() {
                 { num: "9", title: "枯れた花はすぐに取り除く", text: "枯れた花からはエチレンガス（老化促進ホルモン）が発生し、周りの花の寿命も縮めてしまいます。しおれ始めた花は早めに取り除き、状態の良い花だけを残してください。" },
                 { num: "10", title: "水の量を花に合わせる", text: "バラやひまわりなど茎が太い花は深水（茎の半分以上が浸かる量）、ガーベラやチューリップなど茎が腐りやすい花は浅水（5cm程度）が適しています。花の種類に合わせて水量を調整することで、花持ちが変わります。" },
               ].map((item, i) => (
-                <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5] flex items-start gap-4">
-                  <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg w-7 h-7 flex items-center justify-center shrink-0">{item.num}</span>
+                <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
+                  <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg w-7 h-7 flex items-center justify-center shrink-0">{item.num}</span>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -124,9 +125,9 @@ export default function NagamochiGuidePage() {
         </section>
 
         {/* ─── NG Actions ─── */}
-        <section id="ng" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="ng" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               避けるべき行為5選
             </h2>
             <div className="space-y-4">
@@ -137,11 +138,11 @@ export default function NagamochiGuidePage() {
                 { title: "花びらに水をかける", text: "霧吹きなどで花びらに水をかけると、花びらにシミができたり、カビが発生したりする原因になります。水分は花瓶の水だけで十分です。" },
                 { title: "ハサミではなく手でちぎる", text: "茎を手でちぎると導管が潰れ、水を吸い上げにくくなります。必ず清潔なハサミやカッターで斜めにカットしてください。" },
               ].map((item, i) => (
-                <div key={i} className="bg-[#FDF5F5] rounded-xl p-5 border border-[#E0B8B8] flex items-start gap-3">
-                  <span className="text-[#C4877A] text-lg shrink-0">&#10005;</span>
+                <div key={i} className="bg-[#F7F1EC] rounded-md p-5 border border-[#D9BFB1] flex items-start gap-3">
+                  <span className="text-[#B0694F] text-lg shrink-0">&#10005;</span>
                   <div>
-                    <h3 className="text-sm font-bold text-[#333] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                    <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -152,24 +153,24 @@ export default function NagamochiGuidePage() {
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               切り花のお手入れに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">Q. {item.q}</span>
-                    <svg className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">Q. {item.q}</span>
+                    <svg className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">A. {item.a}</p>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">A. {item.a}</p>
                     </div>
                   )}
                 </div>
@@ -179,26 +180,26 @@ export default function NagamochiGuidePage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section className="py-12 md:py-16 bg-[#F3EDE6]">
+        <section className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               基本の3つの手順で花持ちが大幅に向上します
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               切り花を長持ちさせるために最も重要なのは、<strong>(1)水切り、(2)延命剤の使用、(3)こまめな水替え</strong>の3つです。この基本を実践することで、花の寿命は1.5〜2倍に延びます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               花のサブスクで届いた花も、正しいお手入れによって長く楽しめます。品質保証制度があるサービスであれば、届いた時点で傷んでいた場合にも対応を受けられます。お手入れも含めて、花のある暮らしをお楽しみください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
-              <a href="/services/medelu" className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md">
+              <a href="/services/medelu" className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors">
                 medeluの詳細を見る
               </a>
-              <a href="/guides/flower-care" className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors">
+              <a href="/guides/flower-care" className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
                 お花のお手入れガイドを見る
               </a>
             </div>
-            <a href="/" className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline">
+            <a href="/" className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline">
               トップページに戻る
             </a>
           </div>
@@ -206,11 +207,11 @@ export default function NagamochiGuidePage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400">花のサブスクを比較し、ご自身に合ったサービス選びを支援します。</p>
             </div>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">

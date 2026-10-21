@@ -9,35 +9,35 @@ const yen = (n: number) => `${n.toLocaleString()}円`;
 /** ヒーロー直下に置く要点ボックス（口コミ・評判の要約＋最終確認日） */
 export function ReviewVerdict({ d, s }: { d: ReviewEvidenceData; s: Service }) {
   return (
-    <section aria-labelledby="verdict-heading" className="bg-white py-8 border-b border-[#E5E5E5]">
+    <section aria-labelledby="verdict-heading" className="bg-white py-8 border-b border-[#DEDAD2]">
       <div className="max-w-3xl mx-auto px-4">
-        <div className="rounded-2xl border-2 border-[#4A7C59] bg-[#F6FAF7] p-5 md:p-6">
-          <p className="text-xs text-[#4A7C59] font-bold mb-1">
+        <div className="rounded-md border-2 border-[#2F5B43] bg-[#F3F6F2] p-5 md:p-6">
+          <p className="text-xs text-[#2F5B43] font-bold mb-1">
             最終更新：{d.updatedAt}（料金は{s.verifiedAt}に公式サイトで確認）
           </p>
-          <h2 id="verdict-heading" className="text-lg md:text-xl font-bold text-[#333] mb-3">
+          <h2 id="verdict-heading" className="text-lg md:text-xl font-bold text-[#1F2420] mb-3">
             {d.verdictTitle}
           </h2>
           <p className="text-sm md:text-base text-[#444] leading-relaxed mb-4">{d.verdict}</p>
           <div className="grid md:grid-cols-2 gap-3 text-sm">
-            <div className="bg-white rounded-xl p-4 border border-[#DDE8E0]">
-              <p className="font-bold text-[#4A7C59] mb-2">良い口コミに多い声</p>
-              <ul className="space-y-1.5 text-[#555]">
+            <div className="bg-white rounded-md p-4 border border-[#DDE8E0]">
+              <p className="font-bold text-[#2F5B43] mb-2">良い口コミに多い声</p>
+              <ul className="space-y-1.5 text-[#3F443E]">
                 {d.positive.slice(0, 3).map((p, i) => (
-                  <li key={i} className="flex gap-2"><span className="text-[#4A7C59] shrink-0">◎</span><span>{p}</span></li>
+                  <li key={i} className="flex gap-2"><span className="text-[#2F5B43] shrink-0">◎</span><span>{p}</span></li>
                 ))}
               </ul>
             </div>
-            <div className="bg-white rounded-xl p-4 border border-[#F0DCCB]">
+            <div className="bg-white rounded-md p-4 border border-[#F0DCCB]">
               <p className="font-bold text-[#C08552] mb-2">悪い口コミに多い声</p>
-              <ul className="space-y-1.5 text-[#555]">
+              <ul className="space-y-1.5 text-[#3F443E]">
                 {d.negative.slice(0, 3).map((p, i) => (
-                  <li key={i} className="flex gap-2"><span className="text-[#C08552] shrink-0">△</span><span>{p}</span></li>
+                  <li key={i} className="flex gap-2"><span className="text-[#C08552] shrink-0">・</span><span>{p}</span></li>
                 ))}
               </ul>
             </div>
           </div>
-          <p className="text-xs text-[#888] mt-3">
+          <p className="text-xs text-[#6B6F6A] mt-3">
             口コミは、下記「口コミの出典と調べ方」に挙げた公開情報の傾向を要約したものです。当サイトでは、個人の体験談や星評価の創作・掲載は行っていません。
           </p>
         </div>
@@ -50,44 +50,44 @@ export function ReviewVerdict({ d, s }: { d: ReviewEvidenceData; s: Service }) {
 export function ReviewEvidence({ d, s }: { d: ReviewEvidenceData; s: Service }) {
   return (
     <>
-      <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+      <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
         {d.shortName}の口コミ・評判（出典を明記した傾向のまとめ）
       </h2>
-      <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">{d.intro}</p>
+      <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">{d.intro}</p>
 
       <div className="grid md:grid-cols-2 gap-5 mb-8">
-        <div className="rounded-xl bg-[#F6FAF7] border border-[#DDE8E0] p-5">
-          <h3 className="font-bold text-[#4A7C59] mb-3">良い口コミ・評判の傾向</h3>
+        <div className="rounded-md bg-[#F3F6F2] border border-[#DDE8E0] p-5">
+          <h3 className="font-bold text-[#2F5B43] mb-3">良い口コミ・評判の傾向</h3>
           <ul className="space-y-2">
             {d.positive.map((p, i) => (
-              <li key={i} className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#4A7C59] shrink-0">◎</span><span>{p}</span></li>
+              <li key={i} className="flex gap-2 text-sm md:text-base text-[#3F443E] leading-relaxed"><span className="text-[#2F5B43] shrink-0">◎</span><span>{p}</span></li>
             ))}
           </ul>
         </div>
-        <div className="rounded-xl bg-[#FBF7F2] border border-[#F0DCCB] p-5">
+        <div className="rounded-md bg-[#F6F4EF] border border-[#F0DCCB] p-5">
           <h3 className="font-bold text-[#C08552] mb-3">悪い口コミ・評判の傾向</h3>
           <ul className="space-y-2">
             {d.negative.map((p, i) => (
-              <li key={i} className="flex gap-2 text-sm md:text-base text-[#555] leading-relaxed"><span className="text-[#C08552] shrink-0">△</span><span>{p}</span></li>
+              <li key={i} className="flex gap-2 text-sm md:text-base text-[#3F443E] leading-relaxed"><span className="text-[#C08552] shrink-0">・</span><span>{p}</span></li>
             ))}
           </ul>
         </div>
       </div>
 
-      <h3 className="text-lg font-bold text-[#333] mb-3">メリット・デメリットの一覧</h3>
+      <h3 className="text-lg font-bold text-[#1F2420] mb-3">メリット・デメリットの一覧</h3>
       <div className="table-wrapper mb-8">
         <table className="w-full text-sm border-collapse">
           <thead>
-            <tr className="bg-[#4A7C59] text-white">
+            <tr className="bg-[#2F5B43] text-white">
               <th className="px-3 py-2 text-left font-medium">観点</th>
               <th className="px-3 py-2 text-left font-medium">メリット</th>
               <th className="px-3 py-2 text-left font-medium">デメリット・注意点</th>
             </tr>
           </thead>
-          <tbody className="text-[#555]">
+          <tbody className="text-[#3F443E]">
             {d.prosCons.map((r, i) => (
-              <tr key={i} className={`border-b border-[#E5E5E5] ${i % 2 ? "bg-[#F8F8F8]" : "bg-white"}`}>
-                <td className="px-3 py-2 font-bold text-[#333] whitespace-nowrap">{r.point}</td>
+              <tr key={i} className={`border-b border-[#DEDAD2] ${i % 2 ? "bg-[#F6F4EF]" : "bg-white"}`}>
+                <td className="px-3 py-2 font-bold text-[#1F2420] whitespace-nowrap">{r.point}</td>
                 <td className="px-3 py-2">{r.merit}</td>
                 <td className="px-3 py-2">{r.demerit}</td>
               </tr>
@@ -98,14 +98,14 @@ export function ReviewEvidence({ d, s }: { d: ReviewEvidenceData; s: Service }) 
 
       {d.observations ? (
         <>
-          <h3 className="text-lg font-bold text-[#333] mb-3">{d.observations.title}</h3>
-          <p className="text-sm md:text-base text-[#666] leading-relaxed mb-3">{d.observations.lead}</p>
+          <h3 className="text-lg font-bold text-[#1F2420] mb-3">{d.observations.title}</h3>
+          <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-3">{d.observations.lead}</p>
           <ul className="space-y-3 mb-8">
             {d.observations.items.map((o, i) => (
-              <li key={i} className="rounded-xl border border-[#E5E5E5] bg-white p-4 text-sm md:text-base text-[#555] leading-relaxed">
+              <li key={i} className="rounded-md border border-[#DEDAD2] bg-white p-4 text-sm md:text-base text-[#3F443E] leading-relaxed">
                 {o.text}
-                <span className="block text-xs text-[#999] mt-1">
-                  出典：<a href={o.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">{o.source}</a>（{o.checkedAt}確認）
+                <span className="block text-xs text-[#6B6F6A] mt-1">
+                  出典：<a href={o.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">{o.source}</a>（{o.checkedAt}確認）
                 </span>
               </li>
             ))}
@@ -113,14 +113,14 @@ export function ReviewEvidence({ d, s }: { d: ReviewEvidenceData; s: Service }) 
         </>
       ) : null}
 
-      <h3 className="text-lg font-bold text-[#333] mb-3">口コミの出典と調べ方</h3>
-      <div className="rounded-xl border border-[#E8DFD5] bg-[#FBF7F2] p-5 mb-2">
-        <p className="text-sm text-[#555] leading-relaxed mb-3">{d.method}</p>
-        <ul className="space-y-2 text-sm text-[#555]">
+      <h3 className="text-lg font-bold text-[#1F2420] mb-3">口コミの出典と調べ方</h3>
+      <div className="rounded-md border border-[#E8DFD5] bg-[#F6F4EF] p-5 mb-2">
+        <p className="text-sm text-[#3F443E] leading-relaxed mb-3">{d.method}</p>
+        <ul className="space-y-2 text-sm text-[#3F443E]">
           {d.sources.map((src, i) => (
             <li key={i} className="leading-relaxed">
               ・{src.url ? (
-                <a href={src.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">{src.label}</a>
+                <a href={src.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">{src.label}</a>
               ) : (
                 <span className="font-medium">{src.label}</span>
               )}
@@ -129,7 +129,7 @@ export function ReviewEvidence({ d, s }: { d: ReviewEvidenceData; s: Service }) 
           ))}
         </ul>
       </div>
-      <p className="text-xs text-[#999] mb-2">
+      <p className="text-xs text-[#6B6F6A] mb-2">
         ※ 口コミは個人の感想であり、時期・地域・プランによって体験は異なります。件数や評価点は確認時点の値であり、変動します。
       </p>
     </>
@@ -140,21 +140,21 @@ export function ReviewEvidence({ d, s }: { d: ReviewEvidenceData; s: Service }) 
 export function OfficialPlans({ s }: { s: Service }) {
   return (
     <>
-      <p className="text-sm font-bold text-[#4A7C59] mb-3">料金・条件（{s.verifiedAt} 公式サイトで確認）</p>
+      <p className="text-sm font-bold text-[#2F5B43] mb-3">料金・条件（{s.verifiedAt} 公式サイトで確認）</p>
       <div className="table-wrapper mb-3">
         <table className="w-full text-sm border-collapse">
           <thead>
-            <tr className="bg-[#F0EBE3] text-[#333]">
+            <tr className="bg-[#F6F4EF] text-[#1F2420]">
               <th className="px-3 py-2 text-left font-medium">プラン</th>
               <th className="px-3 py-2 text-left font-medium">1回あたりの料金</th>
               <th className="px-3 py-2 text-left font-medium">本数の目安</th>
               <th className="px-3 py-2 text-left font-medium">届き方</th>
             </tr>
           </thead>
-          <tbody className="text-[#555]">
+          <tbody className="text-[#3F443E]">
             {s.plans.map((p, i) => (
-              <tr key={i} className="border-b border-[#E5E5E5] bg-white">
-                <td className="px-3 py-2 font-bold text-[#333]">{p.name}</td>
+              <tr key={i} className="border-b border-[#DEDAD2] bg-white">
+                <td className="px-3 py-2 font-bold text-[#1F2420]">{p.name}</td>
                 <td className="px-3 py-2">{yen(p.price)}{s.shippingIncluded ? "（送料込み）" : "＋送料"}</td>
                 <td className="px-3 py-2">{p.flowers}</td>
                 <td className="px-3 py-2">{p.postDelivery ? "ポスト投函" : "宅配（手渡し）"}</td>
@@ -163,7 +163,7 @@ export function OfficialPlans({ s }: { s: Service }) {
           </tbody>
         </table>
       </div>
-      <ul className="text-xs md:text-sm text-[#666] space-y-1 mb-2">
+      <ul className="text-xs md:text-sm text-[#4A4F49] space-y-1 mb-2">
         <li>・送料：{s.shippingNote}</li>
         <li>・回数縛り・解約：{s.cancellation}</li>
         {s.note ? <li>・補足：{s.note}</li> : null}
@@ -189,10 +189,10 @@ export function CompareSection({ s, all, note }: { s: Service; all: Service[]; n
   return (
     <section id="comparison" className="py-12 md:py-16 bg-white">
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+        <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
           {short(s)}と他の花のサブスクの比較
         </h2>
-        <p className="text-sm md:text-base text-[#666] leading-relaxed mb-6">{note}</p>
+        <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">{note}</p>
         <div className="table-wrapper">
           <table className="comparison-table w-full text-sm border-collapse">
             <thead>
@@ -206,22 +206,22 @@ export function CompareSection({ s, all, note }: { s: Service; all: Service[]; n
             <tbody>
               {rows.map(([label, f]) => (
                 <tr key={label}>
-                  <td className="font-medium text-[#333]">{label}</td>
+                  <td className="font-medium text-[#1F2420]">{label}</td>
                   {cols.map((c, i) => (
-                    <td key={c.id} className={i === 0 ? "font-bold text-[#4A7C59]" : ""}>{f(c)}</td>
+                    <td key={c.id} className={i === 0 ? "font-bold text-[#2F5B43]" : ""}>{f(c)}</td>
                   ))}
                 </tr>
               ))}
               <tr>
-                <td className="font-medium text-[#333]">詳しい口コミ・評判</td>
+                <td className="font-medium text-[#1F2420]">詳しい口コミ・評判</td>
                 {cols.map((c, i) => (
-                  <td key={c.id}>{i === 0 ? "このページ" : <a href={c.servicePath} className="text-[#4A7C59] underline">{short(c)}の口コミ</a>}</td>
+                  <td key={c.id}>{i === 0 ? "このページ" : <a href={c.servicePath} className="text-[#2F5B43] underline">{short(c)}の口コミ</a>}</td>
                 ))}
               </tr>
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-[#999] mt-3">※ 各社の公式サイトで確認した値（{cols.map((c) => `${short(c)}：${c.verifiedAt}`).join("／")}）。</p>
+        <p className="text-xs text-[#6B6F6A] mt-3">※ 各社の公式サイトで確認した値（{cols.map((c) => `${short(c)}：${c.verifiedAt}`).join("／")}）。</p>
       </div>
     </section>
   );

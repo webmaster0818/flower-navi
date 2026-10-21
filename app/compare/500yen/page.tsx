@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "@/app/components/Header";
 import { SERVICES } from "@/data/services";
+import PageHero from "@/app/components/PageHero";
 
 /* 料金は単一データソース(services.ts・公式確認値)を参照 */
 const sv = (id: string) => SERVICES.find((s) => s.id === id)!.cheapest.price;
@@ -126,20 +127,20 @@ export default function FiveHundredYenPage() {
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
-        <div className="bg-[#F8F8F8] border-b border-[#E5E5E5]">
+        <div className="bg-[#F6F4EF] border-b border-[#DEDAD2]">
           <div className="max-w-5xl mx-auto px-4 py-3">
-            <nav className="text-xs text-[#999]" aria-label="パンくずリスト">
+            <nav className="text-xs text-[#6B6F6A]" aria-label="パンくずリスト">
               <ol className="flex items-center gap-1.5 flex-wrap">
                 <li>
-                  <a href="/" className="hover:text-[#4A7C59] transition-colors">ホーム</a>
+                  <a href="/" className="hover:text-[#2F5B43] transition-colors">ホーム</a>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#666]">比較記事</span>
+                  <span className="text-[#4A4F49]">比較記事</span>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
-                  <span className="text-[#333] font-medium">500円台で始められる花のサブスク</span>
+                  <span className="text-[#1F2420] font-medium">500円台で始められる花のサブスク</span>
                 </li>
               </ol>
             </nav>
@@ -147,51 +148,51 @@ export default function FiveHundredYenPage() {
         </div>
 
         {/* ─── Hero Section ─── */}
-        <section className="bg-[#E8F0EB] py-12 md:py-20">
+        <PageHero path="/compare/500yen/">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="text-sm text-[#4A7C59] font-medium mb-3 tracking-wide">
+            <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
               花のサブスク価格比較
             </p>
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-4 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               お花の定期便を500円台で始められるかを検証<br className="hidden md:block" />
                 最安プランを送料込みで比較【2026年10月】
             </h1>
-            <p className="text-sm md:text-base text-[#666] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               まずは500円程度の安いプランで試したい方に向けて、当サイトでは
                 4サービスの最安プランを公式サイトで確認し（2026年10月14〜16日）、送料込みの総額と回数の条件で比較しました。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">実質最安</p>
-                <p className="text-xl font-bold text-[#4A7C59]">748円/回</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">実質最安</p>
+                <p className="text-xl font-bold text-[#2F5B43]">748円/回</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">花代最安</p>
-                <p className="text-xl font-bold text-[#4A7C59]">660円/回</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">花代最安</p>
+                <p className="text-xl font-bold text-[#2F5B43]">660円/回</p>
               </div>
-              <div className="bg-white rounded-xl px-5 py-3 shadow-sm">
-                <p className="text-xs text-[#999] mb-1">比較対象</p>
-                <p className="text-xl font-bold text-[#4A7C59]">4サービス</p>
+              <div className="bg-white rounded-md px-5 py-3">
+                <p className="text-xs text-[#6B6F6A] mb-1">比較対象</p>
+                <p className="text-xl font-bold text-[#2F5B43]">4サービス</p>
               </div>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         {/* ─── Table of Contents ─── */}
-        <section className="bg-white py-8 border-b border-[#E5E5E5]">
+        <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="bg-[#F8F8F8] rounded-xl p-5 md:p-6">
-              <p className="text-sm font-bold text-[#333] mb-3">目次</p>
+            <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6">
+              <p className="text-sm font-bold text-[#1F2420] mb-3">目次</p>
               <nav>
-                <ol className="text-sm text-[#666] space-y-2">
-                  <li><a href="#intro" className="hover:text-[#4A7C59] transition-colors">1. 500円台で始められるお花の定期便の有無</a></li>
-                  <li><a href="#comparison-table" className="hover:text-[#4A7C59] transition-colors">2. 最安プラン比較表（送料込み総額）</a></li>
-                  <li><a href="#ranking" className="hover:text-[#4A7C59] transition-colors">3. 安い花のサブスクランキング</a></li>
-                  <li><a href="#total-cost" className="hover:text-[#4A7C59] transition-colors">4. 送料込みの総額で比較する理由</a></li>
-                  <li><a href="#caution" className="hover:text-[#4A7C59] transition-colors">5. 価格以外に確認すべき点</a></li>
-                  <li><a href="#tips" className="hover:text-[#4A7C59] transition-colors">6. 1,000円前後で花のある暮らしを始める方法</a></li>
-                  <li><a href="#faq" className="hover:text-[#4A7C59] transition-colors">7. よくある質問</a></li>
-                  <li><a href="#summary" className="hover:text-[#4A7C59] transition-colors">8. まとめ</a></li>
+                <ol className="text-sm text-[#4A4F49] space-y-2">
+                  <li><a href="#intro" className="hover:text-[#2F5B43] transition-colors">1. 500円台で始められるお花の定期便の有無</a></li>
+                  <li><a href="#comparison-table" className="hover:text-[#2F5B43] transition-colors">2. 最安プラン比較表（送料込み総額）</a></li>
+                  <li><a href="#ranking" className="hover:text-[#2F5B43] transition-colors">3. 安い花のサブスクランキング</a></li>
+                  <li><a href="#total-cost" className="hover:text-[#2F5B43] transition-colors">4. 送料込みの総額で比較する理由</a></li>
+                  <li><a href="#caution" className="hover:text-[#2F5B43] transition-colors">5. 価格以外に確認すべき点</a></li>
+                  <li><a href="#tips" className="hover:text-[#2F5B43] transition-colors">6. 1,000円前後で花のある暮らしを始める方法</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">7. よくある質問</a></li>
+                  <li><a href="#summary" className="hover:text-[#2F5B43] transition-colors">8. まとめ</a></li>
                 </ol>
               </nav>
             </div>
@@ -201,36 +202,36 @@ export default function FiveHundredYenPage() {
         {/* ─── Introduction ─── */}
         <section id="intro" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               500円台で始められるお花の定期便の有無
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
               当サイトが公式サイトで確認した範囲（2026年10月16日）では、花代が500円台の定期便は見つかりませんでした。花代が最も安いのはタスハナ（+hana）の+actプランで1回660円（税込）です。ただし花代とは別に送料がかかるサービスもあるため、送料を含めた総額で比較することが大切です。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
               例えば、タスハナは花代660円に送料330円が毎回かかるため、1回あたりの総額は990円になります。一方、花代748円のmedelu Miniは送料込みなので、総額はそのまま748円です。花代だけでは、実際の支出を正確に把握できません。
               </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
               当サイトでは、各サービスの最安プランを送料込みの総額で比較し、費用を抑えて利用できるサービスをご紹介します。1,000円前後で花のある暮らしを始めたい方はご参照ください。
             </p>
 
-            <div className="bg-[#E8F0EB] rounded-xl p-5 mt-6">
-              <h3 className="text-sm font-bold text-[#4A7C59] mb-2">本ページの要点</h3>
-              <ul className="text-sm text-[#666] space-y-2">
+            <div className="bg-[#EDF1EC] rounded-md p-5 mt-6">
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-2">本ページの要点</h3>
+              <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#4A7C59] mt-0.5 shrink-0">--</span>
+                  <span className="text-[#2F5B43] mt-0.5 shrink-0">--</span>
                   <span>花代だけでなく送料込みの総額で比較することが重要</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#4A7C59] mt-0.5 shrink-0">--</span>
+                  <span className="text-[#2F5B43] mt-0.5 shrink-0">--</span>
                   <span>送料込みで最安はmedelu Miniコース（748円/回）</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#4A7C59] mt-0.5 shrink-0">--</span>
+                  <span className="text-[#2F5B43] mt-0.5 shrink-0">--</span>
                   <span>花代のみではタスハナ+act（660円/回）が最安。ただし送料330円を加えた総額は990円で、5回以上の出荷が前提</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#4A7C59] mt-0.5 shrink-0">--</span>
+                  <span className="text-[#2F5B43] mt-0.5 shrink-0">--</span>
                   <span>確認した範囲では、花代500円台の定期便はなし</span>
                 </li>
               </ul>
@@ -239,19 +240,19 @@ export default function FiveHundredYenPage() {
         </section>
 
         {/* ─── Comparison Table ─── */}
-        <section id="comparison-table" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="comparison-table" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               最安プラン比較表（送料込み総額で比較）
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               各サービスの最安プランを、花代・送料・1回あたりの総額で比較しました。総額の安い順に掲載しています。
             </p>
 
             <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden">
+              <table className="w-full text-sm border-collapse bg-white rounded-md overflow-hidden">
                 <thead>
-                  <tr className="bg-[#4A7C59] text-white">
+                  <tr className="bg-[#2F5B43] text-white">
                     <th className="px-3 py-3 text-left font-medium">順位</th>
                     <th className="px-3 py-3 text-left font-medium">サービス</th>
                     <th className="px-3 py-3 text-center font-medium">花代</th>
@@ -261,28 +262,28 @@ export default function FiveHundredYenPage() {
                     <th className="px-3 py-3 text-center font-medium">回数の条件</th>
                   </tr>
                 </thead>
-                <tbody className="text-[#666]">
-                  <tr className="border-b border-[#E5E5E5] bg-[#FFFBEB]">
+                <tbody className="text-[#4A4F49]">
+                  <tr className="border-b border-[#DEDAD2] bg-[#FFFBEB]">
                     <td className="px-3 py-3 font-bold text-[#F59E0B]">1位</td>
-                    <td className="px-3 py-3 font-bold text-[#333]">medelu Miniコース</td>
+                    <td className="px-3 py-3 font-bold text-[#1F2420]">medelu Miniコース</td>
                     <td className="px-3 py-3 text-center">748円</td>
                     <td className="px-3 py-3 text-center">込み</td>
                     <td className="px-3 py-3 text-center font-bold">748円</td>
                     <td className="px-3 py-3 text-center">3〜4本</td>
                     <td className="px-3 py-3 text-center">公式に記載なし</td>
                   </tr>
-                  <tr className="border-b border-[#E5E5E5]">
+                  <tr className="border-b border-[#DEDAD2]">
                     <td className="px-3 py-3 font-bold text-[#9CA3AF]">2位</td>
-                    <td className="px-3 py-3 font-bold text-[#333]">タスハナ +actプラン</td>
+                    <td className="px-3 py-3 font-bold text-[#1F2420]">タスハナ +actプラン</td>
                     <td className="px-3 py-3 text-center">660円</td>
                     <td className="px-3 py-3 text-center">330円</td>
                     <td className="px-3 py-3 text-center font-bold">990円</td>
                     <td className="px-3 py-3 text-center">3品目・3本以上</td>
                     <td className="px-3 py-3 text-center">5回以上が前提</td>
                   </tr>
-                  <tr className="border-b border-[#E5E5E5] bg-[#F8F8F8]">
+                  <tr className="border-b border-[#DEDAD2] bg-[#F6F4EF]">
                     <td className="px-3 py-3 font-bold text-[#B45309]">3位</td>
-                    <td className="px-3 py-3 font-bold text-[#333]">hanameku ライトプラン</td>
+                    <td className="px-3 py-3 font-bold text-[#1F2420]">hanameku ライトプラン</td>
                     <td className="px-3 py-3 text-center">1,210円</td>
                     <td className="px-3 py-3 text-center">込み</td>
                     <td className="px-3 py-3 text-center font-bold">1,210円</td>
@@ -291,7 +292,7 @@ export default function FiveHundredYenPage() {
                   </tr>
                   <tr className="">
                     <td className="px-3 py-3 font-bold text-[#6B7280]">4位</td>
-                    <td className="px-3 py-3 font-bold text-[#333]">bloomee お試しプラン</td>
+                    <td className="px-3 py-3 font-bold text-[#1F2420]">bloomee お試しプラン</td>
                     <td className="px-3 py-3 text-center">980円</td>
                     <td className="px-3 py-3 text-center">385円</td>
                     <td className="px-3 py-3 text-center font-bold">1,365円</td>
@@ -302,7 +303,7 @@ export default function FiveHundredYenPage() {
               </table>
             </div>
 
-            <p className="text-xs text-[#999] mt-3">
+            <p className="text-xs text-[#6B6F6A] mt-3">
               ※ 価格はすべて税込。medelu・hanameku・bloomeeは2026年10月14日、タスハナは10月16日に各公式サイトで確認。medeluは北海道・東北のLite以上に遠隔地送料が加わります（Miniは対象外）。
             </p>
           </div>
@@ -311,7 +312,7 @@ export default function FiveHundredYenPage() {
         {/* ─── Ranking Detail ─── */}
         <section id="ranking" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               安い花のサブスクランキング（詳細）
             </h2>
 
@@ -319,60 +320,60 @@ export default function FiveHundredYenPage() {
               {rankingData.map((item) => (
                 <div
                   key={item.rank}
-                  className={`bg-white rounded-xl overflow-hidden ${item.rank === 1 ? "border-2 border-[#4A7C59]" : "border border-[#E5E5E5]"}`}
+                  className={`bg-white rounded-md overflow-hidden ${item.rank === 1 ? "border-2 border-[#2F5B43]" : "border border-[#DEDAD2]"}`}
                 >
                   {item.rank === 1 && (
-                    <div className="bg-[#4A7C59] text-white text-xs text-center py-1.5 font-bold">
+                    <div className="bg-[#2F5B43] text-white text-xs text-center py-1.5 font-bold">
                       送料込みの総額が最安
                     </div>
                   )}
                   <div className="p-5">
                     <div className="flex items-start gap-4 mb-4">
                       <span
-                        className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white text-sm font-bold shrink-0"
+                        className="inline-flex items-center justify-center w-10 h-10 rounded-md text-white text-sm font-bold shrink-0"
                         style={{ backgroundColor: item.color }}
                       >
                         {item.rank}位
                       </span>
                       <div className="flex-1">
-                        <h3 className="text-lg font-bold text-[#333] mb-1">
+                        <h3 className="text-lg font-bold text-[#1F2420] mb-1">
                           {item.name}（{item.nameJa}）{item.plan}
                         </h3>
-                        <p className="text-sm text-[#666] leading-relaxed">{item.highlight}</p>
+                        <p className="text-sm text-[#4A4F49] leading-relaxed">{item.highlight}</p>
                       </div>
                     </div>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
-                      <div className="bg-[#F8F8F8] rounded-lg px-3 py-2 text-center">
-                        <p className="text-xs text-[#999] mb-1">花代</p>
-                        <p className="text-sm font-bold text-[#333]">{item.price}円</p>
+                      <div className="bg-[#F6F4EF] rounded-lg px-3 py-2 text-center">
+                        <p className="text-xs text-[#6B6F6A] mb-1">花代</p>
+                        <p className="text-sm font-bold text-[#1F2420]">{item.price}円</p>
                       </div>
-                      <div className="bg-[#F8F8F8] rounded-lg px-3 py-2 text-center">
-                        <p className="text-xs text-[#999] mb-1">送料</p>
-                        <p className="text-sm font-bold text-[#333]">{item.shippingLabel}</p>
+                      <div className="bg-[#F6F4EF] rounded-lg px-3 py-2 text-center">
+                        <p className="text-xs text-[#6B6F6A] mb-1">送料</p>
+                        <p className="text-sm font-bold text-[#1F2420]">{item.shippingLabel}</p>
                       </div>
-                      <div className="bg-[#E8F0EB] rounded-lg px-3 py-2 text-center">
-                        <p className="text-xs text-[#4A7C59] mb-1">総額/回</p>
-                        <p className="text-sm font-bold text-[#4A7C59]">
+                      <div className="bg-[#EDF1EC] rounded-lg px-3 py-2 text-center">
+                        <p className="text-xs text-[#2F5B43] mb-1">総額/回</p>
+                        <p className="text-sm font-bold text-[#2F5B43]">
                           {`${item.total.toLocaleString()}円`}
                         </p>
                       </div>
-                      <div className="bg-[#F8F8F8] rounded-lg px-3 py-2 text-center">
-                        <p className="text-xs text-[#999] mb-1">花の本数</p>
-                        <p className="text-sm font-bold text-[#333]">{item.flowers}</p>
+                      <div className="bg-[#F6F4EF] rounded-lg px-3 py-2 text-center">
+                        <p className="text-xs text-[#6B6F6A] mb-1">花の本数</p>
+                        <p className="text-sm font-bold text-[#1F2420]">{item.flowers}</p>
                       </div>
                     </div>
 
                     <div className="flex flex-wrap gap-2 mb-4 text-xs">
-                      <span className="bg-[#F8F8F8] text-[#666] px-3 py-1 rounded-full">配送: {item.delivery}</span>
-                                            <span className="bg-[#F8F8F8] text-[#666] px-3 py-1 rounded-full">回数の条件: {item.minOrders}</span>
-                      <span className="bg-[#F8F8F8] text-[#666] px-3 py-1 rounded-full">品質保証: {item.quality}</span>
+                      <span className="bg-[#F6F4EF] text-[#4A4F49] px-3 py-1 rounded-md">配送: {item.delivery}</span>
+                                            <span className="bg-[#F6F4EF] text-[#4A4F49] px-3 py-1 rounded-md">回数の条件: {item.minOrders}</span>
+                      <span className="bg-[#F6F4EF] text-[#4A4F49] px-3 py-1 rounded-md">品質保証: {item.quality}</span>
                     </div>
 
                     {item.url && (
                       <a
                         href={item.url}
-                        className="inline-block text-sm text-[#4A7C59] font-medium hover:underline"
+                        className="inline-block text-sm text-[#2F5B43] font-medium hover:underline"
                       >
                         {item.name}の詳細レビューを見る →
                       </a>
@@ -385,37 +386,37 @@ export default function FiveHundredYenPage() {
         </section>
 
         {/* ─── Total Cost Importance ─── */}
-        <section id="total-cost" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="total-cost" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               送料込みの総額で比較する理由
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
               花のサブスクを比較する際は、花代だけで価格を判断しがちです。しかし、実際の支出は花代と送料を合わせた総額で決まり、その差は小さくありません。
             </p>
 
-            <div className="bg-white rounded-xl p-5 border border-[#E5E5E5] mb-6">
-              <h3 className="text-sm font-bold text-[#333] mb-3">具体例による比較</h3>
+            <div className="bg-white rounded-md p-5 border border-[#DEDAD2] mb-6">
+              <h3 className="text-sm font-bold text-[#1F2420] mb-3">具体例による比較</h3>
               <div className="space-y-3 text-sm">
-                <div className="flex items-center justify-between py-2 border-b border-[#E5E5E5]">
-                  <span className="text-[#666]">タスハナ: 花代660円 + 送料330円</span>
-                  <span className="font-bold text-[#333]">= 990円/回</span>
+                <div className="flex items-center justify-between py-2 border-b border-[#DEDAD2]">
+                  <span className="text-[#4A4F49]">タスハナ: 花代660円 + 送料330円</span>
+                  <span className="font-bold text-[#1F2420]">= 990円/回</span>
                 </div>
-                <div className="flex items-center justify-between py-2 border-b border-[#E5E5E5]">
-                  <span className="text-[#666]">medelu Mini: 748円（送料込み）</span>
-                  <span className="font-bold text-[#4A7C59]">= 748円/回</span>
+                <div className="flex items-center justify-between py-2 border-b border-[#DEDAD2]">
+                  <span className="text-[#4A4F49]">medelu Mini: 748円（送料込み）</span>
+                  <span className="font-bold text-[#2F5B43]">= 748円/回</span>
                 </div>
                 <div className="flex items-center justify-between py-2">
-                  <span className="text-[#666]">bloomee: 花代980円 + 送料385円</span>
-                  <span className="font-bold text-[#333]">= 1,365円/回</span>
+                  <span className="text-[#4A4F49]">bloomee: 花代980円 + 送料385円</span>
+                  <span className="font-bold text-[#1F2420]">= 1,365円/回</span>
                 </div>
               </div>
-              <p className="text-sm text-[#666] mt-4 leading-relaxed">
+              <p className="text-sm text-[#4A4F49] mt-4 leading-relaxed">
                 花代だけを見るとタスハナ（660円）が最安ですが、送料を加えた総額ではmedelu（748円）が最も安くなります。実際の支出は、送料を含めて考える必要があります。
               </p>
             </div>
 
-            <p className="text-sm md:text-base text-[#666] leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
               受け取る回数が増えるほど差は広がります。2回受け取ると、medelu Miniは1,496円、bloomeeお試しは2,730円で、差は1,234円です。
             </p>
           </div>
@@ -424,10 +425,10 @@ export default function FiveHundredYenPage() {
         {/* ─── Caution ─── */}
         <section id="caution" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               価格以外に確認すべき3つの点
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               価格は重要な判断基準ですが、価格だけで選ぶと期待と異なる場合があります。申し込み前に、以下の3点もご確認ください。
             </p>
 
@@ -449,14 +450,14 @@ export default function FiveHundredYenPage() {
                   text: "最安クラスのプランは、花の種類や色を選べないおまかせが基本です（タスハナは公式FAQで「選べない」と明記）。インテリアに合わせて色を選びたい方は、多少価格が上がってもHitoHanaのような色が選べるサービスをご検討ください。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-[#FDF5F5] rounded-xl p-5 border border-[#E0B8B8]">
+                <div key={i} className="bg-[#F7F1EC] rounded-md p-5 border border-[#D9BFB1]">
                   <div className="flex items-start gap-3">
-                    <span className="bg-[#E0B8B8] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                    <span className="bg-[#D9BFB1] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                       {item.num}
                     </span>
                     <div>
-                      <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
-                      <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                      <h3 className="text-base font-bold text-[#1F2420] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                     </div>
                   </div>
                 </div>
@@ -466,9 +467,9 @@ export default function FiveHundredYenPage() {
         </section>
 
         {/* ─── Tips ─── */}
-        <section id="tips" className="py-12 md:py-16 bg-[#F8F8F8]">
+        <section id="tips" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               1,000円前後で花のある暮らしを始める3つの方法
             </h2>
 
@@ -490,14 +491,14 @@ export default function FiveHundredYenPage() {
                   text: "初めて利用する方は、最低受け取り回数と解約の締め切りを事前にご確認ください。bloomeeは4回、タスハナは5回以上が前提、hanamekuは初回の解約不可です。medeluは公式に最低利用回数の記載がなく、送料込み748円から始められます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
+                <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                   <div className="flex items-start gap-3">
-                    <span className="bg-[#4A7C59] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
+                    <span className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0 mt-0.5">
                       {item.num}
                     </span>
                     <div>
-                      <h3 className="text-base font-bold text-[#333] mb-2">{item.title}</h3>
-                      <p className="text-sm text-[#666] leading-relaxed">{item.text}</p>
+                      <h3 className="text-base font-bold text-[#1F2420] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">{item.text}</p>
                     </div>
                   </div>
                 </div>
@@ -509,21 +510,21 @@ export default function FiveHundredYenPage() {
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               安い花のサブスクに関するよくある質問
             </h2>
             <div className="space-y-3">
               {faqItems.map((item, i) => (
-                <div key={i} className="border border-[#E5E5E5] rounded-xl overflow-hidden">
+                <div key={i} className="border border-[#DEDAD2] rounded-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F8F8F8] hover:bg-[#E8F0EB] transition-colors text-left"
+                    className="w-full flex items-center justify-between px-5 py-4 bg-[#F6F4EF] hover:bg-[#EDF1EC] transition-colors text-left"
                   >
-                    <span className="text-sm font-medium text-[#333] pr-4">
+                    <span className="text-sm font-medium text-[#1F2420] pr-4">
                       Q. {item.q}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#999] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[#6B6F6A] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -534,7 +535,7 @@ export default function FiveHundredYenPage() {
                   </button>
                   {openFaq === i && (
                     <div className="px-5 py-4 bg-white">
-                      <p className="text-sm text-[#666] leading-relaxed">
+                      <p className="text-sm text-[#4A4F49] leading-relaxed">
                         A. {item.a}
                       </p>
                     </div>
@@ -546,50 +547,50 @@ export default function FiveHundredYenPage() {
         </section>
 
         {/* ─── Summary + CTA ─── */}
-        <section id="summary" className="py-12 md:py-16 bg-[#E8F0EB]">
+        <section id="summary" className="py-12 md:py-16 bg-[#EDF1EC]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6">
               送料込みの最安はmedelu、花代の最安はタスハナです
             </h2>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花代500円台の定期便は、確認した範囲では見つかりませんでした。送料込みの総額で最も安いのは<strong>medelu Miniコース（748円/回・送料込み）</strong>です。公式に最低利用回数の記載がなく、ポストで受け取れます。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花代だけで見ると<strong>タスハナ+act（660円/回）</strong>が最安ですが、送料330円を加えると990円/回で、5回以上の出荷が前提です。初回のみ受け取って試したい場合は、初回の解約ができない<strong>hanameku（1,210円/回）</strong>より、medeluのほうが条件は緩やかです。
             </p>
-            <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               価格だけでなく、花の本数・品質・回数の条件の有無・配送方法などを総合的に判断することが大切です。初めての方には、回数の条件が少ないサービスから試す方法をおすすめします。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
                 href="/services/medelu"
-                className="inline-block bg-[#4A7C59] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#3A6247] transition-colors shadow-md"
+                className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors"
               >
                 1位 medeluの詳細を見る
               </a>
               <a
                 href="/services/hanameku"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 3位 hanamekuの詳細を見る
               </a>
               <a
                 href="/services/bloomee"
-                className="inline-block bg-white text-[#4A7C59] font-bold text-base px-8 py-4 rounded-full border-2 border-[#4A7C59] hover:bg-[#E8F0EB] transition-colors"
+                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 4位 bloomeeの詳細を見る
               </a>
-              <p className="mt-2 text-xs"><a href="/services/bloomee/" className="text-[#4A7C59] underline">ブルーミーの値段・料金プランと口コミの詳細 →</a></p>
+              <p className="mt-2 text-xs"><a href="/services/bloomee/" className="text-[#2F5B43] underline">ブルーミーの値段・料金プランと口コミの詳細 →</a></p>
             </div>
             <a
               href="/compare/cheap"
-              className="inline-block mt-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+              className="inline-block mt-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
             >
               安い花のサブスク総合ランキングも見る
             </a>
             <a
               href="/compare/campaign/"
-              className="inline-block mt-4 ml-4 text-sm text-[#666] hover:text-[#4A7C59] transition-colors underline"
+              className="inline-block mt-4 ml-4 text-sm text-[#4A4F49] hover:text-[#2F5B43] transition-colors underline"
             >
               初回特典・お試しプランの比較も見る
             </a>
@@ -598,11 +599,11 @@ export default function FiveHundredYenPage() {
       </main>
 
       {/* ─── Footer ─── */}
-      <footer className="bg-[#333] text-white py-10">
+      <footer className="bg-[#1F2420] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div>
-              <img src="/images/logo-flwdeli-footer.png" alt="flowerデリ" className="h-14 w-auto opacity-90" />
+              <img src="/images/logo-footer-2026.png" alt="flowerデリ" className="h-11 w-auto" />
               <p className="text-xs text-gray-400">
                 花のサブスクを比較し、ご自身に合ったサービス選びを支援します。
               </p>
