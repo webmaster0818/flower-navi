@@ -189,7 +189,6 @@ export default function BloomeeVsMedeluPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
-                    <span>安定した品質のお花を受け取りたい</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
@@ -433,10 +432,8 @@ export default function BloomeeVsMedeluPage() {
               <div className="bg-white rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-base font-bold text-[#333] mb-3">medelu</h3>
                 <ul className="text-sm text-[#666] space-y-2">
-                  <li>自社で仕入れ・品質管理を一元化</li>
-                  <li>市場直送で鮮度の高い花を使用</li>
+                  <li>生産者と市場から直接仕入れた花を届けると案内（2026年10月21日公式確認）</li>
                   <li>品質保証制度あり</li>
-                  <li>品質のばらつきが少なく安定している</li>
                 </ul>
               </div>
             </div>
@@ -640,7 +637,6 @@ export default function BloomeeVsMedeluPage() {
                     <li>-- 送料が別途かかる（385〜550円）</li>
                     <li>-- 4回の最低受け取り回数がある</li>
                     <li>-- 解約手続きがやや複雑</li>
-                    <li>-- 花屋により品質にばらつきがある</li>
                     <li>-- 送料込みの実質負担が高め</li>
                   </ul>
                 </div>
@@ -656,7 +652,7 @@ export default function BloomeeVsMedeluPage() {
                   <ul className="text-sm text-[#666] space-y-2">
                     <li>-- 送料無料で料金がわかりやすい</li>
                     <li>-- 回数の条件がなく、いつでも解約可能</li>
-                    <li>-- 自社品質管理で安定した鮮度</li>
+                    <li>-- 生産者と市場から直接仕入れた花が届く</li>
                     <li>-- 送料込みでもbloomeeの約半額</li>
                     <li>-- 解約手続きが簡単</li>
                     <li>-- 品質保証あり</li>
@@ -725,7 +721,7 @@ export default function BloomeeVsMedeluPage() {
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               費用と手軽さを重視する場合はmedeluが適しています。送料無料で748円から始められ、回数の条件もないため、金銭的な負担を抑えて試すことができます。
-              品質の安定した花が届くため、花のある生活を手軽に始めたい方に向いています。
+              花のある生活を手軽に始めたい方に向いています。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               ブランドの知名度やサービスの充実度を重視する場合はbloomeeをおすすめします。「プレゼントとして送る」での申し込みや、お花のガイドブックなど、初めての方向けの案内があり、SNSでの情報量も豊富です。

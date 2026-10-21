@@ -604,11 +604,11 @@ export default function SeasonalFlowersPage() {
               <div className="bg-white rounded-xl border border-[#E5E5E5] overflow-hidden">
                 <div className="px-5 py-4 bg-[#E8F0EB] border-b border-[#C5D9CB]">
                   <h3 className="text-base font-bold text-[#333]">medelu（メデル）</h3>
-                  <p className="text-sm text-[#666]">市場直送で鮮度の高い季節の花が届く</p>
+                  <p className="text-sm text-[#666]">生産者と市場から直接仕入れた季節の花が届く</p>
                 </div>
                 <div className="p-5">
                   <p className="text-sm text-[#666] leading-relaxed mb-4">
-                    medeluは市場から直接仕入れた鮮度の高い花を届けるサービスです。
+                    medeluは、生産者と市場から直接仕入れた花を届けるサービスです（2026年10月21日公式確認）。
                     季節ごとに旬の花を選んでおり、春はチューリップやラナンキュラス、夏はひまわり、秋はダリアなど、
                     その時期ならではの花が届きます。Miniプラン748円（送料無料）から始められるため、
                     気軽に季節の花を楽しみたい方に適しています。

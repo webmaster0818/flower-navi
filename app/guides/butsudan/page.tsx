@@ -388,10 +388,10 @@ export default function ButsudanGuidePage() {
                 </div>
                 <div className="p-5">
                   <p className="text-sm text-[#666] leading-relaxed mb-4">
-                    medeluは市場直送の仕組みで中間コストを削減し、748円から・送料無料という特に低い価格水準を実現しているサービスです。仏花として利用する場合は、特に「ANYROOMコース」と「NATURALコース」をおすすめします。
+                    medeluは、生産者と市場から直接仕入れた花を届けるサービスです（2026年10月21日公式確認）。748円から・送料無料で利用できます。仏花として利用する場合は、特に「ANYROOMコース」と「NATURALコース」をおすすめします。
                   </p>
                   <p className="text-sm text-[#666] leading-relaxed mb-4">
-                    ANYROOMコースは、どんなインテリアにもなじむ色とりどりの花が届きます（2026年10月17日公式確認）。NATURALコースはナチュラルな雰囲気の花が中心で、仏壇に飾っても違和感のない上品な花が届きます。市場直送のため鮮度が高く、花持ちが良い点も仏花として利用するうえでの利点です。回数の条件がないため、試しに始めやすいサービスです。
+                    ANYROOMコースは、どんなインテリアにもなじむ色とりどりの花が届きます（2026年10月17日公式確認）。NATURALコースはナチュラルな雰囲気の花が中心で、仏壇に飾っても違和感のない上品な花が届きます。生産者と市場から直接仕入れた花を届けると案内しています（2026年10月21日公式確認）。回数の条件がないため、試しに始めやすいサービスです。
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="text-xs bg-[#E8F0EB] text-[#4A7C59] px-3 py-1 rounded-full">748円/回〜</span>
@@ -545,7 +545,7 @@ export default function ButsudanGuidePage() {
               仏花の定期便を利用すると、忙しい日々の中でも仏壇に常に新鮮な花をお供えできます。花屋に行く手間が省けるほか、専門家が選んだ旬の花が届くため、普段は選ばない花に出会える点も定期便の利点です。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              当サイトが仏花としておすすめするのは、送料無料で748円からと手頃な<strong>medelu</strong>のNATURAL/ANYROOMコースです。落ち着いた色合いの花が市場直送で届き、花持ちも良好です。回数の条件もないため、試しに始めることができます。
+              当サイトが仏花としておすすめするのは、送料無料で748円からと手頃な<strong>medelu</strong>のNATURAL/ANYROOMコースです。生産者と市場から直接仕入れた落ち着いた色合いの花が届きます。回数の条件もないため、試しに始めることができます。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               より本格的な仏花を求める方には<strong>花の定期便（日本総合園芸）</strong>の農家直送サービス、手軽さを重視する方には<strong>bloomee</strong>のポスト投函をおすすめします。ご自身の生活に合ったサービスをお選びください。
