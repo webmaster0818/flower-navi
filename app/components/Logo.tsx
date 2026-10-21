@@ -1,4 +1,4 @@
-// flowerデリ のロゴ（B案：吊り鉢のマーク＋ゴシック）。2026-10-21 刷新時の仮置き。決定案に差し替える
+// flowerデリ のロゴ（B案：吊り鉢のマーク＋ゴシック）。2026-10-21 MediaXAI 決定
 export function LogoMark({ size = 40, light = false }: { size?: number; light?: boolean }) {
   const ink = light ? "#F6F4EF" : "#2F4A3A";
   const pot = light ? "#D99A7E" : "#B8735A";
