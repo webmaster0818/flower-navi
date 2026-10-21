@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP, Zen_Kaku_Gothic_New, Outfit } from "next/font/google";
+import { Noto_Sans_JP, Zen_Kaku_Gothic_New, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import SiteFooter from "@/app/components/SiteFooter";
 
@@ -18,9 +18,10 @@ const zenKaku = Zen_Kaku_Gothic_New({
   variable: "--font-heading",
 });
 
-const outfit = Outfit({
+const logoSerif = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: "500",
+  style: "italic",
   display: "swap",
   variable: "--font-logo",
 });
@@ -68,7 +69,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${notoSansJP.variable} ${zenKaku.variable} ${outfit.variable} ${notoSansJP.className} h-full antialiased`}>
+    <html lang="ja" className={`${notoSansJP.variable} ${zenKaku.variable} ${logoSerif.variable} ${notoSansJP.className} h-full antialiased`}>
       <head>
         <meta
           httpEquiv="Cache-Control"
