@@ -124,7 +124,7 @@ export default function BloomeeVsMedeluPage() {
                   <li><a href="#frequency" className="hover:text-[#4A7C59] transition-colors">5. 配送頻度の選択肢</a></li>
                   <li><a href="#cancel" className="hover:text-[#4A7C59] transition-colors">6. 解約のしやすさ</a></li>
                   <li><a href="#freshness" className="hover:text-[#4A7C59] transition-colors">7. 花の鮮度</a></li>
-                  <li><a href="#app" className="hover:text-[#4A7C59] transition-colors">8. アプリ・サービス</a></li>
+                  <li><a href="#app" className="hover:text-[#4A7C59] transition-colors">8. マイページでの手続き</a></li>
                   <li><a href="#brand" className="hover:text-[#4A7C59] transition-colors">9. ブランド認知度・実績</a></li>
                   <li><a href="#table" className="hover:text-[#4A7C59] transition-colors">10. 比較一覧表</a></li>
                   <li><a href="#scenario" className="hover:text-[#4A7C59] transition-colors">11. 利用シーン別のおすすめ</a></li>
@@ -164,7 +164,7 @@ export default function BloomeeVsMedeluPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
-                    <span>アプリで花の管理やお世話情報を見たい</span>
+                    <span>同封のガイドブックで飾り方を知りたい</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#4A7C59] mt-0.5 shrink-0 font-bold">--</span>
@@ -451,23 +451,23 @@ export default function BloomeeVsMedeluPage() {
         <section id="app" className="py-12 md:py-16 bg-[#F8F8F8]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#333] mb-6 pb-3 border-b-2 border-[#4A7C59]">
-              比較7：アプリ・サービス
+              比較7：マイページでの手続きと同封物
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-[#F9E8E8] rounded-xl p-5">
                 <h3 className="text-base font-bold text-[#333] mb-3">bloomee</h3>
                 <ul className="text-sm text-[#666] space-y-2">
-                  <li>専用アプリあり（iOS/Android）</li>
-                  <li>届いた花の名前やお手入れ方法を確認できる</li>
-                  <li>品質保証の申請もアプリから可能</li>
+                  <li>マイページで特定の週のスキップが可能</li>
+                  <li>4回目の受け取り後は、マイページで隔週に変更可能</li>
+                  <li>プランの変更・切り替えもマイページから</li>
+                  <li>お花のガイドブックが付き、栄養剤が毎回同封される</li>
                   <li>お届け先の入力画面で「プレゼントとして送る」を選べる</li>
-                  <li>スキップ・プラン変更もアプリで操作可能</li>
                 </ul>
               </div>
               <div className="bg-[#E8F0EB] rounded-xl p-5">
                 <h3 className="text-base font-bold text-[#333] mb-3">medelu</h3>
                 <ul className="text-sm text-[#666] space-y-2">
-                  <li>専用アプリなし（Webマイページで管理）</li>
+                  <li>Webのマイページで管理</li>
                   <li>マイページでプラン変更・スキップが可能</li>
                   <li>花の情報はメールで届く</li>
                   <li>シンプルなサービス設計</li>
@@ -475,9 +475,9 @@ export default function BloomeeVsMedeluPage() {
               </div>
             </div>
             <p className="text-sm md:text-base text-[#666] leading-relaxed">
-              サービスの充実度ではbloomeeが上回っています。bloomeeは専用アプリがあり、届いた花の情報確認、品質保証の申請、スキップやプラン変更まですべてアプリ内で完結します。
+              どちらも、スキップやプランの変更はWebのマイページで行います。bloomeeは、4回目の受け取り後に隔週への変更ができ、お花のガイドブックが付き、栄養剤が毎回同封されます（2026年10月21日公式確認）。
               また、お届け先の入力画面で「プレゼントとして送る」を選べるため、プレゼントにも利用できます。
-              medeluは専用アプリがなくWebマイページでの管理となりますが、必要な機能は揃っており、シンプルに利用したい方には使いやすい設計です。
+              当サイトでは、bloomeeの専用アプリを公式サイトとApp Storeで確認できませんでした（2026年10月21日時点）。
             </p>
           </div>
         </section>
@@ -548,8 +548,7 @@ export default function BloomeeVsMedeluPage() {
                     { label: "回数の条件", bloomee: "4回", medelu: "なし" },
                     { label: "解約時の違約金", bloomee: "残り回数分発生", medelu: "なし" },
                     { label: "品質保証", bloomee: "あり（定期便は2週間以内の連絡で返金・交換）", medelu: "あり" },
-                    { label: "専用アプリ", bloomee: "あり", medelu: "なし" },
-                    { label: "ギフト対応", bloomee: "あり", medelu: "なし" },
+                    { label: "ギフト対応", bloomee: "「プレゼントとして送る」で申し込み", medelu: "公式サイトでご確認ください" },
                                         { label: "SNS人気", bloomee: "非常に高い", medelu: "普通" },
                     { label: "サービス開始", bloomee: "2016年", medelu: "2018年" },
                     { label: "スキップ機能", bloomee: "あり（無料）", medelu: "あり（無料）" },
@@ -595,7 +594,7 @@ export default function BloomeeVsMedeluPage() {
                 {
                   scenario: "初めての利用で不安がある場合",
                   recommend: "bloomee",
-                  reason: "花のサブスクが初めてで不安がある方には、bloomeeが向いています。専用アプリで届いた花の名前やお手入れ方法を確認でき、品質保証もアプリから簡単に申請可能です。SNSに利用者の投稿が多いため、事前にどんな花が届くか参考にできる安心感もあります。ただし、最低4回の受け取り条件がある点にご注意ください。",
+                  reason: "花のサブスクが初めてで不安がある方には、bloomeeが向いています。お花のガイドブックが付き、栄養剤も毎回同封されるため、初めての方でも飾り方を確認できます（2026年10月21日公式確認）。SNSに利用者の投稿が多いため、事前にどんな花が届くか参考にできる安心感もあります。ただし、最低4回の受け取り条件がある点にご注意ください。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F8F8F8] rounded-xl p-5 md:p-6 border border-[#E5E5E5]">
@@ -629,7 +628,7 @@ export default function BloomeeVsMedeluPage() {
                   <h4 className="text-sm font-bold text-[#4A7C59] mb-3">メリット</h4>
                   <ul className="text-sm text-[#666] space-y-2">
                     <li>-- 知名度が高く安心感がある</li>
-                    <li>-- 専用アプリで便利に管理できる</li>
+                    <li>-- お花のガイドブックが付き、栄養剤が毎回同封される</li>
                     <li>-- 「プレゼントとして送る」で相手の住所に届けられる</li>
                                         <li>-- SNSで情報収集しやすい</li>
                     <li>-- 定期便は2週間以内の連絡で返金・交換（特商法）</li>
@@ -666,8 +665,6 @@ export default function BloomeeVsMedeluPage() {
                 <div className="bg-[#FDF5F5] rounded-xl p-5 border border-[#F0D0D0]">
                   <h4 className="text-sm font-bold text-[#E0B8B8] mb-3">デメリット</h4>
                   <ul className="text-sm text-[#666] space-y-2">
-                    <li>-- 専用アプリがない</li>
-                    <li>-- ギフト対応機能がない</li>
                     <li>-- SNSでの情報量が少ない</li>
                     <li>-- 知名度がbloomeeより低い</li>
                     <li>-- 花屋ごとのアレンジの多様性はない</li>
@@ -731,7 +728,7 @@ export default function BloomeeVsMedeluPage() {
               品質の安定した花が届くため、花のある生活を手軽に始めたい方に向いています。
             </p>
             <p className="text-sm md:text-base text-[#666] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              ブランドの知名度やサービスの充実度を重視する場合はbloomeeをおすすめします。専用アプリやギフト機能などの付加価値が充実しており、SNSでの情報量も豊富です。
+              ブランドの知名度やサービスの充実度を重視する場合はbloomeeをおすすめします。「プレゼントとして送る」での申し込みや、お花のガイドブックなど、初めての方向けの案内があり、SNSでの情報量も豊富です。
               花のサブスクの代表的なサービスとしての安心感があり、プレゼント用途にも対応しています。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">

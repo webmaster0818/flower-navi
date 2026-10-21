@@ -213,12 +213,12 @@ export default function MothersDayGuidePage() {
                   <h3 className="text-base font-bold text-[#333]">HitoHana（ひとはな）</h3>
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed mb-4">
-                  HitoHanaは、花の色やスタイルを選べる点が最大の特徴です。「お母さんはピンクが好きだから」「和風のアレンジが合いそう」といった細かい要望にも対応しています。メッセージカードを添えて届けられるため、感謝の気持ちを花と一緒に伝えられます。ボリュームもあり、ギフトにふさわしい華やかさがあります。
+                  HitoHanaは、花の色を6色とおまかせから、ボリュームをLite〜LLの5サイズから選べます。公式の「お花のサブスクギフト（定期便）」ページから申し込め、メッセージカードを有料オプションで添えられます。S〜LLは透明な蓋の専用ボックスに入り、宅配業者が手渡しで届けます（2026年10月21日公式確認）。
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
                     <p className="text-xs text-[#999]">ギフト対応</p>
-                    <p className="text-sm font-bold text-[#333]">メッセージカード付</p>
+                    <p className="text-sm font-bold text-[#333]">メッセージカード（有料オプション）</p>
                   </div>
                   <div className="text-center bg-[#F8F8F8] rounded-lg p-3">
                     <p className="text-xs text-[#999]">料金</p>
@@ -230,7 +230,7 @@ export default function MothersDayGuidePage() {
                   </div>
                 </div>
                 <div className="bg-[#E8F0EB] rounded-lg p-3">
-                  <p className="text-xs text-[#4A7C59] font-medium">花の色やボリュームを選べるため、お母さんの好みに合わせて贈ることができます。メッセージカードに手書きで感謝の言葉を添えられる点も利点です。</p>
+                  <p className="text-xs text-[#4A7C59] font-medium">花の色やボリュームを選べるため、お母さんの好みに合わせて贈ることができます。メッセージカードには、感謝の言葉を自由に記入できます。</p>
                 </div>
               </div>
             </div>
