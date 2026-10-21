@@ -11,12 +11,16 @@ const faqItems = [
     a: "水やり・剪定・病害虫の対応まで事業者が行う、訪問メンテナンス付きの法人向けレンタルが該当します。公式サイトで確認できた例では、HitoHana Rental Greenは専門スタッフが月2回訪問し、社内での作業は発生しないと案内しています。傷んだ植物は交換され、料金はノーマルプランで1鉢あたり月600円（XS）〜3,600円（XXL）（税別）、最低契約期間は1年、訪問1拠点あたりの植物レンタル代は7,800円以上です。GOOD GREENのメンテナンスプランも月2回の訪問で、1鉢あたり月1,430円（S）・2,728円（M/L）（税込）、M・Lサイズ5鉢以上が条件です。生きた植物にこだわらない場合は、水やりが不要なフェイクグリーン（CLASのレンタル、HitoHanaの買い切り）という選択肢もあります（いずれも2026年10月19日公式確認）。",
   },
   {
+    q: "会社で季節ごとに観葉植物を入れ替えてもらうには、見積もりで何を伝えればよいですか？",
+    a: "「入れ替えの頻度」「季節に合った植物を使うか」「枯れたときの交換の扱い」「巡回の回数と作業内容」「鉢のサイズと設置場所ごとの鉢数」「水道料金などの負担区分」を依頼文に書いてください。公的な契約の例では、那覇市役所本庁舎の観葉植物等賃貸借仕様書（令和8年度）が、3か月に1回・季節に合った植物への取り替え、枯れた場合は時期にかかわらず貸す側の責任で交換、月2回以上の巡回、水道料金は借りる側の負担と定めています（2026年10月21日確認）。公開プランで3か月に1回の交換を定めているのはGOOD GREENです（2026年10月19日公式確認）。",
+  },
+  {
     q: "月額制の観葉植物サブスクは、購入と比べてどちらがお得ですか？",
     a: "同じ鉢を長く置き続け、水やりを自分で行えるなら購入、水やり・交換まで任せたいなら月額制（レンタル）が向いています。公式価格で試算すると、AND PLANTSのパキラ M（高さ目安75〜110cm）13,980円（税込・送料無料）は、HitoHana Rental GreenのノーマルプランM（H80〜100cm）月1,600円（税別、税込換算1,760円）の約8か月分にあたります。HitoHanaの最低契約期間は1年のため、1鉢を置くだけなら購入のほうが支払額は少なくなります。レンタルの月額には月2回の訪問メンテナンスと傷んだ際の交換が含まれるため、その作業を社内で担えるかどうかで判断してください。試算の詳細は「観葉植物の料金の考え方」にまとめています（2026年10月19日公式確認）。",
   },
   {
     q: "観葉植物のサブスクと花のサブスクはどう違いますか？",
-    a: "花のサブスクは切り花が定期的に届き、1〜2週間ほどで次の花に入れ替わります。観葉植物は鉢植えのため、適切に管理すれば長く置き続けられます。また、花の定期便は1回ごとの料金を払う形が中心ですが、観葉植物は「単品で購入する」か「法人向けのレンタルで借りる」かで費用の性質が大きく異なります。購入なら支払いは一度で、レンタルなら契約期間中は月額が続く代わりに交換やメンテナンスが含まれます。",
+    a: "花のサブスクは切り花が定期的に届き、届くたびに次の花に入れ替わります。観葉植物は鉢植えのため、適切に管理すれば長く置き続けられます。また、花の定期便は1回ごとの料金を払う形が中心ですが、観葉植物は「単品で購入する」か「法人向けのレンタルで借りる」かで費用の性質が大きく異なります。購入なら支払いは一度で、レンタルなら契約期間中は月額が続く代わりに交換やメンテナンスが含まれます。",
   },
   {
     q: "観葉植物を枯らしてしまわないか不安ですが、初心者でも始められますか？",
@@ -68,7 +72,7 @@ export default function KanyouShokubutsuPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"観葉植物の定期便・サブスク比較\",\"item\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物のサブスク・レンタル比較｜季節の入れ替え・メンテナンス込み（管理不要）で選ぶ\",\"description\":\"季節ごとに植物を入れ替えられる観葉植物サブスク・レンタルと、水やりまで任せられる法人向けのメンテナンス込みレンタルを、公式サイトで確認した月額・交換頻度・訪問回数・契約条件で比較します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-19T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物のサブスク・レンタル比較｜季節の入れ替え・メンテナンス込み（管理不要）で選ぶ\",\"description\":\"季節ごとに植物を入れ替えられる観葉植物サブスク・レンタルと、水やりまで任せられる法人向けのメンテナンス込みレンタルを、公式サイトで確認した月額・交換頻度・訪問回数・契約条件で比較します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-21T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div className="flex flex-col min-h-screen">
@@ -102,7 +106,7 @@ export default function KanyouShokubutsuPage() {
             </h1>
             <p className="text-sm md:text-base text-[#666] mb-6 max-w-2xl mx-auto leading-relaxed">
               当サイトでは、<strong>観葉植物を「買って育てる」か「借りて任せる」かを判断するための情報</strong>をまとめています。
-              植物の入れ替え頻度・訪問メンテナンスの回数・月額・契約条件を各社の公式サイトで確認し、確認日を付けて比較しています（最終更新：2026年10月19日）。
+              植物の入れ替え頻度・訪問メンテナンスの回数・月額・契約条件を各社の公式サイトで確認し、確認日を付けて比較しています（最終更新：2026年10月21日）。
             </p>
             <p className="text-xs md:text-sm text-[#666] max-w-2xl mx-auto leading-relaxed">
               置き場所・日当たり・水やりなど<strong>育て方</strong>を知りたい方は
@@ -231,6 +235,39 @@ export default function KanyouShokubutsuPage() {
               <a href="https://hitohana.tokyo/indoor-plants" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4A7C59] underline">HitoHana 観葉植物</a>。
               料金・条件は改定されることがあるため、申し込み前に各公式サイトでご確認ください。GOOD GREENのサイズ区分はS（〜40cm）・M（50〜130cm）・L（140〜200cm）で、HitoHanaとは異なります。
             </p>
+
+            <h3 id="mitsumori-jouken" className="text-base md:text-lg font-bold text-[#333] mt-10 mb-3 scroll-mt-20">会社で季節ごとの入れ替えを依頼するときに見積もりへ書く条件</h3>
+            <p className="text-sm text-[#666] leading-relaxed mb-4">
+              法人向けレンタルは、公開プランのほかに見積もりで条件を決める契約が多くあります。季節ごとの入れ替えと管理不要を両立させたい場合は、次の項目を依頼文に明記すると、各社の回答を同じ条件で比べられます。公的な契約の例として、那覇市役所本庁舎の観葉植物等賃貸借仕様書（令和8年度）は、これらを契約条件として定めています（2026年10月21日確認）。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse min-w-[560px]">
+                <thead>
+                  <tr className="bg-[#F8F8F8]">
+                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5] w-40">見積もりで指定する項目</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#999] border-b border-[#E5E5E5]">那覇市の仕様書での定め方</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { k: "入れ替えの頻度", v: "鉢の取り替えは3か月に1回。季節に合った植物を使う" },
+                    { k: "枯れたときの交換", v: "通常の状態で枯れた場合は、取り替えの時期にかかわらず貸す側の責任で交換する" },
+                    { k: "巡回・手入れ", v: "月2回以上巡回し、必要に応じて剪定・堆肥・防除を行う" },
+                    { k: "鉢のサイズと数", v: "特大（樹高170cm以上）・大（150〜170cm）・小（50〜60cm）の別に、設置場所ごとの鉢数を指定" },
+                    { k: "費用の負担区分", v: "水やりに使う水道料金は借りる側が負担する" },
+                    { k: "報告", v: "年間の予定樹種表を提出し、入れ替え後は作業写真付きの報告書を提出する" },
+                  ].map((r, i) => (
+                    <tr key={i} className="border-b border-[#F0F0F0] align-top">
+                      <td className="px-3 py-3 font-bold text-[#333]">{r.k}</td>
+                      <td className="px-3 py-3 text-[#555] leading-relaxed">{r.v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#999] leading-relaxed mt-3">
+              出典：<a href="https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/011/330/r8kanyousyokubutsu_shiyousyo.pdf" target="_blank" rel="noopener noreferrer nofollow" className="underline">那覇市役所本庁舎観葉植物等賃貸借仕様書</a>（2026年10月21日確認）。自治体の契約条件の一例であり、民間の各社のプランの内容を示すものではありません。公開プランでは、GOOD GREENが3か月に1回の交換（上の比較表）を定めています。
+            </p>
           </div>
         </section>
 
@@ -292,8 +329,8 @@ export default function KanyouShokubutsuPage() {
                 </thead>
                 <tbody>
                   {[
-                    { item: "楽しめる期間", flower: "1〜2週間", plant: "数ヶ月〜数年" },
-                    { item: "お手入れ", flower: "水替え毎日〜2日", plant: "水やり週1〜2回" },
+                    { item: "楽しめる期間", flower: "切り花のため次の便までが目安（日持ちは花材・季節で変わる）", plant: "鉢植えのため、管理しだいで長く置ける" },
+                    { item: "お手入れ", flower: "花瓶の水替え・茎の切り戻し", plant: "土の乾き具合を見て水やり（頻度は種類・季節・置き場所で変わる）" },
                     { item: "費用の払い方", flower: "1回ごとの料金（定期便）", plant: "単品購入、または法人向けレンタルの月額" },
                     { item: "入れ替え", flower: "届くたびに新しい花", plant: "購入は入れ替えなし／レンタルは3か月ごと等の交換あり" },
                     { item: "インテリア効果", flower: "華やかさ・季節の彩り", plant: "通年で落ち着いた緑" },

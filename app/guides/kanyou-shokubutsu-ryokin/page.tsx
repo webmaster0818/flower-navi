@@ -2,7 +2,7 @@ import Link from "next/link";
 import Header from "@/app/components/Header";
 import { SERVICES } from "@/data/services";
 
-const UPDATED = "2026年10月19日";
+const UPDATED = "2026年10月21日";
 
 /* 表示する金額は data/services.ts の公式確認値と、下の RENTAL_CHECK（2026-10-19 公式確認）のみを使用する。 */
 const sorted = [...SERVICES].sort((a, b) => a.cheapest.price - b.cheapest.price);
@@ -57,7 +57,7 @@ const articleLd = {
   description:
     "月額制の観葉植物レンタルと購入を、AND PLANTS・HitoHana Rental Green・GOOD GREENの公式価格で試算し、損益が入れ替わる月数と月額に含まれる作業を整理します。金額が決まる5つの条件、初期費用と月額の内訳、予算の立て方もまとめています。",
   datePublished: "2026-09-16T00:00:00+09:00",
-  dateModified: "2026-10-19T00:00:00+09:00",
+  dateModified: "2026-10-21T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/guides/kanyou-shokubutsu-ryokin/" },
@@ -192,6 +192,15 @@ export default function KanyouShokubutsuRyokinPage() {
             <p className="text-xs text-[#999] leading-relaxed mt-3">
               ※ 税込換算は税別価格に消費税10%を加えた当サイトの計算値です。HitoHana Rental Greenのノーマルプランにはパキラが含まれます。月数は「購入価格 ÷ 税込換算の月額」で、小数第2位を四捨五入しています。
             </p>
+
+            <h3 id="shisan-zentei" className="font-bold text-[#333] mt-8 mb-3 scroll-mt-20">この試算の前提（公式価格での単純比較）</h3>
+            <ul className="text-sm text-[#555] leading-relaxed space-y-2">
+              <li>・<strong>比べているのは公式サイトの表示価格だけ</strong>です。AND PLANTSのパキラ M 13,980円、HitoHana Rental GreenのノーマルM 月1,600円（税別）、GOOD GREENのマイグリーンM/L 月2,178円・メンテナンスM/L 月2,728円（税込）は、2026年10月21日に各公式サイトで再確認し、10月19日の確認時から変わっていません。</li>
+              <li>・<strong>植物は高さで揃えています</strong>。品種・鉢の形・鉢カバーの仕様まで同じものを比べているわけではありません。AND PLANTSは商品ページで鉢の形を選ぶ形式で、送料無料と表示されています。</li>
+              <li>・<strong>購入側に含めていない費用</strong>：受け皿・肥料などの用品、水道代、枯れた場合の買い直し、社内・家庭で水やりをする時間。</li>
+              <li>・<strong>レンタル側の条件</strong>：HitoHana Rental Greenは法人専用で、最低契約期間1年・訪問1拠点あたり植物レンタル代7,800円以上です。GOOD GREENは月額3,800円未満だと搬入・交換月に配送費3,000円がかかります。HitoHanaは1鉢から利用できますが最低利用料金があり、GOOD GREENは配送費が加わる場合があるため、1鉢だけ借りるときの実際の支払額は1鉢あたりの表示価格より高くなります。</li>
+              <li>・<strong>個人の場合</strong>：生きた植物の訪問メンテナンス付きレンタルは、当サイトが確認できた範囲では法人向けが中心のため、個人宅に置くなら購入が基本の選択肢です。</li>
+            </ul>
 
             <h3 className="font-bold text-[#333] mt-8 mb-3">月額に含まれるもの・含まれないもの</h3>
             <ul className="space-y-3">
