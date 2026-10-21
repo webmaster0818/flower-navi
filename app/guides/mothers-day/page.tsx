@@ -271,7 +271,7 @@ export default function MothersDayGuidePage() {
               <div className="bg-[#F8F8F8] rounded-xl p-5 border border-[#E5E5E5]">
                 <h3 className="text-sm font-bold text-[#333] mb-2">5,000円以上のギフト</h3>
                 <p className="text-sm text-[#666] leading-relaxed mb-2">
-                  しっかりと感謝を伝えたい方に適しています。HitoHanaの上位プラン3回分や、bloomeeのベーシックプラン4回分（花代2,180円＋送料550円×4回＝10,920円。最初の4回分のお届けが約束されています（2026年10月20日公式確認））をおすすめします。3か月にわたって花が届くため、母の日以降も楽しんでいただけます。LIFFTの花束プラン（3,300円）2〜3回分も、特別感のあるギフトになります。
+                  しっかりと感謝を伝えたい方に適しています。HitoHanaの上位プラン3回分や、bloomeeのベーシックプラン4回分（花代2,180円＋送料550円×4回＝10,920円。最初の4回分のお届けが約束されています（2026年10月20日公式確認））をおすすめします。3か月にわたって花が届くため、母の日以降も楽しんでいただけます。LIFFTのスタンダード（3,300円/月）2〜3か月分も選択肢です。期間を決めて贈る場合は、定期便のギフトチケット（3か月10,450円・税込）があります（2026年10月21日公式確認）。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#E5E5E5]">
                   <p className="text-xs text-[#4A7C59] font-medium">おすすめ：HitoHana 上位プラン3回分 または LIFFT 花束プラン2回分</p>

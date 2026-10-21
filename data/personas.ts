@@ -77,7 +77,7 @@ export const personas: Persona[] = [
     recommended: [
       { service: "medelu MODERN コース", reason: "モノトーン・グリーン中心の落ち着いた色合いで、男性の部屋に合う", priceFrom: 1198 },
       { service: "AND PLANTS", reason: "デザイン性が高く、アートとして楽しめる。SNSでの見栄えも良い", priceFrom: 1980 },
-      { service: "LIFFT", reason: "提携農園からの直送（2026年10月17日公式確認）の本格的な花。専門家が選んだ高品質な花が届く", priceFrom: 3300 },
+      { service: "LIFFT", reason: "提携農園からの直送（2026年10月17日公式確認）の本格的な花。専門家が選んだ高品質な花が届く。1回1,480円（送料込み）のライトは本州の一部地域のみ。スタンダードは3,300円/月（2026年10月21日公式確認）", priceFrom: 1480 },
       { service: "bloomee", reason: "気軽に始められる入門向けのサービス。男性の利用者も増えている", priceFrom: 980 },
     ],
     howToChoose: [
@@ -116,7 +116,7 @@ export const personas: Persona[] = [
     recommended: [
       { service: "AND PLANTS", reason: "デザイン性が高く、リビングに置いて家族で楽しめる", priceFrom: 1980 },
       { service: "HitoHana", reason: "ボリュームを重視しており、ファミリー向けのプランもある", priceFrom: 1320 },
-      { service: "LIFFT", reason: "本格的な花で、子どもにも本物の美しさを伝えられる", priceFrom: 3300 },
+      { service: "LIFFT", reason: "本格的な花で、子どもにも本物の美しさを伝えられる。1回1,480円（送料込み）のライトは本州の一部地域のみ。スタンダードは3,300円/月（2026年10月21日公式確認）", priceFrom: 1480 },
       { service: "bloomee ベーシック", reason: "8本以上・約25〜30cmの花を手渡しで届ける。毎週届く（4回目以降は隔週も可能）", priceFrom: 2180 },
     ],
     howToChoose: [
@@ -152,7 +152,7 @@ export const personas: Persona[] = [
       { title: "仏壇やお墓への供花にも使いたい", text: "ハナプライムには、お供え用のお花を届ける定期便（お供え花コース・1回980円〜）があります（2026年10月19日公式確認）。" },
     ],
     recommended: [
-      { service: "LIFFT", reason: "提携農園からの直送（2026年10月17日公式確認）で旬の花を届ける。シニアに支持されている本格的なサービス", priceFrom: 3300 },
+      { service: "LIFFT", reason: "提携農園からの直送（2026年10月17日公式確認）で旬の花を届ける。シニアに支持されている本格的なサービス。1回1,480円（送料込み）のライトは本州の一部地域のみ。スタンダードは3,300円/月（2026年10月21日公式確認）", priceFrom: 1480 },
       { service: "HitoHana", reason: "電話の問い合わせ窓口（10:00〜17:00、土日祝日も営業）があり、不明点を相談できる。申し込み・解約はウェブサイトとマイページで行う（2026年10月18日公式確認）", priceFrom: 1320 },
       { service: "bloomee", reason: "ポスト投函で受け取りが簡単", priceFrom: 980 },
       { service: "medelu", reason: "低価格で続けやすく、回数の条件がない", priceFrom: 748 },
@@ -195,7 +195,7 @@ personas.push(
     recommended: [
       { service: "medelu", reason: "MODERN/ROMANTICなどのテーマ別プランがあり、二人の好みに合わせて選べる", priceFrom: 748 },
       { service: "AND PLANTS", reason: "夫婦のリビングに合うデザインで、共有しやすい大きさ", priceFrom: 1980 },
-      { service: "LIFFT", reason: "本格的な旬の花を二人で楽しめ、一週間の楽しみになる", priceFrom: 3300 },
+      { service: "LIFFT", reason: "本格的な旬の花を二人で楽しめ、一週間の楽しみになる。1回1,480円（送料込み）のライトは本州の一部地域のみ。スタンダードは3,300円/月（2026年10月21日公式確認）", priceFrom: 1480 },
       { service: "HitoHana", reason: "ボリュームを調整でき、二人暮らしに合うMサイズがある", priceFrom: 1320 },
     ],
     howToChoose: [
@@ -307,7 +307,7 @@ personas.push(
     ],
     recommended: [
       { service: "AND PLANTS", reason: "オンライン会議の背景を華やかにでき、デザイン性も高い。リモート会議が多い方に適している", priceFrom: 1980 },
-      { service: "LIFFT", reason: "提携農園からの直送（2026年10月17日公式確認）の本格的な花。一週間の仕事の励みになる", priceFrom: 3300 },
+      { service: "LIFFT", reason: "提携農園からの直送（2026年10月17日公式確認）の本格的な花。一週間の仕事の励みになる。1回1,480円（送料込み）のライトは本州の一部地域のみ。スタンダードは3,300円/月（2026年10月21日公式確認）", priceFrom: 1480 },
       { service: "medelu MODERN", reason: "落ち着いた色合いで、デスクやリビングに合う", priceFrom: 1198 },
       { service: "HitoHana", reason: "ボリュームを調整でき、Lサイズでリビングを華やかにできる", priceFrom: 1320 },
     ],

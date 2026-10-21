@@ -36,7 +36,7 @@ export const regions: Region[] = [
     ],
     recommended: [
       { service: "AND PLANTS", reason: "都市部の暮らしに合うデザイン性の高さ", priceFrom: 1980 },
-      { service: "LIFFT", reason: "都心で在宅勤務をする方に、旬の花を本格的に届ける", priceFrom: 3300 },
+      { service: "LIFFT", reason: "都心で在宅勤務をする方に、旬の花を本格的に届ける。1回1,480円（送料込み）のライトは本州の一部地域のみ。スタンダードは3,300円/月（2026年10月21日公式確認）", priceFrom: 1480 },
       { service: "bloomee", reason: "お試しプランは1回980円（送料385円）から（2026年10月20日公式確認）", priceFrom: 980 },
       { service: "medelu Mini", reason: "都心で一人暮らしをする方に適した小ぶりで低価格なプラン", priceFrom: 748 },
     ],
@@ -127,7 +127,7 @@ export const regions: Region[] = [
       { service: "bloomee", reason: "名古屋の地元の花屋との提携が多い", priceFrom: 980 },
       { service: "HitoHana", reason: "中部圏での配送実績が豊富", priceFrom: 1320 },
       { service: "AND PLANTS", reason: "デザインを重視する名古屋の利用者に適している", priceFrom: 1980 },
-      { service: "LIFFT", reason: "三河の伝統的な花の文化に合う本格的な花", priceFrom: 3300 },
+      { service: "LIFFT", reason: "三河の伝統的な花の文化に合う本格的な花。1回1,480円（送料込み）のライトは本州の一部地域のみ。スタンダードは3,300円/月（2026年10月21日公式確認）", priceFrom: 1480 },
     ],
     localPreference: [
       { topic: "華やかな色合いが好まれます", detail: "結婚式のシャンデリアや、トヨタ車のメタリックな色に見られるように、華やかなものを好む土地柄です。花も鮮やかな色合いが好まれます。" },
@@ -168,13 +168,12 @@ export const regions: Region[] = [
     ],
     recommended: [
       { service: "AND PLANTS", reason: "みなとみらい・元町の洋風の文化に合う", priceFrom: 1980 },
-      { service: "LIFFT", reason: "山手の歴史ある邸宅に合う本格的な花", priceFrom: 3300 },
+      { service: "LIFFT", reason: "山手の歴史ある邸宅に合う本格的な花。1回1,480円（送料込み）のライトは本州の一部地域のみ。スタンダードは3,300円/月（2026年10月21日公式確認）", priceFrom: 1480 },
       { service: "bloomee", reason: "お試しプランは1回980円（送料385円）から（2026年10月20日公式確認）", priceFrom: 980 },
       { service: "HitoHana", reason: "ボリュームのある洋風のアレンジ", priceFrom: 1320 },
     ],
     localPreference: [
       { topic: "洋風で上品なアレンジが好まれます", detail: "バラを中心とした洋風のアレンジが定番です。元町・山手地区の歴史ある洋館の文化が大きく影響しています。" },
-      { topic: "高価格帯のサービスの利用率が高い地域です", detail: "LIFFT・AND PLANTSのような高価格帯のサービスの利用率が、東京と並ぶ高い水準にあります。" },
       { topic: "海風と花の組み合わせ", detail: "海岸沿い（湘南・横須賀）では、潮風への対策として室内でのアレンジが基本です。観葉植物との組み合わせも人気です。" },
       { topic: "国際色豊かな地域", detail: "中華街・元町・山手の外国人コミュニティの影響により、ヨーロッパやアジアの花の文化を取り入れたアレンジへの理解が深い地域です。" },
     ],
@@ -254,7 +253,7 @@ export const regions: Region[] = [
     ],
     recommended: [
       { service: "AND PLANTS", reason: "対面配送のため凍結の対策がしやすく、デザイン性も高い", priceFrom: 1980 },
-      { service: "LIFFT", reason: "北海道の寒さに配慮した本格的な花選び", priceFrom: 3300 },
+      { service: "LIFFT", reason: "提携農園から届く旬の花。北海道ではスタンダード（3,300円/月）を利用でき、1回1,480円のライトは配送対象外です（2026年10月21日公式確認）", priceFrom: 3300 },
       { service: "HitoHana", reason: "ボリュームがあり、冬の長い在宅時間を彩る", priceFrom: 1320 },
       { service: "bloomee", reason: "札幌の地元の花屋との連携があり、地域に根ざしている", priceFrom: 980 },
     ],
@@ -299,7 +298,7 @@ export const regions: Region[] = [
       { service: "bloomee", reason: "仙台の地元の花屋との連携がある", priceFrom: 980 },
       { service: "AND PLANTS", reason: "杜の都の緑と調和する花", priceFrom: 1980 },
       { service: "HitoHana", reason: "東北への配送実績が豊富", priceFrom: 1320 },
-      { service: "LIFFT", reason: "厳しい冬を本格的な花で彩る", priceFrom: 3300 },
+      { service: "LIFFT", reason: "厳しい冬を本格的な花で彩る。1回1,480円（送料込み）のライトは本州の一部地域のみ。スタンダードは3,300円/月（2026年10月21日公式確認）", priceFrom: 1480 },
     ],
     localPreference: [
       { topic: "落ち着きと季節感が好まれます", detail: "派手すぎない自然なアレンジや、季節を感じる花が支持されています。ナチュラル系・北欧テイストが定番です。" },
@@ -339,7 +338,7 @@ export const regions: Region[] = [
       "祇園祭・葵祭・時代祭などの大規模な行事の期間中は、配送が遅れる可能性があります。",
     ],
     recommended: [
-      { service: "LIFFT", reason: "京都の伝統文化と調和する本格的な花", priceFrom: 3300 },
+      { service: "LIFFT", reason: "京都の伝統文化と調和する本格的な花。1回1,480円（送料込み）のライトは本州の一部地域のみ。スタンダードは3,300円/月（2026年10月21日公式確認）", priceFrom: 1480 },
       { service: "AND PLANTS", reason: "古都の落ち着いた雰囲気に合う", priceFrom: 1980 },
       { service: "bloomee", reason: "京都の地元の花屋と連携している", priceFrom: 980 },
       { service: "HitoHana", reason: "和洋折衷のアレンジに対応できる", priceFrom: 1320 },
