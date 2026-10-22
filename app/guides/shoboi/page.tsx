@@ -252,9 +252,9 @@ export default function ShoboboiGuidePage() {
             </div>
 
             <div className="mt-6 bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
-              <h3 className="text-sm font-bold text-[#1F2420] mb-2">花屋で購入する場合の価格</h3>
+              <h3 className="text-sm font-bold text-[#1F2420] mb-2">1本あたりの価格の計算例</h3>
               <p className="text-sm text-[#4A4F49] leading-relaxed">
-                一般的な花屋でミニブーケを購入すると、3〜5本で800〜1,500円程度、1本あたり300〜500円が相場です。medeluやタスハナは1本あたり200円台で、花屋で購入する場合より30〜50%安い計算になります。
+                medelu Miniは748円（送料込み・3〜4本）で1本あたり約187〜249円、タスハナの+act for flowersは660円（3本以上・送料330円は別）で1本あたり約220円です（2026年10月22日公式確認）。花屋の店頭価格は店舗や花の種類によって異なるため、当サイトでは一律の相場は示していません。比べる場合は、本数と送料を含めた総額で比較してください。
               </p>
             </div>
           </div>
@@ -430,9 +430,9 @@ export default function ShoboboiGuidePage() {
                 </p>
               </div>
               <div className="border-l-4 border-[#2F5B43] bg-[#F6F4EF] p-5">
-                <h3 className="font-bold text-[#1F2420] mb-2">⑤ 価格帯と花の本数の相場を把握する</h3>
+                <h3 className="font-bold text-[#1F2420] mb-2">⑤ 価格と本数の表記を確認する</h3>
                 <p className="text-sm text-[#4A4F49] leading-relaxed">
-                  花のサブスクは<strong>1,000円台で3〜4本、2,000円台で5〜8本、3,000円以上で8本以上</strong>が相場です。これを下回る本数の場合は、「しょぼい」と感じる可能性が高くなります。価格帯に合わせて期待値を設定することをおすすめします。
+                  公式の表記では、medelu Miniは748円で3〜4本、Liteは1,330円で5〜6本、Basicは2,330円で6〜9本（いずれも送料込み）、タスハナの+live for flowersは1,100円で5本以上（送料330円は別）、LIFFTのスタンダードは3,300円/月で合計9本前後です（2026年10月22日公式確認）。申し込む前に価格と本数の表記をあわせて確認し、届く量の期待値を決めておくことをおすすめします。
                 </p>
               </div>
             </div>

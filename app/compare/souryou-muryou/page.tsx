@@ -122,7 +122,7 @@ export default function SouryouMuryouPage() {
               送料無料が重要な理由
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
-              花のサブスクを選ぶ際は花代に注目しがちですが、<strong>送料を含めた総額</strong>で比較することが重要です。送料は1回あたり300〜500円が相場で、隔週配送の場合は月600〜1,000円、年間では7,200〜12,000円の差になります。
+              花のサブスクを選ぶ際は花代に注目しがちですが、<strong>送料を含めた総額</strong>で比較することが重要です。送料は、たとえばbloomeeは1回385〜550円（プランにより異なる）、タスハナは1回330円です（2026年10月22日公式確認）。隔週配送で年24回届く場合、送料だけで年間7,920円（330円×24回）〜13,200円（550円×24回）になります。
             </p>
             <div className="bg-[#EDF1EC] rounded-md p-5 border border-[#C8D8CB]">
               <h3 className="text-sm font-bold text-[#1F2420] mb-3">年間送料シミュレーション（隔週配送の場合）</h3>
