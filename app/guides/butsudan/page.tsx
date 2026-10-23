@@ -416,22 +416,21 @@ export default function ButsudanGuidePage() {
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-white text-[#2F5B43] text-sm font-bold">3</span>
                     <div>
                       <h3 className="text-base font-bold text-[#1F2420]">花の定期便（日本総合園芸）</h3>
-                      <p className="text-xs text-[#4A4F49]">農家直送で鮮度が高く、ボリュームのある花束が届くサービス</p>
+                      <p className="text-xs text-[#4A4F49]">花材が届き、自分で生けて飾るコースが中心の定期便</p>
                     </div>
                   </div>
                 </div>
                 <div className="p-5">
                   <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
-                    日本総合園芸が運営する「花の定期便」は、農家直送で鮮度の高い花が届くサービスです。切り花のコースは1回1,298円〜（自社配達便・月3回。宅配便は2,530円〜）で（2026年10月17日公式確認）、季節に応じた花が届きます。花屋やスーパーで購入する仏花とは異なり、専門家が選んだ新鮮な花が届く点が最大の特徴です。
+                    日本総合園芸が運営する「花の定期便」は、40コース以上（公式表記）から選べる定期便です。花瓶生け・水盤生け・アレンジメント花材などのコースでは花材が届き、自分で生けて飾ります。完成したアレンジメントやブーケが届くコース（季節のブーケコースなど）もあります（2026年10月23日公式確認）。切り花の花瓶・水盤バラエティーコースは1回1,298円（自社配達便・月3回。宅配便は2,530円）です（2026年10月17日公式確認）。
                   </p>
                   <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
-                    農家直送のため中間業者を通さず、摘みたての花が短い流通経路で届きます。そのため花持ちが非常に良く、仏花として2週間以上持つ場合もあります。宅配便での配送となるため、ボリュームのある花束を受け取れる点も特長です。法人のオフィス装花にも対応しており、お寺や葬儀場への導入実績もあるサービスです。
+                    お届けは、関西近郊の自社配達便と、そのほかの対象エリアの宅配便から選べます。仏花として飾る場合は、届いた花材を仏壇の花立ての大きさに合わせて切りそろえて生けてください。
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">1,298円/回〜（自社配達便）（2026年10月17日公式確認）</span>
-                    <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">農家直送</span>
-                    <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">宅配便</span>
-                    <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">花持ちが良い</span>
+                    <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">花材が届く</span>
+                    <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">自社配達便・宅配便</span>
                   </div>
                   <a
                     href="/services/nihon-sogo-engei"
