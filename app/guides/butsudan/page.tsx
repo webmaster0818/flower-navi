@@ -549,7 +549,7 @@ export default function ButsudanGuidePage() {
               当サイトが仏花としておすすめするのは、送料無料で748円からと手頃な<strong>medelu</strong>のNATURAL/ANYROOMコースです。生産者と市場から直接仕入れた落ち着いた色合いの花が届きます。回数の条件もないため、試しに始めることができます。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              より本格的な仏花を求める方には<strong>花の定期便（日本総合園芸）</strong>の農家直送サービス、手軽さを重視する方には<strong>bloomee</strong>のポスト投函をおすすめします。ご自身の生活に合ったサービスをお選びください。
+              仏花を定期的に受け取りたい方には<strong>花の定期便（日本総合園芸）</strong>、手軽さを重視する方には<strong>bloomee</strong>のポスト投函をおすすめします。ご自身の生活に合ったサービスをお選びください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a

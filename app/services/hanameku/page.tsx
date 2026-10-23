@@ -20,7 +20,7 @@ const faqItems = [
   },
   {
     q: "ハナメクを申し込む際に注意すべき点は何ですか？",
-    a: "口コミの内容とは別に、お申し込み前に確認すべき点は、①初回（定期1回目）は解約できない、②解約・スキップ・変更の締切がお届け予定日の10日前と早い、③スキップは次回分のみ、の3点です。いずれも公式FAQ・お知らせに記載されています。",
+    a: "口コミの内容とは別に、お申し込み前に確認すべき点は、①初回（定期1回目）は解約できない、②解約・スキップ・変更の締切は公式FAQ・お知らせではお届け予定日の10日前（ライトプランの商品ページは9日前）、③スキップは次回分のみ、の3点です。いずれも公式FAQ・お知らせに記載されています。",
   },
   {
     q: "ハナメク（hanameku）の料金はいくらですか？",
@@ -28,7 +28,7 @@ const faqItems = [
   },
   {
     q: "ハナメクに回数縛りはありますか？解約方法も教えてください。",
-    a: "最低回数の記載はありませんが、公式FAQに「定期1回目（初回）の解約は受け付けておりません」と明記されています。2回目以降はマイページから手続きでき、締切はお届け予定日の10日前です。",
+    a: "最低回数の記載はありませんが、公式FAQに「定期1回目（初回）の解約は受け付けておりません」と明記されています。2回目以降はマイページから手続きできます。締切は、公式FAQ・ご利用ガイド・セルフアレンジプランのページでは「お届け予定日の10日前まで」、ライトプランの商品ページでは「お届け予定日の9日前まで解約可能」と記載されています。2024年6月5日のお知らせでは、2024年7月1日からライト・セルフプランの締切を9日前から10日前に変更すると案内しています（2026年10月23日公式確認）。",
   },
   {
     q: "ハナメクのお花はどのように届きますか？",
@@ -55,7 +55,7 @@ export default function HanamekuPage() {
       {/* SERVICE_SCHEMA_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"hanameku（ハナメク）\",\"serviceType\":\"お花の定期便\",\"provider\":{\"@type\":\"Organization\",\"name\":\"hanameku（ハナメク）\"},\"areaServed\":\"JP\",\"url\":\"https://ohana-delivery.com/services/hanameku/\"}" }} />
       {/* CANCEL_FLOW_SCHEMA_v1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"hanameku（ハナメク）の解約手順\",\"description\":\"hanameku（ハナメク）の解約方法を手順ごとにご説明します\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログインする\",\"text\":\"hanameku公式サイトの「マイページ」にログインします。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"定期管理ページを開く\",\"text\":\"マイページの定期管理ページで、対象商品の詳細を開きます（2026年10月17日公式確認）。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「停止」ボタンを押す\",\"text\":\"対象商品の詳細にある停止ボタンから定期便を停止します（2026年10月17日公式確認）。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を入力する（任意）\",\"text\":\"フィードバックの入力は任意です。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"停止の手続きを確定する\",\"text\":\"お届け予定日の10日前までに手続きを完了してください。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知を確認する\",\"text\":\"メールで完了通知が届きます。\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"hanameku（ハナメク）の解約手順\",\"description\":\"hanameku（ハナメク）の解約方法を手順ごとにご説明します\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"マイページにログインする\",\"text\":\"hanameku公式サイトの「マイページ」にログインします。\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"定期管理ページを開く\",\"text\":\"マイページの定期管理ページで、対象商品の詳細を開きます（2026年10月17日公式確認）。\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"「停止」ボタンを押す\",\"text\":\"対象商品の詳細にある停止ボタンから定期便を停止します（2026年10月17日公式確認）。\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"解約理由を入力する（任意）\",\"text\":\"フィードバックの入力は任意です。\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"停止の手続きを確定する\",\"text\":\"お届け予定日の10日前（公式FAQ。ライトプランの商品ページは9日前）までに手続きを完了してください。\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"解約完了通知を確認する\",\"text\":\"メールで完了通知が届きます。\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hanameku/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
@@ -174,7 +174,7 @@ export default function HanamekuPage() {
                   ["届き方", "ライトはポスト投函・セルフアレンジは宅配"],
                   ["お届け頻度", "ライトは毎週または14日ごと"],
                   ["初回の解約", "不可（公式FAQ）"],
-                  ["締切", "お届け予定日の10日前"],
+                  ["締切", "お届け予定日の10日前（公式FAQ・ご利用ガイド。ライトプランの商品ページは「9日前まで解約可能」）"],
                   ["品質保証", "到着日含め3日以内に写真で申請"],
                 ].map(([k, v]) => (
                   <div key={k} className="flex">
@@ -254,8 +254,8 @@ export default function HanamekuPage() {
                   text: "公式FAQに「定期1回目（初回）の解約は受け付けておりません」と明記されています。最低回数の記載はないものの、少なくとも1回は受け取る前提でお申し込みください。",
                 },
                 {
-                  title: "解約・スキップの締切が10日前と早い",
-                  text: "解約・スキップ・変更の締切は、お届け予定日の10日前です（2024年7月に9日前から変更）。スキップは次回分のみで、連続スキップはできません。",
+                  title: "解約・スキップの締切は公式内で10日前と9日前の記載がある",
+                  text: "締切は、公式FAQ・ご利用ガイド・セルフアレンジプランのページでは「お届け予定日の10日前まで」、ライトプランの商品ページでは「お届け予定日の9日前まで解約可能」と記載されています。2024年6月5日のお知らせでは、2024年7月1日からライト・セルフプランの締切を9日前から10日前に変更すると案内しています（2026年10月23日公式確認）。スキップは次回分のみで、連続スキップはできません。",
                 },
                 {
                   title: "花材が重なる、蕾で届くことがある",
@@ -311,7 +311,7 @@ export default function HanamekuPage() {
         </section>
 
         {/* ─── Comparison Section ─── */}
-        <CompareSection s={S} all={SERVICES} note="送料込みで比べると、最安はmedeluのMini（748円）、次いでハナメクのライト（1,210円）です。bloomeeは花代980円に送料385円が加わり、最初の4回の受け取りが条件となります。ハナメクは、初回の解約ができない点と締切が10日前と早い点に留意すれば、送料込みの定額で続けやすいサービスです。" />
+        <CompareSection s={S} all={SERVICES} note="送料込みで比べると、最安はmedeluのMini（748円）、次いでハナメクのライト（1,210円）です。bloomeeは花代980円に送料385円が加わり、最初の4回の受け取りが条件となります。ハナメクは、初回の解約ができない点と締切（公式FAQは10日前・ライトプランの商品ページは9日前）に留意すれば、送料込みの定額で続けやすいサービスです。" />
 
         {/* ─── How to Sign Up ─── */}
         <section id="how-to-start" className="py-12 md:py-16 bg-[#F6F4EF]">
@@ -325,7 +325,7 @@ export default function HanamekuPage() {
                 { step: "STEP 2", title: "プランを選択する", text: "ポストに届くライトプラン（1,210円）か、宅配のセルフアレンジ（S 1,958円・L 3,278円）を選びます。" },
                 { step: "STEP 3", title: "お届け頻度を選択する", text: "ライトは毎週または14日ごと、セルフアレンジは月1回（第2土日）または14日ごとから選びます。" },
                 { step: "STEP 4", title: "お届け先・支払い方法を登録する", text: "お届け先と支払い方法を登録します。セルフアレンジは、地域別の追加送料もご確認ください。" },
-                { step: "STEP 5", title: "締切を確認する", text: "初回は解約できません。2回目以降の解約・スキップはお届け予定日の10日前が締切です。" },
+                { step: "STEP 5", title: "締切を確認する", text: "初回は解約できません。2回目以降の解約・スキップの締切は、公式FAQではお届け予定日の10日前、ライトプランの商品ページでは9日前です。" },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
                   <div className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">
@@ -386,7 +386,7 @@ export default function HanamekuPage() {
             <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               hanameku（ハナメク）の解約手順
             </h2>
-            <p className="text-sm text-[#4A4F49] mb-6">初回（定期1回目）は解約できません。2回目以降の解約・スキップの締切は、お届け予定日の10日前です。</p>
+            <p className="text-sm text-[#4A4F49] mb-6">初回（定期1回目）は解約できません。2回目以降の解約・スキップの締切は、公式FAQ・ご利用ガイドではお届け予定日の10日前、ライトプランの商品ページでは9日前と記載されています（2026年10月23日公式確認）。</p>
             <div className="bg-white rounded-md p-6 md:p-8">
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#2F5B43] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
@@ -420,7 +420,7 @@ export default function HanamekuPage() {
                   <div className="bg-[#2F5B43] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">5</div>
                   <div className="flex-1 bg-white border border-[#DEDAD2] rounded-md p-4">
                     <h3 className="font-bold text-[#1F2420] mb-1">停止の手続きを確定する</h3>
-                    <p className="text-sm text-[#4A4F49] leading-relaxed">お届け予定日の10日前までに手続きを完了してください。</p>
+                    <p className="text-sm text-[#4A4F49] leading-relaxed">お届け予定日の10日前（公式FAQ。ライトプランの商品ページは9日前）までに手続きを完了してください。</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start mb-4">
@@ -445,7 +445,7 @@ export default function HanamekuPage() {
               ハナメク（hanameku）は、1,210円（税込・送料込）でポストに届くライトプランが中心の花のサブスクです。口コミでは花持ちの良さと色合いのかわいさが評価され、自分で生けるセルフアレンジプランも選べます。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              一方で、初回（1回目）は解約できない点、解約・スキップの締切がお届け予定日の10日前と早い点、花材が重なることがあるという口コミがある点にご留意ください。
+              一方で、初回（1回目）は解約できない点、解約・スキップの締切（公式FAQは10日前・ライトプランの商品ページは9日前）、花材が重なることがあるという口コミがある点にご留意ください。
               より安く始めたい場合はmedelu（748円〜）、ポスト投函型の代表的なサービスと比較したい場合はbloomeeもあわせて検討し、ご自身に合ったサービスをお選びください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">

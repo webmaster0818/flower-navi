@@ -382,7 +382,7 @@ export const regions: Region[] = [
     ],
     recommended: [
       { service: "bloomee", reason: "ポスト投函のため、オートロック物件や単身世帯でも受け取りやすい。少量から気軽に始められる。", priceFrom: 980 },
-      { service: "medelu Mini", reason: "送料込みで最も安い価格帯。ポスト投函のため、都心の一人暮らしに適している。", priceFrom: 748 },
+      { service: "medelu Mini", reason: "送料込み1回748円（3〜4本）。ポスト投函のため、都心の一人暮らしに適している（2026年10月23日公式確認）。", priceFrom: 748 },
       { service: "AND PLANTS", reason: "宅配で日時を指定しやすく、在宅時間に合わせて対面で受け取りたい方に適している。デザイン性も高い。", priceFrom: 1980 },
     ],
     localPreference: [
