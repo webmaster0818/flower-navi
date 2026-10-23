@@ -8,7 +8,7 @@ const SITE_URL = "https://ohana-delivery.com";
 
 export const metadata: Metadata = {
   title: "花のサブスク 2サービス比較ガイド｜サービス同士の違い｜flowerデリ",
-  description: "AND PLANTSとLIFFT、medeluとAND PLANTSなど、主要な花のサブスクを2サービスずつ比較しています。価格・デザイン・サポートの各項目で違いを解説します。",
+  description: "AND PLANTSとLIFFT、medeluとAND PLANTSなど、主要な花のサブスクを2サービスずつ比較しています。料金・本数・配送・問い合わせ窓口の各項目で違いを解説します。",
   alternates: { canonical: "/vs/" },
 };
 
@@ -40,7 +40,7 @@ export default function VsIndexPage() {
               花のサブスク 2サービス比較ガイド
             </h1>
             <p className="text-base text-[#4A4F49] leading-relaxed">
-              主要な花のサブスクについて、{vsComparisons.length}通りの組み合わせを比較しています。価格・デザイン・サポート・口コミの各項目で、どちらが優れているかを示しています。
+              主要な花のサブスクについて、{vsComparisons.length}通りの組み合わせを比較しています。料金・本数・配送・問い合わせ窓口など、公式サイトで確認できる項目で違いを示しています。
             </p>
           </PageHero>
           <section className="mb-12">

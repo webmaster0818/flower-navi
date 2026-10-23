@@ -59,7 +59,7 @@ export default function UseCasesIndexPage() {
             </h1>
             <p className="text-base text-[#4A4F49] leading-relaxed">
               花のサブスクは『誕生日』『結婚記念日』『新築祝い』『退院祝い』『開店祝い』『出産祝い』など、
-              さまざまな利用シーンで活用できます。当サイトでは{useCases.length}のシーン別に、適したサービス・予算の相場・避けるべき花を解説しています。
+              さまざまな利用シーンで活用できます。当サイトでは{useCases.length}のシーン別に、適したサービス・料金の確認方法・避けるべき花を解説しています。
               贈る相手の状況に応じた選び方をご確認いただけます。
             </p>
           </PageHero>

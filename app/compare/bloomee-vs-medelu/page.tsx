@@ -8,11 +8,11 @@ import PageHero from "@/app/components/PageHero";
 const faqItems = [
   {
     q: "bloomeeとmedeluはどちらが安いですか？",
-    a: "送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのLiteコースは748円（送料無料）、bloomeeのお試しプランは980円＋送料385円＝1,365円です。同じポスト投函の最安プランでも、1回あたり約667円の差があります。",
+    a: "送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのMiniコースは748円（送料込み）、bloomeeのお試しプランは980円＋送料385円＝1,365円です（2026年10月23日公式確認）。同じポスト投函の最安プランでも、1回あたり617円の差があります。",
   },
   {
     q: "bloomeeとmedeluの花の品質に違いはありますか？",
-    a: "口コミでは、bloomeeについて「しおれていた・同じ花が続く」など品質のばらつきを指摘する声が多く見られます。medeluについては「センスが良い・長持ちする」という声が多い一方、「暑い時期は花持ちが短い」という声もあります。品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換（特商法）、medeluは到着当日中に写真を送れば送料込みで全額返金（交換なし）です（2026年10月14日 公式確認）。",
+    a: "花の品質を比べた公的なデータはないため、当サイトではどちらの品質が高いかは示していません。bloomeeは市場で仕入れた花を束ねて届ける（2026年10月23日公式確認）、medeluは生産者と市場から直接仕入れた花を届ける（2026年10月21日公式確認）と案内しています。品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換（特商法）、medeluは到着当日中に写真を送れば送料込みで全額返金（交換なし）です（2026年10月14日 公式確認）。",
   },
   {
     q: "bloomeeの最低4回の受け取り条件とは何ですか？",
@@ -53,7 +53,7 @@ export default function BloomeeVsMedeluPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs medelu 比較\",\"description\":\"bloomeeとmedeluの料金・評判・選び方を比較し、解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-medelu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluはどちらが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのLiteコースは748円（送料無料）、bloomeeのお試しプランは980円＋送料385円＝1,365円です。同じポスト投函の最安プランでも、1回あたり約667円の差があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluの花の品質に違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"口コミでは、bloomeeについて「しおれていた・同じ花が続く」など品質のばらつきを指摘する声が多く見られます。medeluについては「センスが良い・長持ちする」という声が多い一方、「暑い時期は花持ちが短い」という声もあります。品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換（特商法）、medeluは到着当日中に写真を送れば送料込みで全額返金（交換なし）です（2026年10月14日 公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの最低4回の受け取り条件とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、残り回数分の料金が違約金として発生します。お試しプランの場合、最低でも1,365円×4回＝5,460円の利用が必要です。medeluにはこのような回数の条件はなく、いつでも解約できます。\"}},{\"@type\":\"Question\",\"name\":\"medeluに回数の条件はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには回数の条件はありません。初回から解約でき、マイページからいつでも解約手続きが可能です。最低利用回数や違約金の設定がないため、試しに利用しやすい点がmedeluの利点です。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアに違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島を除く日本全国に配送対応しています。medeluも日本全国に対応していますが、一部離島や配送困難な地域は対象外となる場合があります。どちらもポスト投函プランは日本郵便を利用しており、対応エリアに大きな差はありません。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈るならどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluのギフトでの申し込み方法は、公式サイトでご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"途中でプラン変更はできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どちらもマイページからプラン変更が可能です。bloomeeはお試し・グリーン・ベーシックの各プラン間で変更でき、配送頻度（毎週・隔週）も変更可能です。medeluもMini・Lite・Lite+・Basicの各コース間で変更でき、配送頻度は隔週・毎週から選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedelu、両方試してから決めることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可能です。ただし、bloomeeには最低4回の受け取り条件があるため、試しに利用する場合でも最低4回分の料金が発生します。回数の条件がないmedeluを先に利用し、その後bloomeeを検討すると、費用面の負担を抑えられます。medeluは1回受け取っただけでも解約できるため、試験的な利用に向いています。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluはどちらが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのMiniコースは748円（送料込み）、bloomeeのお試しプランは980円＋送料385円＝1,365円です（2026年10月23日公式確認）。同じポスト投函の最安プランでも、1回あたり617円の差があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluの花の品質に違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の品質を比べた公的なデータはないため、当サイトではどちらの品質が高いかは示していません。bloomeeは市場で仕入れた花を束ねて届ける（2026年10月23日公式確認）、medeluは生産者と市場から直接仕入れた花を届ける（2026年10月21日公式確認）と案内しています。品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換（特商法）、medeluは到着当日中に写真を送れば送料込みで全額返金（交換なし）です（2026年10月14日 公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの最低4回の受け取り条件とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、残り回数分の料金が違約金として発生します。お試しプランの場合、最低でも1,365円×4回＝5,460円の利用が必要です。medeluにはこのような回数の条件はなく、いつでも解約できます。\"}},{\"@type\":\"Question\",\"name\":\"medeluに回数の条件はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには回数の条件はありません。初回から解約でき、マイページからいつでも解約手続きが可能です。最低利用回数や違約金の設定がないため、試しに利用しやすい点がmedeluの利点です。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアに違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島を除く日本全国に配送対応しています。medeluも日本全国に対応していますが、一部離島や配送困難な地域は対象外となる場合があります。どちらもポスト投函プランは日本郵便を利用しており、対応エリアに大きな差はありません。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈るならどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluのギフトでの申し込み方法は、公式サイトでご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"途中でプラン変更はできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どちらもマイページからプラン変更が可能です。bloomeeはお試し・グリーン・ベーシックの各プラン間で変更でき、配送頻度（毎週・隔週）も変更可能です。medeluもMini・Lite・Lite+・Basicの各コース間で変更でき、配送頻度は隔週・毎週から選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedelu、両方試してから決めることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可能です。ただし、bloomeeには最低4回の受け取り条件があるため、試しに利用する場合でも最低4回分の料金が発生します。回数の条件がないmedeluを先に利用し、その後bloomeeを検討すると、費用面の負担を抑えられます。medeluは1回受け取っただけでも解約できるため、試験的な利用に向いています。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -90,7 +90,7 @@ export default function BloomeeVsMedeluPage() {
               8つの違いを比較【2026年最新】
             </h1>
             <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
-              当サイトでは、花のサブスクで人気のある「bloomee（ブルーミー）」と「medelu（メデル）」を、
+              当サイトでは、花のサブスク「bloomee（ブルーミー）」と「medelu（メデル）」を、
               料金・花の本数・解約条件など8つの項目で比較し、利用目的に応じた選び方をご説明します。
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8">
@@ -126,7 +126,7 @@ export default function BloomeeVsMedeluPage() {
                   <li><a href="#cancel" className="hover:text-[#2F5B43] transition-colors">6. 解約のしやすさ</a></li>
                   <li><a href="#freshness" className="hover:text-[#2F5B43] transition-colors">7. 花の鮮度</a></li>
                   <li><a href="#app" className="hover:text-[#2F5B43] transition-colors">8. マイページでの手続き</a></li>
-                  <li><a href="#brand" className="hover:text-[#2F5B43] transition-colors">9. ブランド認知度・実績</a></li>
+                  <li><a href="#brand" className="hover:text-[#2F5B43] transition-colors">9. 公式サイトに記載の実績</a></li>
                   <li><a href="#table" className="hover:text-[#2F5B43] transition-colors">10. 比較一覧表</a></li>
                   <li><a href="#scenario" className="hover:text-[#2F5B43] transition-colors">11. 利用シーン別のおすすめ</a></li>
                   <li><a href="#pros-cons" className="hover:text-[#2F5B43] transition-colors">12. 両サービスのメリット・デメリット</a></li>
@@ -145,7 +145,7 @@ export default function BloomeeVsMedeluPage() {
               利用目的に応じてbloomeeとmedeluを選び分けられます
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
-              費用と手軽さを重視する場合はmedelu、ブランドの知名度やサービスの充実度を重視する場合はbloomeeをおすすめします。
+              費用と手軽さを重視する場合はmedelu、同封のガイドブック・栄養剤や「プレゼントとして送る」での申し込みを重視する場合はbloomeeをおすすめします。
               それぞれに向いている方の特徴は以下のとおりです。
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -157,11 +157,11 @@ export default function BloomeeVsMedeluPage() {
                 <ul className="text-sm text-[#4A4F49] space-y-3">
                   <li className="flex items-start gap-2">
                     <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
-                    <span>知名度の高いサービスを選びたい</span>
+                    <span>ポスト投函で花代980円から始めたい</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
-                    <span>SNSで他の利用者の投稿を参考にしたい</span>
+                    <span>グリーン中心のプランも選びたい</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
@@ -187,9 +187,6 @@ export default function BloomeeVsMedeluPage() {
                   <li className="flex items-start gap-2">
                     <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                     <span>回数の条件なしで始めたい</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#2F5B43] mt-0.5 shrink-0 font-bold">--</span>
@@ -262,7 +259,7 @@ export default function BloomeeVsMedeluPage() {
             <div className="bg-[#EDF1EC] rounded-md p-5">
               <h3 className="text-sm font-bold text-[#2F5B43] mb-2">料金比較のポイント</h3>
               <p className="text-sm text-[#4A4F49] leading-relaxed">
-                最安プラン同士で比較すると、medeluのLiteコース（748円）はbloomeeのお試しプラン（1,365円/送料込み）の約半額です。
+                最安プラン同士で比較すると、medeluのMiniコース（748円・送料込み）はbloomeeのお試しプラン（送料込み1,365円）より617円安くなります（2026年10月23日公式確認）。
                 medeluは送料込みの価格のため（北海道・東北へのLite以上は遠隔地送料140〜240円が加算（2026年10月17日公式確認））、表示価格がそのまま実質負担額になるシンプルな料金体系です。
                 bloomeeは花代とは別に送料385〜550円がかかるため、総額で考える必要があります。
                 隔週配送の場合、月額の差はbloomeeお試しプラン（月2,730円）とmedelu Miniコース（月1,496円）で約1,234円になります。
@@ -298,7 +295,7 @@ export default function BloomeeVsMedeluPage() {
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
               最安プラン同士では、medelu Mini（3〜4本）とbloomeeお試し（4本以上）で本数に大きな差はありません。
               中間プランでは、medeluのLiteコース（5〜6本/1,330円・送料込み）がbloomeeのベーシックプラン（8本以上/2,730円・送料込み）より1回あたり約1,400円安く、本数はbloomeeのベーシックが多くなっています。
-              1本あたりの単価では、medeluの費用対効果が高い水準にあります。
+              1本あたりの価格は、medelu Mini（748円・3〜4本）で約187〜249円、bloomeeお試し（送料込み1,365円・4本以上）で最大約341円です。
             </p>
           </div>
         </section>
@@ -332,7 +329,6 @@ export default function BloomeeVsMedeluPage() {
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
               配送方法はどちらもほぼ同じ仕組みです。低価格プランはポスト投函、上位プランは宅配便（手渡し）になります。
               ポスト投函は不在時でも受け取れるため、一人暮らしの方や日中不在の方にとって便利です。
-              どちらのサービスも、ポストの投函口が幅4.5cm以上・奥行き15cm以上あれば問題なく届きます。
             </p>
           </div>
         </section>
@@ -387,8 +383,6 @@ export default function BloomeeVsMedeluPage() {
                 <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>4回未満の解約は残り回数分が違約金として発生</li>
                   <li>マイページから解約手続き可能</li>
-                  <li>解約ページまでに複数ステップあり</li>
-                  <li>引き止めページが表示される</li>
                 </ul>
               </div>
               <div className="bg-[#EDF1EC] rounded-md p-5 border border-[#C8DCC8]">
@@ -398,9 +392,8 @@ export default function BloomeeVsMedeluPage() {
                 </div>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>初回から解約自由</li>
-                  <li>マイページから簡単に解約可能</li>
+                  <li>マイページから解約可能</li>
                   <li>違約金・手数料なし</li>
-                  <li>解約手続きがシンプル</li>
                 </ul>
               </div>
             </div>
@@ -425,9 +418,8 @@ export default function BloomeeVsMedeluPage() {
               <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <h3 className="text-base font-bold text-[#1F2420] mb-3">bloomee</h3>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
-                  <li>口コミでは「しおれていた・同じ花が続く」という声が目立つ</li>
+                  <li>市場で仕入れた花を束ねて届けると案内（2026年10月20日公式確認）</li>
                   <li>定期便は2週間以内の連絡で返金・交換（特商法）</li>
-                  <li>夏場のポスト投函は傷みのリスクがやや高い</li>
                 </ul>
               </div>
               <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
@@ -468,7 +460,6 @@ export default function BloomeeVsMedeluPage() {
                   <li>Webのマイページで管理</li>
                   <li>マイページでプラン変更・スキップが可能</li>
                   <li>花の情報はメールで届く</li>
-                  <li>シンプルなサービス設計</li>
                                   </ul>
               </div>
             </div>
@@ -484,34 +475,26 @@ export default function BloomeeVsMedeluPage() {
         <section id="brand" className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
-              比較8：ブランド認知度・実績
+              比較8：公式サイトに記載の実績
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <h3 className="text-base font-bold text-[#1F2420] mb-3">bloomee</h3>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
-                  <li>2016年サービス開始</li>
-                  <li>累計3,000万本以上のお花をお届け</li>
-                  <li>SNS投稿数が花のサブスクで最多クラス</li>
-                  <li>テレビ・雑誌等のメディア掲載多数</li>
-                  <li>花のサブスクの代表的なサービスとして知られる</li>
+                  <li>「お花のお届け実績3,000万本以上（自社調べ）」と表記（2026年10月23日公式確認）</li>
                 </ul>
               </div>
               <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
                 <h3 className="text-base font-bold text-[#1F2420] mb-3">medelu</h3>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
-                  <li>2018年サービス開始</li>
-                  <li>価格の手頃さが口コミで広がっている</li>
-                  <li>SNS投稿数はbloomeeと比べると少なめ</li>
-                  <li>花のサブスク比較サイトで高評価が多い</li>
-                  <li>認知度に比べてサービス内容の評価が高い</li>
+                  <li>ANYROOMコースを「人気No.1のコース」と表記（2026年10月23日公式確認）</li>
+                  <li>累計の実績は公式サイトでご確認ください</li>
                 </ul>
               </div>
             </div>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
-              ブランド認知度ではbloomeeが大きく上回っています。2016年の早期参入で花のサブスク市場を開拓し、SNSやメディアでの露出も多いため「花のサブスク＝bloomee」というイメージが定着しています。
-              一方、medeluは2018年開始の後発サービスですが、価格の手頃さが口コミで広がり、比較検討する層からの支持を集めています。
-              利用者の多さによる安心感を重視する場合はbloomee、実質的なサービス内容を重視する場合はmedeluが適しています。
+              知名度や利用者数を比べた公的なデータはないため、当サイトでは両者の認知度を比較していません。
+              公式サイトに記載されている実績は上記のとおりです。いずれも各社の表記で、第三者による調査ではありません。
             </p>
           </div>
         </section>
@@ -547,8 +530,6 @@ export default function BloomeeVsMedeluPage() {
                     { label: "解約時の違約金", bloomee: "残り回数分発生", medelu: "なし" },
                     { label: "品質保証", bloomee: "あり（定期便は2週間以内の連絡で返金・交換）", medelu: "あり" },
                     { label: "ギフト対応", bloomee: "「プレゼントとして送る」で申し込み", medelu: "公式サイトでご確認ください" },
-                                        { label: "SNS人気", bloomee: "非常に高い", medelu: "普通" },
-                    { label: "サービス開始", bloomee: "2016年", medelu: "2018年" },
                     { label: "スキップ機能", bloomee: "あり（無料）", medelu: "あり（無料）" },
                   ].map((row, i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F6F4EF]"}>
@@ -587,12 +568,12 @@ export default function BloomeeVsMedeluPage() {
                 {
                   scenario: "費用を重視する場合",
                   recommend: "medelu",
-                  reason: "費用対効果を最も重視する場合は、medeluをおすすめします。送料込みの実質負担額はbloomeeの約半額で、回数の条件もないため不要な出費が発生しません。Liteコース（1,330円）でも5〜6本届くため、同価格帯のbloomeeお試しプラン（1,365円/4本以上）よりボリュームがあります。",
+                  reason: "1回あたりの支払額を重視する場合は、medeluをおすすめします。送料込みの支払額はMini 748円で、bloomeeのお試しプラン（1,365円）より617円安く、回数の条件もありません。Liteコース（1,330円・5〜6本）は、ほぼ同額のbloomeeお試しプラン（1,365円・4本以上）と比べて本数の下限が多くなります（2026年10月23日公式確認）。",
                 },
                 {
                   scenario: "初めての利用で不安がある場合",
                   recommend: "bloomee",
-                  reason: "花のサブスクが初めてで不安がある方には、bloomeeが向いています。お花のガイドブックが付き、栄養剤も毎回同封されるため、初めての方でも飾り方を確認できます（2026年10月21日公式確認）。SNSに利用者の投稿が多いため、事前にどんな花が届くか参考にできる安心感もあります。ただし、最低4回の受け取り条件がある点にご注意ください。",
+                  reason: "花のサブスクが初めてで不安がある方には、bloomeeが向いています。お花のガイドブックが付き、栄養剤も毎回同封されるため、初めての方でも飾り方を確認できます（2026年10月21日公式確認）。ただし、最低4回の受け取り条件がある点にご注意ください。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F6F4EF] rounded-md p-5 md:p-6 border border-[#DEDAD2]">
@@ -625,10 +606,9 @@ export default function BloomeeVsMedeluPage() {
                 <div className="bg-[#EDF1EC] rounded-md p-5">
                   <h4 className="text-sm font-bold text-[#2F5B43] mb-3">メリット</h4>
                   <ul className="text-sm text-[#4A4F49] space-y-2">
-                    <li>-- 知名度が高く安心感がある</li>
+                    <li>-- 公式サイトに「お花のお届け実績3,000万本以上（自社調べ）」の表記がある</li>
                     <li>-- お花のガイドブックが付き、栄養剤が毎回同封される</li>
                     <li>-- 「プレゼントとして送る」で相手の住所に届けられる</li>
-                                        <li>-- SNSで情報収集しやすい</li>
                     <li>-- 定期便は2週間以内の連絡で返金・交換（特商法）</li>
                   </ul>
                 </div>
@@ -637,8 +617,7 @@ export default function BloomeeVsMedeluPage() {
                   <ul className="text-sm text-[#4A4F49] space-y-2">
                     <li>-- 送料が別途かかる（385〜550円）</li>
                     <li>-- 4回の最低受け取り回数がある</li>
-                    <li>-- 解約手続きがやや複雑</li>
-                    <li>-- 送料込みの実質負担が高め</li>
+                    <li>-- 送料込みの支払額はお試しプランで1回1,365円</li>
                   </ul>
                 </div>
               </div>
@@ -654,17 +633,15 @@ export default function BloomeeVsMedeluPage() {
                     <li>-- 送料無料で料金がわかりやすい</li>
                     <li>-- 回数の条件がなく、いつでも解約可能</li>
                     <li>-- 生産者と市場から直接仕入れた花が届く</li>
-                    <li>-- 送料込みでもbloomeeの約半額</li>
-                    <li>-- 解約手続きが簡単</li>
+                    <li>-- 送料込みでMini 1回748円（bloomeeお試しより617円安い）</li>
                     <li>-- 品質保証あり</li>
                   </ul>
                 </div>
                 <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#E3D3C8]">
                   <h4 className="text-sm font-bold text-[#D9BFB1] mb-3">デメリット</h4>
                   <ul className="text-sm text-[#4A4F49] space-y-2">
-                    <li>-- SNSでの情報量が少ない</li>
-                    <li>-- 知名度がbloomeeより低い</li>
-                    <li>-- 花屋ごとのアレンジの多様性はない</li>
+                    <li>-- 北海道・東北へのLite以上は遠隔地送料（140〜240円）が加算される（2026年10月17日公式確認）</li>
+                    <li>-- お届けは毎週か隔週で、月1回は選べない（2026年10月22日公式確認）</li>
                   </ul>
                 </div>
               </div>
@@ -725,8 +702,8 @@ export default function BloomeeVsMedeluPage() {
               花のある生活を手軽に始めたい方に向いています。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              ブランドの知名度やサービスの充実度を重視する場合はbloomeeをおすすめします。「プレゼントとして送る」での申し込みや、お花のガイドブックなど、初めての方向けの案内があり、SNSでの情報量も豊富です。
-              花のサブスクの代表的なサービスとしての安心感があり、プレゼント用途にも対応しています。
+              同封のガイドブック・栄養剤や「プレゼントとして送る」での申し込みを重視する場合はbloomeeをおすすめします。お花のガイドブックが付き、栄養剤が毎回同封されます（2026年10月21日公式確認）。
+              ただし、最初の4回の継続が条件のため、お試しプランでも送料込みで5,460円（1,365円×4回）がかかります。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
               <a

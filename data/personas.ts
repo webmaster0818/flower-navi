@@ -193,7 +193,7 @@ personas.push(
       { title: "記念日にも活用したい", text: "ギフトオプションのあるHitoHana・LIFFTで対応できます。" },
     ],
     recommended: [
-      { service: "medelu", reason: "MODERN/ROMANTICなどのテーマ別プランがあり、二人の好みに合わせて選べる", priceFrom: 748 },
+      { service: "medelu", reason: "ANYROOM・NATURAL・MODERNの3コースがあり、二人の好みに合わせて選べる（2026年10月23日公式確認）", priceFrom: 748 },
       { service: "AND PLANTS", reason: "夫婦のリビングに合うデザインで、共有しやすい大きさ", priceFrom: 1980 },
       { service: "LIFFT", reason: "旬の花を二人で楽しめる。ライト（1回1,480円・送料込み・5本以上・2週間または4週間に1回）は本州の一部地域のみ、スタンダードは3,300円/月（月1回・合計9本前後）です（2026年10月22日公式確認）", priceFrom: 1480 },
       { service: "HitoHana", reason: "ボリュームを調整でき、二人暮らしに合うMサイズがある", priceFrom: 1320 },

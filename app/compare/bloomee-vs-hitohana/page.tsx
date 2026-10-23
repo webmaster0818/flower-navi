@@ -16,7 +16,7 @@ const faqItems = [
   },
   {
     q: "両方同時に利用することはできますか？",
-    a: "はい、併用できます。bloomeeの手頃なプランで日常の花を受け取りつつ、HitoHanaの上位プランを4週間に1回利用して特別な花を楽しむ方法もあります。ただし費用が増えるため、まずはどちらか一方を試してから検討することをおすすめします。",
+    a: "はい、併用できます。それぞれ別に申し込むため、料金は両方のサービスにかかります。ただし費用が増えるため、まずはどちらか一方を試してから検討することをおすすめします。",
   },
   {
     q: "品質保証制度はどちらにもありますか？",
@@ -49,7 +49,7 @@ export default function BloomeeVsHitohanaPage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs HitoHana 比較\",\"description\":\"bloomeeとHitoHanaの料金・評判・選び方を比較して解説しています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-17T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-hitohana/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHana、初心者にはどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"手軽さを重視する場合は、bloomeeをおすすめします。ポスト投函で受け取ることができ、980円から始められます。一方、花の色やボリュームを重視する方にはHitoHanaが適しています。HitoHanaは色を選べるため、インテリアに合わせた花を受け取ることができます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHanaには、最低利用回数の条件がありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは最低4回の受け取りが必要で、4回未満で解約する場合は残りの回数分の料金が発生します。HitoHanaには回数の条件がなく、いつでも解約できます。試験的に始めたい方には、HitoHanaのほうが負担の少ない選択肢です。\"}},{\"@type\":\"Question\",\"name\":\"両方同時に利用することはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、併用できます。bloomeeの手頃なプランで日常の花を受け取りつつ、HitoHanaの上位プランを4週間に1回利用して特別な花を楽しむ方法もあります。ただし費用が増えるため、まずはどちらか一方を試してから検討することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度はどちらにもありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、どちらのサービスにも品質保証制度があります。bloomeeの定期便は、到着から2週間以内に連絡すれば返金または交換の対象です（公式・特定商取引法に基づく表記、2026年10月15日確認）。HitoHanaの保証条件は、お申し込み前に公式サイトにてご確認ください。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHana、初心者にはどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"手軽さを重視する場合は、bloomeeをおすすめします。ポスト投函で受け取ることができ、980円から始められます。一方、花の色やボリュームを重視する方にはHitoHanaが適しています。HitoHanaは色を選べるため、インテリアに合わせた花を受け取ることができます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとHitoHanaには、最低利用回数の条件がありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは最低4回の受け取りが必要で、4回未満で解約する場合は残りの回数分の料金が発生します。HitoHanaには回数の条件がなく、いつでも解約できます。試験的に始めたい方には、HitoHanaのほうが負担の少ない選択肢です。\"}},{\"@type\":\"Question\",\"name\":\"両方同時に利用することはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、併用できます。それぞれ別に申し込むため、料金は両方のサービスにかかります。ただし費用が増えるため、まずはどちらか一方を試してから検討することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度はどちらにもありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、どちらのサービスにも品質保証制度があります。bloomeeの定期便は、到着から2週間以内に連絡すれば返金または交換の対象です（公式・特定商取引法に基づく表記、2026年10月15日確認）。HitoHanaの保証条件は、お申し込み前に公式サイトにてご確認ください。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -129,8 +129,8 @@ export default function BloomeeVsHitohanaPage() {
             </h2>
             <div className="space-y-4">
               {[
-                { title: "ポスト投函により不在時も受け取れます", text: "お試しプラン・グリーンプランはポスト投函に対応しています。日中に不在が多い方でも、帰宅後にポストから受け取ることができます。宅配便の時間指定が難しい方にとって大きな利点です。" },
-                { title: "口コミ・レビューが多く、情報を集めやすいサービスです", text: "公式サイトでは「お花のお届け実績3,000万本以上（自社調べ）」と表記されています。口コミサイトやレビュー記事が多いため、お申し込み前に肯定的な意見と否定的な意見の両方を確認しやすい点も利点です。" },
+                { title: "ポスト投函により不在時も受け取れます", text: "お試しプラン・グリーンプランはポスト投函に対応しています。日中に不在が多い方でも、帰宅後にポストから受け取ることができます。宅配便の時間指定が難しい方に適しています。" },
+                { title: "公式サイトにお届け実績が表記されています", text: "公式サイトでは「お花のお届け実績3,000万本以上（自社調べ）」と表記されています（2026年10月23日公式確認）。" },
                 { title: "花代980円から始められます", text: "お試しプランは花代980円で、始めやすい価格に設定されています。花のある暮らしをまず体験したい初心者の方に適しています。" },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2]">
@@ -176,7 +176,7 @@ export default function BloomeeVsHitohanaPage() {
                   <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">&#9679;</span>ポスト投函で気軽に受け取りたい</li>
                   <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">&#9679;</span>費用を抑えて花のサブスクを始めたい</li>
                   <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">&#9679;</span>花のセレクトはプロにおまかせしたい</li>
-                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">&#9679;</span>知名度の高いサービスを利用したい</li>
+                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">&#9679;</span>お試し・グリーン・ベーシックの3プランから選びたい</li>
                 </ul>
               </div>
               <div className="bg-[#EDF1EC] rounded-md p-5 border border-[#C8D8CB]">
@@ -185,7 +185,7 @@ export default function BloomeeVsHitohanaPage() {
                   <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">&#9679;</span>花の色を自分で選びたい</li>
                   <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">&#9679;</span>送料を気にせず利用したい</li>
                   <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">&#9679;</span>回数の条件がないサービスで試したい</li>
-                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">&#9679;</span>ボリュームのある花を楽しみたい</li>
+                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">&#9679;</span>ボリュームをLite〜LLの5サイズから選びたい</li>
                 </ul>
               </div>
             </div>
