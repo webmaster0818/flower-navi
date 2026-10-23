@@ -31,8 +31,20 @@ const faqItems = [
     a: "多いのは、①花の状態のばらつき（しおれ・同じ花が続く。夏場のポスト投函で増える傾向があります）、②最初の4回の受け取りが必要で、4回未満の解約は途中解約料がかかること、③解約・スキップの手続きがわかりにくいこと、の3点です。送料が毎回別にかかるため、「980円」という表記から受ける印象より高いという声もあります。",
   },
   {
-    q: "bloomee（ブルーミー）の料金はいくらですか？",
-    a: "2026年10月14日に公式サイトで確認した継続コースの料金は、お試しプラン980円＋送料385円、グリーンプラン980円＋送料385円、ベーシックプラン2,180円＋送料550円（いずれも1回あたり）です。お試しプランは送料込みで1回あたり1,365円、最初の4回の総額は5,460円です。",
+    q: "ブルーミー（bloomee）の値段・料金はいくらですか？",
+    a: "2026年10月23日に公式サイトで確認した継続コースの値段は、お試しプラン980円＋送料385円、グリーンプラン980円＋送料385円、ベーシックプラン2,180円＋送料550円（いずれも1回あたり）です。お試しプランは送料込みで1回1,365円、最初の4回の総額は5,460円です。",
+  },
+  {
+    q: "ブルーミーの月額はいくらになりますか？",
+    a: "公式の料金は月額ではなく、配送のある週ごとの決済です。送料込みの1回の値段から計算すると、お試し・グリーンは毎週で月4回なら5,460円（5回の月は6,825円）、隔週で月2回なら2,730円、ベーシックは毎週で月4回なら10,920円、隔週で月2回なら5,460円です（当サイトの計算）。隔週への変更は4回目を受け取った後からです。",
+  },
+  {
+    q: "ブルーミーを1回だけ購入する場合の値段はいくらですか？",
+    a: "公式サイトの「単品購入」は、お試し・グリーンが1,780円＋送料385円、ベーシックが3,300円＋送料550円です（2026年10月23日確認）。継続コースより1回あたり800円（ベーシックは1,120円）高くなりますが、最初の4回の受け取り条件はありません。",
+  },
+  {
+    q: "ブルーミーの値段は税込みですか？",
+    a: "公式の特定商取引法に基づく表記では、商品代金は「消費税込み」で表示し、配送料を別に表示すると定められています。980円・2,180円などの花代は税込みの表記で、送料は花代とは別にかかります（2026年10月23日確認）。",
   },
   {
     q: "4回未満で解約するとどうなりますか？",
@@ -149,6 +161,57 @@ export default function BloomeePage() {
           </div>
         </PageHero>
 
+        {/* ─── Price answer (2026-10-23 公式確認) ─── */}
+        <section id="price" className="py-10 md:py-12 bg-white border-b border-[#DEDAD2]">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-4 pb-3 border-b-2 border-[#2F5B43]">
+              ブルーミーの値段は1回1,365円から（お試しプラン・送料込み）
+            </h2>
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
+              ブルーミーの値段は、継続コースのお試しプランで花代980円＋送料385円の<strong>1回1,365円</strong>です。料金は月額ではなく配送ごとに決済され、最初の4回は毎週のお届けのため、最初の1か月（4回）は<strong>5,460円</strong>です。
+              ベーシックプランは花代2,180円＋送料550円の1回2,730円です。継続コースではなく1回だけ購入する「単品購入」は、お試し・グリーンが1,780円＋送料385円、ベーシックが3,300円＋送料550円です（2026年10月23日 公式サイトで確認）。
+            </p>
+            <div className="table-wrapper overflow-x-auto rounded-md border border-[#DEDAD2] bg-white mb-4">
+              <table className="w-full text-sm text-[#3F443E]">
+                <caption className="sr-only">ブルーミーのプラン別の値段（2026年10月23日 公式確認）</caption>
+                <thead className="bg-[#EDF1EC] text-[#1F2420]">
+                  <tr>
+                    <th className="px-3 py-2 text-left font-bold">プラン</th>
+                    <th className="px-3 py-2 text-left font-bold">継続コース（1回）</th>
+                    <th className="px-3 py-2 text-left font-bold">送料込み（1回）</th>
+                    <th className="px-3 py-2 text-left font-bold">毎週・月4回</th>
+                    <th className="px-3 py-2 text-left font-bold">毎週・月5回</th>
+                    <th className="px-3 py-2 text-left font-bold">隔週・月2回</th>
+                    <th className="px-3 py-2 text-left font-bold">単品購入（1回）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["お試しプラン", "980円＋送料385円", "1,365円", "5,460円", "6,825円", "2,730円", "1,780円＋送料385円"],
+                    ["グリーンプラン", "980円＋送料385円", "1,365円", "5,460円", "6,825円", "2,730円", "1,780円＋送料385円"],
+                    ["ベーシックプラン", "2,180円＋送料550円", "2,730円", "10,920円", "13,650円", "5,460円", "3,300円＋送料550円"],
+                  ].map(([name, ...cells]) => (
+                    <tr key={name} className="border-t border-[#EEE] align-top">
+                      <td className="px-3 py-2 font-medium text-[#1F2420] whitespace-nowrap">{name}</td>
+                      {cells.map((c, i) => (
+                        <td key={i} className="px-3 py-2 whitespace-nowrap">{c}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <ul className="text-xs text-[#6B6F6A] leading-relaxed space-y-1 mb-2">
+              <li>※ 1回あたりの花代・送料・単品購入の値段は、公式トップの料金表の表記です。特定商取引法に基づく表記では、商品代金は「消費税込み」で表示すると定められています。</li>
+              <li>※ 月額は当サイトが「送料込みの1回の値段×回数」で計算した目安です。公式の料金は月額ではなく配送ごとの決済で、毎週のお届けは月によって4回の月と5回の月があります。公式の料金表にある「1ヶ月で¥3,200 OFF」（ベーシックは¥4,480）は、単品購入との差額の4回分です。</li>
+              <li>※ 隔週への変更は4回目のお花を受け取った後からです。4回未満で解約すると「4回分のうち残回数分の商品代金（消費税込み）」が途中解約料になります。</li>
+            </ul>
+            <p className="text-xs text-[#6B6F6A] leading-relaxed">
+              出典：<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="underline">bloomee公式サイト（料金表・よくある質問）</a>・<a href="https://bloomeelife.com/contacts/law" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（いずれも2026年10月23日確認）。料金は変更される場合があるため、お申し込み前に公式サイトでご確認ください。
+            </p>
+          </div>
+        </section>
+
         <ReviewVerdict d={RE} s={S} />
 
         {/* ─── Table of Contents ─── */}
@@ -158,18 +221,19 @@ export default function BloomeePage() {
               <p className="text-sm font-bold text-[#1F2420] mb-3">本ページの内容</p>
               <nav>
                 <ol className="text-sm text-[#4A4F49] space-y-2">
-                  <li><a href="#reviews" className="hover:text-[#2F5B43] transition-colors">1. ブルーミーの口コミ・評判（出典付き）</a></li>
-                  <li><a href="#flower-reviews" className="hover:text-[#2F5B43] transition-colors">2. ブルーミーの花の口コミ（品質・ボリュームの記録と掲載先）</a></li>
-                  <li><a href="#overview" className="hover:text-[#2F5B43] transition-colors">3. bloomeeのサービス概要</a></li>
-                  <li><a href="#pricing" className="hover:text-[#2F5B43] transition-colors">4. 料金プラン・送料（公式確認）</a></li>
-                  <li><a href="#merit-demerit" className="hover:text-[#2F5B43] transition-colors">5. ブルーミーライフ（bloomee）のメリット・デメリット（公式情報で整理）</a></li>
-                  <li><a href="#pros" className="hover:text-[#2F5B43] transition-colors">6. メリット（良い評判の理由）</a></li>
-                  <li><a href="#cons" className="hover:text-[#2F5B43] transition-colors">7. デメリット（悪い評判の理由）</a></li>
-                  <li><a href="#recommend" className="hover:text-[#2F5B43] transition-colors">8. おすすめできる方・おすすめできない方</a></li>
-                  <li><a href="#comparison" className="hover:text-[#2F5B43] transition-colors">9. 競合サービスとの比較</a></li>
-                  <li><a href="#how-to-start" className="hover:text-[#2F5B43] transition-colors">10. bloomeeの始め方</a></li>
-                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">11. よくある質問</a></li>
-                  <li><a href="#cancellation" className="hover:text-[#2F5B43] transition-colors">12. 解約手順</a></li>
+                  <li><a href="#price" className="hover:text-[#2F5B43] transition-colors">1. ブルーミーの値段（プラン別・送料込み・月額）</a></li>
+                  <li><a href="#reviews" className="hover:text-[#2F5B43] transition-colors">2. ブルーミーの口コミ・評判（出典付き）</a></li>
+                  <li><a href="#flower-reviews" className="hover:text-[#2F5B43] transition-colors">3. ブルーミーの花の口コミ（品質・ボリュームの記録と掲載先）</a></li>
+                  <li><a href="#overview" className="hover:text-[#2F5B43] transition-colors">4. bloomeeのサービス概要</a></li>
+                  <li><a href="#pricing" className="hover:text-[#2F5B43] transition-colors">5. 料金プラン・送料（公式確認）</a></li>
+                  <li><a href="#merit-demerit" className="hover:text-[#2F5B43] transition-colors">6. ブルーミーライフ（bloomee）のメリット・デメリット（公式情報で整理）</a></li>
+                  <li><a href="#pros" className="hover:text-[#2F5B43] transition-colors">7. メリット（良い評判の理由）</a></li>
+                  <li><a href="#cons" className="hover:text-[#2F5B43] transition-colors">8. デメリット（悪い評判の理由）</a></li>
+                  <li><a href="#recommend" className="hover:text-[#2F5B43] transition-colors">9. おすすめできる方・おすすめできない方</a></li>
+                  <li><a href="#comparison" className="hover:text-[#2F5B43] transition-colors">10. 競合サービスとの比較</a></li>
+                  <li><a href="#how-to-start" className="hover:text-[#2F5B43] transition-colors">11. bloomeeの始め方</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">12. よくある質問</a></li>
+                  <li><a href="#cancellation" className="hover:text-[#2F5B43] transition-colors">13. 解約手順</a></li>
                 </ol>
               </nav>
             </div>
