@@ -262,20 +262,20 @@ export default function MothersDayGuidePage() {
               <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
                 <h3 className="text-sm font-bold text-[#1F2420] mb-2">3,000〜5,000円のギフト</h3>
                 <p className="text-sm text-[#4A4F49] leading-relaxed mb-2">
-                  AND PLANTSの1〜2回分（1,980〜3,960円）や、HitoHanaの2回分から選べます。
+                  AND PLANTSの2回分（1回1,980円×2回＝3,960円・送料込み）が当てはまります。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#DEDAD2]">
-                  <p className="text-xs text-[#2F5B43] font-medium">おすすめ：AND PLANTS 2回分 または HitoHana 2回分（色指定付き）</p>
+                  <p className="text-xs text-[#2F5B43] font-medium">おすすめ：AND PLANTS 2回分（3,960円）</p>
                 </div>
               </div>
 
               <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
                 <h3 className="text-sm font-bold text-[#1F2420] mb-2">5,000円以上のギフト</h3>
                 <p className="text-sm text-[#4A4F49] leading-relaxed mb-2">
-                  しっかりと感謝を伝えたい方に適しています。HitoHanaの上位プラン3回分や、bloomeeのベーシックプラン4回分（花代2,180円＋送料550円×4回＝10,920円。最初の4回分のお届けが約束されています（2026年10月20日公式確認））をおすすめします。3か月にわたって花が届くため、母の日以降も楽しんでいただけます。LIFFTのスタンダード（3,300円/月）2〜3か月分も選択肢です。期間を決めて贈る場合は、定期便のギフトチケット（3か月10,450円・税込）があります（2026年10月21日公式確認）。
+                  bloomeeのベーシックプラン4回分（花代2,180円＋送料550円×4回＝10,920円。最初の4回分のお届けが約束されています（2026年10月20日公式確認））が当てはまります。LIFFTのスタンダード（3,300円/月）2〜3か月分も選択肢です。期間を決めて贈る場合は、定期便のギフトチケット（3か月10,450円・税込）があります（2026年10月21日公式確認）。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#DEDAD2]">
-                  <p className="text-xs text-[#2F5B43] font-medium">おすすめ：HitoHana 上位プラン3回分 または LIFFT 花束プラン2回分</p>
+                  <p className="text-xs text-[#2F5B43] font-medium">おすすめ：LIFFT ギフトチケット3か月分（10,450円） または bloomee ベーシック4回分（10,920円）</p>
                 </div>
               </div>
             </div>
@@ -381,29 +381,25 @@ export default function MothersDayGuidePage() {
                     <th className="px-3 py-2 text-left">月</th>
                     <th className="px-3 py-2 text-left">イベント</th>
                     <th className="px-3 py-2 text-left">推奨ギフト</th>
-                    <th className="px-3 py-2 text-left">予算目安</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">1月</td><td className="px-3 py-2">お正月・新年祝い</td><td className="px-3 py-2">和風アレンジ・松竹梅</td><td className="px-3 py-2">2,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">2月</td><td className="px-3 py-2">バレンタイン・結婚記念日</td><td className="px-3 py-2">赤バラ系・チューリップ</td><td className="px-3 py-2">3,000〜8,000円</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">3月</td><td className="px-3 py-2">卒業・退職祝い・ホワイトデー</td><td className="px-3 py-2">スプリングフラワー</td><td className="px-3 py-2">3,000〜10,000円</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">4月</td><td className="px-3 py-2">入学・入社祝い・新生活応援</td><td className="px-3 py-2">桜・パステル系</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#DEDAD2] bg-[#F7F1EC]"><td className="px-3 py-2 font-bold">5月</td><td className="px-3 py-2"><strong>母の日</strong> (第2日曜)</td><td className="px-3 py-2">カーネーション・あじさい</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">6月</td><td className="px-3 py-2"><strong>父の日</strong> (第3日曜)・ジューンブライド</td><td className="px-3 py-2">向日葵・グリーン系</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">7-8月</td><td className="px-3 py-2">お中元・夏休み</td><td className="px-3 py-2">向日葵・トロピカル</td><td className="px-3 py-2">3,000〜8,000円</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">9月</td><td className="px-3 py-2"><strong>敬老の日</strong> (第3月曜)</td><td className="px-3 py-2">和風・落ち着いた色合い</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">10月</td><td className="px-3 py-2">ハロウィン・誕生日</td><td className="px-3 py-2">秋色・オレンジ系</td><td className="px-3 py-2">2,000〜5,000円</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">11月</td><td className="px-3 py-2">七五三・お歳暮準備</td><td className="px-3 py-2">紅葉系アレンジ</td><td className="px-3 py-2">3,000〜5,000円</td></tr>
-                  <tr><td className="px-3 py-2 font-bold">12月</td><td className="px-3 py-2">クリスマス・年末感謝</td><td className="px-3 py-2">クリスマスリース・赤系</td><td className="px-3 py-2">3,000〜10,000円</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">1月</td><td className="px-3 py-2">お正月・新年祝い</td><td className="px-3 py-2">和風アレンジ・松竹梅</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">2月</td><td className="px-3 py-2">バレンタイン・結婚記念日</td><td className="px-3 py-2">赤バラ系・チューリップ</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">3月</td><td className="px-3 py-2">卒業・退職祝い・ホワイトデー</td><td className="px-3 py-2">スプリングフラワー</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">4月</td><td className="px-3 py-2">入学・入社祝い・新生活応援</td><td className="px-3 py-2">桜・パステル系</td></tr>
+                  <tr className="border-b border-[#DEDAD2] bg-[#F7F1EC]"><td className="px-3 py-2 font-bold">5月</td><td className="px-3 py-2"><strong>母の日</strong> (第2日曜)</td><td className="px-3 py-2">カーネーション・あじさい</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">6月</td><td className="px-3 py-2"><strong>父の日</strong> (第3日曜)・ジューンブライド</td><td className="px-3 py-2">向日葵・グリーン系</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">7-8月</td><td className="px-3 py-2">お中元・夏休み</td><td className="px-3 py-2">向日葵・トロピカル</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">9月</td><td className="px-3 py-2"><strong>敬老の日</strong> (第3月曜)</td><td className="px-3 py-2">和風・落ち着いた色合い</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">10月</td><td className="px-3 py-2">ハロウィン・誕生日</td><td className="px-3 py-2">秋色・オレンジ系</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">11月</td><td className="px-3 py-2">七五三・お歳暮準備</td><td className="px-3 py-2">紅葉系アレンジ</td></tr>
+                  <tr><td className="px-3 py-2 font-bold">12月</td><td className="px-3 py-2">クリスマス・年末感謝</td><td className="px-3 py-2">クリスマスリース・赤系</td></tr>
                 </tbody>
               </table>
             </div>
             <p className="text-xs text-[#6B6F6A] mt-4">
               ※ 2026年の日程は、母の日が5月10日、父の日が6月21日、敬老の日が9月21日です。日程は毎年変動するため、最新情報をご確認ください。
-            </p>
-            <p className="text-sm text-[#4A4F49] mt-6 leading-relaxed">
-              <strong>年間を通じた贈り方：</strong>花のサブスクをギフトとして年に複数回贈る「<strong>季節ギフトプラン</strong>」も人気があります。HitoHana・bloomee・LIFFTでは、継続的な贈呈について相談できます。
             </p>
           </div>
         </section>
@@ -418,7 +414,7 @@ export default function MothersDayGuidePage() {
               母の日に花を贈ることは一般的ですが、花のサブスクを贈ることで、<strong>毎月花が届く</strong>という新しい体験をプレゼントできます。一度きりの花束ではなく、数か月にわたって花が届く楽しみを、お母さんに味わっていただけます。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              手軽な価格で贈る場合は<strong>bloomee</strong>（「プレゼントとして送る」で申し込み）、見栄えを重視する場合は<strong>AND PLANTS</strong>、お母さんの好みに合わせたい場合は<strong>HitoHana</strong>をおすすめします。2026年の母の日は5月10日です。余裕をもって準備することをおすすめします。
+              手軽な価格で贈る場合は<strong>bloomee</strong>（「プレゼントとして送る」で申し込み）、本数の多いプランから選びたい場合は<strong>AND PLANTS</strong>、花の色を選びたい場合は<strong>HitoHana</strong>が選択肢になります。2026年の母の日は5月10日です。余裕をもって準備することをおすすめします。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a

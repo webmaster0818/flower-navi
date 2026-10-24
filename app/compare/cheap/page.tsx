@@ -679,8 +679,8 @@ export default function CheapRankingPage() {
                     <h3 className="text-base font-bold text-[#1F2420] mb-2">bloomee または AND PLANTS（4週間に1回）</h3>
                     <p className="text-sm text-[#4A4F49] leading-relaxed">
                       bloomeeお試しプランの隔週配送（月約2,730円：1,365円 x 2回）、AND PLANTS Standardプランの4週間に1回の配送（1回1,980円・月およそ1回）が候補です（AND PLANTSの頻度は1週間・2週間・4週間に1回から選択（2026年10月17日公式確認））。
-                      知名度と安心感を重視する場合はbloomee、デザイン性の高いアレンジとボリュームを重視する場合はAND PLANTSをおすすめします。
-                      AND PLANTSは4週間に1回でも6〜8本（2026年10月17日公式確認）届くため、1回あたりの満足度が高いサービスです。
+                      プランを3つから選びたい場合はbloomee、1回の本数を多くしたい場合はAND PLANTSが選択肢になります。
+                      AND PLANTSは4週間に1回でも6〜8本（2026年10月17日公式確認）届きます。
                     </p>
                   </div>
                 </div>

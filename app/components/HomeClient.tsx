@@ -247,7 +247,7 @@ const purposes = [
   {
     title: "プレゼント用に",
     icon: "🎁",
-    description: "ボリュームのある華やかなアレンジを選べ、ギフトに対応しているサービスが適しています。",
+    description: "本数の多いプランを選べ、ギフトとして贈れるサービスが選択肢になります。",
     services: ["AND PLANTS Mプラン以上（2,980円〜）", "bloomee ベーシックプラン（2,180円+送料550円）"],
     best: "AND PLANTS",
   },

@@ -66,7 +66,7 @@ const serviceData = [
     url: "/services/bloomee",
     officialUrl: "https://t.felmat.net/fmcl?ak=U4061N.1.A75607J.A135745L",
     highlight: "累計3,000万本以上の実績があります。お試し・グリーンプランはポスト投函で届きます。",
-    bestFor: "ポスト投函の実績・安心感を重視する方、SNSで花の投稿を楽しみたい方",
+    bestFor: "4本以上の小さな花束をポストで受け取りたい方、4回目以降は週単位で停止・再開したい方",
     detail: "bloomeeは公式サイトで「お花のお届け実績3,000万本以上（自社調べ）」と表記している花のサブスクです。お試しプラン（花代980円＋送料385円）とグリーンプラン（同）はポストに半投函の形で届き、到着は水〜金曜で、日時指定はできません。ベーシックプラン（花代2,180円＋送料550円）は手渡しで、日付と時間帯を指定できます。品質保証は、定期便の場合、2週間以内に連絡すれば返金・交換の対象となります（公式・特定商取引法に基づく表記。2026年10月15日確認）。",
   },
   {
@@ -787,7 +787,7 @@ export default function PostDeliveryComparisonPage() {
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               ポスト投函対応サービスのうち、費用を重視する場合はmedelu（748円/回・送料無料・Mini・Liteが対応（2026年10月17日公式確認））、
-              実績と安心感を重視する場合はbloomee（累計3,000万本・品質保証あり）、
+              公式サイトに記載の実績や品質保証を確認したい場合はbloomee（お届け実績3,000万本以上・自社調べ、品質保証あり）、
               配送の柔軟さを重視する場合はhanameku（ポスト投函と宅配便を選択可能・月1回配送も可能）をおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">

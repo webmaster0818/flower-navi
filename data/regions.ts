@@ -170,7 +170,7 @@ export const regions: Region[] = [
       { service: "AND PLANTS", reason: "みなとみらい・元町の洋風の文化に合う", priceFrom: 1980 },
       { service: "LIFFT", reason: "提携農園から採花したての旬の花が届く。神奈川県はライトの配送対象地域。ライト（1回1,480円・送料込み・5本以上・2週間または4週間に1回）は本州の一部地域のみ、スタンダードは3,300円/月（月1回・合計9本前後）です（2026年10月22日公式確認）", priceFrom: 1480 },
       { service: "bloomee", reason: "お試しプランは1回980円（送料385円）から（2026年10月20日公式確認）", priceFrom: 980 },
-      { service: "HitoHana", reason: "ボリュームのある洋風のアレンジ", priceFrom: 1320 },
+      { service: "HitoHana", reason: "ボリュームをLite〜LLの5サイズから選べる（2026年10月23日公式確認）", priceFrom: 1320 },
     ],
     localPreference: [
       { topic: "洋風で上品なアレンジが好まれます", detail: "バラを中心とした洋風のアレンジが定番です。元町・山手地区の歴史ある洋館の文化が大きく影響しています。" },

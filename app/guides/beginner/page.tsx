@@ -367,7 +367,7 @@ export default function BeginnerGuidePage() {
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               当サイトでは、初めての方に適したサービスとして、次の2つをご紹介します。
-              安心感・費用対効果・始めやすさの観点から選定しています。
+              料金・最低受取回数・品質保証の有無をもとに選んでいます。
             </p>
 
             {/* bloomee - Primary Recommendation */}
@@ -578,13 +578,8 @@ export default function BeginnerGuidePage() {
                       <td className="px-3 py-2 text-center text-[#1F2420]">あり</td>
                     </tr>
                     <tr className="border-t border-[#DEDAD2]">
-                      <td className="px-3 py-2 text-[#4A4F49]">知名度</td>
-                      <td className="px-3 py-2 text-center text-[#2F5B43] font-bold">高い</td>
-                      <td className="px-3 py-2 text-center text-[#1F2420]">中程度</td>
-                    </tr>
-                    <tr className="border-t border-[#DEDAD2]">
                       <td className="px-3 py-2 text-[#4A4F49]">おすすめの人</td>
-                      <td className="px-3 py-2 text-center text-[#4A4F49]">安心感重視</td>
+                      <td className="px-3 py-2 text-center text-[#4A4F49]">3つのプランから選びたい方</td>
                       <td className="px-3 py-2 text-center text-[#4A4F49]">費用重視</td>
                     </tr>
                   </tbody>
@@ -787,7 +782,7 @@ export default function BeginnerGuidePage() {
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               初めてサービスを選ぶ際は、料金（送料込みの総額）・配送方法・配送頻度・解約条件・品質保証の5点をご確認ください。
-              選択に迷う場合は、知名度と安心感を重視するならbloomee、費用と始めやすさを重視するならmedeluをおすすめします。
+              選択に迷う場合は、プランを3つ（お試し・グリーン・ベーシック）から選びたいならbloomee、費用と始めやすさを重視するならmedeluをおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               届いたお花は、こまめな水替えと適切な置き場所を心がけることで、5〜10日ほど楽しめます。

@@ -296,7 +296,7 @@ export default function MeritDemeritGuidePage() {
                   <tr>
                     <td className="font-medium text-[#1F2420]">medelu</td>
                     <td>送料無料、748円〜、回数の条件なし</td>
-                    <td>花の本数が少なめ、知名度が低い</td>
+                    <td>Miniは3〜4本、配送は毎週か隔週（月1回は選べない）</td>
                     <td>費用を重視する方</td>
                   </tr>
                   <tr>
