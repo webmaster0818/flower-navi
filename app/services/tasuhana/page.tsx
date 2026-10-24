@@ -12,11 +12,11 @@ const p: ServiceProfile = {
   officialUrl: "https://tasuhana.com/",
   officialLabel: "tasuhana.com",
   verifiedAt: V,
-  updatedAt: "2026年10月21日",
+  updatedAt: "2026年10月24日",
   datePublished: "2026-05-23T00:00:00+09:00",
-  dateModified: "2026-10-21T00:00:00+09:00",
+  dateModified: "2026-10-24T00:00:00+09:00",
   headline: "タスハナ（+hana）の口コミ・評判・料金プラン",
-  heroKicker: "花のサブスク個別レビュー｜2026年10月21日更新",
+  heroKicker: "花のサブスク個別レビュー｜2026年10月24日更新",
   h1: ["タスハナ（+hana）の口コミ・評判", "料金660円〜・最低5回の出荷条件・解約条件を公式確認"],
   heroLead:
     "タスハナ（+hana）は、規格外などで行き場を失いかけた国産のロスフラワーをポストに届ける花の定期便です。当サイトでは、料金・最低出荷回数・解約の締切・口コミの傾向を、2026年10月15日に公式サイトで確認した情報にもとづいてご説明します。",
@@ -43,7 +43,7 @@ const p: ServiceProfile = {
     ["公式サイト", <a key="o" href="https://tasuhana.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] hover:underline">tasuhana.com</a>],
     ["届き方", "ゆうパケット（日本郵便）でポスト投函。箱は横20×縦30×厚さ2.8cm"],
     ["お届け間隔", "14日（原則隔週・月2回）または28日（月1回）"],
-    ["支払い方法", "クレジットカード（VISA・Mastercard・ダイナース・JCB）"],
+    ["支払い方法", "クレジットカード（VISA・Mastercard・JCB・American Express・ダイナース）。申込フォームとよくあるご質問ページの表記で、トップページのFAQはVISA・Mastercard・ダイナース・JCBの4ブランド表記です（2026年10月24日公式確認）"],
     ["最低出荷回数", "5回（5回未満の解約は原則不可）"],
   ],
   pricing: {
