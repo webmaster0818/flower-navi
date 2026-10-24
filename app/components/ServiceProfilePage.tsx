@@ -17,6 +17,7 @@ export type ServiceProfile = {
   officialUrl: string;
   officialLabel: string;
   verifiedAt: string; // 例: "2026年10月15日"
+  updatedAt?: string; // 2026-10-24: 本文を最後に変更した日（sitemap lastmod と同じ）。無ければ verifiedAt
   datePublished: string; // ISO
   dateModified: string; // ISO
   headline: string;
@@ -159,7 +160,7 @@ export default function ServiceProfilePage({ p }: { p: ServiceProfile }) {
           <section className="bg-white py-8 border-b border-[#DEDAD2]">
             <div className="max-w-3xl mx-auto px-4">
               <div className="rounded-md border-2 border-[#2F5B43] bg-[#F3F6F2] p-5 md:p-6">
-                <p className="text-xs text-[#2F5B43] font-bold mb-1">最終更新：{p.verifiedAt}（料金・条件は同日に公式サイトで確認）</p>
+                <p className="text-xs text-[#2F5B43] font-bold mb-1">最終更新：{p.updatedAt ?? p.verifiedAt}（料金・条件は{p.updatedAt && p.updatedAt !== p.verifiedAt ? `${p.verifiedAt}に` : "同日に"}公式サイトで確認）</p>
                 <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-3">{p.verdictTitle}</h2>
                 <ul className="text-sm md:text-base text-[#444] leading-relaxed space-y-2">
                   {p.verdict.map((v, i) => <li key={i}>・{v}</li>)}

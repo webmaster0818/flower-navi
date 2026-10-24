@@ -14,10 +14,11 @@ const p: ServiceProfile = {
   officialUrl: "https://nihon-sogo-engei.com/teikibin/",
   officialLabel: "nihon-sogo-engei.com",
   verifiedAt: V,
+  updatedAt: "2026年10月23日",
   datePublished: "2026-05-23T00:00:00+09:00",
-  dateModified: "2026-10-15T00:00:00+09:00",
+  dateModified: "2026-10-23T00:00:00+09:00",
   headline: "花の定期便（日本総合園芸）の口コミ・評判・料金",
-  heroKicker: `花のサブスク個別レビュー｜${V}更新`,
+  heroKicker: "花のサブスク個別レビュー｜2026年10月23日更新",
   h1: ["日本総合園芸「花の定期便」の口コミ・評判", "40以上のコース・料金・配達エリアを公式確認"],
   heroLead:
     "日本総合園芸の「花の定期便」は、切り花・水盤生け・アレンジメント・鉢花・観葉植物・蘭など40以上のコースから選べる定期便です。当サイトでは、料金・お届け方法・配達エリア・中止の方法を、2026年10月15日に公式サイトで確認した情報にもとづいてご説明します。",

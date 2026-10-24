@@ -137,7 +137,7 @@ export default function HitoHanaPage() {
         <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="rounded-md border-2 border-[#2F5B43] bg-[#F3F6F2] p-5 md:p-6">
-              <p className="text-xs text-[#2F5B43] font-bold mb-1">最終更新：2026年10月18日（料金・頻度・条件・レビュー数は同日に公式サイトで確認）</p>
+              <p className="text-xs text-[#2F5B43] font-bold mb-1">最終更新：2026年10月21日（料金・頻度・条件・レビュー数は2026年10月18日に公式サイトで確認）</p>
               <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-3">HitoHanaの色・ボリューム・料金・解約条件の要点</h2>
               <ul className="text-sm md:text-base text-[#444] leading-relaxed space-y-2">
                 <li>・<strong>色（6色＋おまかせ）とボリューム（5サイズ）を毎回選べる</strong>点が最大の特徴です。花の種類は指定できません。</li>

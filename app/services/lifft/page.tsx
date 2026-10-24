@@ -13,10 +13,11 @@ const p: ServiceProfile = {
   officialUrl: "https://lifft.jp/pages/flowersubscription",
   officialLabel: "lifft.jp",
   verifiedAt: V,
+  updatedAt: "2026年10月21日",
   datePublished: "2026-05-23T00:00:00+09:00",
-  dateModified: "2026-10-20T00:00:00+09:00",
+  dateModified: "2026-10-21T00:00:00+09:00",
   headline: "LIFFT（リフト）の口コミ・評判・料金プラン",
-  heroKicker: "花のサブスク個別レビュー｜2026年10月20日更新",
+  heroKicker: "花のサブスク個別レビュー｜2026年10月21日更新",
   h1: ["LIFFT（リフト）お花の定期便の口コミ・評判", "料金3,300円/月・ライト1,480円・解約条件を公式確認"],
   heroLead:
     "LIFFT（リフト）は、生産者の農園から旬の花と読みもの「ジャーナル」を届けるお花の定期便です。当サイトでは、料金・締切・解約方法・口コミの傾向を、2026年10月15日に公式サイトで確認した情報にもとづいてご説明します。",

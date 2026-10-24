@@ -12,10 +12,11 @@ const p: ServiceProfile = {
   officialUrl: "https://tasuhana.com/",
   officialLabel: "tasuhana.com",
   verifiedAt: V,
+  updatedAt: "2026年10月21日",
   datePublished: "2026-05-23T00:00:00+09:00",
-  dateModified: "2026-10-15T00:00:00+09:00",
+  dateModified: "2026-10-21T00:00:00+09:00",
   headline: "タスハナ（+hana）の口コミ・評判・料金プラン",
-  heroKicker: `花のサブスク個別レビュー｜${V}更新`,
+  heroKicker: "花のサブスク個別レビュー｜2026年10月21日更新",
   h1: ["タスハナ（+hana）の口コミ・評判", "料金660円〜・最低5回の出荷条件・解約条件を公式確認"],
   heroLead:
     "タスハナ（+hana）は、規格外などで行き場を失いかけた国産のロスフラワーをポストに届ける花の定期便です。当サイトでは、料金・最低出荷回数・解約の締切・口コミの傾向を、2026年10月15日に公式サイトで確認した情報にもとづいてご説明します。",
