@@ -47,7 +47,7 @@ const groups: { heading: string; note: string; items: { href: string; label: str
       { href: "/guides/ohigan/", label: "お彼岸の花", desc: "秋彼岸の日程と中日、間に合わせるための注文時期を解説します。" },
       { href: "/guides/christmas-oshogatsu/", label: "クリスマス・お正月の花", desc: "冬は切り花が長持ちしやすい季節です。松・千両・葉牡丹を使ったお正月のアレンジも紹介します。" },
       { href: "/guides/butsudan/", label: "仏壇の仏花", desc: "仏花に適した花と避けるべき花、交換の周期に合った配送頻度の考え方を解説します。" },
-      { href: "/guides/furusato-nouzei/", label: "ふるさと納税で受け取る", desc: "花の定期便を返礼品としている自治体と、控除上限額の確認手順を解説します。" },
+      { href: "/guides/furusato-nouzei/", label: "ふるさと納税で受け取る", desc: "花の定期便の返礼品の探し方と、控除上限額の確認手順を解説します。" },
     ],
   },
   {

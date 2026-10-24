@@ -23,8 +23,8 @@ const faqItems = [
     a: "税控除を受けられるため、ふるさと納税のほうが実質的な負担は少なくなります。ただし、ふるさと納税には年間の控除上限額があり、花の種類やアレンジの自由度は通常のサブスクのほうが高くなります。両方を併用し、ふるさと納税で季節の花を楽しみながら、通常のサブスクで好みの花を補う方法もあります。",
   },
   {
-    q: "ふるさと納税の花の定期便で人気の自治体はどこですか？",
-    a: "千葉県南房総市（温暖な気候で花の栽培が盛ん）、高知県（ユリやトルコキキョウの産地）、愛知県田原市（花き生産量日本一）などが人気です。各ふるさと納税ポータルサイトで「花 定期便」と検索すると、最新の返礼品を確認できます。",
+    q: "ふるさと納税の花の定期便は、どのように探せばよいですか？",
+    a: "当サイトでは、自治体の人気の順位や特定の返礼品は掲載していません。各ふるさと納税ポータルサイトで「花 定期便」と検索すると、最新の返礼品・寄付金額・届く回数を確認できます。",
   },
 ];
 
@@ -39,12 +39,12 @@ export default function FurusatoNouzeiGuidePage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"ふるさと納税で選ぶ花の定期便\",\"description\":\"ふるさと納税で選ぶ花の定期便の仕組み・選び方・おすすめ自治体を解説しています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/furusato-nouzei/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便は確定申告が必要ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ワンストップ特例制度を利用する場合、確定申告は不要です。寄付先が5自治体以内であれば、各自治体に申請書を送付することで手続きが完了します。6自治体以上に寄付する場合や、もともと確定申告が必要な方（自営業の方など）は、確定申告で寄付金控除を申請してください。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類や色は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くの自治体の花の定期便では、届く花の種類や色を指定することはできません。地元で栽培された旬の花が選ばれて届くのが一般的です。ただし、一部の自治体では「バラ中心」「季節の花束」など、大まかなテーマを選べる場合があります。\"}},{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便はいつ届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"自治体やプランによって異なりますが、申し込みから1〜2か月後に初回が届き、その後は月1回のペースで届くのが一般的です。配送スケジュールは各自治体の返礼品ページに記載されているため、事前にご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"通常の花のサブスクとふるさと納税の花の定期便では、どちらがお得ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"税控除を受けられるため、ふるさと納税のほうが実質的な負担は少なくなります。ただし、ふるさと納税には年間の控除上限額があり、花の種類やアレンジの自由度は通常のサブスクのほうが高くなります。両方を併用し、ふるさと納税で季節の花を楽しみながら、通常のサブスクで好みの花を補う方法もあります。\"}},{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便で人気の自治体はどこですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"千葉県南房総市（温暖な気候で花の栽培が盛ん）、高知県（ユリやトルコキキョウの産地）、愛知県田原市（花き生産量日本一）などが人気です。各ふるさと納税ポータルサイトで「花 定期便」と検索すると、最新の返礼品を確認できます。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便は確定申告が必要ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ワンストップ特例制度を利用する場合、確定申告は不要です。寄付先が5自治体以内であれば、各自治体に申請書を送付することで手続きが完了します。6自治体以上に寄付する場合や、もともと確定申告が必要な方（自営業の方など）は、確定申告で寄付金控除を申請してください。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類や色は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くの自治体の花の定期便では、届く花の種類や色を指定することはできません。地元で栽培された旬の花が選ばれて届くのが一般的です。ただし、一部の自治体では「バラ中心」「季節の花束」など、大まかなテーマを選べる場合があります。\"}},{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便はいつ届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"自治体やプランによって異なりますが、申し込みから1〜2か月後に初回が届き、その後は月1回のペースで届くのが一般的です。配送スケジュールは各自治体の返礼品ページに記載されているため、事前にご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"通常の花のサブスクとふるさと納税の花の定期便では、どちらがお得ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"税控除を受けられるため、ふるさと納税のほうが実質的な負担は少なくなります。ただし、ふるさと納税には年間の控除上限額があり、花の種類やアレンジの自由度は通常のサブスクのほうが高くなります。両方を併用し、ふるさと納税で季節の花を楽しみながら、通常のサブスクで好みの花を補う方法もあります。\"}},{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便は、どのように探せばよいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイトでは、自治体の人気の順位や特定の返礼品は掲載していません。各ふるさと納税ポータルサイトで「花 定期便」と検索すると、最新の返礼品・寄付金額・届く回数を確認できます。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
       <title>お花の定期便をふるさと納税で受け取る方法｜花のある暮らしをお得に始める【2026年】｜flowerデリ</title>
-      <meta name="description" content="ふるさと納税で花の定期便を受け取れる自治体を紹介しています。仕組み・メリット・デメリット・おすすめの自治体を解説し、費用を抑えて花のある暮らしを始める方法をご案内します。" />
+      <meta name="description" content="ふるさと納税で花の定期便を受け取る方法を紹介しています。仕組み・メリット・デメリット・返礼品の探し方を解説し、費用を抑えて花のある暮らしを始める方法をご案内します。" />
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
@@ -72,7 +72,7 @@ export default function FurusatoNouzeiGuidePage() {
             </h1>
             <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               ふるさと納税の返礼品として花の定期便を選ぶと、実質2,000円の自己負担で数か月間お花が届きます。
-              当サイトでは、その仕組みとおすすめの自治体を解説しています。
+              当サイトでは、その仕組みと返礼品の探し方を解説しています。
             </p>
           </div>
         </PageHero>
@@ -108,26 +108,11 @@ export default function FurusatoNouzeiGuidePage() {
         <section className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
-              花の定期便を受け取れるおすすめの自治体
+              花の定期便の返礼品の探し方
             </h2>
-            <div className="space-y-4">
-              {[
-                { name: "千葉県 南房総市", amount: "15,000円〜", detail: "温暖な南房総で育った季節の花が毎月届きます。3回〜6回の定期便が人気です。ストック、カーネーション、ひまわりなど地元産の花が中心です。", flowers: "季節の切り花 5〜10本" },
-                { name: "高知県 芸西村", amount: "12,000円〜", detail: "高知の豊かな日差しで育ったユリやトルコキキョウが届きます。花き栽培が盛んな地域で育った品質の高い花が特長です。", flowers: "ユリ・トルコキキョウ等 3〜5本" },
-                { name: "愛知県 田原市", amount: "10,000円〜", detail: "花き生産量日本一の田原市から届く花の定期便です。バラ、菊、カーネーションなど種類が豊富で、市場へ出荷される前の新鮮な花が届きます。", flowers: "季節の花束 1束" },
-                { name: "長崎県 大村市", amount: "20,000円〜", detail: "長崎の温暖な気候で育った花が年4回届く季節便です。春はチューリップ、夏はひまわり、秋はダリア、冬はスイートピーなど、四季折々の花を楽しめます。", flowers: "季節の花 年4回" },
-              ].map((item, i) => (
-                <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2]">
-                  <div className="flex items-center gap-3 mb-3">
-                    <h3 className="text-base font-bold text-[#1F2420]">{item.name}</h3>
-                    <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-2 py-0.5 rounded-md font-medium">{item.amount}</span>
-                  </div>
-                  <p className="text-sm text-[#4A4F49] leading-relaxed mb-2">{item.detail}</p>
-                  <p className="text-xs text-[#6B6F6A]">届く花の目安：{item.flowers}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-xs text-[#6B6F6A] mt-3">※ 返礼品の内容・寄付金額は変更となる場合があります。ご利用前に、各ポータルサイトにて最新情報をご確認ください。</p>
+            <p className="text-sm text-[#4A4F49] leading-relaxed">
+              返礼品の内容・寄付金額・届く回数は、自治体と返礼品ごとに異なり、変更されることもあります。当サイトでは特定の自治体や返礼品の掲載を控えています。各ふるさと納税ポータルサイトで「花 定期便」「お花 サブスク」などのキーワードで検索し、寄付金額・届く回数・配送時期・花の種類を、申し込み前に各返礼品のページで確認してください。
+            </p>
           </div>
         </section>
 

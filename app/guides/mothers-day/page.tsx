@@ -186,7 +186,7 @@ export default function MothersDayGuidePage() {
                   <h3 className="text-base font-bold text-[#1F2420]">AND PLANTS（アンドプランツ）</h3>
                 </div>
                 <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
-                  AND PLANTSは、プロのフローリストによるおしゃれなアレンジが特徴です。ボリュームのある花束が送料無料で届きます。注文時の配送先をお母さんの住所、請求先をご自身の住所にすると、お母さんのもとへ直接お届けできます。定期便はラッピングとメッセージカードに対応していません（2026年10月20日公式確認）。見栄えが良く、花がお好きなお母さんへのプレゼントに適しています。
+                  AND PLANTSは、アンドプランツのフローリストが選んだ季節の花が届く定期便で、料金は送料込みです（2026年10月23日公式確認）。注文時の配送先をお母さんの住所、請求先をご自身の住所にすると、お母さんのもとへ直接お届けできます。定期便はラッピングとメッセージカードに対応していません（2026年10月20日公式確認）。
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
                   <div className="text-center bg-[#F6F4EF] rounded-lg p-3">
@@ -203,7 +203,7 @@ export default function MothersDayGuidePage() {
                   </div>
                 </div>
                 <div className="bg-[#EDF1EC] rounded-lg p-3">
-                  <p className="text-xs text-[#2F5B43] font-medium">ボリュームのあるおしゃれなアレンジが届くため、見栄えのするプレゼントを贈りたい方におすすめです。送料無料で、回数の条件がない点も利点です。</p>
+                  <p className="text-xs text-[#2F5B43] font-medium">スタンダード（6〜8本）・ミディアム（8〜10本）・ラージ（14〜18本）から本数を選べます。料金は送料込みで、解約はいつでも可能と案内されています（2026年10月23日公式確認）。</p>
                 </div>
               </div>
 
@@ -262,7 +262,7 @@ export default function MothersDayGuidePage() {
               <div className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
                 <h3 className="text-sm font-bold text-[#1F2420] mb-2">3,000〜5,000円のギフト</h3>
                 <p className="text-sm text-[#4A4F49] leading-relaxed mb-2">
-                  最も人気の価格帯です。AND PLANTSの1〜2回分（1,980〜3,960円）や、HitoHanaの2回分から選べます。ボリュームのある華やかなアレンジが届くため、お母さんの満足度も高い傾向があります。
+                  AND PLANTSの1〜2回分（1,980〜3,960円）や、HitoHanaの2回分から選べます。
                 </p>
                 <div className="bg-white rounded-lg p-3 border border-[#DEDAD2]">
                   <p className="text-xs text-[#2F5B43] font-medium">おすすめ：AND PLANTS 2回分 または HitoHana 2回分（色指定付き）</p>

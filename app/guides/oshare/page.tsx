@@ -621,11 +621,10 @@ export default function OshareGuidePage() {
               <div className="bg-[#F8F5F0] rounded-md p-5 border border-[#E5DDD0]">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="bg-[#8B6914] text-white text-xs font-bold px-2 py-1 rounded">クラシック</span>
-                  <h3 className="text-base font-bold text-[#1F2420]">格式のある上品な部屋に合わせる場合</h3>
+                  <h3 className="text-base font-bold text-[#1F2420]">クラシックな内装の部屋に合わせる場合</h3>
                 </div>
                 <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
-                  深い赤のバラ、白いカサブランカ、紫のトルコキキョウなど、格式のある花材が適しています。
-                  ボリュームのある花束をリビングや玄関に飾ると、ホテルのロビーのような上質な空間を演出できます。
+                  深い赤のバラ、白いカサブランカ、紫のトルコキキョウなど、色の濃い花や大輪の花を組み合わせる方法があります。
                   陶器や真鍮の花器と合わせると、クラシカルな雰囲気が引き立ちます。
                 </p>
                 <div className="bg-white rounded-lg p-3">
