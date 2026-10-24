@@ -72,7 +72,7 @@ const faqItems = [
   },
   {
     q: "ブルーミーの支払い方法を教えてください。",
-    a: "クレジットカード（VISA・Mastercard・AMEX・JCB）またはAmazon Payのみです。銀行振込・コンビニ払い・キャリア決済・電子マネー・デビットカードは使えません（2026年10月15日 公式FAQで確認）。",
+    a: "特定商取引法に基づく表記では、クレジットカード（VISA・Mastercard・JCB・American Express・ダイナースクラブ）、Amazon Pay、PayPay（定期購入契約を除く）が案内されています。定期便で使えるのは、クレジットカードとAmazon Payです。公式FAQではカードがVISA・Mastercard・AMEX・JCBの4種と記載されており、ダイナースクラブの記載がないため、ダイナースクラブを使う場合は登録画面でご確認ください。銀行振込・コンビニ払い・キャリア決済・電子マネー・デビットカードは使えません（2026年10月24日 公式の特定商取引法に基づく表記・FAQで確認）。",
   },
   {
     q: "ブルーミーの定期便をプレゼントとして贈れますか？",
@@ -99,7 +99,7 @@ export default function BloomeePage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/bloomee/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-24T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -378,7 +378,7 @@ export default function BloomeePage() {
                     ["契約の条件", "半年・1年などの長期契約はない。4回目以降は週単位でストップ・再開でき、隔週への変更や特定の週のスキップもできる", "最初の4回は受け取りが前提。4回未満で解約すると「4回分のうち残回数分の商品代金」が途中解約料になり、4回目までは隔週に変更できない"],
                     ["花の内容", "市場で仕入れた季節の花を束ねて届ける。ガイドブックと栄養剤が同封される", "花の組み合わせ・色味はおまかせで選べない。サイズ目安はお試し・グリーンが約18〜25cm、ベーシックが約25〜30cm"],
                     ["品質の保証", "定期便は到着予定日から2週間以内に問い合わせフォームで連絡し、不具合が認められれば返金または代品発送", "問い合わせフォームからの申請が必要で、期限を過ぎると対象外"],
-                    ["支払い方法", "クレジットカードまたはAmazon Payで支払える", "銀行振込・コンビニ払い・キャリア決済・電子マネー・デビットカードは使えない（PayPayは定期購入では使えない）"],
+                    ["支払い方法", "クレジットカード（VISA・Mastercard・JCB・American Express・ダイナースクラブ）またはAmazon Payで支払える（特定商取引法に基づく表記）", "銀行振込・コンビニ払い・キャリア決済・電子マネー・デビットカードは使えない（PayPayは定期購入では使えない）。公式FAQのカードブランドにはダイナースクラブの記載がない"],
                     ["お届けエリア", "本州・北海道・四国・九州・沖縄本島に届く", "離島は対象外"],
                     ["プレゼント", "「プレゼントとして送る」を選ぶと自分以外の住所に届け、送り主の名前を登録できる", "2か所以上に届ける場合は、別のメールアドレスでそれぞれ登録が必要"],
                   ].map(([k, m, d]) => (
@@ -583,7 +583,7 @@ export default function BloomeePage() {
                 {
                   step: "STEP 5",
                   title: "支払い方法を登録する",
-                  text: "支払い方法はクレジットカード（VISA・Mastercard・AMEX・JCB）またはAmazon Payのみです（銀行振込・コンビニ払い・キャリア決済は不可。2026年10月15日 公式FAQで確認）。",
+                  text: "定期便の支払い方法は、クレジットカード（VISA・Mastercard・JCB・American Express・ダイナースクラブ）またはAmazon Payです（特定商取引法に基づく表記）。公式FAQにはダイナースクラブの記載がないため、使う場合は登録画面でご確認ください。銀行振込・コンビニ払い・キャリア決済・デビットカードは使えません（2026年10月24日 公式確認）。",
                 },
                 {
                   step: "STEP 6",
