@@ -5,8 +5,7 @@ import Header from "@/app/components/Header";
 import SiteFooter from "@/app/components/SiteFooter";
 import { SERVICES, minTotal, perStem, type Service } from "@/data/services";
 
-const UPDATED = "2026年6月27日";
-// 本文の最終更新日（scripts/sync-freshness.mjs が sitemap lastmod に合わせる）。UPDATED は料金の確認時点の表示なので別に持つ
+// 本文の最終更新日（scripts/sync-freshness.mjs が sitemap lastmod に合わせる）。料金の確認日は下の confirmedAt で各サービスの verifiedAt から出す
 const MODIFIED = "2026年10月17日";
 
 export const metadata: Metadata = {
@@ -23,6 +22,14 @@ function yen(n: number) {
   return n.toLocaleString("ja-JP");
 }
 
+// 2026-10-25: 料金の確認日は一律の定数（旧「2026年6月27日」）ではなく、表示している各サービスの services.ts verifiedAt を出す。
+// 対象サービスの確認日が全部同じならその日付、違えば「サービス名は日付」を並べる。
+function confirmedAt(list: Service[]) {
+  const ds = [...new Set(list.map((s) => s.verifiedAt))];
+  return ds.length === 1 ? ds[0] : list.map((s) => `${s.name}は${s.verifiedAt}`).join("、");
+}
+const noMinimum = SERVICES.filter((s) => s.minDeliveries === null);
+
 // 料金比較ページは検討段階が浅いため、成果地点が手前のプログラム(affiliateUrlEarly)があればそちらを使う。
 export default function RyokinPage() {
   const faq = [
@@ -34,7 +41,7 @@ export default function RyokinPage() {
       q: "送料込みで最も安い花の定期便はどれですか？",
       a: `送料込みの1回あたりの総額では、${sorted[0].name}の${sorted[0].cheapest.name}（${yen(
         sorted[0].cheapest.price
-      )}円）が最安です（${UPDATED}時点・公式確認）。あわせて、最低受取回数や本数もご確認ください。`,
+      )}円）が最安です（${confirmedAt([sorted[0]])}時点・公式確認）。あわせて、最低受取回数や本数もご確認ください。`,
     },
     {
       q: "最低受取回数の条件がある場合、総額はどのように考えればよいですか？",
@@ -81,7 +88,7 @@ export default function RyokinPage() {
             花のサブスクは、月額ではなく
             <strong>〈送料込みの1回あたりの総額〉〈最低受取回数までの総額〉〈1本あたりの単価〉</strong>で比較することをおすすめします。
             送料込みの最安は<strong>{sorted[0].name}（{yen(sorted[0].cheapest.price)}円・{sorted[0].cheapest.name}）</strong>です。
-            まず試してみたい場合は、回数の条件がないサービスをおすすめします（{UPDATED}時点・公式確認）。
+            まず試してみたい場合は、回数の条件がないサービスをおすすめします（{confirmedAt(noMinimum)}時点・公式確認）。
           </p>
         </div>
 
@@ -121,7 +128,7 @@ export default function RyokinPage() {
           </table>
         </div>
         <p className="text-[11px] text-[#6B6F6A] mb-8">
-          ※価格は税込で、各公式サイトで{UPDATED}に確認した最安プランです。送料の扱い・最低受取回数・本数はプランや地域によって異なります。ご利用前に、公式サイトにて最新情報をご確認ください。
+          ※価格は税込で、各公式サイトで{confirmedAt(sorted)}に確認した最安プランです。送料の扱い・最低受取回数・本数はプランや地域によって異なります。ご利用前に、公式サイトにて最新情報をご確認ください。
           {SERVICES.filter((s) => s.note).map((s) => (
             <span key={s.id} className="block mt-1">・{s.name}：{s.note}</span>
           ))}
