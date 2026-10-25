@@ -32,7 +32,7 @@ const articleLd = {
   headline: "花のサブスクの初回特典・お試しプラン比較｜安く始める方法",
   description: "bloomee・medelu・AND PLANTS・hanamekuの初回・お試しプランを送料込みの実額で比較しています。期間限定のクーポンは公式サイトでの確認方法を案内しています。",
   datePublished: "2026-07-24T00:00:00+09:00",
-  dateModified: "2026-07-24T00:00:00+09:00",
+  dateModified: "2026-10-17T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/compare/campaign/" },

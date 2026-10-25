@@ -82,7 +82,7 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <p className="text-xs text-gray-500 mt-12">最終更新日：2026年5月21日</p>
+        <p className="text-xs text-gray-500 mt-12">最終更新日：2026年10月17日</p>
       </main>
     </div>
   );

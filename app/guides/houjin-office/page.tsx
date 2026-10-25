@@ -76,7 +76,7 @@ const articleLd = {
   headline: "オフィス向け観葉植物・花の定期便【2026年】小規模オフィス・メンテナンス込み・管理不要で選ぶ法人向けガイド",
   description: "オフィス・店舗への観葉植物と花の定期便（サブスク・レンタル）の導入について、小規模オフィスでの始め方、メンテナンス込みの可否、管理不要で続ける方法、エントランスに置くものの選び方、東京23区の確認手順を解説します。",
   datePublished: "2026-07-18T00:00:00+09:00",
-  dateModified: "2026-09-16T00:00:00+09:00",
+  dateModified: "2026-10-25T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/guides/houjin-office/" },

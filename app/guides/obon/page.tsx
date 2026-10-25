@@ -14,7 +14,7 @@ export default function ObonPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"お盆・新盆の花を花のサブスクで用意する方法\",\"item\":\"https://ohana-delivery.com/guides/obon/\"}]}" }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"お盆・新盆（初盆）の花を花のサブスクで用意する方法\",\"description\":\"お盆・新盆のお供えの花を花のサブスクで用意する方法を解説しています。\",\"datePublished\":\"2026-06-23T00:00:00+09:00\",\"dateModified\":\"2026-06-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/obon/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"お盆・新盆（初盆）の花を花のサブスクで用意する方法\",\"description\":\"お盆・新盆のお供えの花を花のサブスクで用意する方法を解説しています。\",\"datePublished\":\"2026-06-23T00:00:00+09:00\",\"dateModified\":\"2026-10-17T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/obon/\"}}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
 
       <div className="min-h-screen bg-[#FAF8F5] text-[#1F2420]">
@@ -26,7 +26,7 @@ export default function ObonPage() {
 
           <PageHero bleed path="/guides/obon/">
             <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">お盆・新盆（初盆）の花を花のサブスクで用意する方法【2026年】</h1>
-            <p className="text-sm text-gray-600 mb-6">最終更新日：2026年6月23日 ／ flowerデリ編集部</p>
+            <p className="text-sm text-gray-600 mb-6">最終更新日：2026年10月17日 ／ flowerデリ編集部</p>
           </PageHero>
 
           <div className="bg-white rounded-md border border-[#DEDAD2] p-5 mb-8">

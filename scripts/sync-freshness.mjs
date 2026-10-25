@@ -2,7 +2,7 @@
 // - app/services/<slug>/page.tsx の Article LD dateModified
 // - public/sitemap.xml の対象URL lastmod（サービス4ページ＋services.ts由来の価格を表示する比較ハブ）
 // npm run build の prebuild で毎回実行される。手動実行: node scripts/sync-freshness.mjs
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -85,24 +85,56 @@ for (const [loc, iso] of targets) {
 }
 writeFileSync(smPath, sm);
 
-// 3) テンプレートで dateModified が固定されている静的ページは、sitemap の lastmod（本文の最終変更日）に合わせる（前進のみ）
-//    2026-10-25 追加。対象は必要に応じてこの一覧に足す。
-const FROM_SITEMAP = ["guides/kabin"];
-for (const path of FROM_SITEMAP) {
-  const loc = `https://ohana-delivery.com/${path}/`;
-  const m = sm.match(new RegExp(`<loc>${loc.replace(/[/.]/g, "\\$&")}</loc>\\s*<lastmod>([^<]+)</lastmod>`));
-  if (!m) {
-    console.warn(`WARN: sitemap内に見つからない: ${loc}`);
-    continue;
+// 3) 静的ページ（app/**/page.tsx。services/ と動的ルート [slug] を除く）に書かれた
+//    Article/WebPage の dateModified と、画面の「最終更新日：YYYY年M月D日」「const MODIFIED」を
+//    sitemap の lastmod（scripts/lastmod-from-deploy.py が求めた本文の最終変更日）に合わせる（前進のみ）。
+//    2026-10-25 朝は guides/kabin だけ → 12:00 に全静的ページへ拡大。動的ルートは data/lastmod.ts がビルド時に sitemap を読む。
+//    ※ 料金の確認日（UPDATED・「〜時点・公式確認」）は本文の更新日とは別なので触らない。
+const lastmodOf = new Map(
+  [...sm.matchAll(/<loc>https:\/\/ohana-delivery\.com\/([^<]*)<\/loc>\s*<lastmod>(\d{4}-\d{2}-\d{2})/g)].map((x) => [
+    x[1].replace(/\/$/, ""),
+    x[2],
+  ]),
+);
+const jp = (iso) => `${+iso.slice(0, 4)}年${+iso.slice(5, 7)}月${+iso.slice(8, 10)}日`;
+const isoOfJp = (y, mo, d) => `${y}-${String(mo).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+function walk(dir, rel = "") {
+  const out = [];
+  for (const e of readdirSync(dir, { withFileTypes: true })) {
+    if (e.isDirectory()) {
+      if (e.name.includes("[") || e.name === "components" || (rel === "" && e.name === "services")) continue;
+      out.push(...walk(join(dir, e.name), rel ? `${rel}/${e.name}` : e.name));
+    } else if (e.name === "page.tsx") out.push(rel);
   }
-  const iso = m[1].trim().slice(0, 10);
-  const p = join(root, `app/${path}/page.tsx`);
+  return out;
+}
+let pagesUpdated = 0;
+for (const path of walk(join(root, "app"))) {
+  const iso = lastmodOf.get(path);
+  if (!iso) continue; // sitemap に無いページは触らない
+  const p = join(root, "app", path, "page.tsx");
   let t = readFileSync(p, "utf8");
-  const cur = t.match(/\\"dateModified\\":\\"(\d{4}-\d{2}-\d{2})/);
-  if (cur && iso > cur[1]) {
-    t = t.replace(/(\\"dateModified\\":\\")[^\\"]+(\\")/, `$1${iso}T00:00:00+09:00$2`);
+  const before = t;
+  const log = [];
+  // JSON-LD（文字列リテラル内のエスケープ形式／オブジェクト形式の両方）
+  t = t.replace(/(\\"dateModified\\":\\")(\d{4}-\d{2}-\d{2})([^\\"]*)(\\")/g, (all, a, d, rest, b) =>
+    iso > d ? (log.push(`dateModified ${d}`), `${a}${iso}T00:00:00+09:00${b}`) : all,
+  );
+  t = t.replace(/(\bdateModified:\s*")(\d{4}-\d{2}-\d{2})([^"]*)(")/g, (all, a, d, rest, b) =>
+    iso > d ? (log.push(`dateModified ${d}`), `${a}${iso}${rest ? "T00:00:00+09:00" : ""}${b}`) : all,
+  );
+  // 画面の最終更新日
+  t = t.replace(/(最終更新日：)(\d{4})年(\d{1,2})月(\d{1,2})日/g, (all, a, y, mo, d) =>
+    iso > isoOfJp(y, mo, d) ? (log.push(`表示 ${isoOfJp(y, mo, d)}`), `${a}${jp(iso)}`) : all,
+  );
+  t = t.replace(/(const MODIFIED = ")(\d{4})年(\d{1,2})月(\d{1,2})日(")/g, (all, a, y, mo, d, b) =>
+    iso > isoOfJp(y, mo, d) ? (log.push(`MODIFIED ${isoOfJp(y, mo, d)}`), `${a}${jp(iso)}${b}`) : all,
+  );
+  if (t !== before) {
     writeFileSync(p, t);
-    console.log(`dateModified更新: ${path} ${cur[1]} -> ${iso}`);
+    pagesUpdated++;
+    console.log(`更新日を本文の最終変更日に: ${path || "/"} ${log.join("・")} -> ${iso}`);
   }
 }
+console.log(`静的ページの更新日を合わせた: ${pagesUpdated}ページ`);
 console.log("sync-freshness 完了");

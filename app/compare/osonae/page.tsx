@@ -28,7 +28,7 @@ const articleLd = {
   headline: "仏花・お供えの花を定期便/通販で用意する比較【2026年】8社の公式情報を確認",
   description: "お供え・仏花の専用商品の有無、白系の可否、立て札・カード、価格、お届け日指定を、8社の公式サイトで確認して比較しています。",
   datePublished: "2026-07-24T00:00:00+09:00",
-  dateModified: "2026-07-24T00:00:00+09:00",
+  dateModified: "2026-10-23T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/compare/osonae/" },

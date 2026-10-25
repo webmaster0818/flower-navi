@@ -13,7 +13,7 @@ export default function KeirouNoHiPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"敬老の日に贈る花のサブスク\",\"item\":\"https://ohana-delivery.com/guides/keirou-no-hi/\"}]}" }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"敬老の日に贈る花のサブスク・花ギフトおすすめ\",\"description\":\"敬老の日に贈る花のサブスクのおすすめと贈り方を解説しています。\",\"datePublished\":\"2026-07-10T00:00:00+09:00\",\"dateModified\":\"2026-07-10T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/keirou-no-hi/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"敬老の日に贈る花のサブスク・花ギフトおすすめ\",\"description\":\"敬老の日に贈る花のサブスクのおすすめと贈り方を解説しています。\",\"datePublished\":\"2026-07-10T00:00:00+09:00\",\"dateModified\":\"2026-10-24T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/keirou-no-hi/\"}}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
 
       <div className="min-h-screen bg-[#FAF8F5] text-[#1F2420]">
@@ -25,7 +25,7 @@ export default function KeirouNoHiPage() {
 
           <PageHero bleed path="/guides/keirou-no-hi/">
             <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">敬老の日に贈る花のサブスク・花ギフトおすすめ【2026年】</h1>
-            <p className="text-sm text-gray-600 mb-6">最終更新日：2026年6月23日 ／ flowerデリ編集部</p>
+            <p className="text-sm text-gray-600 mb-6">最終更新日：2026年10月24日 ／ flowerデリ編集部</p>
           </PageHero>
 
           <div className="bg-white rounded-md border border-[#DEDAD2] p-5 mb-8">

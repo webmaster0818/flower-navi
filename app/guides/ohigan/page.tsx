@@ -14,7 +14,7 @@ export default function OhiganPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"お彼岸の花を用意する時期｜2026年秋彼岸の日程とお供えの花\",\"item\":\"https://ohana-delivery.com/guides/ohigan/\"}]}" }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"お彼岸の花を用意する時期｜2026年秋彼岸の日程とお供えの花・注文時期の目安\",\"description\":\"2026年秋彼岸の日程、お供えに向く花・避ける花、花のサブスクでの用意の方法、配送方式ごとの注文時期の目安を解説しています。\",\"datePublished\":\"2026-07-24T00:00:00+09:00\",\"dateModified\":\"2026-07-24T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/ohigan/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"お彼岸の花を用意する時期｜2026年秋彼岸の日程とお供えの花・注文時期の目安\",\"description\":\"2026年秋彼岸の日程、お供えに向く花・避ける花、花のサブスクでの用意の方法、配送方式ごとの注文時期の目安を解説しています。\",\"datePublished\":\"2026-07-24T00:00:00+09:00\",\"dateModified\":\"2026-10-17T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/ohigan/\"}}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
 
       <div className="min-h-screen bg-[#FAF8F5] text-[#1F2420]">
@@ -26,7 +26,7 @@ export default function OhiganPage() {
 
           <PageHero bleed path="/guides/ohigan/">
             <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">お彼岸の花を用意する時期｜2026年秋彼岸の日程とお供えの花・注文時期の目安</h1>
-            <p className="text-sm text-gray-600 mb-6">最終更新日：2026年7月24日 ／ flowerデリ編集部</p>
+            <p className="text-sm text-gray-600 mb-6">最終更新日：2026年10月17日 ／ flowerデリ編集部</p>
           </PageHero>
 
           <div className="bg-white rounded-md border border-[#DEDAD2] p-5 mb-8">

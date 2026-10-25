@@ -6,6 +6,8 @@ import SiteFooter from "@/app/components/SiteFooter";
 import { SERVICES, minTotal, perStem, type Service } from "@/data/services";
 
 const UPDATED = "2026年6月27日";
+// 本文の最終更新日（scripts/sync-freshness.mjs が sitemap lastmod に合わせる）。UPDATED は料金の確認時点の表示なので別に持つ
+const MODIFIED = "2026年10月17日";
 
 export const metadata: Metadata = {
   title: "花の定期便 料金比較表｜送料込みの総額・最低支払額・1本あたりの単価で比較",
@@ -45,7 +47,7 @@ export default function RyokinPage() {
     "@type": "Article",
     headline: "花の定期便 料金比較表（送料込み総額・最低支払額・1本単価）",
     description: "花のサブスクの料金を、送料込みの総額・最低支払額・1本あたりの単価で比較しています。公式サイトでの確認日を付記しています。",
-    dateModified: "2026-06-27",
+    dateModified: "2026-10-17",
   };
   const faqLd = {
     "@context": "https://schema.org",
@@ -70,7 +72,7 @@ export default function RyokinPage() {
           <h1 className="text-2xl md:text-3xl font-bold text-[#1F2420] leading-tight mb-3">
             花の定期便 料金比較表｜送料込みの総額・最低支払額・1本あたりの単価で比較
           </h1>
-          <p className="text-xs text-[#6B6F6A] mb-6">最終更新：{UPDATED}／料金は各公式サイトで確認した値です。</p>
+          <p className="text-xs text-[#6B6F6A] mb-6">最終更新：{MODIFIED}／料金は各公式サイトで確認した値です。</p>
         </PageHero>
 
         {/* AEO 即答ブロック */}

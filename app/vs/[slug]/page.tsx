@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/app/components/PageHero";
 import type { Metadata } from "next";
+import { dateModifiedFor } from "@/data/lastmod";
 import Header from "@/app/components/Header";
 import { findVsComparison, allVsSlugs } from "@/data/vsComparisons";
 
@@ -55,7 +56,7 @@ export default async function VsPage({ params }: Props) {
             headline: v.h1,
             description: v.description,
             datePublished: "2026-06-05T00:00:00+09:00",
-            dateModified: "2026-06-05T00:00:00+09:00",
+            dateModified: dateModifiedFor(`vs/${slug}`, "2026-06-05T00:00:00+09:00"),
             author: { "@type": "Organization", name: "flowerデリ" },
             publisher: { "@type": "Organization", name: "flowerデリ", url: SITE_URL },
             mainEntityOfPage: { "@type": "WebPage", "@id": url },

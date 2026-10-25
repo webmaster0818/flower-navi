@@ -47,7 +47,7 @@ const articleLd = {
   headline: "観葉植物の育て方と置き場所【2026年】日当たり・水やり・枯らさないための管理",
   description: "観葉植物の育て方として、置き場所と日当たりの見極め方、水やりの頻度、季節ごとの管理、葉の状態から原因を確認する方法を解説します。",
   datePublished: "2026-07-20T00:00:00+09:00",
-  dateModified: "2026-08-27T00:00:00+09:00",
+  dateModified: "2026-10-22T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/guides/kanyou-shokubutsu/" },

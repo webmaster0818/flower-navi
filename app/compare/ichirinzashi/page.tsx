@@ -68,7 +68,7 @@ const articleLd = {
   headline: "一輪挿しに合う花のサブスク比較【2026年最新】",
   description: "一輪挿しで花を楽しみたい方に向けて、少量プランのある花のサブスクを送料込みの実価格で比較しています。飾り方・花瓶の選び方も解説します。",
   datePublished: "2026-07-03T00:00:00+09:00",
-  dateModified: "2026-07-03T00:00:00+09:00",
+  dateModified: "2026-10-24T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/compare/ichirinzashi/" },

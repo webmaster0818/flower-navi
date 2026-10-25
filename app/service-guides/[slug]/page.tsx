@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/app/components/PageHero";
 import type { Metadata } from "next";
+import { dateModifiedFor } from "@/data/lastmod";
 import Header from "@/app/components/Header";
 import { findServiceGuide, allServiceGuideSlugs } from "@/data/serviceGuides";
 
@@ -55,7 +56,7 @@ export default async function ServiceGuidePage({ params }: Props) {
             headline: g.h1,
             description: g.description,
             datePublished: "2026-06-05T00:00:00+09:00",
-            dateModified: "2026-06-05T00:00:00+09:00",
+            dateModified: dateModifiedFor(`service-guides/${slug}`, "2026-06-05T00:00:00+09:00"),
             author: { "@type": "Organization", name: "flowerデリ" },
             publisher: { "@type": "Organization", name: "flowerデリ", url: SITE_URL },
             mainEntityOfPage: { "@type": "WebPage", "@id": url },
