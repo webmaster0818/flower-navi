@@ -31,38 +31,16 @@ const faqItems = [
 /* ─── Vase Data ─── */
 const vaseCategories = [
   {
-    title: "ガラス製の花瓶（透明感が特長）",
+    title: "ガラス製の花瓶",
     items: [
-      { name: "IKEA TIDVATTEN", price: "299円〜", size: "14cm", desc: "北欧デザインのシンプルなガラス花瓶です。ミニブーケに適したサイズで、さまざまなインテリアになじみます。" },
-      { name: "ホルムガード フローラ", price: "3,300円〜", size: "12cm", desc: "デンマーク王室御用達ブランドの一輪挿しです。丸みを帯びたフォルムが花を引き立てます。" },
-      { name: "無印良品 ソーダガラス花瓶", price: "990円〜", size: "15cm", desc: "シンプルで飽きのこないデザインです。3〜5本の花に適したサイズです。" },
-      { name: "100円ショップ ガラスシリンダー", price: "110円〜", size: "10〜20cm", desc: "ダイソーやセリアで購入できるシンプルな円柱型です。複数購入して花を分けて飾る用途に適しています。" },
-    ],
-  },
-  {
-    title: "陶器製の花瓶（温かみのある質感）",
-    items: [
-      { name: "KAHLER ハンマースホイ", price: "5,500円〜", size: "12.5cm", desc: "デンマーク・ケーラーの花瓶です。横縞のテクスチャーが特徴で、花を生けていないときもオブジェとして飾れます。" },
-      { name: "有田焼 一輪挿し", price: "2,000円〜", size: "10〜15cm", desc: "日本の伝統工芸品らしい繊細な仕上がりです。和モダンのインテリアに合い、一輪の花を引き立てます。" },
-      { name: "フランフラン 陶器花瓶", price: "1,500円〜", size: "15〜20cm", desc: "マットな質感と落ち着いたくすみカラーが特長で、さまざまな部屋になじみます。" },
-      { name: "波佐見焼 フラワーベース", price: "1,800円〜", size: "12cm", desc: "長崎の波佐見焼はモダンなデザインが多く、北欧インテリアとも合わせやすく、日常使いに適しています。" },
-    ],
-  },
-  {
-    title: "金属製の花瓶（モダンな印象）",
-    items: [
-      { name: "HAY ルミ ベース", price: "4,400円〜", size: "15cm", desc: "デンマーク・HAYのスチール製花瓶です。マットな色合いがモダンなインテリアに合います。" },
-      { name: "ZARA HOME メタル花瓶", price: "2,990円〜", size: "18cm", desc: "ゴールドやシルバーのメタリックカラーで、上質な印象を与えます。シンプルなフォルムが花を引き立てます。" },
-      { name: "能作 真鍮一輪挿し", price: "3,850円〜", size: "10cm", desc: "富山の伝統的な鋳物メーカーによる真鍮の一輪挿しです。使い込むことで生じる経年変化も楽しめます。" },
+      { name: "IKEA TIDVATTEN ティドヴァッテン 花瓶（クリアガラス）", price: "299円", size: "14cm", desc: "IKEA公式サイトでは、同じ TIDVATTEN の花瓶を高さ17cm（499円）・30cm（1,299円）・45cm（1,999円）でも販売しています（2026年10月25日公式確認）。" },
     ],
   },
   {
     title: "一輪挿し（花1〜2本を飾る）",
     items: [
-      { name: "KINTO SACCO", price: "880円〜", size: "9cm", desc: "丸みのあるフォルムの一輪挿しです。ガラス製のため花の茎まで見え、デスクに置くのに適しています。" },
-      { name: "スガハラガラス 一輪挿し", price: "2,200円〜", size: "12cm", desc: "日本のガラス工房が一点ずつ手作りする一輪挿しです。独特のフォルムと透明感が特長です。" },
-      { name: "scope house 一輪挿し", price: "1,650円〜", size: "10cm", desc: "北欧テイストのシンプルなデザインです。一輪の花を飾るのに適したサイズです。" },
-      { name: "100円ショップ 一輪挿し各種", price: "110円〜", size: "8〜12cm", desc: "ダイソー・セリアでは多様なデザインの一輪挿しを扱っています。複数購入して好みのデザインを探す用途に適しています。" },
+      { name: "KINTO SACCO ベース ガラス 01", price: "1,980円", size: "95mm", desc: "ソーダガラス製です。同じシリーズにガラス 02（高さ110mm）・ガラス 03（高さ150mm、いずれも1,980円）と、磁器製の 01・02（2,750円）があります（KINTO公式オンラインショップ・2026年10月25日確認）。" },
+      { name: "スガハラ（Sghr）ミニベース：一輪挿し サイコロ", price: "2,420円（税込）", size: "50mm", desc: "ガラス製の一輪挿しで、サイズは50mm角×高さ50mmです。Sghr スガハラ公式通販の表示価格は税込2,420円（税別2,200円）です（2026年10月25日公式確認）。" },
     ],
   },
 ];
@@ -84,8 +62,8 @@ export default function KabinGuidePage() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <title>花瓶・一輪挿しのおすすめ15選｜花のサブスクに合う花瓶の選び方【2026年】</title>
-      <meta name="description" content="花瓶・一輪挿しのおすすめ15点を素材別・サイズ別・予算別にご紹介します。花のサブスクで届く花に合う花瓶の選び方もご説明します。" />
+      <title>花のサブスクに合う花瓶・一輪挿しの選び方｜価格・高さを公式で確認した3点</title>
+      <meta name="description" content="花のサブスクで届く花に合う花瓶・一輪挿しの選び方と、価格・高さを公式サイトで確認できた3点をご紹介します。" />
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
@@ -109,11 +87,11 @@ export default function KabinGuidePage() {
             <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">花瓶ガイド</p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               花のサブスクに合う花瓶の選び方<br className="hidden md:block" />
-              おすすめ15選【2026年・素材／サイズ／予算別】
+              価格・高さを公式で確認した花瓶3点
             </h1>
             <p className="text-sm md:text-base text-[#4A4F49] mb-4 max-w-2xl mx-auto leading-relaxed">
               花のサブスクで届いた花をきれいに飾るには、花瓶選びが重要です。
-              当サイトでは、素材別・サイズ別・予算別のおすすめの花瓶15点と、選び方のポイントをご説明します。
+              当サイトでは、花瓶の選び方と、価格・高さを公式サイトで確認できた花瓶3点をご紹介します。
             </p>
             <p className="text-sm text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               少量の花を一輪挿しで楽しみたい方は、
@@ -198,28 +176,6 @@ export default function KabinGuidePage() {
             </div>
           </section>
         ))}
-
-        {/* ─── Budget Guide ─── */}
-        <section className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
-              予算別のおすすめ花瓶
-            </h2>
-            <div className="space-y-4">
-              {[
-                { budget: "500円以下", desc: "100円ショップのガラス花瓶・一輪挿し。最初に試して好みを探る段階に適しています。複数購入して花を分けて飾ることもできます。" },
-                { budget: "1,000〜3,000円", desc: "IKEA、無印良品、KINTO、フランフランなど。デザイン性と実用性のバランスがよい価格帯で、メインの花瓶として長く使用できます。" },
-                { budget: "3,000〜5,000円", desc: "ホルムガード、HAY、能作など。ブランドの花瓶ならではのデザイン性があり、花を生けていないときもインテリアとして飾れます。" },
-                { budget: "5,000円以上", desc: "KAHLER、スガハラガラスなど。長く愛用できる上質な花瓶で、ギフトにも適しています。" },
-              ].map((item, i) => (
-                <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
-                  <h3 className="text-sm font-bold text-[#2F5B43] mb-2">{item.budget}</h3>
-                  <p className="text-sm text-[#4A4F49] leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-12 md:py-16 bg-[#F6F4EF]">

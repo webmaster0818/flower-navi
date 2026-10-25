@@ -83,7 +83,7 @@ export const personas: Persona[] = [
     howToChoose: [
       { step: 1, title: "色の系統を選ぶ", text: "男性の部屋には、『グリーン中心』『モノトーン』『深い色味』が合います。medelu MODERN・AND PLANTSが該当します。" },
       { step: 2, title: "短期間で試せるサービスから始める", text: "回数の条件がないmedelu・LIFFT・AND PLANTSから始め、生活に合うかを確認してください。" },
-      { step: 3, title: "花瓶はシンプルな形を選ぶ", text: "ガラスの円柱型（直径8〜10cm）が幅広く使えます。無印良品の花瓶が定番です。" },
+      { step: 3, title: "花瓶はシンプルな形を選ぶ", text: "ガラスの円柱型（直径8〜10cm）が幅広く使えます。" },
       { step: 4, title: "飾る場所はリビングと寝室", text: "リビングのテレビの横と、寝室のサイドテーブルが定番の場所です。" },
     ],
     realCases: [],
