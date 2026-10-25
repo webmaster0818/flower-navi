@@ -262,11 +262,11 @@ export default function YametaGuidePage() {
           </div>
         </section>
 
-        {/* サービス別 解約難易度比較表 */}
+        {/* サービス別 解約条件の一覧 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
-              サービス別 解約のしやすさ一覧
+              サービス別 解約の条件一覧
             </h2>
             <p className="text-sm text-[#4A4F49] mb-6">
               解約したいと考えた際にすぐ解約できるかどうかは、申し込み前に確認しておくべき点です。当サイトでは、回数の条件・違約金・解約方法をサービス別にまとめています。
@@ -279,16 +279,15 @@ export default function YametaGuidePage() {
                     <th className="px-3 py-2 text-left">回数の条件</th>
                     <th className="px-3 py-2 text-left">違約金</th>
                     <th className="px-3 py-2 text-left">解約手続き</th>
-                    <th className="px-3 py-2 text-left">難易度</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">bloomee</td><td className="px-3 py-2">4回</td><td className="px-3 py-2 text-[#C56565]">あり (残回数分)</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#C56565]">やや難しい</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">medelu</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから即解約</td><td className="px-3 py-2 text-[#2F5B43]">非常に簡単</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">HitoHana</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#2F5B43]">簡単</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">AND PLANTS</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#2F5B43]">簡単</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">LIFFT</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">毎月19日までにメール（info@lifft.jp）で連絡（2026年10月17日公式確認）</td><td className="px-3 py-2 text-[#2F5B43]">簡単</td></tr>
-                  <tr><td className="px-3 py-2 font-bold">タスハナ</td><td className="px-3 py-2">5回（出荷が前提）（2026年10月17日公式確認）</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td><td className="px-3 py-2 text-[#2F5B43]">簡単</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">bloomee</td><td className="px-3 py-2">4回</td><td className="px-3 py-2 text-[#C56565]">あり (残回数分)</td><td className="px-3 py-2">マイページから手続き</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">medelu</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">HitoHana</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">AND PLANTS</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">LIFFT</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">毎月19日までにメール（info@lifft.jp）で連絡（2026年10月17日公式確認）</td></tr>
+                  <tr><td className="px-3 py-2 font-bold">タスハナ</td><td className="px-3 py-2">5回（出荷が前提）（2026年10月17日公式確認）</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td></tr>
                 </tbody>
               </table>
             </div>

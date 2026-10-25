@@ -84,4 +84,25 @@ for (const [loc, iso] of targets) {
   }
 }
 writeFileSync(smPath, sm);
+
+// 3) テンプレートで dateModified が固定されている静的ページは、sitemap の lastmod（本文の最終変更日）に合わせる（前進のみ）
+//    2026-10-25 追加。対象は必要に応じてこの一覧に足す。
+const FROM_SITEMAP = ["guides/kabin"];
+for (const path of FROM_SITEMAP) {
+  const loc = `https://ohana-delivery.com/${path}/`;
+  const m = sm.match(new RegExp(`<loc>${loc.replace(/[/.]/g, "\\$&")}</loc>\\s*<lastmod>([^<]+)</lastmod>`));
+  if (!m) {
+    console.warn(`WARN: sitemap内に見つからない: ${loc}`);
+    continue;
+  }
+  const iso = m[1].trim().slice(0, 10);
+  const p = join(root, `app/${path}/page.tsx`);
+  let t = readFileSync(p, "utf8");
+  const cur = t.match(/\\"dateModified\\":\\"(\d{4}-\d{2}-\d{2})/);
+  if (cur && iso > cur[1]) {
+    t = t.replace(/(\\"dateModified\\":\\")[^\\"]+(\\")/, `$1${iso}T00:00:00+09:00$2`);
+    writeFileSync(p, t);
+    console.log(`dateModified更新: ${path} ${cur[1]} -> ${iso}`);
+  }
+}
 console.log("sync-freshness 完了");
