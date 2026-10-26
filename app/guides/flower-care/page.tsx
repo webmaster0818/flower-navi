@@ -28,7 +28,7 @@ const faqItems = [
   },
   {
     q: "100円ショップの花瓶でも大丈夫ですか？",
-    a: "問題ありません。100円ショップには、ガラス製・陶器風など、花を生けるのに十分な品質の花瓶がそろっています。サブスクで届く3〜5本程度の花であれば、100円ショップの花瓶で十分です。小さな花瓶を複数用意しておくと、花を1〜2本ずつ分けて飾ることもできます。",
+    a: "はい、使用できます。ダイソー公式ネットストアでは、ソーダガラスの「ガラス花瓶（クリア）」を高さ10.4cmと12.5cmの2種類、各110円（税込）で販売しています（2026年10月26日公式確認）。届く花の長さに合う高さのものを選んでください。小さな花瓶を複数用意しておくと、花を1〜2本ずつ分けて飾ることもできます。",
   },
   {
     q: "届いた花をドライフラワーにできますか？",
@@ -70,12 +70,12 @@ const tipsData = [
     number: 3,
     title: "延命剤（えんめいざい）を活用する",
     description:
-      "延命剤には、花に必要な糖分と、バクテリアの繁殖を抑える抗菌成分が含まれています。サブスクで届く花に同封されていることが多いため、必ずご使用ください。延命剤を使うと、使わない場合に比べて花の寿命が2〜3日延びることもあります。",
+      "延命剤には、花に必要な糖分と、バクテリアの繁殖を抑える抗菌成分が含まれています。サブスクで届く花に同封されていることが多いため、必ずご使用ください。",
     points: [
       "サブスクに同封の延命剤は必ず使う",
       "パッケージ記載の分量を守る（入れすぎは逆効果）",
       "延命剤を入れた場合も2〜3日に1回は水替えする",
-      "市販品はホームセンターや100円ショップで購入できる",
+      "市販品の例：ダイソーの「切り花長持ち液」550円（税込・水で40倍に薄めて使用）（2026年10月26日公式確認）",
     ],
   },
   {
@@ -182,7 +182,7 @@ export default function FlowerCarePage() {
         {/* JSONLD_INJECTED_v1 #1 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"切り花を長持ちさせるお手入れ方法\",\"description\":\"切り花を長持ちさせるお手入れ方法を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-24T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/flower-care/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"切り花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の種類・季節・室温・お手入れによって異なるため、当サイトでは一律の日数を示していません。水切り・水替え・延命剤の使用を組み合わせると、花の状態を保ちやすくなります。\"}},{\"@type\":\"Question\",\"name\":\"延命剤がないときの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"家庭にあるもので代用できます。漂白剤を水1リットルに対して1〜2滴入れると、バクテリアの繁殖を抑えられます。また、砂糖を小さじ1杯ほど加えると花に栄養を補給できます。10円玉を花瓶に入れる方法も知られていますが、銅イオンの殺菌効果は限定的なため、漂白剤のほうが効果があります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届いた花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サブスクで届く花は産地直送や市場からの仕入れ直後で鮮度が高い場合が多く、適切にお手入れすれば1週間〜10日ほど楽しめます。届いたらすぐに水切りをして花瓶に生けること、毎日の水替えを欠かさないことが、長持ちさせるうえで重要です。延命剤が同封されている場合は必ずご使用ください。\"}},{\"@type\":\"Question\",\"name\":\"花瓶の大きさはどう選べばいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の丈の約1/3〜1/2が花瓶に収まる高さが目安です。サブスクで届く花束は3〜6本程度が多いため、高さ15〜20cm・口径5〜8cmの花瓶が使いやすいサイズです。口が広すぎると花が広がってまとまらず、狭すぎると茎が窮屈になるため、花の本数に合った口径をお選びください。\"}},{\"@type\":\"Question\",\"name\":\"夏場に花を長持ちさせるコツはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場は水温が上がりバクテリアが繁殖しやすいため、水替えを1日2回に増やすことをおすすめします。氷を数個入れて水温を下げる方法もあります。エアコンの風が直接当たらない涼しい場所に置き、直射日光を避けてください。また、水の量をやや少なめにして、水に浸かって傷みやすい茎の部分を減らすことも有効です。\"}},{\"@type\":\"Question\",\"name\":\"100円ショップの花瓶でも大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"問題ありません。100円ショップには、ガラス製・陶器風など、花を生けるのに十分な品質の花瓶がそろっています。サブスクで届く3〜5本程度の花であれば、100円ショップの花瓶で十分です。小さな花瓶を複数用意しておくと、花を1〜2本ずつ分けて飾ることもできます。\"}},{\"@type\":\"Question\",\"name\":\"届いた花をドライフラワーにできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くの花はドライフラワーにできます。バラ、かすみ草、スターチス、千日紅、ユーカリなどは特にドライフラワーに適しています。花が傷む前に逆さに吊るすハンギング法が最も手軽です。完全に乾燥するまで1〜2週間かかります。ただし、ガーベラやチューリップなど水分の多い花はドライフラワーに適していません。\"}},{\"@type\":\"Question\",\"name\":\"水切りは毎日したほうがいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"毎日行う必要はありませんが、2〜3日に1回は水切りを行うことをおすすめします。水替えの際にあわせて行うと効率的です。茎の切り口にぬめりや変色がある場合は、すぐに水切りを行ってください。切れ味のよいハサミや花ばさみを使い、斜めにカットすることで水の吸い上げがよくなります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"切り花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の種類・季節・室温・お手入れによって異なるため、当サイトでは一律の日数を示していません。水切り・水替え・延命剤の使用を組み合わせると、花の状態を保ちやすくなります。\"}},{\"@type\":\"Question\",\"name\":\"延命剤がないときの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"家庭にあるもので代用できます。漂白剤を水1リットルに対して1〜2滴入れると、バクテリアの繁殖を抑えられます。また、砂糖を小さじ1杯ほど加えると花に栄養を補給できます。10円玉を花瓶に入れる方法も知られていますが、銅イオンの殺菌効果は限定的なため、漂白剤のほうが効果があります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届いた花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サブスクで届く花は産地直送や市場からの仕入れ直後で鮮度が高い場合が多く、適切にお手入れすれば1週間〜10日ほど楽しめます。届いたらすぐに水切りをして花瓶に生けること、毎日の水替えを欠かさないことが、長持ちさせるうえで重要です。延命剤が同封されている場合は必ずご使用ください。\"}},{\"@type\":\"Question\",\"name\":\"花瓶の大きさはどう選べばいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の丈の約1/3〜1/2が花瓶に収まる高さが目安です。サブスクで届く花束は3〜6本程度が多いため、高さ15〜20cm・口径5〜8cmの花瓶が使いやすいサイズです。口が広すぎると花が広がってまとまらず、狭すぎると茎が窮屈になるため、花の本数に合った口径をお選びください。\"}},{\"@type\":\"Question\",\"name\":\"夏場に花を長持ちさせるコツはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場は水温が上がりバクテリアが繁殖しやすいため、水替えを1日2回に増やすことをおすすめします。氷を数個入れて水温を下げる方法もあります。エアコンの風が直接当たらない涼しい場所に置き、直射日光を避けてください。また、水の量をやや少なめにして、水に浸かって傷みやすい茎の部分を減らすことも有効です。\"}},{\"@type\":\"Question\",\"name\":\"100円ショップの花瓶でも大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、使用できます。ダイソー公式ネットストアでは、ソーダガラスの「ガラス花瓶（クリア）」を高さ10.4cmと12.5cmの2種類、各110円（税込）で販売しています（2026年10月26日公式確認）。届く花の長さに合う高さのものを選んでください。小さな花瓶を複数用意しておくと、花を1〜2本ずつ分けて飾ることもできます。\"}},{\"@type\":\"Question\",\"name\":\"届いた花をドライフラワーにできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くの花はドライフラワーにできます。バラ、かすみ草、スターチス、千日紅、ユーカリなどは特にドライフラワーに適しています。花が傷む前に逆さに吊るすハンギング法が最も手軽です。完全に乾燥するまで1〜2週間かかります。ただし、ガーベラやチューリップなど水分の多い花はドライフラワーに適していません。\"}},{\"@type\":\"Question\",\"name\":\"水切りは毎日したほうがいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"毎日行う必要はありませんが、2〜3日に1回は水切りを行うことをおすすめします。水替えの際にあわせて行うと効率的です。茎の切り口にぬめりや変色がある場合は、すぐに水切りを行ってください。切れ味のよいハサミや花ばさみを使い、斜めにカットすることで水の吸い上げがよくなります。\"}}]}" }} />
         {/* JSONLD_INJECTED_v1 #3 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"切り花を長持ちさせるお手入れ方法\",\"description\":\"切り花を長持ちさせるお手入れの手順を解説します\"}" }} />
     <div className="flex flex-col min-h-screen">
@@ -252,7 +252,7 @@ export default function FlowerCarePage() {
                   <li><a href="#tips" className="hover:text-[#2F5B43] transition-colors">1. 切り花を長持ちさせる7つの方法</a></li>
                   <li><a href="#vase-guide" className="hover:text-[#2F5B43] transition-colors">2. 花瓶の選び方ガイド（サイズ別・素材別）</a></li>
                   <li><a href="#vase-subsc" className="hover:text-[#2F5B43] transition-colors">3. サブスクの花に合う花瓶の選び方</a></li>
-                  <li><a href="#100yen" className="hover:text-[#2F5B43] transition-colors">4. 100円ショップでそろえる花瓶セット</a></li>
+                  <li><a href="#100yen" className="hover:text-[#2F5B43] transition-colors">4. ダイソーで購入できる花瓶と道具</a></li>
                   <li><a href="#seasonal" className="hover:text-[#2F5B43] transition-colors">5. 季節ごとのお手入れ注意点</a></li>
                   <li><a href="#dried" className="hover:text-[#2F5B43] transition-colors">6. ドライフラワーの作り方</a></li>
                   <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">7. 花のお手入れに関するよくある質問</a></li>
@@ -464,41 +464,38 @@ export default function FlowerCarePage() {
         <section id="100yen" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
-              100円ショップでそろえる花瓶セット
+              ダイソーで購入できる花瓶と道具
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
-              花瓶に高い費用をかける必要はありません。ダイソーやセリアなどの100円ショップには、
-              花を飾るのに十分な商品がそろっています。合計500円程度で基本のセットをそろえられます。
+              ダイソー公式ネットストアに掲載されている、花を飾るときに使える商品と価格です（価格は税込、2026年10月26日公式確認）。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div className="bg-white rounded-md border border-[#DEDAD2] p-5">
-                <h3 className="text-base font-bold text-[#1F2420] mb-3">基本の花瓶セット（税込550円）</h3>
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">花瓶</h3>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
-                  <li>・ ガラス製ミニ花瓶（高さ約15cm）... 110円</li>
-                  <li>・ 一輪挿し（高さ約10cm）... 110円</li>
-                  <li>・ 花ばさみ（園芸用ハサミ）... 110円</li>
-                  <li>・ 霧吹きスプレー ... 110円</li>
-                  <li>・ スポンジ（花瓶洗い用）... 110円</li>
+                  <li>・ <a href="https://jp.daisonet.com/products/4550480045849" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#2F5B43]">ガラス花瓶（クリア）</a>（ソーダガラス・高さ10.4cm）... 110円</li>
+                  <li>・ <a href="https://jp.daisonet.com/products/4550480045832" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#2F5B43]">ガラス花瓶（クリア）</a>（ソーダガラス・高さ12.5cm）... 110円</li>
+                  <li>・ <a href="https://jp.daisonet.com/products/4550480727059" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#2F5B43]">一輪挿し（ボトル型）</a>（PET製・高さ14cm）... 110円</li>
+                  <li>・ <a href="https://jp.daisonet.com/products/4550480507996" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#2F5B43]">ガラス花瓶</a>（ソーダガラス・高さ19.5cm）... 220円</li>
+                  <li>・ <a href="https://jp.daisonet.com/products/4550480717036" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#2F5B43]">花瓶</a>（PET製・高さ20cm）... 220円</li>
                 </ul>
               </div>
 
               <div className="bg-white rounded-md border border-[#DEDAD2] p-5">
-                <h3 className="text-base font-bold text-[#1F2420] mb-3">あると便利な追加の道具</h3>
+                <h3 className="text-base font-bold text-[#1F2420] mb-3">お手入れの道具</h3>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
-                  <li>・ トールグラス（高さ約20cm）... 110円</li>
-                  <li>・ 延命剤（切花長もち液）... 110円</li>
-                  <li>・ 小さなバケツ（水切り用）... 110円</li>
-                  <li>・ 麻ひも（ドライフラワー用）... 110円</li>
-                  <li>・ クエン酸（花瓶の水垢落とし）... 110円</li>
+                  <li>・ <a href="https://jp.daisonet.com/products/4550480286730" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#2F5B43]">ガーデンはさみ（スリム刃）</a>（公式の説明では切り花等の細かい剪定向け）... 110円</li>
+                  <li>・ <a href="https://jp.daisonet.com/products/4991203172518" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#2F5B43]">霧吹きボトル カラー</a>（高さ約21.5cm）... 110円</li>
+                  <li>・ <a href="https://jp.daisonet.com/products/4901080243515" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#2F5B43]">切り花長持ち液</a>（成分：水・糖類・抗菌剤・金属イオン。水で40倍に薄めて使用）... 550円</li>
                 </ul>
               </div>
             </div>
 
             <div className="bg-[#EDF1EC] rounded-md p-5">
-              <h3 className="text-sm font-bold text-[#2F5B43] mb-2">100円ショップの花瓶の活用方法</h3>
+              <h3 className="text-sm font-bold text-[#2F5B43] mb-2">小さな花瓶の活用方法</h3>
               <p className="text-sm text-[#4A4F49] leading-relaxed">
-                100円ショップの花瓶は小さめのものが多いため、サブスクで届いた花を小分けにして複数の花瓶に飾ることをおすすめします。
+                高さ10〜15cm程度の小さな花瓶を使う場合は、サブスクで届いた花を小分けにして複数の花瓶に飾ることをおすすめします。
                 リビング、玄関、洗面台など、家の複数の場所に1〜2本ずつ飾ると、少ない本数でも部屋全体が華やかになります。
                 ジュースのガラス瓶やマグカップを花瓶の代わりに使うこともできます。
               </p>
@@ -751,7 +748,7 @@ export default function FlowerCarePage() {
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               花瓶は、利用しているサブスクのプランに合ったサイズをお選びください。
-              100円ショップでそろえれば、初期費用はわずかです。
+              ダイソー公式ネットストアでは、ガラス花瓶を110円（税込）から販売しています（2026年10月26日公式確認）。
               しおれる前にドライフラワーにすると、1回の配送で生花とドライフラワーの2通りの楽しみ方ができます。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">

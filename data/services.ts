@@ -60,7 +60,7 @@ export const SERVICES: Service[] = [
     plans: [
       { name: "Mini", price: 748, flowers: "3〜4本", postDelivery: true },
       { name: "Lite", price: 1330, flowers: "5〜6本", postDelivery: true },
-      { name: "Lite+", price: 1650, flowers: "5〜7本", postDelivery: false },
+      { name: "Lite+", price: 1650, flowers: "5〜7本（ヘルプ記事は6〜7本）", postDelivery: false },
       { name: "Basic", price: 2330, flowers: "6〜9本", postDelivery: false },
     ],
     shippingIncluded: true,

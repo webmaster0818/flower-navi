@@ -109,7 +109,7 @@ const services = [
     plans: [
       { name: "Mini", price: "748円/回", flowers: "3〜4本", delivery: "ポスト投函" },
       { name: "Lite", price: "1,330円/回", flowers: "5〜6本", delivery: "ポスト投函" },
-      { name: "Lite+", price: "1,650円/回", flowers: "5〜7本", delivery: "宅配" },
+      { name: "Lite+", price: "1,650円/回", flowers: "5〜7本（ヘルプ記事は6〜7本）", delivery: "宅配" },
       { name: "Basic", price: "2,330円/回", flowers: "6〜9本", delivery: "宅配" },
     ],
     shipping: "込み（北海道・東北のLite以上は遠隔地送料あり）",

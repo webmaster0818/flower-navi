@@ -258,7 +258,7 @@ const hanamekuKaiyaku: ServiceGuide = {
   service: "ハナメク (hanameku)",
   servicePath: "/services/hanameku/",
   intent: "kaiyaku",
-  title: "ハナメク(hanameku)の解約方法｜マイページの定期管理ページで停止、締切はお届け予定日の10日前",
+  title: "ハナメク(hanameku)の解約方法｜マイページの定期管理ページで停止、締切は公式FAQでお届け予定日の10日前",
   h1: "ハナメク(hanameku)の解約方法｜手順と締切",
   description: "ハナメク(hanameku)の解約方法を公式FAQに基づいて解説します。マイページの定期管理ページで「停止」を選んで手続きし、締切は公式FAQではお届け予定日の10日前（ライトプランの商品ページは9日前）、初回（定期1回目）は解約できません（2026年10月25日公式確認）。",
   intro:

@@ -287,7 +287,7 @@ export default function BloomeeVsMedeluPage() {
                 <h3 className="text-base font-bold text-[#1F2420] mb-3">medelu</h3>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>Miniコース：3〜4本</li>
-                  <li>Liteコース：5〜6本／Lite+コース：5〜7本</li>
+                  <li>Liteコース：5〜6本／Lite+コース：5〜7本（コース一覧。公式ヘルプ記事「何本くらいお花が届きますか？」は6〜7本（2026年10月26日公式確認））</li>
                   <li>Basicコース：6〜9本</li>
                 </ul>
               </div>
