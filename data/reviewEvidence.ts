@@ -178,7 +178,7 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
     id: "medelu",
     shortName: "medelu（メデル）",
     verdictTitle: "medeluの口コミで評価される価格・コースと寄せられる不満点",
-    updatedAt: "2026年10月21日",
+    updatedAt: "2026年10月26日",
     verdict:
       "748円（税込・送料込）〜の価格と、部屋のテイストで選べるコース・花のセンスの良さを評価する声が多い一方、「Miniは本数が少ない」「暑い時期は花持ちが短い・しおれて届いた」「日付指定ができない」という声もあります。最低利用回数の記載は公式に見当たらず、決済日前日の木曜までに手続きすれば次回から止められるため、試しやすいサービスです。",
     intro:
