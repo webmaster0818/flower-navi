@@ -179,7 +179,7 @@ export default function MeritDemeritGuidePage() {
                 {
                   num: "4",
                   title: "不在時の受け取りに工夫が必要",
-                  text: "ポスト投函に対応したサービスであれば不在時でも受け取れますが、宅配便タイプ（AND PLANTS、LIFFTなど）は在宅が必要です。不在が多い方は、ポスト投函に対応したサービスか、配送日時を指定できるサービスをご利用ください。置き配に対応しているサービスもあるため、事前にご確認ください。",
+                  text: "ポスト投函に対応したサービスであれば不在時でも受け取れますが、宅配便タイプ（AND PLANTSなど）は在宅が必要な場合があります。LIFFTはポスト投函には対応していませんが、置き配や宅配ボックスでの受け取りに対応しています（2026年10月27日公式確認）。不在が多い方は、ポスト投函に対応したサービスか、配送日時を指定できるサービスをご利用ください。置き配に対応しているサービスもあるため、事前にご確認ください。",
                 },
                 {
                   num: "5",
@@ -313,7 +313,7 @@ export default function MeritDemeritGuidePage() {
                   </tr>
                   <tr>
                     <td className="font-medium text-[#1F2420]">LIFFT</td>
-                    <td>提携農園から直送（2026年10月17日公式確認）で鮮度が高い、Journal付き</td>
+                    <td>提携農園から採花したての旬の花を直送、お花の読みもの「ジャーナル」付き（2026年10月27日公式確認）</td>
                     <td>スタンダードは3,300円/月・月1回。ライト（1,480円/回・2週間または4週間に1回）は本州の一部地域のみ（2026年10月21日公式確認）</td>
                     <td>品質にこだわる方</td>
                   </tr>
@@ -372,7 +372,7 @@ export default function MeritDemeritGuidePage() {
               花のサブスクには、「手間をかけずにフローリストのアレンジが届く」「費用を抑えやすい」「癒やし効果がある」など多くのメリットがあります。一方で、「花の種類を選べない」「夏場に品質が低下するリスクがある」「最低受け取り回数の条件がある」といったデメリットもあります。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              重要なのは、ご自身のライフスタイルや重視する点に合ったサービスを選ぶことです。費用を重視する場合は<strong>medelu</strong>、手軽さを重視する場合は<strong>bloomee</strong>、デザインを重視する場合は<strong>AND PLANTS</strong>、品質を重視する場合は<strong>LIFFT</strong>をおすすめします。まずは回数の条件がないサービスからお試しください。
+              重要なのは、ご自身のライフスタイルや重視する点に合ったサービスを選ぶことです。費用を重視する場合は<strong>medelu</strong>、手軽さを重視する場合は<strong>bloomee</strong>、デザインを重視する場合は<strong>AND PLANTS</strong>、鮮度を重視する場合は<strong>LIFFT</strong>をおすすめします。まずは回数の条件がないサービスからお試しください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a

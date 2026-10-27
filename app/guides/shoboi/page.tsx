@@ -170,7 +170,7 @@ export default function ShoboboiGuidePage() {
                   <strong>原因：</strong>輸送中の環境（特に夏場の高温）と、到着後のお手入れ不足が主な原因です。ポスト投函の場合、ポスト内の温度が40度以上になることもあり、花が傷む要因となります。
                 </p>
                 <div className="bg-[#EDF1EC] rounded-lg p-3">
-                  <p className="text-xs text-[#2F5B43] font-medium">解決策：夏場はクール便に対応したサービス（LIFFTなど）を選ぶか、在宅時に受け取れる宅配便プランを選択してください。到着後はすぐに水切りを行い、延命剤を入れた水に生けてください。</p>
+                  <p className="text-xs text-[#2F5B43] font-medium">解決策：夏場は在宅時に受け取れる宅配便プランを選択してください。到着後はすぐに水切りを行い、延命剤を入れた水に生けてください。</p>
                 </div>
               </div>
 
@@ -449,7 +449,7 @@ export default function ShoboboiGuidePage() {
               花のサブスクが「しょぼい」と感じられる主な原因は、<strong>プラン選びのミスマッチ</strong>です。最安プランはお試し用の位置付けであり、満足度を重視する場合は1,500円以上のプランを選ぶことで、花のボリュームと品質が大きく向上します。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              価格を重視する場合は<strong>medelu</strong>（748円〜・送料無料）、ボリュームとデザインを重視する場合は<strong>AND PLANTS</strong>（1,980円〜・送料無料）、鮮度と品質を重視する場合は<strong>LIFFT</strong>（スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認）、提携農園から直送（2026年10月17日公式確認））をおすすめします。品質保証制度を活用し、季節ごとの花の変化を楽しむことで、花のサブスクを日々の暮らしに取り入れやすくなります。
+              価格を重視する場合は<strong>medelu</strong>（748円〜・送料無料）、ボリュームとデザインを重視する場合は<strong>AND PLANTS</strong>（1,980円〜・送料無料）、鮮度を重視する場合は<strong>LIFFT</strong>（スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認）、提携農園から直送（2026年10月17日公式確認））をおすすめします。品質保証制度を活用し、季節ごとの花の変化を楽しむことで、花のサブスクを日々の暮らしに取り入れやすくなります。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
