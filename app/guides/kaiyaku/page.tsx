@@ -153,7 +153,7 @@ const cancellationData = [
     deadline: "継続的な中止は月単位。クレジット決済コースは配達週の前週水曜日まで、1回だけの中止は配達日の3日前まで（2026年10月27日公式確認）",
     difficulty: "注意事項あり",
     url: "/services/nihon-sogo-engei",
-    officialUrl: "https://nihon-sogo-engei.co.jp",
+    officialUrl: "https://nihon-sogo-engei.com/teikibin/",
     steps: [
       "公式サイトの「コース変更・休会・退会」ページで「退会」を選ぶ（2026年10月27日公式確認）",
       "お名前・メールアドレス・電話番号または会員番号を入力する",

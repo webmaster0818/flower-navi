@@ -318,8 +318,8 @@ export default function ButsudanGuidePage() {
                   </tr>
                   <tr className="border-b border-[#DEDAD2]">
                     <td className="px-4 py-3 font-medium text-[#1F2420]">品質保証</td>
-                    <td className="px-4 py-3 text-center">あり</td>
-                    <td className="px-4 py-3 text-center">あり</td>
+                    <td className="px-4 py-3 text-center">商品の不具合は到着予定日から2週間以内に問い合わせフォームで連絡すると、返金または代品発送（2026年10月27日公式確認）</td>
+                    <td className="px-4 py-3 text-center">到着日までに写真を送り、枯れていたと判断された場合は全額返金（2026年10月27日公式確認）</td>
                     <td className="px-4 py-3 text-center">花傷み・花折れは連絡で対応（宅配便は到着日中に連絡）（2026年10月27日公式確認）</td>
                   </tr>
                   <tr className="border-b border-[#DEDAD2] bg-[#F6F4EF]">
@@ -356,7 +356,7 @@ export default function ButsudanGuidePage() {
                     <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">お試しプラン980円/回</span>
                     <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">送料385円</span>
                     <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">ポスト投函</span>
-                    <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">品質保証あり</span>
+                    <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">不具合は返金または代品発送（2026年10月27日公式確認）</span>
                   </div>
                   <a
                     href="/services/bloomee"
