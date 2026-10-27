@@ -308,7 +308,7 @@ export default function ButsudanGuidePage() {
                     <td className="px-4 py-3 font-medium text-[#1F2420]">配送方法</td>
                     <td className="px-4 py-3 text-center">ポスト投函</td>
                     <td className="px-4 py-3 text-center">ポスト投函</td>
-                    <td className="px-4 py-3 text-center">宅配便</td>
+                    <td className="px-4 py-3 text-center">自社配達便・宅配便（2026年10月27日公式確認）</td>
                   </tr>
                   <tr className="border-b border-[#DEDAD2] bg-[#F6F4EF]">
                     <td className="px-4 py-3 font-medium text-[#1F2420]">配送頻度</td>
@@ -320,19 +320,13 @@ export default function ButsudanGuidePage() {
                     <td className="px-4 py-3 font-medium text-[#1F2420]">品質保証</td>
                     <td className="px-4 py-3 text-center">あり</td>
                     <td className="px-4 py-3 text-center">あり</td>
-                    <td className="px-4 py-3 text-center">あり</td>
+                    <td className="px-4 py-3 text-center">花傷み・花折れは連絡で対応（宅配便は到着日中に連絡）（2026年10月27日公式確認）</td>
                   </tr>
                   <tr className="border-b border-[#DEDAD2] bg-[#F6F4EF]">
                     <td className="px-4 py-3 font-medium text-[#1F2420]">回数の条件</td>
                     <td className="px-4 py-3 text-center">4回</td>
                     <td className="px-4 py-3 text-center font-bold text-[#2F5B43]">なし</td>
                     <td className="px-4 py-3 text-center font-bold text-[#2F5B43]">なし</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-medium text-[#1F2420]">仏花への適性</td>
-                    <td className="px-4 py-3 text-center">適している</td>
-                    <td className="px-4 py-3 text-center font-bold text-[#2F5B43]">特に適している</td>
-                    <td className="px-4 py-3 text-center font-bold text-[#2F5B43]">特に適している</td>
                   </tr>
                 </tbody>
               </table>
@@ -425,7 +419,7 @@ export default function ButsudanGuidePage() {
                     日本総合園芸が運営する「花の定期便」は、40コース以上（公式表記）から選べる定期便です。花瓶生け・水盤生け・アレンジメント花材などのコースでは花材が届き、自分で生けて飾ります。完成したアレンジメントやブーケが届くコース（季節のブーケコースなど）もあります（2026年10月23日公式確認）。切り花の花瓶・水盤バラエティーコースは1回1,298円（自社配達便・月3回。宅配便は2,530円）です（2026年10月17日公式確認）。
                   </p>
                   <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
-                    お届けは、関西近郊の自社配達便と、そのほかの対象エリアの宅配便から選べます。仏花として飾る場合は、届いた花材を仏壇の花立ての大きさに合わせて切りそろえて生けてください。
+                    お届けは、自社配達便（関西地方を中心に一部中部・中国地方）と、宅配便（北海道・沖縄・東北・離島を除く全国）から選べます（2026年10月27日公式確認）。仏花として飾る場合は、届いた花材を仏壇の花立ての大きさに合わせて切りそろえて生けてください。
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">1,298円/回〜（自社配達便）（2026年10月17日公式確認）</span>
