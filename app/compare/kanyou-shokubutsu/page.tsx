@@ -73,7 +73,7 @@ export default function KanyouShokubutsuPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"観葉植物の定期便・サブスク比較\",\"item\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物のサブスク・レンタル比較｜季節の入れ替え・メンテナンス込み（管理不要）で選ぶ\",\"description\":\"季節ごとに植物を入れ替えられる観葉植物サブスク・レンタルと、水やりまで任せられる法人向けのメンテナンス込みレンタルを、公式サイトで確認した月額・交換頻度・訪問回数・契約条件で比較します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-21T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物のサブスク・レンタル比較｜季節の入れ替え・メンテナンス込み（管理不要）で選ぶ\",\"description\":\"季節ごとに植物を入れ替えられる観葉植物サブスク・レンタルと、水やりまで任せられる法人向けのメンテナンス込みレンタルを、公式サイトで確認した月額・交換頻度・訪問回数・契約条件で比較します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-27T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div className="flex flex-col min-h-screen">
@@ -107,7 +107,7 @@ export default function KanyouShokubutsuPage() {
             </h1>
             <p className="text-sm md:text-base text-[#4A4F49] mb-6 max-w-2xl mx-auto leading-relaxed">
               当サイトでは、<strong>観葉植物を「買って育てる」か「借りて任せる」かを判断するための情報</strong>をまとめています。
-              植物の入れ替え頻度・訪問メンテナンスの回数・月額・契約条件を各社の公式サイトで確認し、確認日を付けて比較しています（最終更新：2026年10月21日）。
+              植物の入れ替え頻度・訪問メンテナンスの回数・月額・契約条件を各社の公式サイトで確認し、確認日を付けて比較しています（最終更新：2026年10月27日）。
             </p>
             <p className="text-xs md:text-sm text-[#4A4F49] max-w-2xl mx-auto leading-relaxed">
               置き場所・日当たり・水やりなど<strong>育て方</strong>を知りたい方は
@@ -138,6 +138,22 @@ export default function KanyouShokubutsuPage() {
               観葉植物は常緑の種類が中心で、季節によって見た目が大きく変わるわけではありません。季節感を出したい場合は、ベースのグリーンを据え置き、
               <a href="/compare/ryokin/" className="text-[#2F5B43] underline mx-1">切り花の定期便</a>
               を組み合わせる方法もあります。
+            </p>
+
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
+              月額制の観葉植物サブスクは、購入と比べてどちらがお得ですか
+            </h2>
+            <div className="rounded-md border-2 border-[#2F5B43] bg-[#F6F4EF] p-6 mb-4">
+              <p className="text-sm text-[#3F443E] leading-relaxed">
+                <strong>1鉢を長く置き、水やりを自分で行えるなら購入のほうが支払額は少なくなります。水やり・交換まで任せたい場合は月額制（レンタル）が向いています。</strong>
+                公式価格で比べると、AND PLANTSのパキラ M（高さ目安75〜110cm）13,980円（税込・送料無料）は、HitoHana Rental GreenのノーマルプランM（H80〜100cm）月1,600円（税別、税込換算1,760円）の約8か月分です。
+                HitoHana Rental Greenの最低契約期間は1年のため、1年間の支払いはレンタルのほうが多くなります。レンタルの月額には月2回の訪問メンテナンスと傷んだ際の交換が含まれます（2026年10月19日公式確認）。
+              </p>
+            </div>
+            <p className="text-sm text-[#4A4F49] leading-relaxed mb-10">
+              サイズ別の月額と購入価格の一覧は下の比較表に、期間ごとの試算は
+              <a href="/guides/kanyou-shokubutsu-ryokin/#shisan" className="text-[#2F5B43] underline mx-1">観葉植物の料金の考え方</a>
+              に掲載しています。
             </p>
 
             <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">

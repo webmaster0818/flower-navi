@@ -34,7 +34,7 @@ export default function DanseiGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"男性におすすめの花のサブスク\",\"item\":\"https://ohana-delivery.com/guides/dansei/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"男性におすすめの花のサブスク\",\"description\":\"男性におすすめの花のサブスクを解説します。受け取り方法・回数の条件・1回あたりの費用と、飾り方を説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-26T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/dansei/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"男性におすすめの花のサブスク\",\"description\":\"男性におすすめの花のサブスクを解説します。受け取り方法・回数の条件・1回あたりの費用と、飾り方を説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-27T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/dansei/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"男性が花のサブスクを使うのは変ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"問題ありません。花のサブスクに性別の条件はなく、申し込みも受け取りもどなたでも同じです。一人暮らしの方が気にされる点は「不在が多い」「部屋に合う色か」「途中でやめられるか」の3点のため、ポスト投函の有無、色やコースの選び方、回数の条件で選ぶことをおすすめします（各サービスの条件は本文の表をご参照ください）。\"}},{\"@type\":\"Question\",\"name\":\"男性向けのシンプルな花が届くサービスはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"HitoHanaは、6色とおまかせの中から毎回色を指定できます（花の種類は指定できません。公式FAQによる）。medeluには部屋のテイスト別にANYROOM・NATURAL・MODERNのコースがあり、MODERNはシックな色合いの花が中心であると公式サイトで案内されています。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていませんが、代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"空き瓶やグラス、マグカップなど、家にあるもので十分に代用できます。特にジャムの空き瓶やワインボトルは、一輪挿しとして見栄えよく使えます。ダイソー公式ネットストアではガラス花瓶を110円（税込）から販売しているため（2026年10月26日公式確認）、最初は安価なものから始める方法もあります。\"}},{\"@type\":\"Question\",\"name\":\"花の手入れが面倒そうですが、最低限何をすればよいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最低限必要な作業は3つです。(1)届いたら茎を水中で斜めに切る（水切り）、(2)花瓶の水を2〜3日に1回替える、(3)直射日光とエアコンの風を避けて飾る、の3点を行えば、1週間以上楽しめます。切り花延命剤を入れると、さらに長持ちします。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
@@ -71,6 +71,29 @@ export default function DanseiGuidePage() {
           </div>
         </PageHero>
 
+
+        {/* ─── 一人暮らしの男性が花を飾る基本（即答）─── */}
+        <section id="kazarikata-kihon" className="py-10 bg-white border-b border-[#DEDAD2]">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-4">一人暮らしの男性が部屋に花を飾るときの基本</h2>
+            <div className="rounded-md border-2 border-[#2F5B43] bg-[#F6F4EF] p-5 md:p-6">
+              <ul className="text-sm md:text-base text-[#3F443E] leading-relaxed space-y-2">
+                <li>・<strong>1本から始めます。</strong>花屋やスーパーで1本だけ買うか、花のサブスクで少量のプランを選ぶと、費用と手間を抑えられます。</li>
+                <li>・<strong>花瓶は家にあるもので代用できます。</strong>グラスや空き瓶、マグカップで十分です。そろえる場合は、透明なガラスやダークカラーの陶器など、シンプルな形が部屋に合わせやすくなります。</li>
+                <li>・<strong>飾る場所を1か所決めます。</strong>デスクの隅、テレビボードの上、洗面台など、毎日目に入る場所が続けやすい場所です。直射日光が当たる窓際とエアコンの風が当たる場所は避けます。</li>
+                <li>・<strong>手入れは3つです。</strong>届いたら茎を水中で斜めに切る（水切り）、水を2〜3日に1回替える、直射日光と風を避ける、の3点です。</li>
+                <li>・<strong>色はグリーン・ホワイト系</strong>が落ち着いた部屋に合わせやすく、色を指定できるサービス（HitoHanaは6色＋おまかせから毎回指定可・2026年10月27日公式確認）もあります。</li>
+              </ul>
+            </div>
+            <p className="text-sm text-[#4A4F49] leading-relaxed mt-4">
+              継続して飾りたい方は、不在でも受け取れるポスト投函と回数の条件で選ぶと続けやすくなります。条件の比較は下の表に、飾り方の詳細は
+              <a href="#kazarikata" className="text-[#2F5B43] underline mx-1">男性の部屋に花を見栄えよく飾る3つの方法</a>
+              に、花瓶の選び方は
+              <a href="/guides/kabin/" className="text-[#2F5B43] underline mx-1">花瓶の選び方</a>
+              に掲載しています。
+            </p>
+          </div>
+        </section>
 
         {/* ─── 一人暮らし向け 条件比較（公式確認値）─── */}
         <section id="hikaku" className="py-12 md:py-16 bg-white">
@@ -165,7 +188,7 @@ export default function DanseiGuidePage() {
         </section>
 
         {/* ─── Display Tips ─── */}
-        <section className="py-12 md:py-16 bg-white">
+        <section id="kazarikata" className="py-12 md:py-16 bg-white scroll-mt-20">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               男性の部屋に花を見栄えよく飾る3つの方法
