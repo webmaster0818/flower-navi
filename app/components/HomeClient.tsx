@@ -799,6 +799,11 @@ export default function HomeClient() {
                 </div>
               ))}
             </div>
+            <p className="text-sm text-[#4A4F49] mt-8 leading-relaxed">
+              お住まいの地域で選ぶ場合は、
+              <a href="/regions/osaka/" className="text-[#2F5B43] underline mx-1">大阪で使える花のサブスク（送料込み料金・配送条件）</a>や
+              <a href="/regions/" className="text-[#2F5B43] underline mx-1">地域別ガイドの一覧</a>をご覧ください。
+            </p>
           </div>
         </section>
 
