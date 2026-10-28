@@ -8,7 +8,7 @@ import PageHero from "@/app/components/PageHero";
 const faqItems = [
   {
     q: "花のサブスクをやめた後、また再開できますか？",
-    a: "はい、ほとんどのサービスで再開できます。bloomee、medelu、AND PLANTSなどは解約後も再登録が可能で、以前のアカウント情報が残っている場合もあります。再開時にクーポンが配布されることもあるため、公式サイトやメールマガジンを確認しておくと、割安に再開できる場合があります。",
+    a: "はい、ほとんどのサービスで再開できます。解約後に改めて申し込めば再開できます。なお、AND PLANTSの初回500円OFFクーポンは、初めてお花の定期便を契約する方が対象です（2026年10月28日公式確認）。",
   },
   {
     q: "やめる前にスキップ機能で様子を見ることはできますか？",
@@ -16,7 +16,7 @@ const faqItems = [
   },
   {
     q: "花のサブスクの代わりになるものはありますか？",
-    a: "生花以外の選択肢として、ドライフラワーの定期便、観葉植物のサブスク（AND PLANTSなど）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を購入する方法も、自分のペースで花を楽しめるためおすすめです。",
+    a: "生花以外の選択肢として、ドライフラワーの定期便、観葉植物の購入（AND PLANTSでは観葉植物を単品で販売しています）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を購入する方法も、自分のペースで花を楽しめるためおすすめです。",
   },
   {
     q: "花のサブスクを続けるメリットは何ですか？",
@@ -33,9 +33,9 @@ export default function YametaGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクをやめた人の理由と対処法\",\"item\":\"https://ohana-delivery.com/guides/yameta/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクをやめた人の理由と対処法\",\"description\":\"花のサブスクをやめた方の理由と対処法を解説します。料金・評判・選び方もあわせて説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-27T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/yameta/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクをやめた人の理由と対処法\",\"description\":\"花のサブスクをやめた方の理由と対処法を解説します。料金・評判・選び方もあわせて説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-28T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/yameta/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた後、また再開できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ほとんどのサービスで再開できます。bloomee、medelu、AND PLANTSなどは解約後も再登録が可能で、以前のアカウント情報が残っている場合もあります。再開時にクーポンが配布されることもあるため、公式サイトやメールマガジンを確認しておくと、割安に再開できる場合があります。\"}},{\"@type\":\"Question\",\"name\":\"やめる前にスキップ機能で様子を見ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスがスキップ（配送停止）機能を提供しています。medeluは次回配送のスキップが可能で、bloomeeもマイページからスキップできます。「しばらく休みたいが、解約するかは迷っている」という場合は、スキップ機能を活用して様子を見ることをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"生花以外の選択肢として、ドライフラワーの定期便、観葉植物のサブスク（AND PLANTSなど）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を購入する方法も、自分のペースで花を楽しめるためおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクを続けるメリットは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花に出会えること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。継続割引があるサービスもあり、長く続けるほど割安になる場合があります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた後、また再開できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ほとんどのサービスで再開できます。解約後に改めて申し込めば再開できます。なお、AND PLANTSの初回500円OFFクーポンは、初めてお花の定期便を契約する方が対象です（2026年10月28日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"やめる前にスキップ機能で様子を見ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスがスキップ（配送停止）機能を提供しています。medeluは次回配送のスキップが可能で、bloomeeもマイページからスキップできます。「しばらく休みたいが、解約するかは迷っている」という場合は、スキップ機能を活用して様子を見ることをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"生花以外の選択肢として、ドライフラワーの定期便、観葉植物の購入（AND PLANTSでは観葉植物を単品で販売しています）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を購入する方法も、自分のペースで花を楽しめるためおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクを続けるメリットは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花に出会えること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。継続割引があるサービスもあり、長く続けるほど割安になる場合があります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -115,7 +115,7 @@ export default function YametaGuidePage() {
                 {
                   num: "3",
                   title: "届く花が好みに合わなかった",
-                  text: "おまかせアレンジのサービスでは、好みに合わない花が届くことがあります。「派手な色は苦手なのにビビッドな花が届いた」「部屋のインテリアと合わない」という声が多く見られます。色やテイストを選べるHitoHanaや、好みを学習するAND PLANTSなど、好みを反映しやすいサービスに切り替えることが有効です。",
+                  text: "おまかせアレンジのサービスでは、好みに合わない花が届くことがあります。色を選べるHitoHana（6色＋おまかせから毎回指定可（2026年10月27日公式確認））など、好みを反映しやすいサービスに切り替える方法があります。AND PLANTSの定期便は、色の指定や花材の選択がフローリストのおまかせです（2026年10月28日公式確認）。",
                 },
                 {
                   num: "4",
@@ -205,8 +205,8 @@ export default function YametaGuidePage() {
                 },
                 {
                   num: "2",
-                  title: "観葉植物のサブスクに切り替える",
-                  text: "AND PLANTSなどの観葉植物のサブスクは、切り花に比べてお手入れの手間が少なく、長く楽しめます。水やりは週1〜2回で済み、インテリアとしての見栄えも良好です。植物のある暮らしを楽しみたい方におすすめです。",
+                  title: "観葉植物を取り入れる",
+                  text: "観葉植物を購入して育てる方法です。AND PLANTSでは観葉植物を単品で販売しており、品種ごとのケアカードが同梱されます（2026年10月28日公式確認）。植物のある暮らしを楽しみたい方に適しています。",
                 },
                 {
                   num: "3",
@@ -285,7 +285,7 @@ export default function YametaGuidePage() {
                   <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">bloomee</td><td className="px-3 py-2">4回</td><td className="px-3 py-2 text-[#C56565]">あり (残回数分)</td><td className="px-3 py-2">マイページから手続き</td></tr>
                   <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">medelu</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td></tr>
                   <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">HitoHana</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td></tr>
-                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">AND PLANTS</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">AND PLANTS</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">いつでも解約可（手続きの方法は公式に記載なし）（2026年10月28日公式確認）</td></tr>
                   <tr className="border-b border-[#DEDAD2]"><td className="px-3 py-2 font-bold">LIFFT</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">定期便スタンダードは毎月19日までにメール（info@lifft.jp）で連絡、定期便ライトはマイページ・メール・公式LINEで連絡（2026年10月27日公式確認）</td></tr>
                   <tr><td className="px-3 py-2 font-bold">タスハナ</td><td className="px-3 py-2">5回（出荷が前提）（2026年10月17日公式確認）</td><td className="px-3 py-2 text-[#2F5B43]">なし</td><td className="px-3 py-2">マイページから手続き</td></tr>
                 </tbody>

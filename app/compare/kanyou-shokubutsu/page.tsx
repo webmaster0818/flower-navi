@@ -17,7 +17,7 @@ const faqItems = [
   },
   {
     q: "月額制の観葉植物サブスクは、購入と比べてどちらがお得ですか？",
-    a: "同じ鉢を長く置き続け、水やりを自分で行えるなら購入、水やり・交換まで任せたいなら月額制（レンタル）が向いています。公式価格で試算すると、AND PLANTSのパキラ M（高さ目安75〜110cm）13,980円（税込・送料無料）は、HitoHana Rental GreenのノーマルプランM（H80〜100cm）月1,600円（税別、税込換算1,760円）の約8か月分にあたります。HitoHanaの最低契約期間は1年のため、1鉢を置くだけなら購入のほうが支払額は少なくなります。レンタルの月額には月2回の訪問メンテナンスと傷んだ際の交換が含まれるため、その作業を社内で担えるかどうかで判断してください。試算の詳細は「観葉植物の料金の考え方」にまとめています（2026年10月19日公式確認）。",
+    a: "同じ鉢を長く置き続け、水やりを自分で行えるなら購入、水やり・交換まで任せたいなら月額制（レンタル）が向いています。公式価格で試算すると、AND PLANTSのパキラ M（高さ目安75〜110cm）13,980円（税込・送料無料。北海道への配送は2,500円追加）は、HitoHana Rental GreenのノーマルプランM（H80〜100cm）月1,600円（税別、税込換算1,760円）の約8か月分にあたります。HitoHanaの最低契約期間は1年のため、1鉢を置くだけなら購入のほうが支払額は少なくなります。レンタルの月額には月2回の訪問メンテナンスと傷んだ際の交換が含まれるため、その作業を社内で担えるかどうかで判断してください。試算の詳細は「観葉植物の料金の考え方」にまとめています（2026年10月19日公式確認）。",
   },
   {
     q: "観葉植物のサブスクと花のサブスクはどう違いますか？",
@@ -25,7 +25,7 @@ const faqItems = [
   },
   {
     q: "観葉植物を枯らしてしまわないか不安ですが、初心者でも始められますか？",
-    a: "始められます。AND PLANTSには置き場所の日当たりなどから植物を絞り込む「パーソナル植物診断」があり、育て方を記したケアカードが付きます。観葉植物は到着後2週間以内であれば、初期不良による傷みや、ケアカードに従って管理したのに枯れた場合などに交換・返金の対象となります（2026年10月19日公式確認）。それでも管理に不安がある場合は、枯れた際の交換が月額に含まれるレンタル（法人向け）か、水やりが不要なフェイクグリーンを検討してください。",
+    a: "始められます。AND PLANTSには、最大10個の質問に答えると140種類・640パターン以上の商品から植物を提案する「パーソナル植物診断」があり、品種ごとのケアカードが同梱されます（2026年10月28日公式確認）。観葉植物は到着後2週間以内であれば、初期不良による傷みや、ケアカードに従って管理したのに枯れた場合などに交換・返金の対象となります（2026年10月19日公式確認）。それでも管理に不安がある場合は、枯れた際の交換が月額に含まれるレンタル（法人向け）か、水やりが不要なフェイクグリーンを検討してください。",
   },
   {
     q: "賃貸マンションでも観葉植物は置けますか？",
@@ -41,7 +41,7 @@ const faqItems = [
   },
   {
     q: "日当たりの悪い部屋でも育てやすい植物を提案してもらえますか？",
-    a: "AND PLANTSの「パーソナル植物診断」では置き場所の日当たりなどから植物を絞り込め、育て方のケアカードも付きます。耐陰性の強い種類（ポトス、サンスベリア、モンステラなど）を選べば、日当たりの悪い部屋でも育てられます。法人向けレンタルでは、HitoHana Rental Greenが専門のデザイナーによる提案、GOOD GREENがカタログからの選択に対応しています。日照が確保できない場所には、HitoHanaがフェイクグリーンとの組み合わせを提案しています。置き場所の明るさの見極め方は、当サイトの「観葉植物の育て方・置き場所ガイド」で解説しています。",
+    a: "AND PLANTSの「パーソナル植物診断」では、最大10個の質問に答えると、140種類・640パターン以上の商品から植物を提案します。品種ごとのケアカードも同梱されます（2026年10月28日公式確認）。耐陰性の強い種類（ポトス、サンスベリア、モンステラなど）を選べば、日当たりの悪い部屋でも育てられます。法人向けレンタルでは、HitoHana Rental Greenが専門のデザイナーによる提案、GOOD GREENがカタログからの選択に対応しています。日照が確保できない場所には、HitoHanaがフェイクグリーンとの組み合わせを提案しています。置き場所の明るさの見極め方は、当サイトの「観葉植物の育て方・置き場所ガイド」で解説しています。",
   },
   {
     q: "訪問メンテナンス込みのプランはありますか？",
@@ -73,7 +73,7 @@ export default function KanyouShokubutsuPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"観葉植物の定期便・サブスク比較\",\"item\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物のサブスク・レンタル比較｜季節の入れ替え・メンテナンス込み（管理不要）で選ぶ\",\"description\":\"季節ごとに植物を入れ替えられる観葉植物サブスク・レンタルと、水やりまで任せられる法人向けのメンテナンス込みレンタルを、公式サイトで確認した月額・交換頻度・訪問回数・契約条件で比較します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-27T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"観葉植物のサブスク・レンタル比較｜季節の入れ替え・メンテナンス込み（管理不要）で選ぶ\",\"description\":\"季節ごとに植物を入れ替えられる観葉植物サブスク・レンタルと、水やりまで任せられる法人向けのメンテナンス込みレンタルを、公式サイトで確認した月額・交換頻度・訪問回数・契約条件で比較します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-28T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/kanyou-shokubutsu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div className="flex flex-col min-h-screen">
@@ -146,7 +146,7 @@ export default function KanyouShokubutsuPage() {
             <div className="rounded-md border-2 border-[#2F5B43] bg-[#F6F4EF] p-6 mb-4">
               <p className="text-sm text-[#3F443E] leading-relaxed">
                 <strong>1鉢を長く置き、水やりを自分で行えるなら購入のほうが支払額は少なくなります。水やり・交換まで任せたい場合は月額制（レンタル）が向いています。</strong>
-                公式価格で比べると、AND PLANTSのパキラ M（高さ目安75〜110cm）13,980円（税込・送料無料）は、HitoHana Rental GreenのノーマルプランM（H80〜100cm）月1,600円（税別、税込換算1,760円）の約8か月分です。
+                公式価格で比べると、AND PLANTSのパキラ M（高さ目安75〜110cm）13,980円（税込・送料無料。北海道への配送は2,500円追加）は、HitoHana Rental GreenのノーマルプランM（H80〜100cm）月1,600円（税別、税込換算1,760円）の約8か月分です。
                 HitoHana Rental Greenの最低契約期間は1年のため、1年間の支払いはレンタルのほうが多くなります。レンタルの月額には月2回の訪問メンテナンスと傷んだ際の交換が含まれます（2026年10月19日公式確認）。
               </p>
             </div>
@@ -216,7 +216,7 @@ export default function KanyouShokubutsuPage() {
                     {
                       name: "AND PLANTS",
                       who: "観葉植物の単品購入（届いた植物は自分のもの）",
-                      price: "例：パキラ M（高さ目安75〜110cm）13,980円・L（115〜140cm）19,850円（税込・送料無料）",
+                      price: "例：パキラ M（高さ目安75〜110cm）13,980円・L（115〜140cm）19,850円（税込・送料無料。北海道への配送は2,500円追加）",
                       swap: "定期入れ替えなし。到着後2週間以内の初期不良等は交換・返金",
                       maint: "なし（自分で管理。ケアカード付き）",
                       terms: "法人は請求書払いで購入可。宅配便",
@@ -308,7 +308,7 @@ export default function KanyouShokubutsuPage() {
               <div className="rounded-md border-2 border-[#2F5B43] p-6 bg-[#F6F4EF]">
                 <p className="text-xs font-bold text-[#2F5B43] mb-2">買って育てたい方（購入型）</p>
                 <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
-                  <strong>単品購入が基本の選択肢</strong>です。AND PLANTSではパキラ M（高さ目安75〜110cm）が13,980円（税込・送料無料）で、到着後2週間以内の初期不良等には交換・返金の対応があります（2026年10月19日公式確認）。届いた植物は自分のものになるため、長く置くほど1か月あたりの負担は下がります。
+                  <strong>単品購入が基本の選択肢</strong>です。AND PLANTSではパキラ M（高さ目安75〜110cm）が13,980円（税込・送料無料。北海道への配送は2,500円追加）で、到着後2週間以内の初期不良等には交換・返金の対応があります（2026年10月19日公式確認）。届いた植物は自分のものになるため、長く置くほど1か月あたりの負担は下がります。
                 </p>
                 <a href="#osusume-3sen" className="text-sm text-[#2F5B43] font-medium underline">→ 購入型・レンタル型のおすすめ3選を見る</a>
               </div>
@@ -377,7 +377,7 @@ export default function KanyouShokubutsuPage() {
                   name: "AND PLANTS",
                   nameJa: "アンドプランツ",
                   price: "観葉植物は単品購入（例：パキラ M 13,980円・税込・送料無料）",
-                  highlight: "観葉植物と切り花の両方を扱うサービスです。観葉植物は定期便ではなく単品購入で、置き場所の日当たりなどから植物を絞り込める「パーソナル植物診断」と、育て方を記したケアカードがあります。到着後2週間以内であれば、初期不良による傷みや、ケアカードに従って管理したのに枯れた場合などに交換・返金の対象となります（2026年10月19日公式確認）。",
+                  highlight: "観葉植物と切り花の両方を扱うサービスです。観葉植物は定期便ではなく単品購入で、最大10個の質問から植物を提案する「パーソナル植物診断」と、品種ごとのケアカードがあります（2026年10月28日公式確認）。到着後2週間以内であれば、初期不良による傷みや、ケアカードに従って管理したのに枯れた場合などに交換・返金の対象となります（2026年10月19日公式確認）。",
                   features: ["パーソナル植物診断", "到着後2週間以内の交換・返金対応", "ケアカード付き", "切り花の定期便も提供"],
                   color: "#2F5B43",
                   url: "/services/and-plants",
@@ -452,7 +452,7 @@ export default function KanyouShokubutsuPage() {
                     name: "AND PLANTS",
                     points: [
                       "単品購入。届いた植物は自分のものになる",
-                      "例：パキラ M 13,980円・L 19,850円（税込・送料無料）",
+                      "例：パキラ M 13,980円・L 19,850円（税込・送料無料。北海道への配送は2,500円追加）",
                       "到着後2週間以内の初期不良等は交換・返金",
                       "水やりなどの管理は自分で行う",
                     ],
