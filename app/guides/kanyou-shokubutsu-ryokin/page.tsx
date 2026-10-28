@@ -3,7 +3,7 @@ import Header from "@/app/components/Header";
 import { SERVICES } from "@/data/services";
 import PageHero from "@/app/components/PageHero";
 
-const UPDATED = "2026年10月21日";
+const UPDATED = "2026年10月28日";
 
 /* 表示する金額は data/services.ts の公式確認値と、下の RENTAL_CHECK（2026-10-19 公式確認）のみを使用する。 */
 const sorted = [...SERVICES].sort((a, b) => a.cheapest.price - b.cheapest.price);
@@ -58,7 +58,7 @@ const articleLd = {
   description:
     "月額制の観葉植物レンタルと購入を、AND PLANTS・HitoHana Rental Green・GOOD GREENの公式価格で試算し、損益が入れ替わる月数と月額に含まれる作業を整理します。金額が決まる5つの条件、初期費用と月額の内訳、予算の立て方もまとめています。",
   datePublished: "2026-09-16T00:00:00+09:00",
-  dateModified: "2026-10-21T00:00:00+09:00",
+  dateModified: "2026-10-28T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/guides/kanyou-shokubutsu-ryokin/" },
@@ -122,12 +122,24 @@ export default function KanyouShokubutsuRyokinPage() {
               月額制の観葉植物サブスクと購入はどちらがお得か<br className="hidden md:block" />
               【2026年】公式価格で試算した料金の考え方
             </h1>
+            <div className="max-w-2xl mx-auto text-left bg-white border border-[#2F5B43] rounded-md p-5 mb-5">
+              <p className="font-bold text-[#1F2420] mb-2">月額制の観葉植物サブスクは、購入と比べてどちらがお得ですか？</p>
+              <p className="text-sm md:text-base text-[#3F443E] leading-relaxed">
+                同じ鉢を1年以上置き、水やりを自分で行えるなら、支払額は<strong>購入のほうが少なくなります</strong>。AND PLANTSのパキラ M（高さ目安75〜110cm）は13,980円（税込・送料無料）で、HitoHana Rental GreenのノーマルプランM（H80〜100cm）月1,600円（税別）の約7.9か月分、GOOD GREENのマイグリーンプランM/L 月2,178円（税込）の約6.4か月分です。HitoHanaは最低契約期間が1年のため、1年間のレンタル料（税込換算21,120円）は購入価格を上回ります。
+              </p>
+              <p className="text-sm md:text-base text-[#3F443E] leading-relaxed mt-2">
+                一方、月額制には訪問メンテナンス（HitoHanaは月2回）や、傷んだ・枯れた場合の交換が含まれます。水やりや買い直しを自分で負担できない場合や、定期的に植物を入れ替えたい場合は、月額制を選ぶ理由があります。なお、HitoHana Rental Greenは個人宅（住居区分）には対応していません。
+              </p>
+              <p className="text-xs text-[#6B6F6A] leading-relaxed mt-2">
+                出典：<a href="https://andplants.jp/products/pachira-m" target="_blank" rel="noopener noreferrer nofollow" className="underline">AND PLANTS パキラ M</a>・<a href="https://hitohana-collect.hitohana.tokyo/pages/rental-green" target="_blank" rel="noopener noreferrer nofollow" className="underline">HitoHana Rental Green</a>（料金・よくある質問）・<a href="https://goodgreen.jp/price/" target="_blank" rel="noopener noreferrer nofollow" className="underline">GOOD GREEN 観葉植物レンタル料金</a>。2026年10月28日 各公式サイトで確認。
+              </p>
+            </div>
             <p className="text-sm md:text-base text-[#4A4F49] max-w-2xl mx-auto leading-relaxed">
               観葉植物のサブスク・レンタルの費用は、植物の種類よりも<strong>サイズ・鉢数・購入かレンタルか・メンテナンスの有無・個人か法人か</strong>によって決まります。
               当サイトでは、金額を推測するのではなく、ご自身の条件で費用を見積もるための考え方を整理しています。
             </p>
             <p className="text-xs text-[#6B6F6A] max-w-2xl mx-auto leading-relaxed mt-4">
-              掲載している金額は、当サイトが各サービスの公式サイトで確認できた値のみです（観葉植物の購入・レンタル価格は2026年10月19日確認／最終更新：{UPDATED}）。
+              掲載している金額は、当サイトが各サービスの公式サイトで確認できた値のみです（観葉植物の購入・レンタル価格は2026年10月19日確認・10月28日再確認／最終更新：{UPDATED}）。
             </p>
           </div>
         </PageHero>

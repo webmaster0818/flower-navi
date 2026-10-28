@@ -47,6 +47,10 @@ const faqItems = [
     a: "公式ヘルプによると、スキップは3回先のお届けまで設定できます。",
   },
   {
+    q: "「mederu」「メデル」の花の定期便は、medeluと同じサービスですか？",
+    a: "同じサービスです。公式サイト（medelu.flowers）の表記は「medelu（メデル）」で、英字のつづりは「medelu」です。「mederu」は読みをローマ字にした表記ゆれで、検索するときや公式サイトのURLを入力するときは「medelu」とご入力ください（2026年10月28日 公式サイトで確認）。",
+  },
+  {
     q: "medeluの運営会社はどこですか？",
     a: "株式会社medelu（東京都港区南青山）です（公式・特定商取引法に基づく表記で確認）。",
   },
@@ -67,7 +71,7 @@ export default function MedeluPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/medelu/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"description\":\"medelu（メデル）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-26T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/medelu/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"description\":\"medelu（メデル）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-28T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/medelu/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -107,6 +111,9 @@ export default function MedeluPage() {
             <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               当サイトでは、748円（税込・送料込）〜でポストに届く花の定期便「medelu（メデル）」の口コミ・評判を、レビュー記事やアンケートの出典を明記して整理しています。
               料金・解約の締切・品質保証は、{S.verifiedAt}に公式サイトで確認した値にもとづいてご説明します。
+            </p>
+            <p className="text-xs md:text-sm text-[#4A4F49] -mt-5 mb-8 max-w-2xl mx-auto leading-relaxed">
+              「mederu」「メデル」と検索される花の定期便は、公式サイト（medelu.flowers）で「medelu（メデル）」と表記されています。英字のつづりは「mederu」ではなく「medelu」です（2026年10月28日 公式サイトで確認）。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-md px-5 py-3">
