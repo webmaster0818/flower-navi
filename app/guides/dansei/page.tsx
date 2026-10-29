@@ -34,7 +34,7 @@ export default function DanseiGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"男性におすすめの花のサブスク\",\"item\":\"https://ohana-delivery.com/guides/dansei/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"男性におすすめの花のサブスク\",\"description\":\"男性におすすめの花のサブスクを解説します。受け取り方法・回数の条件・1回あたりの費用と、飾り方を説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-27T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/dansei/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"一人暮らしの男性が部屋に花を飾る方法と花のサブスクの選び方\",\"description\":\"男性におすすめの花のサブスクを解説します。受け取り方法・回数の条件・1回あたりの費用と、飾り方を説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-29T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/dansei/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"男性が花のサブスクを使うのは変ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"問題ありません。花のサブスクに性別の条件はなく、申し込みも受け取りもどなたでも同じです。一人暮らしの方が気にされる点は「不在が多い」「部屋に合う色か」「途中でやめられるか」の3点のため、ポスト投函の有無、色やコースの選び方、回数の条件で選ぶことをおすすめします（各サービスの条件は本文の表をご参照ください）。\"}},{\"@type\":\"Question\",\"name\":\"男性向けのシンプルな花が届くサービスはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"HitoHanaは、6色とおまかせの中から毎回色を指定できます（花の種類は指定できません。公式FAQによる）。medeluには部屋のテイスト別にANYROOM・NATURAL・MODERNのコースがあり、MODERNはシックな色合いの花が中心であると公式サイトで案内されています。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていませんが、代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"空き瓶やグラス、マグカップなど、家にあるもので十分に代用できます。特にジャムの空き瓶やワインボトルは、一輪挿しとして見栄えよく使えます。ダイソー公式ネットストアではガラス花瓶を110円（税込）から販売しているため（2026年10月26日公式確認）、最初は安価なものから始める方法もあります。\"}},{\"@type\":\"Question\",\"name\":\"花の手入れが面倒そうですが、最低限何をすればよいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"最低限必要な作業は3つです。(1)届いたら茎を水中で斜めに切る（水切り）、(2)花瓶の水を2〜3日に1回替える、(3)直射日光とエアコンの風を避けて飾る、の3点を行えば、1週間以上楽しめます。切り花延命剤を入れると、さらに長持ちします。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
@@ -65,8 +65,8 @@ export default function DanseiGuidePage() {
               男性向け花のサブスクの選び方と飾り方【2026年】
             </h1>
             <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
-              一人暮らしの男性にも、花を飾ることをおすすめします。花のサブスクに性別は関係なく、一人暮らしの場合は「ポスト投函で受け取れるか」「回数の条件」「1回あたりの費用」で選ぶと、ご自身に合ったサービスを選びやすくなります。
-              当サイトでは、5社の条件を公式サイトで確認し、表に掲載しています（2026年10月14日確認）。
+              一人暮らしの男性が部屋に花を飾るなら、<strong>1本から始め、花瓶はグラスや空き瓶で代用し、デスクや洗面台など毎日目に入る1か所に置く</strong>のが続けやすい方法です。手入れは水切り・2〜3日ごとの水替え・直射日光と風を避けるの3つです。
+              続けて飾りたい場合は、不在でも受け取れるポスト投函・回数の条件・1回あたりの費用で花のサブスクを選ぶと続けやすく、5社の条件を公式サイトで確認して表に掲載しています（2026年10月14日確認）。
             </p>
           </div>
         </PageHero>
@@ -91,6 +91,23 @@ export default function DanseiGuidePage() {
               に、花瓶の選び方は
               <a href="/guides/kabin/" className="text-[#2F5B43] underline mx-1">花瓶の選び方</a>
               に掲載しています。
+            </p>
+          </div>
+        </section>
+
+        {/* ─── 男性利用者の声（公式掲載・出典付き）─── */}
+        <section id="dansei-koe" className="py-10 bg-white border-b border-[#DEDAD2]">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-4">花屋に入りにくい男性が花を飾り始めた例</h2>
+            <blockquote className="rounded-md border-l-4 border-[#2F5B43] bg-[#F6F4EF] p-5 text-sm md:text-base text-[#3F443E] leading-relaxed">
+              「これまでお花屋さんに行くのは、わたしが男であるせいか多少なりの気恥ずかしさがあって、なかなか足が向きませんでした。でもサブスクを利用することで、お花がグッと身近なものになりました。届けられたお花は、自宅の仕事部屋に飾っています。」
+            </blockquote>
+            <p className="text-xs text-[#6B6F6A] leading-relaxed mt-2">
+              出典：<a href="https://lifft.jp/pages/flowersubscription" target="_blank" rel="noopener noreferrer nofollow" className="underline">LIFFT公式 お花の定期便ページ</a>「定期便ご利用のお客様の声」（スタンダードプラン利用者のSNS投稿として事業者が掲載したもの。2026年10月29日確認）。
+            </p>
+            <p className="text-sm text-[#4A4F49] leading-relaxed mt-4">
+              花屋で選ぶことに抵抗がある場合は、届く花を選んでもらえるサブスクを使うと始めやすくなります。LIFFTは宅急便で月3,300円（スタンダード）のため、不在が多い一人暮らしの方は下の表のポスト投函型と比べてお選びください（
+              <a href="/services/lifft/" className="text-[#2F5B43] underline">LIFFTの口コミ・料金</a>）。
             </p>
           </div>
         </section>
