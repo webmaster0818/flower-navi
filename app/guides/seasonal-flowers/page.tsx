@@ -12,7 +12,7 @@ const faqItems = [
   },
   {
     q: "届く花の種類を事前に知ることはできますか？",
-    a: "多くのサービスでは、届くまで花の種類がわからない「お任せ」形式が基本です。ただし、bloomeeやmedeluなど一部のサービスでは、発送時に届く花の名前やお手入れ方法をメールやアプリで通知しています。届いた花の名前を知ることで、季節の花への理解も深まります。",
+    a: "多くのサービスでは、届くまで花の種類がわからない「お任せ」形式が基本です。届いた花の名前は、bloomeeはマイページの「最新のお届け」、medeluは箱のシール・QRコード（Miniを除く）やマイページで確認できます。HitoHanaは次回以降のお届け予定の花をお届け予定日の約1週間前にメールで知らせます（いずれも2026年10月30日公式確認）。届いた花の名前を知ることで、季節の花への理解も深まります。",
   },
   {
     q: "夏場に花のサブスクを利用しても大丈夫ですか？",
@@ -32,7 +32,7 @@ const faqItems = [
   },
   {
     q: "季節ごとにサブスクのプランを変更できますか？",
-    a: "はい、多くのサービスでプラン変更や配送頻度の変更が可能です。たとえば、花が長持ちしにくい夏場は隔週配送にし、花が長持ちする冬場は月1回にするなど、季節に合わせた調整ができます。スキップ機能を使えば、旅行や帰省で不在の週は配送を止めることも可能です。",
+    a: "はい、多くのサービスでプラン変更や配送頻度の変更が可能です。たとえば、夏場は隔週配送にするなど、季節に合わせた調整ができます。月1回のお届けを選べるかはサービスによって異なり、bloomee・medeluは毎週か隔週、hanamekuのセルフアレンジプランは月1回・14日ごとです（2026年10月30日公式確認）。スキップ機能を使えば、旅行や帰省で不在の週は配送を止めることも可能です。",
   },
   {
     q: "花のサブスクは何月に始めるのがおすすめですか？",
@@ -48,7 +48,7 @@ const monthlyData = [
     season: "winter",
     flowers: ["バラ", "スイートピー", "ラナンキュラス", "アネモネ"],
     tip: "暖房で乾燥しやすい季節のため、加湿器の近くに飾ることをおすすめします。茎が短い花は、グラスや小瓶に生けるとまとまりよく飾れます。",
-    recommend: "冬でも色鮮やかな花が届くmedeluやbloomeeをおすすめします。新年の食卓を華やかに彩ります。",
+    recommend: "medeluやbloomeeは季節の花を毎週または隔週で届けます。bloomeeは北海道への冬季の配送を一時停止する期間があります（2026年10月30日公式確認）。",
   },
   {
     month: 2,
@@ -72,7 +72,7 @@ const monthlyData = [
     season: "spring",
     flowers: ["バラ", "ガーベラ", "カーネーション", "スターチス"],
     tip: "気温が上がり始めるため、水替えは毎日行ってください。茎にぬめりがある場合は水切りを行います。花瓶の水を少なめ（茎が3cm浸かる程度）にすると、茎が腐りにくくなります。",
-    recommend: "新生活に合わせて利用を始める方が多い月です。medeluであれば748円から試すことができます。",
+    recommend: "medeluであれば748円（送料込み）から始められます。",
   },
   {
     month: 5,
@@ -80,7 +80,7 @@ const monthlyData = [
     season: "spring",
     flowers: ["バラ", "シャクヤク", "カーネーション", "トルコキキョウ"],
     tip: "母の日のカーネーションに加え、シャクヤクが旬を迎える月です。シャクヤクはつぼみの状態で届くことが多く、日ごとに開いていく様子を楽しめます。",
-    recommend: "母の日のギフトとしてサブスクを贈る方も多い時期です。bloomeeにはギフト対応のプランもあります。",
+    recommend: "母の日のギフトにも利用できます。bloomeeは、お届け先の入力画面で「プレゼントとして送る」を選ぶと、送り主の名前を登録して相手の住所に届けられます（2026年10月30日公式確認）。",
   },
   {
     month: 6,
@@ -156,9 +156,9 @@ export default function SeasonalFlowersPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"季節の花を楽しめる定期便\",\"item\":\"https://ohana-delivery.com/guides/seasonal-flowers/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"季節の花を楽しめる定期便\",\"description\":\"季節の花を楽しめる定期便について解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-28T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/seasonal-flowers/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"季節の花を楽しめる定期便\",\"description\":\"季節の花を楽しめる定期便について解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/seasonal-flowers/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクでは季節に合ったお花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くの花のサブスクでは、その時期に旬を迎える季節の花を中心にアレンジして届けています。フローリストが市場で仕入れた旬の花を選ぶため、ご自身では選ばない季節の花に触れる機会にもなります。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類を事前に知ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスでは、届くまで花の種類がわからない「お任せ」形式が基本です。ただし、bloomeeやmedeluなど一部のサービスでは、発送時に届く花の名前やお手入れ方法をメールやアプリで通知しています。届いた花の名前を知ることで、季節の花への理解も深まります。\"}},{\"@type\":\"Question\",\"name\":\"夏場に花のサブスクを利用しても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場でも利用可能ですが、鮮度の管理には注意が必要です。多くのサービスでは、クール便への対応や保水ゼリーの使用など、夏場の配送対策を行っています。届いたらすぐに水揚げし、直射日光を避けた涼しい場所に飾ることで、夏でも数日間楽しめます。エアコンの風が直接当たる場所は避けてください。\"}},{\"@type\":\"Question\",\"name\":\"季節の花を長持ちさせるコツはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本は毎日の水替えと茎の切り戻し（水切り）です。春の花は涼しい場所に飾り、夏の花は水に氷を入れると長持ちします。秋冬の花は比較的日持ちしますが、暖房の風が直接当たる場所は避けてください。付属の延命剤を使用し、傷んだ花びらや葉はこまめに取り除くことも大切です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは季節によって届く本数が変わりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的に、プランごとの本数は季節によって変わりません。ただし、花の種類によって見た目の量感は異なります。たとえば夏のひまわりは1本でも存在感がありますが、冬の小花は数本でも控えめな印象になります。サービスによっては、季節に応じてグリーンや枝物を加えて量感を調整する場合もあります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届く花は自分で選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的にはフローリストのおまかせです。AND PLANTSの定期便も、色の指定や花材の選択はフローリストのおまかせです（2026年10月28日公式確認）。季節の花を楽しむという観点では、フローリストに任せることで、ご自身では選ばない花に触れられる点がサブスクの特長です。\"}},{\"@type\":\"Question\",\"name\":\"季節ごとにサブスクのプランを変更できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスでプラン変更や配送頻度の変更が可能です。たとえば、花が長持ちしにくい夏場は隔週配送にし、花が長持ちする冬場は月1回にするなど、季節に合わせた調整ができます。スキップ機能を使えば、旅行や帰省で不在の週は配送を止めることも可能です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは何月に始めるのがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どの月から始めても季節の花を楽しめますが、当サイトでは特に3月と10月をおすすめします。3月は春の花の種類が多く、華やかなアレンジが届きやすい時期です。10月は秋の花が充実し、気温が下がって花が長持ちしやすくなります。なお、サブスクは希望する時期にいつでも始められます。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクでは季節に合ったお花が届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くの花のサブスクでは、その時期に旬を迎える季節の花を中心にアレンジして届けています。フローリストが市場で仕入れた旬の花を選ぶため、ご自身では選ばない季節の花に触れる機会にもなります。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類を事前に知ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスでは、届くまで花の種類がわからない「お任せ」形式が基本です。届いた花の名前は、bloomeeはマイページの「最新のお届け」、medeluは箱のシール・QRコード（Miniを除く）やマイページで確認できます。HitoHanaは次回以降のお届け予定の花をお届け予定日の約1週間前にメールで知らせます（いずれも2026年10月30日公式確認）。届いた花の名前を知ることで、季節の花への理解も深まります。\"}},{\"@type\":\"Question\",\"name\":\"夏場に花のサブスクを利用しても大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場でも利用可能ですが、鮮度の管理には注意が必要です。多くのサービスでは、クール便への対応や保水ゼリーの使用など、夏場の配送対策を行っています。届いたらすぐに水揚げし、直射日光を避けた涼しい場所に飾ることで、夏でも数日間楽しめます。エアコンの風が直接当たる場所は避けてください。\"}},{\"@type\":\"Question\",\"name\":\"季節の花を長持ちさせるコツはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本は毎日の水替えと茎の切り戻し（水切り）です。春の花は涼しい場所に飾り、夏の花は水に氷を入れると長持ちします。秋冬の花は比較的日持ちしますが、暖房の風が直接当たる場所は避けてください。付属の延命剤を使用し、傷んだ花びらや葉はこまめに取り除くことも大切です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは季節によって届く本数が変わりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的に、プランごとの本数は季節によって変わりません。ただし、花の種類によって見た目の量感は異なります。たとえば夏のひまわりは1本でも存在感がありますが、冬の小花は数本でも控えめな印象になります。サービスによっては、季節に応じてグリーンや枝物を加えて量感を調整する場合もあります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届く花は自分で選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"基本的にはフローリストのおまかせです。AND PLANTSの定期便も、色の指定や花材の選択はフローリストのおまかせです（2026年10月28日公式確認）。季節の花を楽しむという観点では、フローリストに任せることで、ご自身では選ばない花に触れられる点がサブスクの特長です。\"}},{\"@type\":\"Question\",\"name\":\"季節ごとにサブスクのプランを変更できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くのサービスでプラン変更や配送頻度の変更が可能です。たとえば、夏場は隔週配送にするなど、季節に合わせた調整ができます。月1回のお届けを選べるかはサービスによって異なり、bloomee・medeluは毎週か隔週、hanamekuのセルフアレンジプランは月1回・14日ごとです（2026年10月30日公式確認）。スキップ機能を使えば、旅行や帰省で不在の週は配送を止めることも可能です。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクは何月に始めるのがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どの月から始めても季節の花を楽しめますが、当サイトでは特に3月と10月をおすすめします。3月は春の花の種類が多く、華やかなアレンジが届きやすい時期です。10月は秋の花が充実し、気温が下がって花が長持ちしやすくなります。なお、サブスクは希望する時期にいつでも始められます。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -610,14 +610,13 @@ export default function SeasonalFlowersPage() {
                 <div className="p-5">
                   <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                     medeluは、生産者と市場から直接仕入れた花を届けるサービスです（2026年10月21日公式確認）。
-                    季節ごとに旬の花を選んでおり、春はチューリップやラナンキュラス、夏はひまわり、秋はダリアなど、
-                    その時期ならではの花が届きます。Miniプラン748円（送料無料）から始められるため、
+                    季節ごとに旬の花を毎回届けると案内しています（2026年10月30日公式確認）。Miniプラン748円（送料無料）から始められるため、
                     気軽に季節の花を楽しみたい方に適しています。
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm mb-4">
                     <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">748円/回〜</span>
                     <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">送料無料</span>
-                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">最低受取回数の設定なし</span>
+                    <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">最低受取回数の記載なし</span>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href="/services/medelu" className="inline-block text-center bg-white text-[#2F5B43] font-bold text-sm px-6 py-3 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors">
@@ -640,7 +639,7 @@ export default function SeasonalFlowersPage() {
                   <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                     bloomeeは、季節の花を小ぶりの花束にして届けるお花の定期便です。
                     お試し・グリーンプランはポストへの半投函の形で届き、最初の4回は受け取りが必要です。
-                    SNSでの投稿も多く、ほかの利用者が受け取っている季節の花を参考にできます。
+                    公式SNSで届けた花や利用者の投稿を紹介しています（2026年10月30日公式確認）。
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm mb-4">
                     <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">980円/回〜</span>
@@ -668,7 +667,7 @@ export default function SeasonalFlowersPage() {
                   <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
                     AND PLANTSは、フローリストが季節の花を使ってアレンジした花を届けるサービスです。
                     宅配便で配送し、夏季（6月〜9月）は生花をクール便で送ると案内しています（2026年10月28日公式確認）。
-                    6〜8本（2026年10月17日公式確認）の花が届き、季節感とデザイン性の両方を求める方におすすめします。
+                    6〜8本（2026年10月17日公式確認）の花が届きます（スタンダードプラン）。
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm mb-4">
                     <span className="bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">1,980円/回〜</span>
@@ -739,9 +738,8 @@ export default function SeasonalFlowersPage() {
               春のチューリップ、夏のひまわり、秋のダリア、冬のバラなど、12か月それぞれに異なる花を楽しめます。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花のケア方法も季節によって異なります。特に夏場は鮮度管理に注意が必要ですが、
-              冬場は花が長持ちしやすく、費用対効果の面でも有利です。
-              配送頻度やスキップ機能を活用し、季節に合わせた利用方法をご検討ください。
+              花のケア方法も季節によって異なります。特に夏場は鮮度管理に注意が必要です。
+                            配送頻度やスキップ機能を活用し、季節に合わせた利用方法をご検討ください。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               まずは関心のあるサービスで、季節の花を一度受け取ることをおすすめします。
@@ -815,7 +813,7 @@ export default function SeasonalFlowersPage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。ご利用前に、各公式サイトにて最新情報をご確認ください。
+              掲載情報は2026年10月30日時点のものです。ご利用前に、各公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

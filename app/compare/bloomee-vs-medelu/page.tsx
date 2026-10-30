@@ -16,27 +16,27 @@ const faqItems = [
   },
   {
     q: "bloomeeの最低4回の受け取り条件とは何ですか？",
-    a: "bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、残り回数分の料金が違約金として発生します。お試しプランの場合、最低でも1,365円×4回＝5,460円の利用が必要です。medeluにはこのような回数の条件はなく、いつでも解約できます。",
+    a: "bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、「お試し途中解約料」として残りの回数分の商品代金（税込）がかかります（2026年10月30日公式確認）。お試しプランの場合、最低でも1,365円×4回＝5,460円の利用が必要です。medeluにはこのような回数の条件はなく、いつでも解約できます。",
   },
   {
     q: "medeluに回数の条件はありますか？",
-    a: "medeluには回数の条件はありません。初回から解約でき、マイページからいつでも解約手続きが可能です。最低利用回数や違約金の設定がないため、試しに利用しやすい点がmedeluの利点です。",
+    a: "medeluの公式サイトに最低利用回数の記載はなく、特商法表記では販売価格以外の費用はかからないとしています。決済日の前日（木曜日）までにマイページで解約手続きをすれば、次回以降の支払いは発生しません（2026年10月30日公式確認）。",
   },
   {
     q: "配送エリアに違いはありますか？",
-    a: "bloomeeは離島を除く日本全国に配送対応しています。medeluも日本全国に対応していますが、一部離島や配送困難な地域は対象外となる場合があります。どちらもポスト投函プランは日本郵便を利用しており、対応エリアに大きな差はありません。",
+    a: "bloomeeは本州・北海道・四国・九州・沖縄に配送し、離島は対象外です。北海道は冬季、沖縄は夏季に配送を停止する期間があります。medeluは沖縄県と一部離島を除く全国に配送します（いずれも2026年10月30日公式確認）。沖縄県への配送の可否が異なります。",
   },
   {
     q: "プレゼントとして贈るならどちらがおすすめですか？",
-    a: "bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluのギフトでの申し込み方法は、公式サイトでご確認ください。",
+    a: "bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluは、定期便の送り主名を設定して贈り先に届けることができ、ギフトラッピングとメッセージカードには対応していません（2026年10月30日公式確認）。",
   },
   {
     q: "途中でプラン変更はできますか？",
-    a: "どちらもマイページからプラン変更が可能です。bloomeeはお試し・グリーン・ベーシックの各プラン間で変更でき、配送頻度（毎週・隔週）も変更可能です。medeluもMini・Lite・Lite+・Basicの各コース間で変更でき、配送頻度は隔週・毎週から選べます。",
+    a: "どちらもマイページからプラン変更が可能です。bloomeeはお試し・グリーン・ベーシックの各プラン間で変更でき、プラン変更は2回目のお届けから、隔週への変更は4回受け取った後から可能です。medeluはMini・Lite・Lite+・Basicの間の変更を2回目以降のお届けから受け付けており（決済日前日の木曜日まで）、配送頻度は毎週・隔週から選べます（2026年10月30日公式確認）。",
   },
   {
     q: "bloomeeとmedelu、両方試してから決めることはできますか？",
-    a: "可能です。ただし、bloomeeには最低4回の受け取り条件があるため、試しに利用する場合でも最低4回分の料金が発生します。回数の条件がないmedeluを先に利用し、その後bloomeeを検討すると、費用面の負担を抑えられます。medeluは1回受け取っただけでも解約できるため、試験的な利用に向いています。",
+    a: "可能です。ただし、bloomeeには最低4回の受け取り条件があるため、試しに利用する場合でも最低4回分の料金が発生します。回数の条件がないmedeluを先に利用し、その後bloomeeを検討すると、費用面の負担を抑えられます。medeluは最低利用回数の記載がなく、決済日前日の木曜日までに解約手続きをすれば次回以降の支払いは発生しません（2026年10月30日公式確認）。",
   },
 ];
 
@@ -51,9 +51,9 @@ export default function BloomeeVsMedeluPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"bloomee vs medelu 比較\",\"item\":\"https://ohana-delivery.com/compare/bloomee-vs-medelu/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs medelu 比較\",\"description\":\"bloomeeとmedeluの料金・評判・選び方を比較し、解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-26T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-medelu/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee vs medelu 比較\",\"description\":\"bloomeeとmedeluの料金・評判・選び方を比較し、解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/bloomee-vs-medelu/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluはどちらが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのMiniコースは748円（送料込み）、bloomeeのお試しプランは980円＋送料385円＝1,365円です（2026年10月23日公式確認）。同じポスト投函の最安プランでも、1回あたり617円の差があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluの花の品質に違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の品質を比べた公的なデータはないため、当サイトではどちらの品質が高いかは示していません。bloomeeは市場で仕入れた花を束ねて届ける（2026年10月23日公式確認）、medeluは生産者と市場から直接仕入れた花を届ける（2026年10月21日公式確認）と案内しています。品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換（特商法）、medeluは到着当日中に写真を送れば送料込みで全額返金（交換なし）です（2026年10月14日 公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの最低4回の受け取り条件とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、残り回数分の料金が違約金として発生します。お試しプランの場合、最低でも1,365円×4回＝5,460円の利用が必要です。medeluにはこのような回数の条件はなく、いつでも解約できます。\"}},{\"@type\":\"Question\",\"name\":\"medeluに回数の条件はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluには回数の条件はありません。初回から解約でき、マイページからいつでも解約手続きが可能です。最低利用回数や違約金の設定がないため、試しに利用しやすい点がmedeluの利点です。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアに違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは離島を除く日本全国に配送対応しています。medeluも日本全国に対応していますが、一部離島や配送困難な地域は対象外となる場合があります。どちらもポスト投函プランは日本郵便を利用しており、対応エリアに大きな差はありません。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈るならどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluのギフトでの申し込み方法は、公式サイトでご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"途中でプラン変更はできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どちらもマイページからプラン変更が可能です。bloomeeはお試し・グリーン・ベーシックの各プラン間で変更でき、配送頻度（毎週・隔週）も変更可能です。medeluもMini・Lite・Lite+・Basicの各コース間で変更でき、配送頻度は隔週・毎週から選べます。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedelu、両方試してから決めることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可能です。ただし、bloomeeには最低4回の受け取り条件があるため、試しに利用する場合でも最低4回分の料金が発生します。回数の条件がないmedeluを先に利用し、その後bloomeeを検討すると、費用面の負担を抑えられます。medeluは1回受け取っただけでも解約できるため、試験的な利用に向いています。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluはどちらが安いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料込みの実質負担額で比較すると、medeluのほうが安くなります。medeluのMiniコースは748円（送料込み）、bloomeeのお試しプランは980円＋送料385円＝1,365円です（2026年10月23日公式確認）。同じポスト投函の最安プランでも、1回あたり617円の差があります。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedeluの花の品質に違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の品質を比べた公的なデータはないため、当サイトではどちらの品質が高いかは示していません。bloomeeは市場で仕入れた花を束ねて届ける（2026年10月23日公式確認）、medeluは生産者と市場から直接仕入れた花を届ける（2026年10月21日公式確認）と案内しています。品質保証は、bloomeeが定期便なら2週間以内の連絡で返金・交換（特商法）、medeluは到着当日中に写真を送れば送料込みで全額返金（交換なし）です（2026年10月14日 公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeの最低4回の受け取り条件とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeでは初回申し込み時に最低4回の受け取りが条件となっています。4回受け取る前に解約すると、「お試し途中解約料」として残りの回数分の商品代金（税込）がかかります（2026年10月30日公式確認）。お試しプランの場合、最低でも1,365円×4回＝5,460円の利用が必要です。medeluにはこのような回数の条件はなく、いつでも解約できます。\"}},{\"@type\":\"Question\",\"name\":\"medeluに回数の条件はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluの公式サイトに最低利用回数の記載はなく、特商法表記では販売価格以外の費用はかからないとしています。決済日の前日（木曜日）までにマイページで解約手続きをすれば、次回以降の支払いは発生しません（2026年10月30日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"配送エリアに違いはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは本州・北海道・四国・九州・沖縄に配送し、離島は対象外です。北海道は冬季、沖縄は夏季に配送を停止する期間があります。medeluは沖縄県と一部離島を除く全国に配送します（いずれも2026年10月30日公式確認）。沖縄県への配送の可否が異なります。\"}},{\"@type\":\"Question\",\"name\":\"プレゼントとして贈るならどちらがおすすめですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluは、定期便の送り主名を設定して贈り先に届けることができ、ギフトラッピングとメッセージカードには対応していません（2026年10月30日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"途中でプラン変更はできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"どちらもマイページからプラン変更が可能です。bloomeeはお試し・グリーン・ベーシックの各プラン間で変更でき、プラン変更は2回目のお届けから、隔週への変更は4回受け取った後から可能です。medeluはMini・Lite・Lite+・Basicの間の変更を2回目以降のお届けから受け付けており（決済日前日の木曜日まで）、配送頻度は毎週・隔週から選べます（2026年10月30日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"bloomeeとmedelu、両方試してから決めることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可能です。ただし、bloomeeには最低4回の受け取り条件があるため、試しに利用する場合でも最低4回分の料金が発生します。回数の条件がないmedeluを先に利用し、その後bloomeeを検討すると、費用面の負担を抑えられます。medeluは最低利用回数の記載がなく、決済日前日の木曜日までに解約手続きをすれば次回以降の支払いは発生しません（2026年10月30日公式確認）。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -262,7 +262,7 @@ export default function BloomeeVsMedeluPage() {
                 最安プラン同士で比較すると、medeluのMiniコース（748円・送料込み）はbloomeeのお試しプラン（送料込み1,365円）より617円安くなります（2026年10月23日公式確認）。
                 medeluは送料込みの価格のため（北海道・東北へのLite以上は遠隔地送料140〜240円が加算（2026年10月17日公式確認））、表示価格がそのまま実質負担額になるシンプルな料金体系です。
                 bloomeeは花代とは別に送料385〜550円がかかるため、総額で考える必要があります。
-                隔週配送の場合、月額の差はbloomeeお試しプラン（月2,730円）とmedelu Miniコース（月1,496円）で約1,234円になります。
+                隔週配送の場合（bloomeeの隔週は4回受け取った後から）、月額の差はbloomeeお試しプラン（月2,730円）とmedelu Miniコース（月1,496円）で約1,234円になります。
               </p>
             </div>
           </div>
@@ -312,8 +312,8 @@ export default function BloomeeVsMedeluPage() {
                 <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>お試し・グリーン：ポスト投函</li>
                   <li>ベーシックプラン：宅配便</li>
-                  <li>ポスト投函はゆうパケットを利用</li>
-                  <li>専用の縦長パッケージで届く</li>
+                  <li>配送会社は提携配送会社（指定不可・変更の場合あり）</li>
+                  <li>投函ラインを設けたパッケージで半投函（2026年10月30日公式確認）</li>
                 </ul>
               </div>
               <div className="bg-white rounded-md p-5 border border-[#DEDAD2]">
@@ -321,8 +321,8 @@ export default function BloomeeVsMedeluPage() {
                 <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>Mini・Lite：ポスト投函</li>
                   <li>Lite+・Basic：宅配便</li>
-                  <li>ポスト投函は日本郵便を利用</li>
-                  <li>専用パッケージで届く</li>
+                  <li>Miniは日本郵便のゆうパケット（北海道・東北・関西・中国・四国はヤマト運輸）</li>
+                  <li>ポスト投函は保水容器に水を入れて届く（2026年10月30日公式確認）</li>
                 </ul>
               </div>
             </div>
@@ -343,24 +343,24 @@ export default function BloomeeVsMedeluPage() {
               <div className="bg-[#F6F4EF] rounded-md p-5">
                 <h3 className="text-base font-bold text-[#1F2420] mb-3">bloomee</h3>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
-                  <li>毎週 / 隔週から選択</li>
-                  <li>マイページからいつでも変更可</li>
-                  <li>スキップ機能あり（無料）</li>
+                  <li>最初の4回は毎週、その後は毎週 / 隔週から選択</li>
+                  <li>隔週への変更は4回受け取った後にマイページから</li>
+                  <li>スキップ機能あり（スキップした週は料金なし）</li>
                 </ul>
               </div>
               <div className="bg-[#EDF1EC] rounded-md p-5">
                 <h3 className="text-base font-bold text-[#1F2420] mb-3">medelu</h3>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
-                  <li>隔週 / 毎週から選択</li>
-                  <li>マイページからいつでも変更可</li>
-                  <li>スキップ機能あり（無料）</li>
+                  <li>毎週 / 隔週から選択</li>
+                  <li>コース・ボリュームの変更はマイページから（2回目以降）</li>
+                  <li>スキップ機能あり（3回先まで）</li>
                 </ul>
               </div>
             </div>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
-              配送頻度の選択肢はどちらも同じで、毎週または隔週から選べます。
-              どちらもマイページから配送頻度の変更が可能で、旅行や出張で受け取れない週は、スキップ機能で配送を休止できます。
-              スキップは無料のため、生活に合わせて柔軟に調整できます。この項目では両者に差はありません。
+              どちらも毎週または隔週から選べますが、bloomeeは最初の4回が毎週のお届けです（2026年10月30日公式確認）。
+              旅行や出張で受け取れない週は、どちらもマイページのスキップ機能で配送を休止できます。
+              bloomeeはスキップした週の料金がかからないと案内しています。medeluのスキップは3回先まで設定できます。
             </p>
           </div>
         </section>
@@ -381,7 +381,7 @@ export default function BloomeeVsMedeluPage() {
                   <p className="text-sm font-bold text-[#D9BFB1]">4回の最低受け取り回数あり</p>
                 </div>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
-                  <li>4回未満の解約は残り回数分が違約金として発生</li>
+                  <li>4回未満の解約はお試し途中解約料（残りの回数分の商品代金・税込）が発生</li>
                   <li>マイページから解約手続き可能</li>
                 </ul>
               </div>
@@ -391,7 +391,7 @@ export default function BloomeeVsMedeluPage() {
                   <p className="text-sm font-bold text-[#2F5B43]">回数の条件なし・いつでも解約可能</p>
                 </div>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
-                  <li>初回から解約自由</li>
+                  <li>決済日前日の木曜日までの手続きで次回以降の支払いなし</li>
                   <li>マイページから解約可能</li>
                   <li>違約金・手数料なし</li>
                 </ul>
@@ -459,14 +459,14 @@ export default function BloomeeVsMedeluPage() {
                 <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li>Webのマイページで管理</li>
                   <li>マイページでプラン変更・スキップが可能</li>
-                  <li>花の情報はメールで届く</li>
+                  <li>届いた花の名前は箱のシール・QRコード（Miniを除く）やマイページで確認</li>
                                   </ul>
               </div>
             </div>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed">
               どちらも、スキップやプランの変更はWebのマイページで行います。bloomeeは、4回目の受け取り後に隔週への変更ができ、お花のガイドブックが付き、栄養剤が毎回同封されます（2026年10月21日公式確認）。
               また、お届け先の入力画面で「プレゼントとして送る」を選べるため、プレゼントにも利用できます。
-              当サイトでは、bloomeeの専用アプリを公式サイトとApp Storeで確認できませんでした（2026年10月21日時点）。
+              bloomeeのアプリは2021年12月10日に停止しており、手続きはマイページで行います（2026年10月30日公式確認）。
             </p>
           </div>
         </section>
@@ -520,17 +520,17 @@ export default function BloomeeVsMedeluPage() {
                 <tbody>
                   {[
                     { label: "最安プラン（税込）", bloomee: "980円/回", medelu: "748円/回" },
-                    { label: "送料", bloomee: "385〜550円", medelu: "無料" },
+                    { label: "送料", bloomee: "385〜550円", medelu: "無料（北海道・東北のLite以上は遠隔地送料）" },
                     { label: "実質最安（送料込み）", bloomee: "1,365円/回", medelu: "748円/回" },
                     { label: "花の本数（最安）", bloomee: "4本以上", medelu: "3〜4本" },
                     { label: "プラン数", bloomee: "3プラン", medelu: "3コース" },
                     { label: "配送方法", bloomee: "ポスト投函 / 宅配便", medelu: "ポスト投函 / 宅配便" },
                     { label: "配送頻度", bloomee: "毎週 / 隔週", medelu: "毎週 / 隔週" },
                     { label: "回数の条件", bloomee: "4回", medelu: "なし" },
-                    { label: "解約時の違約金", bloomee: "残り回数分発生", medelu: "なし" },
+                    { label: "解約時の違約金", bloomee: "お試し途中解約料（残りの回数分の商品代金）", medelu: "なし" },
                     { label: "品質保証", bloomee: "あり（定期便は2週間以内の連絡で返金・交換）", medelu: "あり" },
-                    { label: "ギフト対応", bloomee: "「プレゼントとして送る」で申し込み", medelu: "公式サイトでご確認ください" },
-                    { label: "スキップ機能", bloomee: "あり（無料）", medelu: "あり（無料）" },
+                    { label: "ギフト対応", bloomee: "「プレゼントとして送る」で申し込み", medelu: "送り主名を設定して贈り先へ（ラッピング・メッセージカードなし）" },
+                    { label: "スキップ機能", bloomee: "あり（その週の料金なし）", medelu: "あり（3回先まで）" },
                   ].map((row, i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F6F4EF]"}>
                       <td className="px-4 py-3 font-medium text-[#1F2420] border-b border-[#DEDAD2]">{row.label}</td>
@@ -563,7 +563,7 @@ export default function BloomeeVsMedeluPage() {
                 {
                   scenario: "プレゼントとして贈る場合",
                   recommend: "bloomee",
-                  reason: "bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluのギフトでの申し込み方法は、公式サイトでご確認ください。",
+                  reason: "bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、相手の住所に届けられ、送り主の名前を登録できます（2026年10月20日公式確認）。medeluは、定期便の送り主名を設定して贈り先に届けることができ、ギフトラッピングとメッセージカードには対応していません（2026年10月30日公式確認）。",
                 },
                 {
                   scenario: "費用を重視する場合",
@@ -775,7 +775,7 @@ export default function BloomeeVsMedeluPage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
+              掲載情報は2026年10月30日時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

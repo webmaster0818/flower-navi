@@ -20,7 +20,7 @@ const faqItems = [
   },
   {
     q: "定期便の花はそのまま仏壇に供えられますか？",
-    a: "定期便で届く花は、基本的に花瓶にそのまま飾る用途のアレンジです。仏花として供える場合は、届いた花の中から仏花に適したもの（菊、カーネーション、スターチスなど）を選び、仏壇用の花立に合わせて茎の長さを切りそろえてお供えください。medeluのNATURALコースやANYROOMコースは落ち着いた色合いの花が多く、仏花にもアレンジしやすい内容です。",
+    a: "定期便で届く花は、基本的に花瓶にそのまま飾る用途のアレンジです。仏花として供える場合は、届いた花の中から仏花に適したもの（菊、カーネーション、スターチスなど）を選び、仏壇用の花立に合わせて茎の長さを切りそろえてお供えください。medeluには仏花専用のコースはなく、NATURALコースは「自然色に馴染む色味の優しいブーケ」、ANYROOMコースは「様々な色・形のお花」と案内されています（2026年10月30日公式確認）。",
   },
   {
     q: "夏場でも仏花は長持ちしますか？",
@@ -41,9 +41,9 @@ export default function ButsudanGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"仏壇花の定期便・サブスクおすすめ\",\"item\":\"https://ohana-delivery.com/guides/butsudan/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"仏壇花の定期便・サブスクおすすめ\",\"description\":\"仏壇花の定期便・サブスクのおすすめについて、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-27T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/butsudan/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"仏壇花の定期便・サブスクおすすめ\",\"description\":\"仏壇花の定期便・サブスクのおすすめについて、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/butsudan/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"仏花に向かない花はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"バラなどトゲのある花は仏花には不向きとされています。また、毒のある花（彼岸花、スズラン等）や香りが強すぎる花も避けるのが一般的です。ただし、故人が好んだ花であれば、トゲを取り除いて供える場合もあります。宗派や地域の慣習によって異なるため、ご不明な点は菩提寺にご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"月命日に合わせて届けてもらえますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期便サービスの多くは「毎週」「隔週」「月1回」といった配送頻度の選択が可能ですが、特定の日付指定ができるサービスは限られます。月命日に合わせたい場合は、月1回配送を選び、届いた花を月命日まで涼しい場所で保管する方法が現実的です。medeluやbloomeeにはスキップ機能があるため、配送のタイミングを調整しやすくなっています。\"}},{\"@type\":\"Question\",\"name\":\"仏花は1対（2束）必要ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"正式には仏壇の左右に1束ずつ、計2束（1対）を供えるのが基本です。ただし、小さな仏壇や現代的な仏壇では1束だけ飾る方も増えています。定期便で届く花を1束とし、もう1束を近くの花屋やスーパーで購入して補う方法もあります。無理のない範囲で供えることが大切です。\"}},{\"@type\":\"Question\",\"name\":\"定期便の花はそのまま仏壇に供えられますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期便で届く花は、基本的に花瓶にそのまま飾る用途のアレンジです。仏花として供える場合は、届いた花の中から仏花に適したもの（菊、カーネーション、スターチスなど）を選び、仏壇用の花立に合わせて茎の長さを切りそろえてお供えください。medeluのNATURALコースやANYROOMコースは落ち着いた色合いの花が多く、仏花にもアレンジしやすい内容です。\"}},{\"@type\":\"Question\",\"name\":\"夏場でも仏花は長持ちしますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場は気温が高く花が傷みやすいため、通常より花持ちが短くなります。対策としては、こまめな水替え（毎日が理想）、切り花延命剤の使用、エアコンの風が直接当たらない涼しい場所に仏壇を置くことが有効です。また、菊やスターチスなど、暑さに比較的強い花を選ぶことも効果的です。定期便であれば新しい花が定期的に届くため、夏場でも新鮮な花をお供えできます。\"}},{\"@type\":\"Question\",\"name\":\"お盆やお彼岸用の特別な仏花は届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的な花の定期便は、お盆・お彼岸専用の仏花アレンジには対応していません。ただし、通常の定期便で届く花を仏花としてアレンジすることは可能です。お盆やお彼岸に特別な仏花が必要な場合は、通常の定期便に加えて花屋やオンラインショップで仏花セットを別途購入することをおすすめします。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"仏花に向かない花はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"バラなどトゲのある花は仏花には不向きとされています。また、毒のある花（彼岸花、スズラン等）や香りが強すぎる花も避けるのが一般的です。ただし、故人が好んだ花であれば、トゲを取り除いて供える場合もあります。宗派や地域の慣習によって異なるため、ご不明な点は菩提寺にご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"月命日に合わせて届けてもらえますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期便サービスの多くは「毎週」「隔週」「月1回」といった配送頻度の選択が可能ですが、特定の日付指定ができるサービスは限られます。月命日に合わせたい場合は、月1回配送を選び、届いた花を月命日まで涼しい場所で保管する方法が現実的です。medeluやbloomeeにはスキップ機能があるため、配送のタイミングを調整しやすくなっています。\"}},{\"@type\":\"Question\",\"name\":\"仏花は1対（2束）必要ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"正式には仏壇の左右に1束ずつ、計2束（1対）を供えるのが基本です。ただし、小さな仏壇や現代的な仏壇では1束だけ飾る方も増えています。定期便で届く花を1束とし、もう1束を近くの花屋やスーパーで購入して補う方法もあります。無理のない範囲で供えることが大切です。\"}},{\"@type\":\"Question\",\"name\":\"定期便の花はそのまま仏壇に供えられますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期便で届く花は、基本的に花瓶にそのまま飾る用途のアレンジです。仏花として供える場合は、届いた花の中から仏花に適したもの（菊、カーネーション、スターチスなど）を選び、仏壇用の花立に合わせて茎の長さを切りそろえてお供えください。medeluには仏花専用のコースはなく、NATURALコースは「自然色に馴染む色味の優しいブーケ」、ANYROOMコースは「様々な色・形のお花」と案内されています（2026年10月30日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"夏場でも仏花は長持ちしますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場は気温が高く花が傷みやすいため、通常より花持ちが短くなります。対策としては、こまめな水替え（毎日が理想）、切り花延命剤の使用、エアコンの風が直接当たらない涼しい場所に仏壇を置くことが有効です。また、菊やスターチスなど、暑さに比較的強い花を選ぶことも効果的です。定期便であれば新しい花が定期的に届くため、夏場でも新鮮な花をお供えできます。\"}},{\"@type\":\"Question\",\"name\":\"お盆やお彼岸用の特別な仏花は届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一般的な花の定期便は、お盆・お彼岸専用の仏花アレンジには対応していません。ただし、通常の定期便で届く花を仏花としてアレンジすることは可能です。お盆やお彼岸に特別な仏花が必要な場合は、通常の定期便に加えて花屋やオンラインショップで仏花セットを別途購入することをおすすめします。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -242,7 +242,7 @@ export default function ButsudanGuidePage() {
                 {
                   num: "3",
                   title: "花の色味・スタイル ─ 落ち着いた色合いを選ぶ",
-                  text: "仏花には白・黄色・紫・ピンクなど、落ち着いた色合いの花が適しています。華やかすぎるアレンジや原色の花は仏壇には不向きな場合があります。medeluのNATURALコースやANYROOMコースのように、ナチュラルで落ち着いた雰囲気のコースを選ぶと、仏花に適した花が届きやすくなります。",
+                  text: "仏花には白・黄色・紫・ピンクなど、落ち着いた色合いの花が適しています。華やかすぎるアレンジや原色の花は仏壇には不向きな場合があります。色の傾向でコースを選べるサービスもあり、medeluのNATURALコースは「自然色に馴染む色味の優しいブーケ」と案内されています（2026年10月30日公式確認）。",
                 },
                 {
                   num: "4",
@@ -306,13 +306,13 @@ export default function ButsudanGuidePage() {
                   </tr>
                   <tr className="border-b border-[#DEDAD2]">
                     <td className="px-4 py-3 font-medium text-[#1F2420]">配送方法</td>
-                    <td className="px-4 py-3 text-center">ポスト投函</td>
-                    <td className="px-4 py-3 text-center">ポスト投函</td>
+                    <td className="px-4 py-3 text-center">ポスト投函（ベーシックプランは手渡し）</td>
+                    <td className="px-4 py-3 text-center">ポスト投函（Mini・Lite）／手渡し（Lite・Lite+・Basic）</td>
                     <td className="px-4 py-3 text-center">自社配達便・宅配便（2026年10月27日公式確認）</td>
                   </tr>
                   <tr className="border-b border-[#DEDAD2] bg-[#F6F4EF]">
                     <td className="px-4 py-3 font-medium text-[#1F2420]">配送頻度</td>
-                    <td className="px-4 py-3 text-center">毎週/隔週</td>
+                    <td className="px-4 py-3 text-center">最初の4回は毎週、その後は毎週/隔週</td>
                     <td className="px-4 py-3 text-center">毎週/隔週</td>
                     <td className="px-4 py-3 text-center">月3回（切り花）・月1〜2回・毎週/隔週などコースにより異なる（2026年10月17日公式確認）</td>
                   </tr>
@@ -350,7 +350,7 @@ export default function ButsudanGuidePage() {
                     bloomeeは公式サイトで「お花のお届け実績3,000万本以上（自社調べ）」と表記している花のサブスクです。お試しプランは980円からと手頃な価格で、ポスト投函で届くため不在時でも受け取れます。季節の花が届きます（最初の4回は受け取りが必要です）。
                   </p>
                   <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
-                    仏花として利用する場合、届く花は花屋がアレンジしたものであるため、菊やカーネーションなど仏花に適した花が含まれることもあります。ただし仏花専用のコースはないため、届いた花から仏花に適したものを選んでお供えする形になります。ポスト投函の手軽さを重視する方におすすめです。
+                    仏花として利用する場合、届く花は花屋がアレンジしたものであるため、菊やカーネーションなど仏花に適した花が含まれることもあります。仏花専用のコースはありませんが、bloomeeは一般的な仏花（菊など）に限らず季節の花を織り交ぜたブーケが届き、お供えにも利用されていると案内しています（2026年10月30日公式確認）。届いた花から仏花に適したものを選んでお供えする形になります。ポスト投函の手軽さを重視する方におすすめです。
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">お試しプラン980円/回</span>
@@ -377,16 +377,16 @@ export default function ButsudanGuidePage() {
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-white text-[#2F5B43] text-sm font-bold">2</span>
                     <div>
                       <h3 className="text-base font-bold text-[#1F2420]">medelu（メデル）</h3>
-                      <p className="text-xs text-[#4A4F49]">送料無料・748円からの低価格。NATURAL/ANYROOMコースが仏花に適しています</p>
+                      <p className="text-xs text-[#4A4F49]">送料無料・748円からの低価格。NATURALコースは色味の優しいブーケ（公式の案内）</p>
                     </div>
                   </div>
                 </div>
                 <div className="p-5">
                   <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
-                    medeluは、生産者と市場から直接仕入れた花を届けるサービスです（2026年10月21日公式確認）。748円から・送料無料で利用できます。仏花として利用する場合は、特に「ANYROOMコース」と「NATURALコース」をおすすめします。
+                    medeluは、生産者と市場から直接仕入れた花を届けるサービスです（2026年10月21日公式確認）。748円から・送料無料で利用できます。仏花専用のコースはないため、届いた花から仏花に適したものを選んでお供えする形になります。
                   </p>
                   <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
-                    ANYROOMコースは、どんなインテリアにもなじむ色とりどりの花が届きます（2026年10月17日公式確認）。NATURALコースはナチュラルな雰囲気の花が中心で、仏壇に飾っても違和感のない上品な花が届きます。生産者と市場から直接仕入れた花を届けると案内しています（2026年10月21日公式確認）。回数の条件がないため、試しに始めやすいサービスです。
+                    ANYROOMコースは、どんなインテリアにもなじむ色とりどりの花が届きます（2026年10月17日公式確認）。NATURALコースは「自然色に馴染む色味の優しいブーケ」が届くと案内されています（2026年10月30日公式確認）。生産者と市場から直接仕入れた花を届けると案内しています（2026年10月21日公式確認）。公式サイトに最低利用回数の記載はありません。
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="text-xs bg-[#EDF1EC] text-[#2F5B43] px-3 py-1 rounded-md">748円/回〜</span>
@@ -539,7 +539,7 @@ export default function ButsudanGuidePage() {
               仏花の定期便を利用すると、忙しい日々の中でも仏壇に常に新鮮な花をお供えできます。花屋に行く手間が省けるほか、専門家が選んだ旬の花が届くため、普段は選ばない花に出会える点も定期便の利点です。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              当サイトが仏花としておすすめするのは、送料無料で748円からと手頃な<strong>medelu</strong>のNATURAL/ANYROOMコースです。生産者と市場から直接仕入れた落ち着いた色合いの花が届きます。回数の条件もないため、試しに始めることができます。
+              当サイトが仏花としておすすめするのは、送料無料で748円からと手頃な<strong>medelu</strong>のNATURAL/ANYROOMコースです。NATURALコースは色味の優しいブーケが届くと案内されています（2026年10月30日公式確認）。公式サイトに最低利用回数の記載はありません。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               仏花を定期的に受け取りたい方には<strong>花の定期便（日本総合園芸）</strong>、手軽さを重視する方には<strong>bloomee</strong>のポスト投函をおすすめします。ご自身の生活に合ったサービスをお選びください。
@@ -605,7 +605,7 @@ export default function ButsudanGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
+              掲載情報は2026年10月30日時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>

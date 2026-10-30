@@ -12,7 +12,7 @@ const faqItems = [
   },
   {
     q: "届く花の種類や色は選べますか？",
-    a: "多くの自治体の花の定期便では、届く花の種類や色を指定することはできません。地元で栽培された旬の花が選ばれて届くのが一般的です。ただし、一部の自治体では「バラ中心」「季節の花束」など、大まかなテーマを選べる場合があります。",
+    a: "届く花の種類や色を指定できるかは、返礼品ごとに異なります。申し込み前に各返礼品のページでご確認ください。",
   },
   {
     q: "ふるさと納税の花の定期便はいつ届きますか？",
@@ -20,7 +20,7 @@ const faqItems = [
   },
   {
     q: "通常の花のサブスクとふるさと納税の花の定期便では、どちらがお得ですか？",
-    a: "税控除を受けられるため、ふるさと納税のほうが実質的な負担は少なくなります。ただし、ふるさと納税には年間の控除上限額があり、花の種類やアレンジの自由度は通常のサブスクのほうが高くなります。両方を併用し、ふるさと納税で季節の花を楽しみながら、通常のサブスクで好みの花を補う方法もあります。",
+    a: "税控除を受けられるため、ふるさと納税のほうが実質的な負担は少なくなります。ただし、ふるさと納税には年間の控除上限額があり、通常のサブスクは、スキップや解約の時期を利用者が調整できます。両方を併用し、ふるさと納税で季節の花を楽しみながら、通常のサブスクで好みの花を補う方法もあります。",
   },
   {
     q: "ふるさと納税の花の定期便は、どのように探せばよいですか？",
@@ -37,9 +37,9 @@ export default function FurusatoNouzeiGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"ふるさと納税で選ぶ花の定期便\",\"item\":\"https://ohana-delivery.com/guides/furusato-nouzei/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"ふるさと納税で選ぶ花の定期便\",\"description\":\"ふるさと納税で選ぶ花の定期便の仕組み・選び方・おすすめ自治体を解説しています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-24T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/furusato-nouzei/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"ふるさと納税で選ぶ花の定期便\",\"description\":\"ふるさと納税で選ぶ花の定期便の仕組み・選び方・おすすめ自治体を解説しています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/furusato-nouzei/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便は確定申告が必要ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ワンストップ特例制度を利用する場合、確定申告は不要です。寄付先が5自治体以内であれば、各自治体に申請書を送付することで手続きが完了します。6自治体以上に寄付する場合や、もともと確定申告が必要な方（自営業の方など）は、確定申告で寄付金控除を申請してください。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類や色は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くの自治体の花の定期便では、届く花の種類や色を指定することはできません。地元で栽培された旬の花が選ばれて届くのが一般的です。ただし、一部の自治体では「バラ中心」「季節の花束」など、大まかなテーマを選べる場合があります。\"}},{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便はいつ届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届く時期と間隔は自治体と返礼品ごとに異なります。配送スケジュールは各自治体の返礼品ページに記載されているため、事前にご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"通常の花のサブスクとふるさと納税の花の定期便では、どちらがお得ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"税控除を受けられるため、ふるさと納税のほうが実質的な負担は少なくなります。ただし、ふるさと納税には年間の控除上限額があり、花の種類やアレンジの自由度は通常のサブスクのほうが高くなります。両方を併用し、ふるさと納税で季節の花を楽しみながら、通常のサブスクで好みの花を補う方法もあります。\"}},{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便は、どのように探せばよいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイトでは、自治体の人気の順位や特定の返礼品は掲載していません。各ふるさと納税ポータルサイトで「花 定期便」と検索すると、最新の返礼品・寄付金額・届く回数を確認できます。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便は確定申告が必要ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ワンストップ特例制度を利用する場合、確定申告は不要です。寄付先が5自治体以内であれば、各自治体に申請書を送付することで手続きが完了します。6自治体以上に寄付する場合や、もともと確定申告が必要な方（自営業の方など）は、確定申告で寄付金控除を申請してください。\"}},{\"@type\":\"Question\",\"name\":\"届く花の種類や色は選べますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届く花の種類や色を指定できるかは、返礼品ごとに異なります。申し込み前に各返礼品のページでご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便はいつ届きますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届く時期と間隔は自治体と返礼品ごとに異なります。配送スケジュールは各自治体の返礼品ページに記載されているため、事前にご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"通常の花のサブスクとふるさと納税の花の定期便では、どちらがお得ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"税控除を受けられるため、ふるさと納税のほうが実質的な負担は少なくなります。ただし、ふるさと納税には年間の控除上限額があり、通常のサブスクは、スキップや解約の時期を利用者が調整できます。両方を併用し、ふるさと納税で季節の花を楽しみながら、通常のサブスクで好みの花を補う方法もあります。\"}},{\"@type\":\"Question\",\"name\":\"ふるさと納税の花の定期便は、どのように探せばよいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイトでは、自治体の人気の順位や特定の返礼品は掲載していません。各ふるさと納税ポータルサイトで「花 定期便」と検索すると、最新の返礼品・寄付金額・届く回数を確認できます。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -84,13 +84,13 @@ export default function FurusatoNouzeiGuidePage() {
               ふるさと納税で花の定期便を受け取る仕組み
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
-              ふるさと納税は、任意の自治体に寄付をすると、寄付額から2,000円を差し引いた金額が翌年の住民税・所得税から控除される制度です。返礼品として花の定期便を選ぶと、<strong>実質2,000円の自己負担</strong>で数か月間、定期的にお花が届きます。
+              ふるさと納税は、任意の自治体に寄付をすると、寄付額のうち2,000円を超える部分が、所得税と住民税から原則として全額控除される制度です（控除上限額あり。総務省ふるさと納税ポータルサイト・2026年10月30日確認）。返礼品として花の定期便を選ぶと、<strong>実質2,000円の自己負担</strong>で数か月間、定期的にお花が届きます。
             </p>
             <div className="space-y-4">
               {[
                 { step: "STEP 1", title: "控除上限額を確認する", text: "ふるさと納税ポータルサイト（楽天ふるさと納税、さとふる、ふるなび等）のシミュレーターで、ご自身の年収や家族構成にもとづく控除上限額をご確認ください。上限額を超えた分は自己負担となるため、ご注意ください。" },
                 { step: "STEP 2", title: "花の定期便の返礼品を選ぶ", text: "ポータルサイトで「花 定期便」「お花 サブスク」などのキーワードで検索します。寄付金額・届く回数・配送時期・花の種類は返礼品ごとに異なるため、各自治体の返礼品ページでご確認ください。" },
-                { step: "STEP 3", title: "寄付を申し込む", text: "通常のネットショッピングと同様の手順で申し込めます。ワンストップ特例制度を利用する場合は、申請書を忘れずに提出してください。寄付後1〜2か月で初回のお花が届きます。" },
+                { step: "STEP 3", title: "寄付を申し込む", text: "通常のネットショッピングと同様の手順で申し込めます。ワンストップ特例制度を利用する場合は、申請書を忘れずに提出してください。初回のお届け時期は返礼品ごとに異なります。" },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
                   <div className="bg-[#2F5B43] text-white text-xs font-bold rounded-lg px-2.5 py-1 shrink-0">{item.step}</div>
@@ -127,7 +127,6 @@ export default function FurusatoNouzeiGuidePage() {
                 <h3 className="text-base font-bold text-[#1F2420] mb-3">メリット</h3>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
                   <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">・</span>実質2,000円で数か月間花が届く</li>
-                  <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">・</span>産地直送で鮮度が高い</li>
                   <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">・</span>地域の花き農家を応援できる</li>
                   <li className="flex items-start gap-2"><span className="text-[#2F5B43] shrink-0">・</span>通常のサブスクと併用可能</li>
                 </ul>
@@ -135,10 +134,10 @@ export default function FurusatoNouzeiGuidePage() {
               <div className="bg-[#F7F1EC] rounded-md p-5 border border-[#D9BFB1]">
                 <h3 className="text-base font-bold text-[#1F2420] mb-3">デメリット</h3>
                 <ul className="text-sm text-[#4A4F49] space-y-2">
-                  <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>花の種類や色を選べない</li>
-                  <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>配送タイミングを自由に変更できない</li>
+                  <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>花の種類・色・配送時期は返礼品ごとに決まっている</li>
+                  <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>スキップや一時停止ができるかは返礼品によって異なる</li>
                   <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>控除上限額を超えると自己負担が増える</li>
-                  <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>届くまで1〜2か月かかる場合がある</li>
+                  <li className="flex items-start gap-2"><span className="text-[#B0694F] shrink-0">&#10005;</span>初回のお届け時期は返礼品ごとに異なる</li>
                 </ul>
               </div>
             </div>
@@ -181,10 +180,10 @@ export default function FurusatoNouzeiGuidePage() {
               ふるさと納税で花のある暮らしをお得に始められます
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              ふるさと納税の花の定期便は、<strong>実質2,000円で数か月間お花が届く</strong>方法です。産地直送の新鮮な花を楽しみながら、地域の花き農家を応援できる点も利点です。
+              ふるさと納税の花の定期便は、<strong>実質2,000円で数か月間お花が届く</strong>方法です。自治体の返礼品として季節の花を受け取れます。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              ふるさと納税の花は届く時期や種類を選べないため、自由度の高い花のサブスクとの併用もおすすめします。まずはふるさと納税で花のある暮らしを体験し、継続したい場合は通常のサブスクもご検討ください。
+              返礼品によっては届く時期や種類を選べないため、自由度の高い花のサブスクとの併用もおすすめします。まずはふるさと納税で花のある暮らしを体験し、継続したい場合は通常のサブスクもご検討ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a href="/services/medelu" className="inline-block bg-[#2F5B43] text-white font-bold text-base px-8 py-4 rounded-md hover:bg-[#234534] transition-colors">
@@ -218,7 +217,7 @@ export default function FurusatoNouzeiGuidePage() {
           </div>
           <div className="border-t border-gray-600 pt-6 text-center">
             <p className="text-xs text-gray-500">当サイトはアフィリエイトプログラムに参加しています。リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。</p>
-            <p className="text-xs text-gray-500 mt-2">掲載情報は2026年4月時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。</p>
+            <p className="text-xs text-gray-500 mt-2">掲載情報は2026年10月30日時点のものです。最新の料金・サービス内容は各公式サイトでご確認ください。</p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>
               <a href="/privacy-policy" className="hover:text-white transition-colors">プライバシーポリシー</a>

@@ -12,7 +12,7 @@ const faqItems = [
   },
   {
     q: "やめる前にスキップ機能で様子を見ることはできますか？",
-    a: "多くのサービスがスキップ（配送停止）機能を提供しています。medeluは次回配送のスキップが可能で、bloomeeもマイページからスキップできます。「しばらく休みたいが、解約するかは迷っている」という場合は、スキップ機能を活用して様子を見ることをおすすめします。",
+    a: "多くのサービスがスキップ（配送停止）機能を提供しています。medeluは3回先までのスキップと一時休止が、bloomeeは週ごとのスキップ（お休み）がマイページからできます（2026年10月30日公式確認）。「しばらく休みたいが、解約するかは迷っている」という場合は、スキップ機能を活用して様子を見ることをおすすめします。",
   },
   {
     q: "花のサブスクの代わりになるものはありますか？",
@@ -20,7 +20,7 @@ const faqItems = [
   },
   {
     q: "花のサブスクを続けるメリットは何ですか？",
-    a: "定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花に出会えること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。継続割引があるサービスもあり、長く続けるほど割安になる場合があります。",
+    a: "定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花に出会えること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。",
   },
 ];
 
@@ -33,15 +33,15 @@ export default function YametaGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクをやめた人の理由と対処法\",\"item\":\"https://ohana-delivery.com/guides/yameta/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクをやめた人の理由と対処法\",\"description\":\"花のサブスクをやめた方の理由と対処法を解説します。料金・評判・選び方もあわせて説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-28T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/yameta/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクをやめた人の理由と対処法\",\"description\":\"花のサブスクをやめた方の理由と対処法を解説します。料金・評判・選び方もあわせて説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/yameta/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた後、また再開できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ほとんどのサービスで再開できます。解約後に改めて申し込めば再開できます。なお、AND PLANTSの初回500円OFFクーポンは、初めてお花の定期便を契約する方が対象です（2026年10月28日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"やめる前にスキップ機能で様子を見ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスがスキップ（配送停止）機能を提供しています。medeluは次回配送のスキップが可能で、bloomeeもマイページからスキップできます。「しばらく休みたいが、解約するかは迷っている」という場合は、スキップ機能を活用して様子を見ることをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"生花以外の選択肢として、ドライフラワーの定期便、観葉植物の購入（AND PLANTSでは観葉植物を単品で販売しています）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を購入する方法も、自分のペースで花を楽しめるためおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクを続けるメリットは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花に出会えること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。継続割引があるサービスもあり、長く続けるほど割安になる場合があります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた後、また再開できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、ほとんどのサービスで再開できます。解約後に改めて申し込めば再開できます。なお、AND PLANTSの初回500円OFFクーポンは、初めてお花の定期便を契約する方が対象です（2026年10月28日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"やめる前にスキップ機能で様子を見ることはできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"多くのサービスがスキップ（配送停止）機能を提供しています。medeluは3回先までのスキップと一時休止が、bloomeeは週ごとのスキップ（お休み）がマイページからできます（2026年10月30日公式確認）。「しばらく休みたいが、解約するかは迷っている」という場合は、スキップ機能を活用して様子を見ることをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"生花以外の選択肢として、ドライフラワーの定期便、観葉植物の購入（AND PLANTSでは観葉植物を単品で販売しています）、造花・アーティフィシャルフラワーがあります。また、近所のスーパーや直売所で季節の花を購入する方法も、自分のペースで花を楽しめるためおすすめです。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクを続けるメリットは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"定期的に届くことで花を飾る習慣が身につき、部屋の雰囲気が明るくなります。自分では選ばない花に出会えること、花屋に行く時間を節約できること、季節の移り変わりを感じられることが主なメリットです。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
       {/* ─── Head (SEO) ─── */}
       <title>花のサブスクをやめた理由5選｜続けるかどうかの判断基準【2026年】</title>
-      <meta name="description" content="当サイトでは、花のサブスクをやめた方に多い理由5つを解説します。飽きた、費用に見合わない、花が好みに合わないといった利用者の声と、継続をおすすめする方・解約を検討すべき方の判断基準をご紹介します。" />
+      <meta name="description" content="当サイトでは、花のサブスクをやめる理由として考えられる5つ（飽きた、費用に見合わない、花が好みに合わない等）と対策、継続をおすすめする方・解約を検討すべき方の判断基準をご紹介します。" />
 
       <main className="flex-1">
         {/* ─── Breadcrumbs ─── */}
@@ -69,7 +69,7 @@ export default function YametaGuidePage() {
             </h1>
             <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               「花のサブスク やめた」「お花の定期便 やめた理由」で検索された方に向けて、
-              当サイトではよくあるやめた理由を分析し、継続するか解約するかの判断基準を解説します。
+              当サイトでは考えられるやめた理由と対策を整理し、継続するか解約するかの判断基準を解説します。
             </p>
           </div>
         </PageHero>
@@ -97,7 +97,7 @@ export default function YametaGuidePage() {
               花のサブスクをやめた理由5選
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
-              SNSや口コミサイトに寄せられた「やめた理由」を分析すると、大きく5つのパターンに分けられます。いずれも、<strong>期待と実際の内容との差</strong>が原因であることが多いのが共通点です。
+              やめた理由を集計した公的なデータは見当たらないため、当サイトでは割合は示していません。考えられる理由を5つに分けて、それぞれの対策をご説明します。共通するのは<strong>期待と実際の内容との差</strong>です。
             </p>
 
             <div className="space-y-4">
@@ -105,12 +105,12 @@ export default function YametaGuidePage() {
                 {
                   num: "1",
                   title: "届く花に飽きてしまった",
-                  text: "毎回似たような花が届くと、変化が乏しく感じられることがあります。特に同じサービスを半年以上続けると、季節の花が一巡し、以前と同じ印象を受けやすくなります。対策としては、別のサービスに乗り換える、上位プランに変更して花の種類を増やすなどの方法があります。",
+                  text: "毎回似たような花が届くと、変化が乏しく感じられることがあります。対策としては、別のサービスに乗り換える、上位プランに変更して花の種類を増やすなどの方法があります。",
                 },
                 {
                   num: "2",
                   title: "費用に見合わないと感じた",
-                  text: "「スーパーで花を買ったほうが安い」「花屋のほうがボリュームがある」という不満は多く見られます。スーパーや花屋の切り花は、好みの花を必要な分だけ選んで購入できます。ただし、サブスクには自宅に届く利便性、フローリストによるアレンジ、季節の花に出会えるという付加価値があります。",
+                  text: "「スーパーで花を買ったほうが安い」「花屋のほうがボリュームがある」と感じる場合があります。スーパーや花屋の切り花は、好みの花を必要な分だけ選んで購入できます。ただし、サブスクには自宅に届く利便性、フローリストによるアレンジ、季節の花に出会えるという付加価値があります。",
                 },
                 {
                   num: "3",
@@ -125,7 +125,7 @@ export default function YametaGuidePage() {
                 {
                   num: "5",
                   title: "忙しくてお手入れができない",
-                  text: "花の水替えや花瓶の洗浄など、日々のお手入れを負担に感じる方もいます。仕事や育児で忙しい場合、届いた花を飾る時間を確保できないこともあります。配送頻度を隔週や月1回に変更する、お手入れが容易な茎の強い花が届くサービスを選ぶ、ドライフラワーに切り替えるなどの方法で解決できる場合があります。",
+                  text: "花の水替えや花瓶の洗浄など、日々のお手入れを負担に感じる方もいます。仕事や育児で忙しい場合、届いた花を飾る時間を確保できないこともあります。配送頻度を隔週や月1回に変更する、ドライフラワーに切り替えるなどの方法で解決できる場合があります。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0]">
@@ -206,7 +206,7 @@ export default function YametaGuidePage() {
                 {
                   num: "2",
                   title: "観葉植物を取り入れる",
-                  text: "観葉植物を購入して育てる方法です。AND PLANTSでは観葉植物を単品で販売しており、品種ごとのケアカードが同梱されます（2026年10月28日公式確認）。植物のある暮らしを楽しみたい方に適しています。",
+                  text: "観葉植物を購入して育てる方法です。AND PLANTSでは観葉植物を単品で販売しており、返品・交換規定では、ケアカードに従って管理していたが枯れてしまった場合も到着後2週間以内の対応対象としています（2026年10月30日公式確認）。植物のある暮らしを楽しみたい方に適しています。",
                 },
                 {
                   num: "3",
@@ -292,7 +292,7 @@ export default function YametaGuidePage() {
               </table>
             </div>
             <p className="text-xs text-[#6B6F6A] mt-4">
-              ※ 2026年5月時点の各社公式情報にもとづいています。ご利用前に、公式サイトにて最新情報をご確認ください。
+              ※ 2026年10月30日時点の各社公式情報にもとづいています。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <p className="text-sm text-[#4A4F49] mt-6 leading-relaxed">
               表のとおり、いつでも解約できることを重視する場合は、<a href="/services/medelu" className="text-[#2F5B43] underline">medelu</a>が適しています。bloomeeには初回4回の最低受け取り回数があるため、試しに始める場合はまずmedeluを利用し、継続を決めた段階でbloomeeに乗り換える方法をおすすめします。
@@ -307,7 +307,7 @@ export default function YametaGuidePage() {
               解約の前にサービスの見直しをご検討ください
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花のサブスクをやめたいと感じる理由の多くは、<strong>プランやサービスの選び直し</strong>で解決できる可能性があります。飽きた場合は別のサービスへの乗り換え、費用に不満がある場合はmedeluのような送料無料のサービス、花が好みに合わない場合はHitoHanaのような色を選べるサービスをご検討ください。
+              花のサブスクをやめたいと感じる理由によっては、<strong>プランやサービスの選び直し</strong>で解決できる可能性があります。飽きた場合は別のサービスへの乗り換え、費用に不満がある場合はmedeluのような送料無料のサービス、花が好みに合わない場合はHitoHanaのような色を選べるサービスをご検討ください。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               それでも満足できない場合は、無理に続ける必要はありません。スーパーで花を選ぶ、観葉植物に切り替えるなど、ご自身に合った方法で花のある暮らしをお楽しみください。
@@ -344,7 +344,7 @@ export default function YametaGuidePage() {
           </div>
           <div className="border-t border-gray-600 pt-6 text-center">
             <p className="text-xs text-gray-500">当サイトはアフィリエイトプログラムに参加しています。リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。</p>
-            <p className="text-xs text-gray-500 mt-2">掲載情報は2026年4月時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。</p>
+            <p className="text-xs text-gray-500 mt-2">掲載情報は2026年10月30日時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。</p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>
               <a href="/privacy-policy" className="hover:text-white transition-colors">プライバシーポリシー</a>

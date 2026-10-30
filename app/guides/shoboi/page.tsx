@@ -16,11 +16,11 @@ const faqItems = [
   },
   {
     q: "届いた花がすぐ枯れてしまいます。対処法はありますか？",
-    a: "花が届いたら、すぐに水切り（水中で茎を斜めに切ること）を行い、切り花延命剤を入れた新しい水に生けてください。夏場はこまめな水替え（毎日が理想です）が必要です。また、直射日光やエアコンの風が直接当たる場所を避けることで、花持ちが大きく改善します。クール便に対応したサービスを選ぶことも有効です。",
+    a: "花が届いたら、すぐに水切り（水中で茎を斜めに切ること）を行い、切り花延命剤を入れた新しい水に生けてください。夏場はこまめな水替え（毎日が理想です）が必要です。また、直射日光やエアコンの風が直接当たる場所を避けることで、花が傷みにくくなります。夏季はクール便を選べるサービス（AND PLANTSはクール便オプション1回550円、2026年10月30日公式確認）を利用する方法もあります。",
   },
   {
     q: "ボリュームに満足できるおすすめのサービスはどれですか？",
-    a: "ボリュームを重視する場合はAND PLANTS（6〜8本（2026年10月17日公式確認）、送料無料）、価格を重視する場合はmedelu（748円〜、送料無料）、鮮度を重視する場合はLIFFT（提携農園から直送（2026年10月17日公式確認）、スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認））をおすすめします。いずれも品質保証制度があり、花が傷んでいた場合にも対応を受けられます。",
+    a: "ボリュームを重視する場合はAND PLANTS（6〜8本（2026年10月17日公式確認）、送料無料）、価格を重視する場合はmedelu（748円〜、送料無料）、鮮度を重視する場合はLIFFT（提携農園から直送（2026年10月17日公式確認）、スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認））をおすすめします。AND PLANTSは到着後1日以内の連絡で無料交換、medeluは到着当日中の写真送付で返金（交換なし）と案内しています（2026年10月30日公式確認）。LIFFTの定期便ページには品質保証の記載はありません（2026年10月30日確認）。",
   },
   {
     q: "品質保証制度とは何ですか？",
@@ -28,7 +28,7 @@ const faqItems = [
   },
   {
     q: "花のサブスクをやめた人が多いのはなぜですか？",
-    a: "主な理由は「期待とのギャップ」「花のお手入れの手間」「価格に対する不満」の3点です。特に、最安プランで始めた方が本数の少なさに物足りなさを感じるケースが多く見られます。事前にプラン内容を確認し、お手入れ方法を理解したうえで始めると、継続しやすくなります。",
+    a: "やめた理由を集計した公的なデータは見当たらないため、当サイトでは理由の割合は示していません。届く本数は料金によって異なるため（例：medelu Mini 3〜4本、AND PLANTSスタンダード 6〜8本、2026年10月30日公式確認）、事前にプラン内容を確認し、お手入れ方法を理解したうえで始めることをおすすめします。事前にプラン内容を確認し、お手入れ方法を理解したうえで始めると、継続しやすくなります。",
   },
 ];
 
@@ -41,9 +41,9 @@ export default function ShoboboiGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクが「しょぼい」と言われる理由\",\"item\":\"https://ohana-delivery.com/guides/shoboi/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクが「しょぼい」と言われる理由\",\"description\":\"花のサブスクが「しょぼい」と言われる理由について、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-28T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/shoboi/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクが「しょぼい」と言われる理由\",\"description\":\"花のサブスクが「しょぼい」と言われる理由について、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/shoboi/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは本当にしょぼいのですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"「しょぼい」と感じるかどうかは、選ぶプランによって大きく異なります。当サイト掲載サービスでは、medeluのMini（748円）が3〜4本、bloomeeのお試しプラン（980円＋送料385円）が4本以上、AND PLANTSのスタンダード（1,980円）が6〜8本、ラージ（4,980円）が14〜18本です（bloomee・AND PLANTSは2026年10月24日、medeluは10月23日公式確認）。品質保証制度の有無もあわせて確認することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"届いた花がすぐ枯れてしまいます。対処法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花が届いたら、すぐに水切り（水中で茎を斜めに切ること）を行い、切り花延命剤を入れた新しい水に生けてください。夏場はこまめな水替え（毎日が理想です）が必要です。また、直射日光やエアコンの風が直接当たる場所を避けることで、花持ちが大きく改善します。クール便に対応したサービスを選ぶことも有効です。\"}},{\"@type\":\"Question\",\"name\":\"ボリュームに満足できるおすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ボリュームを重視する場合はAND PLANTS（6〜8本（2026年10月17日公式確認）、送料無料）、価格を重視する場合はmedelu（748円〜、送料無料）、鮮度を重視する場合はLIFFT（提携農園から直送（2026年10月17日公式確認）、スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認））をおすすめします。いずれも品質保証制度があり、花が傷んでいた場合にも対応を受けられます。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いた花が傷んでいた場合に、無料で再送または返金を受けられる制度です。bloomee、medelu、AND PLANTSなど主要サービスの多くが導入しています。申請の方法と期限はサービスごとに異なります。AND PLANTSの定期便は、到着後1日以内に連絡すると無料で交換します（2026年10月28日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた人が多いのはなぜですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"主な理由は「期待とのギャップ」「花のお手入れの手間」「価格に対する不満」の3点です。特に、最安プランで始めた方が本数の少なさに物足りなさを感じるケースが多く見られます。事前にプラン内容を確認し、お手入れ方法を理解したうえで始めると、継続しやすくなります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは本当にしょぼいのですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"「しょぼい」と感じるかどうかは、選ぶプランによって大きく異なります。当サイト掲載サービスでは、medeluのMini（748円）が3〜4本、bloomeeのお試しプラン（980円＋送料385円）が4本以上、AND PLANTSのスタンダード（1,980円）が6〜8本、ラージ（4,980円）が14〜18本です（bloomee・AND PLANTSは2026年10月24日、medeluは10月23日公式確認）。品質保証制度の有無もあわせて確認することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"届いた花がすぐ枯れてしまいます。対処法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花が届いたら、すぐに水切り（水中で茎を斜めに切ること）を行い、切り花延命剤を入れた新しい水に生けてください。夏場はこまめな水替え（毎日が理想です）が必要です。また、直射日光やエアコンの風が直接当たる場所を避けることで、花が傷みにくくなります。夏季はクール便を選べるサービス（AND PLANTSはクール便オプション1回550円、2026年10月30日公式確認）を利用する方法もあります。\"}},{\"@type\":\"Question\",\"name\":\"ボリュームに満足できるおすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ボリュームを重視する場合はAND PLANTS（6〜8本（2026年10月17日公式確認）、送料無料）、価格を重視する場合はmedelu（748円〜、送料無料）、鮮度を重視する場合はLIFFT（提携農園から直送（2026年10月17日公式確認）、スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認））をおすすめします。AND PLANTSは到着後1日以内の連絡で無料交換、medeluは到着当日中の写真送付で返金（交換なし）と案内しています（2026年10月30日公式確認）。LIFFTの定期便ページには品質保証の記載はありません（2026年10月30日確認）。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いた花が傷んでいた場合に、無料で再送または返金を受けられる制度です。bloomee、medelu、AND PLANTSなど主要サービスの多くが導入しています。申請の方法と期限はサービスごとに異なります。AND PLANTSの定期便は、到着後1日以内に連絡すると無料で交換します（2026年10月28日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた人が多いのはなぜですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"やめた理由を集計した公的なデータは見当たらないため、当サイトでは理由の割合は示していません。届く本数は料金によって異なるため（例：medelu Mini 3〜4本、AND PLANTSスタンダード 6〜8本、2026年10月30日公式確認）、事前にプラン内容を確認し、お手入れ方法を理解したうえで始めることをおすすめします。事前にプラン内容を確認し、お手入れ方法を理解したうえで始めると、継続しやすくなります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -85,7 +85,7 @@ export default function ShoboboiGuidePage() {
             </h1>
             <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
               当サイトでは、花のサブスク（お花の定期便）が「しょぼい」「ひどい」と評価される背景を整理し、
-              満足度の高いサービスを選ぶためのポイントを解説します。
+              プランを選ぶ際の確認事項を解説します。
             </p>
           </div>
         </PageHero>
@@ -114,26 +114,26 @@ export default function ShoboboiGuidePage() {
               「しょぼい」と言われる3つの理由
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
-              花のサブスクを「しょぼい」「ひどい」と感じる方には、共通する傾向があります。多くの場合、原因はサービスの品質そのものではなく、<strong>事前の期待とのギャップ</strong>にあります。
+              「しょぼい」「ひどい」と感じる理由として、<strong>事前の期待とのギャップ</strong>が考えられます。満足度を比べた公的なデータは見当たらないため、当サイトでは割合は示していません。
             </p>
 
             <div className="space-y-4">
               <div className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0]">
                 <h3 className="text-sm font-bold text-[#1F2420] mb-2">理由1：花屋の花束を想定している</h3>
                 <p className="text-sm text-[#4A4F49] leading-relaxed">
-                  花屋で2,000〜3,000円の花束を購入すると、相応のボリュームがあります。一方、花のサブスクの最安プラン（500〜1,000円）で届くのは3〜4本程度です。花屋の花束と同等のボリュームを想定していると、「しょぼい」と感じやすくなります。ポスト投函に対応したサービスは箱のサイズに制限があるため、本数が限られるのは構造上の制約によるものです。
+                  花のサブスクの最安クラスのプランで届く本数は、タスハナ +act（660円＋送料330円）が3本以上、medelu Mini（748円）が3〜4本、bloomeeお試し（980円＋送料385円）が4本以上です（2026年10月30日公式確認）。花屋の花束と同等のボリュームを想定していると、「しょぼい」と感じやすくなります。ポスト投函に対応したサービスは箱のサイズに制限があるため、本数が限られるのは構造上の制約によるものです。
                 </p>
               </div>
               <div className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0]">
                 <h3 className="text-sm font-bold text-[#1F2420] mb-2">理由2：SNSに投稿された写真との差</h3>
                 <p className="text-sm text-[#4A4F49] leading-relaxed">
-                  InstagramやXで見かける花のサブスクの写真は、上位プランのものや、プロが撮影したものであることが多くあります。そのため、最安プランで届く花と比較するとギャップが生じます。また、写真では花瓶やテーブルコーディネートも見栄えに影響しています。実際に届く花の雰囲気を確認したい場合は、一般利用者の投稿を参考にすることをおすすめします。
+                  InstagramやXで見かける花のサブスクの写真は、上位プランのものや、撮影用に整えたものの場合があり、最安プランで届く花と比較するとギャップが生じることがあります。また、写真では花瓶やテーブルコーディネートも見栄えに影響しています。実際に届く花の雰囲気を確認したい場合は、一般利用者の投稿を参考にすることをおすすめします。
                 </p>
               </div>
               <div className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0]">
                 <h3 className="text-sm font-bold text-[#1F2420] mb-2">理由3：季節や時期による品質の差</h3>
                 <p className="text-sm text-[#4A4F49] leading-relaxed">
-                  生花は季節の影響を受けます。特に夏場（7〜8月）は輸送中の温度上昇により花が傷みやすく、「届いた時点でしおれていた」という不満が増える時期です。一方、春（3〜5月）や秋（9〜11月）は花の種類が豊富で、品質も安定しています。季節によって届く花の印象が大きく変わることを事前に理解しておくと、期待とのギャップを抑えられます。
+                  生花は季節の影響を受けます。夏場は輸送中や屋外ポストの温度上昇で花が傷みやすく、medeluは日当たりのよい屋外ポストの場合、夏季は手渡しへの変更や早めの回収を案内しています。AND PLANTSは夏季（6〜9月）に生花をクール便で配送しています（いずれも2026年10月30日公式確認）。季節によって届く花の印象が大きく変わることを事前に理解しておくと、期待とのギャップを抑えられます。
                 </p>
               </div>
             </div>
@@ -154,10 +154,10 @@ export default function ShoboboiGuidePage() {
                   <h3 className="text-sm font-bold text-[#1F2420]">「花が少ない・しょぼい」</h3>
                 </div>
                 <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
-                  <strong>原因：</strong>最安プランを選んでいるケースがほとんどです。最安クラスのプラン（1,000円前後）は3〜4本程度で、お試しの位置付けです。1,500円以上のプランを選ぶと、花の本数とバリエーションが大きく増え、満足度も高まります。
+                  <strong>原因：</strong>最安クラスのプラン（1,000円前後）で届くのは3〜4本程度です。上位のプランほど本数の目安は増えます（例：medelu Mini 3〜4本→Basic 6〜9本、2026年10月30日公式確認）。
                 </p>
                 <div className="bg-[#EDF1EC] rounded-lg p-3">
-                  <p className="text-xs text-[#2F5B43] font-medium">解決策：medelu Lite（1,330円/回・5〜6本）やAND PLANTS（1,980円/回・6〜8本（2026年10月17日公式確認））など、中価格帯のプランをおすすめします。いずれも送料無料のため、総額でも割安です。</p>
+                  <p className="text-xs text-[#2F5B43] font-medium">解決策：medelu Lite（1,330円/回・5〜6本）やAND PLANTS（1,980円/回・6〜8本（2026年10月17日公式確認））など、中価格帯のプランをおすすめします。いずれも送料込みの料金です（medeluは北海道・東北のLite以上に遠隔地送料）。</p>
                 </div>
               </div>
 
@@ -167,7 +167,7 @@ export default function ShoboboiGuidePage() {
                   <h3 className="text-sm font-bold text-[#1F2420]">「届いた花がすぐ枯れる」</h3>
                 </div>
                 <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
-                  <strong>原因：</strong>輸送中の環境（特に夏場の高温）と、到着後のお手入れ不足が主な原因です。ポスト投函の場合、ポスト内の温度が40度以上になることもあり、花が傷む要因となります。
+                  <strong>原因：</strong>輸送中の環境（特に夏場の高温）と、到着後のお手入れ不足が主な原因です。ポスト投函の場合、日当たりのよい屋外のポストは内部が高温になり、花が傷む原因になるとmedeluは案内しています（2026年10月30日公式確認）。
                 </p>
                 <div className="bg-[#EDF1EC] rounded-lg p-3">
                   <p className="text-xs text-[#2F5B43] font-medium">解決策：夏場は在宅時に受け取れる宅配便プランを選択してください。到着後はすぐに水切りを行い、延命剤を入れた水に生けてください。</p>
@@ -180,7 +180,7 @@ export default function ShoboboiGuidePage() {
                   <h3 className="text-sm font-bold text-[#1F2420]">「花の種類が選べない」</h3>
                 </div>
                 <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
-                  <strong>原因：</strong>花のサブスクの多くは、プロが旬の花を選ぶ形式です。自分で花を選べない点をデメリットと感じる方もいますが、自分では購入しない花に出会えるというメリットもあります。
+                  <strong>原因：</strong>花のサブスクの多くは、プロが旬の花を選ぶ形式です。bloomee・medelu・hanameku・AND PLANTSはいずれも花の種類を指定できません（2026年10月30日公式確認）。
                 </p>
                 <div className="bg-[#EDF1EC] rounded-lg p-3">
                   <p className="text-xs text-[#2F5B43] font-medium">解決策：色やスタイルを選びたい方には、色指定が可能なHitoHanaをおすすめします。花を自由に選びたい場合は、花屋のオンラインショップで都度購入する方法が適しています。</p>
@@ -197,7 +197,7 @@ export default function ShoboboiGuidePage() {
               費用対効果の高いプラン
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
-              当サイトでは、本数・品質・価格のバランスが取れたプランを選定しました。1本あたりの単価で比較すると、サブスクの価格面での利点がわかります。
+              公式サイトで料金と本数を確認できたプランを、1本あたりの単価で比較しました。
             </p>
 
             <div className="table-wrapper">
@@ -217,7 +217,7 @@ export default function ShoboboiGuidePage() {
                     <td>+act 660円/回</td>
                     <td>3本以上</td>
                     <td>330円</td>
-                    <td className="font-bold text-[#2F5B43]">約330円</td>
+                    <td className="font-bold text-[#2F5B43]">約330円（送料込み）</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#1F2420]">medelu</td>
@@ -319,12 +319,12 @@ export default function ShoboboiGuidePage() {
                 {
                   step: "ポイント 1",
                   title: "品質保証制度を活用する",
-                  text: "届いた花が傷んでいた場合は、品質保証を申請してください。写真を撮影してマイページやLINEから送ることで、再送または返金の対応を受けられます。サービス側も申請内容を品質改善に活用しているため、申請はサービスの向上にもつながります。",
+                  text: "届いた花が傷んでいた場合は、品質保証を申請してください。申請の方法と期限はサービスごとに異なります。bloomeeは品質保証フォームから届いた当日または翌日までに写真を添えて申請し、再送か次回無料を選べます。medeluは到着当日中にマイページの注文履歴から写真を送ると返金されます（いずれも2026年10月30日公式確認）。",
                 },
                 {
                   step: "ポイント 2",
                   title: "季節ごとの花の違いを楽しむ",
-                  text: "春はチューリップやラナンキュラス、夏はひまわりやトルコキキョウ、秋はダリアやコスモス、冬はアネモネやスイートピーなど、季節によって届く花の種類や色合いが変わります。これはサブスクならではの楽しみです。届く花の変化を楽しみながら利用すると、満足度が高まります。",
+                  text: "春はチューリップやラナンキュラス、夏はひまわりやトルコキキョウ、秋はダリアやコスモス、冬はアネモネやスイートピーなど、季節によって届く花の種類や色合いが変わります。届く花の種類は時期や仕入れによって異なります。",
                 },
                 {
                   step: "ポイント 3",
@@ -334,7 +334,7 @@ export default function ShoboboiGuidePage() {
                 {
                   step: "ポイント 4",
                   title: "プランのアップグレードを検討する",
-                  text: "最安プランで物足りなさを感じた場合は、1つ上のプランをご検討ください。数百円の差でも、花の本数やバリエーションが大きく増えます。例えばbloomeeの場合、お試しプラン（花代980円・4本以上・約18〜25cm）からベーシックプラン（花代2,180円・8本以上・約25〜30cm）に変更すると、本数と花の長さが増えます（ベーシックはポスト投函ではなく手渡しです。2026年10月15日 公式確認）。",
+                  text: "最安プランで物足りなさを感じた場合は、1つ上のプランをご検討ください。1つ上のプランでは、本数の目安が増えます。例えばbloomeeの場合、お試しプラン（花代980円・4本以上・約18〜25cm）からベーシックプラン（花代2,180円・8本以上・約25〜30cm）に変更すると、本数と花の長さが増えます（ベーシックはポスト投函ではなく手渡しです。2026年10月15日 公式確認）。",
                 },
                 {
                   step: "ポイント 5",
@@ -402,7 +402,7 @@ export default function ShoboboiGuidePage() {
               「しょぼい」と感じないための口コミ・写真の確認方法
             </h2>
             <p className="text-sm text-[#4A4F49] mb-6">
-              SNSやレビューには「しょぼい」「思ったより少ない」という声が見られますが、多くの場合、原因は<strong>プラン選びのミスマッチ</strong>です。契約前に、以下の5つのポイントで実際の内容を確認することをおすすめします。
+              「しょぼい」と感じる理由の一つに<strong>プラン選びのミスマッチ</strong>が考えられます。契約前に、以下の5つのポイントで実際の内容を確認することをおすすめします。
             </p>
             <div className="space-y-4">
               <div className="border-l-4 border-[#2F5B43] bg-[#F6F4EF] p-5">
@@ -426,7 +426,7 @@ export default function ShoboboiGuidePage() {
               <div className="border-l-4 border-[#2F5B43] bg-[#F6F4EF] p-5">
                 <h3 className="font-bold text-[#1F2420] mb-2">④ 写真の印象と実物のサイズを比較する</h3>
                 <p className="text-sm text-[#4A4F49] leading-relaxed">
-                  公式サイトの花の写真はスタジオで撮影されており、<strong>実物より大きく華やかに見える傾向</strong>があります。一般利用者が自宅の食卓やキッチンで撮影した写真のほうが、実物に近いボリューム感を確認できます。
+                  公式サイトの写真と実物では、撮影環境や花瓶によって印象が異なる場合があります。一般利用者が自宅の食卓やキッチンで撮影した写真のほうが、実物に近いボリューム感を確認できます。
                 </p>
               </div>
               <div className="border-l-4 border-[#2F5B43] bg-[#F6F4EF] p-5">
@@ -446,10 +446,10 @@ export default function ShoboboiGuidePage() {
               プランを適切に選ぶことで花のサブスクの満足度は高まります
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
-              花のサブスクが「しょぼい」と感じられる主な原因は、<strong>プラン選びのミスマッチ</strong>です。最安プランはお試し用の位置付けであり、満足度を重視する場合は1,500円以上のプランを選ぶことで、花のボリュームと品質が大きく向上します。
+              花のサブスクが「しょぼい」と感じられる主な原因は、<strong>プラン選びのミスマッチ</strong>です。届く本数はプランによって異なるため、本数の目安を確認してからプランを選ぶことをおすすめします。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
-              価格を重視する場合は<strong>medelu</strong>（748円〜・送料無料）、ボリュームとデザインを重視する場合は<strong>AND PLANTS</strong>（1,980円〜・送料無料）、鮮度を重視する場合は<strong>LIFFT</strong>（スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認）、提携農園から直送（2026年10月17日公式確認））をおすすめします。品質保証制度を活用し、季節ごとの花の変化を楽しむことで、花のサブスクを日々の暮らしに取り入れやすくなります。
+              価格を重視する場合は<strong>medelu</strong>（748円〜・送料無料）、本数を重視する場合は<strong>AND PLANTS</strong>（1,980円〜・送料無料）、鮮度を重視する場合は<strong>LIFFT</strong>（スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認）、提携農園から直送（2026年10月17日公式確認））をおすすめします。品質保証制度を活用し、季節ごとの花の変化を楽しむことで、花のサブスクを日々の暮らしに取り入れやすくなります。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <a
@@ -511,7 +511,7 @@ export default function ShoboboiGuidePage() {
               リンク先のサービスで購入等が行われた場合、当サイトが紹介手数料を受け取ることがあります。
             </p>
             <p className="text-xs text-gray-500 mt-2">
-              掲載情報は2026年4月時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
+              掲載情報は2026年10月30日時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-400">
               <a href="/terms-of-service" className="hover:text-white transition-colors">利用規約</a>
