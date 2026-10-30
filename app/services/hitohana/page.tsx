@@ -24,8 +24,8 @@ const faqItems = [
     a: "できます。マイページの『次回のお届け内容の変更』で、該当する週の『お届けの有無』をスキップにして保存します。スキップした週の料金はかかりません。期限はお届け希望日の2〜3日前で、曜日によって異なります（公式FAQ）。",
   },
   {
-    q: "HitoHana（ひとはな）を退会する方法を教えてください。",
-    a: "定期便をやめる手続きは、マイページの『解約』の項目からいつでもでき、締切はお届け日の3日前0時です（公式FAQ・特商法）。会員そのものの退会は、利用規約の退会規約に「当社の指定する方法に従い退会処理を行う」とあり、具体的な手順は公式のよくあるご質問・ご利用ガイドに記載がありません。手順はお問い合わせフォーム（hitohana.tokyo/help）または電話 048-606-2625（10:00〜17:00・土日祝日も営業）でご確認ください。退会すると注文履歴は見られなくなり、注文済みで受け取っていない商品は配送されます（利用規約・2026年10月27日確認）。",
+    q: "HitoHanaの退会方法は？",
+    a: "定期便の解約と会員の退会は別の手続きです。定期便はマイページの『解約』の項目からいつでも解約でき、締切はお届け日の3日前0時です（公式FAQ・特商法）。利用規約では、定期便の配送を停止した後も、退会の申請を行わない限り会員サービスを引き続き利用できると定められています。会員の退会は退会規約で「当社の指定する方法に従い退会処理を行う」とされ、具体的な手順は公式のよくあるご質問・ご利用ガイドに記載がありません。申請方法はお問い合わせ（ヘルプ）ページのフォーム・LINE、または電話 048-606-2625（10:00〜17:00・土日祝日も営業）でご確認ください。退会すると注文履歴は見られなくなり、注文済みで受け取っていない商品は配送されます（利用規約・2026年10月30日確認）。",
   },
   {
     q: "HitoHanaの花の定期便はギフトとして贈れますか？",
@@ -86,7 +86,7 @@ export default function HitoHanaPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"HitoHana（ヒトハナ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hitohana/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"HitoHana（ヒトハナ）花のサブスクの料金・頻度・スキップ・解約・口コミ\",\"description\":\"HitoHana（ヒトハナ）のお花の定期便の料金表・お届け頻度・スキップと解約の締切・ギフト・他社との違いを、公式サイトの確認にもとづいてご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-27T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hitohana/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"HitoHana（ヒトハナ）花のサブスクの料金・頻度・スキップ・解約・口コミ\",\"description\":\"HitoHana（ヒトハナ）のお花の定期便の料金表・お届け頻度・スキップと解約の締切・ギフト・他社との違いを、公式サイトの確認にもとづいてご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hitohana/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
     <div className="flex flex-col min-h-screen">
@@ -144,6 +144,19 @@ export default function HitoHanaPage() {
         <section id="quick-answer" className="bg-white pt-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4 pb-8">
             <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-3">hitohana（ヒトハナ）の定期便とは：料金・送料・解約と退会の方法</h2>
+            <div id="taikai" className="rounded-md border-2 border-[#2F5B43] bg-[#F3F6F2] p-5 mb-5">
+              <h3 className="font-bold text-[#1F2420] mb-2">HitoHana（ひとはな）の退会方法は？</h3>
+              <p className="text-sm text-[#3F443E] leading-relaxed mb-3">
+                <strong>定期便の「解約」はマイページの『解約』から自分で手続きできますが、会員の「退会」は別の手続きです。</strong>
+                利用規約には、定期便の配送を停止した後も「退会の申請を行わない限り、引き続き当サイトの会員サービスを利用することが可能」と定められています。
+                退会の具体的な手順は、公式のよくあるご質問・ご利用ガイドに記載がありません（公式に記載なし・2026年10月30日確認）。公式サイトで確認できる範囲の進め方は次のとおりです。
+              </p>
+              <ol className="text-sm text-[#3F443E] leading-relaxed space-y-2 list-decimal pl-5">
+                <li><strong>定期便を契約中なら、先に解約します。</strong>マイページの『解約』の項目からいつでも手続きでき、締切はお届け日の3日前0時です。次回のお届けが確定している注文はキャンセルできません（公式FAQ・特定商取引法に基づく表示）。</li>
+                <li><strong>退会の申請方法を公式窓口に確認します。</strong>利用規約の退会規約では「当社の指定する方法に従い退会処理を行う」とされています。窓口は、<a href={HH_HELP} target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">お問い合わせ（ヘルプ）</a>ページのフォーム・LINE、または電話 048-606-2625（10:00〜17:00・土日祝日も営業）です。</li>
+                <li><strong>退会後の扱いを確認しておきます。</strong>退会すると注文履歴などの情報は閲覧できなくなり、メールマガジン・ダイレクトメールは届かなくなります。注文済みで受け取っていない商品は配送されます。退会後も情報が保存される場合があります（利用規約・退会規約）。</li>
+              </ol>
+            </div>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse bg-white">
                 <tbody className="text-[#3F443E]">
@@ -151,11 +164,11 @@ export default function HitoHanaPage() {
                   <tr className="border-b border-[#DEDAD2]"><th className="px-4 py-3 text-left bg-[#F3F6F2] font-bold text-[#1F2420]">料金</th><td className="px-4 py-3">1回1,320円（Lite）〜4,950円（LL）（税込）。お届けが完了した時点で、1回ごとにクレジットカードに課金されます（特商法）。</td></tr>
                   <tr className="border-b border-[#DEDAD2]"><th className="px-4 py-3 text-left bg-[#F3F6F2] font-bold text-[#1F2420]">送料</th><td className="px-4 py-3">特商法と定期便ページに、上の金額とは別の送料の記載はありません。クール便は有料で、通常便との切り替えはお届け回ごとにできます（クール便の金額は静的ページに記載なし）。</td></tr>
                   <tr className="border-b border-[#DEDAD2]"><th className="px-4 py-3 text-left bg-[#F3F6F2] font-bold text-[#1F2420]">定期便の解約</th><td className="px-4 py-3">マイページの『解約』からいつでもできます。回数の縛りはなく、締切はお届け日の3日前0時です。次回のお届けが確定している注文はキャンセルできません。</td></tr>
-                  <tr><th className="px-4 py-3 text-left bg-[#F3F6F2] font-bold text-[#1F2420]">会員の退会</th><td className="px-4 py-3">利用規約では「当社の指定する方法に従い退会処理を行う」とされ、具体的な手順はよくあるご質問・ご利用ガイドに記載がありません。<a href={HH_HELP} target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">お問い合わせフォーム</a>または電話 048-606-2625（10:00〜17:00・土日祝日も営業）で確認できます。退会すると注文履歴は見られなくなります。</td></tr>
+                  <tr><th className="px-4 py-3 text-left bg-[#F3F6F2] font-bold text-[#1F2420]">会員の退会</th><td className="px-4 py-3">利用規約では「当社の指定する方法に従い退会処理を行う」とされ、具体的な手順はよくあるご質問・ご利用ガイドに記載がありません。定期便を解約しても、退会の申請をしない限り会員のままです。<a href={HH_HELP} target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">お問い合わせフォーム</a>・LINE、または電話 048-606-2625（10:00〜17:00・土日祝日も営業）で確認できます。退会すると注文履歴は見られなくなります（<a href="#taikai" className="text-[#2F5B43] underline">退会の進め方</a>）。</td></tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#6B6F6A] mt-3">出典：HitoHana公式 <a href={HH_LAW} target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>・<a href={HH_SUB} target="_blank" rel="noopener noreferrer nofollow" className="underline">お花の定期便</a>・<a href={HH_DELIVERY} target="_blank" rel="noopener noreferrer nofollow" className="underline">配送方法・配送料金について</a>・<a href={HH_FAQ} target="_blank" rel="noopener noreferrer nofollow" className="underline">よくあるご質問</a>・<a href={HH_RULES} target="_blank" rel="noopener noreferrer nofollow" className="underline">利用規約</a>（2026年10月27日確認）。解約の手順は<a href="#cancellation" className="underline">解約手順</a>をご覧ください。</p>
+            <p className="text-xs text-[#6B6F6A] mt-3">出典：HitoHana公式 <a href={HH_LAW} target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>・<a href={HH_SUB} target="_blank" rel="noopener noreferrer nofollow" className="underline">お花の定期便</a>・<a href={HH_DELIVERY} target="_blank" rel="noopener noreferrer nofollow" className="underline">配送方法・配送料金について</a>・<a href={HH_FAQ} target="_blank" rel="noopener noreferrer nofollow" className="underline">よくあるご質問</a>・<a href={HH_RULES} target="_blank" rel="noopener noreferrer nofollow" className="underline">利用規約</a>（2026年10月27日確認、解約・退会の記載は2026年10月30日再確認）。解約の手順は<a href="#cancellation" className="underline">解約手順</a>をご覧ください。</p>
           </div>
         </section>
 
@@ -163,7 +176,7 @@ export default function HitoHanaPage() {
         <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="rounded-md border-2 border-[#2F5B43] bg-[#F3F6F2] p-5 md:p-6">
-              <p className="text-xs text-[#2F5B43] font-bold mb-1">最終更新：2026年10月27日（料金・頻度・条件は2026年10月18日、料金・送料・解約・退会・レビュー数は2026年10月27日に公式サイトで確認）</p>
+              <p className="text-xs text-[#2F5B43] font-bold mb-1">最終更新：2026年10月30日（料金・頻度・条件は2026年10月18日、料金・送料・レビュー数は2026年10月27日、解約・退会は2026年10月30日に公式サイトで確認）</p>
               <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-3">HitoHanaの色・ボリューム・料金・解約条件の要点</h2>
               <ul className="text-sm md:text-base text-[#444] leading-relaxed space-y-2">
                 <li>・<strong>色（6色＋おまかせ）とボリューム（5サイズ）を毎回選べる</strong>点が最大の特徴です。花の種類は指定できません。</li>
@@ -598,7 +611,7 @@ export default function HitoHanaPage() {
                 { t: "マイページにログインする", d: "HitoHana公式サイトのマイページにログインします。" },
                 { t: "『解約』の項目から手続きする", d: "マイページの『解約』の項目から、いつでも解約できます（公式FAQ・特商法）。" },
                 { t: "締切に注意する", d: "解約はお届け日の3日前0時までに手続きします。それより後の連絡で次回分に間に合わない場合、その回の代金は負担となります（特商法）。次回のお届けが確定している注文はキャンセルできません（公式FAQ）。" },
-                { t: "会員の退会は別の手続き", d: "会員の退会について、利用規約には「当社の指定する方法に従い退会処理を行う」とあり、具体的な手順はよくあるご質問・ご利用ガイドに記載がありません。お問い合わせフォームか電話（048-606-2625・10:00〜17:00・土日祝日も営業）で確認してください。退会後は注文履歴が見られなくなり、注文済みで受け取っていない商品は配送されます（利用規約・2026年10月27日確認）。" },
+                { t: "会員の退会は別の手続き", d: "利用規約では、定期便の配送を停止した後も、退会の申請を行わない限り会員サービスを引き続き利用できると定められています。会員の退会は「当社の指定する方法に従い退会処理を行う」とあり、具体的な手順はよくあるご質問・ご利用ガイドに記載がありません。お問い合わせフォーム・LINE、または電話（048-606-2625・10:00〜17:00・土日祝日も営業）で確認してください。退会後は注文履歴が見られなくなり、注文済みで受け取っていない商品は配送されます（利用規約・2026年10月30日確認）。" },
                 { t: "一時的に止めたいだけならスキップを使う", d: "不在の週だけ止めたい場合は、解約ではなく『次回のお届け内容の変更』からスキップできます。再開したい場合も、マイページから手続きできます（公式FAQ）。" },
               ].map((x, i) => (
                 <div key={i} className="flex gap-4 items-start mb-4">
@@ -610,7 +623,7 @@ export default function HitoHanaPage() {
                 </div>
               ))}
             </div>
-            <p className="text-xs text-[#6B6F6A] mt-4 text-center">出典：HitoHana公式 <a href={HH_FAQ} target="_blank" rel="noopener noreferrer nofollow" className="underline">よくあるご質問</a>・<a href={HH_LAW} target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（2026年10月18日確認）・<a href={HH_RULES} target="_blank" rel="noopener noreferrer nofollow" className="underline">利用規約</a>（退会・2026年10月27日確認）。マイページ内の画面の構成は、公式サイトでご確認ください。</p>
+            <p className="text-xs text-[#6B6F6A] mt-4 text-center">出典：HitoHana公式 <a href={HH_FAQ} target="_blank" rel="noopener noreferrer nofollow" className="underline">よくあるご質問</a>・<a href={HH_LAW} target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（2026年10月18日確認）・<a href={HH_RULES} target="_blank" rel="noopener noreferrer nofollow" className="underline">利用規約</a>（退会・2026年10月30日確認）。マイページ内の画面の構成は、公式サイトでご確認ください。</p>
           </div>
         </section>
 

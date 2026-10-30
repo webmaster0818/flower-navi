@@ -29,12 +29,20 @@ const faqItems = [
    金額は当サイト掲載サービスの公式確認値のみを使用し、確認日を併記する。 */
 const officeGreenFaqItems = [
   {
-    q: "初めてオフィスに観葉植物のサブスクを導入します。どこから選べばよいですか？",
-    a: "まず「購入型」か「レンタル型」かを決めてください。受付やデスクに小さめのグリーン・花を置くだけなら購入型（届いたものが自社のものになる定期便）、大型のグリーンを常によい状態に保ちたい場合や、社内に管理担当を置けない場合はメンテナンス込みのレンタル型が適しています。当サイトでは、購入型としてAND PLANTS（観葉植物と切り花の両方を扱う）、法人向けの花・グリーンの定期便としてbloomee biz、メンテナンス込みの観葉植物レンタルとしてHitoHana Rental Green（法人専用・月2回訪問）を掲載しています。CLASの観葉植物はフェイクグリーンのレンタルです（2026年10月19日公式確認）。人気順を示す公開データは確認できていないため、置き場所・予算・管理体制の3点で絞り込むことをおすすめします。",
+    q: "小規模オフィスでも利用しやすい観葉植物のサブスク・レンタルはありますか？",
+    a: "1鉢から借りられるサービスがあります。GOOD GREENのスタートアッププラン（M/Lサイズ1鉢月1,958円・税込・上限3鉢）とマイグリーンプラン（Sサイズ1鉢月990円・M/Lサイズ2,178円・税込）は、いずれも最短利用期間・最低利用金額がなく、法人は導入開始月にスタートアッププランで1鉢を無料で試せます。HitoHana Rental Greenも1鉢から利用できますが、最低利用料金（植物レンタル代）は訪問1拠点あたり7,800円以上、最低契約期間は1年です。なお、両社とも「小規模オフィス向け」と明記したプランは公式に記載なしです（2026年10月30日公式確認）。社内で水やりができる場合はGOOD GREENの水やりキット付きプラン、社内の作業をなくしたい場合は訪問メンテナンス付きのプランが候補になります。",
   },
   {
-    q: "月額5,000円程度、できれば5,000円以下でオフィスに導入できますか？",
-    a: "小さめの1〜数点から始める場合、月5,000円以内は現実的な予算です。当サイトが公式で確認できている1回あたりの価格は、medeluのMiniプラン748円（送料込み・ポスト投函・2026年7月3日確認）からAND PLANTSの定期便ラージ4,980円（送料込み・2026年8月17日確認）までです。毎週配送を月4回として単純計算すると、Miniプランは月およそ2,992円になります。一方、鉢植えの観葉植物レンタルは、HitoHana Rental GreenがノーマルプランM 1鉢月1,600円（税別・月2回訪問・訪問1拠点あたり7,800円以上）、GOOD GREENがマイグリーンプランM/L 1鉢月2,178円（税込・水やりは自社）です（2026年10月19日公式確認）。サイズ・鉢数・メンテナンス頻度で変わるため、5,000円以内に収まるかは見積もりで確認してください。",
+    q: "月2回のメンテナンス込みでオフィスの観葉植物を管理してくれる定額制サービスはありますか？",
+    a: "あります。HitoHana Rental Greenは全プランで専門スタッフが月2回訪問し、水やり・剪定・病害虫駆除・設置環境のチェック・植栽引き取りを行います（ノーマルプラン1鉢月600円〜3,600円・税別、訪問1拠点あたり7,800円以上、法人専用、最低契約期間1年）。GOOD GREENはメンテナンスプラン（Sサイズ1鉢月1,430円・M/Lサイズ2,728円・税込、M・Lサイズは5鉢以上）と定額セットのプレミアムプラン（月33,000円・税込・年間契約）が、水やり「通常：月2回」の訪問メンテナンス付きです。GOOD GREENはメンテナンスの回数を植物の種類や季節に応じて設定すると案内しています（いずれも2026年10月30日公式確認）。",
+  },
+  {
+    q: "月額5,000円以下で始められるオフィス向け観葉植物レンタルはありますか？",
+    a: "訪問メンテナンスなしのプランであれば始められます。GOOD GREENのスタートアッププランはM/Lサイズ1鉢月1,958円（2鉢で3,916円）、マイグリーンプランはSサイズ1鉢月990円（いずれも税込）です。月額3,800円（税込）未満の場合は、搬入と交換の月に配送費3,000円がかかり、口座自動引き落としを選ぶと事務手数料が毎月220円（税込）かかります。一方、月2回のメンテナンス込みで月5,000円以下に収まるプランは、公式料金では確認できませんでした。HitoHana Rental Greenは訪問1拠点あたり7,800円以上、GOOD GREENのメンテナンスプランはM・Lサイズ5鉢以上（M/Lのみで月13,640円・税込〜）で、Sサイズのみで契約する場合の最低鉢数は公式に記載なしです（2026年10月30日公式確認）。切り花でよい場合は、medeluのMiniプラン（1回748円・送料込み）など個人向けの定期便も選択肢になります。",
+  },
+  {
+    q: "初めてオフィスに観葉植物のサブスクを導入します。どこから選べばよいですか？",
+    a: "まず「購入型」か「レンタル型」かを決めてください。受付やデスクに小さめのグリーン・花を置くだけなら購入型（届いたものが自社のものになる定期便）、大型のグリーンを常によい状態に保ちたい場合や、社内に管理担当を置けない場合はメンテナンス込みのレンタル型が適しています。当サイトでは、購入型としてAND PLANTS（観葉植物と切り花の両方を扱う）、法人向けの花・グリーンの定期便としてbloomee biz、メンテナンス込みの観葉植物レンタルとしてHitoHana Rental Green（法人専用・月2回訪問）を掲載しています。CLASの観葉植物はフェイクグリーンのレンタルです（2026年10月19日公式確認）。人気順を示す公開データは確認できていないため、置き場所・予算・管理体制の3点で絞り込むことをおすすめします。",
   },
   {
     q: "数人〜十数人の小規模オフィスでも利用しやすいサービスはありますか？",
@@ -66,7 +74,7 @@ const officeGreenFaqItems = [
   },
   {
     q: "オフィスでは購入型とレンタル型のどちらを選ぶべきですか？",
-    a: "オフィスでは、金額よりも先に「社内に手入れの担当を置けるか」で判断することをおすすめします。担当を置ける・置き場所が固定・少量の場合は購入型、担当を置けない・大型グリーン・複数拠点の場合はメンテナンス込みのレンタル型が適しています。そのうえで費用を比較する場合、当サイトでは掲載サービスの観葉植物レンタルの月額を公式で確認できていないため、見積もりを取ったうえで「購入価格÷月額」で何か月分に相当するかを比べる方法をおすすめします。買い切りと月額制でどちらが得になるかという一般的な判断は、当サイトの「観葉植物は購入とサブスク・レンタルどちらがお得か」で解説しています。",
+    a: "オフィスでは、金額よりも先に「社内に手入れの担当を置けるか」で判断することをおすすめします。担当を置ける・置き場所が固定・少量の場合は購入型、担当を置けない・大型グリーン・複数拠点の場合はメンテナンス込みのレンタル型が適しています。そのうえで費用を比較する場合は、購入価格をレンタルの月額（例：HitoHana Rental GreenノーマルプランM 1鉢月1,600円・税別、GOOD GREENマイグリーンプランM/L 1鉢月2,178円・税込、2026年10月30日公式確認）で割り、何か月分に相当するかを比べる方法をおすすめします。買い切りと月額制でどちらが得になるかという一般的な判断は、当サイトの「観葉植物は購入とサブスク・レンタルどちらがお得か」で解説しています。",
   },
 ];
 
@@ -76,7 +84,7 @@ const articleLd = {
   headline: "オフィス向け観葉植物・花の定期便【2026年】小規模オフィス・メンテナンス込み・管理不要で選ぶ法人向けガイド",
   description: "オフィス・店舗への観葉植物と花の定期便（サブスク・レンタル）の導入について、小規模オフィスでの始め方、メンテナンス込みの可否、管理不要で続ける方法、エントランスに置くものの選び方、東京23区の確認手順を解説します。",
   datePublished: "2026-07-18T00:00:00+09:00",
-  dateModified: "2026-10-25T00:00:00+09:00",
+  dateModified: "2026-10-30T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/guides/houjin-office/" },
@@ -114,6 +122,7 @@ export default function HoujinOfficePage() {
               公式サイトで確認できた料金にもとづいてご説明します。
             </p>
             <p className="text-sm text-[#4A4F49] max-w-2xl mx-auto leading-relaxed mt-4">
+              観葉植物レンタルの<Link href="#kanyou-office-answers" className="text-[#2F5B43] font-medium underline">小規模・月2回メンテナンス・月額5,000円以下の回答と比較表</Link>は次のセクションに、
               <Link href="#office-quick" className="text-[#2F5B43] font-medium underline">4つの検討事項への回答</Link>
               は次のセクションに、より詳しい条件は
               <Link href="#office-green-faq" className="text-[#2F5B43] font-medium underline">法人・オフィス導入のよくある質問</Link>
@@ -121,6 +130,97 @@ export default function HoujinOfficePage() {
             </p>
           </div>
         </PageHero>
+
+        {/* オフィス向け観葉植物サブスク：3つの質問への回答（2026-10-30 公式確認） */}
+        <section id="kanyou-office-answers" className="py-10 md:py-14 bg-white border-b border-[#DEDAD2]">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-4 pb-3 border-b-2 border-[#2F5B43]">
+              オフィス向け観葉植物のサブスク・レンタル：小規模・月2回メンテナンス・月額5,000円以下の3つの質問への回答
+            </h2>
+            <p className="text-sm text-[#3F443E] leading-relaxed mb-6">
+              金額・回数は、GOOD GREENとHitoHana Rental Greenの公式サイトで2026年10月30日に確認した値です。公式サイトに記載のない項目は「公式に記載なし」としています。
+            </p>
+
+            <div className="space-y-5">
+              <div className="rounded-md border border-[#DEDAD2] bg-[#F6F4EF] p-5">
+                <h3 className="font-bold text-[#1F2420] mb-2">Q. 小規模オフィスでも利用しやすい観葉植物のサブスクはありますか？</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
+                  <strong>あります。1鉢から借りられ、最短利用期間・最低利用金額のないプランがあります。</strong>
+                  GOOD GREENのスタートアッププラン（M/Lサイズ1鉢月1,958円・税込・上限3鉢・植物はおまかせ）とマイグリーンプラン（Sサイズ1鉢月990円・M/Lサイズ2,178円・税込・カタログから選択）が該当し、法人は導入開始月にスタートアッププランで1鉢を無料で試せます。
+                  HitoHana Rental Greenも1鉢から利用できますが、最低利用料金（植物レンタル代）は訪問1拠点あたり7,800円以上、最低契約期間は1年です。
+                  なお、両社とも「小規模オフィス向け」と明記したプランは公式に記載なしです。
+                </p>
+              </div>
+
+              <div className="rounded-md border border-[#DEDAD2] bg-[#F6F4EF] p-5">
+                <h3 className="font-bold text-[#1F2420] mb-2">Q. 月2回のメンテナンス込みで管理してくれる定額制サービスはありますか？</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
+                  <strong>あります。HitoHana Rental Green（全プラン）と、GOOD GREENのメンテナンスプラン・プレミアムプランが月2回の訪問です。</strong>
+                  HitoHana Rental Greenは専門スタッフが月2回訪問し、水やり・剪定・病害虫駆除・設置環境のチェック・植栽引き取りを行い、「貴社の作業は一切ありません」と案内しています（法人専用・個人宅は対象外）。
+                  GOOD GREENは水やりを「通常：月2回」としたうえで、メンテナンスの回数は植物の種類や季節によって設定すると案内しています。メンテナンスプランはM・Lサイズの場合5鉢以上が条件です。
+                </p>
+              </div>
+
+              <div className="rounded-md border border-[#DEDAD2] bg-[#F6F4EF] p-5">
+                <h3 className="font-bold text-[#1F2420] mb-2">Q. 月額5,000円以下で始められるオフィス向け観葉植物レンタルはありますか？</h3>
+                <p className="text-sm text-[#4A4F49] leading-relaxed mb-2">
+                  <strong>訪問メンテナンスなし（水やりは社内）のプランであれば始められます。</strong>
+                  GOOD GREENのスタートアッププランはM/Lサイズ1鉢月1,958円（2鉢で3,916円）、マイグリーンプランはSサイズ1鉢月990円です（いずれも税込）。
+                  月額3,800円（税込）未満の場合は搬入と交換の月に配送費3,000円がかかり、口座自動引き落としでは事務手数料が毎月220円（税込）かかります。
+                </p>
+                <p className="text-sm text-[#4A4F49] leading-relaxed">
+                  <strong>月2回のメンテナンス込みで月5,000円以下に収まるプランは、公式料金では確認できませんでした。</strong>
+                  HitoHana Rental Greenは訪問1拠点あたり7,800円以上、GOOD GREENのメンテナンスプランはM・Lサイズ5鉢以上（M/Lのみで月13,640円・税込〜）です。Sサイズのみで契約する場合の最低鉢数は公式に記載なしのため、見積もりでご確認ください。
+                </p>
+              </div>
+            </div>
+
+            <h3 className="font-bold text-[#1F2420] mt-8 mb-3">オフィス向け観葉植物レンタルの比較表（2026年10月30日公式確認）</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse bg-white min-w-[640px]">
+                <thead>
+                  <tr className="bg-[#F3F6F2]">
+                    <th className="text-left px-3 py-3 text-xs text-[#4A4F49] border-b border-[#DEDAD2]">サービス・プラン</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#4A4F49] border-b border-[#DEDAD2]">月額（1鉢あたり）</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#4A4F49] border-b border-[#DEDAD2]">訪問メンテナンス</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#4A4F49] border-b border-[#DEDAD2]">最低条件・契約期間</th>
+                    <th className="text-left px-3 py-3 text-xs text-[#4A4F49] border-b border-[#DEDAD2]">月5,000円以下</th>
+                  </tr>
+                </thead>
+                <tbody className="text-[#4A4F49]">
+                  {[
+                    { n: "GOOD GREEN スタートアップ", p: "M/L 1,958円（税込）", m: "なし（簡単水やりキット付き・6か月に1回交換）", c: "最短利用期間・最低利用金額なし。上限3鉢", u: "可（1〜2鉢）" },
+                    { n: "GOOD GREEN マイグリーン", p: "S 990円／M/L 2,178円（税込）", m: "なし（簡単水やりキット付き・3か月に1回交換）", c: "最短利用期間・最低利用金額なし", u: "可（鉢数による）" },
+                    { n: "GOOD GREEN メンテナンス", p: "S 1,430円／M/L 2,728円（税込）", m: "あり（水やり 通常：月2回）", c: "M・Lサイズは5鉢以上。Sのみの最低鉢数は公式に記載なし", u: "M/Lのみでは不可（5鉢で13,640円）" },
+                    { n: "GOOD GREEN 定額セット シンプル", p: "4鉢で月5,500円（税込）", m: "なし", c: "年間契約。途中解約は配送撤去費用22,000円（税込）", u: "不可" },
+                    { n: "HitoHana Rental Green ノーマル", p: "XS 600円〜XXL 3,600円（税別）", m: "あり（全プラン月2回）", c: "法人専用。訪問1拠点あたり7,800円以上。最低契約期間1年", u: "不可" },
+                  ].map((r, i) => (
+                    <tr key={i} className="border-b border-[#DEDAD2] align-top">
+                      <td className="px-3 py-3 font-medium text-[#1F2420]">{r.n}</td>
+                      <td className="px-3 py-3">{r.p}</td>
+                      <td className="px-3 py-3">{r.m}</td>
+                      <td className="px-3 py-3">{r.c}</td>
+                      <td className="px-3 py-3">{r.u}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#6B6F6A] mt-3 leading-relaxed">
+              ※GOOD GREENは全プランで枯れた場合は無制限に無料交換、解約は利用停止希望月の前月25日までの連絡です。対応エリアは東京23区・千葉・神奈川・埼玉の一部と、その他エリアとして東海・関西・沖縄が掲載されています。
+              HitoHana Rental Greenの対応エリアは東京・神奈川・埼玉・千葉（一部地域を除く）を中心に名古屋・大阪・兵庫・広島で、傷んだ場合は植物を交換します。
+              出典：<a href="https://goodgreen.jp/price/" target="_blank" rel="noopener noreferrer nofollow" className="underline">GOOD GREEN 観葉植物レンタル料金</a>・<a href="https://goodgreen.jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">対応エリア</a>、
+              <a href="https://hitohana-collect.hitohana.tokyo/pages/rental-green" target="_blank" rel="noopener noreferrer nofollow" className="underline">HitoHana Rental Green</a>（いずれも2026年10月30日確認）。料金は改定されることがあるため、申し込み前に各公式サイトでご確認ください。
+            </p>
+            <p className="text-sm text-[#3F443E] leading-relaxed mt-4">
+              個人向けを含む観葉植物のサブスク・レンタルの違いは
+              <Link href="/compare/kanyou-shokubutsu/" className="text-[#2F5B43] font-medium underline mx-1">観葉植物のサブスク・レンタル比較</Link>
+              に、金額がサイズ・鉢数・メンテナンス頻度でどう変わるかは
+              <Link href="/guides/kanyou-shokubutsu-ryokin/" className="text-[#2F5B43] font-medium underline mx-1">観葉植物のサブスク・レンタル料金の考え方</Link>
+              にまとめています。
+            </p>
+          </div>
+        </section>
 
         {/* 要点 */}
         <section className="py-10 md:py-14 bg-white">
@@ -392,7 +492,7 @@ export default function HoujinOfficePage() {
               で解説しています。
             </p>
             <p className="text-xs text-[#6B6F6A] mt-4">
-              ※料金・条件の確認日：medelu・bloomeeの個人向けプランは2026年7月3日、AND PLANTSの定期便料金は2026年8月17日、bloomee biz（法人向け）の料金・配送条件は2026年10月25日に各公式サイトで確認した値です。ご利用前に、公式サイトにて最新情報をご確認ください。
+              ※料金・条件の確認日：medelu・bloomeeの個人向けプランは2026年7月3日、AND PLANTSの定期便料金は2026年8月17日、bloomee biz（法人向け）の料金・配送条件は2026年10月25日、GOOD GREEN・HitoHana Rental Greenの料金・訪問回数・最低条件は2026年10月30日に各公式サイトで確認した値です。ご利用前に、公式サイトにて最新情報をご確認ください。
             </p>
           </div>
         </section>
