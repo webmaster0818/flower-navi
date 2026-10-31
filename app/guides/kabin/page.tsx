@@ -8,7 +8,7 @@ import PageHero from "@/app/components/PageHero";
 const faqItems = [
   {
     q: "花のサブスクに合う花瓶のサイズはどれくらいですか？",
-    a: "花瓶の高さに決まった基準はないため、届く花の長さに合わせて選んでください。花の長さを公式サイトで案内しているサービスもあり、bloomeeはお試しプランが約18〜25cm、ベーシックプランが約25〜30cmです（2026年10月24日公式確認）。口が小さめの花瓶を選ぶと、少ない本数でもバランスよく飾ることができます。",
+    a: "花瓶の高さに決まった基準はないため、届く花の長さに合わせて選んでください。花の長さを公式サイトで案内しているサービスもあり、bloomeeはお試しプランが約18〜25cm、ベーシックプランが約25〜30cmです（2026年10月31日公式確認）。口が小さめの花瓶を選ぶと、少ない本数でもバランスよく飾ることができます。",
   },
   {
     q: "100円ショップの花瓶でも大丈夫ですか？",
@@ -33,14 +33,14 @@ const vaseCategories = [
   {
     title: "ガラス製の花瓶",
     items: [
-      { name: "IKEA TIDVATTEN ティドヴァッテン 花瓶（クリアガラス）", price: "299円", size: "14cm", desc: "IKEA公式サイトでは、同じ TIDVATTEN の花瓶を高さ17cm（499円）・30cm（1,299円）・45cm（1,999円）でも販売しています（2026年10月25日公式確認）。" },
+      { name: "IKEA TIDVATTEN ティドヴァッテン 花瓶（クリアガラス）", price: "299円", size: "14cm", desc: "IKEA公式サイトでは、同じ TIDVATTEN の花瓶を高さ17cm（499円）・30cm（1,299円）・45cm（1,999円）でも販売しています（2026年10月31日公式確認）。" },
     ],
   },
   {
     title: "一輪挿し（花1〜2本を飾る）",
     items: [
       { name: "KINTO SACCO ベース ガラス 01", price: "1,980円", size: "95mm", desc: "ソーダガラス製です。同じシリーズにガラス 02（高さ110mm）・ガラス 03（高さ150mm、いずれも1,980円）と、磁器製の 01・02（2,750円）があります（KINTO公式オンラインショップ・2026年10月25日確認）。" },
-      { name: "スガハラ（Sghr）ミニベース：一輪挿し サイコロ", price: "2,420円（税込）", size: "50mm", desc: "ガラス製の一輪挿しで、サイズは50mm角×高さ50mmです。Sghr スガハラ公式通販の表示価格は税込2,420円（税別2,200円）です（2026年10月25日公式確認）。" },
+      { name: "スガハラ（Sghr）ミニベース：一輪挿し サイコロ", price: "2,420円（税込）", size: "50mm", desc: "ガラス製の一輪挿しで、サイズは50mm角×高さ50mmです。Sghr スガハラ公式通販の表示価格は税込2,420円（税別2,200円）です（2026年10月31日公式確認）。" },
     ],
   },
 ];
@@ -54,9 +54,9 @@ export default function KabinGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクに合う花瓶おすすめ\",\"item\":\"https://ohana-delivery.com/guides/kabin/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクに合う花瓶おすすめ\",\"description\":\"花のサブスクに合うおすすめの花瓶と選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-26T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/kabin/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクに合う花瓶おすすめ\",\"description\":\"花のサブスクに合うおすすめの花瓶と選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-31T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/kabin/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクに合う花瓶のサイズはどれくらいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶の高さに決まった基準はないため、届く花の長さに合わせて選んでください。花の長さを公式サイトで案内しているサービスもあり、bloomeeはお試しプランが約18〜25cm、ベーシックプランが約25〜30cmです（2026年10月24日公式確認）。口が小さめの花瓶を選ぶと、少ない本数でもバランスよく飾ることができます。\"}},{\"@type\":\"Question\",\"name\":\"100円ショップの花瓶でも大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、使用できます。花瓶の価格や素材に決まりはないため、届く花の長さに合う高さで、本数に合う口の大きさのものを選んでください。数種類のサイズをそろえておくと、届いた花を分けて飾ることもできます。\"}},{\"@type\":\"Question\",\"name\":\"花瓶のお手入れ方法を教えてください\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花を替える際に、花瓶の内側を食器用洗剤とスポンジで洗ってください。口の狭い花瓶は、水と少量の漂白剤を入れてしばらく浸け置きすると、ぬめりや細菌を除去できます。花瓶を清潔に保つことが、花を長持ちさせる基本です。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていない場合、何で代用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ジャムの空き瓶、ワインボトル、グラス、マグカップなど、水を入れられる容器であれば代用できます。口の小さい空き瓶は一輪挿しに適しています。ペットボトルの上部をカットし、布や紙を巻くだけでも花瓶として使用できます。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を複数持つメリットはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、あります。花を分けて飾ることで、(1)部屋の複数箇所に花を配置できる、(2)少ない本数でもバランスよく見える、(3)花の種類ごとに分けることで長持ちしやすくなる（エチレンガス対策）、という利点があります。サイズの異なる花瓶を3つ程度用意しておくと、届いた花に合わせて飾り分けることができます。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクに合う花瓶のサイズはどれくらいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花瓶の高さに決まった基準はないため、届く花の長さに合わせて選んでください。花の長さを公式サイトで案内しているサービスもあり、bloomeeはお試しプランが約18〜25cm、ベーシックプランが約25〜30cmです（2026年10月31日公式確認）。口が小さめの花瓶を選ぶと、少ない本数でもバランスよく飾ることができます。\"}},{\"@type\":\"Question\",\"name\":\"100円ショップの花瓶でも大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、使用できます。花瓶の価格や素材に決まりはないため、届く花の長さに合う高さで、本数に合う口の大きさのものを選んでください。数種類のサイズをそろえておくと、届いた花を分けて飾ることもできます。\"}},{\"@type\":\"Question\",\"name\":\"花瓶のお手入れ方法を教えてください\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花を替える際に、花瓶の内側を食器用洗剤とスポンジで洗ってください。口の狭い花瓶は、水と少量の漂白剤を入れてしばらく浸け置きすると、ぬめりや細菌を除去できます。花瓶を清潔に保つことが、花を長持ちさせる基本です。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を持っていない場合、何で代用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ジャムの空き瓶、ワインボトル、グラス、マグカップなど、水を入れられる容器であれば代用できます。口の小さい空き瓶は一輪挿しに適しています。ペットボトルの上部をカットし、布や紙を巻くだけでも花瓶として使用できます。\"}},{\"@type\":\"Question\",\"name\":\"花瓶を複数持つメリットはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、あります。花を分けて飾ることで、(1)部屋の複数箇所に花を配置できる、(2)少ない本数でもバランスよく見える、(3)花の種類ごとに分けることで長持ちしやすくなる（エチレンガス対策）、という利点があります。サイズの異なる花瓶を3つ程度用意しておくと、届いた花に合わせて飾り分けることができます。\"}}]}" }} />
         {/* JSONLD_INJECTED_v1 #3 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"花のサブスクに合う花瓶おすすめ\",\"description\":\"花のサブスクに合う花瓶の選び方を順に解説します\"}" }} />
     <div className="flex flex-col min-h-screen">
@@ -109,8 +109,8 @@ export default function KabinGuidePage() {
             </h2>
             <div className="space-y-4">
               {[
-                { num: "1", title: "サブスクのプランに合ったサイズを選ぶ", text: "届く花の長さを公式サイトで確認し、その長さに合う高さの花瓶を選びます（例：bloomeeのお試しプランは約18〜25cm、2026年10月24日公式確認）。花瓶が大きすぎると花がまばらに見え、小さすぎると花が収まりません。まずは届く花の本数に合わせたサイズを選ぶことをおすすめします。" },
-                { num: "2", title: "口の大きさに注目する", text: "口が小さめの花瓶は、少ない本数でもバランスよく飾ることができます。一方、口が広い花瓶は本数の多い花をまとめて飾るのに向いています。サブスクの花は3〜5本のことが多いため、口径5〜8cm程度の花瓶をおすすめします。" },
+                { num: "1", title: "サブスクのプランに合ったサイズを選ぶ", text: "届く花の長さを公式サイトで確認し、その長さに合う高さの花瓶を選びます（例：bloomeeのお試しプランは約18〜25cm、2026年10月31日公式確認）。花瓶が大きすぎると花がまばらに見え、小さすぎると花が収まりません。まずは届く花の本数に合わせたサイズを選ぶことをおすすめします。" },
+                { num: "2", title: "口の大きさに注目する", text: "口が小さめの花瓶は、少ない本数でもバランスよく飾ることができます。一方、口が広い花瓶は本数の多い花をまとめて飾るのに向いています。届く本数はプランによって異なるため（例：medelu Miniとhanamekuライトプランは3〜4本、2026年10月31日公式確認）、本数に合う口径の花瓶を選んでください。" },
                 { num: "3", title: "インテリアとの調和を考える", text: "ナチュラルな部屋にはガラスや陶器、モダンな部屋には金属やマットな質感の花瓶、和風の部屋には焼き物や竹製の花瓶が合います。部屋のテイストに合った素材・色を選ぶことで、花がインテリアの一部として自然になじみます。" },
                 { num: "4", title: "洗いやすさを確認する", text: "口が狭すぎる花瓶は内側を洗いにくく、ぬめりや細菌が発生しやすくなります。定期的に洗うことを考慮し、手が入るサイズか、ボトルブラシで洗えるサイズを選ぶことをおすすめします。" },
               ].map((item, i) => (
@@ -140,7 +140,7 @@ export default function KabinGuidePage() {
                 { title: "口径2〜3cm程度の狭い口を選ぶ", text: "口が狭いほど、花1本でもまっすぐに立ちます。口が広いと花が倒れて縁にもたれ、バランスが取りにくくなります。" },
                 { title: "背の低い一輪挿しも使える", text: "一輪挿しに分けて飾る場合は、花瓶の高さに合わせて1本ずつ茎を切り戻して生けます。" },
                 { title: "ガラス製なら水の状態が見える", text: "一輪挿しは水量が少なく雑菌が繁殖しやすいため、水の残量と濁りをひと目で確認できるガラス製が初心者に適しています。水を替える時期を判断しやすくなります。" },
-                { title: "複数個そろえて「分けて飾る」", text: "サブスクで届く3〜4本を1本ずつ分けて飾るのが、一輪挿しの一般的な楽しみ方です。ダイソー公式ネットストアでは一輪挿し（ボトル型・PET製・高さ14cm）を110円（税込）で販売しています（2026年10月26日公式確認）。サイズの異なるものを複数そろえておくと飾り分けがしやすくなります。" },
+                { title: "複数個そろえて「分けて飾る」", text: "サブスクで届く3〜4本を1本ずつ分けて飾ることもできます。ダイソー公式ネットストアでは一輪挿し（ボトル型・PET製・高さ14cm）を110円（税込）で販売しています（2026年10月31日公式確認）。サイズの異なるものを複数そろえておくと飾り分けがしやすくなります。" },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
                   <h3 className="text-sm font-bold text-[#1F2420] mb-1">{item.title}</h3>

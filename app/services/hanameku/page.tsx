@@ -24,7 +24,7 @@ const faqItems = [
   },
   {
     q: "ハナメク（hanameku）の料金はいくらですか？",
-    a: "2026年10月14日に公式サイトで確認した料金は、ライトプラン1,210円（3〜4本・ポスト投函）、セルフアレンジプランS 1,958円（1〜8本）・L 3,278円（1〜12本）で、いずれも税込・配送料込みの表記です。セルフアレンジは地域別の追加送料（北海道・九州550円、関西220円、中国・四国330円）があり、沖縄・離島は配送できません。",
+    a: "2026年10月14日に公式サイトで確認した料金は、ライトプラン1,210円（3〜4本・ポスト投函）、セルフアレンジプランS 1,958円（1〜8本）・L 3,278円（1〜12本）で、いずれも税込・配送料込みの表記です。セルフアレンジは地域別の追加送料（北海道・九州550円、北東北・関西220円、中国・四国330円）があり、沖縄・離島は配送できません（地域別送料は2026年10月31日公式確認）。",
   },
   {
     q: "ハナメクに回数縛りはありますか？解約方法も教えてください。",
@@ -59,7 +59,7 @@ export default function HanamekuPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hanameku/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"description\":\"hanameku（ハナメク）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hanameku/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"description\":\"hanameku（ハナメク）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-31T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hanameku/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />

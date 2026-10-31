@@ -16,11 +16,11 @@ const faqItems = [
   },
   {
     q: "花のサブスクで届いた花はどのくらい持ちますか？",
-    a: "サブスクで届く花は産地直送や市場からの仕入れ直後で鮮度が高い場合が多く、適切にお手入れすれば1週間〜10日ほど楽しめます。届いたらすぐに水切りをして花瓶に生けること、毎日の水替えを欠かさないことが、長持ちさせるうえで重要です。延命剤が同封されている場合は必ずご使用ください。",
+    a: "花の種類・季節・室温によって異なるため、当サイトでは一律の日数を示していません。届いたらすぐに水切りをして花瓶に生けること、毎日の水替えを欠かさないことが、長持ちさせるうえで重要です。延命剤が同封されている場合は必ずご使用ください。",
   },
   {
     q: "花瓶の大きさはどう選べばいいですか？",
-    a: "花の丈の約1/3〜1/2が花瓶に収まる高さが目安です。サブスクで届く花束は3〜6本程度が多いため、高さ15〜20cm・口径5〜8cmの花瓶が使いやすいサイズです。口が広すぎると花が広がってまとまらず、狭すぎると茎が窮屈になるため、花の本数に合った口径をお選びください。",
+    a: "花の丈の約1/3〜1/2が花瓶に収まる高さが目安です。届く花の本数と長さはプランによって異なります（例：medelu Miniは3〜4本・長さ15〜20cm、bloomeeのお試しプランは4本以上・約18〜25cm。2026年10月31日公式確認）。口が広すぎると花が広がってまとまらず、狭すぎると茎が窮屈になるため、花の本数に合った口径をお選びください。",
   },
   {
     q: "夏場に花を長持ちさせるコツはありますか？",
@@ -70,7 +70,7 @@ const tipsData = [
     number: 3,
     title: "延命剤（えんめいざい）を活用する",
     description:
-      "延命剤には、花に必要な糖分と、バクテリアの繁殖を抑える抗菌成分が含まれています。サブスクで届く花に同封されていることが多いため、必ずご使用ください。",
+      "延命剤には、花に必要な糖分と、バクテリアの繁殖を抑える抗菌成分が含まれています。サブスクの花に延命剤が同封されている場合は、必ずご使用ください。",
     points: [
       "サブスクに同封の延命剤は必ず使う",
       "パッケージ記載の分量を守る（入れすぎは逆効果）",
@@ -134,13 +134,13 @@ const vaseSizeData = [
     size: "ミニサイズ（10〜15cm）",
     bestFor: "1〜3本の花、一輪挿し",
     scene: "デスク、洗面台、トイレなど小さなスペース",
-    subsc: "medeluのMiniプラン（3〜4本（2026年10月17日公式確認））に適している",
+    subsc: "medeluのMiniプラン（3〜4本・長さ15〜20cm（2026年10月31日公式確認））に適している",
   },
   {
     size: "スタンダード（15〜20cm）",
     bestFor: "3〜5本の花束",
     scene: "リビングのテーブル、玄関、キッチンカウンター",
-    subsc: "bloomeeのお試しプラン（4本以上・約18〜25cm（2026年10月30日公式確認））などに適している",
+    subsc: "bloomeeのお試しプラン（4本以上・約18〜25cm（2026年10月31日公式確認））などに適している",
   },
   {
     size: "トールサイズ（20〜30cm）",
@@ -180,9 +180,9 @@ export default function FlowerCarePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"切り花を長持ちさせるお手入れ方法\",\"item\":\"https://ohana-delivery.com/guides/flower-care/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"切り花を長持ちさせるお手入れ方法\",\"description\":\"切り花を長持ちさせるお手入れ方法を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/flower-care/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"切り花を長持ちさせるお手入れ方法\",\"description\":\"切り花を長持ちさせるお手入れ方法を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-31T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/flower-care/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"切り花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の種類・季節・室温・お手入れによって異なるため、当サイトでは一律の日数を示していません。水切り・水替え・延命剤の使用を組み合わせると、花の状態を保ちやすくなります。\"}},{\"@type\":\"Question\",\"name\":\"延命剤がないときの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"家庭にあるもので代用できます。漂白剤を水1リットルに対して1〜2滴入れると、バクテリアの繁殖を抑えられます。また、砂糖を小さじ1杯ほど加えると花に栄養を補給できます。10円玉を花瓶に入れる方法も知られていますが、銅イオンの殺菌効果は限定的なため、漂白剤のほうが効果があります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届いた花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サブスクで届く花は産地直送や市場からの仕入れ直後で鮮度が高い場合が多く、適切にお手入れすれば1週間〜10日ほど楽しめます。届いたらすぐに水切りをして花瓶に生けること、毎日の水替えを欠かさないことが、長持ちさせるうえで重要です。延命剤が同封されている場合は必ずご使用ください。\"}},{\"@type\":\"Question\",\"name\":\"花瓶の大きさはどう選べばいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の丈の約1/3〜1/2が花瓶に収まる高さが目安です。サブスクで届く花束は3〜6本程度が多いため、高さ15〜20cm・口径5〜8cmの花瓶が使いやすいサイズです。口が広すぎると花が広がってまとまらず、狭すぎると茎が窮屈になるため、花の本数に合った口径をお選びください。\"}},{\"@type\":\"Question\",\"name\":\"夏場に花を長持ちさせるコツはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場は水温が上がりバクテリアが繁殖しやすいため、水替えを1日2回に増やすことをおすすめします。氷を数個入れて水温を下げる方法もあります。エアコンの風が直接当たらない涼しい場所に置き、直射日光を避けてください。また、水の量をやや少なめにして、水に浸かって傷みやすい茎の部分を減らすことも有効です。\"}},{\"@type\":\"Question\",\"name\":\"100円ショップの花瓶でも大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、使用できます。ダイソー公式ネットストアでは、ソーダガラスの「ガラス花瓶（クリア）」を高さ10.4cmと12.5cmの2種類、各110円（税込）で販売しています（2026年10月26日公式確認）。届く花の長さに合う高さのものを選んでください。小さな花瓶を複数用意しておくと、花を1〜2本ずつ分けて飾ることもできます。\"}},{\"@type\":\"Question\",\"name\":\"届いた花をドライフラワーにできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くの花はドライフラワーにできます。バラ、かすみ草、スターチス、千日紅、ユーカリなどは特にドライフラワーに適しています。花が傷む前に逆さに吊るすハンギング法が最も手軽です。完全に乾燥するまで1〜2週間かかります。ただし、ガーベラやチューリップなど水分の多い花はドライフラワーに適していません。\"}},{\"@type\":\"Question\",\"name\":\"水切りは毎日したほうがいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"毎日行う必要はありませんが、2〜3日に1回は水切りを行うことをおすすめします。水替えの際にあわせて行うと効率的です。茎の切り口にぬめりや変色がある場合は、すぐに水切りを行ってください。切れ味のよいハサミや花ばさみを使い、斜めにカットすることで水の吸い上げがよくなります。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"切り花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の種類・季節・室温・お手入れによって異なるため、当サイトでは一律の日数を示していません。水切り・水替え・延命剤の使用を組み合わせると、花の状態を保ちやすくなります。\"}},{\"@type\":\"Question\",\"name\":\"延命剤がないときの代わりになるものはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"家庭にあるもので代用できます。漂白剤を水1リットルに対して1〜2滴入れると、バクテリアの繁殖を抑えられます。また、砂糖を小さじ1杯ほど加えると花に栄養を補給できます。10円玉を花瓶に入れる方法も知られていますが、銅イオンの殺菌効果は限定的なため、漂白剤のほうが効果があります。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクで届いた花はどのくらい持ちますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の種類・季節・室温によって異なるため、当サイトでは一律の日数を示していません。届いたらすぐに水切りをして花瓶に生けること、毎日の水替えを欠かさないことが、長持ちさせるうえで重要です。延命剤が同封されている場合は必ずご使用ください。\"}},{\"@type\":\"Question\",\"name\":\"花瓶の大きさはどう選べばいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花の丈の約1/3〜1/2が花瓶に収まる高さが目安です。届く花の本数と長さはプランによって異なります（例：medelu Miniは3〜4本・長さ15〜20cm、bloomeeのお試しプランは4本以上・約18〜25cm。2026年10月31日公式確認）。口が広すぎると花が広がってまとまらず、狭すぎると茎が窮屈になるため、花の本数に合った口径をお選びください。\"}},{\"@type\":\"Question\",\"name\":\"夏場に花を長持ちさせるコツはありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"夏場は水温が上がりバクテリアが繁殖しやすいため、水替えを1日2回に増やすことをおすすめします。氷を数個入れて水温を下げる方法もあります。エアコンの風が直接当たらない涼しい場所に置き、直射日光を避けてください。また、水の量をやや少なめにして、水に浸かって傷みやすい茎の部分を減らすことも有効です。\"}},{\"@type\":\"Question\",\"name\":\"100円ショップの花瓶でも大丈夫ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、使用できます。ダイソー公式ネットストアでは、ソーダガラスの「ガラス花瓶（クリア）」を高さ10.4cmと12.5cmの2種類、各110円（税込）で販売しています（2026年10月26日公式確認）。届く花の長さに合う高さのものを選んでください。小さな花瓶を複数用意しておくと、花を1〜2本ずつ分けて飾ることもできます。\"}},{\"@type\":\"Question\",\"name\":\"届いた花をドライフラワーにできますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、多くの花はドライフラワーにできます。バラ、かすみ草、スターチス、千日紅、ユーカリなどは特にドライフラワーに適しています。花が傷む前に逆さに吊るすハンギング法が最も手軽です。完全に乾燥するまで1〜2週間かかります。ただし、ガーベラやチューリップなど水分の多い花はドライフラワーに適していません。\"}},{\"@type\":\"Question\",\"name\":\"水切りは毎日したほうがいいですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"毎日行う必要はありませんが、2〜3日に1回は水切りを行うことをおすすめします。水替えの際にあわせて行うと効率的です。茎の切り口にぬめりや変色がある場合は、すぐに水切りを行ってください。切れ味のよいハサミや花ばさみを使い、斜めにカットすることで水の吸い上げがよくなります。\"}}]}" }} />
         {/* JSONLD_INJECTED_v1 #3 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"切り花を長持ちさせるお手入れ方法\",\"description\":\"切り花を長持ちさせるお手入れの手順を解説します\"}" }} />
     <div className="flex flex-col min-h-screen">
@@ -403,7 +403,7 @@ export default function FlowerCarePage() {
                   <div>
                     <h3 className="text-base font-bold text-[#1F2420] mb-2">medelu Mini・hanamekuライトプランなど（3〜4本）</h3>
                     <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
-                      medelu Miniは長さ15〜20cmです（2026年10月30日公式確認）。高さ10〜15cmのミニ花瓶や一輪挿しが適しています。
+                      medelu Miniは長さ15〜20cm、hanamekuライトプランはグリーンを含む3〜4本です（2026年10月31日公式確認）。高さ10〜15cmのミニ花瓶や一輪挿しが適しています。
                       口径3〜5cmの細めのものを選ぶと、少ない本数でもまとまりよく飾ることができます。
                     </p>
                     <div className="flex items-center gap-4 text-sm">
@@ -422,7 +422,7 @@ export default function FlowerCarePage() {
                     中量タイプ
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-[#1F2420] mb-2">medelu Lite（5〜6本）・bloomeeお試しプラン（4本以上）など</h3>
+                    <h3 className="text-base font-bold text-[#1F2420] mb-2">medelu Lite（5〜6本・約30cm）・bloomeeお試しプラン（4本以上・約18〜25cm）など（2026年10月31日公式確認）</h3>
                     <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
                       標準的な花束に合うスタンダードサイズの花瓶をおすすめします。高さ15〜20cmで口径5〜8cm程度のものを選ぶと、
                       花束をそのまま入れても窮屈にならず、バランスよく飾ることができます。

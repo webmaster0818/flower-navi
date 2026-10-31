@@ -86,7 +86,7 @@ export const SERVICES: Service[] = [
       { name: "セルフアレンジ L", price: 3278, flowers: "1〜12本", postDelivery: false },
     ],
     shippingIncluded: true,
-    shippingNote: "税込・配送料込みです（ライトはポスト投函）。セルフアレンジは地域別の追加送料があります（北海道・九州550円、関西220円、中国・四国330円。沖縄・離島は配送不可）",
+    shippingNote: "税込・配送料込みです（ライトはポスト投函）。セルフアレンジは地域別の追加送料があります（北海道・九州550円、北東北・関西220円、中国・四国330円。沖縄・離島は配送不可。2026年10月31日公式確認）",
     frequencyShort: "毎週・14日ごと（ライト）",
     minDeliveries: null,
     commitmentLabel: "初回（1回目）は解約不可",
