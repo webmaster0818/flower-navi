@@ -6,7 +6,7 @@ import SiteFooter from "@/app/components/SiteFooter";
 import { SERVICES, minTotal, perStem, type Service } from "@/data/services";
 
 // 本文の最終更新日（scripts/sync-freshness.mjs が sitemap lastmod に合わせる）。料金の確認日は下の confirmedAt で各サービスの verifiedAt から出す
-const MODIFIED = "2026年10月25日";
+const MODIFIED = "2026年10月31日";
 
 export const metadata: Metadata = {
   title: "花の定期便 料金比較表｜送料込みの総額・最低支払額・1本あたりの単価で比較",
@@ -54,7 +54,7 @@ export default function RyokinPage() {
     "@type": "Article",
     headline: "花の定期便 料金比較表（送料込み総額・最低支払額・1本単価）",
     description: "花のサブスクの料金を、送料込みの総額・最低支払額・1本あたりの単価で比較しています。公式サイトでの確認日を付記しています。",
-    dateModified: "2026-10-25",
+    dateModified: "2026-10-31",
   };
   const faqLd = {
     "@context": "https://schema.org",
@@ -89,6 +89,10 @@ export default function RyokinPage() {
             <strong>〈送料込みの1回あたりの総額〉〈最低受取回数までの総額〉〈1本あたりの単価〉</strong>で比較することをおすすめします。
             送料込みの最安は<strong>{sorted[0].name}（{yen(sorted[0].cheapest.price)}円・{sorted[0].cheapest.name}）</strong>です。
             まず試してみたい場合は、回数の条件がないサービスをおすすめします（{confirmedAt(noMinimum)}時点・公式確認）。
+          </p>
+          <p className="text-xs text-[#6B6F6A] leading-relaxed mt-2">
+            このページは複数サービスの横並び比較です。ブルーミー1社の値段（3プランの1回の値段・毎週/隔週の月額の目安・単品購入との差）は
+            <Link href="/services/bloomee/#price" className="text-[#2F5B43] underline">ブルーミーの値段・料金プラン</Link>にまとめています。
           </p>
         </div>
 

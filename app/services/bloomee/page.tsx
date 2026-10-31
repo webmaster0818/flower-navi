@@ -219,6 +219,9 @@ export default function BloomeePage() {
             <p className="text-xs text-[#6B6F6A] leading-relaxed">
               出典：<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="underline">bloomee公式サイト（料金表・よくある質問）</a>・<a href="https://bloomeelife.com/contacts/law" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（いずれも2026年10月23日確認）。料金は変更される場合があるため、お申し込み前に公式サイトでご確認ください。
             </p>
+            <p className="text-xs text-[#6B6F6A] leading-relaxed mt-2">
+              ブルーミーと他社（medelu・AND PLANTS・hanameku など）の値段を送料込みの総額・1本あたりの単価で並べた比較は、<a href="/compare/ryokin/" className="text-[#2F5B43] underline">花の定期便 料金比較表</a>にまとめています。
+            </p>
           </div>
         </section>
 

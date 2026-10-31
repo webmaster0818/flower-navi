@@ -58,7 +58,7 @@ const articleLd = {
   description:
     "月額制の観葉植物レンタルと購入を、AND PLANTS・HitoHana Rental Green・GOOD GREENの公式価格で試算し、損益が入れ替わる月数と月額に含まれる作業を整理します。金額が決まる5つの条件、初期費用と月額の内訳、予算の立て方もまとめています。",
   datePublished: "2026-09-16T00:00:00+09:00",
-  dateModified: "2026-10-28T00:00:00+09:00",
+  dateModified: "2026-10-31T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/guides/kanyou-shokubutsu-ryokin/" },
