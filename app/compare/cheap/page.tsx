@@ -627,7 +627,7 @@ export default function CheapRankingPage() {
             <div className="mt-6 bg-[#F7F1EC] rounded-md p-5 border border-[#E3D3C8]">
               <h3 className="text-sm font-bold text-[#1F2420] mb-2">送料が有料のサービスの注意点</h3>
               <p className="text-sm text-[#4A4F49] leading-relaxed">
-                bloomee（送料385〜550円）と日本総合園芸（送料別途）は、花代とは別に送料がかかります。hanamekuはライトプランが配送料込みで、セルフアレンジプランのみ地域により追加送料がかかります。
+                bloomee（送料385〜550円）は、花代とは別に送料がかかります。日本総合園芸は各コースのページで料金を「税込・送料込」と表示しています（2026年11月1日公式確認）。hanamekuはライトプランが配送料込みで、セルフアレンジプランのみ地域により追加送料がかかります。
                 毎週配送を選ぶと月4回分の送料が発生するため、月間で1,540円以上の送料負担となる場合があります。
                 隔週配送にすれば送料は半分になりますが、年間では大きな金額になります。
               </p>
