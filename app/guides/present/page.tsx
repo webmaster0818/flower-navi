@@ -74,22 +74,6 @@ const giftServices = [
     bestFor: "おしゃれな花を贈りたい場合、インテリアに関心のある方へのプレゼント、結婚祝いや新築祝い",
     detail: "AND PLANTSは、注文時に届け先を贈り先の住所に設定することで、ギフトとして利用できます。花は自社拠点でフローリストが制作しています（2026年10月30日公式確認）。1回1,980円で送料無料、6〜8本（2026年10月17日公式確認）のボリュームがあります。回数の条件がないため、贈り主の判断で任意の時期に解約でき、3か月のみ・半年のみなど期間を自由に調整できます。初回クーポンを利用すると、さらに費用を抑えて始められます。",
   },
-  {
-    rank: 3,
-    name: "日本総合園芸",
-    nameJa: "にほんそうごうえんげい",
-    giftType: "ギフトでの申し込み方法は公式サイトに記載なし（2026年10月27日公式確認）",
-    price: "1,298円〜/回（自社配達便）",
-    shipping: "料金に含む（お届け方法で料金が異なる）",
-    giftPlan: "コースにより月1回・月3回・毎週または隔週など",
-    addressRequired: "必要（注文時に指定）",
-    messageCard: "定期便での記載なし（公式サイトでご確認ください）",
-    url: "/services/nihon-sogo-engei",
-    officialUrl: "https://nihon-sogo-engei.com/teikibin/",
-    highlight: "40コース以上から選べる花の定期便。お届け方法は自社配達便と宅配便の2種類です（2026年10月21日公式確認）。",
-    bestFor: "花材やコースを細かく選んで贈りたい場合",
-    detail: "日本総合園芸の花の定期便は、40コース以上から選べます。花瓶生け・水盤生け・アレンジメント花材などのコースでは花材が届き、受け取った方が自分で生けて飾ります。完成したアレンジメントやブーケが届くコース（季節のブーケコースなど）もあります（2026年10月23日公式確認）。お届け方法は、毎月決まった曜日に届ける自社配達便（留守の場合は玄関先に用意した水入りのバケツに入れる）と、宅配便の2種類で、料金はコースとお届け方法によって異なります（例：花瓶・水盤バラエティーコース 1回1,298円・自社配達便／2,530円・宅配便、いずれも月3回）（2026年10月21日公式確認）。自社配達便の対象地域は、公式サイトで郵便番号を入力して確認します。コースページには「離れて暮らすご両親へのプレゼントとしてもご利用いただけます」とありますが、ギフトでの申し込み方法とメッセージカードの可否は公式サイトに記載がないため、申し込み前にお問い合わせください（2026年10月27日公式確認）。",
-  },
 ];
 
 /* ─── Occasion Data ─── */
@@ -112,7 +96,7 @@ const occasions = [
     name: "結婚祝い",
     timing: "結婚報告後、新居への引越し後",
     description: "新生活を彩る花の定期便は、結婚祝いに適しています。新居のインテリアに合う花が届くため、新生活の始まりを華やかに演出できます。カタログギフトと並ぶ新しい選択肢として注目されています。",
-    recommend: "AND PLANTS（色・花材はフローリストのおまかせ）または日本総合園芸（40コース以上。花瓶生けなどのコースは花材が届き、自分で生ける）",
+    recommend: "AND PLANTS（色・花材はフローリストのおまかせ）",
     budget: "LIFFTの定期便ギフトチケットは3か月10,450円・6か月20,350円（税込）（2026年10月23日公式確認）",
   },
   {
@@ -178,15 +162,11 @@ export default function PresentGuidePage() {
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-md px-5 py-3">
                 <p className="text-xs text-[#6B6F6A] mb-1">ギフト対応</p>
-                <p className="text-xl font-bold text-[#2F5B43]">3サービス</p>
+                <p className="text-xl font-bold text-[#2F5B43]">2サービス</p>
               </div>
               <div className="bg-white rounded-md px-5 py-3">
                 <p className="text-xs text-[#6B6F6A] mb-1">贈り方</p>
                 <p className="text-xl font-bold text-[#2F5B43]">届け先を相手の住所に</p>
-              </div>
-              <div className="bg-white rounded-md px-5 py-3">
-                <p className="text-xs text-[#6B6F6A] mb-1">ギフト予算</p>
-                <p className="text-xl font-bold text-[#2F5B43]">3,000円〜</p>
               </div>
               <div className="bg-white rounded-md px-5 py-3">
                 <p className="text-xs text-[#6B6F6A] mb-1">人気のシーン</p>
@@ -250,7 +230,7 @@ export default function PresentGuidePage() {
             <div className="bg-[#F6F4EF] rounded-md p-5 md:p-6 border border-[#DEDAD2]">
               <h3 className="text-sm font-bold text-[#2F5B43] mb-3">当ページの要点</h3>
               <ul className="text-sm text-[#4A4F49] space-y-2">
-                <li>・ ギフトに対応している花の定期便サービス3社を比較</li>
+                <li>・ ギフトに対応している花の定期便サービス2社を比較</li>
                 <li>・ 母の日・誕生日・結婚祝い・退職祝いなどシーン別のおすすめ</li>
                 <li>・ 花の定期便をプレゼントする手順を解説</li>
                 <li>・ ギフトを贈る際の注意点を紹介</li>
@@ -267,7 +247,7 @@ export default function PresentGuidePage() {
               ギフト対応サービスの比較表
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
-              当サイトでは、花の定期便をプレゼントとして贈れる3つのサービスを、ギフト対応の仕組み・料金・特徴の観点から比較しています。
+              当サイトでは、花の定期便をプレゼントとして贈れる2つのサービスを、ギフト対応の仕組み・料金・特徴の観点から比較しています。
             </p>
 
             <div className="overflow-x-auto -mx-4 px-4">
@@ -319,7 +299,6 @@ export default function PresentGuidePage() {
               <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ bloomeeは、お届け先住所の入力画面で「プレゼントとして送る」を選ぶと、送り主の名前を登録できます（2026年10月20日公式確認）</li>
                 <li>・ AND PLANTSは注文時に届け先を贈り先の住所に設定することで、ギフトとして利用できます</li>
-                <li>・ 日本総合園芸はお届け方法（自社配達便・宅配便）とコースによって料金が異なります（2026年10月17日公式確認）</li>
                 <li>・ 表示価格はすべて税込です</li>
                 <li>・ 2026年10月30日時点の情報です。ご利用前に、公式サイトにて最新情報をご確認ください</li>
               </ul>
@@ -334,7 +313,7 @@ export default function PresentGuidePage() {
               おすすめギフト対応サービスの詳細
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
-              花の定期便をギフトとして贈る際におすすめの3サービスについて、ギフト対応の仕組み・料金・適した利用場面をご説明します。
+              花の定期便をギフトとして贈る際におすすめの2サービスについて、ギフト対応の仕組み・料金・適した利用場面をご説明します。
             </p>
 
             <div className="space-y-8">
@@ -482,7 +461,7 @@ export default function PresentGuidePage() {
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8">
               花の定期便をギフトとして贈る方法は、サービスによって異なります。
-              当サイトでは、bloomeeとAND PLANTSの手順をご説明します。どちらも、届け先に贈り先の住所を入力する方法です。日本総合園芸は、ギフトでの申し込み方法が公式サイトに記載されていないため、申し込み前にお問い合わせください（2026年10月27日公式確認）。
+              当サイトでは、bloomeeとAND PLANTSの手順をご説明します。どちらも、届け先に贈り先の住所を入力する方法です。日本総合園芸は、ギフトでの申し込み方法が公式サイトに記載されていないため、申し込み前にお問い合わせください（2026年11月1日公式確認）。
             </p>
 
             {/* Method 1: Present (bloomee) */}
@@ -685,7 +664,7 @@ export default function PresentGuidePage() {
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               手軽な価格で贈りたい場合は、お届け先の入力画面で「プレゼントとして送る」を選べるbloomeeをおすすめします。
-              本数の多いプランを選びたい場合はAND PLANTS、花材やコースを細かく選びたい場合は日本総合園芸が適しています。
+              本数の多いプランを選びたい場合はAND PLANTSが適しています。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               贈る場面や贈り先の生活スタイルに合わせて、サービスをお選びください。
@@ -703,12 +682,6 @@ export default function PresentGuidePage() {
                 className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
               >
                 2位 AND PLANTSの詳細を見る
-              </a>
-              <a
-                href="/services/nihon-sogo-engei"
-                className="inline-block bg-white text-[#2F5B43] font-bold text-base px-8 py-4 rounded-md border-2 border-[#2F5B43] hover:bg-[#EDF1EC] transition-colors"
-              >
-                3位 日本総合園芸の詳細を見る
               </a>
               <a
                 href="/guides/keirou-no-hi/"
