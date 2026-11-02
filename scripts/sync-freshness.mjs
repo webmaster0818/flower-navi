@@ -43,6 +43,24 @@ for (let i = 0; i < idPos.length; i++) {
   if (sv && iso > sv.iso) sv.iso = iso;
 }
 
+// 2026-11-02: services/bloomee で sitemap lastmod 10/31 と dateModified 10/27 が食い違った。原因は正規表現ではなく、
+// 10/31 の本文変更（料金比較表への相互リンク追加）を lastmod-from-deploy.py が lastmod に反映した一方、
+// このスクリプトは reviewEvidence の updatedAt／verifiedAt だけで dateModified を決めていた（services/ は 3) の対象外）。
+// sitemap の lastmod の方が新しい場合は dateModified もそれに合わせ（前進のみ）、updatedAt（画面の「更新」）の更新漏れを警告する。
+{
+  const sm0 = readFileSync(join(root, "public/sitemap.xml"), "utf8");
+  for (const s of services) {
+    const dir = DIR_BY_ID[s.id];
+    if (!dir) continue;
+    const loc = `https://ohana-delivery.com/services/${dir}/`;
+    const mm = sm0.match(new RegExp(`<loc>${loc.replace(/[/.]/g, "\\$&")}</loc>\\s*<lastmod>(\\d{4}-\\d{2}-\\d{2})`));
+    if (mm && mm[1] > s.iso) {
+      console.warn(`WARN: services/${dir} の sitemap lastmod ${mm[1]} が updatedAt/verifiedAt ${s.iso} より新しい → dateModified を ${mm[1]} に。reviewEvidence.ts の updatedAt（画面の更新日）も合わせてください`);
+      s.iso = mm[1];
+    }
+  }
+}
+
 // 比較ハブ（ryokin・ichirinzashi）は services.ts の料金だけを表示するので、口コミ本文の更新日ではなく verifiedAt の最新を使う
 const latest = services.map((s) => s.verifiedIso).sort().at(-1);
 console.log("verifiedAt:", services.map((s) => `${s.id}=${s.iso}`).join(" "), "| latest:", latest);
