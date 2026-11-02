@@ -48,7 +48,7 @@ const clusters = [
   ["/regions/", "地域別(東京・大阪ほか)"],
   ["/vs/", "サービス1対1比較"],
   ["/know-guides/", "お花の豆知識ガイド"],
-  ["/service-guides/", "サービス別 口コミ・解約"],
+  ["/service-guides/", "サービス別 解約方法"],
 ];
 
 function Col({ title, children }: { title: string; children: React.ReactNode }) {

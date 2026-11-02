@@ -336,7 +336,7 @@ const nihonSogoEngeiKaiyaku: ServiceGuide = {
   ],
   cta: { label: "日本総合園芸 公式 花の定期便ページ", href: "https://nihon-sogo-engei.com/teikibin/" },
   relatedPaths: [
-    { label: "日本総合園芸 花の定期便の口コミ・評判・料金", href: "/services/nihon-sogo-engei/" },
+    { label: "日本総合園芸 花の定期便の料金・コース", href: "/services/nihon-sogo-engei/" },
     { label: "解約しやすい花のサブスク比較", href: "/guides/kaiyaku/" },
     { label: "仏壇の花の定期便ガイド", href: "/guides/butsudan/" },
   ],

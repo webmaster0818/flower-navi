@@ -7,7 +7,7 @@ import { serviceGuides } from "@/data/serviceGuides";
 const SITE_URL = "https://ohana-delivery.com";
 
 export const metadata: Metadata = {
-  title: "サービス別の解約方法・口コミガイド｜flowerデリ",
+  title: "サービス別の解約方法ガイド｜花のサブスク8サービスの解約手順と締切｜flowerデリ",
   description: "bloomee・medelu・AND PLANTS・LIFFT・HitoHana・タスハナ・ハナメク・日本総合園芸の8サービスの解約方法を解説します。口コミ・評判は、各サービスの詳細ページに出典を明記してまとめています。",
   alternates: { canonical: "/service-guides/" },
 };
@@ -54,16 +54,16 @@ export default function ServiceGuidesIndexPage() {
 
           <PageHero bleed path={"/service-guides/"}>
             <h1 className="text-2xl md:text-3xl font-bold text-[#1F2420] mb-4 leading-snug">
-              サービス別 解約方法・口コミガイド
+              サービス別 解約方法ガイド
             </h1>
             <p className="text-base text-[#4A4F49] leading-relaxed">
-              サービスごとの解約方法と口コミの傾向をまとめています。申し込み前の最終確認にご活用ください。
+              サービスごとの解約方法をまとめています。申し込み前の最終確認にご活用ください。
               各サービスの口コミ・評判は、料金や解約条件とあわせてサービス詳細ページにまとめています。
             </p>
           </PageHero>
 
           <section className="mb-10 bg-white border border-[#DEDAD2] rounded-md p-5">
-            <h2 className="text-base font-bold text-[#1F2420] mb-3">口コミ・評判（出典を明記）はサービス詳細ページに掲載しています</h2>
+            <h2 className="text-base font-bold text-[#1F2420] mb-3">料金・解約条件と口コミ・評判（出典を明記）はサービス詳細ページに掲載しています</h2>
             <ul className="grid sm:grid-cols-2 gap-2 text-sm">
               <li><Link href="/services/bloomee/" className="text-[#2F5B43] underline">ブルーミー（bloomee）の口コミ・評判</Link></li>
               <li><Link href="/services/medelu/" className="text-[#2F5B43] underline">メデル（medelu）の口コミ・評判</Link></li>
@@ -72,7 +72,7 @@ export default function ServiceGuidesIndexPage() {
               <li><Link href="/services/hitohana/" className="text-[#2F5B43] underline">ヒトハナ（hitohana）の口コミ・評判</Link></li>
               <li><Link href="/services/lifft/" className="text-[#2F5B43] underline">LIFFT（リフト）の口コミ・評判</Link></li>
               <li><Link href="/services/tasuhana/" className="text-[#2F5B43] underline">タスハナ（+hana）の口コミ・評判</Link></li>
-              <li><Link href="/services/nihon-sogo-engei/" className="text-[#2F5B43] underline">花の定期便（日本総合園芸）の口コミ・評判</Link></li>
+              <li><Link href="/services/nihon-sogo-engei/" className="text-[#2F5B43] underline">花の定期便（日本総合園芸）の料金・コース</Link></li>
             </ul>
           </section>
 
