@@ -59,7 +59,7 @@ export default function HanamekuPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hanameku/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"description\":\"hanameku（ハナメク）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-31T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hanameku/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"hanameku（ハナメク）の評判・口コミ・料金プラン\",\"description\":\"hanameku（ハナメク）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-03T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hanameku/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -119,6 +119,28 @@ export default function HanamekuPage() {
             </div>
           </div>
         </PageHero>
+
+        {/* ─── 冒頭即答：ハナメクとは（2026-11-03 公式確認） ─── */}
+        <section id="quick-answer" className="bg-white pt-8 border-b border-[#DEDAD2]">
+          <div className="max-w-3xl mx-auto px-4 pb-8">
+            <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-3">ハナメク（hanameku）とは：運営会社・料金・届き方・解約</h2>
+            <p className="text-sm text-[#3F443E] leading-relaxed mb-4">
+              ハナメク（hanameku）は、and factory株式会社（東京都目黒区）が運営する花の定期便（花のサブスク）です。ポストに届くライトプランと、宅配で届くセルフアレンジプランの2種類があります。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse bg-white">
+                <tbody className="text-[#3F443E]">
+                  <tr className="border-b border-[#DEDAD2]"><th className="px-4 py-3 text-left bg-[#F3F6F2] w-1/4 font-bold text-[#1F2420]">運営会社</th><td className="px-4 py-3">and factory株式会社（特定商取引法に基づく表示の販売業者。2026年6月にnarrative株式会社から事業が移管されています）</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><th className="px-4 py-3 text-left bg-[#F3F6F2] font-bold text-[#1F2420]">ライトプラン</th><td className="px-4 py-3">1回1,210円（税込・配送料込）。生花（グリーンを含む3〜4本）がポスト投函で届きます。お届けは毎週または14日ごと、水曜日から金曜日の間です。</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><th className="px-4 py-3 text-left bg-[#F3F6F2] font-bold text-[#1F2420]">セルフアレンジプラン</th><td className="px-4 py-3">S 1,958円（1〜8本）・L 3,278円（1〜12本）（税込）。宅配（宅配ボックス可）で土曜日または日曜日に届き、北海道・東北の一部・西日本は送料220〜550円が加わります。</td></tr>
+                  <tr className="border-b border-[#DEDAD2]"><th className="px-4 py-3 text-left bg-[#F3F6F2] font-bold text-[#1F2420]">配送地域</th><td className="px-4 py-3">北海道・本州・四国・九州。沖縄県と離島には届きません。</td></tr>
+                  <tr><th className="px-4 py-3 text-left bg-[#F3F6F2] font-bold text-[#1F2420]">解約</th><td className="px-4 py-3">定期1回目（初回）は解約できません。2回目以降の解約・スキップの締切は、公式FAQ・ご利用ガイドではお届け予定日の10日前、ライトプランの商品ページでは「9日前まで解約可能」と記載されています（<a href="#cancellation" className="text-[#2F5B43] underline">解約の手順</a>）。</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#6B6F6A] mt-3">出典：hanameku公式 <a href="https://hanameku.jp/shop/law_info" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表示</a>・<a href="https://hanameku.jp/shop/pages/light" target="_blank" rel="noopener noreferrer nofollow" className="underline">ライトプラン</a>・<a href="https://hanameku.jp/shop/pages/selfarrange" target="_blank" rel="noopener noreferrer nofollow" className="underline">セルフアレンジプラン</a>・<a href="https://hanameku.jp/shop/guide" target="_blank" rel="noopener noreferrer nofollow" className="underline">ご利用ガイド</a>・<a href="https://hanameku.jp/shop/faq" target="_blank" rel="noopener noreferrer nofollow" className="underline">よくある質問</a>（2026年11月3日確認）。</p>
+          </div>
+        </section>
 
         <ReviewVerdict d={RE} s={S} />
 
