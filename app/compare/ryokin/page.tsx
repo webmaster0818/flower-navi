@@ -6,7 +6,7 @@ import SiteFooter from "@/app/components/SiteFooter";
 import { SERVICES, minTotal, perStem, type Service } from "@/data/services";
 
 // 本文の最終更新日（scripts/sync-freshness.mjs が sitemap lastmod に合わせる）。料金の確認日は下の confirmedAt で各サービスの verifiedAt から出す
-const MODIFIED = "2026年10月31日";
+const MODIFIED = "2026年11月4日";
 
 export const metadata: Metadata = {
   title: "花の定期便 料金比較表｜送料込みの総額・最低支払額・1本あたりの単価で比較",
@@ -54,7 +54,7 @@ export default function RyokinPage() {
     "@type": "Article",
     headline: "花の定期便 料金比較表（送料込み総額・最低支払額・1本単価）",
     description: "花のサブスクの料金を、送料込みの総額・最低支払額・1本あたりの単価で比較しています。公式サイトでの確認日を付記しています。",
-    dateModified: "2026-10-31",
+    dateModified: "2026-11-04",
   };
   const faqLd = {
     "@context": "https://schema.org",
@@ -115,6 +115,9 @@ export default function RyokinPage() {
                 <tr key={s.id} className={i % 2 ? "bg-[#FAFBFA]" : "bg-white"}>
                   <td className="p-3 border-b border-[#DEDAD2] font-bold">
                     <Link href={s.servicePath} className="text-[#2F5B43] underline">{s.name}</Link>
+                    {s.id === "bloomee" && (
+                      <Link href="/services/bloomee/#price" className="block text-[11px] font-normal text-[#2F5B43] underline mt-1">ブルーミーの値段（3プラン・単品購入）</Link>
+                    )}
                   </td>
                   <td className="p-3 border-b border-[#DEDAD2]">
                     {s.cheapest.name}<br /><span className="text-[11px] text-[#6B6F6A]">{s.cheapest.flowers}・{s.shippingNote}</span>

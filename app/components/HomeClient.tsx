@@ -414,13 +414,67 @@ export default function HomeClient() {
               ))}
             </div>
             <p className="text-xs text-[#6B6F6A] mt-4">
-              ※ 料金・条件は各社の公式サイトで2026年10月14日〜17日に確認した表示額・表記です。詳しくは下の比較表をご覧ください。
+              ※ 料金はmedelu・bloomeeが2026年11月4日、hanamekuが11月3日、AND PLANTSが10月30日に各社の公式サイトで確認した表示額です。回数の条件は2026年10月14日〜17日に確認した表記です。詳しくは下の比較表をご覧ください。
+            </p>
+          </div>
+        </section>
+
+        {/* ─── Comparison Table ─── */}
+        <section id="comparison" className="py-20 bg-white">
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="sec-head mb-10">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2420] mb-4">
+                お花のサブスク 主要4社の比較表（送料込み料金・届き方・回数の条件）
+              </h2>
+              <p className="text-[#4A4F49]">
+                料金・送料・届き方を一覧で比較できます
+              </p>
+            </div>
+
+            <div className="table-wrapper rounded-md bg-white overflow-hidden border border-[#DEDAD2]">
+              <table className="comparison-table w-full">
+                <thead>
+                  <tr>
+                    <th className="rounded-tl-2xl">サービス</th>
+                    <th>最安料金</th>
+                    <th>送料</th>
+                    <th>届き方</th>
+                    <th>花の本数</th>
+                    <th>頻度</th>
+                    <th className="rounded-tr-2xl">解約条件</th>
+                  </tr>
+                </thead>
+                {/* 単一データソース(services.ts)から生成。価格はすべて公式確認(2026-06-27) */}
+                <tbody>
+                  {COMPARE_ROWS.map((s) => (
+                    <tr key={s.id}>
+                      <td className="font-medium text-[#1F2420]"><a href={s.servicePath} className="underline decoration-[#DEDAD2] underline-offset-4 hover:text-[#B0694F]">{shortName(s.name)}</a></td>
+                      <td className={s.cheapest.price === COMPARE_ROWS[0].cheapest.price ? "text-[#B0694F] font-medium" : ""}>
+                        {s.cheapest.price.toLocaleString("ja-JP")}円/回
+                      </td>
+                      <td className={s.shippingIncluded ? "text-[#6E8B76] font-medium" : ""}>
+                        {s.shippingIncluded ? "込み" : (s.shippingShort ?? "別途")}
+                      </td>
+                      <td>{s.cheapest.postDelivery ? "ポスト投函" : "宅配/手渡し"}</td>
+                      <td>{s.cheapest.flowers}</td>
+                      <td>{s.frequencyShort}</td>
+                      <td className={s.commitmentLabel.startsWith("なし") ? "text-[#6E8B76]" : ""}>
+                        {s.commitmentLabel}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <p className="text-sm text-[#6B6F6A] mt-6 text-center">
+              ※ 料金はmedelu・bloomeeが2026年11月4日、hanamekuが11月3日、AND PLANTSが10月30日に、お届け頻度・解約条件は2026年10月14日〜17日に各社の公式サイトで確認した表示額・表記です（AND PLANTSは公式ページに税込・税抜の明記がありません）。ご利用前に、公式サイトにて最新の情報をご確認ください。
             </p>
           </div>
         </section>
 
         {/* ─── Quick Diagnosis ─── */}
-        <section id="diagnosis" className="py-20 bg-white">
+        <section id="diagnosis" className="py-20 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="sec-head mb-10">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2420] mb-4">
@@ -568,60 +622,6 @@ export default function HomeClient() {
           </div>
         </section>
 
-
-        {/* ─── Comparison Table ─── */}
-        <section id="comparison" className="py-20 bg-[#F6F4EF]">
-          <div className="max-w-5xl mx-auto px-4">
-            <div className="sec-head mb-10">
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2420] mb-4">
-                お花のサブスク 主要4社の比較表（送料込み料金・届き方・回数の条件）
-              </h2>
-              <p className="text-[#4A4F49]">
-                料金・送料・届き方を一覧で比較できます
-              </p>
-            </div>
-
-            <div className="table-wrapper rounded-md bg-white overflow-hidden">
-              <table className="comparison-table w-full">
-                <thead>
-                  <tr>
-                    <th className="rounded-tl-2xl">サービス</th>
-                    <th>最安料金</th>
-                    <th>送料</th>
-                    <th>届き方</th>
-                    <th>花の本数</th>
-                    <th>頻度</th>
-                    <th className="rounded-tr-2xl">解約条件</th>
-                  </tr>
-                </thead>
-                {/* 単一データソース(services.ts)から生成。価格はすべて公式確認(2026-06-27) */}
-                <tbody>
-                  {COMPARE_ROWS.map((s) => (
-                    <tr key={s.id}>
-                      <td className="font-medium text-[#1F2420]"><a href={s.servicePath} className="underline decoration-[#DEDAD2] underline-offset-4 hover:text-[#B0694F]">{shortName(s.name)}</a></td>
-                      <td className={s.cheapest.price === COMPARE_ROWS[0].cheapest.price ? "text-[#B0694F] font-medium" : ""}>
-                        {s.cheapest.price.toLocaleString("ja-JP")}円/回
-                      </td>
-                      <td className={s.shippingIncluded ? "text-[#6E8B76] font-medium" : ""}>
-                        {s.shippingIncluded ? "込み" : (s.shippingShort ?? "別途")}
-                      </td>
-                      <td>{s.cheapest.postDelivery ? "ポスト投函" : "宅配/手渡し"}</td>
-                      <td>{s.cheapest.flowers}</td>
-                      <td>{s.frequencyShort}</td>
-                      <td className={s.commitmentLabel.startsWith("なし") ? "text-[#6E8B76]" : ""}>
-                        {s.commitmentLabel}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            <p className="text-sm text-[#6B6F6A] mt-6 text-center">
-              ※ 料金・条件は各社の公式サイトで2026年10月14日に、お届け頻度は2026年10月14日〜17日に確認した表示額・表記です（AND PLANTSは公式ページに税込・税抜の明記がありません）。ご利用前に、公式サイトにて最新の情報をご確認ください。
-            </p>
-          </div>
-        </section>
 
         {/* ─── Individual Service Reviews ─── */}
         <section id="reviews" className="py-20 bg-white">
