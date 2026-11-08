@@ -35,6 +35,10 @@ const faqItems = [
     a: "みん評（掲載562件・2026年10月14日確認）では「花がしおれていた」「同じ花が続く」「写真より少ない」「解約がわかりにくい」といった厳しい声が多く、そうした口コミがあるのは事実です。一方、複数回受け取ったレビュー記事では、花持ちは1〜2週間程度で回や季節による差があるという記録が中心です。公式の特定商取引法に基づく表記では、定期便は到着予定日から2週間以内に問い合わせフォームで連絡すれば、不具合があれば返金または代品発送の対象です（2026年10月27日確認）。",
   },
   {
+    q: "ブルーミーをやめた人の理由は何ですか？",
+    a: "やめた（解約した）人の口コミとしてレビュー記事で紹介されているのは、「花を自分で選べない・好みの花が届かない（4回とも薔薇だったという投稿も）」「送料込みで1,000円近く払うなら近所の花屋で選んで買うほうがよい」「自分で選んだ花のほうが気分が上がる」の3つが中心です（X（旧Twitter）の投稿を引用した記事2件・2026年11月8日確認）。公式では花の種類の指定方法は案内されておらず、4回目以降はプラン変更・隔週・週単位のストップで調整できます。",
+  },
+  {
     q: "ブルーミーのスキップとストップ（解約）の違いは何ですか？",
     a: "公式のよくある質問では、スキップは特定の週だけお届けを休む機能、ストップは週単位でお届けを停止する手続き（再開も可能）と案内されています。最初の4回を受け取る前に解約・配送停止すると、残りの回数分の商品代金が途中解約料になります（特定商取引法に基づく表記）。スキップ・ストップの締切は公式の表記に記載がないため、マイページの表示をご確認ください（2026年10月27日確認）。",
   },
@@ -105,7 +109,7 @@ export default function BloomeePage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/bloomee/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-04T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-08T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -140,7 +144,7 @@ export default function BloomeePage() {
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               ブルーミー（bloomee）の口コミ・評判とメリット・デメリット<br className="hidden md:block" />
-              悪い口コミの傾向・公式の対応と値段、サブスクの仕組み
+              悪い口コミの傾向・やめた人の理由と値段、サブスクの仕組み
             </h1>
             <div className="text-left text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed bg-white rounded-md border border-[#DEDAD2] p-4 md:p-5">
               <p className="mb-2"><strong className="text-[#1F2420]">口コミの結論：</strong>良い口コミは「ポストに届くので不在でも受け取れる」「花代980円からで始めやすい」「季節の花が届く」。悪い口コミは「花がしおれていた・同じ花が続く」「最初の4回は途中解約料がかかる」「解約がわかりにくい」が中心です。</p>
@@ -236,18 +240,19 @@ export default function BloomeePage() {
                   <li><a href="#reviews" className="hover:text-[#2F5B43] transition-colors">2. ブルーミーの口コミ・評判（出典付き）</a></li>
                   <li><a href="#review-sources" className="hover:text-[#2F5B43] transition-colors">3. 口コミの出典ごとの件数・評価の内訳</a></li>
                   <li><a href="#bad-reviews" className="hover:text-[#2F5B43] transition-colors">4. 悪い口コミの傾向と公式の対応</a></li>
-                  <li><a href="#flower-reviews" className="hover:text-[#2F5B43] transition-colors">5. ブルーミーの花の口コミ（品質・ボリュームの記録と掲載先）</a></li>
-                  <li><a href="#overview" className="hover:text-[#2F5B43] transition-colors">6. bloomeeのサービス概要</a></li>
-                  <li><a href="#pricing" className="hover:text-[#2F5B43] transition-colors">7. 料金プラン・送料（公式確認）</a></li>
-                  <li><a href="#subscription" className="hover:text-[#2F5B43] transition-colors">8. ブルーミーのサブスクの仕組み（スキップ・ストップ・解約・決済）</a></li>
-                  <li><a href="#merit-demerit" className="hover:text-[#2F5B43] transition-colors">9. ブルーミーライフ（bloomee）のメリット・デメリット（公式情報で整理）</a></li>
-                  <li><a href="#pros" className="hover:text-[#2F5B43] transition-colors">10. メリット（良い評判の理由）</a></li>
-                  <li><a href="#cons" className="hover:text-[#2F5B43] transition-colors">11. デメリット（悪い評判の理由）</a></li>
-                  <li><a href="#recommend" className="hover:text-[#2F5B43] transition-colors">12. おすすめできる方・おすすめできない方</a></li>
-                  <li><a href="#comparison" className="hover:text-[#2F5B43] transition-colors">13. 競合サービスとの比較</a></li>
-                  <li><a href="#how-to-start" className="hover:text-[#2F5B43] transition-colors">14. bloomeeの始め方</a></li>
-                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">15. よくある質問</a></li>
-                  <li><a href="#cancellation" className="hover:text-[#2F5B43] transition-colors">16. 解約・お届けストップの手順</a></li>
+                  <li><a href="#quit-reasons" className="hover:text-[#2F5B43] transition-colors">5. やめた人（解約した人）の口コミと理由</a></li>
+                  <li><a href="#flower-reviews" className="hover:text-[#2F5B43] transition-colors">6. ブルーミーの花の口コミ（品質・ボリュームの記録と掲載先）</a></li>
+                  <li><a href="#overview" className="hover:text-[#2F5B43] transition-colors">7. bloomeeのサービス概要</a></li>
+                  <li><a href="#pricing" className="hover:text-[#2F5B43] transition-colors">8. 料金プラン・送料（公式確認）</a></li>
+                  <li><a href="#subscription" className="hover:text-[#2F5B43] transition-colors">9. ブルーミーのサブスクの仕組み（スキップ・ストップ・解約・決済）</a></li>
+                  <li><a href="#merit-demerit" className="hover:text-[#2F5B43] transition-colors">10. ブルーミーライフ（bloomee）のメリット・デメリット（公式情報で整理）</a></li>
+                  <li><a href="#pros" className="hover:text-[#2F5B43] transition-colors">11. メリット（良い評判の理由）</a></li>
+                  <li><a href="#cons" className="hover:text-[#2F5B43] transition-colors">12. デメリット（悪い評判の理由）</a></li>
+                  <li><a href="#recommend" className="hover:text-[#2F5B43] transition-colors">13. おすすめできる方・おすすめできない方</a></li>
+                  <li><a href="#comparison" className="hover:text-[#2F5B43] transition-colors">14. 競合サービスとの比較</a></li>
+                  <li><a href="#how-to-start" className="hover:text-[#2F5B43] transition-colors">15. bloomeeの始め方</a></li>
+                  <li><a href="#faq" className="hover:text-[#2F5B43] transition-colors">16. よくある質問</a></li>
+                  <li><a href="#cancellation" className="hover:text-[#2F5B43] transition-colors">17. 解約・お届けストップの手順</a></li>
                 </ol>
               </nav>
             </div>
@@ -344,6 +349,50 @@ export default function BloomeePage() {
             </div>
             <p className="text-xs text-[#6B6F6A] leading-relaxed">
               出典：<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">bloomee公式サイト（よくある質問・料金表）</a>・<a href="https://bloomeelife.com/contacts/law" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">特定商取引法に基づく表記</a>（いずれも2026年10月27日確認）。レビュー記事（<a href="https://hanatowatashi.com/bloomee/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">花と私。</a>）では、マイページから花の状態がわかる写真を添えて申請し「再送」か「次回分無料」を選べる品質保証制度として紹介されています（公式の表記は「返金または代品発送」）。届いた時点で写真を残しておくと申請しやすくなります。
+            </p>
+          </div>
+        </section>
+
+        {/* ─── Quit reasons (2026-11-08) ─── */}
+        <section id="quit-reasons" className="py-12 md:py-16 bg-[#F6F4EF]">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
+              ブルーミーをやめた人（解約した人）の口コミと理由
+            </h2>
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
+              ブルーミーをやめた人の理由として、レビュー記事が紹介している口コミは「花を自分で選べない」「近所の花屋で買うほうがお得に感じる」「自分で選んだ花のほうが気分が上がる」の3つが中心です。品質への不満よりも、<strong>花を選べない仕組みそのものが合わなかった</strong>という声が目立ちます。下の表は、記事に引用されたX（旧Twitter）の投稿の要約と、続ける前に確認できる公式の仕組みです。
+            </p>
+            <div className="table-wrapper overflow-x-auto rounded-md border border-[#E3D3C8] bg-white mb-4">
+              <table className="w-full text-sm text-[#3F443E]">
+                <caption className="sr-only">ブルーミーをやめた人の理由と公式の仕組み（2026年11月8日確認）</caption>
+                <thead className="bg-[#F7F1EC] text-[#1F2420]">
+                  <tr>
+                    <th className="px-3 py-2 text-left font-bold">やめた理由（口コミの要約）</th>
+                    <th className="px-3 py-2 text-left font-bold">紹介している記事</th>
+                    <th className="px-3 py-2 text-left font-bold">公式の仕組み</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["花を自分で選べない・好みの花が届かない（4回とも薔薇が届いたという投稿）", "A（2021年5月の投稿）・B", "花の組み合わせ・色味はおまかせ。種類を指定する方法は公式に記載なし"],
+                    ["送料込みで1,000円近く払うなら、近所の花屋で選んで買うほうがよい", "A（2021年12月の投稿）", "お試しは花代980円＋送料385円＝1回1,365円（税込・公式料金表）"],
+                    ["自分で選んだ花のほうが気分が上がる", "A（2021年12月の投稿）・B", "好みの問題。4回目以降は週単位でストップ・再開できる"],
+                    ["量が少なそうで始めなかった（記事掲載時の旧料金・500円台のコースについて）", "B", "サイズ目安はお試し・グリーン約18〜25cm、ベーシック約25〜30cm（2026年10月20日 公式FAQ）"],
+                  ].map(([k, s, v]) => (
+                    <tr key={k} className="border-t border-[#EEE] align-top">
+                      <td className="px-3 py-2 font-medium text-[#1F2420]">{k}</td>
+                      <td className="px-3 py-2">{s}</td>
+                      <td className="px-3 py-2">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-[#4A4F49] leading-relaxed mb-3">
+              やめる前に検討できるのは、4回目以降の<a href="#subscription" className="text-[#2F5B43] underline">隔週への変更・週単位のストップ・特定の週のスキップ・プラン変更</a>です。ただし花の種類は選べないため、「選べないこと」が理由なら、他社との<a href="#comparison" className="text-[#2F5B43] underline">比較</a>も参考になります。最初の4回を受け取る前の解約には途中解約料がかかります（<a href="#cancellation" className="text-[#2F5B43] underline">解約の手順</a>）。
+            </p>
+            <p className="text-xs text-[#6B6F6A] leading-relaxed">
+              出典：A＝<a href="https://mangadia.xsrv.jp/subscription/bloomee.html" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">「ブルーミーの口コミと評判を調査！やめた人の理由から本当に料金が高いのか比較」</a>（2025年2月12日付・X投稿の引用）、B＝<a href="https://kaori-happiness.jp/bloomee-hidoi/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">「ブルーミーは『ひどい・しょぼい・がっかり・最悪』？やめた人の意見は？」</a>（2021年以降のXの検索による簡易調査と記事内に明記）。いずれも2026年11月8日確認。公式の仕組みは<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">bloomee公式サイト（よくある質問・料金表）</a>（料金は2026年11月4日、4回のお約束・ストップ・隔週・スキップは11月8日に確認）。投稿は個人の感想で、件数を数えた調査ではありません。
             </p>
           </div>
         </section>
