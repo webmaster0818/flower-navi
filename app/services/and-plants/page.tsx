@@ -19,6 +19,10 @@ const faqItems = [
     a: "口コミの大半は観葉植物の購入者によるもので、「梱包が丁寧」「植物の状態が良い」「発送前に写真で確認できる」「鉢がおしゃれ」といった点が評価されています。一方で、「価格がやや高い」「品切れがある」「コバエ・茎折れ・鉢の割れ」の報告もあります。花の定期便については、実際に注文した記事で「傷や折れがなく届いた」「咲きかけの花が数日で満開になった」と状態の良さが評価される一方、「次回の決済前に解約・スキップの手続きが必要」「イメージよりボリュームが少ない」という声もあります（2026年10月15日確認）。",
   },
   {
+    q: "アンドプランツ（AND PLANTS）とはどんな会社・サービスですか？",
+    a: "株式会社Domuz（神奈川県川崎市中原区・2018年10月設立）が運営する観葉植物のECブランドで、2021年5月に観葉植物のオンラインストアとして始まりました。鉢・プランターとセットで届く観葉植物が中心です。花の事業は2026年5月18日に「AND FLOWER（アンドフラワー）」として独立したブランドになり、運営は引き続き株式会社Domuzです（株式会社DomuzのPR TIMES発表〈2026年5月18日〉、2026年11月10日確認）。",
+  },
+  {
     q: "アンドプランツの悪い評判で多い内容は何ですか？",
     a: "レビュー記事で繰り返し挙げられているのは、①ほかの通販より価格がやや高い、②人気品種の品切れ、③コバエの発生や配送時の茎折れ・鉢の割れ、の3点です。花の定期便では、生花の交換申請の期限が到着後1日以内と短い点にご注意ください。",
   },
@@ -95,7 +99,7 @@ export default function AndPlantsPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/and-plants/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"description\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-29T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/and-plants/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"description\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-10T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/and-plants/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -213,10 +217,13 @@ export default function AndPlantsPage() {
         <section id="overview" className="py-12 md:py-16 bg-[#F6F4EF]">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
-              AND PLANTS（アンドプランツ）の概要
+              アンドプランツ（AND PLANTS）とは：運営会社と概要
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
-              AND PLANTS（アンドプランツ）は、株式会社Domuz（神奈川県川崎市）が運営する観葉植物の通販サイトです。鉢・プランターとセットで届く観葉植物が中心で、花の定期便もそのサービスの一つとして提供されています。
+              アンドプランツ（AND PLANTS）とは、株式会社Domuz（神奈川県川崎市中原区・2018年10月設立）が運営する観葉植物のECブランドです。2021年5月に観葉植物のオンラインストアとして始まり、コンセプトは「部屋に、眺めを。」です。鉢・プランターとセットで届く観葉植物が中心で、花の定期便もそのサービスの一つとして提供されています（株式会社DomuzのPR TIMES発表〈2026年5月18日〉で2026年11月10日に確認）。
+            </p>
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
+              花の事業は2021年12月にドライフラワー、2022年11月に生花ギフトの販売から始まり、2026年5月18日に「AND FLOWER（アンドフラワー）」として独立したブランドになりました。運営はどちらも株式会社Domuzです（同発表）。運営会社は2024年7月に、ギフティをリード投資家として3億円を調達し、累積調達額は4.4億円と報じられています（THE BRIDGE 2024年7月25日の記事）。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               2026年5月からは花の事業が「AND FLOWER（アンドフラワー）」ブランドとして展開されていますが、花の定期便のページは現在もandplants.jp配下にあります。「アンドプランツ 口コミ」で見つかる声の多くは観葉植物に関するものであるため、当サイトでは観葉植物と花の定期便を分けて整理しています。
@@ -225,7 +232,10 @@ export default function AndPlantsPage() {
               <h3 className="text-sm font-bold text-[#2F5B43] mb-3">AND PLANTS 基本情報（{S.verifiedAt} 公式確認）</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 {[
-                  ["運営会社", "株式会社Domuz"],
+                  ["運営会社", "株式会社Domuz（2018年10月設立）"],
+                  ["所在地", "神奈川県川崎市中原区"],
+                  ["サービス開始", "2021年5月（観葉植物のオンラインストア）"],
+                  ["花のブランド", "AND FLOWER（2026年5月18日に独立）"],
                   ["主な商品", "観葉植物（鉢・植え替え込み）／花の定期便"],
                   ["花の定期便", "1,980円〜（送料込み）"],
                   ["お届け頻度", "1週・2週・4週ごと"],

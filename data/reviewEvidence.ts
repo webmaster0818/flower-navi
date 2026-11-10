@@ -79,7 +79,7 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
     id: "andplants",
     shortName: "AND PLANTS（アンドプランツ）",
     verdictTitle: "AND PLANTSの口コミで評価される梱包・植物の状態と不満点",
-    updatedAt: "2026年10月29日",
+    updatedAt: "2026年11月10日",
     verdict:
       "「アンドプランツ」の口コミは観葉植物の通販としての声が大半で、梱包の丁寧さ・植物の状態の良さ・発送前に写真で確認できる点が高評価、価格の高さ・品切れ・コバエや茎折れの報告が不満点です。花の定期便（2026年5月から「AND FLOWER」ブランド）は送料込み1,980円〜・いつでも解約できる都度払いで、実際に注文した記事では「傷や折れがなく届いた」「咲きかけの花が数日で満開になった」と状態の良さが評価される一方、「次回の決済前に手続きが必要」「イメージよりボリュームが少ない」という声もあります（2026年10月15日確認）。件数が表示されている掲載先は、楽天市場の公式ショップ「【公式】アンドプランツ」のショップ評価4.77（771件）、Yahoo!ショッピング「アンドプランツ ヤフー店」のストア評価4.75（4件）、花を単品で注文できる公式アプリ「アンドフラワー」の App Store 評価4.6（33件）です（いずれも2026年10月29日確認）。楽天・Yahoo!は観葉植物を中心としたショップ全体の評価、アプリは単品注文の評価で、花の定期便だけの評価ではありません（楽天は多くの商品に「レビュー特典あり」の表示があります）。",
     intro:
@@ -111,7 +111,8 @@ export const REVIEW_EVIDENCE: ReviewEvidenceData[] = [
       { label: "ケトとむぎとハレ（keto-mugito-hare.com）の購入レビュー", url: "https://keto-mugito-hare.com/rebiew-plants-ec/life/", note: "自費で購入した際の写真を掲載", checkedAt: "2026年10月14日" },
       { label: "AND PLANTS公式 花の定期便ページ", url: "https://andplants.jp/collections/subscription-flower", note: "プラン・頻度・解約・スキップ条件", checkedAt: "2026年10月14日" },
       { label: "AND PLANTS公式 返品・交換規定", url: "https://andplants.jp/pages/returned", note: "生花1日以内・観葉植物14日以内", checkedAt: "2026年10月14日" },
-      { label: "PR TIMES「AND FLOWER」ブランド独立のお知らせ（株式会社Domuz）", url: "https://prtimes.jp/main/html/rd/p/000000080.000048183.html", checkedAt: "2026年10月14日" },
+      { label: "PR TIMES「AND FLOWER」ブランド独立のお知らせ（株式会社Domuz・2026年5月18日）", url: "https://prtimes.jp/main/html/rd/p/000000080.000048183.html", note: "AND PLANTSは2021年5月に誕生・花事業（2021年12月ドライフラワー、2022年11月生花ギフト）を2026年5月18日にAND FLOWERとして独立。会社概要：2018年10月設立・神奈川県川崎市中原区", checkedAt: "2026年11月10日" },
+      { label: "THE BRIDGE「Domuz、3億円を調達」（2024年7月25日）", url: "https://thebridge.jp/2024/07/domuz-jpy300m-round-funding", note: "リード投資家ギフティ・累積調達額4.4億円", checkedAt: "2026年11月10日" },
       { label: "楽天市場「【公式】アンドプランツ」ショップ評価", url: "https://www.rakuten.co.jp/andplants/", note: "ショップ評価4.77（771件。10月20日時点は756件）。観葉植物を中心としたショップ全体の評価で、多くの商品ページに「レビュー特典あり」の表示", checkedAt: "2026年10月29日" },
       { label: "Yahoo!ショッピング「アンドプランツ ヤフー店」ストア評価", url: "https://store.shopping.yahoo.co.jp/andplants/", note: "ストア評価4.75（4件）。件数が少ないため傾向の判断材料にはしていません", checkedAt: "2026年10月29日" },
       { label: "AND PLANTS公式 アンドフラワーアプリの案内ページ", url: "https://andplants.jp/pages/andflower-app", note: "1,980円から（送料無料の表記）・新商品を日替わりで発売・到着日を指定可能・沖縄と離島は対象外・到着時に枯れていた場合は交換か返金", checkedAt: "2026年10月17日" },
