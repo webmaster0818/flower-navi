@@ -109,7 +109,7 @@ export default function BloomeePage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/bloomee/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-08T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-20T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -293,6 +293,7 @@ export default function BloomeePage() {
                     { name: "花と私。（hanatowatashi.com）", url: "https://hanatowatashi.com/bloomee/", how: "X・Instagramの投稿の引用＋筆者の1年以上の利用記録", count: "口コミの総件数・星の内訳の記載なし。別途、花のサブスク利用経験者100人へのアンケート（クラウドワークス・調査時期の記載なし）で「58%がブルーミーを利用したことがある」と掲載", body: "良い声はポスト投函・おしゃれな組み合わせ、悪い声は「しょぼい」・同じ花（カーネーション・ガーベラ）・しおれ" },
                     { name: "サブスクプラス（e-reikinet.jp）", url: "https://e-reikinet.jp/bloomee/", how: "Xの投稿の引用＋サイトが集めた利用者の声", count: "良い口コミ5件（星4.5〜5）・悪い口コミ5件（星1〜2.5）を抜粋して掲載。総件数の記載なし（記事の日付は2023年9月26日）", body: "手軽さ・季節の花が好評、花の状態・本数への不満" },
                     { name: "サブスクスタイル（subsc-style.jp）", url: "https://subsc-style.jp/bloomee-kuchikomi/", how: "筆者の5回分の利用記録（2021年・写真付き）", count: "外部の口コミの件数・評価点の記載なし（2026年10月18日更新）", body: "同じ種類の花が続く回がある、送料込みでは1回1,365円" },
+                    { name: "楽天市場「お花ギフト ブルーミー（bloomee）」ショップレビュー", url: "https://review.rakuten.co.jp/shop/4/413515_413515/2.0/", how: "楽天市場の店舗で購入した人が投稿するショップレビュー", count: "総合4.74・8,490件（2026年11月20日確認）。花束・アレンジメントのギフトや観葉植物の購入者の評価で、ポストに届く定期便（サブスク）だけの評価ではありません", body: "梱包の丁寧さ・発送の早さ・アレンジの見た目を評価する声が中心（11月の新着レビューで確認）" },
                     { name: "bloomee公式「ご利用者様の声」", url: "https://bloomeelife.com/", how: "事業者が選んで掲載", count: "件数・評価点の記載なし", body: "好意的な声のみ（事業者の選定のため、評価の判断材料にはしていません）" },
                   ].map((r) => (
                     <tr key={r.name} className="border-t border-[#EEE] align-top">
@@ -306,7 +307,7 @@ export default function BloomeePage() {
               </table>
             </div>
             <p className="text-xs text-[#6B6F6A] leading-relaxed">
-              ※ 各サイトの表示は2026年10月27日に確認しました（みん評の件数のみ10月14日）。みん評は、厳しい意見が集まりやすいことをサイト自身が注記しています。アンケートの数値は各サイトの独自調査で、当サイトの調査ではありません。当サイトでは、体験談の創作や独自の星評価の掲載は行っていません。
+              ※ 各サイトの表示は2026年10月27日に確認しました（みん評の件数のみ10月14日、楽天市場のショップレビューは11月20日）。楽天市場の評価はギフト商品を含む店舗全体の値のため、定期便の口コミとは分けて読んでください。みん評は、厳しい意見が集まりやすいことをサイト自身が注記しています。アンケートの数値は各サイトの独自調査で、当サイトの調査ではありません。当サイトでは、体験談の創作や独自の星評価の掲載は行っていません。
             </p>
           </div>
         </section>
