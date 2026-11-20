@@ -237,7 +237,7 @@ export default function BloomeePage() {
               <nav>
                 <ol className="text-sm text-[#4A4F49] space-y-2">
                   <li><a href="#price" className="hover:text-[#2F5B43] transition-colors">1. ブルーミーの値段（プラン別・送料込み・月額）</a></li>
-                  <li><a href="#reviews" className="hover:text-[#2F5B43] transition-colors">2. ブルーミーの口コミ・評判（出典付き）</a></li>
+                  <li><a href="#reviews" className="hover:text-[#2F5B43] transition-colors">2. ブルーミーの口コミ・評判・利用者の感想（出典付き）</a></li>
                   <li><a href="#review-sources" className="hover:text-[#2F5B43] transition-colors">3. 口コミの出典ごとの件数・評価の内訳</a></li>
                   <li><a href="#bad-reviews" className="hover:text-[#2F5B43] transition-colors">4. 悪い口コミの傾向と公式の対応</a></li>
                   <li><a href="#quit-reasons" className="hover:text-[#2F5B43] transition-colors">5. やめた人（解約した人）の口コミと理由</a></li>
