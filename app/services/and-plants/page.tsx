@@ -68,11 +68,11 @@ const faqItems = [
   },
   {
     q: "楽天市場でのアンドプランツの評価はどのくらいですか？",
-    a: "楽天市場の公式ショップ「【公式】アンドプランツ」のショップ評価は4.77（771件）です（2026年10月29日確認。10月20日時点は756件）。観葉植物を中心としたショップ全体の評価で、花の定期便だけの評価ではありません。また、多くの商品ページに「レビュー特典あり」の表示があります。",
+    a: "楽天市場の公式ショップ「【公式】アンドプランツ」のショップ評価は4.77（798件）です（2026年11月22日確認。10月20日時点は756件、10月29日時点は771件）。観葉植物を中心としたショップ全体の評価で、花の定期便だけの評価ではありません。また、多くの商品ページに「レビュー特典あり」の表示があります。",
   },
   {
     q: "アンドプランツの口コミはどこで確認できますか？",
-    a: "件数が表示されている掲載先は、楽天市場の公式ショップ「【公式】アンドプランツ」（ショップ評価4.77・771件）、Yahoo!ショッピング「アンドプランツ ヤフー店」（ストア評価4.75・4件）、花を単品で注文できる公式アプリ「アンドフラワー」の App Store 評価（4.6・33件）です（いずれも2026年10月29日確認）。いずれも花の定期便だけの評価ではありません。花の定期便については、実際に注文したレビュー記事（花と私 など）で、届いた本数や梱包の状態が記録されています。",
+    a: "件数が表示されている掲載先は、楽天市場の公式ショップ「【公式】アンドプランツ」（ショップ評価4.77・798件）、Yahoo!ショッピング「アンドプランツ ヤフー店」（ストア評価4.75・4件）、花を単品で注文できる公式アプリ「アンドフラワー」の App Store 評価（4.6・38件）です（いずれも2026年11月22日確認）。いずれも花の定期便だけの評価ではありません。花の定期便については、実際に注文したレビュー記事（花と私 など）で、届いた本数や梱包の状態が記録されています。",
   },
   {
     q: "アンドプランツで買った観葉植物の育て方を相談できるアプリはありますか？",
@@ -99,7 +99,7 @@ export default function AndPlantsPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/and-plants/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"description\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-10T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/and-plants/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プラン\",\"description\":\"AND PLANTS（アンドプランツ）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-22T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/and-plants/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -137,7 +137,7 @@ export default function AndPlantsPage() {
               観葉植物と花の定期便の良い口コミ・悪い口コミを検証
             </h1>
             <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
-              アンドプランツ（AND PLANTS）の口コミは観葉植物の通販についての声が中心で、「梱包が丁寧」「植物の状態が良い」と評価される一方、「価格がやや高い」「品切れ・コバエや茎折れ」が不満点です。件数のわかる掲載先は楽天市場の公式ショップ評価4.77（771件）、Yahoo!ショッピングのストア評価4.75（4件）、単品注文アプリ「アンドフラワー」の App Store 評価4.6（33件）です（いずれも2026年10月29日確認・定期便だけの評価ではありません）。当サイトでは、観葉植物の通販と花の定期便（現「AND FLOWER」）を展開するアンドプランツの口コミ・評判を、出典を明記して整理しています。花の定期便の料金・解約・交換条件は、{S.verifiedAt}に公式サイトで確認した値にもとづいてご説明します。
+              アンドプランツ（AND PLANTS）の口コミは観葉植物の通販についての声が中心で、「梱包が丁寧」「植物の状態が良い」と評価される一方、「価格がやや高い」「品切れ・コバエや茎折れ」が不満点です。件数のわかる掲載先は楽天市場の公式ショップ評価4.77（798件）、Yahoo!ショッピングのストア評価4.75（4件）、単品注文アプリ「アンドフラワー」の App Store 評価4.6（38件）です（いずれも2026年11月22日確認・定期便だけの評価ではありません）。当サイトでは、観葉植物の通販と花の定期便（現「AND FLOWER」）を展開するアンドプランツの口コミ・評判を、出典を明記して整理しています。花の定期便の料金・解約・交換条件は、{S.verifiedAt}に公式サイトで確認した値にもとづいてご説明します。
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <div className="bg-white rounded-md px-5 py-3">
@@ -162,23 +162,23 @@ export default function AndPlantsPage() {
 
         <ReviewVerdict d={RE} s={S} />
 
-        {/* ─── 口コミの件数と掲載元（2026-10-29 確認）─── */}
+        {/* ─── 口コミの件数と掲載元（2026-11-22 確認）─── */}
         <section id="review-counts" className="bg-white pt-8 pb-2">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-3">アンドプランツの口コミの件数と掲載元（2026年10月29日確認）</h2>
+            <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-3">アンドプランツの口コミの件数と掲載元（2026年11月22日確認）</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border border-[#DEDAD2]">
                 <thead className="bg-[#EDF1EC] text-[#1F2420]">
                   <tr><th className="p-2 text-left">掲載元</th><th className="p-2 text-left">評価</th><th className="p-2 text-left">件数</th><th className="p-2 text-left">評価の対象</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-t border-[#DEDAD2]"><td className="p-2"><a href="https://www.rakuten.co.jp/andplants/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">楽天市場「【公式】アンドプランツ」</a></td><td className="p-2">4.77</td><td className="p-2">771件</td><td className="p-2">ショップ全体（観葉植物が中心）。多くの商品に「レビュー特典あり」の表示</td></tr>
+                  <tr className="border-t border-[#DEDAD2]"><td className="p-2"><a href="https://www.rakuten.co.jp/andplants/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">楽天市場「【公式】アンドプランツ」</a></td><td className="p-2">4.77</td><td className="p-2">798件</td><td className="p-2">ショップ全体（観葉植物が中心）。多くの商品に「レビュー特典あり」の表示</td></tr>
                   <tr className="border-t border-[#DEDAD2]"><td className="p-2"><a href="https://store.shopping.yahoo.co.jp/andplants/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">Yahoo!ショッピング「アンドプランツ ヤフー店」</a></td><td className="p-2">4.75</td><td className="p-2">4件</td><td className="p-2">ストア全体。件数が少ないため参考値</td></tr>
-                  <tr className="border-t border-[#DEDAD2]"><td className="p-2"><a href="https://apps.apple.com/jp/app/id6751482449" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">App Store「アンドフラワー」</a></td><td className="p-2">4.6</td><td className="p-2">33件</td><td className="p-2">花の単品注文アプリ（定期便ではありません）</td></tr>
+                  <tr className="border-t border-[#DEDAD2]"><td className="p-2"><a href="https://apps.apple.com/jp/app/id6751482449" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">App Store「アンドフラワー」</a></td><td className="p-2">4.6</td><td className="p-2">38件</td><td className="p-2">花の単品注文アプリ（定期便ではありません）</td></tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#6B6F6A] leading-relaxed mt-2">花の定期便だけの評価件数を公開している掲載先は確認できませんでした。定期便の口コミは、実際に注文したレビュー記事の記録を下の「口コミ・評判」で要約しています。楽天の件数は10月20日時点の756件から増えています。</p>
+            <p className="text-xs text-[#6B6F6A] leading-relaxed mt-2">花の定期便だけの評価件数を公開している掲載先は確認できませんでした。定期便の口コミは、実際に注文したレビュー記事の記録を下の「口コミ・評判」で要約しています。楽天の件数は10月20日時点の756件、10月29日時点の771件から増えています（App Store は10月29日時点33件）。</p>
           </div>
         </section>
 

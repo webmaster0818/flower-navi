@@ -28,7 +28,7 @@ const faqItems = [
   },
   {
     q: "medeluに回数縛りはありますか？解約方法も教えてください。",
-    a: "公式サイト・特定商取引法に基づく表記に、最低利用回数の記載は見当たりません（2026年10月14日確認）。解約はマイページから行い、決済日（お届け週の前週金曜日）の前日・木曜日までに手続きすれば次回から停止します。締切を過ぎた場合は、最後に1回届きます。",
+    a: "ありません。公式サイトのトップに「最低回数縛りなし」「お試しで1回だけの利用もOK」と明記され、よくある質問でも初回お届け後に退会できると案内されています（2026年11月22日確認）。解約はマイページから行い、決済日（お届け週の前週金曜日）の前日・木曜日までに手続きすれば次回から停止します。締切を過ぎた場合は、最後に1回届きます。",
   },
   {
     q: "medeluのお花が傷んで届いた場合はどうすればいいですか？",
@@ -36,7 +36,7 @@ const faqItems = [
   },
   {
     q: "medeluのお花はポストに届きますか？",
-    a: "MiniとLiteはポスト投函に対応しています。Lite+とBasicは公式サイトでポスト投函の記載がないため、申込画面でお届け方法を確認してください。お届け日の指定はできません。",
+    a: "MiniとLiteはポスト投函に対応しています。Lite+とBasicは公式サイトでポスト投函の記載がないため、申込画面でお届け方法を確認してください。お届け日（日付）の指定はできませんが、お届け曜日はコースとサイズごとに決まった候補から選びます（ANYROOMのMiniは火〜木／金〜日、Lite以上は水〜木／金〜土、NATURALは木〜金、MODERNは火〜水。2026年11月22日 公式コース選択ページで確認）。",
   },
   {
     q: "medeluのコースの違いは何ですか？",
@@ -52,7 +52,11 @@ const faqItems = [
   },
   {
     q: "medeluの運営会社はどこですか？",
-    a: "株式会社medelu（東京都港区南青山）です（公式・特定商取引法に基づく表記で確認）。",
+    a: "株式会社medelu（東京都港区南青山）です（公式・特定商取引法に基づく表記で確認）。公式の会社概要では、株式会社medeluは2017年創業で、明治39年創業の株式会社hanamiの100％出資会社です（2026年11月22日確認）。",
+  },
+  {
+    q: "medeluのお届け頻度と支払い方法は？",
+    a: "お届け頻度は毎週か隔週から選び、マイページでいつでも変更できます（コース・ボリュームも変更可能）。支払い方法はクレジットカードのみで、お支払いの翌週〜翌々週に届きます。配送は沖縄県・一部離島を除く全国です（2026年11月22日 公式サイト・特定商取引法に基づく表記で確認）。",
   },
 ];
 
@@ -71,7 +75,7 @@ export default function MedeluPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/medelu/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"description\":\"medelu（メデル）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-28T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/medelu/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"medelu（メデル）の評判・口コミ・料金プラン\",\"description\":\"medelu（メデル）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-22T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/medelu/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -130,7 +134,7 @@ export default function MedeluPage() {
               </div>
               <div className="bg-white rounded-md px-5 py-3">
                 <p className="text-xs text-[#6B6F6A] mb-1">最低利用回数</p>
-                <p className="text-xl font-bold text-[#2F5B43]">記載なし</p>
+                <p className="text-xl font-bold text-[#2F5B43]">縛りなし</p>
               </div>
             </div>
           </div>
@@ -179,19 +183,25 @@ export default function MedeluPage() {
               部屋のテイストに合わせてコース（ANYROOM・NATURAL・MODERN）を選び、Mini〜Basicの4サイズから量を選ぶ仕組みで、最安のMiniは748円（税込・送料込）からポストに届きます。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
-              公式に最低利用回数の記載がなく、決済日前日の木曜までに手続きすれば次回から停止できるため、まず1回試したい方にも選びやすいサービスです。
+              公式に「最低回数縛りなし」「お試しで1回だけの利用もOK」と明記されており（2026年11月22日確認）、決済日前日の木曜までに手続きすれば次回から停止できるため、まず1回試したい方にも選びやすいサービスです。
               インターネット上には旧価格（698円）を記載した記事も残っているため、料金は公式サイトの最新表示でご確認ください。
+            </p>
+            <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
+              公式の会社概要によると、株式会社medeluは2017年創業で、明治39年創業の株式会社hanamiの100％出資会社です。お届け頻度は毎週か隔週から選び、支払い方法はクレジットカードのみ、配送は沖縄県・一部離島を除く全国です（2026年11月22日 公式サイト「medeluについて」・トップページ・特定商取引法に基づく表記で確認）。
             </p>
             <div className="bg-[#EDF1EC] rounded-md p-5 md:p-6">
               <h3 className="text-sm font-bold text-[#2F5B43] mb-3">medelu 基本情報（{S.verifiedAt} 公式確認）</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 {[
-                  ["運営会社", "株式会社medelu"],
+                  ["運営会社", "株式会社medelu（株式会社hanamiの100％出資）"],
                   ["最安プラン", `${S.cheapest.price.toLocaleString()}円/回（${S.cheapest.name}・税込・送料込み）`],
                   ["サイズ", "Mini／Lite／Lite+／Basic"],
                   ["届き方", "Mini・Liteはポスト投函"],
-                  ["お届け日", "指定不可"],
-                  ["最低利用回数", "公式に記載なし"],
+                  ["お届け日", "日付は指定不可（曜日はコース別の候補から選択）"],
+                  ["お届け頻度", "毎週・隔週"],
+                  ["支払い方法", "クレジットカードのみ"],
+                  ["配送地域", "沖縄県・一部離島を除く全国"],
+                  ["最低利用回数", "縛りなし（公式に明記）"],
                   ["解約締切", "決済日（前週金曜）の前日・木曜"],
                   ["品質保証", "到着当日中の連絡で全額返金"],
                 ].map(([k, v]) => (
@@ -257,6 +267,32 @@ export default function MedeluPage() {
               </div>
             </div>
 
+            {/* コース別の料金とお届け曜日（2026-11-22 公式コース選択ページで確認） */}
+            <h3 className="text-base font-bold text-[#1F2420] mb-3">コース別の料金とお届け曜日（2026年11月22日 公式確認・税込・送料込み）</h3>
+            <div className="overflow-x-auto mb-3">
+              <table className="w-full text-sm border border-[#DEDAD2]">
+                <thead className="bg-[#EDF1EC] text-[#1F2420]">
+                  <tr><th className="p-2 text-left">コース</th><th className="p-2 text-left">Mini（3〜4本）</th><th className="p-2 text-left">Lite（5〜6本）</th><th className="p-2 text-left">Lite+（5〜7本）</th><th className="p-2 text-left">Basic（6〜9本）</th><th className="p-2 text-left">お届け曜日の候補</th></tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["ANYROOM", "748円", "1,330円", "1,650円", "2,330円", "Mini：火〜木／金〜日、Lite以上：水〜木／金〜土"],
+                    ["NATURAL", "なし", "1,330円", "1,650円", "2,330円", "木〜金"],
+                    ["MODERN", "なし", "1,670円", "2,000円", "2,680円", "火〜水"],
+                  ].map((r) => (
+                    <tr key={r[0]} className="border-t border-[#DEDAD2] align-top">
+                      {r.map((c, i) => (
+                        <td key={i} className={`p-2 ${i === 0 ? "font-bold text-[#1F2420]" : "text-[#4A4F49]"}`}>{c}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#6B6F6A] leading-relaxed mb-8">
+              出典：<a href="https://medelu.flowers/courses" target="_blank" rel="noopener noreferrer nofollow" className="underline">medelu公式 コース選択ページ</a>（コースごとの表示を2026年11月22日に確認）。Miniサイズを選べるのはANYROOMコースのみで、ポスト投函に対応するのはMiniとLiteです。お届けはお支払いの翌週〜翌々週です。
+            </p>
+
             {/* サイズ別料金（services.ts＝公式確認値から自動生成） */}
             <h3 className="text-base font-bold text-[#1F2420] mb-4">サイズ別料金（ANYROOMコース・税込）</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -279,7 +315,8 @@ export default function MedeluPage() {
               <ul className="text-sm text-[#4A4F49] space-y-2">
                 <li>・ 表示価格はすべて税込です（{S.verifiedAt}時点・出典: {S.source}）</li>
                 <li>・ {S.shippingNote}</li>
-                <li>・ {S.cancellation}</li>
+                <li>・ 公式に「最低回数縛りなし」と明記されています（2026年11月22日確認）。決済日（お届け週の前週金曜）の前日の木曜までにマイページで解約すれば、次回から停止されます（過ぎると最後に1回届きます）</li>
+                <li>・ 現在の料金は、2026年4月27日の公式お知らせ「定期便の販売価格改定」によるもので、新規申し込みは5月23日以降、利用中の方は5月29日決済分から適用されています</li>
                 <li>・ スキップは3回先のお届けまで設定できます（公式ヘルプ）</li>
                 <li>・ ご利用前に、最新の料金・プラン構成を<a href={S.officialUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">medelu公式サイト</a>にてご確認ください</li>
               </ul>
@@ -304,8 +341,8 @@ export default function MedeluPage() {
                   text: "ANYROOM・NATURAL・MODERNのコースから、部屋の雰囲気に合う花を選べます。口コミでも「センスが良い」「おしゃれ」という声が最も多く寄せられています。",
                 },
                 {
-                  title: "最低利用回数の記載がなく、試しやすい",
-                  text: "公式に最低利用回数の記載はなく、決済日前日の木曜までにマイページで手続きすれば次回から停止できます。スキップも3回先まで設定できます。",
+                  title: "最低回数の縛りがなく、試しやすい",
+                  text: "公式に「最低回数縛りなし」「お試しで1回だけの利用もOK」と明記されており、決済日前日の木曜までにマイページで手続きすれば次回から停止できます。スキップも3回先まで設定できます。",
                 },
                 {
                   title: "枯れていた場合は全額返金される",
@@ -346,7 +383,7 @@ export default function MedeluPage() {
                 },
                 {
                   title: "お届け日を指定できない",
-                  text: "お届け日の指定はできません。長期不在の予定がある場合は、スキップ機能をご利用ください。",
+                  text: "お届け日（日付）の指定はできません。お届け曜日はコースとサイズごとに決まった候補から選ぶ仕組みで、たとえばANYROOMのMiniは火〜木／金〜日、MODERNは火〜水です（2026年11月22日 公式コース選択ページで確認）。長期不在の予定がある場合は、スキップ機能をご利用ください。",
                 },
                 {
                   title: "不良品は返金のみの対応（交換なし）",
@@ -440,7 +477,7 @@ export default function MedeluPage() {
         </section>
 
         {/* ─── Comparison Section ─── */}
-        <CompareSection s={S} all={SERVICES} note="送料込みの1回あたりで比べると、medeluのMini（748円）が最も安く、bloomeeのお試し（980円＋送料385円＝1,365円）の約半分です。最低利用回数の記載がない点もmedeluの強みです。一方で、ボリュームや宅配での受け取りを重視する場合はAND PLANTS、セルフアレンジを楽しみたい場合はハナメクも候補になります。" />
+        <CompareSection s={S} all={SERVICES} note="送料込みの1回あたりで比べると、medeluのMini（748円）が最も安く、bloomeeのお試し（980円＋送料385円＝1,365円）の約半分です。最低回数の縛りがない点（公式に明記）もmedeluの強みです。一方で、ボリュームや宅配での受け取りを重視する場合はAND PLANTS、セルフアレンジを楽しみたい場合はハナメクも候補になります。" />
 
         {/* ─── How to Sign Up ─── */}
         <section id="how-to-start" className="py-12 md:py-16 bg-[#F6F4EF]">
@@ -478,7 +515,7 @@ export default function MedeluPage() {
                 {
                   step: "STEP 6",
                   title: "申し込みを完了し、お届けを待つ",
-                  text: "申し込み後、お届け予定日が案内されます。届いたお花は、水切りをしてから花瓶に飾ってください。公式に最低利用回数の記載はなく、木曜の締切までに手続きすれば次回から停止できます。",
+                  text: "申し込み後、お届け予定日が案内されます。届いたお花は、水切りをしてから花瓶に飾ってください。公式に「最低回数縛りなし」と明記されており、木曜の締切までに手続きすれば次回から停止できます。",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-md p-5 border border-[#DEDAD2] flex items-start gap-4">
@@ -540,7 +577,7 @@ export default function MedeluPage() {
             <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">
               medelu（メデル）の解約手順
             </h2>
-            <p className="text-sm text-[#4A4F49] mb-6">公式に最低利用回数の記載はありません。締切は決済日（お届け週の前週金曜日）の前日・木曜日です。</p>
+            <p className="text-sm text-[#4A4F49] mb-6">公式に「最低回数縛りなし」と明記されています。締切は決済日（お届け週の前週金曜日）の前日・木曜日です。</p>
             <div className="bg-white rounded-md p-6 md:p-8">
                 <div className="flex gap-4 items-start mb-4">
                   <div className="bg-[#2F5B43] text-white w-9 h-9 rounded-md flex items-center justify-center font-bold text-sm shrink-0 mt-1">1</div>
@@ -605,7 +642,7 @@ export default function MedeluPage() {
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4 max-w-2xl mx-auto text-left">
               medelu（メデル）は、748円（税込・送料込）〜でポストに届き、部屋のテイストでコースを選べる花のサブスクです。口コミでは花のセンスと鮮度、始めやすさが評価されています。
-              公式に最低利用回数の記載がなく、枯れていた場合は到着当日中の連絡で全額返金の対象になるため、初めて花のサブスクを利用する方でも試しやすいのが特徴です。
+              最低回数の縛りがなく（公式に明記）、枯れていた場合は到着当日中の連絡で全額返金の対象になるため、初めて花のサブスクを利用する方でも試しやすいのが特徴です。
             </p>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-8 max-w-2xl mx-auto text-left">
               一方で、Miniは本数が少なめである、暑い時期は花持ちが短くなりやすい、お届け日を指定できないといった口コミもあります。
