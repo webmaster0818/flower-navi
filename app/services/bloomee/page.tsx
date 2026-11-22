@@ -44,7 +44,7 @@ const faqItems = [
   },
   {
     q: "ブルーミー（bloomee）の値段・料金はいくらですか？",
-    a: "2026年11月4日に公式サイトで確認した継続コースの値段は、お試しプラン980円＋送料385円、グリーンプラン980円＋送料385円、ベーシックプラン2,180円＋送料550円（いずれも1回あたり）です。お試しプランは送料込みで1回1,365円、最初の4回の総額は5,460円です。",
+    a: "2026年11月22日に公式サイトで確認した継続コースの値段は、お試しプラン980円＋送料385円、グリーンプラン980円＋送料385円、ベーシックプラン2,180円＋送料550円（いずれも1回あたり）です。お試しプランは送料込みで1回1,365円、最初の4回の総額は5,460円です。",
   },
   {
     q: "ブルーミーの月額はいくらになりますか？",
@@ -52,11 +52,11 @@ const faqItems = [
   },
   {
     q: "ブルーミーを1回だけ購入する場合の値段はいくらですか？",
-    a: "公式サイトの「単品購入」は、お試し・グリーンが1,780円＋送料385円、ベーシックが3,300円＋送料550円です（2026年11月4日確認）。継続コースより1回あたり800円（ベーシックは1,120円）高くなりますが、最初の4回の受け取り条件はありません。",
+    a: "公式サイトの「単品購入」は、お試し・グリーンが1,780円＋送料385円、ベーシックが3,300円＋送料550円です（2026年11月22日確認）。継続コースより1回あたり800円（ベーシックは1,120円）高くなりますが、最初の4回の受け取り条件はありません。",
   },
   {
     q: "ブルーミーの値段は税込みですか？",
-    a: "公式の特定商取引法に基づく表記では、商品代金は「消費税込み」で表示し、配送料を別に表示すると定められています。980円・2,180円などの花代は税込みの表記で、送料は花代とは別にかかります（2026年11月4日確認）。",
+    a: "公式の特定商取引法に基づく表記では、商品代金は「消費税込み」で表示し、配送料を別に表示すると定められています。980円・2,180円などの花代は税込みの表記で、送料は花代とは別にかかります（2026年11月22日確認）。",
   },
   {
     q: "4回未満で解約するとどうなりますか？",
@@ -109,7 +109,7 @@ export default function BloomeePage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/bloomee/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-20T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"bloomee（ブルーミー）の評判・口コミ・料金プラン\",\"description\":\"bloomee（ブルーミー）の評判・口コミ・料金プランについて、料金・評判・選び方をご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-22T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/bloomee/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
       <Header />
@@ -183,11 +183,11 @@ export default function BloomeePage() {
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
               ブルーミーの値段は、継続コースのお試しプランで花代980円＋送料385円の<strong>1回1,365円（税込）</strong>です。料金は月額ではなく配送ごとに決済され、最初の4回は毎週のお届けのため、最初の1か月（4回）は<strong>5,460円</strong>です。
-              ベーシックプランは花代2,180円＋送料550円の1回2,730円です。継続コースではなく1回だけ購入する「単品購入」は、お試し・グリーンが1,780円＋送料385円、ベーシックが3,300円＋送料550円です（2026年11月4日 公式サイトで確認）。
+              ベーシックプランは花代2,180円＋送料550円の1回2,730円です。継続コースではなく1回だけ購入する「単品購入」は、お試し・グリーンが1,780円＋送料385円、ベーシックが3,300円＋送料550円です（2026年11月22日 公式サイトで確認）。
             </p>
             <div className="table-wrapper overflow-x-auto rounded-md border border-[#DEDAD2] bg-white mb-4">
               <table className="w-full text-sm text-[#3F443E]">
-                <caption className="sr-only">ブルーミーのプラン別の値段（2026年11月4日 公式確認）</caption>
+                <caption className="sr-only">ブルーミーのプラン別の値段（2026年11月22日 公式確認）</caption>
                 <thead className="bg-[#EDF1EC] text-[#1F2420]">
                   <tr>
                     <th className="px-3 py-2 text-left font-bold">プラン</th>
@@ -221,7 +221,7 @@ export default function BloomeePage() {
               <li>※ 隔週への変更は4回目のお花を受け取った後からです。4回未満で解約すると「4回分のうち残回数分の商品代金（消費税込み）」が途中解約料になります。</li>
             </ul>
             <p className="text-xs text-[#6B6F6A] leading-relaxed">
-              出典：<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="underline">bloomee公式サイト（料金表・よくある質問）</a>・<a href="https://bloomeelife.com/contacts/law" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（いずれも2026年11月4日確認）。料金は変更される場合があるため、お申し込み前に公式サイトでご確認ください。
+              出典：<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="underline">bloomee公式サイト（料金表・よくある質問）</a>・<a href="https://bloomeelife.com/contacts/law" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（いずれも2026年11月22日確認）。料金は変更される場合があるため、お申し込み前に公式サイトでご確認ください。
             </p>
             <p className="text-xs text-[#6B6F6A] leading-relaxed mt-2">
               ブルーミーと他社（medelu・AND PLANTS・hanameku など）の値段を送料込みの総額・1本あたりの単価で並べた比較は、<a href="/compare/ryokin/" className="text-[#2F5B43] underline">花の定期便 料金比較表</a>にまとめています。
@@ -393,7 +393,7 @@ export default function BloomeePage() {
               やめる前に検討できるのは、4回目以降の<a href="#subscription" className="text-[#2F5B43] underline">隔週への変更・週単位のストップ・特定の週のスキップ・プラン変更</a>です。ただし花の種類は選べないため、「選べないこと」が理由なら、他社との<a href="#comparison" className="text-[#2F5B43] underline">比較</a>も参考になります。最初の4回を受け取る前の解約には途中解約料がかかります（<a href="#cancellation" className="text-[#2F5B43] underline">解約の手順</a>）。
             </p>
             <p className="text-xs text-[#6B6F6A] leading-relaxed">
-              出典：A＝<a href="https://mangadia.xsrv.jp/subscription/bloomee.html" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">「ブルーミーの口コミと評判を調査！やめた人の理由から本当に料金が高いのか比較」</a>（2025年2月12日付・X投稿の引用）、B＝<a href="https://kaori-happiness.jp/bloomee-hidoi/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">「ブルーミーは『ひどい・しょぼい・がっかり・最悪』？やめた人の意見は？」</a>（2021年以降のXの検索による簡易調査と記事内に明記）。いずれも2026年11月8日確認。公式の仕組みは<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">bloomee公式サイト（よくある質問・料金表）</a>（料金は2026年11月4日、4回のお約束・ストップ・隔週・スキップは11月8日に確認）。投稿は個人の感想で、件数を数えた調査ではありません。
+              出典：A＝<a href="https://mangadia.xsrv.jp/subscription/bloomee.html" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">「ブルーミーの口コミと評判を調査！やめた人の理由から本当に料金が高いのか比較」</a>（2025年2月12日付・X投稿の引用）、B＝<a href="https://kaori-happiness.jp/bloomee-hidoi/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">「ブルーミーは『ひどい・しょぼい・がっかり・最悪』？やめた人の意見は？」</a>（2021年以降のXの検索による簡易調査と記事内に明記）。いずれも2026年11月8日確認。公式の仕組みは<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">bloomee公式サイト（よくある質問・料金表）</a>（料金・4回のお約束・ストップ・隔週・スキップは2026年11月22日に確認）。投稿は個人の感想で、件数を数えた調査ではありません。
             </p>
           </div>
         </section>
@@ -509,11 +509,11 @@ export default function BloomeePage() {
               ブルーミーのサブスクの仕組み｜スキップ・ストップ・解約・決済
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-4">
-              ブルーミーは月額制ではなく、お届けのある週ごとに決済される花の定期便です。最初の4回は毎週届き、4回目を受け取った後は隔週への変更や週単位のストップ・再開ができます。以下は2026年10月27日に公式サイト（よくある質問・特定商取引法に基づく表記）で確認した内容です。
+              ブルーミーは月額制ではなく、お届けのある週ごとに決済される花の定期便です。最初の4回は毎週届き、4回目を受け取った後は隔週への変更や週単位のストップ・再開ができます。以下は2026年11月22日に公式サイト（よくある質問・料金表・特定商取引法に基づく表記）で確認した内容です。
             </p>
             <div className="table-wrapper overflow-x-auto rounded-md border border-[#DEDAD2] bg-white mb-4">
               <table className="w-full text-sm text-[#3F443E]">
-                <caption className="sr-only">ブルーミーのサブスクの仕組み（2026年10月27日 公式確認）</caption>
+                <caption className="sr-only">ブルーミーのサブスクの仕組み（2026年11月22日 公式確認）</caption>
                 <thead className="bg-[#EDF1EC] text-[#1F2420]">
                   <tr>
                     <th className="px-3 py-2 text-left font-bold">項目</th>
@@ -540,7 +540,7 @@ export default function BloomeePage() {
               </table>
             </div>
             <p className="text-xs text-[#6B6F6A] leading-relaxed">
-              出典：<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">bloomee公式サイト（よくある質問・料金表）</a>・<a href="https://bloomeelife.com/contacts/law" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">特定商取引法に基づく表記</a>（いずれも2026年10月27日確認。単品購入の料金は10月23日確認）。スキップ・ストップの締切は公式の表記に記載がないため、マイページに表示される次回分の締切をご確認ください。レビュー記事（<a href="https://hanatowatashi.com/bloomee/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">花と私。</a>・2026年6月15日更新）では「お届けの前の週の金曜日まで」と紹介されています。
+              出典：<a href="https://bloomeelife.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">bloomee公式サイト（よくある質問・料金表）</a>・<a href="https://bloomeelife.com/contacts/law" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">特定商取引法に基づく表記</a>（いずれも2026年11月22日確認）。スキップ・ストップの締切は公式の表記に記載がないため、マイページに表示される次回分の締切をご確認ください。レビュー記事（<a href="https://hanatowatashi.com/bloomee/" target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">花と私。</a>・2026年6月15日更新）では「お届けの前の週の金曜日まで」と紹介されています。
             </p>
           </div>
         </section>
