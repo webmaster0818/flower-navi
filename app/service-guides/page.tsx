@@ -77,6 +77,7 @@ export default function ServiceGuidesIndexPage() {
               <li><Link href="/services/pureflower/" className="text-[#2F5B43] underline">ピュアフラワーの料金・配達エリア</Link></li>
               <li><Link href="/services/nekohana/" className="text-[#2F5B43] underline">ネコハナ（猫と暮らす家庭向け）の料金・解約条件</Link></li>
               <li><Link href="/services/hananohi/" className="text-[#2F5B43] underline">ハナノヒ（日比谷花壇）の料金・使える店舗</Link></li>
+              <li><Link href="/services/hanaprime/" className="text-[#2F5B43] underline">ハナプライム（HanaPrime）お花の定期便の料金・解約</Link></li>
             </ul>
           </section>
 

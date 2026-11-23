@@ -172,6 +172,7 @@ export const personas: Persona[] = [
     relatedPaths: [
       { label: "仏壇花の定期便比較", href: "/guides/butsudan/" },
       { label: "LIFFTの詳細", href: "/services/lifft/" },
+      { label: "ハナプライムの定期便（お供え花コース）", href: "/services/hanaprime/" },
       { label: "プレゼント向けの花のサブスク", href: "/guides/present/" },
     ],
   },
