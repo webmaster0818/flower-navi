@@ -90,7 +90,7 @@ export default function HitoHanaPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"HitoHana（ヒトハナ）の評判・口コミ・料金プラン\",\"item\":\"https://ohana-delivery.com/services/hitohana/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"HitoHana（ヒトハナ）花のサブスクの料金・頻度・スキップ・解約・口コミ\",\"description\":\"HitoHana（ヒトハナ）のお花の定期便の料金表・お届け頻度・スキップと解約の締切・ギフト・他社との違いを、公式サイトの確認にもとづいてご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hitohana/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"HitoHana（ヒトハナ）花のサブスクの料金・頻度・スキップ・解約・口コミ\",\"description\":\"HitoHana（ヒトハナ）のお花の定期便の料金表・お届け頻度・スキップと解約の締切・ギフト・他社との違いを、公式サイトの確認にもとづいてご説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-22T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/services/hitohana/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
     <div className="flex flex-col min-h-screen">
@@ -122,7 +122,7 @@ export default function HitoHanaPage() {
         <PageHero path="/services/hitohana/" services={[{ slug: "hitohana", name: "HitoHana（ヒトハナ）" }]}>
           <div className="max-w-5xl mx-auto px-4 text-center">
             <p className="text-sm text-[#2F5B43] font-medium mb-3 tracking-wide">
-              花のサブスク個別レビュー｜2026年10月27日更新
+              花のサブスク個別レビュー｜2026年11月22日更新
             </p>
             <h1 className="text-2xl md:text-4xl font-bold text-[#1F2420] mb-4 leading-tight">
               ヒトハナ（HitoHana）花のサブスク<br className="hidden md:block" />
@@ -180,7 +180,7 @@ export default function HitoHanaPage() {
         <section className="bg-white py-8 border-b border-[#DEDAD2]">
           <div className="max-w-3xl mx-auto px-4">
             <div className="rounded-md border-2 border-[#2F5B43] bg-[#F3F6F2] p-5 md:p-6">
-              <p className="text-xs text-[#2F5B43] font-bold mb-1">最終更新：2026年10月30日（料金・頻度・条件は2026年10月18日、料金・送料・レビュー数は2026年10月27日、解約・退会は2026年10月30日に公式サイトで確認）</p>
+              <p className="text-xs text-[#2F5B43] font-bold mb-1">最終更新：2026年11月22日（料金・頻度・条件は2026年10月18日、料金・送料・レビュー数は2026年10月27日、解約・退会は2026年10月30日、お問い合わせ電話番号は2026年11月22日に公式サイトで確認）</p>
               <h2 className="text-lg md:text-xl font-bold text-[#1F2420] mb-3">HitoHanaの色・ボリューム・料金・解約条件の要点</h2>
               <ul className="text-sm md:text-base text-[#444] leading-relaxed space-y-2">
                 <li>・<strong>色（6色＋おまかせ）とボリューム（5サイズ）を毎回選べる</strong>点が最大の特徴です。花の種類は指定できません。</li>
