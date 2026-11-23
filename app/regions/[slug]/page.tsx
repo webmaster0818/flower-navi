@@ -180,6 +180,20 @@ export default async function RegionPage({ params }: Props) {
             </div>
           </section>
 
+          {/* Sources（2026-11-23: 出典URLを持つ地域だけ表示） */}
+          {r.sources && r.sources.length > 0 && (
+            <section className="mb-12 bg-white border border-[#DEDAD2] rounded-md p-5">
+              <h2 className="text-base font-bold text-[#1F2420] mb-4">このページの出典</h2>
+              <ul className="space-y-2 text-xs text-[#4A4F49]">
+                {r.sources.map((s, i) => (
+                  <li key={i}>
+                    ・<a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#2F5B43] underline">{s.label}</a>（{s.checkedAt}確認）
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {/* Related */}
           <section className="mb-12 bg-white border border-[#DEDAD2] rounded-md p-5">
             <h2 className="text-base font-bold text-[#1F2420] mb-4">関連するページ</h2>

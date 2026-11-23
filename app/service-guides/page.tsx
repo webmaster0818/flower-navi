@@ -73,6 +73,10 @@ export default function ServiceGuidesIndexPage() {
               <li><Link href="/services/lifft/" className="text-[#2F5B43] underline">LIFFT（リフト）の口コミ・評判</Link></li>
               <li><Link href="/services/tasuhana/" className="text-[#2F5B43] underline">タスハナ（+hana）の口コミ・評判</Link></li>
               <li><Link href="/services/nihon-sogo-engei/" className="text-[#2F5B43] underline">花の定期便（日本総合園芸）の料金・コース</Link></li>
+              <li><Link href="/services/aoyama-flower-market/" className="text-[#2F5B43] underline">青山フラワーマーケットの定期便の料金・送料</Link></li>
+              <li><Link href="/services/pureflower/" className="text-[#2F5B43] underline">ピュアフラワーの料金・配達エリア</Link></li>
+              <li><Link href="/services/nekohana/" className="text-[#2F5B43] underline">ネコハナ（猫と暮らす家庭向け）の料金・解約条件</Link></li>
+              <li><Link href="/services/hananohi/" className="text-[#2F5B43] underline">ハナノヒ（日比谷花壇）の料金・使える店舗</Link></li>
             </ul>
           </section>
 
