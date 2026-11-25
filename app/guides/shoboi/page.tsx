@@ -41,7 +41,7 @@ export default function ShoboboiGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクが「しょぼい」と言われる理由\",\"item\":\"https://ohana-delivery.com/guides/shoboi/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクが「しょぼい」と言われる理由\",\"description\":\"花のサブスクが「しょぼい」と言われる理由について、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/shoboi/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクが「しょぼい」と言われる理由\",\"description\":\"花のサブスクが「しょぼい」と言われる理由について、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-25T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/shoboi/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは本当にしょぼいのですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"「しょぼい」と感じるかどうかは、選ぶプランによって大きく異なります。当サイト掲載サービスでは、medeluのMini（748円）が3〜4本、bloomeeのお試しプラン（980円＋送料385円）が4本以上、AND PLANTSのスタンダード（1,980円）が6〜8本、ラージ（4,980円）が14〜18本です（bloomee・AND PLANTSは2026年10月24日、medeluは10月23日公式確認）。品質保証制度の有無もあわせて確認することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"届いた花がすぐ枯れてしまいます。対処法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花が届いたら、すぐに水切り（水中で茎を斜めに切ること）を行い、切り花延命剤を入れた新しい水に生けてください。夏場はこまめな水替え（毎日が理想です）が必要です。また、直射日光やエアコンの風が直接当たる場所を避けることで、花が傷みにくくなります。夏季はクール便を選べるサービス（AND PLANTSはクール便オプション1回550円、2026年10月30日公式確認）を利用する方法もあります。\"}},{\"@type\":\"Question\",\"name\":\"ボリュームに満足できるおすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ボリュームを重視する場合はAND PLANTS（6〜8本（2026年10月17日公式確認）、送料無料）、価格を重視する場合はmedelu（748円〜、送料無料）、鮮度を重視する場合はLIFFT（提携農園から直送（2026年10月17日公式確認）、スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認））をおすすめします。AND PLANTSは到着後1日以内の連絡で無料交換、medeluは到着当日中の写真送付で返金（交換なし）と案内しています（2026年10月30日公式確認）。LIFFTの定期便ページには品質保証の記載はありません（2026年10月30日確認）。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いた花が傷んでいた場合に、無料で再送または返金を受けられる制度です。bloomee、medelu、AND PLANTSなど主要サービスの多くが導入しています。申請の方法と期限はサービスごとに異なります。AND PLANTSの定期便は、到着後1日以内に連絡すると無料で交換します（2026年10月28日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた人が多いのはなぜですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"やめた理由を集計した公的なデータは見当たらないため、当サイトでは理由の割合は示していません。届く本数は料金によって異なるため（例：medelu Mini 3〜4本、AND PLANTSスタンダード 6〜8本、2026年10月30日公式確認）、事前にプラン内容を確認し、お手入れ方法を理解したうえで始めることをおすすめします。事前にプラン内容を確認し、お手入れ方法を理解したうえで始めると、継続しやすくなります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
@@ -121,7 +121,7 @@ export default function ShoboboiGuidePage() {
               <div className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0]">
                 <h3 className="text-sm font-bold text-[#1F2420] mb-2">理由1：花屋の花束を想定している</h3>
                 <p className="text-sm text-[#4A4F49] leading-relaxed">
-                  花のサブスクの最安クラスのプランで届く本数は、タスハナ +act（660円＋送料330円）が3本以上、medelu Mini（748円）が3〜4本、bloomeeお試し（980円＋送料385円）が4本以上です（2026年10月30日公式確認）。花屋の花束と同等のボリュームを想定していると、「しょぼい」と感じやすくなります。ポスト投函に対応したサービスは箱のサイズに制限があるため、本数が限られるのは構造上の制約によるものです。
+                  花のサブスクの最安クラスのプランで届く本数は、タスハナ +live（1,100円＋送料330円）が5本以上（2026年11月25日公式確認。660円・3本以上の+actは新規受付終了）、medelu Mini（748円）が3〜4本、bloomeeお試し（980円＋送料385円）が4本以上です（2026年10月30日公式確認）。花屋の花束と同等のボリュームを想定していると、「しょぼい」と感じやすくなります。ポスト投函に対応したサービスは箱のサイズに制限があるため、本数が限られるのは構造上の制約によるものです。
                 </p>
               </div>
               <div className="bg-[#FFF8F0] rounded-md p-5 border border-[#F0E0D0]">
@@ -214,10 +214,10 @@ export default function ShoboboiGuidePage() {
                 <tbody>
                   <tr>
                     <td className="font-medium text-[#1F2420]">タスハナ</td>
-                    <td>+act 660円/回</td>
-                    <td>3本以上</td>
+                    <td>+live 1,100円/回（2026年11月25日公式確認）</td>
+                    <td>5本以上</td>
                     <td>330円</td>
-                    <td className="font-bold text-[#2F5B43]">約330円（送料込み）</td>
+                    <td className="font-bold text-[#2F5B43]">約286円（送料込み）</td>
                   </tr>
                   <tr>
                     <td className="font-medium text-[#1F2420]">medelu</td>
@@ -254,7 +254,7 @@ export default function ShoboboiGuidePage() {
             <div className="mt-6 bg-[#F6F4EF] rounded-md p-5 border border-[#DEDAD2]">
               <h3 className="text-sm font-bold text-[#1F2420] mb-2">1本あたりの価格の計算例</h3>
               <p className="text-sm text-[#4A4F49] leading-relaxed">
-                medelu Miniは748円（送料込み・3〜4本）で1本あたり約187〜249円、タスハナの+act for flowersは660円（3本以上・送料330円は別）で1本あたり約220円です（2026年10月22日公式確認）。花屋の店頭価格は店舗や花の種類によって異なるため、当サイトでは一律の相場は示していません。比べる場合は、本数と送料を含めた総額で比較してください。
+                medelu Miniは748円（送料込み・3〜4本）で1本あたり約187〜249円です（2026年10月22日公式確認）。タスハナで新規に申し込める最安の+live for flowersは1,100円（5本以上・送料330円は別）で1本あたり約220円です（2026年11月25日公式確認。660円の+actは新規受付終了）。花屋の店頭価格は店舗や花の種類によって異なるため、当サイトでは一律の相場は示していません。比べる場合は、本数と送料を含めた総額で比較してください。
               </p>
             </div>
           </div>

@@ -8,7 +8,7 @@ import PageHero from "@/app/components/PageHero";
 const faqItems = [
   {
     q: "花のサブスクは月いくらかかりますか？",
-    a: "サービスやプランによって異なりますが、当サイト掲載サービスの最安プランでは月990円〜1,496円程度（タスハナ+actの月1回で送料込み990円、medelu Miniの隔週で1,496円）です。送料が別途かかるサービス（bloomeeは385〜550円）と送料無料のサービス（medelu、AND PLANTS）があるため、送料込みの総額で比較することをおすすめします。",
+    a: "サービスやプランによって異なりますが、当サイト掲載サービスの最安プランでは月1,430円〜1,496円程度（タスハナ+liveの月1回で送料込み1,430円、medelu Miniの隔週で1,496円）です。タスハナの660円の+actは新規申し込みの受付を終了しています（2026年11月25日公式確認）。送料が別途かかるサービス（bloomeeは385〜550円）と送料無料のサービス（medelu、AND PLANTS）があるため、送料込みの総額で比較することをおすすめします。",
   },
   {
     q: "花のサブスクはどのくらい続ける人が多いですか？",
@@ -37,9 +37,9 @@ export default function MeritDemeritGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクのメリット・デメリット\",\"item\":\"https://ohana-delivery.com/guides/merit-demerit/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクのメリット・デメリット\",\"description\":\"花のサブスクのメリット・デメリットを解説します。料金・評判・選び方もあわせて説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/merit-demerit/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクのメリット・デメリット\",\"description\":\"花のサブスクのメリット・デメリットを解説します。料金・評判・選び方もあわせて説明します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-25T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/merit-demerit/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月いくらかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、当サイト掲載サービスの最安プランでは月990円〜1,496円程度（タスハナ+actの月1回で送料込み990円、medelu Miniの隔週で1,496円）です。送料が別途かかるサービス（bloomeeは385〜550円）と送料無料のサービス（medelu、AND PLANTS）があるため、送料込みの総額で比較することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらい続ける人が多いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイトでは、各社が公表した継続率を確認できませんでした（2026年10月21日時点）。続けられるか不安な場合は、まずは回数の条件がないサービスで1〜2ヶ月試すことをおすすめします。bloomeeは最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます（2026年10月20日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしでも花のサブスクは使えますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの方にもおすすめです。ポスト投函に対応したサービスであれば不在時でも受け取れ、少量のプランを選べば場所も取りません。部屋に花を飾ることで空間の印象が明るくなり、帰宅時の気分も変わります。ポスト投函に対応しているのは、比較したサービスではmedelu（Mini・Lite）、bloomee（お試し・グリーン）、hanameku（ライト）、タスハナです（2026年10月30日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクとお花屋さんでは、どちらが割安ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花屋の店頭価格は店舗や花の種類によって異なるため、当サイトでは一律の比較はしていません。サブスクにはmedelu Mini（748円・送料込み・3〜4本（2026年10月22日公式確認））のように1回1,000円以下のプランもあります。一方、特定の花を指定して購入したい場合は、花屋のほうが自由度が高くなります。\"}},{\"@type\":\"Question\",\"name\":\"花のアレルギーがある場合でも利用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花粉アレルギーの方は注意が必要です。多くのサービスでは届く花の種類を事前に指定できないため、アレルギーの原因となる花が届く可能性があります。medeluは指定の花を除くことはできないと案内しており、bloomeeも花の種類はおまかせです（2026年10月30日公式確認）。心配な場合は、申し込み前に各社の問い合わせ窓口でご確認ください。\"}}]}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは月いくらかかりますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスやプランによって異なりますが、当サイト掲載サービスの最安プランでは月1,430円〜1,496円程度（タスハナ+liveの月1回で送料込み1,430円、medelu Miniの隔週で1,496円）です。タスハナの660円の+actは新規申し込みの受付を終了しています（2026年11月25日公式確認）。送料が別途かかるサービス（bloomeeは385〜550円）と送料無料のサービス（medelu、AND PLANTS）があるため、送料込みの総額で比較することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクはどのくらい続ける人が多いですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"当サイトでは、各社が公表した継続率を確認できませんでした（2026年10月21日時点）。続けられるか不安な場合は、まずは回数の条件がないサービスで1〜2ヶ月試すことをおすすめします。bloomeeは最初の4回分のお届けが約束されており、それ以降は週単位で停止・再開できます（2026年10月20日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"一人暮らしでも花のサブスクは使えますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"一人暮らしの方にもおすすめです。ポスト投函に対応したサービスであれば不在時でも受け取れ、少量のプランを選べば場所も取りません。部屋に花を飾ることで空間の印象が明るくなり、帰宅時の気分も変わります。ポスト投函に対応しているのは、比較したサービスではmedelu（Mini・Lite）、bloomee（お試し・グリーン）、hanameku（ライト）、タスハナです（2026年10月30日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクとお花屋さんでは、どちらが割安ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花屋の店頭価格は店舗や花の種類によって異なるため、当サイトでは一律の比較はしていません。サブスクにはmedelu Mini（748円・送料込み・3〜4本（2026年10月22日公式確認））のように1回1,000円以下のプランもあります。一方、特定の花を指定して購入したい場合は、花屋のほうが自由度が高くなります。\"}},{\"@type\":\"Question\",\"name\":\"花のアレルギーがある場合でも利用できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花粉アレルギーの方は注意が必要です。多くのサービスでは届く花の種類を事前に指定できないため、アレルギーの原因となる花が届く可能性があります。medeluは指定の花を除くことはできないと案内しており、bloomeeも花の種類はおまかせです（2026年10月30日公式確認）。心配な場合は、申し込み前に各社の問い合わせ窓口でご確認ください。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
       <Header />
 
@@ -117,7 +117,7 @@ export default function MeritDemeritGuidePage() {
                 {
                   num: "3",
                   title: "1回1,000円以下の少量プランから始められる",
-                  text: "medelu Miniは748円（送料込み・3〜4本）で1本あたり約187〜249円、タスハナの+act for flowersは660円（3本以上・送料330円は別）で1本あたり約220円です（2026年10月22日公式確認）。花屋の店頭価格は店舗や花の種類によって異なるため、比べる場合は本数と送料を含めた総額で比較してください。",
+                  text: "medelu Miniは748円（送料込み・3〜4本）で1本あたり約187〜249円、タスハナの+live for flowersは1,100円（5本以上・送料330円は別）で1本あたり約220円です（medeluは2026年10月22日、タスハナは2026年11月25日公式確認。660円の+actは新規受付終了）。花屋の店頭価格は店舗や花の種類によって異なるため、比べる場合は本数と送料を含めた総額で比較してください。",
                 },
                 {
                   num: "4",
@@ -307,7 +307,7 @@ export default function MeritDemeritGuidePage() {
                   </tr>
                   <tr>
                     <td className="font-medium text-[#1F2420]">タスハナ</td>
-                    <td>660円〜（送料別）、ロスフラワー活用、ポスト投函</td>
+                    <td>1,100円〜（送料別・2026年11月25日公式確認）、ロスフラワー活用、ポスト投函</td>
                     <td>送料別330円、5回の出荷が前提</td>
                     <td>費用を抑えて試したい方</td>
                   </tr>

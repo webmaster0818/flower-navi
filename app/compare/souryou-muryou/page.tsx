@@ -75,7 +75,7 @@ export default function SouryouMuryouPage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"比較\",\"item\":\"https://ohana-delivery.com/compare/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"送料無料の花のサブスク比較\",\"item\":\"https://ohana-delivery.com/compare/souryou-muryou/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"送料無料の花のサブスク比較\",\"description\":\"送料無料の花のサブスクの料金・評判・選び方を比較して解説しています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-30T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/souryou-muryou/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"送料無料の花のサブスク比較\",\"description\":\"送料無料の花のサブスクの料金・評判・選び方を比較して解説しています。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-25T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/compare/souryou-muryou/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"送料無料のサービスは本当に追加費用がかかりませんか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"medeluとAND PLANTSは表示価格に送料が含まれています。AND PLANTSのクール便オプションは別料金（1回550円）です（2026年10月28日公式確認）。ただし、medeluは北海道・東北へのLite以上に遠隔地送料140〜240円が加算されます（2026年10月17日公式確認）。hanamekuはライトプランが配送料込みで、追加の送料はかかりません。セルフアレンジプランも配送料込みの表示ですが、北海道・九州で550円、中国・四国で330円、北東北・関西で220円の追加送料がかかります（2026年10月17日に公式サイトで確認）。各サービスの最新の料金体系は、公式サイトにてご確認ください。\"}},{\"@type\":\"Question\",\"name\":\"送料無料のサービスは品質が劣りますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"送料の有無と品質の関係を示す公的なデータはないため、当サイトでは品質の優劣は示していません。medeluは生産者と市場から直接仕入れた花を届けると案内しており（2026年10月21日公式確認）、AND PLANTSは自社拠点でフローリストが毎日制作していると案内しています（2026年10月30日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"送料無料と送料別では、年間でどれくらいの差がありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"例えば、送料385円のbloomeeを隔週（月2回）で利用すると、送料だけで年間9,240円になります。送料無料のmedeluであれば、この金額がかかりません。毎週配送の場合は年間約2万円の差になることもあり、長期間利用するほど送料無料サービスの利点が大きくなります。\"}},{\"@type\":\"Question\",\"name\":\"離島や北海道・沖縄でも送料無料ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"サービスによって異なります。medeluは送料込みの価格ですが、北海道・東北へのLite・Lite+・Basicは遠隔地送料（Lite 140円・Lite+ 200円・Basic 240円）が加算されます（2026年10月17日公式確認）。medeluは沖縄県と一部離島へは配送していません（2026年10月30日公式確認）。AND PLANTSは沖縄県・一部離島と配送に3日以上かかる地域へは生花を配送していません（2026年10月30日公式確認）。北海道と一部の寒冷地では、夏季・冬季にクール便（有料）が必須です（2026年10月17日公式確認）。お住まいの地域が配送対象かどうかは、事前に公式サイトにてご確認ください。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
@@ -227,10 +227,10 @@ export default function SouryouMuryouPage() {
                     <td className="px-3 py-2 text-center font-bold text-[#2F5B43]">0円</td>
                   </tr>
                   <tr className="border-b border-[#DEDAD2]">
-                    <td className="px-3 py-2 text-[#1F2420]">タスハナ</td>
-                    <td className="px-3 py-2 text-center">660円</td>
+                    <td className="px-3 py-2 text-[#1F2420]">タスハナ +live</td>
+                    <td className="px-3 py-2 text-center">1,100円</td>
                     <td className="px-3 py-2 text-center text-[#B0694F]">330円</td>
-                    <td className="px-3 py-2 text-center">990円</td>
+                    <td className="px-3 py-2 text-center">1,430円</td>
                     <td className="px-3 py-2 text-center text-[#B0694F]">7,920円</td>
                   </tr>
                   <tr className="border-b border-[#DEDAD2]">
@@ -250,7 +250,7 @@ export default function SouryouMuryouPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-[#6B6F6A] mt-3">※ 年間送料は、隔週（月2回・年24回）配送の場合で計算しています。</p>
+            <p className="text-xs text-[#6B6F6A] mt-3">※ 年間送料は、隔週（月2回・年24回）配送の場合で計算しています。タスハナは新規に申し込める最安の+liveで計算しています（660円の+actは新規申し込みの受付を終了・2026年11月25日公式確認）。</p>
           </div>
         </section>
 

@@ -28,7 +28,7 @@ const articleLd = {
   headline: "仏花・お供えの花を定期便/通販で用意する比較【2026年】8社の公式情報を確認",
   description: "お供え・仏花の専用商品の有無、白系の可否、立て札・カード、価格、お届け日指定を、8社の公式サイトで確認して比較しています。",
   datePublished: "2026-07-24T00:00:00+09:00",
-  dateModified: "2026-10-23T00:00:00+09:00",
+  dateModified: "2026-11-25T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/compare/osonae/" },
@@ -121,7 +121,7 @@ export default function OsonaePage() {
               </div>
             </div>
             <p className="mt-4 text-xs text-[#6B6F6A] leading-relaxed">
-              ※タスハナ（＋actプラン660円〜＋送料330円）はさらに安価ですが、ロスフラワーのおまかせ定期便で、色指定・日時指定・ラッピングに対応していないため、お供えの用途には適していません。価格はいずれも{OSONAE_VERIFIED}時点の公式確認値です。
+              ※タスハナ（新規に申し込める＋liveプラン1,100円〜＋送料330円。660円の＋actは新規申し込みの受付を終了・2026年11月25日公式確認）はさらに安価ですが、ロスフラワーのおまかせ定期便で、色指定・日時指定・ラッピングに対応していないため、お供えの用途には適していません。価格はいずれも{OSONAE_VERIFIED}時点の公式確認値です。
             </p>
             <p className="mt-3 text-sm text-[#4A4F49] leading-relaxed">
               仏花に向く花・避ける花やお手入れの基本は、<Link href="/guides/butsudan/" className="text-[#2F5B43] underline">仏壇に供える仏花の選び方・お手入れガイド</Link>で詳しく解説しています。

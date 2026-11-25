@@ -162,7 +162,7 @@ export const OSONAE: OsonaeEntry[] = [
     type: "定期便のみ（単発購入不可）",
     color: "選べない（ロスフラワーのため色指定不可）",
     card: "ラッピングは不可です。のし・立て札・カードの提供は確認できませんでした",
-    priceFrom: "＋actプラン 660円〜（税込）＋送料330円 ※お供え用ではない",
+    priceFrom: "＋liveプラン 1,100円〜（税込）＋送料330円（660円の＋actは新規受付終了・2026年11月25日公式確認） ※お供え用ではない",
     delivery: "ゆうパケット（ポスト投函）・日時指定不可",
     verdict: "unsuitable",
     sources: [
