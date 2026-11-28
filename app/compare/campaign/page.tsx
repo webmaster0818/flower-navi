@@ -18,7 +18,7 @@ const faqItems = [
   },
   {
     q: "初回無料やクーポンはありますか？",
-    a: "花のサブスク各社は、時期によって初回割引・お試し価格・キャンペーンを実施することがあります。これらは内容の変動が大きいため、当サイトでは常設のお試しプラン・最安プランを比較し、期間限定の特典については各社の公式サイト（お申し込みリンク）にて最新情報をご確認いただく形としています（確認できない割引額は掲載していません）。",
+    a: "花のサブスク各社は、時期によって初回割引・お試し価格・キャンペーンを実施することがあります。これらは内容の変動が大きいため、このページでは常設のお試しプラン・最安プランを比較し、期間限定の特典については各社の公式サイト（お申し込みリンク）にて最新情報をご確認いただく形としています（確認できない割引額は掲載していません）。",
   },
   {
     q: "お試しプランから通常プランに変えられますか？",
@@ -32,7 +32,7 @@ const articleLd = {
   headline: "花のサブスクの初回特典・お試しプラン比較｜安く始める方法",
   description: "bloomee・medelu・AND PLANTS・hanamekuの初回・お試しプランを送料込みの実額で比較しています。期間限定のクーポンは公式サイトでの確認方法を案内しています。",
   datePublished: "2026-07-24T00:00:00+09:00",
-  dateModified: "2026-10-17T00:00:00+09:00",
+  dateModified: "2026-11-28T00:00:00+09:00",
   author: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com/about/" },
   publisher: { "@type": "Organization", name: "flowerデリ", url: "https://ohana-delivery.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ohana-delivery.com/compare/campaign/" },
@@ -59,7 +59,7 @@ export default function CampaignPage() {
               安く始める方法
             </h1>
             <p className="text-sm md:text-base text-[#4A4F49] max-w-2xl mx-auto leading-relaxed">
-              当サイトでは、各社の初回から利用できるお試しプラン・最安プランを、送料込みの実額で比較しています。
+              このページでは、各社の初回から利用できるお試しプラン・最安プランを、送料込みの実額で比較しています。
               期間限定のクーポンや初回無料の特典は変動するため、公式サイトでの確認方法もあわせて解説します。
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function CampaignPage() {
               <ul className="space-y-2 text-sm text-[#3F443E] leading-relaxed">
                 <li>・送料込みで最も安い水準のプランは<strong>medelu Miniプラン（月748円・送料無料）</strong>です。</li>
                 <li>・ポスト投函で少量から始められるプランは<strong>bloomeeのお試しプラン</strong>です。</li>
-                <li>・期間限定の初回割引・クーポンは変動するため、<strong>各社の公式サイト（お申し込みリンク）にて最新情報をご確認ください</strong>（当サイトでは常設の最安プラン・お試しプランを比較しています）。</li>
+                <li>・期間限定の初回割引・クーポンは変動するため、<strong>各社の公式サイト（お申し込みリンク）にて最新情報をご確認ください</strong>（このページでは常設の最安プラン・お試しプランを比較しています）。</li>
               </ul>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function CampaignPage() {
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-bold text-[#1F2420] mb-6 pb-3 border-b-2 border-[#2F5B43]">クーポン・キャンペーンの確認方法</h2>
             <p className="text-sm text-[#4A4F49] leading-relaxed mb-4">
-              花のサブスク各社は、時期によって<strong>初回割引・お試し価格・季節キャンペーン</strong>を実施することがあります。ただし内容・期間の変動が大きく、終了した割引を利用可能として掲載すると不正確な情報となるため、当サイトでは<strong>常設の最安プラン・お試しプラン</strong>を比較し、期間限定の特典は各社の公式サイトで確認いただく形としています。
+              花のサブスク各社は、時期によって<strong>初回割引・お試し価格・季節キャンペーン</strong>を実施することがあります。ただし内容・期間の変動が大きく、終了した割引を利用可能として掲載すると不正確な情報となるため、このページでは<strong>常設の最安プラン・お試しプラン</strong>を比較し、期間限定の特典は各社の公式サイトで確認いただく形としています。
             </p>
             <ul className="space-y-2 text-sm text-[#3F443E] leading-relaxed">
               <li>・各サービスの<strong>公式サイト（お申し込みページ）</strong>で、現在の初回特典・キャンペーンの表示を確認します。</li>
