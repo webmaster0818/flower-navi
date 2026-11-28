@@ -5,12 +5,12 @@ import { HOME_FAQ } from "@/data/homeFaq";
 const SITE_URL = "https://ohana-delivery.com";
 
 export const metadata: Metadata = {
-  title: "お花のサブスク比較【2026年10月】花の定期便おすすめ5社を送料込み料金・回数の条件で比較｜flowerデリ",
+  title: "お花のサブスク比較【2026年】花の定期便おすすめ5社を送料込み料金・回数の条件で比較｜flowerデリ",
   description:
     "お花のサブスク（お花の定期便）を送料込みの料金・届き方・回数の条件で比較しています。最安はmedelu Mini 748円（送料込み）、bloomeeは花代980円＋送料385円で4回が前提、AND PLANTSは1,980円（送料込み・6〜8本）で回数の条件なしです（2026年10月公式確認）。",
   alternates: { canonical: "/" },
   openGraph: { images: [{ url: "https://ohana-delivery.com/og-default.png", width: 1200, height: 630, alt: "flowerデリ" }], 
-    title: "お花のサブスク比較【2026年10月】花の定期便おすすめ5社を送料込み料金・回数の条件で比較｜flowerデリ",
+    title: "お花のサブスク比較【2026年】花の定期便おすすめ5社を送料込み料金・回数の条件で比較｜flowerデリ",
     description: "お花の定期便5社を、料金・送料・花の本数の観点で比較しています。診断機能も利用できます。",
     type: "website",
     locale: "ja_JP",

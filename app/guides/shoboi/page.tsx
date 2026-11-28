@@ -41,7 +41,7 @@ export default function ShoboboiGuidePage() {
         {/* JSONLD_INJECTED_v1 #0 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://ohana-delivery.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://ohana-delivery.com/guides/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"花のサブスクが「しょぼい」と言われる理由\",\"item\":\"https://ohana-delivery.com/guides/shoboi/\"}]}" }} />
         {/* JSONLD_INJECTED_v1 #1 */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクが「しょぼい」と言われる理由\",\"description\":\"花のサブスクが「しょぼい」と言われる理由について、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-25T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/shoboi/\"}}" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"花のサブスクが「しょぼい」と言われる理由\",\"description\":\"花のサブスクが「しょぼい」と言われる理由について、料金・評判・選び方を解説します。\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-28T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"flowerデリ\",\"url\":\"https://ohana-delivery.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://ohana-delivery.com/guides/shoboi/\"}}" }} />
         {/* JSONLD_INJECTED_v1 #2 */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"花のサブスクは本当にしょぼいのですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"「しょぼい」と感じるかどうかは、選ぶプランによって大きく異なります。当サイト掲載サービスでは、medeluのMini（748円）が3〜4本、bloomeeのお試しプラン（980円＋送料385円）が4本以上、AND PLANTSのスタンダード（1,980円）が6〜8本、ラージ（4,980円）が14〜18本です（bloomee・AND PLANTSは2026年10月24日、medeluは10月23日公式確認）。品質保証制度の有無もあわせて確認することをおすすめします。\"}},{\"@type\":\"Question\",\"name\":\"届いた花がすぐ枯れてしまいます。対処法はありますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"花が届いたら、すぐに水切り（水中で茎を斜めに切ること）を行い、切り花延命剤を入れた新しい水に生けてください。夏場はこまめな水替え（毎日が理想です）が必要です。また、直射日光やエアコンの風が直接当たる場所を避けることで、花が傷みにくくなります。夏季はクール便を選べるサービス（AND PLANTSはクール便オプション1回550円、2026年10月30日公式確認）を利用する方法もあります。\"}},{\"@type\":\"Question\",\"name\":\"ボリュームに満足できるおすすめのサービスはどれですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ボリュームを重視する場合はAND PLANTS（6〜8本（2026年10月17日公式確認）、送料無料）、価格を重視する場合はmedelu（748円〜、送料無料）、鮮度を重視する場合はLIFFT（提携農園から直送（2026年10月17日公式確認）、スタンダード3,300円/月・本州の一部地域ではライト1,480円/回（2026年10月21日公式確認））をおすすめします。AND PLANTSは到着後1日以内の連絡で無料交換、medeluは到着当日中の写真送付で返金（交換なし）と案内しています（2026年10月30日公式確認）。LIFFTの定期便ページには品質保証の記載はありません（2026年10月30日確認）。\"}},{\"@type\":\"Question\",\"name\":\"品質保証制度とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"届いた花が傷んでいた場合に、無料で再送または返金を受けられる制度です。bloomee、medelu、AND PLANTSなど主要サービスの多くが導入しています。申請の方法と期限はサービスごとに異なります。AND PLANTSの定期便は、到着後1日以内に連絡すると無料で交換します（2026年10月28日公式確認）。\"}},{\"@type\":\"Question\",\"name\":\"花のサブスクをやめた人が多いのはなぜですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"やめた理由を集計した公的なデータは見当たらないため、当サイトでは理由の割合は示していません。届く本数は料金によって異なるため（例：medelu Mini 3〜4本、AND PLANTSスタンダード 6〜8本、2026年10月30日公式確認）、事前にプラン内容を確認し、お手入れ方法を理解したうえで始めることをおすすめします。事前にプラン内容を確認し、お手入れ方法を理解したうえで始めると、継続しやすくなります。\"}}]}" }} />
     <div className="flex flex-col min-h-screen">
@@ -83,9 +83,13 @@ export default function ShoboboiGuidePage() {
               花のサブスクは「しょぼい」「ひどい」のか<br className="hidden md:block" />
               実際に届く花の内容を検証【2026年】
             </h1>
-            <p className="text-sm md:text-base text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[#4A4F49] mb-3 max-w-2xl mx-auto leading-relaxed">
               当サイトでは、花のサブスク（お花の定期便）が「しょぼい」「ひどい」と評価される背景を整理し、
               プランを選ぶ際の確認事項を解説します。
+            </p>
+            <p className="text-sm text-[#4A4F49] mb-8 max-w-2xl mx-auto leading-relaxed">
+              このページは不満が生じる原因の検証です。お花の定期便を送料込みの料金・本数・回数の条件で並べた比較は
+              <a href="/" className="text-[#2F5B43] underline font-bold">お花の定期便おすすめ5社の比較</a>にまとめています。
             </p>
           </div>
         </PageHero>
@@ -198,6 +202,7 @@ export default function ShoboboiGuidePage() {
             </h2>
             <p className="text-sm md:text-base text-[#4A4F49] leading-relaxed mb-6">
               公式サイトで料金と本数を確認できたプランを、1本あたりの単価で比較しました。
+              送料・回数の条件・届き方まで含めたサービス同士の比較は、<a href="/#comparison" className="text-[#2F5B43] underline">花の定期便の比較表（トップ）</a>をご覧ください。
             </p>
 
             <div className="table-wrapper">
